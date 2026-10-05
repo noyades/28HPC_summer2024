@@ -1,0 +1,691 @@
+[05/09 07:38:13      0s] 
+[05/09 07:38:13      0s] Cadence Innovus(TM) Implementation System.
+[05/09 07:38:13      0s] Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+[05/09 07:38:13      0s] 
+[05/09 07:38:13      0s] Version:	v21.12-s106_1, built Wed Dec 8 18:19:02 PST 2021
+[05/09 07:38:13      0s] Options:	
+[05/09 07:38:13      0s] Date:		Thu May  9 07:38:13 2024
+[05/09 07:38:13      0s] Host:		cluster12 (x86_64 w/Linux 3.10.0-1160.102.1.el7.x86_64) (6cores*24cpus*Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz 15360KB)
+[05/09 07:38:13      0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[05/09 07:38:13      0s] 
+[05/09 07:38:13      0s] License:
+[05/09 07:38:13      0s] 		[07:38:13.150449] Configured Lic search path (20.02-s004): 27002@license.ece.vt.edu
+
+[05/09 07:38:13      0s] 		invs	Innovus Implementation System	21.1	checkout succeeded
+[05/09 07:38:13      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[05/09 07:38:35     20s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v21.12-s106_1 (64bit) 12/08/2021 18:19 (Linux 3.10.0-693.el7.x86_64)
+[05/09 07:38:40     24s] @(#)CDS: NanoRoute 21.12-s106_1 NR211128-2235/21_12-UB (database version 18.20.567) {superthreading v2.17}
+[05/09 07:38:40     24s] @(#)CDS: AAE 21.12-s039 (64bit) 12/08/2021 (Linux 3.10.0-693.el7.x86_64)
+[05/09 07:38:40     24s] @(#)CDS: CTE 21.12-s043_1 () Dec  1 2021 10:06:22 ( )
+[05/09 07:38:40     24s] @(#)CDS: SYNTECH 21.12-s014_1 () Oct 27 2021 04:39:25 ( )
+[05/09 07:38:40     24s] @(#)CDS: CPE v21.12-s094
+[05/09 07:38:40     24s] @(#)CDS: IQuantus/TQuantus 20.1.2-s624 (64bit) Thu Sep 2 20:12:03 PDT 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/09 07:38:40     24s] @(#)CDS: OA 22.60-p059 Mon Jun 28 12:16:29 2021
+[05/09 07:38:40     24s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[05/09 07:38:40     24s] @(#)CDS: RCDB 11.15.0
+[05/09 07:38:40     24s] @(#)CDS: STYLUS 21.11-s011_1 (12/08/2021 02:58 PST)
+[05/09 07:38:40     24s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_31663_cluster12_jswalling_IaNALl.
+
+[05/09 07:38:40     24s] The soft stacksize limit is either up to the hard limit or larger than 0.2% of RAM. No change is needed.
+[05/09 07:38:43     28s] 
+[05/09 07:38:43     28s] **INFO:  MMMC transition support version v31-84 
+[05/09 07:38:43     28s] 
+[05/09 07:38:43     28s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[05/09 07:38:43     28s] <CMD> suppressMessage ENCEXT-2799
+[05/09 07:38:44     28s] <CMD> win
+[05/09 08:03:13    194s] **WARN: (IMPOAX-793):	Problem in processing library definition file /home/jswalling/cds.lib - Unable to open library asap7_TechLib at path /home/jswalling/$PDK_DIR/cdslib/asap7_TechLib: Invalid Lib Path..
+[05/09 08:03:13    194s] **WARN: (IMPOAX-793):	Problem in processing library definition file /home/jswalling/cds.lib - Unable to open library asap7ssc7p5t at path /home/jswalling/$PDK_DIR/asap7ssc7p5t_05: Invalid Lib Path..
+[05/09 08:05:23    210s] **WARN: (IMPOAX-793):	Problem in processing library definition file /home/jswalling/cds.lib - Unable to open library asap7_TechLib at path /home/jswalling/$PDK_DIR/cdslib/asap7_TechLib: Invalid Lib Path..
+[05/09 08:05:23    210s] **WARN: (IMPOAX-793):	Problem in processing library definition file /home/jswalling/cds.lib - Unable to open library asap7ssc7p5t at path /home/jswalling/$PDK_DIR/asap7ssc7p5t_05: Invalid Lib Path..
+[05/09 08:06:53    236s] <CMD> set init_gnd_net VSS
+[05/09 08:06:53    236s] <CMD> set init_lef_file {/software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/lef/5.8/gf22nsdvlogl28edl116a_9M_2Mx_5Cx_1Jx_1Ox_LB.lef /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/lef/5.8/gf22nsdvlogl28edl116a.lef}
+[05/09 08:06:53    236s] <CMD> set init_verilog topVcoDigital_noRoute.v
+[05/09 08:06:53    236s] <CMD> set init_pwr_net VDD
+[05/09 08:06:53    236s] <CMD> init_design
+[05/09 08:06:53    236s] 
+[05/09 08:06:53    236s] Loading LEF file /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/lef/5.8/gf22nsdvlogl28edl116a_9M_2Mx_5Cx_1Jx_1Ox_LB.lef ...
+[05/09 08:06:53    236s] 
+[05/09 08:06:53    236s] Loading LEF file /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/lef/5.8/gf22nsdvlogl28edl116a.lef ...
+[05/09 08:06:53    236s] Set DBUPerIGU to M2 pitch 116.
+[05/09 08:06:53    236s] [08:06:53.155360] Periodic Lic check successful
+[08:06:53.155426] Feature usage summary:
+[08:06:53.155432] Innovus_Impl_System
+[08:06:53.155434] Innovus_20nm_Opt
+
+[05/09 08:06:53    236s] This command "init_design" required an extra checkout of license invs_20nm.
+[05/09 08:06:53    236s] Additional license(s) checked out: 1 'Innovus_20nm_Opt' license(s)
+[05/09 08:06:54    237s] **WARN: (IMPLF-200):	Pin 'X' in macro 'UDBSLT28_TIEDIN_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/09 08:06:54    237s] Type 'man IMPLF-200' for more detail.
+[05/09 08:06:54    237s] **WARN: (IMPLF-201):	Pin 'X' in macro 'UDBSLT28_TIE1_V1_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/09 08:06:54    237s] Type 'man IMPLF-201' for more detail.
+[05/09 08:06:54    237s] **WARN: (IMPLF-201):	Pin 'X' in macro 'UDBSLT28_TIE1_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/09 08:06:54    237s] Type 'man IMPLF-201' for more detail.
+[05/09 08:06:54    237s] **WARN: (IMPLF-201):	Pin 'X' in macro 'UDBSLT28_TIE0_V1_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/09 08:06:54    237s] Type 'man IMPLF-201' for more detail.
+[05/09 08:06:54    237s] **WARN: (IMPLF-201):	Pin 'X' in macro 'UDBSLT28_TIE0_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/09 08:06:54    237s] Type 'man IMPLF-201' for more detail.
+[05/09 08:06:54    237s] **WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC3RBSBMSFQ_2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/09 08:06:54    237s] Type 'man IMPLF-201' for more detail.
+[05/09 08:06:54    237s] **WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC3RBSBMSFQ_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/09 08:06:54    237s] Type 'man IMPLF-201' for more detail.
+[05/09 08:06:54    237s] **WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC3MSFQNS_2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/09 08:06:54    237s] Type 'man IMPLF-201' for more detail.
+[05/09 08:06:54    237s] **WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC3MSFQNS_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/09 08:06:54    237s] Type 'man IMPLF-201' for more detail.
+[05/09 08:06:54    237s] **WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC3MSFQ_2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/09 08:06:54    237s] Type 'man IMPLF-201' for more detail.
+[05/09 08:06:54    237s] **WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC3MSFQ_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/09 08:06:54    237s] Type 'man IMPLF-201' for more detail.
+[05/09 08:06:54    237s] **WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC2SBMSFQ_2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/09 08:06:54    237s] Type 'man IMPLF-201' for more detail.
+[05/09 08:06:54    237s] **WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC2SBMSFQ_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/09 08:06:54    237s] Type 'man IMPLF-201' for more detail.
+[05/09 08:06:54    237s] **WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC2RBSBMSFQ_2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/09 08:06:54    237s] Type 'man IMPLF-201' for more detail.
+[05/09 08:06:54    237s] **WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC2RBSBMSFQ_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/09 08:06:54    237s] Type 'man IMPLF-201' for more detail.
+[05/09 08:06:54    237s] **WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC2RBMSFQ_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/09 08:06:54    237s] Type 'man IMPLF-201' for more detail.
+[05/09 08:06:54    237s] **WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC2MSFQNS_2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/09 08:06:54    237s] Type 'man IMPLF-201' for more detail.
+[05/09 08:06:54    237s] **WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC2MSFQNS_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/09 08:06:54    237s] Type 'man IMPLF-201' for more detail.
+[05/09 08:06:54    237s] **WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC2MSFQ_2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/09 08:06:54    237s] Type 'man IMPLF-201' for more detail.
+[05/09 08:06:54    237s] **WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC2MSFQ_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/09 08:06:54    237s] Type 'man IMPLF-201' for more detail.
+[05/09 08:06:54    237s] **WARN: (IMPLF-201):	Pin 'Z' in macro 'UDBSLT28_RAD8BOOTHMUX_2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/09 08:06:54    237s] Type 'man IMPLF-201' for more detail.
+[05/09 08:06:54    237s] **WARN: (EMS-27):	Message (IMPLF-201) has exceeded the current message display limit of 20.
+[05/09 08:06:54    237s] To increase the message display limit, refer to the product command reference manual.
+[05/09 08:06:54    237s] **WARN: (IMPLF-200):	Pin 'X' in macro 'UDBSLT28_CLAMP_Y6_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/09 08:06:54    237s] Type 'man IMPLF-200' for more detail.
+[05/09 08:06:54    237s] 
+[05/09 08:06:54    237s] viaInitial starts at Thu May  9 08:06:54 2024
+viaInitial ends at Thu May  9 08:06:54 2024
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+[05/09 08:06:54    237s] *** End library_loading (cpu=0.00min, real=0.00min, mem=0.0M, fe_cpu=3.96min, fe_real=28.68min, fe_mem=795.7M) ***
+[05/09 08:06:54    237s] #% Begin Load netlist data ... (date=05/09 08:06:54, mem=680.1M)
+[05/09 08:06:54    237s] *** Begin netlist parsing (mem=795.7M) ***
+[05/09 08:06:54    237s] Created 0 new cells from 0 timing libraries.
+[05/09 08:06:54    237s] Reading netlist ...
+[05/09 08:06:54    237s] Backslashed names will retain backslash and a trailing blank character.
+[05/09 08:06:54    237s] Reading verilog netlist 'topVcoDigital_noRoute.v'
+[05/09 08:06:54    237s] 
+[05/09 08:06:54    237s] *** Memory Usage v#1 (Current mem = 799.727M, initial mem = 295.352M) ***
+[05/09 08:06:54    237s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=799.7M) ***
+[05/09 08:06:54    237s] #% End Load netlist data ... (date=05/09 08:06:54, total cpu=0:00:00.0, real=0:00:00.0, peak res=684.8M, current mem=684.8M)
+[05/09 08:06:54    237s] Top level cell is topVcoDigital.
+[05/09 08:06:55    237s] Hooked 0 DB cells to tlib cells.
+[05/09 08:06:55    237s] Ending "BindLib:" (total cpu=0:00:00.0, real=0:00:00.0, peak res=687.9M, current mem=687.9M)
+[05/09 08:06:55    237s] Starting recursive module instantiation check.
+[05/09 08:06:55    237s] No recursion found.
+[05/09 08:06:55    237s] Building hierarchical netlist for Cell topVcoDigital ...
+[05/09 08:06:55    237s] *** Netlist is unique.
+[05/09 08:06:55    237s] Setting Std. cell height to 540 DBU (smallest netlist inst).
+[05/09 08:06:55    237s] ** info: there are 1438 modules.
+[05/09 08:06:55    237s] ** info: there are 533 stdCell insts.
+[05/09 08:06:55    237s] 
+[05/09 08:06:55    237s] *** Memory Usage v#1 (Current mem = 852.195M, initial mem = 295.352M) ***
+[05/09 08:06:55    237s] 
+[05/09 08:06:55    237s] Honor LEF defined pitches for advanced node
+[05/09 08:06:55    237s] Start create_tracks
+[05/09 08:06:55    237s] Set Default Net Delay as 1000 ps.
+[05/09 08:06:55    237s] Set Default Net Load as 0.5 pF. 
+[05/09 08:06:55    237s] Set Default Input Pin Transition as 0.1 ps.
+[05/09 08:06:55    238s] **WARN: (IMPSYT-7328):	The design has been initialized in physical-only mode because the init_mmmc_file global variable was not defined. Timing analysis will not be possible within this session. You can only use commands that do not depend on timing data. If you need to use timing, you need to restart with an init_mmmc_file to define the timing setup, or you can save this design and use restoreDesign -mmmc_file <viewDef.tcl> to add the timing setup information.
+[05/09 08:06:55    238s] Extraction setup Started 
+[05/09 08:06:55    238s] 
+[05/09 08:06:55    238s] Trim Metal Layers:
+[05/09 08:06:55    238s] 
+[05/09 08:06:55    238s] *** Summary of all messages that are not suppressed in this session:
+[05/09 08:06:55    238s] Severity  ID               Count  Summary                                  
+[05/09 08:06:55    238s] WARNING   IMPLF-200            2  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[05/09 08:06:55    238s] WARNING   IMPLF-201         1477  Pin '%s' in macro '%s' has no ANTENNADIF...
+[05/09 08:06:55    238s] WARNING   IMPSYT-7328          1  The design has been initialized in physi...
+[05/09 08:06:55    238s] *** Message Summary: 1480 warning(s), 0 error(s)
+[05/09 08:06:55    238s] 
+[05/09 08:07:03    239s] <CMD> getIoFlowFlag
+[05/09 08:07:29    242s] <CMD> setIoFlowFlag 0
+[05/09 08:07:29    242s] <CMD> floorPlan -site GF22_DST -s 90 40 5 5 5 5
+[05/09 08:07:29    242s] **WARN: (IMPFP-4026):	Adjusting core to 'Left' to 4.988000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+[05/09 08:07:29    242s] **WARN: (IMPFP-4026):	Adjusting core to 'Bottom' to 4.960000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+[05/09 08:07:29    242s] **WARN: (IMPFP-4026):	Adjusting core to 'Right' to 4.988000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+[05/09 08:07:29    242s] **WARN: (IMPFP-4026):	Adjusting core to 'Top' to 4.960000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+[05/09 08:07:29    242s] 
+[05/09 08:07:29    242s] Honor LEF defined pitches for advanced node
+[05/09 08:07:29    242s] Start create_tracks
+[05/09 08:07:29    242s] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[05/09 08:07:29    242s] <CMD> uiSetTool select
+[05/09 08:07:29    242s] <CMD> getIoFlowFlag
+[05/09 08:07:29    242s] <CMD> fit
+[05/09 08:08:03    251s] <CMD> defIn ../def/topVcoDigital_fp.def
+[05/09 08:08:03    251s] Reading DEF file '../def/topVcoDigital_fp.def', current time is Thu May  9 08:08:03 2024 ...
+[05/09 08:08:03    251s] --- DIVIDERCHAR '/'
+[05/09 08:08:03    251s] --- UnitsPerDBU = 1.0000
+[05/09 08:08:03    251s] 
+[05/09 08:08:03    251s] Honor LEF defined pitches for advanced node
+[05/09 08:08:03    251s] Start create_tracks
+[05/09 08:08:03    251s] --- DIEAREA (0 0) (99896 60880)
+[05/09 08:08:03    251s] **WARN: (IMPDF-248):	The direction of pin 'mosi' is inconsistent with
+[05/09 08:08:03    251s]         netlist or timing library (INPUT in db)
+[05/09 08:08:03    251s] **WARN: (IMPDF-248):	The direction of pin 'ss' is inconsistent with
+[05/09 08:08:03    251s]         netlist or timing library (INPUT in db)
+[05/09 08:08:03    251s] **WARN: (IMPDF-248):	The direction of pin 'sclk' is inconsistent with
+[05/09 08:08:03    251s]         netlist or timing library (INPUT in db)
+[05/09 08:08:03    251s] **WARN: (IMPDF-248):	The direction of pin 'rst' is inconsistent with
+[05/09 08:08:03    251s]         netlist or timing library (INPUT in db)
+[05/09 08:08:03    251s] **WARN: (IMPDF-248):	The direction of pin 'clk' is inconsistent with
+[05/09 08:08:03    251s]         netlist or timing library (INPUT in db)
+[05/09 08:08:03    251s] **WARN: (IMPDF-248):	The direction of pin 'vcoTrim[15]' is inconsistent with
+[05/09 08:08:03    251s]         netlist or timing library (OUTPUT in db)
+[05/09 08:08:03    251s] **WARN: (IMPDF-248):	The direction of pin 'vcoTrim[0]' is inconsistent with
+[05/09 08:08:03    251s]         netlist or timing library (OUTPUT in db)
+[05/09 08:08:03    251s] **WARN: (IMPDF-248):	The direction of pin 'vcoTrim[1]' is inconsistent with
+[05/09 08:08:03    251s]         netlist or timing library (OUTPUT in db)
+[05/09 08:08:03    251s] **WARN: (IMPDF-248):	The direction of pin 'vcoTrim[2]' is inconsistent with
+[05/09 08:08:03    251s]         netlist or timing library (OUTPUT in db)
+[05/09 08:08:03    251s] **WARN: (IMPDF-248):	The direction of pin 'vcoTrim[3]' is inconsistent with
+[05/09 08:08:03    251s]         netlist or timing library (OUTPUT in db)
+[05/09 08:08:03    251s] **WARN: (IMPDF-248):	The direction of pin 'vcoTrim[4]' is inconsistent with
+[05/09 08:08:03    251s]         netlist or timing library (OUTPUT in db)
+[05/09 08:08:03    251s] **WARN: (IMPDF-248):	The direction of pin 'vcoTrim[5]' is inconsistent with
+[05/09 08:08:03    251s]         netlist or timing library (OUTPUT in db)
+[05/09 08:08:03    251s] **WARN: (IMPDF-248):	The direction of pin 'vcoTrim[6]' is inconsistent with
+[05/09 08:08:03    251s]         netlist or timing library (OUTPUT in db)
+[05/09 08:08:03    251s] **WARN: (IMPDF-248):	The direction of pin 'vcoTrim[7]' is inconsistent with
+[05/09 08:08:03    251s]         netlist or timing library (OUTPUT in db)
+[05/09 08:08:03    251s] **WARN: (IMPDF-248):	The direction of pin 'vcoTrim[8]' is inconsistent with
+[05/09 08:08:03    251s]         netlist or timing library (OUTPUT in db)
+[05/09 08:08:03    251s] **WARN: (IMPDF-248):	The direction of pin 'vcoTrim[9]' is inconsistent with
+[05/09 08:08:03    251s]         netlist or timing library (OUTPUT in db)
+[05/09 08:08:03    251s] **WARN: (IMPDF-248):	The direction of pin 'vcoTrim[10]' is inconsistent with
+[05/09 08:08:03    251s]         netlist or timing library (OUTPUT in db)
+[05/09 08:08:03    251s] **WARN: (IMPDF-248):	The direction of pin 'vcoTrim[11]' is inconsistent with
+[05/09 08:08:03    251s]         netlist or timing library (OUTPUT in db)
+[05/09 08:08:03    251s] **WARN: (IMPDF-248):	The direction of pin 'vcoTrim[12]' is inconsistent with
+[05/09 08:08:03    251s]         netlist or timing library (OUTPUT in db)
+[05/09 08:08:03    251s] **WARN: (IMPDF-248):	The direction of pin 'vcoTrim[13]' is inconsistent with
+[05/09 08:08:03    251s]         netlist or timing library (OUTPUT in db)
+[05/09 08:08:03    251s] **WARN: (EMS-27):	Message (IMPDF-248) has exceeded the current message display limit of 20.
+[05/09 08:08:03    251s] To increase the message display limit, refer to the product command reference manual.
+[05/09 08:08:03    251s] DEF file '../def/topVcoDigital_fp.def' is parsed, current time is Thu May  9 08:08:03 2024.
+[05/09 08:08:03    251s] Updating the floorplan ...
+[05/09 08:08:03    251s] <CMD> fit
+[05/09 08:08:10    252s] <CMD> zoomBox 102.90100 37.83200 93.80300 14.23400
+[05/09 08:08:11    252s] <CMD> zoomBox 102.88900 32.13000 98.44200 20.79700
+[05/09 08:08:28    255s] <CMD> gui_select -rect {101.05200 30.25300 99.45100 22.91500}
+[05/09 08:09:57    266s] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[05/09 08:09:57    266s] <CMD> setPinAssignMode -pinEditInBatch true
+[05/09 08:09:57    266s] <CMD> editPin -pinWidth 0.1 -pinDepth 0.52 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 3 -spreadType center -spacing 0.4 -pin {{vcoTrim[0]} {vcoTrim[1]} {vcoTrim[2]} {vcoTrim[3]} {vcoTrim[4]} {vcoTrim[5]} {vcoTrim[6]} {vcoTrim[7]} {vcoTrim[8]} {vcoTrim[9]} {vcoTrim[10]} {vcoTrim[11]} {vcoTrim[12]} {vcoTrim[13]} {vcoTrim[14]} {vcoTrim[15]}}
+[05/09 08:09:57    266s] #create default rule from bind_ndr_rule rule=0x2b6f7838e110 0x2b6f8cfec018
+[05/09 08:09:57    266s] #WARNING (NRFL-374)  spacing table is not monotonically increasing. Layer M2 spacing table entry 0.060000 is less than the previous entry 0.080000.
+[05/09 08:09:57    266s] #WARNING (NRFL-374)  spacing table is not monotonically increasing. Layer M2 spacing table entry 0.064000 is less than the previous entry 0.080000.
+[05/09 08:09:57    266s] #WARNING (NRFL-374)  spacing table is not monotonically increasing. Layer M2 spacing table entry 0.060000 is less than the previous entry 0.080000.
+[05/09 08:09:57    266s] #WARNING (NRFL-374)  spacing table is not monotonically increasing. Layer M2 spacing table entry 0.068000 is less than the previous entry 0.080000.
+[05/09 08:09:57    266s] #WARNING (NRFL-374)  spacing table is not monotonically increasing. Layer M2 spacing table entry 0.068000 is less than the previous entry 0.080000.
+[05/09 08:09:57    266s] #WARNING (NRFL-374)  spacing table is not monotonically increasing. Layer M2 spacing table entry 0.074000 is less than the previous entry 0.080000.
+[05/09 08:09:57    267s] ### import design signature (1): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1
+[05/09 08:09:57    267s] Successfully spread [16] pins.
+[05/09 08:09:57    267s] editPin : finished (cpu = 0:00:00.1 real = 0:00:00.0, mem = 1125.4M).
+[05/09 08:09:57    267s] <CMD> setPinAssignMode -pinEditInBatch false
+[05/09 08:10:07    268s] <CMD> deselectAll
+[05/09 08:10:07    268s] <CMD> fit
+[05/09 08:10:10    268s] <CMD> zoomBox -3.14700 36.12600 6.52000 21.91100
+[05/09 08:10:11    269s] <CMD> gui_select -rect {-1.43500 32.15100 1.52500 27.98200}
+[05/09 08:10:45    273s] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[05/09 08:10:45    273s] <CMD> setPinAssignMode -pinEditInBatch true
+[05/09 08:10:45    273s] <CMD> editPin -pinWidth 0.1 -pinDepth 0.52 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 3 -spreadType center -spacing 0.4 -pin {clk mosi rst sclk ss}
+[05/09 08:10:45    273s] ### import design signature (2): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1
+[05/09 08:10:45    273s] Successfully spread [5] pins.
+[05/09 08:10:45    273s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1127.3M).
+[05/09 08:10:45    273s] <CMD> setPinAssignMode -pinEditInBatch false
+[05/09 08:10:55    275s] <CMD> deselectAll
+[05/09 08:10:55    275s] <CMD> fit
+[05/09 08:11:03    276s] <CMD> zoomBox -2.80000 -13.40800 90.60400 66.10000
+[05/09 08:11:04    276s] <CMD> zoomBox -1.54900 -10.92500 77.84400 56.65700
+[05/09 08:11:05    276s] <CMD> zoomBox 1.10000 -4.91300 49.85800 36.59100
+[05/09 08:11:06    276s] <CMD> zoomBox 2.78000 -1.33500 32.72300 24.15300
+[05/09 08:11:07    276s] <CMD> zoomBox 3.81200 0.83100 22.20100 16.48400
+[05/09 08:11:11    277s] <CMD> zoomBox 2.28700 -1.42700 32.23100 24.06200
+[05/09 08:11:11    277s] <CMD> zoomBox 1.59000 -2.45900 36.81800 27.52800
+[05/09 08:11:11    277s] <CMD> zoomBox 0.76900 -3.67300 42.21400 31.60600
+[05/09 08:11:12    277s] <CMD> zoomBox -0.19600 -5.11100 48.56300 36.39400
+[05/09 08:11:12    277s] <CMD> zoomBox -4.23900 -11.13600 75.15700 56.44800
+[05/09 08:11:13    278s] <CMD> zoomBox -6.08800 -13.89100 87.31900 65.62000
+[05/09 08:11:13    278s] <CMD> zoomBox -8.26300 -17.13200 101.62800 76.41000
+[05/09 08:11:14    278s] <CMD> zoomBox -10.82200 -20.94600 118.46200 89.10400
+[05/09 08:11:46    282s] <CMD> setEndCapMode -reset
+[05/09 08:11:46    282s] <CMD> setEndCapMode -rightEdge UDBSLT28_CAPR9_1 -leftEdge UDBSLT28_CAPL9_1 -topEdge UDBSLT28_CAPT_1 -bottomEdge UDBSLT28_CAPB_1 -rightTopCorner UDBSLT28_CAPTOUCR9_1 -rightBottomCorner UDBSLT28_CAPBOUCR9_1 -leftTopCorner UDBSLT28_CAPTOUCL9_1 -leftBottomCorner UDBSLT28_CAPBOUCL9_1
+[05/09 08:11:46    282s] <CMD> addEndCap -prefix ENDCAP
+[05/09 08:11:46    282s] OPERPROF: Starting DPlace-Init at level 1, MEM:1129.3M, EPOCH TIME: 1715256706.722643
+[05/09 08:11:46    282s] z: 2, totalTracks: 1
+[05/09 08:11:46    282s] z: 4, totalTracks: 1
+[05/09 08:11:46    282s] z: 6, totalTracks: 1
+[05/09 08:11:46    282s] z: 8, totalTracks: 1
+[05/09 08:11:47    283s] #spOpts: N=32 dpt mergeVia=T sncAbut pinDensity cut2cut hrOri=1 hrSnap=1 
+[05/09 08:11:47    283s] OPERPROF:   Starting CceInit at level 2, MEM:1130.3M, EPOCH TIME: 1715256707.134749
+[05/09 08:11:47    283s] Initializing Route Infrastructure for color support ...
+[05/09 08:11:47    283s] OPERPROF:     Starting RouteInfrastructureColorSupport at level 3, MEM:1130.3M, EPOCH TIME: 1715256707.134948
+[05/09 08:11:47    283s] ### info: trigger incremental cell import ( 1436 new cells ).
+[05/09 08:11:47    283s] #create default rule from bind_ndr_rule rule=0x2b6f7838e110 0x2b6f8da7e018
+[05/09 08:11:47    283s] #WARNING (NRFL-374)  spacing table is not monotonically increasing. Layer M2 spacing table entry 0.060000 is less than the previous entry 0.080000.
+[05/09 08:11:47    283s] #WARNING (NRFL-374)  spacing table is not monotonically increasing. Layer M2 spacing table entry 0.064000 is less than the previous entry 0.080000.
+[05/09 08:11:47    283s] #WARNING (NRFL-374)  spacing table is not monotonically increasing. Layer M2 spacing table entry 0.060000 is less than the previous entry 0.080000.
+[05/09 08:11:47    283s] #WARNING (NRFL-374)  spacing table is not monotonically increasing. Layer M2 spacing table entry 0.068000 is less than the previous entry 0.080000.
+[05/09 08:11:47    283s] #WARNING (NRFL-374)  spacing table is not monotonically increasing. Layer M2 spacing table entry 0.068000 is less than the previous entry 0.080000.
+[05/09 08:11:47    283s] #WARNING (NRFL-374)  spacing table is not monotonically increasing. Layer M2 spacing table entry 0.074000 is less than the previous entry 0.080000.
+[05/09 08:11:48    284s] #WARNING (NRDB-733) PIN VNW_N in CELL_VIEW UDBSLT28_TAPDS does not have a physical port. NanoRoute will not route to the pin. To resolve this issue, check that the pin shapes exist in the LEF abstract.
+[05/09 08:11:48    284s] #WARNING (NRDB-733) PIN VPW_P in CELL_VIEW UDBSLT28_TAPDS does not have a physical port. NanoRoute will not route to the pin. To resolve this issue, check that the pin shapes exist in the LEF abstract.
+[05/09 08:11:48    284s] #WARNING (NRDB-733) PIN VNW_N in CELL_VIEW UDBSLT28_TAPSS does not have a physical port. NanoRoute will not route to the pin. To resolve this issue, check that the pin shapes exist in the LEF abstract.
+[05/09 08:11:48    284s] #WARNING (NRDB-733) PIN VPW_P in CELL_VIEW UDBSLT28_TAPSS does not have a physical port. NanoRoute will not route to the pin. To resolve this issue, check that the pin shapes exist in the LEF abstract.
+[05/09 08:11:48    284s] ### import design signature (3): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1
+[05/09 08:11:50    286s] OPERPROF:     Finished RouteInfrastructureColorSupport at level 3, CPU:3.280, REAL:3.268, MEM:1200.3M, EPOCH TIME: 1715256710.402794
+[05/09 08:11:50    286s] Route Infrastructure Initialized for color support successfully.
+[05/09 08:11:50    286s] OPERPROF:   Finished CceInit at level 2, CPU:3.280, REAL:3.268, MEM:1200.3M, EPOCH TIME: 1715256710.402962
+[05/09 08:11:50    286s] All LLGs are deleted
+[05/09 08:11:50    286s] OPERPROF:   Starting spSiteCleanup(true) at level 2, MEM:1209.3M, EPOCH TIME: 1715256710.417963
+[05/09 08:11:50    286s] OPERPROF:   Finished spSiteCleanup(true) at level 2, CPU:0.000, REAL:0.001, MEM:1209.3M, EPOCH TIME: 1715256710.418636
+[05/09 08:11:50    286s] # Building topVcoDigital llgBox search-tree.
+[05/09 08:11:50    286s] OPERPROF:   Starting spInitSiteArr at level 2, MEM:1209.3M, EPOCH TIME: 1715256710.421834
+[05/09 08:11:50    286s] OPERPROF:     Starting spiInitFpSiteArr at level 3, MEM:1209.3M, EPOCH TIME: 1715256710.422270
+[05/09 08:11:50    286s] Core basic site is GF22_DST
+[05/09 08:11:50    286s] z: 2, totalTracks: 1
+[05/09 08:11:50    286s] z: 4, totalTracks: 1
+[05/09 08:11:50    286s] z: 6, totalTracks: 1
+[05/09 08:11:50    286s] z: 8, totalTracks: 1
+[05/09 08:11:50    286s] OPERPROF:       Starting spiCheckSiteIfFastDPInitAvailable at level 4, MEM:1215.3M, EPOCH TIME: 1715256710.657111
+[05/09 08:11:50    286s] OPERPROF:       Finished spiCheckSiteIfFastDPInitAvailable at level 4, CPU:0.000, REAL:0.000, MEM:1215.3M, EPOCH TIME: 1715256710.657455
+[05/09 08:11:50    286s] Use non-trimmed site array because memory saving is not enough.
+[05/09 08:11:50    286s] SiteArray: non-trimmed site array dimensions = 98 x 775
+[05/09 08:11:50    286s] SiteArray: use 401,408 bytes
+[05/09 08:11:50    286s] SiteArray: current memory after site array memory allocation 1215.7M
+[05/09 08:11:50    286s] SiteArray: FP blocked sites are writable
+[05/09 08:11:50    286s] Estimated cell power/ground rail width = 0.067 um
+[05/09 08:11:50    286s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[05/09 08:11:50    286s] OPERPROF:       Starting RoutingBlockageFromWireViaStBox at level 4, MEM:1215.7M, EPOCH TIME: 1715256710.660443
+[05/09 08:11:50    286s] OPERPROF:       Finished RoutingBlockageFromWireViaStBox at level 4, CPU:0.000, REAL:0.000, MEM:1215.7M, EPOCH TIME: 1715256710.660606
+[05/09 08:11:50    286s] OPERPROF:     Finished spiInitFpSiteArr at level 3, CPU:0.240, REAL:0.240, MEM:1215.7M, EPOCH TIME: 1715256710.662431
+[05/09 08:11:50    286s] 
+[05/09 08:11:50    286s]  Pre_CCE_Colorizing is beginning ...
+[05/09 08:11:50    286s] 
+[05/09 08:11:50    286s]    Running colorizing using single thread! ...
+[05/09 08:11:50    286s] #WARNING (NRDB-2135) Color conflict in cell UDBSLT28_AO2222_0P75, layer M2
+[05/09 08:11:50    286s] #WARNING (NRDB-2135) Color conflict in cell UDBSLT28_AO2222_0P75, layer M2
+[05/09 08:11:50    286s] #WARNING (NRDB-2135) Color conflict in cell UDBSLT28_AO2222_0P75, layer M2
+[05/09 08:11:50    286s] #WARNING (NRDB-2135) Color conflict in cell UDBSLT28_AO2222_0P75, layer M2
+[05/09 08:11:50    286s] #WARNING (NRDB-2135) Color conflict in cell UDBSLT28_AO2222_0P75, layer M2
+[05/09 08:11:50    286s] #WARNING (NRDB-2135) Color conflict in cell UDBSLT28_AO2222_0P75, layer M2
+[05/09 08:11:50    286s] #WARNING (NRDB-2135) Color conflict in cell UDBSLT28_AO2222_0P75, layer M2
+[05/09 08:11:50    286s] #WARNING (NRDB-2135) Color conflict in cell UDBSLT28_AO2222_0P75, layer M2
+[05/09 08:11:50    286s] #WARNING (NRDB-2135) Color conflict in cell UDBSLT28_AO2222_0P75, layer M2
+[05/09 08:11:50    286s] #WARNING (NRDB-2135) Color conflict in cell UDBSLT28_AO2222_0P75, layer M2
+[05/09 08:11:50    286s] #WARNING (NRDB-2135) Color conflict in cell UDBSLT28_AO2222_0P75, layer M2
+[05/09 08:11:50    286s] #WARNING (NRDB-2135) Color conflict in cell UDBSLT28_AO2222_0P75, layer M2
+[05/09 08:11:50    286s] #WARNING (NRDB-2135) Color conflict in cell UDBSLT28_AO2222_0P75, layer M2
+[05/09 08:11:50    286s] #WARNING (NRDB-2135) Color conflict in cell UDBSLT28_AO2222_0P75, layer M2
+[05/09 08:11:50    286s] #WARNING (NRDB-2135) Color conflict in cell UDBSLT28_AO2222_0P75, layer M2
+[05/09 08:11:50    286s] #WARNING (NRDB-2135) Color conflict in cell UDBSLT28_AO2222_0P75, layer M2
+[05/09 08:11:50    286s] #WARNING (NRDB-2135) Color conflict in cell UDBSLT28_AO2222_0P75, layer M2
+[05/09 08:11:50    286s] #WARNING (NRDB-2135) Color conflict in cell UDBSLT28_AO2222_0P75, layer M2
+[05/09 08:11:50    286s] #WARNING (NRDB-2135) Color conflict in cell UDBSLT28_AO2222_0P75, layer M2
+[05/09 08:11:50    286s] #WARNING (NRDB-2135) Color conflict in cell UDBSLT28_AO2222_0P75, layer M2
+[05/09 08:11:50    286s] #WARNING (EMS-27) Message (NRDB-2135) has exceeded the current message display limit of 20.
+[05/09 08:11:50    286s] #To increase the message display limit, refer to the product command reference manual.
+[05/09 08:11:50    286s] **Info: (IMPSP-2051): cell: "UDBSLT28_AO2222_0P75" has been colorized, but may have problem!
+[05/09 08:11:50    286s] 
+[05/09 08:11:50    286s] **Info: (IMPSP-2051): cell: "UDBSLT28_EN3_1" has been colorized, but may have problem!
+[05/09 08:11:50    286s] 
+[05/09 08:11:50    286s] **Info: (IMPSP-2051): cell: "UDBSLT28_EN3_2" has been colorized, but may have problem!
+[05/09 08:11:50    286s] 
+[05/09 08:11:51    287s] **Info: (IMPSP-2051): cell: "UDBSLT28_FSDPQ_V3_1" has been colorized, but may have problem!
+[05/09 08:11:51    287s] 
+[05/09 08:11:51    287s] **Info: (IMPSP-2051): cell: "UDBSLT28_FSDPQ_V3_2" has been colorized, but may have problem!
+[05/09 08:11:51    287s] 
+[05/09 08:11:51    287s] **Info: (IMPSP-2051): cell: "UDBSLT28_FSDPRBQ_F4_6" has been colorized, but may have problem!
+[05/09 08:11:51    287s] 
+[05/09 08:11:51    287s] 
+[05/09 08:11:51    287s] 	Real Time: 0.777050  Cpu Time: 0.780000
+[05/09 08:11:51    287s]    1362 cells have been colorized (1356+6+0),
+[05/09 08:11:51    287s]  Pre_CCE_Colorizing is done.
+[05/09 08:11:51    287s] OPERPROF:   Finished spInitSiteArr at level 2, CPU:1.020, REAL:1.019, MEM:1229.7M, EPOCH TIME: 1715256711.441046
+[05/09 08:11:51    287s] OPERPROF:   Starting PlacementInitSBTree at level 2, MEM:1229.7M, EPOCH TIME: 1715256711.441221
+[05/09 08:11:51    287s] OPERPROF:   Finished PlacementInitSBTree at level 2, CPU:0.000, REAL:0.000, MEM:1229.7M, EPOCH TIME: 1715256711.441370
+[05/09 08:11:51    287s] [CPU] DPlace-Init (cpu=0:00:04.7, real=0:00:05.0, mem=1229.7MB).
+[05/09 08:11:51    287s] OPERPROF: Finished DPlace-Init at level 1, CPU:4.730, REAL:4.719, MEM:1229.7M, EPOCH TIME: 1715256711.441663
+[05/09 08:11:51    287s] OPERPROF: Starting ECCreateSitePattern at level 1, MEM:1229.7M, EPOCH TIME: 1715256711.442040
+[05/09 08:11:51    287s] OPERPROF: Finished ECCreateSitePattern at level 1, CPU:0.000, REAL:0.000, MEM:1229.7M, EPOCH TIME: 1715256711.442534
+[05/09 08:11:51    287s] *INFO*: Added 3975 triple-well end caps with prefix 'ENDCAP'.
+[05/09 08:11:51    287s] OPERPROF: Starting DB-Batch-Applying-GNC-RULES at level 1, MEM:1231.7M, EPOCH TIME: 1715256711.591911
+[05/09 08:11:51    287s] For 3975 new insts, *** Applied 0 GNC rules (cpu = 0:00:00.0)
+[05/09 08:11:51    287s] OPERPROF: Finished DB-Batch-Applying-GNC-RULES at level 1, CPU:0.000, REAL:0.001, MEM:1231.7M, EPOCH TIME: 1715256711.592972
+[05/09 08:11:51    287s] OPERPROF: Starting spDPlaceCleanup(auto) at level 1, MEM:1231.7M, EPOCH TIME: 1715256711.593085
+[05/09 08:11:51    287s] All LLGs are deleted
+[05/09 08:11:51    287s] OPERPROF:   Starting spSiteCleanup(true) at level 2, MEM:1231.7M, EPOCH TIME: 1715256711.595167
+[05/09 08:11:51    287s] OPERPROF:   Finished spSiteCleanup(true) at level 2, CPU:0.000, REAL:0.001, MEM:1231.7M, EPOCH TIME: 1715256711.596291
+[05/09 08:11:51    287s] OPERPROF: Finished spDPlaceCleanup(auto) at level 1, CPU:0.010, REAL:0.006, MEM:1231.7M, EPOCH TIME: 1715256711.599200
+[05/09 08:11:51    287s] <CMD> addWellTap -cell UDBSLT28_TAPPN_DN -cellInterval 23 -inRowOffset 18 -prefix WELLTAP
+[05/09 08:11:51    287s] OPERPROF: Starting DPlace-Init at level 1, MEM:1231.7M, EPOCH TIME: 1715256711.602211
+[05/09 08:11:51    287s] z: 2, totalTracks: 1
+[05/09 08:11:51    287s] z: 4, totalTracks: 1
+[05/09 08:11:51    287s] z: 6, totalTracks: 1
+[05/09 08:11:51    287s] z: 8, totalTracks: 1
+[05/09 08:11:51    287s] #spOpts: N=32 dpt mergeVia=T sncAbut pinDensity cut2cut hrOri=1 hrSnap=1 
+[05/09 08:11:51    287s] OPERPROF:   Starting CceInit at level 2, MEM:1231.7M, EPOCH TIME: 1715256711.603129
+[05/09 08:11:51    287s] Initializing Route Infrastructure for color support ...
+[05/09 08:11:51    287s] OPERPROF:     Starting RouteInfrastructureColorSupport at level 3, MEM:1231.7M, EPOCH TIME: 1715256711.603243
+[05/09 08:11:51    287s] OPERPROF:     Finished RouteInfrastructureColorSupport at level 3, CPU:0.000, REAL:0.003, MEM:1231.7M, EPOCH TIME: 1715256711.605905
+[05/09 08:11:51    287s] Route Infrastructure Initialized for color support successfully.
+[05/09 08:11:51    287s] OPERPROF:   Finished CceInit at level 2, CPU:0.000, REAL:0.003, MEM:1231.7M, EPOCH TIME: 1715256711.606022
+[05/09 08:11:51    287s] All LLGs are deleted
+[05/09 08:11:51    287s] OPERPROF:   Starting spSiteCleanup(true) at level 2, MEM:1231.7M, EPOCH TIME: 1715256711.613868
+[05/09 08:11:51    287s] OPERPROF:   Finished spSiteCleanup(true) at level 2, CPU:0.000, REAL:0.001, MEM:1231.7M, EPOCH TIME: 1715256711.614490
+[05/09 08:11:51    287s] OPERPROF:   Starting spInitSiteArr at level 2, MEM:1231.7M, EPOCH TIME: 1715256711.618042
+[05/09 08:11:51    287s] OPERPROF:     Starting spiInitFpSiteArr at level 3, MEM:1231.7M, EPOCH TIME: 1715256711.618421
+[05/09 08:11:51    287s] Core basic site is GF22_DST
+[05/09 08:11:51    287s] OPERPROF:       Starting spiCheckSiteIfFastDPInitAvailable at level 4, MEM:1231.7M, EPOCH TIME: 1715256711.849151
+[05/09 08:11:51    287s] OPERPROF:       Finished spiCheckSiteIfFastDPInitAvailable at level 4, CPU:0.000, REAL:0.000, MEM:1231.7M, EPOCH TIME: 1715256711.849601
+[05/09 08:11:51    287s] *QA:Row misaligned in y - CORE_ROW_0(GF22_DST) 4988 4960 w.r.t. CORE_ROW_51(GF22_DST) 4988 3775 (step 540)
+[05/09 08:11:51    287s] **WARN: (IMPSP-368):	Found 1 topVcoDigital mis-aligned rows. Use 'checkFPlan' to report their locations. Some rows listed in logv.
+[05/09 08:11:51    287s] Row CORE_ROW_1 (4.988 5.500) is misaligned. Expected 2 at 6.145. (space 0.645)
+[05/09 08:11:51    287s] Row CORE_ROW_2 (4.988 6.040) is misaligned. Expected 3 at 6.685. (space 0.645)
+[05/09 08:11:51    287s] Row CORE_ROW_3 (4.988 6.580) is misaligned. Expected 4 at 7.225. (space 0.645)
+[05/09 08:11:51    287s] Row CORE_ROW_4 (4.988 7.120) is misaligned. Expected 5 at 7.765. (space 0.645)
+[05/09 08:11:51    287s] Row CORE_ROW_5 (4.988 7.660) is misaligned. Expected 6 at 8.305. (space 0.645)
+[05/09 08:11:51    287s] Row CORE_ROW_6 (4.988 8.200) is misaligned. Expected 7 at 8.845. (space 0.645)
+[05/09 08:11:51    287s] Row CORE_ROW_7 (4.988 8.740) is misaligned. Expected 8 at 9.385. (space 0.645)
+[05/09 08:11:51    287s] Row CORE_ROW_8 (4.988 9.280) is misaligned. Expected 9 at 9.925. (space 0.645)
+[05/09 08:11:51    287s] Row CORE_ROW_9 (4.988 9.820) is misaligned. Expected 10 at 10.465. (space 0.645)
+[05/09 08:11:51    287s] Row CORE_ROW_10 (4.988 10.360) is misaligned. Expected 11 at 11.005. (space 0.645)
+[05/09 08:11:51    287s] Row CORE_ROW_11 (4.988 10.900) is misaligned. Expected 12 at 11.545. (space 0.645)
+[05/09 08:11:51    287s] Row CORE_ROW_12 (4.988 11.440) is misaligned. Expected 13 at 12.085. (space 0.645)
+[05/09 08:11:51    287s] Row CORE_ROW_13 (4.988 11.980) is misaligned. Expected 14 at 12.625. (space 0.645)
+[05/09 08:11:51    287s] Row CORE_ROW_14 (4.988 12.520) is misaligned. Expected 15 at 13.165. (space 0.645)
+[05/09 08:11:51    287s] Row CORE_ROW_15 (4.988 13.060) is misaligned. Expected 16 at 13.705. (space 0.645)
+[05/09 08:11:51    287s] Row CORE_ROW_16 (4.988 13.600) is misaligned. Expected 17 at 14.245. (space 0.645)
+[05/09 08:11:51    287s] Row CORE_ROW_17 (4.988 14.140) is misaligned. Expected 18 at 14.785. (space 0.645)
+[05/09 08:11:51    287s] Row CORE_ROW_18 (4.988 14.680) is misaligned. Expected 19 at 15.325. (space 0.645)
+[05/09 08:11:51    287s] Row CORE_ROW_19 (4.988 15.220) is misaligned. Expected 20 at 15.865. (space 0.645)
+[05/09 08:11:51    287s] Row CORE_ROW_20 (4.988 15.760) is misaligned. Expected 21 at 16.405. (space 0.645)
+[05/09 08:11:51    287s] Row CORE_ROW_21 (4.988 16.300) is misaligned. Expected 22 at 16.945. (space 0.645)
+[05/09 08:11:51    287s] Row CORE_ROW_22 (4.988 16.840) is misaligned. Expected 23 at 17.485. (space 0.645)
+[05/09 08:11:51    287s] Row CORE_ROW_23 (4.988 17.380) is misaligned. Expected 24 at 18.025. (space 0.645)
+[05/09 08:11:51    287s] Row CORE_ROW_24 (4.988 17.920) is misaligned. Expected 25 at 18.565. (space 0.645)
+[05/09 08:11:51    287s] Row CORE_ROW_25 (4.988 18.460) is misaligned. Expected 26 at 19.105. (space 0.645)
+[05/09 08:11:51    287s] Row CORE_ROW_26 (4.988 19.000) is misaligned. Expected 27 at 19.645. (space 0.645)
+[05/09 08:11:51    287s] Row CORE_ROW_27 (4.988 19.540) is misaligned. Expected 28 at 20.185. (space 0.645)
+[05/09 08:11:51    287s] Row CORE_ROW_28 (4.988 20.080) is misaligned. Expected 29 at 20.725. (space 0.645)
+[05/09 08:11:51    287s] Row CORE_ROW_29 (4.988 20.620) is misaligned. Expected 30 at 21.265. (space 0.645)
+[05/09 08:11:51    287s] Row CORE_ROW_30 (4.988 21.160) is misaligned. Expected 31 at 21.805. (space 0.645)
+[05/09 08:11:51    287s] Row CORE_ROW_31 (4.988 21.700) is misaligned. Expected 32 at 22.345. (space 0.645)
+[05/09 08:11:51    287s] Row CORE_ROW_32 (4.988 22.240) is misaligned. Expected 33 at 22.885. (space 0.645)
+[05/09 08:11:51    287s] Row CORE_ROW_33 (4.988 22.780) is misaligned. Expected 34 at 23.425. (space 0.645)
+[05/09 08:11:51    287s] Row CORE_ROW_34 (4.988 23.320) is misaligned. Expected 35 at 23.965. (space 0.645)
+[05/09 08:11:51    287s] Row CORE_ROW_35 (4.988 23.860) is misaligned. Expected 36 at 24.505. (space 0.645)
+[05/09 08:11:51    287s] Row CORE_ROW_36 (4.988 24.400) is misaligned. Expected 37 at 25.045. (space 0.645)
+[05/09 08:11:51    287s] Row CORE_ROW_37 (4.988 24.940) is misaligned. Expected 38 at 25.585. (space 0.645)
+[05/09 08:11:51    287s] Row CORE_ROW_38 (4.988 25.480) is misaligned. Expected 39 at 26.125. (space 0.645)
+[05/09 08:11:51    287s] Row CORE_ROW_39 (4.988 26.020) is misaligned. Expected 40 at 26.665. (space 0.645)
+[05/09 08:11:51    287s] Row CORE_ROW_40 (4.988 26.560) is misaligned. Expected 41 at 27.205. (space 0.645)
+[05/09 08:11:51    287s] Row CORE_ROW_41 (4.988 27.100) is misaligned. Expected 42 at 27.745. (space 0.645)
+[05/09 08:11:51    287s] Row CORE_ROW_42 (4.988 27.640) is misaligned. Expected 43 at 28.285. (space 0.645)
+[05/09 08:11:51    287s] Row CORE_ROW_43 (4.988 28.180) is misaligned. Expected 44 at 28.825. (space 0.645)
+[05/09 08:11:51    287s] **DIAG[/icd/cm_t1nb_002/INNOVUS211/Rel/21.12/main/lnx86_64_opt/21.12-s106_1/fe/src/sp/spSite.c:3393:spiBuildFindColRowEnv]: Row(@28720) while 45 entry in siteArr topVcoDigital is 28180.
+[05/09 08:11:51    287s] For topVcoDigital, found 43 misaligned rows.
+[05/09 08:11:51    287s] SiteArray: non-trimmed site array dimensions = 45 x 775
+[05/09 08:11:51    287s] SiteArray: use 184,320 bytes
+[05/09 08:11:51    287s] SiteArray: current memory after site array memory allocation 1231.5M
+[05/09 08:11:51    287s] SiteArray: FP blocked sites are writable
+[05/09 08:11:51    287s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[05/09 08:11:51    287s] OPERPROF:       Starting RoutingBlockageFromWireViaStBox at level 4, MEM:1231.5M, EPOCH TIME: 1715256711.852589
+[05/09 08:11:51    287s] OPERPROF:       Finished RoutingBlockageFromWireViaStBox at level 4, CPU:0.000, REAL:0.000, MEM:1231.5M, EPOCH TIME: 1715256711.852700
+[05/09 08:11:51    287s] OPERPROF:     Finished spiInitFpSiteArr at level 3, CPU:0.230, REAL:0.236, MEM:1231.5M, EPOCH TIME: 1715256711.854407
+[05/09 08:11:51    287s] 
+[05/09 08:11:51    287s]  Skipping Pre_CCE_Colorizing (1362+0)!
+[05/09 08:11:51    287s] OPERPROF:   Finished spInitSiteArr at level 2, CPU:0.240, REAL:0.242, MEM:1231.5M, EPOCH TIME: 1715256711.860403
+[05/09 08:11:51    287s] OPERPROF:   Starting PlacementInitSBTree at level 2, MEM:1231.5M, EPOCH TIME: 1715256711.860514
+[05/09 08:11:51    287s] OPERPROF:   Finished PlacementInitSBTree at level 2, CPU:0.000, REAL:0.000, MEM:1231.5M, EPOCH TIME: 1715256711.860628
+[05/09 08:11:51    287s] [CPU] DPlace-Init (cpu=0:00:00.3, real=0:00:00.0, mem=1231.5MB).
+[05/09 08:11:51    287s] OPERPROF: Finished DPlace-Init at level 1, CPU:0.260, REAL:0.259, MEM:1231.5M, EPOCH TIME: 1715256711.861194
+[05/09 08:11:51    287s] **WARN: (IMPSP-5134):	Setting cellInterval to 22.968 (microns) as a multiple of cell UDBSLT28_TAPPN_DN's techSite 'GF22_DST' width of 0.116 microns
+[05/09 08:11:51    287s] Type 'man IMPSP-5134' for more detail.
+[05/09 08:11:51    287s] **WARN: (IMPSP-5134):	Setting inRowOffset to 17.980 (microns) as a multiple of cell UDBSLT28_TAPPN_DN's techSite 'GF22_DST' width of 0.116 microns
+[05/09 08:11:51    287s] Type 'man IMPSP-5134' for more detail.
+[05/09 08:11:51    287s] For 172 new insts, *** Applied 0 GNC rules (cpu = 0:00:00.0)
+[05/09 08:11:51    287s] OPERPROF: Starting spDPlaceCleanup(auto) at level 1, MEM:1231.5M, EPOCH TIME: 1715256711.874308
+[05/09 08:11:51    287s] All LLGs are deleted
+[05/09 08:11:51    287s] OPERPROF:   Starting spSiteCleanup(true) at level 2, MEM:1231.5M, EPOCH TIME: 1715256711.876430
+[05/09 08:11:51    287s] OPERPROF:   Finished spSiteCleanup(true) at level 2, CPU:0.000, REAL:0.001, MEM:1231.5M, EPOCH TIME: 1715256711.877266
+[05/09 08:11:51    287s] OPERPROF: Finished spDPlaceCleanup(auto) at level 1, CPU:0.010, REAL:0.006, MEM:1231.5M, EPOCH TIME: 1715256711.880247
+[05/09 08:11:51    287s] Inserted 172 well-taps <UDBSLT28_TAPPN_DN> cells (prefix WELLTAP).
+[05/09 08:12:09    290s] <CMD> zoomBox 1.55400 37.42400 18.27900 27.72300
+[05/09 08:12:14    291s] <CMD> zoomBox 4.25900 34.60700 7.67700 30.97200
+[05/09 08:12:19    292s] <CMD> fit
+[05/09 08:12:23    292s] <CMD> zoomBox 23.72000 29.87100 15.61800 4.85200
+[05/09 08:12:24    293s] <CMD> fit
+[05/09 08:12:34    294s] <CMD> gui_select -rect {2.68100 63.56200 98.49400 -1.82900}
+[05/09 08:12:35    294s] <CMD> deleteSelectedFromFPlan
+[05/09 08:12:39    295s] <CMD> getIoFlowFlag
+[05/09 08:12:45    296s] <CMD> setIoFlowFlag 0
+[05/09 08:12:45    296s] <CMD> floorPlan -site GF22_DST -s 89.91 50.96 4.988 4.96 4.998 4.96
+[05/09 08:12:45    296s] **WARN: (IMPFP-4026):	Adjusting core to 'Right' to 4.988000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+[05/09 08:12:45    296s] 
+[05/09 08:12:45    296s] Honor LEF defined pitches for advanced node
+[05/09 08:12:45    296s] Start create_tracks
+[05/09 08:12:45    296s] <CMD> uiSetTool select
+[05/09 08:12:45    296s] <CMD> getIoFlowFlag
+[05/09 08:12:45    296s] <CMD> fit
+[05/09 08:20:05    347s] <CMD> gui_select -rect {102.73800 13.66800 96.76900 -5.94500}
+[05/09 08:20:05    347s] <CMD> deselectAll
+[05/09 08:20:27    350s] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[05/09 08:20:27    350s] <CMD> setPinAssignMode -pinEditInBatch true
+[05/09 08:20:27    350s] <CMD> editPin -pinWidth 0.1 -pinDepth 0.52 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 3 -spreadType center -spacing -0.45 -pin {{vcoTrim[0]} {vcoTrim[1]} {vcoTrim[2]} {vcoTrim[3]} {vcoTrim[4]} {vcoTrim[5]} {vcoTrim[6]} {vcoTrim[7]} {vcoTrim[8]} {vcoTrim[9]} {vcoTrim[10]} {vcoTrim[11]} {vcoTrim[12]} {vcoTrim[13]} {vcoTrim[14]} {vcoTrim[15]}}
+[05/09 08:20:27    350s] **ERROR: (IMPPTN-1668):	Specifying negative spacing value to spread the pins along the partition fence in anti-clockwise direction is obsolete. Use [-spreadDirection counterclockwise] option to specify the spreading direction.
+<CMD> setPinAssignMode -pinEditInBatch false
+[05/09 08:20:39    352s] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[05/09 08:20:39    352s] <CMD> setPinAssignMode -pinEditInBatch true
+[05/09 08:20:39    352s] <CMD> editPin -pinWidth 0.1 -pinDepth 0.52 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 3 -spreadType center -spacing 0.45 -pin {clk mosi rst sclk ss}
+[05/09 08:20:39    352s] Successfully spread [5] pins.
+[05/09 08:20:39    352s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1243.1M).
+[05/09 08:20:39    352s] <CMD> setPinAssignMode -pinEditInBatch false
+[05/09 08:20:54    354s] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[05/09 08:20:54    354s] <CMD> setPinAssignMode -pinEditInBatch true
+[05/09 08:20:54    354s] <CMD> editPin -pinWidth 0.1 -pinDepth 0.52 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -edge 2 -layer 3 -spreadType center -spacing -0.45 -pin {{vcoTrim[0]} {vcoTrim[1]} {vcoTrim[2]} {vcoTrim[3]} {vcoTrim[4]} {vcoTrim[5]} {vcoTrim[6]} {vcoTrim[7]} {vcoTrim[8]} {vcoTrim[9]} {vcoTrim[10]} {vcoTrim[11]} {vcoTrim[12]} {vcoTrim[13]} {vcoTrim[14]} {vcoTrim[15]}}
+[05/09 08:20:54    354s] **ERROR: (IMPPTN-1668):	Specifying negative spacing value to spread the pins along the partition fence in anti-clockwise direction is obsolete. Use [-spreadDirection counterclockwise] option to specify the spreading direction.
+<CMD> setPinAssignMode -pinEditInBatch false
+[05/09 08:20:56    354s] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[05/09 08:20:56    354s] <CMD> setPinAssignMode -pinEditInBatch true
+[05/09 08:20:56    354s] <CMD> editPin -pinWidth 0.1 -pinDepth 0.52 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -edge 2 -layer 3 -spreadType center -spacing -0.45 -pin {{vcoTrim[0]} {vcoTrim[1]} {vcoTrim[2]} {vcoTrim[3]} {vcoTrim[4]} {vcoTrim[5]} {vcoTrim[6]} {vcoTrim[7]} {vcoTrim[8]} {vcoTrim[9]} {vcoTrim[10]} {vcoTrim[11]} {vcoTrim[12]} {vcoTrim[13]} {vcoTrim[14]} {vcoTrim[15]}}
+[05/09 08:20:56    354s] **ERROR: (IMPPTN-1668):	Specifying negative spacing value to spread the pins along the partition fence in anti-clockwise direction is obsolete. Use [-spreadDirection counterclockwise] option to specify the spreading direction.
+<CMD> setPinAssignMode -pinEditInBatch false
+[05/09 08:21:11    356s] <CMD> zoomBox 10.95300 -13.03700 104.33700 66.45400
+[05/09 08:21:11    356s] <CMD> zoomBox 24.50700 -10.30100 103.88400 57.26700
+[05/09 08:21:11    356s] <CMD> zoomBox 36.02800 -7.97500 103.49900 49.45800
+[05/09 08:21:12    357s] <CMD> zoomBox 66.90100 -1.71800 102.12300 28.26400
+[05/09 08:21:12    357s] <CMD> zoomBox 71.95800 -0.69300 101.89700 24.79200
+[05/09 08:21:12    357s] <CMD> zoomBox 79.71800 1.02700 101.34900 19.44000
+[05/09 08:21:16    357s] <CMD> gui_select -rect {99.64200 6.65200 98.10300 12.92000}
+[05/09 08:21:16    357s] <CMD> deselectAll
+[05/09 08:21:17    358s] <CMD> gui_select -rect {99.58600 6.70800 97.59900 11.12900}
+[05/09 08:21:18    358s] <CMD> zoomBox 76.28600 -0.14300 101.73400 21.51900
+[05/09 08:21:19    358s] <CMD> zoomBox 72.05100 -1.49700 101.99000 23.98800
+[05/09 08:21:19    358s] <CMD> zoomBox 67.06100 -3.07000 102.28400 26.91300
+[05/09 08:21:21    359s] <CMD> gui_select -rect {101.14500 8.09400 98.13800 -1.24700}
+[05/09 08:21:22    359s] <CMD> deselectAll
+[05/09 08:44:49    523s] **ERROR: (IMPSYT-16250):	Choose the pin list first.
+[05/09 08:44:51    524s] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[05/09 08:44:51    524s] <CMD> setPinAssignMode -pinEditInBatch true
+[05/09 08:44:51    524s] <CMD> editPin -pinWidth 0.1 -pinDepth 0.52 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -edge 2 -layer 3 -spreadType center -spacing 0.4 -pin {}
+[05/09 08:44:51    524s] **ERROR: (IMPPTN-963):	Either specified pin name for the selected partition does not exist or has status 'cover'. Specify the pin or the list of pins correctly and run the command again.
+<CMD> setPinAssignMode -pinEditInBatch false
+[05/09 08:44:54    524s] <CMD> gui_select -rect {101.60100 8.82300 96.86200 -2.97900}
+[05/09 08:45:08    526s] <CMD> gui_select -rect {100.23400 5.26900 100.09700 11.96700}
+[05/09 08:45:08    526s] <CMD> deselectAll
+[05/09 08:45:09    526s] <CMD> gui_select -rect {101.64600 8.86900 96.40600 -3.38900}
+[05/09 08:45:14    527s] <CMD> uiSetTool moveWire
+[05/09 08:45:15    527s] <CMD> deselectAll
+[05/09 08:45:48    533s] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[05/09 08:45:48    533s] <CMD> setPinAssignMode -pinEditInBatch true
+[05/09 08:45:48    533s] <CMD> editPin -pinWidth 0.1 -pinDepth 0.52 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -edge 2 -layer 3 -spreadType center -spacing 0.4 -pin {{vcoTrim[0]} {vcoTrim[1]} {vcoTrim[2]} {vcoTrim[3]} {vcoTrim[4]} {vcoTrim[5]} {vcoTrim[6]} {vcoTrim[7]} {vcoTrim[8]} {vcoTrim[9]} {vcoTrim[10]} {vcoTrim[11]} {vcoTrim[12]} {vcoTrim[13]} {vcoTrim[14]} {vcoTrim[15]}}
+[05/09 08:45:48    533s] ### import design signature (4): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1
+[05/09 08:45:48    533s] Successfully spread [16] pins.
+[05/09 08:45:48    533s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1242.1M).
+[05/09 08:45:48    533s] <CMD> setPinAssignMode -pinEditInBatch false
+[05/09 08:45:49    533s] <CMD> zoomBox 41.77500 -15.96400 109.25300 41.47500
+[05/09 08:45:50    533s] <CMD> zoomBox 8.53500 -33.13300 118.41400 60.39900
+[05/09 08:45:51    533s] <CMD> zoomBox 104.76800 35.52300 97.09200 24.86200
+[05/09 08:45:53    534s] <CMD> zoomBox 100.77600 34.14600 99.18800 32.91400
+[05/09 08:45:54    534s] <CMD> zoomBox 98.32800 31.77500 101.91100 34.82500
+[05/09 08:45:55    534s] <CMD> zoomBox 96.95000 30.04000 103.81700 35.88500
+[05/09 08:45:56    534s] <CMD> fit
+[05/09 08:46:14    536s] <CMD> setEndCapMode -reset
+[05/09 08:46:14    536s] -bottomEdge ""
+[05/09 08:46:14    536s] -leftBottomCorner ""
+[05/09 08:46:14    536s] -leftEdge ""
+[05/09 08:46:14    536s] -leftTopCorner ""
+[05/09 08:46:14    536s] -rightBottomCorner ""
+[05/09 08:46:14    536s] -rightEdge ""
+[05/09 08:46:14    536s] -rightTopCorner ""
+[05/09 08:46:14    536s] -topEdge ""
+[05/09 08:46:14    536s] <CMD> setEndCapMode -rightEdge UDBSLT28_CAPR9_1 -leftEdge UDBSLT28_CAPL9_1 -topEdge UDBSLT28_CAPT_1 -bottomEdge UDBSLT28_CAPB_1 -rightTopCorner UDBSLT28_CAPTOUCR9_1 -rightBottomCorner UDBSLT28_CAPBOUCR9_1 -leftTopCorner UDBSLT28_CAPTOUCL9_1 -leftBottomCorner UDBSLT28_CAPBOUCL9_1
+[05/09 08:46:14    536s] <CMD> addEndCap -prefix ENDCAP
+[05/09 08:46:14    536s] OPERPROF: Starting DPlace-Init at level 1, MEM:1246.0M, EPOCH TIME: 1715258774.032165
+[05/09 08:46:14    536s] z: 2, totalTracks: 1
+[05/09 08:46:14    536s] z: 4, totalTracks: 1
+[05/09 08:46:14    536s] z: 6, totalTracks: 1
+[05/09 08:46:14    536s] z: 8, totalTracks: 1
+[05/09 08:46:14    536s] #spOpts: N=32 dpt mergeVia=T sncAbut pinDensity cut2cut hrOri=1 hrSnap=1 
+[05/09 08:46:14    536s] OPERPROF:   Starting CceInit at level 2, MEM:1246.0M, EPOCH TIME: 1715258774.034894
+[05/09 08:46:14    536s] Initializing Route Infrastructure for color support ...
+[05/09 08:46:14    536s] OPERPROF:     Starting RouteInfrastructureColorSupport at level 3, MEM:1246.0M, EPOCH TIME: 1715258774.035081
+[05/09 08:46:14    537s] ### import design signature (5): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1
+[05/09 08:46:14    537s] OPERPROF:     Finished RouteInfrastructureColorSupport at level 3, CPU:0.090, REAL:0.090, MEM:1244.0M, EPOCH TIME: 1715258774.125580
+[05/09 08:46:14    537s] Route Infrastructure Initialized for color support successfully.
+[05/09 08:46:14    537s] OPERPROF:   Finished CceInit at level 2, CPU:0.090, REAL:0.091, MEM:1244.0M, EPOCH TIME: 1715258774.125746
+[05/09 08:46:14    537s] All LLGs are deleted
+[05/09 08:46:14    537s] OPERPROF:   Starting spSiteCleanup(true) at level 2, MEM:1244.0M, EPOCH TIME: 1715258774.139228
+[05/09 08:46:14    537s] OPERPROF:   Finished spSiteCleanup(true) at level 2, CPU:0.000, REAL:0.001, MEM:1244.0M, EPOCH TIME: 1715258774.139931
+[05/09 08:46:14    537s] OPERPROF:   Starting spInitSiteArr at level 2, MEM:1244.0M, EPOCH TIME: 1715258774.144137
+[05/09 08:46:14    537s] OPERPROF:     Starting spiInitFpSiteArr at level 3, MEM:1244.0M, EPOCH TIME: 1715258774.144859
+[05/09 08:46:14    537s] Core basic site is GF22_DST
+[05/09 08:46:14    537s] OPERPROF:       Starting spiCheckSiteIfFastDPInitAvailable at level 4, MEM:1244.0M, EPOCH TIME: 1715258774.388267
+[05/09 08:46:14    537s] OPERPROF:       Finished spiCheckSiteIfFastDPInitAvailable at level 4, CPU:0.000, REAL:0.000, MEM:1244.0M, EPOCH TIME: 1715258774.388697
+[05/09 08:46:14    537s] for llg topVcoDigital, rowPatternHgt is 1185, rowPatternNrRow is 1
+[05/09 08:46:14    537s] SiteArray: non-trimmed site array dimensions = 43 x 775
+[05/09 08:46:14    537s] SiteArray: use 176,128 bytes
+[05/09 08:46:14    537s] SiteArray: current memory after site array memory allocation 1244.0M
+[05/09 08:46:14    537s] SiteArray: FP blocked sites are writable
+[05/09 08:46:14    537s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[05/09 08:46:14    537s] OPERPROF:       Starting RoutingBlockageFromWireViaStBox at level 4, MEM:1244.0M, EPOCH TIME: 1715258774.390454
+[05/09 08:46:14    537s] OPERPROF:       Finished RoutingBlockageFromWireViaStBox at level 4, CPU:0.000, REAL:0.000, MEM:1244.0M, EPOCH TIME: 1715258774.390564
+[05/09 08:46:14    537s] OPERPROF:     Finished spiInitFpSiteArr at level 3, CPU:0.240, REAL:0.247, MEM:1244.0M, EPOCH TIME: 1715258774.392294
+[05/09 08:46:14    537s] 
+[05/09 08:46:14    537s]  Skipping Pre_CCE_Colorizing (1362+0)!
+[05/09 08:46:14    537s] OPERPROF:   Finished spInitSiteArr at level 2, CPU:0.250, REAL:0.249, MEM:1244.0M, EPOCH TIME: 1715258774.393636
+[05/09 08:46:14    537s] OPERPROF:   Starting PlacementInitSBTree at level 2, MEM:1244.0M, EPOCH TIME: 1715258774.393738
+[05/09 08:46:14    537s] OPERPROF:   Finished PlacementInitSBTree at level 2, CPU:0.000, REAL:0.000, MEM:1244.0M, EPOCH TIME: 1715258774.393863
+[05/09 08:46:14    537s] [CPU] DPlace-Init (cpu=0:00:00.4, real=0:00:00.0, mem=1244.0MB).
+[05/09 08:46:14    537s] OPERPROF: Finished DPlace-Init at level 1, CPU:0.370, REAL:0.362, MEM:1244.0M, EPOCH TIME: 1715258774.394579
+[05/09 08:46:14    537s] OPERPROF: Starting ECCreateSitePattern at level 1, MEM:1244.0M, EPOCH TIME: 1715258774.395940
+[05/09 08:46:14    537s] OPERPROF: Finished ECCreateSitePattern at level 1, CPU:0.000, REAL:0.000, MEM:1244.0M, EPOCH TIME: 1715258774.396221
+[05/09 08:46:14    537s] *INFO*: Added 1600 triple-well end caps with prefix 'ENDCAP'.
+[05/09 08:46:14    537s] OPERPROF: Starting DB-Batch-Applying-GNC-RULES at level 1, MEM:1244.0M, EPOCH TIME: 1715258774.455556
+[05/09 08:46:14    537s] For 1600 new insts, *** Applied 0 GNC rules (cpu = 0:00:00.0)
+[05/09 08:46:14    537s] OPERPROF: Finished DB-Batch-Applying-GNC-RULES at level 1, CPU:0.000, REAL:0.001, MEM:1244.0M, EPOCH TIME: 1715258774.456233
+[05/09 08:46:14    537s] OPERPROF: Starting spDPlaceCleanup(auto) at level 1, MEM:1244.0M, EPOCH TIME: 1715258774.456351
+[05/09 08:46:14    537s] All LLGs are deleted
+[05/09 08:46:14    537s] OPERPROF:   Starting spSiteCleanup(true) at level 2, MEM:1244.0M, EPOCH TIME: 1715258774.458392
+[05/09 08:46:14    537s] OPERPROF:   Finished spSiteCleanup(true) at level 2, CPU:0.000, REAL:0.001, MEM:1244.0M, EPOCH TIME: 1715258774.459288
+[05/09 08:46:14    537s] OPERPROF: Finished spDPlaceCleanup(auto) at level 1, CPU:0.010, REAL:0.007, MEM:1244.0M, EPOCH TIME: 1715258774.463031
+[05/09 08:46:14    537s] <CMD> addWellTap -cell UDBSLT28_TAPPN_DN -cellInterval 23 -inRowOffset 18 -prefix WELLTAP
+[05/09 08:46:14    537s] OPERPROF: Starting DPlace-Init at level 1, MEM:1244.0M, EPOCH TIME: 1715258774.463854
+[05/09 08:46:14    537s] z: 2, totalTracks: 1
+[05/09 08:46:14    537s] z: 4, totalTracks: 1
+[05/09 08:46:14    537s] z: 6, totalTracks: 1
+[05/09 08:46:14    537s] z: 8, totalTracks: 1
+[05/09 08:46:14    537s] #spOpts: N=32 dpt mergeVia=T sncAbut pinDensity cut2cut hrOri=1 hrSnap=1 
+[05/09 08:46:14    537s] OPERPROF:   Starting CceInit at level 2, MEM:1244.0M, EPOCH TIME: 1715258774.465511
+[05/09 08:46:14    537s] Initializing Route Infrastructure for color support ...
+[05/09 08:46:14    537s] OPERPROF:     Starting RouteInfrastructureColorSupport at level 3, MEM:1244.0M, EPOCH TIME: 1715258774.465627
+[05/09 08:46:14    537s] OPERPROF:     Finished RouteInfrastructureColorSupport at level 3, CPU:0.000, REAL:0.003, MEM:1244.0M, EPOCH TIME: 1715258774.468260
+[05/09 08:46:14    537s] Route Infrastructure Initialized for color support successfully.
+[05/09 08:46:14    537s] OPERPROF:   Finished CceInit at level 2, CPU:0.000, REAL:0.003, MEM:1244.0M, EPOCH TIME: 1715258774.468370
+[05/09 08:46:14    537s] All LLGs are deleted
+[05/09 08:46:14    537s] OPERPROF:   Starting spSiteCleanup(true) at level 2, MEM:1244.0M, EPOCH TIME: 1715258774.476953
+[05/09 08:46:14    537s] OPERPROF:   Finished spSiteCleanup(true) at level 2, CPU:0.000, REAL:0.001, MEM:1244.0M, EPOCH TIME: 1715258774.477626
+[05/09 08:46:14    537s] OPERPROF:   Starting spInitSiteArr at level 2, MEM:1244.0M, EPOCH TIME: 1715258774.481571
+[05/09 08:46:14    537s] OPERPROF:     Starting spiInitFpSiteArr at level 3, MEM:1244.0M, EPOCH TIME: 1715258774.481943
+[05/09 08:46:14    537s] Core basic site is GF22_DST
+[05/09 08:46:14    537s] OPERPROF:       Starting spiCheckSiteIfFastDPInitAvailable at level 4, MEM:1244.0M, EPOCH TIME: 1715258774.714323
+[05/09 08:46:14    537s] OPERPROF:       Finished spiCheckSiteIfFastDPInitAvailable at level 4, CPU:0.000, REAL:0.000, MEM:1244.0M, EPOCH TIME: 1715258774.714820
+[05/09 08:46:14    537s] for llg topVcoDigital, rowPatternHgt is 1185, rowPatternNrRow is 1
+[05/09 08:46:14    537s] Fast DP-INIT is on for default
+[05/09 08:46:14    537s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[05/09 08:46:14    537s] OPERPROF:     Finished spiInitFpSiteArr at level 3, CPU:0.240, REAL:0.236, MEM:1244.0M, EPOCH TIME: 1715258774.717983
+[05/09 08:46:14    537s] 
+[05/09 08:46:14    537s]  Skipping Pre_CCE_Colorizing (1362+0)!
+[05/09 08:46:14    537s] OPERPROF:   Finished spInitSiteArr at level 2, CPU:0.240, REAL:0.241, MEM:1244.0M, EPOCH TIME: 1715258774.722435
+[05/09 08:46:14    537s] OPERPROF:   Starting PlacementInitSBTree at level 2, MEM:1244.0M, EPOCH TIME: 1715258774.722544
+[05/09 08:46:14    537s] OPERPROF:   Finished PlacementInitSBTree at level 2, CPU:0.000, REAL:0.000, MEM:1244.0M, EPOCH TIME: 1715258774.722661
+[05/09 08:46:14    537s] [CPU] DPlace-Init (cpu=0:00:00.3, real=0:00:00.0, mem=1244.0MB).
+[05/09 08:46:14    537s] OPERPROF: Finished DPlace-Init at level 1, CPU:0.260, REAL:0.260, MEM:1244.0M, EPOCH TIME: 1715258774.723495
+[05/09 08:46:14    537s] **WARN: (IMPSP-5134):	Setting cellInterval to 22.968 (microns) as a multiple of cell UDBSLT28_TAPPN_DN's techSite 'GF22_DST' width of 0.116 microns
+[05/09 08:46:14    537s] Type 'man IMPSP-5134' for more detail.
+[05/09 08:46:14    537s] **WARN: (IMPSP-5134):	Setting inRowOffset to 17.980 (microns) as a multiple of cell UDBSLT28_TAPPN_DN's techSite 'GF22_DST' width of 0.116 microns
+[05/09 08:46:14    537s] Type 'man IMPSP-5134' for more detail.
+[05/09 08:46:14    537s] For 164 new insts, *** Applied 0 GNC rules (cpu = 0:00:00.0)
+[05/09 08:46:14    537s] OPERPROF: Starting spDPlaceCleanup(auto) at level 1, MEM:1244.0M, EPOCH TIME: 1715258774.737688
+[05/09 08:46:14    537s] All LLGs are deleted
+[05/09 08:46:14    537s] OPERPROF:   Starting spSiteCleanup(true) at level 2, MEM:1244.0M, EPOCH TIME: 1715258774.741157
+[05/09 08:46:14    537s] OPERPROF:   Finished spSiteCleanup(true) at level 2, CPU:0.000, REAL:0.001, MEM:1244.0M, EPOCH TIME: 1715258774.742207
+[05/09 08:46:14    537s] OPERPROF: Finished spDPlaceCleanup(auto) at level 1, CPU:0.010, REAL:0.008, MEM:1244.0M, EPOCH TIME: 1715258774.745378
+[05/09 08:46:14    537s] Inserted 164 well-taps <UDBSLT28_TAPPN_DN> cells (prefix WELLTAP).
+[05/09 08:46:17    538s] <CMD> zoomBox 4.51100 1.89400 83.88800 69.46200
+[05/09 08:46:17    538s] <CMD> zoomBox 8.22300 9.10200 75.69400 66.53500
+[05/09 08:46:18    538s] <CMD> zoomBox 16.00800 29.54400 51.22900 59.52500
+[05/09 08:46:18    538s] <CMD> zoomBox 17.27900 32.89300 47.21700 58.37700
+[05/09 08:46:19    538s] <CMD> zoomBox 18.33600 35.75700 43.78400 57.41900
+[05/09 08:46:21    538s] <CMD> zoomBox 20.85400 43.78200 34.13800 55.09000
+[05/09 08:46:21    538s] <CMD> zoomBox 21.26600 45.09700 32.55800 54.70900
+[05/09 08:46:22    538s] <CMD> zoomBox 22.38200 48.65700 28.27800 53.67600
+[05/09 08:46:23    539s] <CMD> zoomBox 21.26500 45.09500 32.55900 54.70900
+[05/09 08:46:26    539s] <CMD> fit
+[05/09 08:46:28    539s] <CMD> zoomBox 2.53900 11.67900 10.78200 0.16600
+[05/09 08:46:32    540s] <CMD> zoomBox 4.46500 7.51500 9.10100 3.98000
+[05/09 08:46:35    541s] <CMD> selectInst ENDCAP_3976
+[05/09 08:46:41    542s] <CMD> zoomBox 4.21200 3.27600 9.66600 7.91900
+[05/09 08:46:42    542s] <CMD> zoomBox 3.56400 2.00200 11.11300 8.42800
+[05/09 08:46:42    542s] <CMD> zoomBox 3.15200 1.19200 12.03300 8.75200
+[05/09 08:46:42    542s] <CMD> zoomBox 2.66700 0.23900 13.11600 9.13300
+[05/09 08:46:42    542s] <CMD> zoomBox 1.42600 -2.20200 15.88900 10.10900
+[05/09 08:46:44    542s] <CMD> zoomBox -2.43000 -10.30600 25.27700 13.27900
+[05/09 08:46:47    543s] 
+--------------------------------------------------------------------------------
+Exiting Innovus on Thu May  9 08:46:47 2024
+  Total CPU time:     0:09:05
+  Total real time:    1:08:36
+  Peak memory (main): 1113.91MB
+
+[05/09 08:46:47    543s] 
+[05/09 08:46:47    543s] *** Memory Usage v#1 (Current mem = 1245.910M, initial mem = 295.352M) ***
+[05/09 08:46:47    543s] 
+[05/09 08:46:47    543s] *** Summary of all messages that are not suppressed in this session:
+[05/09 08:46:47    543s] Severity  ID               Count  Summary                                  
+[05/09 08:46:47    543s] WARNING   IMPDF-248           21  The direction of pin '%s' is inconsisten...
+[05/09 08:46:47    543s] WARNING   IMPLF-200            2  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[05/09 08:46:47    543s] WARNING   IMPLF-201         1477  Pin '%s' in macro '%s' has no ANTENNADIF...
+[05/09 08:46:47    543s] WARNING   IMPFP-325            1  Floorplan of the design is resized. All ...
+[05/09 08:46:47    543s] WARNING   IMPFP-4026           5  Adjusting core to '%s' to %f due to trac...
+[05/09 08:46:47    543s] ERROR     IMPPTN-1668          3  Specifying negative spacing value to spr...
+[05/09 08:46:47    543s] ERROR     IMPPTN-963           1  Either specified pin name for the select...
+[05/09 08:46:47    543s] WARNING   IMPSYT-7328          1  The design has been initialized in physi...
+[05/09 08:46:47    543s] ERROR     IMPSYT-16250         2  Choose the pin list first.               
+[05/09 08:46:47    543s] WARNING   IMPSP-5134           4  Setting %s to %0.3f (microns) as a multi...
+[05/09 08:46:47    543s] WARNING   IMPSP-368            1  Found %d %s mis-aligned rows. Use 'check...
+[05/09 08:46:47    543s] WARNING   IMPOAX-793           4  Problem in processing library definition...
+[05/09 08:46:47    543s] *** Message Summary: 1516 warning(s), 6 error(s)
+[05/09 08:46:47    543s] 
+[05/09 08:46:47    543s] --- Ending "Innovus" (totcpu=0:09:03, real=1:08:34, mem=1245.9M) ---

@@ -1,0 +1,21 @@
+#####################################################################
+#
+# Innovus input globals file
+# Created by Genus(TM) Synthesis Solution on 02/17/2025 14:45:15
+#
+#####################################################################
+set cwd /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/synthesis/cadence/pp_fir_u_2_work
+setUserDataValue fp_core_cntl size
+setUserDataValue fp_aspect_ratio 0.8701
+setUserDataValue fp_core_height 180.2000
+setUserDataValue fp_core_width 207.3700
+setUserDataValue fp_core_to_left 1.8200
+setUserDataValue fp_core_to_right 1.8200
+setUserDataValue fp_core_to_top 1.7000
+setUserDataValue fp_core_to_bottom 1.7000
+setUserDataValue extract_shrink_factor 0.9
+setUserDataValue init_assign_buffer 0
+
+
+
+

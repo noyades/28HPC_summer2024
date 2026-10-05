@@ -1,0 +1,6 @@
+# Tapeout Specific 
+#INCLUDE ../../../../cds.lib
+
+DEFINE my_sim_lib ./my_sim_lib
+
+

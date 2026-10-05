@@ -1,0 +1,186 @@
+[03/03 09:00:21      0s] 
+[03/03 09:00:21      0s] Cadence Innovus(TM) Implementation System.
+[03/03 09:00:21      0s] Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+[03/03 09:00:21      0s] 
+[03/03 09:00:21      0s] Version:	v23.10-p003_1, built Thu Feb 1 13:54:57 PST 2024
+[03/03 09:00:21      0s] Options:	-stylus 
+[03/03 09:00:21      0s] Date:		Mon Mar  3 09:00:21 2025
+[03/03 09:00:21      0s] Host:		tc075 (x86_64 w/Linux 5.14.0-362.8.1.el9_3.x86_64) (64cores*128cpus*AMD EPYC 7702 64-Core Processor 512KB)
+[03/03 09:00:21      0s] OS:		Rocky Linux 9.5 (Blue Onyx)
+[03/03 09:00:21      0s] 
+[03/03 09:00:21      0s] License:
+[03/03 09:00:21      0s] 		[09:00:21.231777] Configured Lic search path (23.02-s003): 27002@license.ece.vt.edu
+[03/03 09:00:21      0s] 
+[03/03 09:00:21      0s] 		invs	Innovus Implementation System	23.1	checkout succeeded
+[03/03 09:00:21      0s] 		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[03/03 09:00:29      1s] {{{ isCertus 0,  isCertusOrDistOptClient = 0, isInnovusCertusClient = 0}}}
+[03/03 09:00:40     12s] 
+[03/03 09:00:40     12s] 
+[03/03 09:00:47     14s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v23.10-p003_1 (64bit) 02/01/2024 13:54 (Linux 3.10.0-693.el7.x86_64)
+[03/03 09:00:54     16s] @(#)CDS: NanoRoute 23.10-p003_1 NR240109-1512/23_10-UB (database version 18.20.618) {superthreading v2.20}
+[03/03 09:00:54     16s] @(#)CDS: AAE 23.10-p002 (64bit) 02/01/2024 (Linux 3.10.0-693.el7.x86_64)
+[03/03 09:00:54     16s] @(#)CDS: CTE 23.10-p003_1 () Dec  5 2023 19:42:23 ( )
+[03/03 09:00:54     16s] @(#)CDS: SYNTECH 23.10-p002_1 () Nov 29 2023 02:17:21 ( )
+[03/03 09:00:54     16s] @(#)CDS: CPE v23.10-p004
+[03/03 09:00:54     16s] @(#)CDS: IQuantus/TQuantus 22.1.1-s215 (64bit) Mon Nov 20 10:05:08 PST 2023 (Linux 3.10.0-693.el7.x86_64)
+[03/03 09:00:54     16s] @(#)CDS: OA 22.61-p007 Wed Sep 27 19:40:10 2023
+[03/03 09:00:54     16s] @(#)CDS: SGN 23.10-d005 (03-Oct-2023) (64 bit executable, TkQt5.15.9)
+[03/03 09:00:54     16s] @(#)CDS: RCDB 11.15.0
+[03/03 09:00:54     16s] @(#)CDS: STYLUS 23.10-a001_1 (12/04/2023 04:39 PST)
+[03/03 09:00:54     16s] @(#)CDS: IntegrityPlanner-23.10-12651 (23.10) (2023-09-06 08:32:42+0800)
+[03/03 09:00:54     16s] @(#)CDS: SYNTHESIS_ENGINE 23.10-b027
+[03/03 09:00:54     16s] Create and set the environment variable TMPDIR to /localscratch/2955758/innovus_temp_2151899_tc075_jswalling_P6WO9x.
+
+[03/03 09:00:54     16s] Create and set the environment variable TMPDIR to /localscratch/2955758/innovus_temp_2151899_tc075_jswalling_P6WO9x.
+[03/03 09:00:54     16s] 
+[03/03 09:00:54     16s] The soft stacksize limit is either up to the hard limit or larger than 0.2% of RAM. No change is needed.
+[03/03 09:00:57     17s] [INFO] Loading Pegasus 23.20 fill procedures
+[03/03 09:00:59     18s] 
+[03/03 09:00:59     18s] **INFO:  MMMC transition support version v31-84 
+[03/03 09:00:59     18s] 
+[03/03 09:01:07     21s] @innovus 1> Suppress "**WARN ..." messages.
+[03/03 09:01:43     22s] read_db pp_fir_u_0_inn.enc
+[03/03 09:01:43     22s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[03/03 09:01:43     22s] #% Begin load design ... (date=03/03 09:01:43, mem=1786.7M)
+[03/03 09:01:44     24s] AAE_INFO: switching set_db delaycal_enable_si from false to true ...
+[03/03 09:01:44     24s] AAE_INFO: The setting is changed from false to true in set_db delaycal_enable_si
+[03/03 09:01:44     24s] Loading design 'pp_fir_u_0' saved by 'Innovus' '23.10-p003_1' on 'Wed Feb 19 14:10:51 2025'.
+[03/03 09:01:45     24s] **ERROR: (TCLCMD-995):	Can not open file '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/synthesis/cadence/pp_fir_u_0_work/pp_fir_u_0_inn.enc/libs/mmmc/worst/qrcTechFile' for RC corner
+[03/03 09:01:45     24s] 
+[03/03 09:01:45     24s]     while executing
+[03/03 09:01:45     24s] "create_rc_corner -name worst\
+[03/03 09:01:45     24s]    -pre_route_res 1\
+[03/03 09:01:45     24s]    -post_route_res {1 1 1}\
+[03/03 09:01:45     24s]    -pre_route_cap 1\
+[03/03 09:01:45     24s]    -post_route_cap {1 1 1}\
+[03/03 09:01:45     24s]    -post_route_cross_c..."
+[03/03 09:01:45     24s]     (file "/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/synthesis/cadence/pp_fir_u_0_work/pp_fir_u_0_inn.enc/viewDefinition.tcl" line 26)
+[03/03 09:01:45     24s]     invoked from within
+[03/03 09:01:45     24s] "::se_source_orig /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/synthesis/cadence/pp_fir_u_0_work/pp_fir_u_0_inn.enc/viewDefinitio..."
+[03/03 09:01:45     24s]     ("uplevel" body line 1)
+[03/03 09:01:45     24s]     invoked from within
+[03/03 09:01:45     24s] "uplevel [concat ::se_source_orig $args]"
+[03/03 09:01:45     24s]     invoked from within
+[03/03 09:01:45     24s] "if {$encrypted == 2} {
+[03/03 09:01:45     24s]       catch {set [uplevel [concat ::se::source_encrypted_compressed $args]]}
+[03/03 09:01:45     24s]     } else {
+[03/03 09:01:45     24s]       set st [uplevel [concat ::se_so..."
+[03/03 09:01:45     24s]     invoked from within
+[03/03 09:01:45     24s] "if {$largeFile == 1} {
+[03/03 09:01:45     24s]     if {$enableVerbose == 0 && [::SE::isEchoFile] == 1} {
+[03/03 09:01:45     24s]       $putCmd "Sourcing $file_name"
+[03/03 09:01:45     24s]     }
+[03/03 09:01:45     24s]     set st [uplevel [concat..."
+[03/03 09:01:45     24s]     (procedure "source" line 172)
+[03/03 09:01:45     24s]     invoked from within
+[03/03 09:01:45     24s] "source /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/synthesis/cadence/pp_fir_u_0_work/pp_fir_u_0_inn.enc/viewDefinition.tcl"
+[03/03 09:01:45     24s]     ("uplevel" body line 1)
+[03/03 09:01:45     24s]     invoked from within
+[03/03 09:01:45     24s] "uplevel #0 {source /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/synthesis/cadence/pp_fir_u_0_work/pp_fir_u_0_inn.enc/viewDefinit..."
+[03/03 09:01:45     24s] 
+[03/03 09:01:45     24s] 
+[03/03 09:01:45     24s] ERROR: 
+[03/03 09:01:45     24s] 
+[03/03 09:01:45     24s] 
+[03/03 09:01:45     24s]     while executing
+[03/03 09:01:45     24s] "error $catchMsg"
+[03/03 09:01:45     24s]     (procedure "restoreDesign" line 36)
+[03/03 09:01:45     24s] 
+[03/03 09:01:45     24s] 
+[03/03 09:01:45     24s] 
+[03/03 09:01:45     24s] *** Summary of all messages that are not suppressed in this session:
+[03/03 09:01:45     24s] Severity  ID               Count  Summary                                  
+[03/03 09:01:45     24s] WARNING   IMPDBTCL-321        15  The attribute '%s' still works but will ...
+[03/03 09:01:45     24s] ERROR     TCLCMD-995           1  Can not open file '%s' for %s            
+[03/03 09:01:45     24s] *** Message Summary: 15 warning(s), 1 error(s)
+[03/03 09:01:45     24s] 
+[03/03 09:01:45     24s] @innovus 2> **ERROR: (IMPSYT-6300):	Failed to execute command 'read_db'. For more details, refer to error message: 
+[03/03 09:01:54     24s] Un-suppress "**WARN ..." messages.
+
+[03/03 09:02:01     24s] @innovus 2> [03/03 09:02:29     25s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[03/03 09:02:56     27s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+
+@innovus 4> 
+@innovus 4> read_db INVS/
+% Begin Load Common DB (date=03/03 09:03:10, mem=1800.4M)
+[03/03 09:03:10     29s] (stylus_db): Begin loading Common DB 'INVS' (Created by Genus(TM) Synthesis Solution 23.10-p004_1) ...
+[03/03 09:03:10     29s] (stylus_db): Initialized SQLite db version 0.2 ..
+[03/03 09:03:10     29s] (stylus_db): Sourcing .globals file  ...
+[03/03 09:03:10     30s] **WARN: (IMPUDM-33):	Global variable "soceUseIdealDelayForClkInAllMode" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+[03/03 09:03:10     30s] **WARN: (IMPUDM-33):	Global variable "timing_aocv_enable_gba_combine_launch_capture" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+[03/03 09:03:10     30s] **WARN: (IMPUDM-33):	Global variable "timing_aocv_enable_gba_combine_launch_capture" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+[03/03 09:03:10     30s] **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[03/03 09:03:10     30s] **WARN: (IMPUDM-33):	Global variable "timing_aocv_enable_gba_combine_launch_capture" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+[03/03 09:03:10     30s] **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[03/03 09:03:10     30s] **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[03/03 09:03:11     30s] **WARN: (IMPUDM-33):	Global variable "timing_enable_backward_compatible_latch_thru_mt_mode" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+[03/03 09:03:11     30s] **WARN: (IMPUDM-33):	Global variable "timing_enable_backward_compatible_latch_thru_mt_mode" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+[03/03 09:03:11     30s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[03/03 09:03:11     30s] **WARN: (IMPUDM-33):	Global variable "timing_enable_backward_compatible_latch_thru_mt_mode" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+[03/03 09:03:11     30s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[03/03 09:03:11     30s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[03/03 09:03:11     30s] **WARN: (GLOBAL-100):	Global 'timing_enable_backward_compatible_mmmc_mode' has become obsolete. It will be removed in the next release.
+[03/03 09:03:11     30s] **WARN: (GLOBAL-100):	Global 'timing_enable_backward_compatible_mmmc_mode' has become obsolete. It will be removed in the next release.
+[03/03 09:03:11     30s] **WARN: (GLOBAL-100):	Global 'timing_enable_backward_compatible_mmmc_mode' has become obsolete. It will be removed in the next release.
+[03/03 09:03:11     31s] (stylus_db): Load Flow-Kit settings ...
+[03/03 09:03:11     31s] % Begin Load Flow-Kit settings (date=03/03 09:03:11, mem=1802.9M)
+[03/03 09:03:11     31s] % End Load Flow-Kit settings (date=03/03 09:03:11, total cpu=0:00:00.0, real=0:00:00.0, peak res=1802.9M, current mem=1802.9M)
+[03/03 09:03:11     31s] % Begin Load MMMC data (date=03/03 09:03:11, mem=1802.9M)
+[03/03 09:03:11     31s] (stylus_db): Reading MMMC file ...
+[03/03 09:03:11     31s] The existing library_set 'wcl_fast' has been replaced with new attributes.
+[03/03 09:03:11     31s] The existing library_set 'wcl_slow' has been replaced with new attributes.
+[03/03 09:03:11     31s] **ERROR: (TCLCMD-995):	Can not open file '/projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcworst/qrcTechFile' for RC corner
+[03/03 09:03:11     31s] 
+[03/03 09:03:11     31s]     while executing
+[03/03 09:03:11     31s] "create_rc_corner -name worst \
+[03/03 09:03:11     31s]     -temperature 125.0 \
+[03/03 09:03:11     31s]     -qrc_tech /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence..."
+[03/03 09:03:11     31s]     (file "/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/synthesis/cadence/pp_fir_u_0_work/INVS/cmn/pp_fir_u_0.mmmc.tcl" line 41)
+[03/03 09:03:11     31s]     invoked from within
+[03/03 09:03:11     31s] "::se_source_orig /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/synthesis/cadence/pp_fir_u_0_work/INVS/cmn/pp_fir_u_0.mmmc.tcl"
+[03/03 09:03:11     31s]     ("uplevel" body line 1)
+[03/03 09:03:11     31s]     invoked from within
+[03/03 09:03:11     31s] "uplevel [concat ::se_source_orig $args]"
+[03/03 09:03:11     31s]     invoked from within
+[03/03 09:03:11     31s] "if {$encrypted == 2} {
+[03/03 09:03:11     31s]       catch {set [uplevel [concat ::se::source_encrypted_compressed $args]]}
+[03/03 09:03:11     31s]     } else {
+[03/03 09:03:11     31s]       set st [uplevel [concat ::se_so..."
+[03/03 09:03:11     31s]     invoked from within
+[03/03 09:03:11     31s] "if {$largeFile == 1} {
+[03/03 09:03:11     31s]     if {$enableVerbose == 0 && [::SE::isEchoFile] == 1} {
+[03/03 09:03:11     31s]       $putCmd "Sourcing $file_name"
+[03/03 09:03:11     31s]     }
+[03/03 09:03:11     31s]     set st [uplevel [concat..."
+[03/03 09:03:11     31s]     (procedure "source" line 172)
+[03/03 09:03:11     31s]     invoked from within
+[03/03 09:03:11     31s] "source /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/synthesis/cadence/pp_fir_u_0_work/INVS/cmn/pp_fir_u_0.mmmc.tcl"
+[03/03 09:03:11     31s]     ("uplevel" body line 1)
+[03/03 09:03:11     31s]     invoked from within
+[03/03 09:03:11     31s] "uplevel #0 {source /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/synthesis/cadence/pp_fir_u_0_work/INVS/cmn/pp_fir_u_0.mmmc.tcl}"
+[03/03 09:03:11     31s] % End Load MMMC data (date=03/03 09:03:11, total cpu=0:00:00.0, real=0:00:00.0, peak res=1802.9M, current mem=1801.8M)
+[03/03 09:03:11     31s] % End Load Common DB (date=03/03 09:03:11, total cpu=0:00:01.4, real=0:00:01.0, peak res=1805.6M, current mem=1801.8M)
+[03/03 09:03:11     31s] 
+[03/03 09:03:11     31s] *** Summary of all messages that are not suppressed in this session:
+[03/03 09:03:11     31s] Severity  ID               Count  Summary                                  
+[03/03 09:03:11     31s] WARNING   IMPDBTCL-321         6  The attribute '%s' still works but will ...
+[03/03 09:03:11     31s] WARNING   IMPUDM-33            7  Global variable "%s" is obsolete and wil...
+[03/03 09:03:11     31s] WARNING   GLOBAL-100           3  Global '%s' has become obsolete. It will...
+[03/03 09:03:11     31s] ERROR     TCLCMD-995           1  Can not open file '%s' for %s            
+[03/03 09:03:11     31s] *** Message Summary: 16 warning(s), 1 error(s)
+[03/03 09:03:11     31s] 
+[03/03 09:03:11     31s] 0
+[03/03 09:03:11     31s] @innovus 5> exit
+
+[03/03 09:03:26     31s] *** Memory Usage v#2 (Current mem = 1614.559M, initial mem = 813.609M) ***
+[03/03 09:03:26     31s] 
+[03/03 09:03:26     31s] *** Summary of all messages that are not suppressed in this session:
+[03/03 09:03:26     31s] Severity  ID               Count  Summary                                  
+[03/03 09:03:26     31s] WARNING   IMPDBTCL-321        51  The attribute '%s' still works but will ...
+[03/03 09:03:26     31s] ERROR     IMPSYT-6300          6  Failed to execute command '%s'. For more...
+[03/03 09:03:26     31s] WARNING   IMPUDM-33            7  Global variable "%s" is obsolete and wil...
+[03/03 09:03:26     31s] WARNING   GLOBAL-100           3  Global '%s' has become obsolete. It will...
+[03/03 09:03:26     31s] ERROR     TCLCMD-995           4  Can not open file '%s' for %s            
+[03/03 09:03:26     31s] *** Message Summary: 61 warning(s), 10 error(s)
+[03/03 09:03:26     31s] 
+[03/03 09:03:26     31s] --- Ending "Innovus" (totcpu=0:00:31.4, real=0:03:05, mem=1614.6M) ---

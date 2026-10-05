@@ -1,0 +1,111 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v22.10-p001_1, built Thu Sep 29 11:03:49 PDT 2022
+Options:	
+Date:		Wed Jan  8 07:54:15 2025
+Host:		cluster15 (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (6cores*24cpus*Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz 15360KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		[07:54:16.284089] Configured Lic search path (21.01-s002): 27002@license.ece.vt.edu
+
+		invs	Innovus Implementation System	22.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+The soft stacksize limit is either up to the hard limit or larger than 0.2% of RAM. No change is needed.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> set enc_check_rename_command_name 1
+<CMD> read_db ../work/INVS/
+(stylus_db): WARNING: Attempting to load Common DB 'INVS' saved by Genus(TM) Synthesis Solution 22.10-p001_1 with MMMC file version 2 in Innovus Legacy UI.
+(stylus_db): ::init_mmmc_version set to version 2 from SQL db.
+#% Begin Load Common DB (date=01/08 07:57:22, mem=1072.5M)
+(stylus_db): Begin loading Common DB 'INVS' (Created by Genus(TM) Synthesis Solution 22.10-p001_1) ...
+(stylus_db): Initialized SQLite db version 0.2 ..
+(stylus_db): Sourcing .globals file  ...
+**WARN: (IMPIMEX-4008):	Variable 'init_state' is no longer supported in user data manager and will be ignored.
+**WARN: (IMPUDM-33):	Global variable "soceUseIdealDelayForClkInAllMode" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+(stylus_db): Load Flow-Kit settings ...
+% Begin Load Flow-Kit settings (date=01/08 07:57:23, mem=1074.6M)
+% End Load Flow-Kit settings (date=01/08 07:57:23, total cpu=0:00:00.0, real=0:00:00.0, peak res=1074.7M, current mem=1074.7M)
+% Begin Load MMMC data (date=01/08 07:57:23, mem=1074.7M)
+(stylus_db): Process MMMC view-def file later during init_design
+% End Load MMMC data (date=01/08 07:57:23, total cpu=0:00:00.0, real=0:00:00.0, peak res=1074.7M, current mem=1074.7M)
+(stylus_db): Load LEF files later during init_design ...
+(stylus_db): Load Verilog Netlist later during init_design ...
+(stylus_db): Init Design
+% Begin Load MMMC data ... (date=01/08 07:57:23, mem=1074.9M)
+**ERROR: (TCLCMD-989):	cannot open SDC file 'INVS/cmn/pp_fir_u_0.mmmc/modes/functional_wcl_typical/functional_wcl_typical.sdc.gz' for mode 'functional_wcl_typical'
+timing_cond_wcl_typical timing_cond_wcl_slow timing_cond_wcl_fast
+timing_cond_wcl_typical timing_cond_wcl_slow timing_cond_wcl_fast
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern '*'
+**ERROR: (TCLCMD-917):	Cannot find 'libraries' that match '*'
+**ERROR: (TCLCMD-119):	No module selected
+''.
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPUDM-33            1  Global variable "%s" is obsolete and wil...
+WARNING   IMPIMEX-4008         1  Variable '%s' is no longer supported in ...
+ERROR     TCLCMD-119           1  No module selected                       
+WARNING   TCLCMD-513           1  The software could not find a matching o...
+ERROR     TCLCMD-917           1  Cannot find '%s' that match '%s'         
+ERROR     TCLCMD-989           1  cannot open SDC file '%s' for mode '%s'  
+*** Message Summary: 3 warning(s), 3 error(s)
+
+<CMD> man TCLCMD-989
+<CMD> read_db ../work/INVS/
+(stylus_db): WARNING: Attempting to load Common DB 'INVS' saved by Genus(TM) Synthesis Solution 22.10-p001_1 with MMMC file version 2 in Innovus Legacy UI.
+% Begin Load Common DB (date=01/08 08:02:40, mem=1075.4M)
+(stylus_db): Begin loading Common DB 'INVS' (Created by Genus(TM) Synthesis Solution 22.10-p001_1) ...
+(stylus_db): Initialized SQLite db version 0.2 ..
+(stylus_db): Sourcing .globals file  ...
+**WARN: (IMPIMEX-4008):	Variable 'init_state' is no longer supported in user data manager and will be ignored.
+**WARN: (IMPUDM-33):	Global variable "soceUseIdealDelayForClkInAllMode" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+(stylus_db): Load Flow-Kit settings ...
+% Begin Load Flow-Kit settings (date=01/08 08:02:41, mem=1075.6M)
+% End Load Flow-Kit settings (date=01/08 08:02:41, total cpu=0:00:00.0, real=0:00:00.0, peak res=1075.6M, current mem=1075.6M)
+% Begin Load MMMC data (date=01/08 08:02:41, mem=1075.6M)
+(stylus_db): Process MMMC view-def file later during init_design
+% End Load MMMC data (date=01/08 08:02:41, total cpu=0:00:00.0, real=0:00:00.0, peak res=1075.6M, current mem=1075.6M)
+(stylus_db): Load LEF files later during init_design ...
+(stylus_db): Load Verilog Netlist later during init_design ...
+(stylus_db): Init Design
+% Begin Load MMMC data ... (date=01/08 08:02:41, mem=1075.6M)
+The existing op_cond 'op_cond_wcl_slow' has been replaced with new attributes.
+The existing op_cond 'op_cond_wcl_fast' has been replaced with new attributes.
+The existing op_cond 'op_cond_wcl_typical' has been replaced with new attributes.
+The existing timing condition 'timing_cond_wcl_slow' has been replaced with new attributes.
+The existing timing condition 'timing_cond_wcl_fast' has been replaced with new attributes.
+The existing timing condition 'timing_cond_wcl_typical' has been replaced with new attributes.
+The existing delay_corner 'delay_corner_wcl_slow' has been replaced with new attributes.
+The existing delay_corner 'delay_corner_wcl_typical' has been replaced with new attributes.
+The existing delay_corner 'delay_corner_wcl_fast' has been replaced with new attributes.
+**ERROR: (TCLCMD-989):	cannot open SDC file 'INVS/cmn/pp_fir_u_0.mmmc/modes/functional_wcl_typical/functional_wcl_typical.sdc.gz' for mode 'functional_wcl_typical'
+timing_cond_wcl_typical timing_cond_wcl_slow timing_cond_wcl_fast
+timing_cond_wcl_typical timing_cond_wcl_slow timing_cond_wcl_fast
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern '*'
+**ERROR: (TCLCMD-917):	Cannot find 'libraries' that match '*'
+**ERROR: (TCLCMD-119):	No module selected
+''.
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPUDM-33            1  Global variable "%s" is obsolete and wil...
+WARNING   IMPIMEX-4008         1  Variable '%s' is no longer supported in ...
+ERROR     TCLCMD-119           1  No module selected                       
+WARNING   TCLCMD-513           1  The software could not find a matching o...
+ERROR     TCLCMD-917           1  Cannot find '%s' that match '%s'         
+ERROR     TCLCMD-989           1  cannot open SDC file '%s' for mode '%s'  
+*** Message Summary: 3 warning(s), 3 error(s)
+
+
+*** Memory Usage v#1 (Current mem = 1199.648M, initial mem = 509.465M) ***
+*** Message Summary: 6 warning(s), 6 error(s)
+
+--- Ending "Innovus" (totcpu=0:01:38, real=0:08:32, mem=1199.6M) ---

@@ -1,0 +1,48 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Thu May  9 07:30:27 2024                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.12-s106_1 (64bit) 12/08/2021 18:19 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.12-s106_1 NR211128-2235/21_12-UB (database version 18.20.567) {superthreading v2.17}
+#@(#)CDS: AAE 21.12-s039 (64bit) 12/08/2021 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.12-s043_1 () Dec  1 2021 10:06:22 ( )
+#@(#)CDS: SYNTECH 21.12-s014_1 () Oct 27 2021 04:39:25 ( )
+#@(#)CDS: CPE v21.12-s094
+#@(#)CDS: IQuantus/TQuantus 20.1.2-s624 (64bit) Thu Sep 2 20:12:03 PDT 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+read_db INVS
+zoomBox -32.01300 -23.08900 52.91700 49.20600
+zoomBox -78.59500 -58.80500 84.10500 79.69000
+zoomBox -140.09300 -105.88700 124.83800 119.63000
+zoomBox -168.21800 -127.41900 143.46700 137.89600
+zoomBox -4.11000 67.33300 110.80700 -16.93800
+setEndCapMode -reset
+setEndCapMode -rightEdge UDBSLT28_CAPR9_1 -leftEdge UDBSLT28_CAPL9_1 -topEdge UDBSLT28_CAPT_1 -bottomEdge UDBSLT28_CAPB_1 -rightTopCorner UDBSLT28_CAPTOUCR9_1 -rightBottomCorner UDBSLT28_CAPBOUCR9_1 -leftTopCorner UDBSLT28_CAPTOUCL9_1 -leftBottomCorner UDBSLT28_CAPBOUCL9_1
+addEndCap -prefix ENDCAP
+addWellTap -cell UDBSLT28_TAPPN_DN -cellInterval 23 -inRowOffset 18 -prefix WELLTAP
+zoomBox 2.87700 36.19900 10.01300 29.36000
+zoomBox 2.05700 28.71100 11.50900 36.75700
+zoomBox 1.62100 27.94700 12.74100 37.41300
+zoomBox 1.10800 27.05000 14.19100 38.18700
+zoomBox -0.20600 24.75600 17.90200 40.17000
+zoomBox -4.54000 17.22600 30.15000 46.75500
+zoomBox -6.14000 14.44600 34.67200 49.18600
+zoomBox -12.84100 2.80200 53.61400 59.37000
+zoomBox -15.90600 -2.52400 62.27700 64.02800
+zoomBox -19.51200 -8.78900 72.46900 69.50800
+zoomBox -28.74400 -24.83000 98.56500 83.53900
+zoomBox 3.04200 9.42600 15.55900 -1.77300
+zoomBox -0.21800 -6.49700 24.98600 14.95700
+zoomBox -2.58500 -10.25400 32.29900 19.44000
+zoomBox -4.09000 -12.64300 36.95000 22.29100
+zoomBox -5.88000 -15.51100 42.40300 25.58900
+zoomBox -13.37800 -27.52100 65.24400 39.40400
+zoomBox -25.58500 -47.07700 102.43800 61.90000
+zoomBox -31.16700 -56.02000 119.44800 72.18800
+saveNetlist topVcoDigital_noRoute.v

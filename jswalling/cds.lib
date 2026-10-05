@@ -1,0 +1,13 @@
+# Tapeout Specific 
+INCLUDE ../cds.lib
+
+# Personal Libraries (You can create libraries or add below):
+DEFINE dev28_behdad ../behdad/tsmc_dev28/dev28_behdad
+DEFINE SCPA_TX ../behdad/SCPA_TX
+DEFINE dev28_behdad_bckup ../behdad/dev28_behdad_bckup
+DEFINE dev28_ACED /home/micsTapeouts/projects/28HPC_summer2024/behdad/dev28_ACED
+DEFINE sc9mcpp140z_cln28ht_base_svt_c30_rb /home/rubel/std_logic_libs/tsmc_28nm/arm/tsmc/cln28ht/sc9mcpp140z_base_svt_c30/r0p0/oa/sc9mcpp140z_cln28ht_base_svt_c30
+
+DEFINE test_import /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/test_import
+DEFINE test /data/projects/28HPC_summer2024/jswalling/test
+DEFINE test_import /data/projects/28HPC_summer2024/jswalling/test_import

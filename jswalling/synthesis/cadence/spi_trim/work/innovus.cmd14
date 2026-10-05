@@ -1,0 +1,143 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Thu May  9 10:37:38 2024                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.12-s106_1 (64bit) 12/08/2021 18:19 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.12-s106_1 NR211128-2235/21_12-UB (database version 18.20.567) {superthreading v2.17}
+#@(#)CDS: AAE 21.12-s039 (64bit) 12/08/2021 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.12-s043_1 () Dec  1 2021 10:06:22 ( )
+#@(#)CDS: SYNTECH 21.12-s014_1 () Oct 27 2021 04:39:25 ( )
+#@(#)CDS: CPE v21.12-s094
+#@(#)CDS: IQuantus/TQuantus 20.1.2-s624 (64bit) Thu Sep 2 20:12:03 PDT 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+read_db INVS
+fit
+setDelayCalMode -siAware false
+create_ccopt_clock_tree_spec
+get_ccopt_clock_trees *
+set_ccopt_property target_max_trans 0.5
+set_ccopt_property target_max_trans 0.2
+ccopt_design
+timeDesign -postCTS
+optDesign -postCTS
+getFillerMode -quiet
+addFiller -cell UDBSLT28_DCAP_V4_7 UDBSLT28_DCAP_V4_65 UDBSLT28_DCAP_V4_5 UDBSLT28_DCAP_V4_33 UDBSLT28_DCAP_V4_17 UDBSLT28_DCAP_V4_13 UDBSLT28_FILL1 UDBSLT28_FILL2 UDBSLT28_FILL3 UDBSLT28_FILL4 UDBSLT28_FILL5 UDBSLT28_FILL6 UDBSLT28_FILL8 UDBSLT28_FILL12 UDBSLT28_FILL16 UDBSLT28_FILL32 UDBSLT28_FILL64 UDBSLT28_FILL128 -prefix FILLER
+zoomBox 18.03200 42.53300 22.50900 35.96100
+selectInst FILLER_T_1_903
+deselectAll
+selectInst FILLER_T_1_904
+zoomBox 14.07600 33.66900 26.03100 44.37100
+zoomBox 11.56300 31.38800 28.11000 46.20100
+fit
+zoomBox 6.04400 5.43500 59.24000 53.05700
+zoomBox 11.07100 8.72800 56.28800 49.20700
+zoomBox 15.31800 11.53600 53.75200 45.94300
+zoomBox 26.46400 19.30600 46.52800 37.26800
+zoomBox 28.29000 20.57900 45.34500 35.84700
+fit
+setLayerPreference node_layer -isVisible 0
+setLayerPreference C3 -isVisible 1
+setLayerPreference C4 -isVisible 1
+setLayerPreference C5 -isVisible 1
+setNanoRouteMode -quiet -routeWithLithoDriven 1
+setNanoRouteMode -quiet -droutePostRouteLithoRepair 1
+setNanoRouteMode -quiet -routeTopRoutingLayer 6
+setNanoRouteMode -quiet -routeBottomRoutingLayer 1
+setNanoRouteMode -quiet -drouteEndIteration 1
+setNanoRouteMode -quiet -routeWithTimingDriven false
+setNanoRouteMode -quiet -routeWithSiDriven false
+routeDesign -globalDetail
+setLayerPreference node_layer -isVisible 1
+timeDesign -postRoute
+optDesign -postRoute
+report_timing
+saveDesign topVcoDigital_genus_22.enc
+zoomBox 50.89300 40.81800 60.79800 20.53000
+setSrouteMode -viaConnectToShape { noshape }
+sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { M1(1) LB(10) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { M1(1) LB(10) } -nets { VDD VSS } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { M1(1) LB(10) }
+fit
+zoomBox -1.68500 8.62400 18.03200 -0.04300
+zoomBox 3.79900 6.73900 8.31400 4.85200
+globalNetConnect VDD -type pgpin -pin VDD -inst * verbose
+globalNetConnect VDD -type pgpin -pin VDD -inst * -verbose
+globalNetConnect VSS -type pgpin -pin VSS -inst * -verbose
+fit
+globalNetConnect VDD -type net -net VDD -verbose
+globalNetConnect VSS -type net -net VSS -verbose
+setSrouteMode -viaConnectToShape { noshape }
+sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { M1(1) LB(10) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { M1(1) LB(10) } -nets { VDD VSS } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { M1(1) LB(10) }
+zoomBox -2.54200 8.24300 10.41200 3.10000
+zoomBox 1.14500 6.62700 8.73600 4.61600
+zoomBox 2.56700 3.10900 8.05200 8.01900
+zoomBox 3.12300 3.45500 7.78500 7.62800
+zoomBox 4.28100 4.25200 7.14500 6.81600
+zoomBox 4.79300 4.60500 6.86200 6.45700
+zoomBox 5.16200 4.85900 6.65800 6.19800
+selectMarker 6.0720 5.4500 6.1720 5.5500 1 3 7
+deselectAll
+selectInst FILLER_T_1_1
+deselectAll
+selectMarker 6.0720 5.4500 6.1720 5.5500 1 3 7
+fit
+saveDesign topVcoDigital_genus_22.enc
+saveDesign topVcoDigital_genus_22.enc
+saveDesign topVcoDigital_genus_22.enc
+streamOut topVcoDigital_genus_22.gds -mapFile /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/lef/streamout.map_colorless_9M_2Mx_5Cx_1Jx_1Ox_LB -libName DesignLib -units 1000 -mode ALL
+saveNetlist topVcoDigital_genus_22.v
+getMultiCpuUsage -localCpu
+get_verify_drc_mode -disable_rules -quiet
+get_verify_drc_mode -quiet -area
+get_verify_drc_mode -quiet -layer_range
+get_verify_drc_mode -check_ndr_spacing -quiet
+get_verify_drc_mode -check_only -quiet
+get_verify_drc_mode -check_same_via_cell -quiet
+get_verify_drc_mode -exclude_pg_net -quiet
+get_verify_drc_mode -ignore_trial_route -quiet
+get_verify_drc_mode -max_wrong_way_halo -quiet
+get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+get_verify_drc_mode -limit -quiet
+set_verify_drc_mode -check_ndr_spacing auto -check_only default -check_same_via_cell true -exclude_pg_net false -ignore_trial_route false -ignore_cell_blockage false -use_min_spacing_on_block_obs auto -report topVcoDigital.drc.rpt -limit 1000
+verify_drc
+set_verify_drc_mode -area {0 0 0 0}
+zoomBox -2.63700 34.62700 3.45900 26.53100
+zoomBox -0.67100 31.29300 1.90300 30.00600
+setLayerPreference violation -isVisible 1
+violationBrowser -all -no_display_false -displayByLayer
+zoomBox 53.3 4.95 54.4 6.05
+zoomBox 52.43700 4.18700 55.20800 6.66800
+zoomBox 51.53400 3.32500 56.04900 7.36700
+zoomBox 50.63600 2.46800 56.88600 8.06300
+zoomBox 46.58100 -1.40700 60.66800 11.20400
+zoomBox 21.578 31.125 22.618 32.165
+zoomBox 21.578 31.125 22.618 32.165
+zoomBox 21.578 31.125 22.618 32.165
+zoomBox 35.266 19.48 36.306 20.52
+setLayerPreference node_layer -isVisible 0
+setLayerPreference V1 -isVisible 1
+setLayerPreference M2 -isVisible 1
+gui_select -rect {35.78800 19.92900 35.78800 19.90200}
+deselectAll
+panPage 0 -1
+setLayerPreference AY -isVisible 1
+zoomBox 34.56500 18.43800 37.64900 21.19900
+zoomBox 33.94100 17.75600 38.96300 22.25200
+fit
+zoomBox 18.79400 39.19900 21.17500 35.58000
+zoomBox 20.82400 38.26800 21.99000 37.32200
+zoomBox 20.65900 37.17500 22.03100 38.40300
+zoomBox 20.46700 37.06000 22.08100 38.50500
+zoomBox 20.24100 36.83800 22.14000 38.53800
+zoomBox 21.578 31.125 22.618 32.165
+setLayerPreference M1 -isVisible 1
+setLayerPreference M1 -isVisible 0
+setLayerPreference C1 -isVisible 1
+setLayerPreference C2 -isVisible 1
+setLayerPreference C2 -isVisible 0
+zoomBox 27.601 31.735 28.627 32.745
+violationBrowserClose

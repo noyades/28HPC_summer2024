@@ -1,0 +1,84 @@
+
+
+Working Directory = /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/bgr_dec/work
+QoS Summary for b2u_3b_static
+==========================================================================================
+Metric                          generic         map             invs            final          
+==========================================================================================
+
+View : slow-slow-maxrc
+Slack (ps):                       inf             inf               0             inf
+  R2R (ps):                  no_value        no_value        no_value        no_value
+  I2R (ps):                  no_value        no_value        no_value        no_value
+  R2O (ps):                  no_value        no_value        no_value        no_value
+  I2O (ps):                  no_value        no_value        no_value        no_value
+  CG  (ps):                  no_value        no_value        no_value        no_value
+TNS (ps):                           0               0              -0               0
+  R2R (ps):                  no_value        no_value        no_value        no_value
+  I2R (ps):                  no_value        no_value        no_value        no_value
+  R2O (ps):                  no_value        no_value        no_value        no_value
+  I2O (ps):                  no_value        no_value        no_value        no_value
+  CG  (ps):                  no_value        no_value        no_value        no_value
+Failing Paths:                      0               0        no_value               0
+
+View : fast-fast-minrc
+Slack (ps):                       inf             inf        no_value             inf
+  R2R (ps):                  no_value        no_value        no_value        no_value
+  I2R (ps):                  no_value        no_value        no_value        no_value
+  R2O (ps):                  no_value        no_value        no_value        no_value
+  I2O (ps):                  no_value        no_value        no_value        no_value
+  CG  (ps):                  no_value        no_value        no_value        no_value
+TNS (ps):                           0               0        no_value               0
+  R2R (ps):                  no_value        no_value        no_value        no_value
+  I2R (ps):                  no_value        no_value        no_value        no_value
+  R2O (ps):                  no_value        no_value        no_value        no_value
+  I2O (ps):                  no_value        no_value        no_value        no_value
+  CG  (ps):                  no_value        no_value        no_value        no_value
+Failing Paths:                      0               0        no_value               0
+
+View : func-typ-typ
+Slack (ps):                       inf             inf        no_value             inf
+  R2R (ps):                  no_value        no_value        no_value        no_value
+  I2R (ps):                  no_value        no_value        no_value        no_value
+  R2O (ps):                  no_value        no_value        no_value        no_value
+  I2O (ps):                  no_value        no_value        no_value        no_value
+  CG  (ps):                  no_value        no_value        no_value        no_value
+TNS (ps):                           0               0        no_value               0
+  R2R (ps):                  no_value        no_value        no_value        no_value
+  I2R (ps):                  no_value        no_value        no_value        no_value
+  R2O (ps):                  no_value        no_value        no_value        no_value
+  I2O (ps):                  no_value        no_value        no_value        no_value
+  CG  (ps):                  no_value        no_value        no_value        no_value
+Failing Paths:                      0               0        no_value               0
+
+Cell Area:                         11               4        no_value               4
+Total Cell Area:                  108             101               4             101
+Leaf Instances:                     8               7               7               7
+Total Instances:                  200             199               7             199
+Utilization (%):                 0.44            0.51            0.51            0.51
+Tot. Net Length (um):        no_value        no_value             218             216
+Avg. Net Length (um):        no_value        no_value              22              22
+Route Overflow H (%):            0.00            0.00            0.00            0.00
+Route Overflow V (%):            0.00            0.00            0.00            0.00
+MBCI(%) (bits/gate) :            0.00            0.00        no_value            0.00
+Norm Cong Hotspot Area:
+  Max Cong:                      0.00            0.00            0.00            0.00
+  Tot Cong:                      0.00            0.00            0.00            0.00
+==========================================================================================
+CPU  Runtime (h:m:s):        00:01:28        00:00:12        00:01:43        00:00:40
+Real Runtime (h:m:s):        00:01:38        00:00:13        00:01:34        00:01:07
+CPU  Elapsed (h:m:s):        00:01:30        00:01:41        00:03:56        00:04:36
+Real Elapsed (h:m:s):        00:01:39        00:01:51        00:04:02        00:04:33
+Memory (MB):                  2572.76         2574.04         4311.64         2997.62
+==========================================================================================
+==========================================================================================
+Flow Settings:
+==========================================================================================
+Total Runtime (h:m:s): 00:04:33
+Total Memory (MB):     3005.62
+Executable Version:    23.14-s090_1
+==========================================================================================
+Total Cell Area =  Cell Area + Physical Cell Area
+Total Instances =  Leaf Instances + Physical Instances
+
+

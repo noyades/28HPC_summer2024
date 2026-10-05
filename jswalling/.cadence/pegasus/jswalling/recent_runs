@@ -1,0 +1,10 @@
+1769870815 0 1769870815 "/data/projects/28HPC_summer2024/jswalling/drc/Top_chip" "pegasusrv" "" "Top_chip" "" "" "" "" "" "" "" "" "DRC" true
+1769870815 0 1769870815 "/data/projects/28HPC_summer2024/jswalling/drc/Top_chip/Top_chip.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true
+1769862876 0 1769862876 "/scratch/scratch_tsri/DRC/Top_chip_filled.drc_errors.ascii" "pegasusrv" "" "unknown" "" "" "" "" "" "" "" "" "None" true
+1769862824 0 1769862824 "/scratch/scratch_tsri/DRC/Top_chip_filled.sum" "pegasusrv" "" "unknown" "" "" "" "" "" "" "" "" "None" true
+1769638018 0 1769638018 "/data/projects/28HPC_summer2024/jswalling/drc/TX_top_pad" "pegasusrv" "" "TX_top_v2_Pad" "" "" "" "" "" "" "" "" "DRC" true
+1769638018 0 1769638018 "/data/projects/28HPC_summer2024/jswalling/drc/TX_top_pad/TX_top_v2_Pad.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true
+1769598377 0 1769598377 "/data/projects/28HPC_summer2024/jswalling/drc/scpa_dig_ana_ppfir" "pegasusrv" "" "scpa_dig_ana_ppfir_final" "" "" "" "" "" "" "" "" "DRC" true
+1769598377 0 1769598377 "/data/projects/28HPC_summer2024/jswalling/drc/scpa_dig_ana_ppfir/scpa_dig_ana_ppfir_final.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true
+1769481665 0 1769481665 "/data/projects/28HPC_summer2024/jswalling/lvs/scpa_dig_ana_ppfir" "pegasusrv" "" "scpa_dig_ana_ppfir" "" "" "" "" "" "" "" "" "LVS" true
+1769475728 0 1769475728 "/data/projects/28HPC_summer2024/jswalling/drc/scpa_dig_ana_ppfir/scpa_dig_ana_ppfir.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true

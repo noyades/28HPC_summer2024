@@ -1,0 +1,199 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Wed Jan  8 09:52:59 2025                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v22.10-p001_1 (64bit) 09/29/2022 11:03 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 22.10-p001_1 NR220915-0329/22_10-UB (database version 18.20.590) {superthreading v2.19}
+#@(#)CDS: AAE 22.10-p002 (64bit) 09/29/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 22.10-p004_1 () Sep  7 2022 21:57:29 ( )
+#@(#)CDS: SYNTECH 22.10-p001_1 () Aug  8 2022 11:26:34 ( )
+#@(#)CDS: CPE v22.10-p005
+#@(#)CDS: IQuantus/TQuantus 21.2.0-s201 (64bit) Wed Jul 6 19:14:09 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+set enc_check_rename_command_name 1
+encMessage warning 0
+encMessage debug 0
+is_common_ui_mode
+restoreDesign /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/synopsys/aced_filter/physical/pp_fir_u_0_02_power.enc.dat pp_fir_u_0
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+man addWellTap
+zoomBox -3.64250 183.08450 5.66600 172.87550
+zoomBox -4.24800 182.55350 -3.80550 181.94850
+setDrawView place
+zoomBox -4.78950 181.44400 -3.26450 182.80900
+zoomBox -4.37050 181.94350 -3.69350 182.54950
+fit
+addWellTap -cell FILLTIE5_A9PP140ZTL_C30 -checkerboard -cellinterval 60
+zoomBox -2.44150 185.18650 39.89700 157.56150
+addWellTap -delete
+deleteFiller -cell FILLTIE5_A9PP140ZTL_C30
+man addWellTap
+addWellTap -cell FILLTIE5_A9PP140ZTL_C30 -checkerboard -cellinterval 60 -offset 60
+zoomBox -1.67450 181.89000 2.65250 174.27700
+fit
+zoomBox 48.41600 38.77150 216.11700 188.89950
+zoomBox 93.20700 77.36150 214.37150 185.82950
+zoomBox 205.75050 181.44050 209.04200 177.05150
+zoomBox 206.30000 178.17700 208.47550 180.12450
+zoomBox 206.89550 178.69150 207.86200 179.55650
+zoomBox 206.96700 178.75300 207.78850 179.48850
+zoomBox 207.02700 178.80500 207.72550 179.43050
+zoomBox 207.23300 178.98700 207.49750 179.22400
+zoomBox 207.30200 179.04850 207.42000 179.15400
+zoomBox 207.33300 179.07650 207.38600 179.12400
+man addWellTap
+addWellTap -cell FILLTIE5_A9PP140ZTL_C30 -checkerboard -cellinterval 60 -inRowOffset 60
+fit
+deleteFiller -cell FILLTIE5_A9PP140ZTL_C30
+addWellTap -cell FILLTIE5_A9PP140ZTL_C30 -checkerboard -cellinterval 60 -inRowOffset 30
+zoomBox -1.54050 183.08450 69.32350 170.17300
+zoomBox -11.73250 139.39300 71.63700 214.02650
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+zoomBox 171.27450 158.94750 214.79450 197.90700
+zoomBox 176.67100 162.14800 213.66300 195.26350
+zoomBox 185.15700 167.16750 211.88350 191.09350
+zoomBox 195.35400 172.98450 209.30550 185.47400
+zoomBox 198.44450 174.74750 208.52400 183.77100
+zoomBox 199.65100 175.43600 208.21900 183.10600
+zoomBox 202.96750 177.28950 207.44050 181.29400
+zoomBox 203.51100 177.59350 207.31300 180.99700
+zoomBox 203.97300 177.85150 207.20450 180.74450
+selectInst WELLTAP_707
+zoomBox 203.55000 177.64200 207.35200 181.04550
+zoomBox 201.80700 176.76350 207.99800 182.30600
+zoomBox 201.00950 176.36200 208.29350 182.88250
+zoomBox 200.07150 175.88950 208.64100 183.56100
+zoomBox 198.96800 175.33350 209.05000 184.35900
+zoomBox 192.23200 171.94100 211.54650 189.23150
+zoomBox 186.81850 169.21500 213.55200 193.14700
+zoomBox 179.32700 165.44250 216.32800 198.56650
+zoomBox 174.56250 163.04350 218.09350 202.01300
+zoomBox 168.89000 148.29500 252.28250 222.94900
+zoomBox 166.79550 142.85000 264.90450 230.67850
+zoomBox 162.60700 135.01050 278.02950 238.33850
+zoomBox 145.06150 102.17250 333.00900 270.42550
+deselectAll
+fit
+zoomBox -1.84100 183.38500 9.56950 173.47600
+zoomBox -2.62250 170.36050 13.17100 184.49900
+zoomBox -5.30650 167.15100 16.55300 186.72000
+zoomBox -9.02150 162.70850 21.23450 189.79400
+zoomBox -11.38400 159.88350 24.21150 191.74900
+zoomBox -14.16300 156.55950 27.71400 194.04850
+zoomBox -31.12850 136.27050 49.09450 208.08700
+zoomBox -44.76100 119.96700 66.27450 219.36750
+fit
+zoomBox 197.24000 185.18650 213.75500 149.75450
+gui_select -rect {205.47150 182.72900 207.11000 161.99200}
+deleteSelectedFromFPlan
+gui_select -rect {205.36900 182.57500 207.05900 149.65200}
+deselectAll
+deleteSelectedFromFPlan
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+gui_select -rect {204.70350 150.73800 207.16150 118.12200}
+deselectAll
+deleteSelectedFromFPlan
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+gui_select -rect {204.60100 118.23500 207.11000 87.46250}
+deselectAll
+deleteSelectedFromFPlan
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+gui_select -rect {204.49900 87.67750 207.00750 55.11300}
+deselectAll
+deleteSelectedFromFPlan
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+gui_select -rect {205.01100 55.07250 207.05900 18.86200}
+deselectAll
+deleteSelectedFromFPlan
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+gui_select -rect {205.42050 19.33350 207.11000 -0.27700}
+deselectAll
+deleteSelectedFromFPlan
+fit
+zoomBox -1.10150 -7.89500 166.59900 142.23250
+zoomBox 7.02550 -3.56050 128.18950 104.90700
+zoomBox 17.14000 1.83350 80.38850 58.45450
+zoomBox 18.79650 2.71700 72.55800 50.84500
+zoomBox 24.34800 6.73850 52.41250 31.86200
+zoomBox 25.25750 7.39700 49.11250 28.75250
+zoomBox 26.03000 7.95700 46.30750 26.10950
+zoomBox 27.72000 9.18100 40.17300 20.32900
+zoomBox 26.32250 7.34850 46.60100 25.50200
+zoomBox 23.00750 2.99950 61.85500 37.77650
+zoomBox 20.34300 -0.49450 74.11200 47.64000
+zoomBox 18.64900 -2.71650 81.90650 53.91250
+zoomBox 3.73700 -13.82350 106.74150 78.38750
+zoomBox -3.08300 -18.90300 118.09950 89.58100
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+zoomBox 15.55550 12.79400 69.32550 60.92950
+zoomBox 17.78850 16.59150 63.49300 57.50700
+zoomBox 25.28750 29.35300 45.56700 47.50750
+zoomBox 28.14600 34.21750 38.73300 43.69500
+zoomBox 28.61450 35.01450 37.61350 43.07050
+zoomBox 29.88250 37.17250 34.58100 41.37850
+zoomBox 30.09000 37.52600 34.08400 41.10150
+zoomBox 30.74400 38.64050 32.51750 40.22800
+zoomBox 30.94550 38.98350 32.03500 39.95900
+zoomBox 31.14650 39.36050 31.63000 39.79350
+zoomBox 31.17050 39.40550 31.58150 39.77350
+zoomBox 31.22300 39.50350 31.47600 39.73000
+zoomBox 31.13850 39.45350 31.55050 39.82250
+fit
+setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer AP -stacked_via_bottom_layer M1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe -nets {VDD VSS} -layer M1 -direction vertical -width 0.26 -spacing 0.26 -set_to_set_distance 60 -start_from left -start_offset 30 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit AP -padcore_ring_bottom_layer_limit M1 -block_ring_top_layer_limit AP -block_ring_bottom_layer_limit M1 -use_wire_group 0 -snap_wire_center_to_grid None
+undo
+setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer AP -stacked_via_bottom_layer M1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe -nets {VDD VSS} -layer M1 -direction vertical -width 0.26 -spacing 0.26 -set_to_set_distance 120 -start_from left -start_offset 15 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit AP -padcore_ring_bottom_layer_limit M1 -block_ring_top_layer_limit AP -block_ring_bottom_layer_limit M1 -use_wire_group 0 -snap_wire_center_to_grid None
+undo
+setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer AP -stacked_via_bottom_layer M1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe -nets {VDD VSS} -layer M1 -direction vertical -width 0.26 -spacing 0.26 -set_to_set_distance 30 -start_from left -start_offset 15 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit AP -padcore_ring_bottom_layer_limit M1 -block_ring_top_layer_limit AP -block_ring_bottom_layer_limit M1 -use_wire_group 0 -snap_wire_center_to_grid None
+undo
+setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer AP -stacked_via_bottom_layer M1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe -nets {VDD VSS} -layer M1 -direction vertical -width 0.26 -spacing 0.26 -set_to_set_distance 29.96 -start_from left -start_offset 14.98 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit AP -padcore_ring_bottom_layer_limit M1 -block_ring_top_layer_limit AP -block_ring_bottom_layer_limit M1 -use_wire_group 0 -snap_wire_center_to_grid None
+saveDesign pp_fir_u_0_02_power.inn
+set dbgLefDefOutVersion 5.8
+global dbgLefDefOutVersion
+set dbgLefDefOutVersion 5.8
+defOut -floorplan -routing ../../pp_fir_u_0_power.def
+set dbgLefDefOutVersion 5.8
+set dbgLefDefOutVersion 5.8

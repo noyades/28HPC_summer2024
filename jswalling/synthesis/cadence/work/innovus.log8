@@ -1,0 +1,464 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v22.10-p001_1, built Thu Sep 29 11:03:49 PDT 2022
+Options:	
+Date:		Sat Jan 11 09:42:17 2025
+Host:		cluster15 (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (6cores*24cpus*Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz 15360KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		[09:42:17.284089] Configured Lic search path (21.01-s002): 27002@license.ece.vt.edu
+
+		invs	Innovus Implementation System	22.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+The soft stacksize limit is either up to the hard limit or larger than 0.2% of RAM. No change is needed.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> set enc_check_rename_command_name 1
+<CMD> read_db INVS/
+(stylus_db): WARNING: Attempting to load Common DB 'INVS' saved by Genus(TM) Synthesis Solution 22.10-p001_1 with MMMC file version 2 in Innovus Legacy UI.
+(stylus_db): ::init_mmmc_version set to version 2 from SQL db.
+#% Begin Load Common DB (date=01/11 09:44:10, mem=1073.7M)
+(stylus_db): Begin loading Common DB 'INVS' (Created by Genus(TM) Synthesis Solution 22.10-p001_1) ...
+(stylus_db): Initialized SQLite db version 0.2 ..
+(stylus_db): Sourcing .globals file  ...
+**WARN: (IMPIMEX-4008):	Variable 'init_state' is no longer supported in user data manager and will be ignored.
+**WARN: (IMPUDM-33):	Global variable "soceUseIdealDelayForClkInAllMode" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+(stylus_db): Load Flow-Kit settings ...
+% Begin Load Flow-Kit settings (date=01/11 09:44:10, mem=1076.8M)
+% End Load Flow-Kit settings (date=01/11 09:44:11, total cpu=0:00:00.0, real=0:00:00.0, peak res=1076.8M, current mem=1076.8M)
+% Begin Load MMMC data (date=01/11 09:44:11, mem=1076.8M)
+(stylus_db): Process MMMC view-def file later during init_design
+% End Load MMMC data (date=01/11 09:44:11, total cpu=0:00:00.0, real=0:00:00.0, peak res=1076.8M, current mem=1076.8M)
+(stylus_db): Load LEF files later during init_design ...
+(stylus_db): Load Verilog Netlist later during init_design ...
+(stylus_db): Init Design
+% Begin Load MMMC data ... (date=01/11 09:44:11, mem=1077.0M)
+timing_cond_wcl_typical timing_cond_wcl_slow timing_cond_wcl_fast
+% End Load MMMC data ... (date=01/11 09:44:11, total cpu=0:00:00.1, real=0:00:00.0, peak res=1077.0M, current mem=1076.9M)
+timing_cond_wcl_typical timing_cond_wcl_slow timing_cond_wcl_fast
+worst best typical
+
+Loading LEF file /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef ...
+
+Loading LEF file /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lef/sc9mcpp140z_cln28ht_base_lvt_c30.lef ...
+Set DBUPerIGU to M1 pitch 280.
+
+Loading LEF file /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_lvt_c30/r0p0/lef/sc9mcpp140z_cln28ht_hpk_lvt_c30.lef ...
+
+Loading LEF file /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_svt_c30/r0p0/lef/sc9mcpp140z_cln28ht_base_svt_c30.lef ...
+
+Loading LEF file /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_svt_c30/r0p0/lef/sc9mcpp140z_cln28ht_hpk_svt_c30.lef ...
+
+Loading LEF file /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_ulvt_c30/r0p0/lef/sc9mcpp140z_cln28ht_base_ulvt_c30.lef ...
+
+Loading LEF file /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_ulvt_c30/r0p0/lef/sc9mcpp140z_cln28ht_hpk_ulvt_c30.lef ...
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/INVS/cmn/pp_fir_u_0.mmmc.tcl
+Reading wcl_slow timing library '/software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLTIE5_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'ENDCAPTIE3_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP8_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP64_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP4_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP3_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP32_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP2_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP16_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP128_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP8_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP64_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP4_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP3_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP32_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP2_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP16_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP128_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA2_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+Read 1003 cells in library 'sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c' 
+*** End library_loading (cpu=0.10min, real=0.12min, mem=39.5M, fe_cpu=0.90min, fe_real=2.05min, fe_mem=1267.7M) ***
+% Begin Load netlist data ... (date=01/11 09:44:20, mem=1130.4M)
+*** Begin netlist parsing (mem=1267.7M) ***
+Created 1003 new cells from 1 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist '/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/INVS/cmn/pp_fir_u_0.v.gz'
+
+*** Memory Usage v#1 (Current mem = 1267.652M, initial mem = 509.465M) ***
+*** End netlist parsing (cpu=0:00:00.5, real=0:00:01.0, mem=1267.7M) ***
+% End Load netlist data ... (date=01/11 09:44:21, total cpu=0:00:00.5, real=0:00:01.0, peak res=1155.6M, current mem=1155.6M)
+Top level cell is pp_fir_u_0.
+Hooked 1003 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell pp_fir_u_0 ...
+***** UseNewTieNetMode *****.
+*** Netlist is unique.
+** info: there are 3539 modules.
+** info: there are 20970 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 1335.125M, initial mem = 509.465M) ***
+*info: set bottom ioPad orient R0
+The core width changes from 207.370000 to 207.340000 when snapping to grid "PlacementGrid".
+
+Honor LEF defined pitches for advanced node
+Start create_tracks
+Set Shrink Factor to 0.90000
+*Info: initialize multi-corner CTS.
+Reading wcl_fast timing library '/software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ffg_cbestt_min_0p99v_m40c.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLTIE5_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ffg_cbestt_min_0p99v_m40c.lib)
+Message <TECHLIB-302> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+Read 1003 cells in library 'sc9mcpp140z_cln28ht_base_lvt_c30_ffg_cbestt_min_0p99v_m40c' 
+Reading wcl_typical timing library '/software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_tt_ctypical_max_0p90v_25c.lib' ...
+Read 1003 cells in library 'sc9mcpp140z_cln28ht_base_lvt_c30_tt_ctypical_max_0p90v_25c' 
+Total number of combinational cells: 749
+Total number of sequential cells: 236
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 18
+List of usable buffers: FRICG_X0P5B_A9PP140ZTL_C30 FRICG_X0P6B_A9PP140ZTL_C30 FRICG_X0P8B_A9PP140ZTL_C30 FRICG_X0P7B_A9PP140ZTL_C30 FRICG_X11B_A9PP140ZTL_C30 FRICG_X13B_A9PP140ZTL_C30 FRICG_X16B_A9PP140ZTL_C30 FRICG_X1B_A9PP140ZTL_C30 FRICG_X1P2B_A9PP140ZTL_C30 FRICG_X1P4B_A9PP140ZTL_C30 FRICG_X2B_A9PP140ZTL_C30 FRICG_X1P7B_A9PP140ZTL_C30 FRICG_X2P5B_A9PP140ZTL_C30 FRICG_X3B_A9PP140ZTL_C30 FRICG_X4B_A9PP140ZTL_C30 FRICG_X3P5B_A9PP140ZTL_C30 FRICG_X5B_A9PP140ZTL_C30 FRICG_X6B_A9PP140ZTL_C30 FRICG_X7P5B_A9PP140ZTL_C30 FRICG_X9B_A9PP140ZTL_C30 BUFH_X11M_A9PP140ZTL_C30 BUFH_X13M_A9PP140ZTL_C30 BUFH_X16M_A9PP140ZTL_C30 BUFH_X1M_A9PP140ZTL_C30 BUFH_X1P2M_A9PP140ZTL_C30 BUFH_X1P4M_A9PP140ZTL_C30 BUFH_X2M_A9PP140ZTL_C30 BUFH_X1P7M_A9PP140ZTL_C30 BUFH_X2P5M_A9PP140ZTL_C30 BUFH_X3M_A9PP140ZTL_C30 BUFH_X4M_A9PP140ZTL_C30 BUFH_X3P5M_A9PP140ZTL_C30 BUFH_X5M_A9PP140ZTL_C30 BUFH_X6M_A9PP140ZTL_C30 BUFH_X7P5M_A9PP140ZTL_C30 BUFH_X9M_A9PP140ZTL_C30 BUF_X0P5B_A9PP140ZTL_C30 BUF_X0P5M_A9PP140ZTL_C30 BUF_X0P7B_A9PP140ZTL_C30 BUF_X0P7M_A9PP140ZTL_C30 BUF_X0P8M_A9PP140ZTL_C30 BUF_X0P8B_A9PP140ZTL_C30 BUF_X11B_A9PP140ZTL_C30 BUF_X11B_A9PP140ZTL_C30_XGCAP11 BUF_X11M_A9PP140ZTL_C30 BUF_X13B_A9PP140ZTL_C30 BUF_X11M_A9PP140ZTL_C30_XGCAP11 BUF_X13B_A9PP140ZTL_C30_XGCAP13 BUF_X13M_A9PP140ZTL_C30 BUF_X16B_A9PP140ZTL_C30 BUF_X13M_A9PP140ZTL_C30_XGCAP13 BUF_X16B_A9PP140ZTL_C30_XGCAP16 BUF_X16M_A9PP140ZTL_C30 BUF_X16M_A9PP140ZTL_C30_XGCAP16 BUF_X1M_A9PP140ZTL_C30 BUF_X1B_A9PP140ZTL_C30 BUF_X1P2B_A9PP140ZTL_C30 BUF_X1P2M_A9PP140ZTL_C30 BUF_X1P4B_A9PP140ZTL_C30 BUF_X1P4M_A9PP140ZTL_C30 BUF_X1P7B_A9PP140ZTL_C30 BUF_X1P7M_A9PP140ZTL_C30 BUF_X2M_A9PP140ZTL_C30 BUF_X2B_A9PP140ZTL_C30 BUF_X2P5B_A9PP140ZTL_C30 BUF_X2P5M_A9PP140ZTL_C30 BUF_X3M_A9PP140ZTL_C30 BUF_X3B_A9PP140ZTL_C30 BUF_X3P5B_A9PP140ZTL_C30 BUF_X3P5M_A9PP140ZTL_C30 BUF_X4B_A9PP140ZTL_C30 BUF_X4B_A9PP140ZTL_C30_XGCAP4 BUF_X4M_A9PP140ZTL_C30 BUF_X5B_A9PP140ZTL_C30 BUF_X4M_A9PP140ZTL_C30_XGCAP4 BUF_X5B_A9PP140ZTL_C30_XGCAP5 BUF_X5M_A9PP140ZTL_C30 BUF_X6B_A9PP140ZTL_C30 BUF_X5M_A9PP140ZTL_C30_XGCAP5 BUF_X6B_A9PP140ZTL_C30_XGCAP6 BUF_X6M_A9PP140ZTL_C30 BUF_X7P5B_A9PP140ZTL_C30 BUF_X6M_A9PP140ZTL_C30_XGCAP6 BUF_X7P5B_A9PP140ZTL_C30_XGCAP8 BUF_X7P5M_A9PP140ZTL_C30 BUF_X7P5M_A9PP140ZTL_C30_XGCAP8 BUF_X9B_A9PP140ZTL_C30 BUF_X9M_A9PP140ZTL_C30 BUF_X9B_A9PP140ZTL_C30_XGCAP9 BUF_X9M_A9PP140ZTL_C30_XGCAP9 DLY2_X1M_A9PP140ZTL_C30 DLY2_X0P5M_A9PP140ZTL_C30 DLY2_X2M_A9PP140ZTL_C30 DLYCLK8S2_X1B_A9PP140ZTL_C30 DLYCLK8S2_X2B_A9PP140ZTL_C30 DLYCLK8S4_X1B_A9PP140ZTL_C30 DLYCLK8S4_X2B_A9PP140ZTL_C30
+Total number of usable buffers: 97
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X0P5B_A9PP140ZTL_C30 INV_X0P5M_A9PP140ZTL_C30 INV_X0P6B_A9PP140ZTL_C30 INV_X0P6M_A9PP140ZTL_C30 INV_X0P7B_A9PP140ZTL_C30 INV_X0P7M_A9PP140ZTL_C30 INV_X0P8M_A9PP140ZTL_C30 INV_X0P8B_A9PP140ZTL_C30 INV_X11B_A9PP140ZTL_C30 INV_X11B_A9PP140ZTL_C30_XGCAP11 INV_X11M_A9PP140ZTL_C30 INV_X13B_A9PP140ZTL_C30 INV_X11M_A9PP140ZTL_C30_XGCAP11 INV_X13B_A9PP140ZTL_C30_XGCAP13 INV_X13M_A9PP140ZTL_C30 INV_X16B_A9PP140ZTL_C30 INV_X13M_A9PP140ZTL_C30_XGCAP13 INV_X16B_A9PP140ZTL_C30_XGCAP16 INV_X16M_A9PP140ZTL_C30 INV_X16M_A9PP140ZTL_C30_XGCAP16 INV_X1M_A9PP140ZTL_C30 INV_X1B_A9PP140ZTL_C30 INV_X1P2B_A9PP140ZTL_C30 INV_X1P2M_A9PP140ZTL_C30 INV_X1P4B_A9PP140ZTL_C30 INV_X1P4M_A9PP140ZTL_C30 INV_X1P7B_A9PP140ZTL_C30 INV_X1P7M_A9PP140ZTL_C30 INV_X2M_A9PP140ZTL_C30 INV_X2B_A9PP140ZTL_C30 INV_X2P5B_A9PP140ZTL_C30 INV_X2P5M_A9PP140ZTL_C30 INV_X3M_A9PP140ZTL_C30 INV_X3B_A9PP140ZTL_C30 INV_X3P5B_A9PP140ZTL_C30 INV_X4B_A9PP140ZTL_C30 INV_X3P5M_A9PP140ZTL_C30 INV_X4B_A9PP140ZTL_C30_XGCAP4 INV_X4M_A9PP140ZTL_C30 INV_X5B_A9PP140ZTL_C30 INV_X4M_A9PP140ZTL_C30_XGCAP4 INV_X5B_A9PP140ZTL_C30_XGCAP5 INV_X5M_A9PP140ZTL_C30 INV_X6B_A9PP140ZTL_C30 INV_X5M_A9PP140ZTL_C30_XGCAP5 INV_X6B_A9PP140ZTL_C30_XGCAP6 INV_X6M_A9PP140ZTL_C30 INV_X7P5B_A9PP140ZTL_C30 INV_X6M_A9PP140ZTL_C30_XGCAP6 INV_X7P5B_A9PP140ZTL_C30_XGCAP8 INV_X7P5M_A9PP140ZTL_C30 INV_X9B_A9PP140ZTL_C30 INV_X7P5M_A9PP140ZTL_C30_XGCAP8 INV_X9B_A9PP140ZTL_C30_XGCAP9 INV_X9M_A9PP140ZTL_C30 INV_X9M_A9PP140ZTL_C30_XGCAP9
+Total number of usable inverters: 56
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY10_X1M_A9PP140ZTL_C30 DLY10_X0P5M_A9PP140ZTL_C30 DLY10_X2M_A9PP140ZTL_C30 DLY10_X4M_A9PP140ZTL_C30 DLY2_X4M_A9PP140ZTL_C30 DLY4_X1M_A9PP140ZTL_C30 DLY4_X0P5M_A9PP140ZTL_C30 DLY4_X2M_A9PP140ZTL_C30 DLY4_X4M_A9PP140ZTL_C30 DLY6_X1M_A9PP140ZTL_C30 DLY6_X0P5M_A9PP140ZTL_C30 DLY6_X2M_A9PP140ZTL_C30 DLY6_X4M_A9PP140ZTL_C30 DLY8_X0P5M_A9PP140ZTL_C30 DLY8_X1M_A9PP140ZTL_C30 DLY8_X2M_A9PP140ZTL_C30 DLY8_X4M_A9PP140ZTL_C30 DLYCLK8S6_X1B_A9PP140ZTL_C30 DLYCLK8S6_X2B_A9PP140ZTL_C30 DLYCLK8S8_X1B_A9PP140ZTL_C30 DLYCLK8S8_X2B_A9PP140ZTL_C30
+Total number of identified usable delay cells: 21
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+% Begin Load MMMC data post ... (date=01/11 09:44:33, mem=1308.7M)
+% End Load MMMC data post ... (date=01/11 09:44:33, total cpu=0:00:00.0, real=0:00:00.0, peak res=1308.7M, current mem=1308.7M)
+Extraction setup Started 
+Initializing multi-corner RC extraction with 3 active RC Corners ...
+Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For postRoute extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+Generating auto layer map file.
+Importing multi-corner technology file(s) for preRoute extraction...
+/software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcworst/qrcTechFile
+Generating auto layer map file.
+
+/software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcbest/qrcTechFile
+Generating auto layer map file.
+
+/software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/nominal/qrcTechFile
+Generating auto layer map file.
+
+Completed (cpu: 0:00:43.7 real: 0:01:09)
+Set Shrink Factor to 0.90000 (from technology file)
+Summary of Active RC-Corners : 
+ 
+ Analysis View: view_wcl_slow
+    RC-Corner Name        : worst
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcworst/qrcTechFile'
+ 
+ Analysis View: view_wcl_fast
+    RC-Corner Name        : best
+    RC-Corner Index       : 1
+    RC-Corner Temperature : -40 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcbest/qrcTechFile'
+ 
+ Analysis View: view_wcl_typical
+    RC-Corner Name        : typical
+    RC-Corner Index       : 2
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/nominal/qrcTechFile'
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner resistance tables ...
+Default value for postRoute extraction mode's effortLevel (-effortLevel option of setExtractRCMode) changed to 'medium'.
+(stylus_db): Initialized design 'pp_fir_u_0'
+(stylus_db): Load Metric file ...
+% Begin Load Metric file (date=01/11 09:45:43, mem=1638.2M)
+% End Load Metric file (date=01/11 09:45:43, total cpu=0:00:00.1, real=0:00:00.0, peak res=1641.2M, current mem=1639.2M)
+(stylus_db): Setting Root attributes ...
+Change floorplan default-technical-site to 'sc9mcpp140z_cln28ht'.
+(stylus_db): Set 3005 attributes of Root 
+% Begin Set DB preserves (date=01/11 09:45:44, mem=1640.0M)
+(stylus_db): Setting preserves on design objects ...
+(stylus_db): Set 119 preserves of design objects
+% End Set DB preserves (date=01/11 09:45:44, total cpu=0:00:00.0, real=0:00:00.0, peak res=1640.1M, current mem=1640.1M)
+% Begin Load Timing views and constraints (date=01/11 09:45:44, mem=1640.1M)
+view_wcl_slow view_wcl_typical view_wcl_fast
+(stylus_db): Read MMMC timing views ...
+Reading timing constraints file 'INVS/cmn/pp_fir_u_0.mmmc/modes/functional_wcl_typical/functional_wcl_typical.sdc.gz' ...
+Current (total cpu=0:01:52, real=0:03:27, peak res=1744.8M, current mem=1744.8M)
+**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File INVS/cmn/pp_fir_u_0.mmmc/modes/functional_wcl_typical/functional_wcl_typical.sdc.gz, Line 9).
+
+**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File INVS/cmn/pp_fir_u_0.mmmc/modes/functional_wcl_typical/functional_wcl_typical.sdc.gz, Line 10).
+
+pp_fir_u_0
+INFO (CTE): Reading of timing constraints file INVS/cmn/pp_fir_u_0.mmmc/modes/functional_wcl_typical/functional_wcl_typical.sdc.gz completed, with 2 WARNING
+Ending "Constraint file reading stats" (total cpu=0:00:00.3, real=0:00:01.0, peak res=1780.5M, current mem=1780.5M)
+Current (total cpu=0:01:52, real=0:03:28, peak res=1780.5M, current mem=1780.5M)
+% End Load Timing views and constraints (date=01/11 09:45:45, total cpu=0:00:01.0, real=0:00:01.0, peak res=1780.6M, current mem=1780.6M)
+(stylus_db): Load Mode file ...
+setAnalysisMode -usefulSkew already set.
+**WARN: (IMPOPT-3602):	The specified path group name in2out is not defined.
+Type 'man IMPOPT-3602' for more detail.
+Effort level <low> specified for in2out path_group
+**WARN: (IMPOPT-3602):	The specified path group name in2reg is not defined.
+Type 'man IMPOPT-3602' for more detail.
+Effort level <low> specified for in2reg path_group
+**WARN: (IMPOPT-3602):	The specified path group name reg2out is not defined.
+Type 'man IMPOPT-3602' for more detail.
+Effort level <low> specified for reg2out path_group
+**WARN: (IMPOPT-3602):	The specified path group name reg2reg is not defined.
+Type 'man IMPOPT-3602' for more detail.
+Effort level <high> specified for reg2reg path_group
+**WARN: (IMPOPT-3602):	The specified path group name tdgp_reg2reg_default is not defined.
+Type 'man IMPOPT-3602' for more detail.
+Effort level <high> specified for tdgp_reg2reg_default path_group
+Change floorplan default-technical-site to 'sc9mcpp140z_cln28ht'.
+(stylus_db): Couldn't load power-intent, (pp_fir_u_0.cpf or pp_fir_u_0.upf doesn't exists)
+(stylus_db): Couldn't commit power-intent, (pp_fir_u_0.cpf or pp_fir_u_0.upf doesn't exists)
+(stylus_db): Load DEF file ...
+% Begin Load DEF (date=01/11 09:45:45, mem=1783.1M)
+Reading DEF file 'INVS//cmn/pp_fir_u_0.def.gz', current time is Sat Jan 11 09:45:45 2025 ...
+--- DIVIDERCHAR '/'
+--- UnitsPerDBU = 1.0000
+
+Honor LEF defined pitches for advanced node
+Start create_tracks
+--- DIEAREA (-3600 -3600) (418420 363600)
+defIn read 10000 lines...
+defIn read 20000 lines...
+defIn read 30000 lines...
+defIn read 40000 lines...
+defIn read 50000 lines...
+defIn read 60000 lines...
+DEF file 'INVS//cmn/pp_fir_u_0.def.gz' is parsed, current time is Sat Jan 11 09:45:46 2025.
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Updating the floorplan ...
+% End Load DEF (date=01/11 09:45:46, total cpu=0:00:00.5, real=0:00:01.0, peak res=1792.2M, current mem=1792.2M)
+% Begin Set route_types (date=01/11 09:45:46, mem=1792.2M)
+(stylus_db): Setting route_types  ...
+% End Set route_types (date=01/11 09:45:46, total cpu=0:00:00.1, real=0:00:00.0, peak res=1792.3M, current mem=1792.3M)
+% Begin Set power_domain attributes (date=01/11 09:45:46, mem=1792.3M)
+(stylus_db): Setting power_domain attributes ...
+% End Set power_domain attributes (date=01/11 09:45:46, total cpu=0:00:00.1, real=0:00:00.0, peak res=1792.3M, current mem=1792.3M)
+(stylus_db): Load additional timing constraints ...
+% Begin Load Additional Timing constraints (date=01/11 09:45:46, mem=1792.3M)
+Loading path adjust file INVS//cmn/pp_fir_u_0.mmmc/pathadjust.sdc.gz ...
+Current (total cpu=0:01:53, real=0:03:29, peak res=1792.3M, current mem=1792.3M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:01.0, peak res=1794.5M, current mem=1794.5M)
+Current (total cpu=0:01:54, real=0:03:30, peak res=1794.5M, current mem=1794.5M)
+% End Load Additional Timing constraints (date=01/11 09:45:47, total cpu=0:00:00.4, real=0:00:01.0, peak res=1794.6M, current mem=1794.6M)
+% Begin Set message attributes (date=01/11 09:45:47, mem=1794.6M)
+(stylus_db): Setting attributes on Genus message objects ...
+% End Set message attributes (date=01/11 09:45:47, total cpu=0:00:00.1, real=0:00:00.0, peak res=1794.6M, current mem=1794.6M)
+(stylus_db): Couldn't load SDP file, (file doesn't exists)
+% Begin Generate Vias (date=01/11 09:45:47, mem=1794.6M)
+(stylus_db): Generate advanced rule Vias ...
+Start generating vias ..
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Via generation completed successfully.
+Generating auto layer map file.
+Initializing preRoute extraction patterns for new vias... Generating auto layer map file.
+Generating auto layer map file.
+Generating auto layer map file.
+Completed (cpu: 0:00:07.2 real: 0:00:11.0)
+% End Generate Vias (date=01/11 09:45:59, total cpu=0:00:07.9, real=0:00:12.0, peak res=1868.6M, current mem=1832.2M)
+% Begin Set attributes (date=01/11 09:45:59, mem=1832.2M)
+(stylus_db): Setting attributes on design objects ...
+(stylus_db): Set 15150 attributes of design objects
+(stylus_db): Could not set 1 attributes of design objects
+% End Set attributes (date=01/11 09:45:59, total cpu=0:00:00.4, real=0:00:00.0, peak res=1834.2M, current mem=1834.2M)
+(stylus_db): Load RC preroute patterns ...
+% Begin Load RC preroute patterns (date=01/11 09:45:59, mem=1834.2M)
+Loading preRoute extraction data from directory 'INVS//cmn/pp_fir_u_0.extraction/extraction/' ...
+Extraction setup Started 
+Initializing multi-corner RC extraction with 3 active RC Corners ...
+Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For postRoute extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+Generating auto layer map file.
+Importing multi-corner technology file(s) for preRoute extraction...
+/software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcworst/qrcTechFile
+Generating auto layer map file.
+/software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcbest/qrcTechFile
+Generating auto layer map file.
+/software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/nominal/qrcTechFile
+Generating auto layer map file.
+Completed (cpu: 0:00:53.5 real: 0:01:09)
+Set Shrink Factor to 0.90000 (from technology file)
+Summary of Active RC-Corners : 
+ 
+ Analysis View: view_wcl_slow
+    RC-Corner Name        : worst
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcworst/qrcTechFile'
+ 
+ Analysis View: view_wcl_fast
+    RC-Corner Name        : best
+    RC-Corner Index       : 1
+    RC-Corner Temperature : -40 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcbest/qrcTechFile'
+ 
+ Analysis View: view_wcl_typical
+    RC-Corner Name        : typical
+    RC-Corner Index       : 2
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/nominal/qrcTechFile'
+Restored RC grid for preRoute extraction.
+Initializing multi-corner resistance tables ...
+% End Load RC preroute patterns (date=01/11 09:47:09, total cpu=0:00:54.0, real=0:01:10, peak res=2131.7M, current mem=1941.8M)
+(stylus_db): Couldn't load Min Layer File : INVS//cmn/pp_fir_u_0.min_layer not found)
+(stylus_db): Load Route congestion map file ...
+% Begin Load Route congestion map (date=01/11 09:47:09, mem=1941.8M)
+Reading congestion map file INVS//cmn/pp_fir_u_0.route.congestion.gz ...
+Suppress "**WARN ..." messages.
+Un-suppress "**WARN ..." messages.
+% End Load Route congestion map (date=01/11 09:47:09, total cpu=0:00:00.1, real=0:00:00.0, peak res=1943.7M, current mem=1943.7M)
+(stylus_db): Couldn't load SCANDEF, (file doesn't exists)
+(stylus_db): Couldn't load TCF file, (file doesn't exists)
++----------------------------------------------------------------+
+    Summary of 'read_db INVS'                     
++----------------------------------------------------------------+
+    Generated by         :     Innovus 22.10-p001_1
+    Generated on         :     Sat Jan 11 09:47:09 EST 2025
+    Design               :     pp_fir_u_0
+    process_node         :     90   
+    db units             :     2000 
+    tech_mfg_grid        :     0.005
+    bbox                 :     {-1.8 -1.8 209.21 181.8}
+    core_bbox            :     {0.02 0.0 207.39 180.0}
++----------------------------------------------------------------+
+    Object Type          :     Count
++-----------------------------------+
+    timing_libraries     :     3    
+    library_sets         :     3    
+    lib_cells            :     3009 
+    setup_analysis_views :     3    
+    hold_analysis_views  :     3    
+    rc_corners           :     3    
+    delay_corners        :     3    
+    constraint_modes     :     3    
+    clocks               :     3    
++-----------------------------------+
+    base_cells           :     3537 
+    modules              :     1    
+    insts                :     21976
+    physical_insts       :     1006 
+    ports                :     549  
+    nets                 :     22900
+    pg_nets              :     2    
++-----------------------------------+
+    layers               :     33   
+    via_defs             :     922  
+    via_def_rule         :     9    
+    sites                :     1    
+    core_rows            :     200  
+    track_patterns       :     20   
++-----------------------------------+
+#% End Load Common DB (date=01/11 09:47:09, total cpu=0:02:12, real=0:03:00, peak res=2131.7M, current mem=1942.2M)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPOPT-3602          5  The specified path group name %s is not ...
+WARNING   IMPUDM-33            1  Global variable "%s" is obsolete and wil...
+WARNING   IMPIMEX-4008         1  Variable '%s' is no longer supported in ...
+WARNING   TCLCMD-1461          2  Skipped unsupported command: %s          
+WARNING   TECHLIB-302         57  No function defined for cell '%s'. The c...
+*** Message Summary: 66 warning(s), 0 error(s)
+
+<CMD> loadFPlan ../../pp_fir_u_0_power.fp
+Reading floorplan file - ../../pp_fir_u_0_power.fp (mem = 2240.3M).
+#% Begin Load floorplan data ... (date=01/11 09:52:01, mem=2013.2M)
+*info: reset 22900 existing net BottomPreferredLayer and AvoidDetour
+Deleting old partition specification.
+ ... processed partition successfully.
+Reading binary special route file ../../pp_fir_u_0_power.fp.spr (Created by Innovus v22.10-p001_1 on Tue Jan  7 08:44:42 2025, version: 1)
+Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2013.7M, current mem=2013.7M)
+#% End Load floorplan data ... (date=01/11 09:52:02, total cpu=0:00:00.2, real=0:00:01.0, peak res=2014.0M, current mem=2014.0M)
+<CMD> setDrawView fplan
+<CMD> fit
+
+*** Memory Usage v#1 (Current mem = 2240.277M, initial mem = 509.465M) ***
+*** Message Summary: 66 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:03:35, real=0:09:53, mem=2240.3M) ---

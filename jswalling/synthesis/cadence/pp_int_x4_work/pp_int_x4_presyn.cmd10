@@ -1,0 +1,50 @@
+# Cadence Genus(TM) Synthesis Solution, Version 23.10-p004_1, built Feb  1 2024 13:43:46
+
+# Date: Fri Feb 28 09:12:57 2025
+# Host: tc075 (x86_64 w/Linux 5.14.0-362.8.1.el9_3.x86_64) (64cores*128cpus*2physical cpus*AMD EPYC 7702 64-Core Processor 512KB)
+# OS:   Rocky Linux release 9.5 (Blue Onyx)
+
+nano ../rtl/mc/pp_int_x4.v
+get_db registers *
+get_db cell *
+get_db cells *
+get_db cells pp_int_x4/*
+get_db cells u_pp_int_x4/*
+nano ../rtl/mc/pp_int_x4.v
+get_db nets pp_int_x4/Add1*
+get_db nets pp_int_x4/*
+get_db nets *
+nano ../scripts/syn.tcl
+source ../scripts/syn.tcl
+nano ../rtl/mc/pp_int_x4.v
+source ../scripts/syn.tcl
+# entering suspend mode
+get_db nets pp_int_x4/*
+get_db nets pp_int_x4/Add1
+get_db nets pp_int_x4/Add1*
+nano ../rtl/mc/pp_int_x4.v
+get_db nets pp_int_x4/Add*
+nano ../rtl/mc/pp_int_x4.v
+get_db nets pp_int_x4/Up*
+get_db nets pp_int_x4/net:*
+get_db nets pp_int_x4/{net:*
+get_db nets pp_int_x4/*
+get_db nets {net:pp_int_x4/Upsample_bypass_reg_re[0]}
+get_db nets {net:pp_int_x4/Add*}
+get_db nets {net:pp_int_x4/Add_out*}
+nano ../rtl/mc/pp_int_x4.v
+nano ../rtl/mc/pp_int_x4.v
+get_db nets {net:pp_int_x4/Add_o*}
+get_db nets {net:pp_int_x4/Out1*}
+nano ../rtl/mc/pp_int_x4.v
+nano ../rtl/mc/pp_int_x4.v
+nano ../rtl/mc/pp_int_x4.v
+get_db nets {net:pp_int_x4/Out1*}
+get_db nets {net:pp_int_x4/Add_*}
+get_db nets {net:pp_int_x4/Add_out*}
+get_db * *Add*
+get_db nets *Add_out*
+get_db hnets *Add_out*
+get_db hnets *
+get_db hnets *Add*
+get_db hnets *pp_int_x4/Add*

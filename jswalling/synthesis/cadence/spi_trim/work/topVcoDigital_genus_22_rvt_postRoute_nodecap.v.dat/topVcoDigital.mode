@@ -1,0 +1,60 @@
+if {![namespace exists ::IMEX]} { namespace eval ::IMEX {} }
+set ::IMEX::dataVar [file dirname [file normalize [info script]]]
+set ::IMEX::libVar ${::IMEX::dataVar}/libs
+
+catch { setDesignMode -bottomRoutingLayer M2 }
+catch { setAnalysisMode -analysisType single }
+catch { setAnalysisMode -asyncChecks noAsync }
+catch { setAnalysisMode -checkType setup }
+catch { setAnalysisMode -clkSrcPath true }
+catch { setAnalysisMode -clockPropagation sdcControl }
+catch { setAnalysisMode -skew true }
+catch { setAnalysisMode -timingSelfLoopsNoSkew false }
+catch { setOptMode -activeHoldViews { view_wcl_slow view_wcl_fast view_wcl_typical } }
+catch { setOptMode -activeSetupViews { view_wcl_slow view_wcl_fast view_wcl_typical } }
+catch { setOptMode -autoSetupViews { view_wcl_slow} }
+catch { setOptMode -autoTDGRSetupViews { view_wcl_slow} }
+catch { setOptMode -drcMargin 0 }
+catch { setOptMode -fixDrc true }
+catch { setOptMode -multiBitFlopOpt false }
+catch { setOptMode -placementSetupViews { view_wcl_slow  } }
+catch { setOptMode -preserveAllSequential false }
+catch { setOptMode -setupTargetSlack 0 }
+catch { setOptMode -usefulSkew true }
+catch { setOptMode -usefulSkewPreCTS true }
+catch { setPathGroupOptions reg2reg -effortLevel high -weight 2 }
+catch { setExtractRCMode  -layerIndependent 1 -engine postRoute -total_c_th 5 -relative_c_th 0.03 -coupling_c_th 3 }
+catch {setNanoRouteMode -quiet -drouteEndIteration 1}
+catch {setNanoRouteMode -quiet -droutePostRouteLithoRepair true}
+catch {setNanoRouteMode -quiet -drouteUseLefPinTaperRule true}
+catch {setNanoRouteMode -quiet -extractDesignSignature 154618268}
+catch {setNanoRouteMode -quiet -extractRcModelFile "${::IMEX::libVar}/misc/rc_model.bin"}
+catch {setNanoRouteMode -quiet -extractThirdPartyCompatible false}
+catch {setNanoRouteMode -quiet -grouteExpTdStdDelay 8.100000}
+catch {setNanoRouteMode -quiet -grouteExpTdUseTifTimingEngineForImportDesign false}
+catch {setNanoRouteMode -quiet -routeBottomRoutingLayer 1}
+catch {setNanoRouteMode -quiet -routeExpDirtyAreaEco false}
+catch {setNanoRouteMode -quiet -routeExpSignatureEco false}
+catch {setNanoRouteMode -quiet -routeTopRoutingLayer 6}
+catch {setNanoRouteMode -quiet -routeWithLithoDriven true}
+catch {setNanoRouteMode -quiet -routeWithSiDriven false}
+catch {setNanoRouteMode -quiet -routeWithTimingDriven false}
+
+catch { setPlaceMode -place_detail_dpt_flow true }
+catch { setPlaceMode -place_global_cong_effort auto }
+catch { setPlaceMode -place_global_reorder_scan false }
+catch { setIlmMode -keepHighFanoutPorts true -keepLoopBack false -keepInstInSdc false -keepFlatten true }
+catch { setActiveLogicViewMode -keepHighFanoutCriticalInsts false }
+catch { setUsefulSkewMode -ecoRoute false }
+catch { setDelayCalMode -enable_high_fanout true }
+catch { setDelayCalMode -engine aae }
+catch { setDelayCalMode -ignoreNetLoad false }
+catch { setDelayCalMode -SIAware true }
+catch { setDelayCalMode -socv_accuracy_mode low }
+catch { setImportMode -discardFloatingVNets false }
+catch { setImportMode -keepEmptyModule true }
+catch { setSIMode -separate_delta_delay_on_data true }
+catch { setFPlanMode -defaultTechSite GF22_DST }
+catch { setFPlanMode -maxIoHeight false }
+catch { setFPlanMode -place_check_ignore_fixed_cell_list {} }
+catch { setFPlanMode -powerRailLayer {} }

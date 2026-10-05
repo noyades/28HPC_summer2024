@@ -1,0 +1,49 @@
+[12/04 22:51:50      0s] 
+[12/04 22:51:50      0s] Cadence Innovus(TM) Implementation System.
+[12/04 22:51:50      0s] Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+[12/04 22:51:50      0s] 
+[12/04 22:51:50      0s] Version:	v22.10-p001_1, built Thu Sep 29 11:03:49 PDT 2022
+[12/04 22:51:50      0s] Options:	
+[12/04 22:51:50      0s] Date:		Wed Dec  4 22:51:50 2024
+[12/04 22:51:50      0s] Host:		cluster15 (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (6cores*24cpus*Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz 15360KB)
+[12/04 22:51:50      0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[12/04 22:51:50      0s] 
+[12/04 22:51:50      0s] License:
+[12/04 22:51:50      0s] 		[22:51:50.284025] Configured Lic search path (21.01-s002): 27002@license.ece.vt.edu
+
+[12/04 22:51:50      0s] 		invs	Innovus Implementation System	22.1	checkout succeeded
+[12/04 22:51:50      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[12/04 22:52:19     27s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v22.10-p001_1 (64bit) 09/29/2022 11:03 (Linux 3.10.0-693.el7.x86_64)
+[12/04 22:52:25     32s] @(#)CDS: NanoRoute 22.10-p001_1 NR220915-0329/22_10-UB (database version 18.20.590) {superthreading v2.19}
+[12/04 22:52:25     32s] @(#)CDS: AAE 22.10-p002 (64bit) 09/29/2022 (Linux 3.10.0-693.el7.x86_64)
+[12/04 22:52:25     32s] @(#)CDS: CTE 22.10-p004_1 () Sep  7 2022 21:57:29 ( )
+[12/04 22:52:25     32s] @(#)CDS: SYNTECH 22.10-p001_1 () Aug  8 2022 11:26:34 ( )
+[12/04 22:52:25     32s] @(#)CDS: CPE v22.10-p005
+[12/04 22:52:25     32s] @(#)CDS: IQuantus/TQuantus 21.2.0-s201 (64bit) Wed Jul 6 19:14:09 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+[12/04 22:52:25     32s] @(#)CDS: OA 22.60-p076 Wed May 18 13:45:29 2022
+[12/04 22:52:25     32s] @(#)CDS: SGN 21.20-d001 (11-Feb-2022) (64 bit executable, TkQt5.9.1)
+[12/04 22:52:25     32s] @(#)CDS: RCDB 11.15.0
+[12/04 22:52:25     32s] @(#)CDS: STYLUS 22.10-p001_1 (08/24/2022 07:47 PDT)
+[12/04 22:52:25     32s] @(#)CDS: Orbit-22.10Rel-9221 (22.10) (2022-09-28 18:03:21+0800)
+[12/04 22:52:25     32s] Create and set the environment variable TMPDIR to /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/innovus_temp_36388_cluster15_jswalling_GWZ5eZ.
+
+[12/04 22:52:25     32s] The soft stacksize limit is either up to the hard limit or larger than 0.2% of RAM. No change is needed.
+[12/04 22:52:28     36s] 
+[12/04 22:52:28     36s] **INFO:  MMMC transition support version v31-84 
+[12/04 22:52:28     36s] 
+[12/04 22:52:28     36s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[12/04 22:52:28     36s] <CMD> suppressMessage ENCEXT-2799
+[12/04 22:52:29     36s] <CMD> win
+[12/04 22:52:29     36s] <CMD> set enc_check_rename_command_name 1
+[12/05 06:25:38   3594s] 
+--------------------------------------------------------------------------------
+Exiting Innovus on Thu Dec  5 06:25:38 2024
+  Total CPU time:     0:59:55
+  Total real time:    7:33:50
+  Peak memory (main): 1075.39MB
+
+[12/05 06:25:38   3594s] 
+[12/05 06:25:38   3594s] *** Memory Usage v#1 (Current mem = 1194.219M, initial mem = 509.465M) ***
+[12/05 06:25:38   3594s] *** Message Summary: 0 warning(s), 0 error(s)
+[12/05 06:25:38   3594s] 
+[12/05 06:25:38   3594s] --- Ending "Innovus" (totcpu=0:59:55, real=7:33:48, mem=1194.2M) ---

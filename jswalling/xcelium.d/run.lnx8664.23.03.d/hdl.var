@@ -1,0 +1,6 @@
+define XMSIMRC	( /var/RFIC/cadtools/cadence/xcelium/release/tools/xcelium/files/xmsimrc, ~/.xmsimrc )
+define AMSRC	( /var/RFIC/cadtools/cadence/xcelium/release/tools/xcelium/files/amsrc, ~/.amsrc )
+include ./hdlrun.var
+define SNAPSHOT jswalling_dsp.scpa_dig_ana_ppfir:functional
+DEFINE RUNMODEDEFAULT 1
+DEFINE LIB_MAP ( + => jswalling_dsp )

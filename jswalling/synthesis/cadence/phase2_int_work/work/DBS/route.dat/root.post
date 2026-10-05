@@ -1,0 +1,71 @@
+::db::check_and_set_root_attr extract_rc_engine post_route
+::db::check_and_set_root_attr add_fillers_cells {{FILLSGCAP128_A9PP140ZTUL_C30 FILLSGCAP16_A9PP140ZTUL_C30 FILLSGCAP2_A9PP140ZTUL_C30 FILLSGCAP32_A9PP140ZTUL_C30 FILLSGCAP3_A9PP140ZTUL_C30 FILLSGCAP4_A9PP140ZTUL_C30 FILLSGCAP64_A9PP140ZTUL_C30 FILLSGCAP8_A9PP140ZTUL_C30} {FILL8_A9PP140ZTUL_C30 FILL64_A9PP140ZTUL_C30 FILL4_A9PP140ZTUL_C30 FILL3_A9PP140ZTUL_C30 FILL32_A9PP140ZTUL_C30 FILL2_A9PP140ZTUL_C30 FILL1_A9PP140ZTUL_C30 FILL16_A9PP140ZTUL_C30 FILL128_A9PP140ZTUL_C30}}
+::db::check_and_set_root_attr add_fillers_prefix FILL
+::db::check_and_set_root_attr delaycal_enable_high_fanout true
+::db::check_and_set_root_attr delaycal_enable_ideal_seq_async_pins false
+::db::check_and_set_root_attr delaycal_eng_enablepreplacedflow false
+::db::check_and_set_root_attr delaycal_equivalent_waveform_model propagation
+::db::check_and_set_root_attr delaycal_ewm_type simulation
+::db::check_and_set_root_attr delaycal_ignore_net_load false
+::db::check_and_set_root_attr delaycal_socv_use_lvf_tables all
+::db::check_and_set_root_attr design_bottom_routing_layer M2
+::db::check_and_set_root_attr extract_rc_assume_metal_fill 0.0
+::db::check_and_set_root_attr extract_rc_coupled true
+::db::check_and_set_root_attr extract_rc_model_file ${::IMEX::libVar}/misc/rc_model.bin
+::db::check_and_set_root_attr extract_rc_pre_place_cap_scale_factor 2.72952
+::db::check_and_set_root_attr extract_rc_pre_place_res_scale_factor 0.398555
+::db::check_and_set_root_attr extract_rc_pre_place_site_size 1.04
+::db::check_and_set_root_attr extract_rc_pre_place_wire_length_slope 1.4835
+::db::check_and_set_root_attr extract_rc_pre_place_wire_length_y0 0.7079
+::db::check_and_set_root_attr floorplan_default_tech_site sc9mcpp140z_cln28ht
+::db::check_and_set_root_attr floorplan_first_row_site_index 0
+::db::check_and_set_root_attr floorplan_last_row_site_index -1
+::db::check_and_set_root_attr floorplan_max_io_height false
+::db::check_and_set_root_attr ilm_keep_flatten true
+::db::check_and_set_root_attr ilm_keep_high_fanout_ports true
+::db::check_and_set_root_attr ilm_keep_inst_in_sdc false
+::db::check_and_set_root_attr ilm_keep_loopback false
+::db::check_and_set_root_attr opt_drv true
+::db::check_and_set_root_attr opt_drv_margin 0.0
+::db::check_and_set_root_attr opt_drv_margin_for_max_tran 0.0
+::db::check_and_set_root_attr opt_drv_setup_aware true
+::db::check_and_set_root_attr opt_hold_allow_setup_tns_degradation false
+::db::check_and_set_root_attr opt_hold_ignore_path_groups default
+::db::check_and_set_root_attr opt_multi_bit_flop_name_prefix CDN_MBIT_
+::db::check_and_set_root_attr opt_multi_bit_flop_name_separator _MB_
+::db::check_and_set_root_attr opt_multi_bit_flop_opt false
+::db::check_and_set_root_attr opt_preserve_all_sequential false
+::db::check_and_set_root_attr opt_resize_flip_flops true
+::db::check_and_set_root_attr opt_setup_target_slack 0.0
+::db::check_and_set_root_attr opt_skew true
+::db::check_and_set_root_attr opt_skew_eco_route false
+::db::check_and_set_root_attr opt_skew_post_cts true
+::db::check_and_set_root_attr opt_skew_pre_cts true
+::db::check_and_set_root_attr opt_skew_pre_cts_aggressive_ecf true
+::db::check_and_set_root_attr opt_spatial_power_driven false
+::db::check_and_set_root_attr opt_view_pruning_hold_target_slack_auto_flow 0
+::db::check_and_set_root_attr opt_view_pruning_hold_views_active_list { slow-slow-maxrc fast-fast-minrc func-typ-typ }
+::db::check_and_set_root_attr opt_view_pruning_hold_views_persistent_list { fast-fast-minrc slow-slow-maxrc func-typ-typ}
+::db::check_and_set_root_attr opt_view_pruning_placement_setup_view_list { slow-slow-maxrc  }
+::db::check_and_set_root_attr opt_view_pruning_setup_views_active_list { slow-slow-maxrc fast-fast-minrc func-typ-typ }
+::db::check_and_set_root_attr opt_view_pruning_setup_views_persistent_list { slow-slow-maxrc fast-fast-minrc}
+::db::check_and_set_root_attr opt_view_pruning_tdgr_setup_views_persistent_list { slow-slow-maxrc}
+::db::check_and_set_root_attr place_global_cong_effort auto
+::db::check_and_set_root_attr route_antenna_cell_name ANTENNA2_A9PP140ZTUL_C30
+::db::check_and_set_root_attr route_antenna_diode_insertion true
+::db::check_and_set_root_attr route_bottom_routing_layer 1
+::db::check_and_set_root_attr route_detail_fix_antenna true
+::db::check_and_set_root_attr route_detail_post_route_spread_wire false
+::db::check_and_set_root_attr route_detail_use_lef_pin_taper_rule true
+::db::check_and_set_root_attr route_detail_use_multi_cut_via_effort medium
+::db::check_and_set_root_attr route_early_global_secondary_pg false
+::db::check_and_set_root_attr route_exp_design_mode_bottom_routing_layer 2
+::db::check_and_set_root_attr route_extract_third_party_compatible false
+::db::check_and_set_root_attr route_filler_inst_prefix FILL
+::db::check_and_set_root_attr route_global_exp_timing_driven_std_delay 4.8
+::db::check_and_set_root_attr route_global_exp_timing_driven_use_tif_timing_engine_for_import_design false
+::db::check_and_set_root_attr route_re_insert_filler_cell_list {FILLSGCAP128_A9PP140ZTUL_C30 FILLSGCAP16_A9PP140ZTUL_C30 FILLSGCAP2_A9PP140ZTUL_C30 FILLSGCAP32_A9PP140ZTUL_C30 FILLSGCAP3_A9PP140ZTUL_C30 FILLSGCAP4_A9PP140ZTUL_C30 FILLSGCAP64_A9PP140ZTUL_C30 FILLSGCAP8_A9PP140ZTUL_C30 FILL8_A9PP140ZTUL_C30 FILL64_A9PP140ZTUL_C30 FILL4_A9PP140ZTUL_C30 FILL3_A9PP140ZTUL_C30 FILL32_A9PP140ZTUL_C30 FILL2_A9PP140ZTUL_C30 FILL1_A9PP140ZTUL_C30 FILL16_A9PP140ZTUL_C30 FILL128_A9PP140ZTUL_C30}
+::db::check_and_set_root_attr route_re_insert_filler_cell_list_from_file false
+::db::check_and_set_root_attr route_top_routing_layer 6
+::db::check_and_set_root_attr route_with_eco false
+::db::check_and_set_root_attr write_def_stream_check_uncolored false

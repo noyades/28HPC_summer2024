@@ -1,0 +1,34 @@
+# This Pegasus GUI File Index Registry was created automatically
+# Do not attempt to modify this file as any change may lead
+# to Pegasus GUI Tools malfunction.
+# 
+"Run Directory" internal none /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/synthesis/cadence/pp_fir_u_0_work/lvs
+"Current Directory" internal none /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/synthesis/cadence/pp_fir_u_0_work
+"Cadence Directory" internal none /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/synthesis/cadence/pp_fir_u_0_work/.cadence/
+"Job Signature" internal none IPVS_1740327382_3896841
+"Pegasus Job Mode" internal none lvs
+"GUI Flow" internal none innovus
+"GUI Preset" internal none /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/synthesis/cadence/pp_fir_u_0_work/lvs/.preset.autosave
+"Pegasus Version" internal none 23.20-p013
+"Binary Name" internal none pegasusgui
+"Pegasus Build Date" internal none "Tue Jan 9 12:32:47 PST 2024"
+"Pegasus Job Time" internal none 1740327383
+"DFII version" internal none 6.1.2
+"Run Directory" internal none /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/synthesis/cadence/pp_fir_u_0_work/lvs
+"Pegasus Job Mode" internal none lvs
+"Rule File" input text /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/tsri/LVS/PVS/profile/PVS_FLOW/DFM_LVS_RC_PVS_N28HP_1p10m_ALRDL.v1.8_2p2a
+"Layout Top Cell" internal none pp_fir_u_0
+"Layout GDSII" input none /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/synthesis/cadence/pp_fir_u_0_work/pp_fir_u_0.gds.gz
+"Schematic Data is in Control File" internal none ENABLED
+"Extracted Spice File" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/synthesis/cadence/pp_fir_u_0_work/lvs/pp_fir_u_0.spi
+"Do not check rules files before run" internal none ENABLED
+"Command Line Options File Mode" internal none ENABLED
+"Control File" input text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/synthesis/cadence/pp_fir_u_0_work/lvs/pegasuslvsctl
+"Pegasus Job Log" log text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/synthesis/cadence/pp_fir_u_0_work/lvs/pegasusuilvs.log
+"It is Pegasus flow" internal none ENABLED
+"Pegasus Log Dir" internal none LOGS
+"Pegasus Console email" internal text jswalling@vt.edu
+"Pegasus Version" internal none 23.20-p013
+"Binary Name" internal none pegasusvirt
+"Pegasus Build Date" internal none "Tue Jan 9 12:32:47 PST 2024"
+"Pegasus Job Time" internal none 1740327385

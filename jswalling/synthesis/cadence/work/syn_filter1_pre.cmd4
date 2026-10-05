@@ -1,0 +1,16 @@
+# Cadence Genus(TM) Synthesis Solution, Version 22.10-p001_1, built Sep 29 2022 17:11:24
+
+# Date: Thu Dec 05 11:34:31 2024
+# Host: cluster15 (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (6cores*24cpus*2physical cpus*Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz 15360KB)
+# OS:   CentOS Linux release 7.9.2009 (Core)
+
+ls
+read Discrete_FIR_Filter_1.db
+read_db Discrete_FIR_Filter_1.db
+report_timing
+gui_show
+write_do_lec -golden_design rtl -revised_design fv_map -flat -no_exit -write_session genus_dp_int -verbose -logfile ${_LOG_PATH}/genus_int.dp.log > ${_OUTPUTS_PATH}/run_int.dp.do
+if {![file exists ${_LOG_PATH}]} {
+  file mkdir ${_LOG_PATH}
+  puts "Creating directory ${_REPORTS_PATH}"
+}

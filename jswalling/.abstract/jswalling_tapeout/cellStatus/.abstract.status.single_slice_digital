@@ -1,0 +1,5 @@
+cUiSetViewStatus {single_slice_digital} {layout} {1}
+cUiSetViewStatus {single_slice_digital} {logical} {0}
+cUiSetViewStatus {single_slice_digital} {abstract.pin} {0}
+cUiSetViewStatus {single_slice_digital} {abstract.ext} {0}
+cUiSetViewStatus {single_slice_digital} {abstract} {0}

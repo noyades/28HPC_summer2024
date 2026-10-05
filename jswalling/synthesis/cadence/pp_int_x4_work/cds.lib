@@ -1,0 +1,3 @@
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+DEFINE tsmcN28 ./tsmcN28

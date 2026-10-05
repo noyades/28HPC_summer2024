@@ -1,0 +1,10 @@
+set runDir {/data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir}
+set uniquifyCellNames true
+set uniquifyCellNamesPrefix false
+set mapFile {/data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/tech.map}
+set additionalSetStreamOutModeParameters {}
+set additionalStreamOutParameters {}
+set dbuPerUU 2000
+set mergeFiles {}
+set outputFormat stream
+set area {}

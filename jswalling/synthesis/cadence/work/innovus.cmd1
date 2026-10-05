@@ -1,0 +1,65 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Wed Jan  8 08:03:34 2025                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v22.10-p001_1 (64bit) 09/29/2022 11:03 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 22.10-p001_1 NR220915-0329/22_10-UB (database version 18.20.590) {superthreading v2.19}
+#@(#)CDS: AAE 22.10-p002 (64bit) 09/29/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 22.10-p004_1 () Sep  7 2022 21:57:29 ( )
+#@(#)CDS: SYNTECH 22.10-p001_1 () Aug  8 2022 11:26:34 ( )
+#@(#)CDS: CPE v22.10-p005
+#@(#)CDS: IQuantus/TQuantus 21.2.0-s201 (64bit) Wed Jul 6 19:14:09 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+set enc_check_rename_command_name 1
+read_db INVS/
+defIn ../../pp_fir_u_0_power.def
+fit
+zoomBox 73.09150 55.22550 215.63700 196.19600
+zoomBox 93.44900 74.32350 214.61300 194.14850
+zoomBox 137.18900 114.70550 211.59900 188.29350
+zoomBox 156.50650 132.54000 210.26800 185.70750
+zoomBox 168.12850 144.43650 206.97100 182.85000
+zoomBox 175.13550 152.87250 203.19950 180.62650
+fit
+setDelayCalMode -siAware false
+timeDesign -preCTS
+optDesign -preCTS
+report_timing
+saveDesign pp_fir_u_0_04_prects.inn
+zoomBox -4.22900 102.18250 35.09750 64.56600
+zoomBox 7.50400 74.42950 27.13100 89.92850
+fit
+zoomBox 140.25300 150.91300 156.49650 135.09700
+fit
+create_ccopt_clock_tree_spec
+get_ccopt_clock_trees *
+set_ccopt_property target_skew 0.025
+set_ccopt_property target_max_trans 0.025
+set_ccopt_property target_skew 0.01
+ccopt_design
+zoomBox -2.51900 186.81950 31.67800 161.17200
+zoomBox 4.34550 183.22150 9.25800 178.56150
+fit
+saveDesign pp_fir_u_0_05_cts.inn
+timeDesign -preCTS
+report_power
+panPage 0 1
+panPage 0 -1
+timeDesign -postCTS
+optDesign -postCTS
+zoomBox 90.15300 63.61950 177.69400 150.19300
+zoomBox 72.62900 46.43850 193.79350 166.26400
+zoomBox 48.37450 22.69800 216.07650 188.54700
+zoomBox 64.91500 56.63650 186.08050 176.46300
+zoomBox 69.96900 70.22550 172.96000 172.07850
+zoomBox 74.26500 81.77650 161.80750 168.35150
+zoomBox 77.91650 91.59450 152.32750 165.18350
+zoomBox 87.80700 118.18800 126.65050 156.60250
+saveDesign pp_fir_u_0_06_postctsopt.inn
+getFillerMode -quiet

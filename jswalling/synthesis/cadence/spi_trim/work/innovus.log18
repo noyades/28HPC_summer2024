@@ -1,0 +1,660 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v22.10-p001_1, built Thu Sep 29 11:03:49 PDT 2022
+Options:	
+Date:		Sat May 11 10:31:03 2024
+Host:		cluster12 (x86_64 w/Linux 3.10.0-1160.102.1.el7.x86_64) (6cores*24cpus*Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz 15360KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		[10:31:03.283969] Configured Lic search path (21.01-s002): 27002@license.ece.vt.edu
+
+		invs	Innovus Implementation System	22.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+The soft stacksize limit is either up to the hard limit or larger than 0.2% of RAM. No change is needed.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> set enc_check_rename_command_name 1
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> is_common_ui_mode
+<CMD> restoreDesign /home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/spi_trim/work/topVcoDigital_svt_postroute.enc.dat topVcoDigital
+#% Begin load design ... (date=05/11 10:36:27, mem=1080.3M)
+Set Default Input Pin Transition as 0.1 ps.
+**WARN: (IMPIMEX-4008):	Variable 'dlgflprecConfigFile' is no longer supported in user data manager and will be ignored.
+Set Default Input Pin Transition as 0.1 ps.
+Loading design 'topVcoDigital' saved by 'Innovus' '21.12-s106_1' on 'Sat May 11 05:32:21 2024'.
+% Begin Load MMMC data ... (date=05/11 10:36:29, mem=1085.0M)
+% End Load MMMC data ... (date=05/11 10:36:29, total cpu=0:00:00.1, real=0:00:01.0, peak res=1085.7M, current mem=1085.7M)
+timing_cond_wcl_typical timing_cond_wcl_slow timing_cond_wcl_fast
+worst best typical
+
+Loading LEF file /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdslogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/svt/2.04a/lef/5.8/gf22nsdslogl28edl116a_9M_2Mx_5Cx_1Jx_1Ox_LB.lef ...
+
+Loading LEF file /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdslogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/svt/2.04a/lef/5.8/gf22nsdslogl28edl116a.lef ...
+Set DBUPerIGU to M2 pitch 116.
+[10:36:30.254227] Periodic Lic check successful
+[10:36:30.254283] Feature usage summary:
+[10:36:30.254288] Innovus_Impl_System
+[10:36:30.254290] Innovus_20nm_Opt
+
+This command "restoreDesign /home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/spi_trim/work/topVcoDigital_svt_postroute.enc.dat ..." required an extra checkout of license invs_20nm.
+Additional license(s) checked out: 1 'Innovus_20nm_Opt' license(s)
+**WARN: (IMPLF-200):	Pin 'X' in macro 'UDBSVT28_TIEDIN_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'X' in macro 'UDBSVT28_TIE1_V1_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'X' in macro 'UDBSVT28_TIE1_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'X' in macro 'UDBSVT28_TIE0_V1_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'X' in macro 'UDBSVT28_TIE0_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSVT28_SYNC3RBSBMSFQ_2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSVT28_SYNC3RBSBMSFQ_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSVT28_SYNC3MSFQNS_2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSVT28_SYNC3MSFQNS_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSVT28_SYNC3MSFQ_2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSVT28_SYNC3MSFQ_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSVT28_SYNC2SBMSFQ_2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSVT28_SYNC2SBMSFQ_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSVT28_SYNC2RBSBMSFQ_2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSVT28_SYNC2RBSBMSFQ_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSVT28_SYNC2RBMSFQ_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSVT28_SYNC2MSFQNS_2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSVT28_SYNC2MSFQNS_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSVT28_SYNC2MSFQ_2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSVT28_SYNC2MSFQ_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Z' in macro 'UDBSVT28_RAD8BOOTHMUX_2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-201) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPLF-200):	Pin 'X' in macro 'UDBSVT28_CLAMP_Y6_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from /home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/spi_trim/work/topVcoDigital_svt_postroute.enc.dat/viewDefinition.tcl
+Reading wcl_slow timing library '/software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdslogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/svt/2.04a/liberty/logic_synth_lvf/gf22nsdslogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'UDBSVT28_TIEDIN_1'. The cell will only be used for analysis. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdslogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/svt/2.04a/liberty/logic_synth_lvf/gf22nsdslogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'UDBSVT28_CAPTOUCR9M1_8'. The cell will only be used for analysis. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdslogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/svt/2.04a/liberty/logic_synth_lvf/gf22nsdslogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'UDBSVT28_CAPTOUCR9M1_6'. The cell will only be used for analysis. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdslogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/svt/2.04a/liberty/logic_synth_lvf/gf22nsdslogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'UDBSVT28_CAPTOUCR9M1_4'. The cell will only be used for analysis. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdslogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/svt/2.04a/liberty/logic_synth_lvf/gf22nsdslogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'UDBSVT28_CAPTOUCR9M1_2'. The cell will only be used for analysis. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdslogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/svt/2.04a/liberty/logic_synth_lvf/gf22nsdslogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'UDBSVT28_CAPTOUCR9M1_1'. The cell will only be used for analysis. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdslogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/svt/2.04a/liberty/logic_synth_lvf/gf22nsdslogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'UDBSVT28_CAPTOUCL9M1_8'. The cell will only be used for analysis. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdslogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/svt/2.04a/liberty/logic_synth_lvf/gf22nsdslogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'UDBSVT28_CAPTOUCL9M1_6'. The cell will only be used for analysis. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdslogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/svt/2.04a/liberty/logic_synth_lvf/gf22nsdslogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'UDBSVT28_CAPTOUCL9M1_4'. The cell will only be used for analysis. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdslogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/svt/2.04a/liberty/logic_synth_lvf/gf22nsdslogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'UDBSVT28_CAPTOUCL9M1_2'. The cell will only be used for analysis. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdslogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/svt/2.04a/liberty/logic_synth_lvf/gf22nsdslogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'UDBSVT28_CAPTOUCL9M1_1'. The cell will only be used for analysis. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdslogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/svt/2.04a/liberty/logic_synth_lvf/gf22nsdslogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'UDBSVT28_CAPTM1_1'. The cell will only be used for analysis. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdslogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/svt/2.04a/liberty/logic_synth_lvf/gf22nsdslogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'UDBSVT28_CAPBOUCR9M1_8'. The cell will only be used for analysis. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdslogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/svt/2.04a/liberty/logic_synth_lvf/gf22nsdslogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'UDBSVT28_CAPBOUCR9M1_6'. The cell will only be used for analysis. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdslogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/svt/2.04a/liberty/logic_synth_lvf/gf22nsdslogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'UDBSVT28_CAPBOUCR9M1_4'. The cell will only be used for analysis. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdslogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/svt/2.04a/liberty/logic_synth_lvf/gf22nsdslogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'UDBSVT28_CAPBOUCR9M1_2'. The cell will only be used for analysis. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdslogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/svt/2.04a/liberty/logic_synth_lvf/gf22nsdslogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'UDBSVT28_CAPBOUCR9M1_1'. The cell will only be used for analysis. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdslogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/svt/2.04a/liberty/logic_synth_lvf/gf22nsdslogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'UDBSVT28_CAPBOUCL9M1_8'. The cell will only be used for analysis. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdslogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/svt/2.04a/liberty/logic_synth_lvf/gf22nsdslogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'UDBSVT28_CAPBOUCL9M1_6'. The cell will only be used for analysis. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdslogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/svt/2.04a/liberty/logic_synth_lvf/gf22nsdslogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'UDBSVT28_CAPBOUCL9M1_4'. The cell will only be used for analysis. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdslogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/svt/2.04a/liberty/logic_synth_lvf/gf22nsdslogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib)
+Message <TECHLIB-302> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+Read 1434 cells in library 'gf22nsdslogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C' 
+*** End library_loading (cpu=0.95min, real=1.00min, mem=233.1M, fe_cpu=2.12min, fe_real=6.47min, fe_mem=1460.2M) ***
+% Begin Load netlist data ... (date=05/11 10:37:31, mem=1256.7M)
+*** Begin netlist parsing (mem=1460.2M) ***
+Created 1434 new cells from 1 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilogBinary netlist '/home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/spi_trim/work/topVcoDigital_svt_postroute.enc.dat/topVcoDigital.v.bin'
+
+*** Memory Usage v#1 (Current mem = 1466.246M, initial mem = 509.465M) ***
+*** End netlist parsing (cpu=0:00:00.1, real=0:00:00.0, mem=1466.2M) ***
+% End Load netlist data ... (date=05/11 10:37:31, total cpu=0:00:00.1, real=0:00:00.0, peak res=1298.9M, current mem=1298.9M)
+Top level cell is topVcoDigital.
+Hooked 1434 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell topVcoDigital ...
+***** UseNewTieNetMode *****.
+*** Netlist is unique.
+** info: there are 1436 modules.
+** info: there are 538 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 1558.215M, initial mem = 509.465M) ***
+*info: set bottom ioPad orient R0
+
+Honor LEF defined pitches for advanced node
+Start create_tracks
+Loading preference file /home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/spi_trim/work/topVcoDigital_svt_postroute.enc.dat/gui.pref.tcl ...
+**WARN: (IMPSYT-3004):	Option EnableRectilinearDesign is obsolete and will be removed in future release.  Use 'setFPlanMode -enableRectilinearDesign' instead. To avoid this warning and to ensure compatibility with  future releases, please remove the obsolete preference from your script.
+**WARN: (IMPOPT-3602):	The specified path group name reg2reg is not defined.
+Type 'man IMPOPT-3602' for more detail.
+Effort level <high> specified for reg2reg path_group
+**WARN: (IMPTCM-77):	Option "-drouteStartIteration" for command setNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+#WARNING (NRIF-90) Option setNanoRouteMode -route_bottom_routing_layer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -bottomRoutingLayer instead.
+#WARNING (NRIF-91) Option setNanoRouteMode -route_top_routing_layer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -topRoutingLayer instead.
+Change floorplan default-technical-site to 'GF22_DST'.
+
+Loading LEF file /home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/spi_trim/work/topVcoDigital_svt_postroute.enc.dat/topVcoDigital.lef.info.gz ...
+*Info: initialize multi-corner CTS.
+Reading wcl_fast timing library '/software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdslogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/svt/2.04a/liberty/logic_synth_lvf/gf22nsdslogl28edl116a_FFG_0P88V_0P00V_0P00V_0P00V_M40C.lib' ...
+Read 1434 cells in library 'gf22nsdslogl28edl116a_FFG_0P88V_0P00V_0P00V_0P00V_M40C' 
+Reading wcl_typical timing library '/software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdslogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/svt/2.04a/liberty/logic_synth_lvf/gf22nsdslogl28edl116a_TT_0P80V_0P00V_0P00V_0P00V_25C.lib' ...
+Read 1434 cells in library 'gf22nsdslogl28edl116a_TT_0P80V_0P00V_0P00V_0P00V_25C' 
+Total number of combinational cells: 892
+Total number of sequential cells: 414
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 128
+List of usable buffers: UDBSVT28_BUF_1 UDBSVT28_BUF_10 UDBSVT28_BUF_12 UDBSVT28_BUF_12P5 UDBSVT28_BUF_16 UDBSVT28_BUF_16P5 UDBSVT28_BUF_1P5 UDBSVT28_BUF_2 UDBSVT28_BUF_1P75 UDBSVT28_BUF_20 UDBSVT28_BUF_24 UDBSVT28_BUF_2P75 UDBSVT28_BUF_3 UDBSVT28_BUF_32 UDBSVT28_BUF_3P5 UDBSVT28_BUF_4 UDBSVT28_BUF_3P75 UDBSVT28_BUF_5P5 UDBSVT28_BUF_5 UDBSVT28_BUF_6 UDBSVT28_BUF_7P5 UDBSVT28_BUF_6P5 UDBSVT28_BUF_9 UDBSVT28_BUF_8 UDBSVT28_BUF_D_16 UDBSVT28_BUF_D_32 UDBSVT28_BUF_D_4 UDBSVT28_BUF_D_8 UDBSVT28_BUF_ECOCT_1 UDBSVT28_BUF_ECOCT_2 UDBSVT28_BUF_ECOCT_4 UDBSVT28_BUF_L_1 UDBSVT28_BUF_MN_8 UDBSVT28_BUF_M_2 UDBSVT28_BUF_S_1 UDBSVT28_BUF_M_3 UDBSVT28_BUF_M_4 UDBSVT28_BUF_M_6 UDBSVT28_BUF_S_10 UDBSVT28_BUF_S_12 UDBSVT28_BUF_S_16 UDBSVT28_BUF_S_2 UDBSVT28_BUF_S_1P5 UDBSVT28_BUF_S_20 UDBSVT28_BUF_S_24 UDBSVT28_BUF_S_3 UDBSVT28_BUF_S_2P5 UDBSVT28_BUF_S_32 UDBSVT28_BUF_S_4 UDBSVT28_BUF_S_5 UDBSVT28_BUF_S_6 UDBSVT28_BUF_S_8
+Total number of usable buffers: 52
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: UDBSVT28_INV_1 UDBSVT28_INV_0P75 UDBSVT28_INV_10 UDBSVT28_INV_12 UDBSVT28_INV_15 UDBSVT28_INV_16 UDBSVT28_INV_18 UDBSVT28_INV_2 UDBSVT28_INV_1P5 UDBSVT28_INV_3 UDBSVT28_INV_20 UDBSVT28_INV_24 UDBSVT28_INV_32 UDBSVT28_INV_4 UDBSVT28_INV_5 UDBSVT28_INV_6 UDBSVT28_INV_8 UDBSVT28_INV_9 UDBSVT28_INV_ECOCT_2 UDBSVT28_INV_ECOCT_1 UDBSVT28_INV_ECOCT_4 UDBSVT28_INV_S_1 UDBSVT28_INV_S_0P75 UDBSVT28_INV_S_10 UDBSVT28_INV_S_12 UDBSVT28_INV_S_16 UDBSVT28_INV_S_1P25 UDBSVT28_INV_S_2 UDBSVT28_INV_S_1P5 UDBSVT28_INV_S_20 UDBSVT28_INV_S_24 UDBSVT28_INV_S_3 UDBSVT28_INV_S_2P5 UDBSVT28_INV_S_32 UDBSVT28_INV_S_4 UDBSVT28_INV_S_5 UDBSVT28_INV_S_6 UDBSVT28_INV_S_7 UDBSVT28_INV_S_8 UDBSVT28_INV_S_9
+Total number of usable inverters: 40
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: UDBSVT28_DEL_L10D250_2 UDBSVT28_DEL_L10D250_1 UDBSVT28_DEL_L10D250_4 UDBSVT28_DEL_L10D250_8 UDBSVT28_DEL_L10D300_2 UDBSVT28_DEL_L10D300_1 UDBSVT28_DEL_L10D300_4 UDBSVT28_DEL_L10D300_8 UDBSVT28_DEL_L14D500_2 UDBSVT28_DEL_L14D500_1 UDBSVT28_DEL_L14D500_4 UDBSVT28_DEL_L14D500_8 UDBSVT28_DEL_L22D1000_2 UDBSVT28_DEL_L22D1000_1 UDBSVT28_DEL_L22D1000_4 UDBSVT28_DEL_L22D1000_8 UDBSVT28_DEL_L4D50_2 UDBSVT28_DEL_L4D50_1 UDBSVT28_DEL_L4D50_4 UDBSVT28_DEL_L4D50_8 UDBSVT28_DEL_L4D75_2 UDBSVT28_DEL_L4D75_1 UDBSVT28_DEL_L4D75_4 UDBSVT28_DEL_L4D75_8 UDBSVT28_DEL_L6D100_2 UDBSVT28_DEL_L6D100_1 UDBSVT28_DEL_L6D100_4 UDBSVT28_DEL_L6D100_8 UDBSVT28_DEL_L6D125_2 UDBSVT28_DEL_L6D125_1 UDBSVT28_DEL_L6D125_4 UDBSVT28_DEL_L6D125_8 UDBSVT28_DEL_L6D150_2 UDBSVT28_DEL_L6D150_1 UDBSVT28_DEL_L6D150_4 UDBSVT28_DEL_L6D150_8 UDBSVT28_DEL_L8D175_2 UDBSVT28_DEL_L8D175_1 UDBSVT28_DEL_L8D175_4 UDBSVT28_DEL_L8D175_8 UDBSVT28_DEL_L8D200_2 UDBSVT28_DEL_L8D200_1 UDBSVT28_DEL_L8D200_4 UDBSVT28_DEL_L8D200_8
+Total number of identified usable delay cells: 44
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+Reading floorplan file - /home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/spi_trim/work/topVcoDigital_svt_postroute.enc.dat/topVcoDigital.fp.gz (mem = 2156.9M).
+% Begin Load floorplan data ... (date=05/11 10:39:47, mem=2165.1M)
+*info: reset 777 existing net BottomPreferredLayer and AvoidDetour
+Deleting old partition specification.
+Set FPlanBox to (0 0 59972 59920)
+
+Honor LEF defined pitches for advanced node
+Start create_tracks
+ ... processed partition successfully.
+Reading binary special route file /home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/spi_trim/work/topVcoDigital_svt_postroute.enc.dat/topVcoDigital.fp.spr.gz (Created by Innovus v21.12-s106_1 on Sat May 11 05:32:15 2024, version: 1)
+Convert 0 swires and 0 svias from compressed groups
+37 swires and 122 svias were compressed
+37 swires and 88 svias were decompressed from small or sparse groups
+Ending "Read special route file" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2167.6M, current mem=2167.6M)
+There are 5 nets with weight being set
+There are 5 nets with bottomPreferredRoutingLayer being set
+There are 5 nets with avoidDetour being set
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+% End Load floorplan data ... (date=05/11 10:39:48, total cpu=0:00:00.2, real=0:00:01.0, peak res=2168.5M, current mem=2168.5M)
+Reading congestion map file /home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/spi_trim/work/topVcoDigital_svt_postroute.enc.dat/topVcoDigital.route.congmap.gz ...
+% Begin Load SymbolTable ... (date=05/11 10:39:48, mem=2168.6M)
+Un-suppress "**WARN ..." messages.
+% End Load SymbolTable ... (date=05/11 10:39:48, total cpu=0:00:00.1, real=0:00:00.0, peak res=2168.9M, current mem=2168.9M)
+Loading place ...
+% Begin Load placement data ... (date=05/11 10:39:48, mem=2168.9M)
+Reading placement file - /home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/spi_trim/work/topVcoDigital_svt_postroute.enc.dat/topVcoDigital.place.gz.
+** Reading stdCellPlacement_binary (Created by Innovus v21.12-s106_1 on Sat May 11 05:32:17 2024, version# 2) ...
+Read Views for adaptive view pruning ...
+Read 0 views from Binary DB for adaptive view pruning
+*** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=2157.3M) ***
+Total net length = 4.839e+03 (2.637e+03 2.202e+03) (ext = 3.480e+02)
+% End Load placement data ... (date=05/11 10:39:49, total cpu=0:00:00.1, real=0:00:00.0, peak res=2169.1M, current mem=2169.1M)
+% Begin Load routing data ... (date=05/11 10:39:50, mem=2169.5M)
+Reading routing file - /home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/spi_trim/work/topVcoDigital_svt_postroute.enc.dat/topVcoDigital.route.gz.
+Reading Innovus routing data (Created by Innovus v21.12-s106_1 on Sat May 11 05:32:18 2024 Format: 20.1) ...
+*** Total 551 nets are successfully restored.
+*** Completed restoreRoute (cpu=0:00:00.0 real=0:00:00.0 mem=2154.3M) ***
+% End Load routing data ... (date=05/11 10:39:50, total cpu=0:00:00.1, real=0:00:00.0, peak res=2169.8M, current mem=2169.8M)
+Loading Drc markers ...
+... 10000 markers are loaded ...
+... 10000 geometry drc markers are loaded ...
+... 0 antenna drc markers are loaded ...
+TAT_INFO: restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
+Reading property file /home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/spi_trim/work/topVcoDigital_svt_postroute.enc.dat/topVcoDigital.prop
+*** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=2157.3M) ***
+Reading dirtyarea snapshot file /home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/spi_trim/work/topVcoDigital_svt_postroute.enc.dat/topVcoDigital.db.da.gz (Create by Innovus v21.12-s106_1 on Sat May 11 05:32:18 2024, version: 4).
+Change floorplan default-technical-site to 'GF22_DST'.
+setAnalysisMode -usefulSkew already set.
+#WARNING (NRIF-90) Option setNanoRouteMode -route_bottom_routing_layer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -bottomRoutingLayer instead.
+#WARNING (NRIF-91) Option setNanoRouteMode -route_top_routing_layer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -topRoutingLayer instead.
+Loading preRoute extraction data from directory '/home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/spi_trim/work/topVcoDigital_svt_postroute.enc.dat/extraction/' ...
+Extraction setup Started 
+Initializing multi-corner RC extraction with 3 active RC Corners ...
+Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For postRoute extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+Generating auto layer map file.
+Importing multi-corner technology file(s) for preRoute extraction...
+/home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/spi_trim/work/topVcoDigital_svt_postroute.enc.dat/libs/mmmc/worst/qrcTechFile
+Generating auto layer map file.
+
+/home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/spi_trim/work/topVcoDigital_svt_postroute.enc.dat/libs/mmmc/best/qrcTechFile
+Generating auto layer map file.
+
+/home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/spi_trim/work/topVcoDigital_svt_postroute.enc.dat/libs/mmmc/typical/qrcTechFile
+Generating auto layer map file.
+
+Completed (cpu: 0:00:21.7 real: 0:00:44.0)
+Set Shrink Factor to 1.00000
+Summary of Active RC-Corners : 
+ 
+ Analysis View: view_wcl_slow
+    RC-Corner Name        : worst
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/spi_trim/work/topVcoDigital_svt_postroute.enc.dat/libs/mmmc/worst/qrcTechFile'
+ 
+ Analysis View: view_wcl_fast
+    RC-Corner Name        : best
+    RC-Corner Index       : 1
+    RC-Corner Temperature : -40 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/spi_trim/work/topVcoDigital_svt_postroute.enc.dat/libs/mmmc/best/qrcTechFile'
+ 
+ Analysis View: view_wcl_typical
+    RC-Corner Name        : typical
+    RC-Corner Index       : 2
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/spi_trim/work/topVcoDigital_svt_postroute.enc.dat/libs/mmmc/typical/qrcTechFile'
+Initializing multi-corner resistance tables ...
+RC corner worst not found in the saved preRoute extraction data.
+RC corner best not found in the saved preRoute extraction data.
+RC corner typical not found in the saved preRoute extraction data.
+Default value for postRoute extraction mode's effortLevel (-effortLevel option of setExtractRCMode) changed to 'medium'.
+Start generating vias ..
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Via generation completed successfully.
+Generating auto layer map file.
+Initializing preRoute extraction patterns for new vias... Generating auto layer map file.
+Generating auto layer map file.
+Generating auto layer map file.
+Completed (cpu: 0:00:06.9 real: 0:00:11.0)
+% Begin Load power constraints ... (date=05/11 10:40:59, mem=2222.7M)
+'set_default_switching_activity' finished successfully.
+% End Load power constraints ... (date=05/11 10:40:59, total cpu=0:00:00.1, real=0:00:00.0, peak res=2229.2M, current mem=2229.2M)
+delay_corner_wcl_slow delay_corner_wcl_typical delay_corner_wcl_fast
+% Begin load AAE data ... (date=05/11 10:40:59, mem=2250.9M)
+AAE DB initialization (MEM=2226.89 CPU=0:00:00.0 REAL=0:00:00.0) 
+**WARN: (IMPESI-641):	Restoring an older version: 8, of persistent AaeDB using a newer version: 9, code is not recommended.
+% End load AAE data ... (date=05/11 10:41:00, total cpu=0:00:00.8, real=0:00:01.0, peak res=2256.2M, current mem=2256.2M)
+Restoring CCOpt config...
+  Extracting original clock gating for sclk...
+    clock_tree sclk contains 34 sinks and 0 clock gates.
+  Extracting original clock gating for sclk done.
+  Extracting original clock gating for clk...
+    clock_tree clk contains 205 sinks and 0 clock gates.
+  Extracting original clock gating for clk done.
+  The skew group clk/functional_wcl_fast was created. It contains 205 sinks and 1 sources.
+  The skew group clk/functional_wcl_slow was created. It contains 205 sinks and 1 sources.
+  The skew group clk/functional_wcl_typical was created. It contains 205 sinks and 1 sources.
+  The skew group sclk/functional_wcl_fast was created. It contains 34 sinks and 1 sources.
+  The skew group sclk/functional_wcl_slow was created. It contains 34 sinks and 1 sources.
+  The skew group sclk/functional_wcl_typical was created. It contains 34 sinks and 1 sources.
+  The skew group clk/functional_wcl_fast was created. It contains 205 sinks and 1 sources.
+  The skew group sclk/functional_wcl_fast was created. It contains 34 sinks and 1 sources.
+Restoring CCOpt config done.
+Total number of combinational cells: 892
+Total number of sequential cells: 414
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 128
+List of usable buffers: UDBSVT28_BUF_1 UDBSVT28_BUF_10 UDBSVT28_BUF_12 UDBSVT28_BUF_12P5 UDBSVT28_BUF_1P5 UDBSVT28_BUF_2 UDBSVT28_BUF_1P75 UDBSVT28_BUF_2P75 UDBSVT28_BUF_3 UDBSVT28_BUF_3P5 UDBSVT28_BUF_4 UDBSVT28_BUF_3P75 UDBSVT28_BUF_5P5 UDBSVT28_BUF_5 UDBSVT28_BUF_6 UDBSVT28_BUF_7P5 UDBSVT28_BUF_6P5 UDBSVT28_BUF_9 UDBSVT28_BUF_8 UDBSVT28_BUF_D_4 UDBSVT28_BUF_D_8 UDBSVT28_BUF_L_1 UDBSVT28_BUF_MN_8 UDBSVT28_BUF_M_2 UDBSVT28_BUF_S_1 UDBSVT28_BUF_M_3 UDBSVT28_BUF_M_4 UDBSVT28_BUF_M_6 UDBSVT28_BUF_S_10 UDBSVT28_BUF_S_12 UDBSVT28_BUF_S_2 UDBSVT28_BUF_S_1P5 UDBSVT28_BUF_S_3 UDBSVT28_BUF_S_2P5 UDBSVT28_BUF_S_4 UDBSVT28_BUF_S_5 UDBSVT28_BUF_S_6 UDBSVT28_BUF_S_8
+Total number of usable buffers: 38
+List of unusable buffers: UDBSVT28_BUF_16 UDBSVT28_BUF_16P5 UDBSVT28_BUF_20 UDBSVT28_BUF_24 UDBSVT28_BUF_32 UDBSVT28_BUF_D_16 UDBSVT28_BUF_D_32 UDBSVT28_BUF_ECOCT_1 UDBSVT28_BUF_ECOCT_2 UDBSVT28_BUF_ECOCT_4 UDBSVT28_BUF_S_16 UDBSVT28_BUF_S_20 UDBSVT28_BUF_S_24 UDBSVT28_BUF_S_32
+Total number of unusable buffers: 14
+List of usable inverters: UDBSVT28_INV_1 UDBSVT28_INV_10 UDBSVT28_INV_12 UDBSVT28_INV_15 UDBSVT28_INV_2 UDBSVT28_INV_1P5 UDBSVT28_INV_3 UDBSVT28_INV_4 UDBSVT28_INV_5 UDBSVT28_INV_6 UDBSVT28_INV_8 UDBSVT28_INV_9 UDBSVT28_INV_S_1 UDBSVT28_INV_S_10 UDBSVT28_INV_S_12 UDBSVT28_INV_S_1P25 UDBSVT28_INV_S_2 UDBSVT28_INV_S_1P5 UDBSVT28_INV_S_3 UDBSVT28_INV_S_2P5 UDBSVT28_INV_S_4 UDBSVT28_INV_S_5 UDBSVT28_INV_S_6 UDBSVT28_INV_S_7 UDBSVT28_INV_S_8 UDBSVT28_INV_S_9
+Total number of usable inverters: 26
+List of unusable inverters: UDBSVT28_INV_0P75 UDBSVT28_INV_16 UDBSVT28_INV_18 UDBSVT28_INV_20 UDBSVT28_INV_24 UDBSVT28_INV_32 UDBSVT28_INV_ECOCT_2 UDBSVT28_INV_ECOCT_1 UDBSVT28_INV_ECOCT_4 UDBSVT28_INV_S_0P75 UDBSVT28_INV_S_16 UDBSVT28_INV_S_20 UDBSVT28_INV_S_24 UDBSVT28_INV_S_32
+Total number of unusable inverters: 14
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells: UDBSVT28_DEL_L10D250_2 UDBSVT28_DEL_L10D250_1 UDBSVT28_DEL_L10D250_4 UDBSVT28_DEL_L10D250_8 UDBSVT28_DEL_L10D300_2 UDBSVT28_DEL_L10D300_1 UDBSVT28_DEL_L10D300_4 UDBSVT28_DEL_L10D300_8 UDBSVT28_DEL_L14D500_2 UDBSVT28_DEL_L14D500_1 UDBSVT28_DEL_L14D500_4 UDBSVT28_DEL_L14D500_8 UDBSVT28_DEL_L22D1000_2 UDBSVT28_DEL_L22D1000_1 UDBSVT28_DEL_L22D1000_4 UDBSVT28_DEL_L22D1000_8 UDBSVT28_DEL_L4D50_2 UDBSVT28_DEL_L4D50_1 UDBSVT28_DEL_L4D50_4 UDBSVT28_DEL_L4D50_8 UDBSVT28_DEL_L4D75_2 UDBSVT28_DEL_L4D75_1 UDBSVT28_DEL_L4D75_4 UDBSVT28_DEL_L4D75_8 UDBSVT28_DEL_L6D100_2 UDBSVT28_DEL_L6D100_1 UDBSVT28_DEL_L6D100_4 UDBSVT28_DEL_L6D100_8 UDBSVT28_DEL_L6D125_2 UDBSVT28_DEL_L6D125_1 UDBSVT28_DEL_L6D125_4 UDBSVT28_DEL_L6D125_8 UDBSVT28_DEL_L6D150_2 UDBSVT28_DEL_L6D150_1 UDBSVT28_DEL_L6D150_4 UDBSVT28_DEL_L6D150_8 UDBSVT28_DEL_L8D175_2 UDBSVT28_DEL_L8D175_1 UDBSVT28_DEL_L8D175_4 UDBSVT28_DEL_L8D175_8 UDBSVT28_DEL_L8D200_2 UDBSVT28_DEL_L8D200_1 UDBSVT28_DEL_L8D200_4 UDBSVT28_DEL_L8D200_8
+Total number of identified unusable delay cells: 44
+All delay cells are dont_use. Buffers will be used to fix hold violations.
+**WARN: (IMPCTE-107):	The following globals have been obsoleted since version . They will be removed in the next release. 
+timing_enable_separate_device_slew_effect_sensitivities
+#% End load design ... (date=05/11 10:41:01, total cpu=0:03:37, real=0:04:34, peak res=3135.1M, current mem=2261.3M)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-200            2  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPLF-201         1477  Pin '%s' in macro '%s' has no ANTENNADIF...
+WARNING   IMPSYT-3004          1  %s                                       
+WARNING   IMPESI-641           1  Restoring an older version: %d, of persi...
+WARNING   IMPOPT-3602          1  The specified path group name %s is not ...
+WARNING   IMPCTE-107           1  The following globals have been obsolete...
+WARNING   IMPTCM-77            1  Option "%s" for command %s is obsolete a...
+WARNING   IMPIMEX-4008         1  Variable '%s' is no longer supported in ...
+WARNING   TECHLIB-302        372  No function defined for cell '%s'. The c...
+*** Message Summary: 1857 warning(s), 0 error(s)
+
+<CMD> setDrawView fplan
+<CMD> encMessage warning 1
+<CMD> encMessage debug 0
+<CMD> setLayerPreference violation -isVisible 1
+<CMD> violationBrowser -all -no_display_false -displayByLayer
+<CMD> zoomBox 20.07 24.69 21.11 25.715
+<CMD> setDrawView place
+<CMD> ui_view_box
+<CMD> ui_view_box
+<CMD> dbquery -area {19.988 24.69 21.192 25.715} -objType inst
+<CMD> dbquery -area {19.988 24.69 21.192 25.715} -objType regular
+<CMD> dbquery -area {19.988 24.69 21.192 25.715} -objType special
+<CMD> selectInst fifo_inst/fifo_empty_reg
+<CMD> deselectInst fifo_inst/fifo_empty_reg
+<CMD> deselectInst fifo_inst/fifo_empty_reg
+<CMD> selectObject Wire {fifo_inst/count[2](20941,24693,21308,24737)}
+<CMD> selectObject Wire {fifo_inst/count[2](20941,23703,20985,24737)}
+<CMD> zoomBox 20.09700 24.76300 21.12000 25.63400
+<CMD> zoomBox 20.18800 24.82300 21.05900 25.56400
+<CMD> zoomBox 20.26600 24.87300 21.00700 25.50400
+<CMD> zoomBox 20.38800 24.95400 20.92400 25.41000
+<CMD> zoomBox 20.43600 24.98500 20.89200 25.37300
+<CMD> deselectObject Wire {fifo_inst/count[2](20941,23703,20985,24737)}
+<CMD> deselectAll
+<CMD> selectObject Wire FE_OFN10_n(20568,25143,20805,25187)
+<CMD> selectWire 20.5680 25.1430 20.8050 25.1870 3 FE_OFN10_n
+<CMD> deselectObject Wire FE_OFN10_n(20568,25143,20805,25187)
+<CMD> deselectAll
+<CMD> selectInst fifo_inst/fifo_empty_reg
+<CMD> selectInst fifo_inst/fifo_empty_reg
+<CMD> zoomBox 20.40600 24.95400 20.94200 25.41000
+<CMD> zoomBox 20.37000 24.91700 21.00100 25.45400
+<CMD> zoomBox 20.32900 24.87400 21.07100 25.50600
+<CMD_INTERNAL> violationBrowserClose
+<CMD> setLayerPreference violation -isVisible 1
+<CMD> violationBrowser -all -no_display_false -displayByLayer
+<CMD> zoomBox -2.552 36.904 31.552 54.016
+<CMD> zoomBox 1.63900 55.96000 11.08100 51.28400
+<CMD> zoomBox 4.52200 55.02600 8.28400 52.62000
+<CMD> zoomBox 3.74100 51.29500 9.86800 56.51000
+<CMD> zoomBox 3.38400 50.87000 10.59300 57.00700
+<CMD> zoomBox 2.96300 50.37000 11.44600 57.59100
+<CMD> zoomBox 2.46800 49.78300 12.44900 58.27900
+<CMD> zoomBox 1.70400 48.22500 15.52000 59.98600
+<CMD> zoomBox 1.19600 47.23500 17.45000 61.07100
+<CMD> zoomBox 0.59100 46.08100 19.71400 62.35900
+<CMD> deselectAll
+<CMD> selectInst ENDCAP_594
+<CMD> deselectAll
+<CMD> selectInst ENDCAP_3
+<CMD_INTERNAL> violationBrowserClose
+Innovus terminated by internal (ILL) error/signal...
+*** Stack trace:
+*** Stack trace:
+/software/RFIC/cadtools/cadence/ddi/DDI_22.10.000_lnx86/INNOVUS221/tools.lnx86/innovus/bin/64bit/innovus[0x18d7f9b6]
+/software/RFIC/cadtools/cadence/ddi/DDI_22.10.000_lnx86/INNOVUS221/tools.lnx86/innovus/bin/64bit/innovus(syStackTrace+0xad)[0x18d7fee8]
+/software/RFIC/cadtools/cadence/ddi/DDI_22.10.000_lnx86/INNOVUS221/tools.lnx86/innovus/bin/64bit/innovus[0x6e828c6]
+/lib64/libpthread.so.0(+0xf62f)[0x2b0b182d762f]
+/software/RFIC/cadtools/cadence/ddi/DDI_22.10.000_lnx86/INNOVUS221/tools.lnx86/innovus/bin/64bit/innovus[0xc80012]
+[0x7ffc6dd30aff]
+========================================
+               pstack
+========================================
+Thread 26 (Thread 0x2b0b260be700 (LWP 11448)):
+#0  0x00002b0b182d69dd in accept () from /lib64/libpthread.so.0
+#1  0x0000000027d7f767 in ProcessInfo::handleConnection(void*) ()
+#2  0x0000000007276c75 in create_head(void*) ()
+#3  0x00002b0b182cfea5 in start_thread () from /lib64/libpthread.so.0
+#4  0x00002b0b18d78b0d in clone () from /lib64/libc.so.6
+Thread 25 (Thread 0x2b0b262bf700 (LWP 11449)):
+#0  0x00002b0b18d6fb43 in select () from /lib64/libc.so.6
+#1  0x0000000027d773cb in ProcessInfo::sampleUsage(void*) ()
+#2  0x0000000007276c75 in create_head(void*) ()
+#3  0x00002b0b182cfea5 in start_thread () from /lib64/libpthread.so.0
+#4  0x00002b0b18d78b0d in clone () from /lib64/libc.so.6
+Thread 24 (Thread 0x2b0b268ce700 (LWP 11460)):
+#0  0x00002b0b182d6e9d in nanosleep () from /lib64/libpthread.so.0
+#1  0x0000000008bd852d in rdaiLicRecheck(void*) ()
+#2  0x0000000007276c75 in create_head(void*) ()
+#3  0x00002b0b182cfea5 in start_thread () from /lib64/libpthread.so.0
+#4  0x00002b0b18d78b0d in clone () from /lib64/libc.so.6
+Thread 23 (Thread 0x2b0b26dd1700 (LWP 11462)):
+#0  0x00002b0b18d3f9fd in nanosleep () from /lib64/libc.so.6
+#1  0x00002b0b18d3f894 in sleep () from /lib64/libc.so.6
+#2  0x0000000018d9abaa in syiPeakMem(void*) ()
+#3  0x0000000007276c75 in create_head(void*) ()
+#4  0x00002b0b182cfea5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00002b0b18d78b0d in clone () from /lib64/libc.so.6
+Thread 22 (Thread 0x2b0b287c4700 (LWP 11561)):
+#0  0x00002b0b18d6dddd in poll () from /lib64/libc.so.6
+#1  0x00002b0b173d1022 in _xcb_conn_wait () from /lib64/libxcb.so.1
+#2  0x00002b0b173d2c6f in xcb_wait_for_event () from /lib64/libxcb.so.1
+#3  0x00002b0b2725c709 in ?? () from /software/RFIC/cadtools/cadence/ddi/DDI_22.10.000_lnx86/INNOVUS221/tools.lnx86/Qt/v5//64bit/lib/libcdsQt5XcbQpa.so.5
+#4  0x00002b0b1435c60b in ?? () from /software/RFIC/cadtools/cadence/ddi/DDI_22.10.000_lnx86/INNOVUS221/tools.lnx86/Qt/v5//64bit/lib/libcdsQt5Core.so.5
+#5  0x0000000007276c75 in create_head(void*) ()
+#6  0x00002b0b182cfea5 in start_thread () from /lib64/libpthread.so.0
+#7  0x00002b0b18d78b0d in clone () from /lib64/libc.so.6
+Thread 21 (Thread 0x2b0b2e98a700 (LWP 11565)):
+#0  0x00002b0b182d3a35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00002b0b2ae670b3 in thread_function () from /usr/lib64/dri/swrast_dri.so
+#2  0x00002b0b2ae66c27 in impl_thrd_routine () from /usr/lib64/dri/swrast_dri.so
+#3  0x0000000007276c75 in create_head(void*) ()
+#4  0x00002b0b182cfea5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00002b0b18d78b0d in clone () from /lib64/libc.so.6
+Thread 20 (Thread 0x2b0b2eb8b700 (LWP 11566)):
+#0  0x00002b0b182d3a35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00002b0b2ae670b3 in thread_function () from /usr/lib64/dri/swrast_dri.so
+#2  0x00002b0b2ae66c27 in impl_thrd_routine () from /usr/lib64/dri/swrast_dri.so
+#3  0x0000000007276c75 in create_head(void*) ()
+#4  0x00002b0b182cfea5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00002b0b18d78b0d in clone () from /lib64/libc.so.6
+Thread 19 (Thread 0x2b0b2ed8c700 (LWP 11567)):
+#0  0x00002b0b182d3a35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00002b0b2ae670b3 in thread_function () from /usr/lib64/dri/swrast_dri.so
+#2  0x00002b0b2ae66c27 in impl_thrd_routine () from /usr/lib64/dri/swrast_dri.so
+#3  0x0000000007276c75 in create_head(void*) ()
+#4  0x00002b0b182cfea5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00002b0b18d78b0d in clone () from /lib64/libc.so.6
+Thread 18 (Thread 0x2b0b2ef8d700 (LWP 11568)):
+#0  0x00002b0b182d3a35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00002b0b2ae670b3 in thread_function () from /usr/lib64/dri/swrast_dri.so
+#2  0x00002b0b2ae66c27 in impl_thrd_routine () from /usr/lib64/dri/swrast_dri.so
+#3  0x0000000007276c75 in create_head(void*) ()
+#4  0x00002b0b182cfea5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00002b0b18d78b0d in clone () from /lib64/libc.so.6
+Thread 17 (Thread 0x2b0b2f18e700 (LWP 11569)):
+#0  0x00002b0b182d3a35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00002b0b2ae670b3 in thread_function () from /usr/lib64/dri/swrast_dri.so
+#2  0x00002b0b2ae66c27 in impl_thrd_routine () from /usr/lib64/dri/swrast_dri.so
+#3  0x0000000007276c75 in create_head(void*) ()
+#4  0x00002b0b182cfea5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00002b0b18d78b0d in clone () from /lib64/libc.so.6
+Thread 16 (Thread 0x2b0b2f490700 (LWP 11570)):
+#0  0x00002b0b182d3a35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00002b0b2ae670b3 in thread_function () from /usr/lib64/dri/swrast_dri.so
+#2  0x00002b0b2ae66c27 in impl_thrd_routine () from /usr/lib64/dri/swrast_dri.so
+#3  0x0000000007276c75 in create_head(void*) ()
+#4  0x00002b0b182cfea5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00002b0b18d78b0d in clone () from /lib64/libc.so.6
+Thread 15 (Thread 0x2b0b2f691700 (LWP 11571)):
+#0  0x00002b0b182d3a35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00002b0b2ae670b3 in thread_function () from /usr/lib64/dri/swrast_dri.so
+#2  0x00002b0b2ae66c27 in impl_thrd_routine () from /usr/lib64/dri/swrast_dri.so
+#3  0x0000000007276c75 in create_head(void*) ()
+#4  0x00002b0b182cfea5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00002b0b18d78b0d in clone () from /lib64/libc.so.6
+Thread 14 (Thread 0x2b0b2f892700 (LWP 11572)):
+#0  0x00002b0b182d3a35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00002b0b2ae670b3 in thread_function () from /usr/lib64/dri/swrast_dri.so
+#2  0x00002b0b2ae66c27 in impl_thrd_routine () from /usr/lib64/dri/swrast_dri.so
+#3  0x0000000007276c75 in create_head(void*) ()
+#4  0x00002b0b182cfea5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00002b0b18d78b0d in clone () from /lib64/libc.so.6
+Thread 13 (Thread 0x2b0b2fa93700 (LWP 11573)):
+#0  0x00002b0b182d3a35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00002b0b2ae670b3 in thread_function () from /usr/lib64/dri/swrast_dri.so
+#2  0x00002b0b2ae66c27 in impl_thrd_routine () from /usr/lib64/dri/swrast_dri.so
+#3  0x0000000007276c75 in create_head(void*) ()
+#4  0x00002b0b182cfea5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00002b0b18d78b0d in clone () from /lib64/libc.so.6
+Thread 12 (Thread 0x2b0b2fc94700 (LWP 11574)):
+#0  0x00002b0b182d3a35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00002b0b2ae670b3 in thread_function () from /usr/lib64/dri/swrast_dri.so
+#2  0x00002b0b2ae66c27 in impl_thrd_routine () from /usr/lib64/dri/swrast_dri.so
+#3  0x0000000007276c75 in create_head(void*) ()
+#4  0x00002b0b182cfea5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00002b0b18d78b0d in clone () from /lib64/libc.so.6
+Thread 11 (Thread 0x2b0b2fe95700 (LWP 11575)):
+#0  0x00002b0b182d3a35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00002b0b2ae670b3 in thread_function () from /usr/lib64/dri/swrast_dri.so
+#2  0x00002b0b2ae66c27 in impl_thrd_routine () from /usr/lib64/dri/swrast_dri.so
+#3  0x0000000007276c75 in create_head(void*) ()
+#4  0x00002b0b182cfea5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00002b0b18d78b0d in clone () from /lib64/libc.so.6
+Thread 10 (Thread 0x2b0b30096700 (LWP 11576)):
+#0  0x00002b0b182d3a35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00002b0b2ae670b3 in thread_function () from /usr/lib64/dri/swrast_dri.so
+#2  0x00002b0b2ae66c27 in impl_thrd_routine () from /usr/lib64/dri/swrast_dri.so
+#3  0x0000000007276c75 in create_head(void*) ()
+#4  0x00002b0b182cfea5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00002b0b18d78b0d in clone () from /lib64/libc.so.6
+Thread 9 (Thread 0x2b0b30297700 (LWP 11577)):
+#0  0x00002b0b182d3a35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00002b0b2ae670b3 in thread_function () from /usr/lib64/dri/swrast_dri.so
+#2  0x00002b0b2ae66c27 in impl_thrd_routine () from /usr/lib64/dri/swrast_dri.so
+#3  0x0000000007276c75 in create_head(void*) ()
+#4  0x00002b0b182cfea5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00002b0b18d78b0d in clone () from /lib64/libc.so.6
+Thread 8 (Thread 0x2b0b30498700 (LWP 11578)):
+#0  0x00002b0b182d3a35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00002b0b2ae670b3 in thread_function () from /usr/lib64/dri/swrast_dri.so
+#2  0x00002b0b2ae66c27 in impl_thrd_routine () from /usr/lib64/dri/swrast_dri.so
+#3  0x0000000007276c75 in create_head(void*) ()
+#4  0x00002b0b182cfea5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00002b0b18d78b0d in clone () from /lib64/libc.so.6
+Thread 7 (Thread 0x2b0b30699700 (LWP 11579)):
+#0  0x00002b0b182d3a35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00002b0b2ae670b3 in thread_function () from /usr/lib64/dri/swrast_dri.so
+#2  0x00002b0b2ae66c27 in impl_thrd_routine () from /usr/lib64/dri/swrast_dri.so
+#3  0x0000000007276c75 in create_head(void*) ()
+#4  0x00002b0b182cfea5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00002b0b18d78b0d in clone () from /lib64/libc.so.6
+Thread 6 (Thread 0x2b0b3089a700 (LWP 11580)):
+#0  0x00002b0b182d3a35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00002b0b2ae670b3 in thread_function () from /usr/lib64/dri/swrast_dri.so
+#2  0x00002b0b2ae66c27 in impl_thrd_routine () from /usr/lib64/dri/swrast_dri.so
+#3  0x0000000007276c75 in create_head(void*) ()
+#4  0x00002b0b182cfea5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00002b0b18d78b0d in clone () from /lib64/libc.so.6
+Thread 5 (Thread 0x2b0b30be0700 (LWP 11592)):
+#0  0x00002b0b18d6fb43 in select () from /lib64/libc.so.6
+#1  0x0000000029658018 in NotifierThreadProc ()
+#2  0x0000000007276c75 in create_head(void*) ()
+#3  0x00002b0b182cfea5 in start_thread () from /lib64/libpthread.so.0
+#4  0x00002b0b18d78b0d in clone () from /lib64/libc.so.6
+Thread 4 (Thread 0x2b0b316e8700 (LWP 11920)):
+#0  0x00002b0b182d73c1 in sigwait () from /lib64/libpthread.so.0
+#1  0x0000000006e80080 in ctrlCHandle(void*) ()
+#2  0x0000000007276c75 in create_head(void*) ()
+#3  0x00002b0b182cfea5 in start_thread () from /lib64/libpthread.so.0
+#4  0x00002b0b18d78b0d in clone () from /lib64/libc.so.6
+Thread 3 (Thread 0x2b0b323f2700 (LWP 11929)):
+#0  0x00002b0b18d6dddd in poll () from /lib64/libc.so.6
+#1  0x00002b0b1aca23fc in g_main_context_iterate.isra.19 () from /lib64/libglib-2.0.so.0
+#2  0x00002b0b1aca252c in g_main_context_iteration () from /lib64/libglib-2.0.so.0
+#3  0x00002b0b14581a81 in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /software/RFIC/cadtools/cadence/ddi/DDI_22.10.000_lnx86/INNOVUS221/tools.lnx86/Qt/v5//64bit/lib/libcdsQt5Core.so.5
+#4  0x00002b0b1452fa5b in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () from /software/RFIC/cadtools/cadence/ddi/DDI_22.10.000_lnx86/INNOVUS221/tools.lnx86/Qt/v5//64bit/lib/libcdsQt5Core.so.5
+#5  0x00002b0b14358501 in QThread::exec() () from /software/RFIC/cadtools/cadence/ddi/DDI_22.10.000_lnx86/INNOVUS221/tools.lnx86/Qt/v5//64bit/lib/libcdsQt5Core.so.5
+#6  0x00002b0b2739ad46 in ?? () from /software/RFIC/cadtools/cadence/ddi/DDI_22.10.000_lnx86/INNOVUS221/tools.lnx86/Qt/v5//64bit/lib/libcdsQt5DBus.so.5
+#7  0x00002b0b1435c60b in ?? () from /software/RFIC/cadtools/cadence/ddi/DDI_22.10.000_lnx86/INNOVUS221/tools.lnx86/Qt/v5//64bit/lib/libcdsQt5Core.so.5
+#8  0x0000000007276c75 in create_head(void*) ()
+#9  0x00002b0b182cfea5 in start_thread () from /lib64/libpthread.so.0
+#10 0x00002b0b18d78b0d in clone () from /lib64/libc.so.6
+Thread 2 (Thread 0x2b0b5996a700 (LWP 13789)):
+#0  0x00002b0b182d3a35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00002b0b1435cdab in QWaitCondition::wait(QMutex*, unsigned long) () from /software/RFIC/cadtools/cadence/ddi/DDI_22.10.000_lnx86/INNOVUS221/tools.lnx86/Qt/v5//64bit/lib/libcdsQt5Core.so.5
+#2  0x00002b0b14c144e5 in ?? () from /software/RFIC/cadtools/cadence/ddi/DDI_22.10.000_lnx86/INNOVUS221/tools.lnx86/Qt/v5//64bit/lib/libcdsQt5Widgets.so.5
+#3  0x00002b0b1435c60b in ?? () from /software/RFIC/cadtools/cadence/ddi/DDI_22.10.000_lnx86/INNOVUS221/tools.lnx86/Qt/v5//64bit/lib/libcdsQt5Core.so.5
+#4  0x0000000007276c75 in create_head(void*) ()
+#5  0x00002b0b182cfea5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00002b0b18d78b0d in clone () from /lib64/libc.so.6
+Thread 1 (Thread 0x2b0b1e3ec180 (LWP 10189)):
+#0  0x00002b0b18d3f659 in waitpid () from /lib64/libc.so.6
+#1  0x00002b0b18cbcf62 in do_system () from /lib64/libc.so.6
+#2  0x00002b0b18cbd311 in system () from /lib64/libc.so.6
+#3  0x0000000018d7fae2 in syStackTraceDump(_IO_FILE*, bool) ()
+#4  0x0000000018d7fee9 in syStackTrace ()
+#5  0x0000000006e828c7 in rdaiErrorHandler(int, siginfo_t*, void*) ()
+#6  <signal handler called>
+#7  0x0000000000c80012 in ?? ()
+#8  0x00002b0b16ed4a8c in XCreateIC () from /lib64/libX11.so.6
+#9  0x0000000029492a65 in Tk_HandleEvent ()
+#10 0x0000000029492b18 in WindowEventProc ()
+#11 0x0000000029618b29 in Tcl_ServiceEvent ()
+#12 0x0000000029618d85 in Tcl_DoOneEvent ()
+#13 0x00002b0b135a22c7 in TqEventDispatcher::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /software/RFIC/cadtools/cadence/ddi/DDI_22.10.000_lnx86/INNOVUS221/tools.lnx86/innovus/bin/64bit/../../../lib/64bit/libtq.so
+#14 0x00002b0b1452fa5b in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () from /software/RFIC/cadtools/cadence/ddi/DDI_22.10.000_lnx86/INNOVUS221/tools.lnx86/Qt/v5//64bit/lib/libcdsQt5Core.so.5
+#15 0x00002b0b1453721e in QCoreApplication::exec() () from /software/RFIC/cadtools/cadence/ddi/DDI_22.10.000_lnx86/INNOVUS221/tools.lnx86/Qt/v5//64bit/lib/libcdsQt5Core.so.5
+#16 0x00002b0b135a1897 in TqApplication::exec() () from /software/RFIC/cadtools/cadence/ddi/DDI_22.10.000_lnx86/INNOVUS221/tools.lnx86/innovus/bin/64bit/../../../lib/64bit/libtq.so
+#17 0x0000000006f54ebc in edi_app_init(Tcl_Interp*) ()
+#18 0x000000002961357c in Tcl_MainEx ()
+#19 0x000000000629e991 in main ()
+========================================
+                gdb
+========================================
+Using: gdb
+/home/sh.O8S9j9: Permission denied.
+Crashed in AAE on net Unknown net.
+
+*** Memory Usage v#1 (Current mem = 2278.770M, initial mem = 509.465M) ***
+*** Message Summary: 1857 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=12:16:59, real=35:40:51, mem=2278.8M) ---

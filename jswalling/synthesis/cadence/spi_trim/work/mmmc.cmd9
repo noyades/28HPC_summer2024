@@ -1,0 +1,44 @@
+# Cadence Genus(TM) Synthesis Solution, Version 21.11-s126_1, built Dec 20 2021 12:52:46
+
+# Date: Tue May 07 16:38:07 2024
+# Host: cluster12 (x86_64 w/Linux 3.10.0-1160.102.1.el7.x86_64) (6cores*24cpus*2physical cpus*Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz 15360KB)
+# OS:   CentOS Linux release 7.9.2009 (Core)
+
+source ../scripts/run.tcl
+# entering suspend mode
+resume
+# resuming normal operation
+# entering suspend mode
+resume
+# resuming normal operation
+gui_show
+time_info GENERIC
+write_reports -directory $_REPORTS_PATH -tag generic
+report_timing
+write_db ${_OUTPUTS_PATH}/${DESIGN}_generic.db
+syn_map -physical
+time_info MAPPED
+write_reports -directory $_REPORTS_PATH -tag map
+write_db ${_OUTPUTS_PATH}/${DESIGN}_map.db
+set _LOG_PATH OUTPUT/logs_${RELEASE}
+if {![file exists ${_LOG_PATH}]} {
+  file mkdir ${_LOG_PATH}
+  puts "Creating directory ${_REPORTS_PATH}"
+}
+write_do_lec -golden_design rtl -revised_design fv_map -no_exit -logfile ${_LOG_PATH}/rtl_2_fv_map.lec.log > ${_OUTPUTS_PATH}/rtl_2_fv_map.lec.do
+set_db invs_save_db true
+def_move -initialize
+syn_opt -spatial
+time_info ISPATIAL
+def_move -highlight
+write_db -common INVS -design topPLLDigital
+report_messages > $_REPORTS_PATH/${DESIGN}_messages.rpt
+report_gates > $_REPORTS_PATH/${DESIGN}_gates.rpt
+report_power > $_REPORTS_PATH/${DESIGN}_power.rpt
+write_reports -directory $_REPORTS_PATH -tag final
+write_do_lec -golden_design rtl -revised_design fv_map -revised_design
+${_OUTPUTS_PATH}/final/${DESIGN}.v.gz -no_exit -logfile
+${_LOG_PATH}/fv_map_2_final.lec.log >
+${_OUTPUTS_PATH}/fv_map_2_final.lec.do
+write_do_lec -golden_design rtl -revised_design fv_map -revised_design ${_OUTPUTS_PATH}/final/${DESIGN}.v.gz -no_exit -logfile ${_LOG_PATH}/fv_map_2_final.lec.log > ${_OUTPUTS_PATH}/fv_map_2_final.lec.do
+exit

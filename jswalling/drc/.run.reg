@@ -1,0 +1,272 @@
+# This Pegasus GUI File Index Registry was created automatically
+# Do not attempt to modify this file as any change may lead
+# to Pegasus GUI Tools malfunction.
+# 
+"Run Directory" internal none /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc
+"Current Directory" internal none /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling
+"Cadence Directory" internal none /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/.cadence/
+"Job Signature" internal none IPVS_1741012057_3635026
+"Pegasus Job Mode" internal none drc
+"GUI Flow" internal none virtuoso6
+"GUI Preset" internal none /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/.preset.autosave
+"Technology Name" internal none "tsmcN28"
+"Technology RuleSet" internal none "default"
+"Technology Mapping File" internal none /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/pvtech.lib
+"Technology Rule File" internal none /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/.technology.rul
+"Pegasus Version" internal none 23.20-p013
+"Binary Name" internal none pegasusgui
+"Pegasus Build Date" internal none "Tue Jan 9 12:32:47 PST 2024"
+"Pegasus Job Time" internal none 1741012060
+"DFII version" internal none ICADVM20.1.0
+"Run Directory" internal none /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc
+"Pegasus Job Mode" internal none drc
+"Rule File" input text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/.technology.rul
+"Cell Tree" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/cell_tree.txt
+"Layout Scale" internal none 0.001
+"Layout TechLib" internal none tsmcN28
+"Layout Library Name" internal none jswalling_dsp
+"Layout Cell Name" internal none pp_fir_u_7
+"Layout View Name" internal none layout
+"Layout ConvertPin" internal text geometry
+"Layout HierDepth" internal none 32
+"Layout MaxVertices" internal none 2048
+"Layout Top Cell" internal none pp_fir_u_7
+"Layout GDSII" input none /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/pp_fir_u_7.gds.gz
+"Intermediate GDSII File" output none /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/pp_fir_u_7.gds.gz
+"Intermediate GDSII File creation Errors" internal text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/PIPO1.LOG
+"Intermediate OASIS File creation Errors" internal text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/PIPO1.LOG
+"Enable Coloring" input none yes
+"Layout ReplaceBusBitChar" input none nil
+"Layout NoConvertHalfWidthPath" input none nil
+"Job Signature" internal none IPVS_1741012057_3635026
+"Do not check rules files before run" internal none ENABLED
+"Command Line Options File Mode" internal none ENABLED
+"Control File" input text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/pegasusdrcctl
+"Pegasus Job Log" log text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/pegasusuidrc.log
+"It is Pegasus flow" internal none ENABLED
+"Pegasus Log Dir" internal none LOGS
+"PIPO Setup File I" internal text  /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/pipo1.setup
+"PIPO Log I" log text  /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/PIPO1.LOG
+"PIPO Output I" internal text  /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/PIPO1.OUT
+"Input Layout" input none OA: jswalling_dsp pp_fir_u_7 layout
+"Output Layout Cellmap I" internal text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/lay_cellMap.txt
+"Pegasus Console email" internal text jswalling@vt.edu
+"Pegasus Version" internal none 23.20-p013
+"Binary Name" internal none pegasusvirt
+"Pegasus Build Date" internal none "Tue Jan 9 12:32:47 PST 2024"
+"Pegasus Job Time" internal none 1741012070
+"ASCII DRC Report Database" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/pp_fir_u_7.drc_errors.ascii
+"DRC Summary" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/pp_fir_u_7.sum
+"Layout GDSII" input none /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/pp_fir_u_7.gds.gz
+"Layout Top Cell" internal none pp_fir_u_7
+"Pegasus Job Mode" internal none drc
+"Report MaxResults" internal none 1000
+"Rule File" input text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/.technology.rul
+"Run Directory" internal none /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/
+"DFM RDB MOM.A.1" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/MOM.A.1.rep
+"DFM RDB MFU.R.1" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/MFU.R.1.rep
+"DFM RDB AN.R.79.2m" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/AN.R.79.2m.rep
+"DFM RDB AN.R.80.2m" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/AN.R.80.2m.rep
+"DFM RDB AN.R.77.2mg" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/WERR.rep
+"DFM RDB AN.R.77.2mg" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/L_SRDPO.rep
+"DFM RDB AN.R.77.2mg" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/L_ANAPO.rep
+"DFM RDB ARRAY_VT.R.1" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/ARRAY_VT.R.1.rep
+"Density Print OD.DN.1" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/OD.DN.1.density
+"Density Print OD.DN.2" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/OD.DN.2.density
+"Density Print OD.DN.3" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/OD.DN.3.density
+"Density Print OD.DN.4" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/OD.DN.4.density
+"Density Print OD.DN.5" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/OD.DN.5.density
+"Density Print PO.A.3" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/PO.A.3.density
+"Density Print PO.A.4" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/PO.A.4.density
+"Density Print PO.A.5" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/PO.A.5.density
+"Density Print PO.A.6" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/PO.A.6.density
+"Density Print PO.DN.1" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/PO.DN.1.density
+"Density Print PO.DN.2" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/PO.DN.2.density
+"Density Print PO.DN.3" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/PO.DN.3.density
+"Density Print PO.DN.3.1" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/PO.DN.3.1.density
+"Density Print PO.DN.4" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/PO.DN.4.density
+"Density Print PO.DN.4.1" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/PO.DN.4.1.density
+"Density Print PO.DN.16" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/PO.DN.16.density
+"Density Print PO.R.28" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/PO.R.28:X.density
+"Density Print PO.R.28" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/PO.R.28:Y.density
+"Density Print SR_DOD.DN.1" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/SR_DOD.DN.1.density
+"Density Print SR_DPO.DN.1" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/SR_DPO.DN.1.density
+"Density Print SSD.DN.1" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/SSD.DN.1.density
+"Density Print M1.DN.1" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M1.DN.1.density
+"Density Print M1.DN.2" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M1.DN.2.density
+"Density Print M1.DN.3" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M1.DN.3.density
+"Density Print M1.DN.6" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M1.DN.6_A.density
+"Density Print M1.DN.6" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M1.DN.6_BC.density
+"Density Print M2.DN.1" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M2.DN.1.density
+"Density Print M2.DN.2" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M2.DN.2.density
+"Density Print M2.DN.3" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M2.DN.3.density
+"Density Print M2.DN.6" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M2.DN.6_A.density
+"Density Print M2.DN.6" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M2.DN.6_BC.density
+"Density Print M3.DN.1" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M3.DN.1.density
+"Density Print M3.DN.2" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M3.DN.2.density
+"Density Print M3.DN.3" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M3.DN.3.density
+"Density Print M3.DN.6" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M3.DN.6_A.density
+"Density Print M3.DN.6" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M3.DN.6_BC.density
+"Density Print M4.DN.1" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M4.DN.1.density
+"Density Print M4.DN.2" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M4.DN.2.density
+"Density Print M4.DN.3" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M4.DN.3.density
+"Density Print M4.DN.6" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M4.DN.6_A.density
+"Density Print M4.DN.6" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M4.DN.6_BC.density
+"Density Print M5.DN.1" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M5.DN.1.density
+"Density Print M5.DN.2" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M5.DN.2.density
+"Density Print M5.DN.3" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M5.DN.3.density
+"Density Print M5.DN.6" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M5.DN.6_A.density
+"Density Print M5.DN.6" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M5.DN.6_BC.density
+"Density Print M6.DN.1" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M6.DN.1.density
+"Density Print M6.DN.2" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M6.DN.2.density
+"Density Print M6.DN.3" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M6.DN.3.density
+"Density Print M6.DN.6" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M6.DN.6_A.density
+"Density Print M6.DN.6" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M6.DN.6_BC.density
+"Density Print M7.DN.1" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M7.DN.1.density
+"Density Print M7.DN.2" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M7.DN.2.density
+"Density Print M7.DN.3" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M7.DN.3.density
+"Density Print M7.DN.6" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M7.DN.6_A.density
+"Density Print M7.DN.6" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M7.DN.6_BC.density
+"Density Print M8.DN.1" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M8.DN.1.density
+"Density Print M8.DN.2" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M8.DN.2.density
+"Density Print M8.DN.3" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M8.DN.3.density
+"Density Print M8.DN.6" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M8.DN.6_A.density
+"Density Print M8.DN.6" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M8.DN.6_BC.density
+"Density Print M9.DN.1" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M9.DN.1.density
+"Density Print M9.DN.2" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M9.DN.2.density
+"Density Print M9.DN.3" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M9.DN.3.density
+"Density Print M10.DN.1" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M10.DN.1.density
+"Density Print M10.DN.2" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M10.DN.2.density
+"Density Print M10.DN.3" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M10.DN.3.density
+"Density Print IND.DN.1" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/IND.DN.1.density
+"Density Print IND.DN.2" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/IND.DN.2.M1.density
+"Density Print IND.DN.2" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/IND.DN.2.M2.density
+"Density Print IND.DN.2" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/IND.DN.2.M3.density
+"Density Print IND.DN.2" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/IND.DN.2.M4.density
+"Density Print IND.DN.2" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/IND.DN.2.M5.density
+"Density Print IND.DN.2" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/IND.DN.2.M6.density
+"Density Print IND.DN.2" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/IND.DN.2.M7.density
+"Density Print IND.DN.2" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/IND.DN.2.M8.density
+"Density Print IND.DN.3" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/IND.DN.3.M1.density
+"Density Print IND.DN.3" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/IND.DN.3.M2.density
+"Density Print IND.DN.3" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/IND.DN.3.M3.density
+"Density Print IND.DN.3" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/IND.DN.3.M4.density
+"Density Print IND.DN.3" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/IND.DN.3.M5.density
+"Density Print IND.DN.3" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/IND.DN.3.M6.density
+"Density Print IND.DN.3" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/IND.DN.3.M7.density
+"Density Print IND.DN.3" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/IND.DN.3.M8.density
+"Density Print IND.DN.3" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/IND.DN.3.M9.density
+"Density Print IND.DN.3" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/IND.DN.3.M10.density
+"Density Print IND.DN.7" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/IND.DN.7.density
+"Density Print AP.W.5" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/AP.W.5.rep
+"Density Print AP.DN.1" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/AP.DN.1.density
+"Density Print AP.DN.2" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/AP.DN.2.density
+"Density Print DVIA1.R.3" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/DVIA1DM1.R.3.density
+"Density Print DVIA1.R.3" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/DVIA1DM2.R.3.density
+"Density Print DVIA2.R.3" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/DVIA2DM2.R.3.density
+"Density Print DVIA2.R.3" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/DVIA2DM3.R.3.density
+"Density Print DVIA3.R.3" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/DVIA3DM3.R.3.density
+"Density Print DVIA3.R.3" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/DVIA3DM4.R.3.density
+"Density Print DVIA4.R.3" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/DVIA4DM4.R.3.density
+"Density Print DVIA4.R.3" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/DVIA4DM5.R.3.density
+"Density Print DVIA5.R.3" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/DVIA5DM5.R.3.density
+"Density Print DVIA5.R.3" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/DVIA5DM6.R.3.density
+"Density Print DVIA6.R.3" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/DVIA6DM6.R.3.density
+"Density Print DVIA6.R.3" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/DVIA6DM7.R.3.density
+"Density Print DVIA7.R.3" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/DVIA7DM7.R.3.density
+"Density Print DVIA7.R.3" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/DVIA7DM8.R.3.density
+"Density Print PO.DN.7" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/PO.DN.7.density
+"Density Print PO.DN.8" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/PO.DN.8.density
+"Density Print DTCD.DN.1" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/DTCD.DN.1.NO_TCDDMY
+"Density Print DTCD.DN.1" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/DTCD.DN.1.density
+"Density Print BDTCD.DN.1" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/BDTCD.DN.1.NO_TCDDMY
+"Density Print BDTCD.DN.1" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/BDTCD.DN.1.density
+"Density Print BDTCD.DN.2" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/BDTCD.DN.2.NO_TCDDMY2
+"Density Print BDTCD.DN.2" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/BDTCD.DN.2.M2.density
+"Density Print BDTCD.DN.2" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/BDTCD.DN.2.NO_TCDDMY3
+"Density Print BDTCD.DN.2" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/BDTCD.DN.2.M3.density
+"Density Print BDTCD.DN.2" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/BDTCD.DN.2.NO_TCDDMY4
+"Density Print BDTCD.DN.2" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/BDTCD.DN.2.M4.density
+"Density Print BDTCD.DN.2" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/BDTCD.DN.2.NO_TCDDMY5
+"Density Print BDTCD.DN.2" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/BDTCD.DN.2.M5.density
+"Density Print BDTCD.DN.2" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/BDTCD.DN.2.NO_TCDDMY6
+"Density Print BDTCD.DN.2" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/BDTCD.DN.2.M6.density
+"Density Print BDTCD.DN.2" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/BDTCD.DN.2.NO_TCDDMY7
+"Density Print BDTCD.DN.2" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/BDTCD.DN.2.M7.density
+"Density Print BDTCD.DN.2" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/BDTCD.DN.2.NO_TCDDMY8
+"Density Print BDTCD.DN.2" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/BDTCD.DN.2.M8.density
+"Density Print ICOVL.R.17" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/ICOVL.R.17.density
+"Density Print ICOVL.R.18" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/ICOVL.R.18.density
+"Density Print ICOVL.R.19" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/ICOVL.R.19.density
+"Density Print ICOVL.R.20" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/ICOVL.R.20.density
+"Density Print ARRAY_VT.A.1" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/ARRAY_VT.A.1.density
+"Density Print ARRAY_VT.A.2" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/ARRAY_VT.A.2.density
+"Density Print ARRAY_VT.A.3" output text /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/ARRAY_VT.A.3.density
+"Density RDB OD.DN.3" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/OD.DN.3.RDB.density
+"Density RDB OD.DN.4" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/OD.DN.4.RDB.density
+"Density RDB OD.DN.5" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/OD.DN.5.RDB.density
+"Density RDB PO.A.3" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/PO.A.3.RDB.density
+"Density RDB PO.A.4" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/PO.A.4.RDB.density
+"Density RDB PO.A.5" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/PO.A.5.RDB.density
+"Density RDB PO.A.6" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/PO.A.6.RDB.density
+"Density RDB PO.DN.3" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/PO.DN.3.RDB.density
+"Density RDB PO.DN.3.1" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/PO.DN.3.1.RDB.density
+"Density RDB PO.DN.4" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/PO.DN.4.RDB.density
+"Density RDB PO.DN.4.1" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/PO.DN.4.1.RDB.density
+"Density RDB PO.DN.16" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/PO.DN.16.RDB.density
+"Density RDB PO.R.28" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/PO.R.28:X.RDB.density
+"Density RDB PO.R.28" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/PO.R.28:Y.RDB.density
+"Density RDB SR_DOD.DN.1" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/SR_DOD.DN.1.RDB.density
+"Density RDB SR_DPO.DN.1" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/SR_DPO.DN.1.RDB.density
+"Density RDB SSD.DN.1" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/SSD.DN.1.RDB.density
+"Density RDB M1.DN.1" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M1.DN.1.RDB.density
+"Density RDB M1.DN.2" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M1.DN.2.RDB.density
+"Density RDB M2.DN.1" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M2.DN.1.RDB.density
+"Density RDB M2.DN.2" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M2.DN.2.RDB.density
+"Density RDB M3.DN.1" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M3.DN.1.RDB.density
+"Density RDB M3.DN.2" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M3.DN.2.RDB.density
+"Density RDB Mx.DN.4" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/Mx.DN.4:M1_M2_M3.density
+"Density RDB Mx.DN.7" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/Mx.DN.7:M1_M2_M3.density
+"Density RDB M4.DN.1" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M4.DN.1.RDB.density
+"Density RDB M4.DN.2" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M4.DN.2.RDB.density
+"Density RDB Mx.DN.4" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/Mx.DN.4:M2_M3_M4.density
+"Density RDB Mx.DN.7" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/Mx.DN.7:M2_M3_M4.density
+"Density RDB M5.DN.1" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M5.DN.1.RDB.density
+"Density RDB M5.DN.2" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M5.DN.2.RDB.density
+"Density RDB Mx.DN.4" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/Mx.DN.4:M3_M4_M5.density
+"Density RDB Mx.DN.7" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/Mx.DN.7:M3_M4_M5.density
+"Density RDB M6.DN.1" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M6.DN.1.RDB.density
+"Density RDB M6.DN.2" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M6.DN.2.RDB.density
+"Density RDB Mx.DN.4" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/Mx.DN.4:M4_M5_M6.density
+"Density RDB Mx.DN.7" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/Mx.DN.7:M4_M5_M6.density
+"Density RDB M7.DN.1" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M7.DN.1.RDB.density
+"Density RDB M7.DN.2" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M7.DN.2.RDB.density
+"Density RDB Mx.DN.4" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/Mx.DN.4:M5_M6_M7.density
+"Density RDB Mx.DN.7" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/Mx.DN.7:M5_M6_M7.density
+"Density RDB M8.DN.1" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M8.DN.1.RDB.density
+"Density RDB M8.DN.2" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M8.DN.2.RDB.density
+"Density RDB Mx.DN.4" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/Mx.DN.4:M6_M7_M8.density
+"Density RDB Mx.DN.7" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/Mx.DN.7:M6_M7_M8.density
+"Density RDB M9.DN.1" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M9.DN.1.RDB.density
+"Density RDB M9.DN.2" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M9.DN.2.RDB.density
+"Density RDB M10.DN.1" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M10.DN.1.RDB.density
+"Density RDB M10.DN.2" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/M10.DN.2.RDB.density
+"Density RDB SRAM.WARN.1" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/SRAM.WARN.1.rep
+"Density RDB SRAM.WARN.2" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/SRAM.WARN.2.rep
+"Density RDB PO.DN.7" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/PO.DN.7.RDB.density
+"Density RDB PO.DN.8" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/PO.DN.8.RDB.density
+"Density RDB ARRAY_VT.A.1" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/ARRAY_VT.A.1.RDB.density
+"Density RDB ARRAY_VT.A.2" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/ARRAY_VT.A.2.RDB.density
+"Density RDB ARRAY_VT.A.3" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/ARRAY_VT.A.3.RDB.density
+"Antenna RDB ESD.1g" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/ESD.1g.hv_n.rep
+"Antenna RDB ESD.1g" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/ESD.1g.hv_p.rep
+"Antenna RDB ESD.18g" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/ESD.18g.NMOS.rep
+"Antenna RDB ESD.19g" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/ESD.19g.PMOS.rep
+"Antenna RDB ESD.40g" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/ESD.40g.rep
+"Antenna RDB ESD.40.1g" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/ESD.40.1g.rep
+"Antenna RDB ESD.49g" output rdb /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/drc/ESD.49g.rep
+"Pegasus Mode Info" internal none JKIIMAGEMGCACJDGJEKPPNJJMAFOKOEH
+"Pegasus Version" internal none 23.20-p013
+"Binary Name" internal none pegasus
+"Pegasus Build Date" internal none "Mon Jan 08 21:16:14 EST 2024"
+"Pegasus Job Time" internal none 1741012252

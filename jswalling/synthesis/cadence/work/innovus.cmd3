@@ -1,0 +1,536 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Wed Jan  8 12:04:48 2025                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v22.10-p001_1 (64bit) 09/29/2022 11:03 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 22.10-p001_1 NR220915-0329/22_10-UB (database version 18.20.590) {superthreading v2.19}
+#@(#)CDS: AAE 22.10-p002 (64bit) 09/29/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 22.10-p004_1 () Sep  7 2022 21:57:29 ( )
+#@(#)CDS: SYNTECH 22.10-p001_1 () Aug  8 2022 11:26:34 ( )
+#@(#)CDS: CPE v22.10-p005
+#@(#)CDS: IQuantus/TQuantus 21.2.0-s201 (64bit) Wed Jul 6 19:14:09 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+set enc_check_rename_command_name 1
+read_db INVS/
+zoomBox 164.78550 167.15750 184.90100 145.54100
+zoomBox 178.13850 160.84750 181.66850 154.53750
+zoomBox 174.77800 153.07050 184.53400 161.80400
+zoomBox 173.76000 152.13700 185.23800 162.41250
+zoomBox 172.56200 151.03900 186.06600 163.12800
+zoomBox 171.15250 149.74700 187.04000 163.96950
+zoomBox 178.94200 151.82250 181.57300 149.54150
+selectInst WELLTAP_591
+gui_select -rect {180.12650 150.72950 179.72800 150.57300}
+deselectAll
+selectInst WELLTAP_591
+deleteSelectedFromFPlan
+undo
+fit
+defIn ../../pp_fir_u_0_power.def
+fit
+zoomBox -0.03950 187.28850 17.37650 168.37150
+deselectAll
+fit
+setDelayCalMode -siAware false
+timeDesign -preCTS
+report_power
+zoomBox 88.70800 78.98000 191.69750 171.17750
+zoomBox 127.23700 114.38850 180.99850 162.51650
+zoomBox 133.54850 120.18850 179.24600 161.09750
+zoomBox 152.25300 142.31700 169.48850 157.74650
+zoomBox 158.55300 149.77100 166.20100 156.61750
+zoomBox 159.30700 150.66300 165.80750 156.48250
+zoomBox 159.94750 151.42100 165.47300 156.36750
+zoomBox 161.68650 153.47450 164.57100 156.05650
+zoomBox 161.97150 153.81050 164.42350 156.00550
+selectInst pp_fir_0_1_1/csa_tree_ADD_TC_OP_groupi3962_cdnfadd_014_0
+deselectAll
+selectInst pp_fir_0_1_1/csa_tree_ADD_TC_OP_groupi3962_cdnfadd_014_0
+fit
+zoomBox 173.81850 182.18400 191.23450 168.97200
+zoomBox 177.14750 172.39000 187.84350 181.96500
+deselectAll
+selectInst {signed_mag_0_mag_re_reg[230]}
+fit
+optDesign -preCTS
+report_power
+saveDesign pp_fir_u_0_04_prects.inn
+fit
+zoomBox -6.48500 167.79350 45.73850 143.95700
+fit
+zoomBox 193.09150 -7.29600 123.09900 5.27200
+fit
+create_ccopt_clock_tree_spec
+set_ccopt_property target_max_trans 0.025
+set_ccopt_property target_skew 0.01
+ccopt_design
+zoomBox 26.82100 5.25550 213.60050 151.17200
+zoomBox 92.00250 25.38600 189.50350 101.55600
+zoomBox 102.68000 28.68350 185.55600 93.42800
+zoomBox 119.50900 33.92650 179.38700 80.70450
+zoomBox 126.08150 35.97400 176.97800 75.73550
+selectWire 164.8000 -0.8000 165.0600 180.8000 1 VDD
+deselectAll
+selectWire 165.3200 -1.5000 165.5800 181.5000 1 VSS
+deselectAll
+selectInst {pp_fir_0_1_1/sum1_11_im_1_reg[23]}
+setLayerPreference node_layer -isVisible 0
+setLayerPreference AP -isVisible 1
+setLayerPreference AP -isVisible 0
+setLayerPreference M1 -isVisible 1
+setLayerPreference M2 -isVisible 1
+zoomBox 103.16100 20.29200 186.03800 85.03750
+zoomBox 92.67950 13.12050 190.18150 89.29150
+zoomBox 80.34800 4.68300 195.05650 94.29600
+zoomBox 65.84050 -5.24300 200.79150 100.18400
+zoomBox 48.77250 -16.92100 207.53900 107.11100
+zoomBox 28.69300 -30.65950 215.47700 115.26050
+zoomBox 5.07000 -46.82250 224.81550 124.84800
+zoomBox -22.72250 -65.83800 235.80200 136.12750
+deselectAll
+fit
+saveDesign pp_fir_u_0_05_cts.inn
+report_power
+timeDesign -postCTS
+optDesign -postCTS
+report_power
+saveDesign pp_fir_u_0_06_postctsopt.inn
+getFillerMode -quiet
+addFiller -cell FILLSGCAP8_A9PP140ZTL_C30 FILLSGCAP64_A9PP140ZTL_C30 FILLSGCAP4_A9PP140ZTL_C30 FILLSGCAP3_A9PP140ZTL_C30 FILLSGCAP32_A9PP140ZTL_C30 FILLSGCAP2_A9PP140ZTL_C30 FILLSGCAP16_A9PP140ZTL_C30 FILLSGCAP128_A9PP140ZTL_C30 FILL1_A9PP140ZTL_C30 -prefix FILLER
+zoomBox -6.26800 183.39550 26.01950 166.71000
+zoomBox 14.46300 180.46550 16.46600 178.27300
+deleteFiller -prefix FILLER
+zoomBox 11.67000 175.80800 19.11400 181.62350
+zoomBox 10.99150 175.10950 19.74950 181.95150
+fit
+zoomBox -4.10100 181.44550 45.30550 160.85950
+setDrawView place
+setDrawView place
+fit
+getFillerMode -quiet
+addFiller -cell FILL1_A9PP140ZTL_C30 FILLSGCAP2_A9PP140ZTL_C30 FILLSGCAP128_A9PP140ZTL_C30 FILLSGCAP16_A9PP140ZTL_C30 FILLSGCAP32_A9PP140ZTL_C30 FILLSGCAP3_A9PP140ZTL_C30 FILLSGCAP4_A9PP140ZTL_C30 FILLSGCAP64_A9PP140ZTL_C30 FILLSGCAP8_A9PP140ZTL_C30 -prefix FILLER -doDRC
+zoomBox -4.96800 184.47900 21.90250 168.66050
+zoomBox 13.65900 181.02900 17.15000 177.47050
+fit
+zoomBox 87.12750 165.41000 107.06350 148.94100
+setMultiCpuUsage -localCpu 8 -cpuPerRemoteHost 1 -remoteHost 0 -keepLicense true
+setDistributeHost -local
+setNanoRouteMode -quiet -drouteFixAntenna 1
+setNanoRouteMode -quiet -routeInsertAntennaDiode 0
+setNanoRouteMode -quiet -routeWithTimingDriven 0
+setNanoRouteMode -quiet -routeWithEco 0
+setNanoRouteMode -quiet -routeWithLithoDriven 0
+setNanoRouteMode -quiet -droutePostRouteLithoRepair 1
+setNanoRouteMode -quiet -routeWithSiDriven 0
+setNanoRouteMode -quiet -drouteAutoStop 0
+setNanoRouteMode -quiet -routeSelectedNetOnly 0
+setNanoRouteMode -quiet -routeTopRoutingLayer 6
+setNanoRouteMode -quiet -routeBottomRoutingLayer 1
+setNanoRouteMode -quiet -drouteEndIteration 1
+setNanoRouteMode -quiet -routeWithTimingDriven false
+setNanoRouteMode -quiet -routeWithSiDriven false
+routeDesign -globalDetail
+fit
+setLayerPreference node_layer -isVisible 1
+fit
+deleteFiller -prefix FILLER
+zoomBox -1.06750 172.99450 28.62000 142.87350
+fit
+saveDesign pp_fir_u_0_07_route.inn
+timeDesign -postRoute
+report_power
+optDesign -postRoute
+report_power
+getFillerMode -quiet
+addFiller -cell FILL1_A9PP140ZTL_C30 FILLSGCAP128_A9PP140ZTL_C30 FILLSGCAP16_A9PP140ZTL_C30 FILLSGCAP2_A9PP140ZTL_C30 FILLSGCAP32_A9PP140ZTL_C30 FILLSGCAP3_A9PP140ZTL_C30 FILLSGCAP4_A9PP140ZTL_C30 FILLSGCAP64_A9PP140ZTL_C30 FILLSGCAP8_A9PP140ZTL_C30 -prefix FILLER -doDRC
+zoomBox -15.42000 27.60250 171.35950 173.51900
+zoomBox -8.20800 55.40750 126.74050 160.83250
+zoomBox -2.99750 75.49700 94.50300 151.66650
+zoomBox 0.76700 90.01150 71.21150 145.04450
+zoomBox -0.96300 83.34250 81.91300 148.08700
+zoomBox 0.76700 90.01150 71.21150 145.04450
+zoomBox 4.54850 104.59350 47.81100 138.39100
+zoomBox 5.45150 108.07450 42.22450 136.80250
+zoomBox 6.47300 110.84400 37.73050 135.26300
+zoomBox 7.41600 112.89100 33.98500 133.64750
+zoomBox 8.21750 114.63150 30.80150 132.27450
+zoomBox 8.89900 116.11050 28.09550 131.10750
+zoomBox 9.47800 117.36800 25.79550 130.11550
+zoomBox 9.97050 118.43700 23.84050 129.27250
+zoomBox 10.38900 119.34550 22.17850 128.55550
+zoomBox 10.74450 120.11750 20.76600 127.94650
+zoomBox 11.04700 120.77400 19.56500 127.42850
+zoomBox 11.30400 121.33200 18.54450 126.98850
+zoomBox 11.52250 121.80650 17.67700 126.61450
+zoomBox 11.86550 122.55200 16.31250 126.02600
+setLayerPreference violation -isVisible 1
+violationBrowser -all -no_display_false -displayByLayer
+zoomBox 85.48 97.6 86.62 99.5
+zoomBox 65.46 162.4 66.74 164.3
+violationBrowserClose
+getMultiCpuUsage -localCpu
+get_verify_drc_mode -disable_rules -quiet
+get_verify_drc_mode -quiet -area
+get_verify_drc_mode -quiet -layer_range
+get_verify_drc_mode -check_ndr_spacing -quiet
+get_verify_drc_mode -check_only -quiet
+get_verify_drc_mode -check_same_via_cell -quiet
+get_verify_drc_mode -exclude_pg_net -quiet
+get_verify_drc_mode -ignore_trial_route -quiet
+get_verify_drc_mode -max_wrong_way_halo -quiet
+get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+get_verify_drc_mode -limit -quiet
+set_verify_drc_mode -disable_rules {} -check_ndr_spacing auto -check_only default -check_same_via_cell true -exclude_pg_net false -ignore_trial_route false -ignore_cell_blockage false -use_min_spacing_on_block_obs auto -report pp_fir_u_0.drc.rpt -limit 1000
+verify_drc
+set_verify_drc_mode -area {0 0 0 0}
+fit
+zoomBox 25.61950 59.09100 184.38200 183.12000
+zoomBox 47.26000 85.27400 161.96600 174.88500
+zoomBox 69.00150 111.32800 139.44550 166.36050
+zoomBox 74.18300 117.40400 134.06050 164.18150
+zoomBox 85.53200 129.33400 122.30450 158.06150
+zoomBox 92.87050 136.06650 115.45400 153.70950
+zoomBox 97.58100 139.56450 111.45100 150.40000
+zoomBox 99.66200 141.24250 109.68300 149.07100
+zoomBox 100.47450 141.89750 108.99250 148.55200
+zoomBox 101.16500 142.45450 108.40550 148.11100
+zoomBox 102.67500 143.67200 107.12200 147.14600
+selectMarker 105.2650 145.4100 105.3350 145.7750 1 1 2
+deselectAll
+selectMarker 105.2650 145.4100 105.3350 145.7750 1 1 2
+setLayerPreference violation -isVisible 1
+violationBrowser -all -no_display_false -displayByLayer
+violationBrowserClose
+zoomBox 101.20600 141.76950 108.44800 147.42700
+fit
+zoomBox 190.49100 112.53650 197.42550 100.61800
+zoomBox 188.70750 103.02000 199.73050 111.63150
+zoomBox 189.63600 103.95850 199.00550 111.27800
+zoomBox 191.09650 105.43350 197.86600 110.72200
+zoomBox 192.56300 106.91500 196.72100 110.16350
+zoomBox 192.91350 107.26900 196.44750 110.03000
+zoomBox 193.21100 107.56950 196.21500 109.91650
+deselectAll
+selectInst FILLER_18431_restore
+deselectAll
+selectInst FILLER_18431_restore
+getFillerMode -quiet
+zoomBox 189.65800 104.92700 197.62450 111.15050
+zoomBox 186.05650 102.26600 199.02900 112.40050
+zoomBox 182.46850 99.61800 200.42450 113.64550
+zoomBox 180.18700 97.93400 201.31150 114.43700
+zoomBox 177.50300 95.95300 202.35500 115.36800
+zoomBox 174.34150 93.62250 203.57900 116.46350
+zoomBox 166.24550 87.65400 206.71350 119.26850
+zoomBox 161.09750 83.85900 208.70700 121.05250
+zoomBox 155.04100 79.39400 211.05200 123.15100
+zoomBox 139.53300 67.96100 217.05700 128.52450
+zoomBox 153.64950 77.71450 201.25950 114.90850
+zoomBox 157.01950 80.04300 197.48800 111.65800
+zoomBox 164.38900 85.13400 189.24200 104.55000
+zoomBox 166.14800 86.34950 187.27350 102.85300
+zoomBox 167.64350 87.38250 185.60000 101.41050
+zoomBox 172.92100 91.02900 179.69400 96.32000
+zoomBox 173.40050 91.36000 179.15750 95.85750
+zoomBox 174.15450 91.88100 178.31400 95.13050
+zoomBox 174.70350 92.26100 177.70900 94.60900
+zoomBox 174.91800 92.40950 177.47300 94.40550
+zoomBox 175.10000 92.53550 177.27200 94.23250
+zoomBox 175.25500 92.64300 177.10150 94.08550
+getCTSMode -obs_engine -quiet
+saveDesign pp_fir_u_0_08_postroute.inn
+saveNetlist pp_fir_u_0_struct_inn.v
+streamOut pp_fir_u_0_struct_inn.gds -mapFile /software/RFIC/PDK/tsmc/28nm/tsri/tsmcN28/tsmcN28.layermap -libName DesignLib -units 2000 -mode ALL
+fit
+setLayerPreference PO -isVisible 0
+setLayerPreference M1 -isVisible 0
+setLayerPreference M2 -isVisible 0
+setLayerPreference M4 -isVisible 0
+setLayerPreference M3 -isVisible 0
+setLayerPreference VIA5 -isVisible 0
+setLayerPreference VIA4 -isVisible 0
+setDrawView ameba
+setDrawView fplan
+setDrawView place
+setLayerPreference node_inst -isVisible 0
+setLayerPreference M6 -isVisible 0
+setLayerPreference M6 -isVisible 1
+setLayerPreference M1 -isVisible 1
+zoomBox -4.10100 184.04600 21.03550 170.82750
+deselectAll
+selectWire 15.5200 -1.5000 15.7800 181.5000 1 VSS
+setLayerPreference M3 -isVisible 1
+zoomBox -7.20200 165.37600 22.37050 188.47850
+zoomBox -11.46250 162.78200 23.32850 189.96150
+zoomBox -16.47500 159.73000 24.45550 191.70600
+fit
+zoomBox 97.31200 185.56250 112.04750 171.04400
+streamOut pp_fir_u_0_struct_inn.gds -mapFile /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/tech.map -libName DesignLib -units 2000 -mode ALL
+deselectAll
+fit
+zoomBox 48.69750 -2.86950 207.46000 121.15950
+zoomBox 66.42350 -0.93300 201.37150 104.49150
+zoomBox 163.70350 21.12450 169.02000 14.79000
+zoomBox 163.04550 15.15900 169.93800 20.54350
+zoomBox 163.67250 15.47250 169.53150 20.04950
+zoomBox 164.20600 15.73900 169.18600 19.62950
+zoomBox 165.04500 16.15800 168.64300 18.96900
+zoomBox 165.88700 16.57850 168.09750 18.30550
+zoomBox 166.25850 16.76450 167.85600 18.01250
+selectVia 167.1250 17.2950 167.2350 17.4050 2 pp_fir_0_1_1/FE_OFN225_Delay_Pipeline_reg_im_10__6
+zoomBox 166.08250 16.66900 167.96200 18.13750
+zoomBox 165.63100 16.42450 168.23350 18.45750
+zoomBox 165.34400 16.26900 168.40600 18.66100
+setLayerPreference M2 -isVisible 1
+zoomBox 164.99700 16.09450 168.59950 18.90900
+setLayerPreference M2 -isVisible 0
+setLayerPreference M2 -isVisible 1
+zoomBox 166.04000 16.69000 167.92100 18.15950
+zoomBox 166.21100 16.78750 167.81000 18.03650
+zoomBox 166.74950 17.09500 167.45950 17.64950
+setLayerPreference VIA1 -isVisible 0
+setLayerPreference VIA1 -isVisible 1
+zoomBox 166.55250 17.00000 167.53550 17.76800
+zoomBox 166.28000 16.86950 167.64100 17.93250
+zoomBox 166.10650 16.78600 167.70800 18.03700
+zoomBox 165.90250 16.68800 167.78650 18.16000
+setLayerPreference VIA5 -isVisible 1
+setLayerPreference VIA4 -isVisible 1
+setLayerPreference M4 -isVisible 1
+zoomBox 164.31800 15.76050 168.56550 19.07850
+zoomBox 165.91250 16.63950 167.79750 18.11200
+zoomBox 166.61900 17.02850 167.45650 17.68300
+zoomBox 166.93150 17.20550 167.30300 17.49550
+zoomBox 166.96900 17.22650 167.28450 17.47300
+zoomBox 167.07050 17.28400 167.23550 17.41300
+fit
+zoomBox 2.83300 182.52900 32.30350 150.67450
+zoomBox 13.34700 171.04500 18.74700 166.12300
+zoomBox 13.57200 166.25950 18.92750 170.44350
+zoomBox 14.14600 166.37600 18.69850 169.93250
+zoomBox 14.63400 166.47450 18.50400 169.49800
+fit
+zoomBox -127.73600 -50.34450 327.98250 305.67350
+zoomBox -224.71600 -150.16800 406.03600 342.59050
+zoomBox 123.17550 192.96550 140.62300 162.30000
+panPage 0 -1
+panPage 0 -1
+panPage 0 1
+fit
+zoomBox 10.35500 132.21050 18.14800 119.87200
+zoomBox 13.94350 128.97700 14.97500 127.35050
+zoomBox 12.62000 127.13400 16.29000 129.04750
+zoomBox 12.29100 126.87950 16.60850 129.13050
+deselectAll
+selectMarker 14.3000 127.8000 14.7200 128.7000 -1 12 89
+setLayerPreference violation -isVisible 1
+violationBrowser -all -no_display_false -displayByLayer
+violationBrowserClose
+setLayerPreference violation -isVisible 1
+violationBrowser -all -no_display_false -displayByLayer
+violationBrowserClose
+deselectAll
+zoomBox 10.35500 126.43700 17.38650 130.10300
+zoomBox 9.46950 126.23400 17.74200 130.54700
+zoomBox 8.42800 125.99500 18.16050 131.06950
+zoomBox 7.20250 125.71550 18.65300 131.68550
+zoomBox -0.29100 124.01550 21.64450 135.45200
+zoomBox -6.31550 122.65200 24.04550 138.48150
+zoomBox -10.14650 121.78500 25.57250 140.40800
+zoomBox -25.40400 118.57550 32.75900 148.90000
+zoomBox -32.38150 117.12150 36.04550 152.79750
+zoomBox -40.59050 115.41050 39.91200 157.38250
+zoomBox -74.97750 108.24500 56.10850 176.59000
+zoomBox -90.70350 104.96800 63.51550 185.37400
+zoomBox -130.97050 96.57700 82.48200 207.86550
+zoomBox 22.00700 159.73600 25.58500 155.08400
+selectMarker 23.4000 157.5000 23.6800 158.4000 -1 12 89
+setLayerPreference violation -isVisible 1
+violationBrowser -all -no_display_false -displayByLayer
+zoomBox 109.97 169.975 111.005 171.025
+deselectAll
+selectMarker 110.0350 170.4950 110.0850 170.6050 1 1 6
+zoomBox 109.25250 169.89900 111.62200 171.13450
+zoomBox 108.98400 169.80950 111.77200 171.26300
+zoomBox 109.39950 170.09500 111.11250 170.98800
+zoomBox 109.49850 170.16300 110.95500 170.92250
+zoomBox 109.76800 170.34800 110.52750 170.74400
+zoomBox 109.81200 170.37850 110.45750 170.71500
+zoomBox 109.84900 170.40400 110.39850 170.69050
+zoomBox 109.77400 170.38250 110.42050 170.71950
+zoomBox 109.68600 170.35700 110.44650 170.75350
+zoomBox 109.58200 170.32700 110.47700 170.79350
+zoomBox 109.46000 170.29200 110.51300 170.84100
+zoomBox 109.31650 170.25050 110.55550 170.89650
+zoomBox 108.94900 170.14500 110.66400 171.03900
+setLayerPreference M3 -isVisible 0
+setLayerPreference M3 -isVisible 1
+zoomBox 109.39150 170.29400 110.44550 170.84350
+zoomBox 109.49650 170.33050 110.39250 170.79750
+zoomBox 109.58550 170.36150 110.34700 170.75850
+zoomBox 109.77900 170.42900 110.24700 170.67300
+zoomBox 109.67100 170.38400 110.31950 170.72200
+zoomBox 109.60250 170.35550 110.36550 170.75350
+zoomBox 109.52150 170.32200 110.42000 170.79050
+setLayerPreference M1 -isVisible 0
+setLayerPreference M1 -isVisible 1
+zoomBox 109.22250 170.27950 110.46750 170.92850
+zoomBox 109.03300 170.25250 110.49750 171.01600
+zoomBox 108.81000 170.22050 110.53300 171.11900
+zoomBox 108.23800 170.13950 110.62400 171.38350
+zoomBox 107.87500 170.08850 110.68200 171.55200
+zoomBox 107.44800 170.02850 110.75000 171.75000
+zoomBox 106.94500 169.95750 110.83000 171.98300
+zoomBox 109.39050 170.57300 110.15900 170.20500
+zoomBox 108.71400 170.01700 110.44750 170.92100
+zoomBox 108.49900 169.96300 110.53900 171.02650
+zoomBox 108.74300 170.05200 110.47700 170.95600
+zoomBox 108.95050 170.12750 110.42450 170.89600
+zoomBox 109.12650 170.19150 110.37950 170.84500
+zoomBox 109.27600 170.24600 110.34150 170.80150
+zoomBox 109.40350 170.29250 110.30900 170.76450
+zoomBox 109.60400 170.36550 110.25800 170.70650
+zoomBox 109.51200 170.33200 110.28150 170.73300
+zoomBox 109.12600 170.19150 110.37950 170.84500
+zoomBox 108.94950 170.12700 110.42450 170.89600
+zoomBox 108.74200 170.05100 110.47750 170.95600
+zoomBox 107.87150 169.73350 110.69850 171.20750
+panPage 1 0
+panPage 1 0
+deselectAll
+selectWire 110.1750 170.4250 110.3200 170.4750 2 clk
+gui_select -rect {110.31650 170.45150 110.44650 170.43950}
+deselectAll
+selectWire 110.1750 170.4250 110.3200 170.4750 2 clk
+zoomBox 109.69800 169.86100 112.10150 171.11400
+zoomBox 109.80950 169.96950 111.85250 171.03450
+deselectAll
+selectMarker 110.4700 170.4750 110.5050 170.5250 34 1 5
+deselectAll
+selectMarker 110.4650 170.5250 110.5050 170.5750 1 1 6
+zoomBox 109.965 170.025 111.005 171.075
+zoomBox 109.965 170.025 111.005 171.075
+zoomBox 113.265 170.125 114.27 171.175
+zoomBox 186.565 107.925 187.635 108.975
+zoomBox 186.49200 108.12400 187.72900 108.76900
+zoomBox 186.39650 108.06850 187.85150 108.82700
+zoomBox 186.28400 108.00300 187.99600 108.89550
+zoomBox 186.15200 107.92650 188.16600 108.97650
+zoomBox 185.99650 107.83600 188.36600 109.07150
+deselectAll
+zoomBox 185.83100 107.73200 188.61900 109.18550
+zoomBox 185.40900 107.46650 189.26800 109.47850
+setLayerPreference node_overlay -isVisible 1
+setLayerPreference congestH -color {#000066 #0000c9 #0053ff #00fcfa #00a953 #53a900 #f9fc00 #ff5300 #ff5858 #ffffff}
+setLayerPreference congestV -color {#000066 #0000c9 #0053ff #00fcfa #00a953 #53a900 #f9fc00 #ff5300 #ff5858 #ffffff}
+fit
+setLayerPreference node_overlay -isVisible 0
+setLayerPreference node_overlay -isVisible 1
+fit
+setLayerPreference node_overlay -isVisible 0
+zoomBox 109.965 170.025 111.005 171.075
+zoomBox 109.965 170.025 111.005 171.075
+zoomBox 186.565 107.925 187.635 108.975
+zoomBox 185.84450 107.70600 188.63250 109.15950
+zoomBox 185.68750 107.56900 188.96750 109.27900
+zoomBox 185.50250 107.40800 189.36150 109.42000
+zoomBox 185.34150 107.24650 189.88150 109.61350
+zoomBox 185.15200 107.05600 190.49350 109.84100
+zoomBox 184.92900 106.83250 191.21350 110.10900
+zoomBox 184.66700 106.57100 192.06050 110.42600
+setLayerPreference block -isVisible 1
+zoomBox 184.19750 106.23550 192.89600 110.77050
+zoomBox 183.64300 105.84050 193.87650 111.17600
+zoomBox 182.98750 105.37600 195.02700 111.65300
+zoomBox 182.20900 104.81850 196.37350 112.20350
+zoomBox 181.29300 104.16250 197.95750 112.85100
+setLayerPreference stdCell -isVisible 1
+setLayerPreference instanceCell -isVisible 1
+setLayerPreference node_inst -isVisible 1
+zoomBox 182.07800 104.81200 196.24350 112.19750
+zoomBox 182.74550 105.36400 194.78650 111.64200
+zoomBox 183.31300 105.83300 193.54800 111.16950
+zoomBox 183.79500 106.23200 192.49550 110.76800
+selectInst {pp_fir_0_1_1/Delay_Pipeline_reg_im_reg[18][6]}
+deselectAll
+selectInst {pp_fir_0_1_1/Delay_Pipeline_reg_im_reg[18][6]}
+zoomBox 186.63950 108.79150 187.60900 107.05600
+zoomBox 185.82850 107.08950 188.65750 108.56450
+zoomBox 186.14150 107.11800 188.54600 108.37150
+zoomBox 186.40750 107.14200 188.45150 108.20750
+zoomBox 186.63350 107.16200 188.37100 108.06800
+zoomBox 186.82550 107.17950 188.30250 107.94950
+zoomBox 186.63300 107.16200 188.37100 108.06800
+zoomBox 186.40700 107.14150 188.45150 108.20750
+zoomBox 186.14100 107.11750 188.54600 108.37150
+zoomBox 186.21750 107.16650 188.26200 108.23250
+zoomBox 186.28300 107.20800 188.02050 108.11400
+zoomBox 186.33850 107.24350 187.81550 108.01350
+zoomBox 186.38550 107.27350 187.64100 107.92800
+zoomBox 186.25200 107.23850 187.72900 108.00850
+zoomBox 186.09450 107.19700 187.83250 108.10300
+zoomBox 185.90950 107.14850 187.95400 108.21450
+zoomBox 185.69150 107.09150 188.09700 108.34550
+zoomBox 185.43550 107.02400 188.26550 108.49950
+zoomBox 185.13400 106.94450 188.46350 108.68050
+zoomBox 184.77900 106.85150 188.69650 108.89400
+zoomBox 185.12300 107.10200 188.45350 108.83850
+zoomBox 185.41550 107.31500 188.24650 108.79100
+deselectAll
+selectWire 187.3150 108.3250 188.1150 108.3750 2 pp_fir_0_1_1/FE_RN_27
+zoomBox 184.25050 105.81100 189.67350 110.04750
+zoomBox 183.82050 105.25600 190.20050 110.24000
+zoomBox 183.31450 104.60250 190.82050 110.46650
+getCTSMode -obs_engine -quiet
+setDrawView ameba
+zoomBox 187.06700 104.60250 194.57300 110.46650
+zoomBox 189.31850 104.60250 196.82450 110.46650
+zoomBox 190.06900 104.60250 197.57500 110.46650
+zoomBox 190.81950 104.60250 198.32550 110.46650
+fit
+zoomBox -51.40600 -10.98000 207.11150 190.98000
+zoomBox -77.25800 -10.98000 181.25950 190.98000
+zoomBox -103.11000 -10.98000 155.40750 190.98000
+zoomBox -25.55400 -10.98000 232.96350 190.98000
+ui_view_box
+ui_view_box
+ui_view_box
+ui_view_box
+pan -32.3146875 32.3146875
+pan -64.81850 58.75150
+zoomBox 13.03550 47.77150 271.55300 249.73150
+uiSetTool move
+zoomBox -64.52050 47.77150 193.99700 249.73150
+zoomBox -12.81650 47.77150 245.70100 249.73150
+pan -1.51650 -68.90900
+zoomSelected -margin 50
+setDrawView place
+zoomBox 187.07500 107.72500 188.67500 108.97500
+zoomBox 187.23500 107.72500 188.83500 108.97500
+zoomBox 187.07500 107.72500 188.67500 108.97500
+zoomBox 186.91500 107.72500 188.51500 108.97500
+zoomOut
+deselectAll
+selectInst pp_fir_0_1_1/FE_OFC995_n_0_dup
+uiSetTool move
+uiSetTool select
+pan 0.00000 0.00000
+selectVia 188.0350 108.2950 188.1450 108.4050 2 pp_fir_0_1_1/FE_RN_27
+selectInst {pp_fir_0_1_1/Delay_Pipeline_reg_im_reg[18][4]}
+selectInst {pp_fir_0_1_1/Delay_Pipeline_reg_im_reg[18][6]}
+deselectInst {pp_fir_0_1_1/Delay_Pipeline_reg_im_reg[18][6]}
+selectInst FILLER_11125_restore
+deselectInst FILLER_11125_restore
+selectInst FILLER_11125_restore
+selectInst {pp_fir_0_1_1/Delay_Pipeline_reg_im_reg[18][6]}
+verifyConnectivity -type all -geomConnect -error 1000 -warning 50
+violationBrowser -all -no_display_false -displayByLayer
+getCTSMode -obs_engine -quiet
+selectInst FILLER_18616_restore
+deleteFiller -prefix FILLER

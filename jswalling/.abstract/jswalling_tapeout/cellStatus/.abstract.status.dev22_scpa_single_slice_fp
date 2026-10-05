@@ -1,0 +1,7 @@
+cUiMoveCellToBin {dev22_scpa_single_slice_fp} {Block}
+cUiSelectCellP {dev22_scpa_single_slice_fp}
+cUiSetViewStatus {dev22_scpa_single_slice_fp} {layout} {1}
+cUiSetViewStatus {dev22_scpa_single_slice_fp} {logical} {0}
+cUiSetViewStatus {dev22_scpa_single_slice_fp} {abstract.pin} {0}
+cUiSetViewStatus {dev22_scpa_single_slice_fp} {abstract.ext} {0}
+cUiSetViewStatus {dev22_scpa_single_slice_fp} {abstract} {3}

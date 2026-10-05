@@ -1,0 +1,159 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v23.10-p003_1, built Thu Feb 1 13:54:57 PST 2024
+Options:	-stylus 
+Date:		Mon Mar  3 09:00:21 2025
+Host:		tc075 (x86_64 w/Linux 5.14.0-362.8.1.el9_3.x86_64) (64cores*128cpus*AMD EPYC 7702 64-Core Processor 512KB)
+OS:		Rocky Linux 9.5 (Blue Onyx)
+
+License:
+		[09:00:21.231777] Configured Lic search path (23.02-s003): 27002@license.ece.vt.edu
+
+		invs	Innovus Implementation System	23.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+
+
+Create and set the environment variable TMPDIR to /localscratch/2955758/innovus_temp_2151899_tc075_jswalling_P6WO9x.
+
+The soft stacksize limit is either up to the hard limit or larger than 0.2% of RAM. No change is needed.
+[INFO] Loading Pegasus 23.20 fill procedures
+
+**INFO:  MMMC transition support version v31-84 
+
+@innovus 1> Suppress "**WARN ..." messages.
+read_db pp_fir_u_0_inn.enc
+#% Begin load design ... (date=03/03 09:01:43, mem=1786.7M)
+AAE_INFO: switching set_db delaycal_enable_si from false to true ...
+AAE_INFO: The setting is changed from false to true in set_db delaycal_enable_si
+Loading design 'pp_fir_u_0' saved by 'Innovus' '23.10-p003_1' on 'Wed Feb 19 14:10:51 2025'.
+**ERROR: (TCLCMD-995):	Can not open file '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/synthesis/cadence/pp_fir_u_0_work/pp_fir_u_0_inn.enc/libs/mmmc/worst/qrcTechFile' for RC corner
+
+    while executing
+"create_rc_corner -name worst\
+   -pre_route_res 1\
+   -post_route_res {1 1 1}\
+   -pre_route_cap 1\
+   -post_route_cap {1 1 1}\
+   -post_route_cross_c..."
+    (file "/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/synthesis/cadence/pp_fir_u_0_work/pp_fir_u_0_inn.enc/viewDefinition.tcl" line 26)
+    invoked from within
+"::se_source_orig /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/synthesis/cadence/pp_fir_u_0_work/pp_fir_u_0_inn.enc/viewDefinitio..."
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel [concat ::se_source_orig $args]"
+    invoked from within
+"if {$encrypted == 2} {
+      catch {set [uplevel [concat ::se::source_encrypted_compressed $args]]}
+    } else {
+      set st [uplevel [concat ::se_so..."
+    invoked from within
+"if {$largeFile == 1} {
+    if {$enableVerbose == 0 && [::SE::isEchoFile] == 1} {
+      $putCmd "Sourcing $file_name"
+    }
+    set st [uplevel [concat..."
+    (procedure "source" line 172)
+    invoked from within
+"source /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/synthesis/cadence/pp_fir_u_0_work/pp_fir_u_0_inn.enc/viewDefinition.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 {source /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/synthesis/cadence/pp_fir_u_0_work/pp_fir_u_0_inn.enc/viewDefinit..."
+
+
+ERROR: 
+
+
+    while executing
+"error $catchMsg"
+    (procedure "restoreDesign" line 36)
+
+
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPDBTCL-321        15  The attribute '%s' still works but will ...
+ERROR     TCLCMD-995           1  Can not open file '%s' for %s            
+*** Message Summary: 15 warning(s), 1 error(s)
+
+@innovus 2> **ERROR: (IMPSYT-6300):	Failed to execute command 'read_db'. For more details, refer to error message: 
+Un-suppress "**WARN ..." messages.
+
+@innovus 2> 
+@innovus 4> 
+@innovus 4> read_db INVS/
+% Begin Load Common DB (date=03/03 09:03:10, mem=1800.4M)
+(stylus_db): Begin loading Common DB 'INVS' (Created by Genus(TM) Synthesis Solution 23.10-p004_1) ...
+(stylus_db): Initialized SQLite db version 0.2 ..
+(stylus_db): Sourcing .globals file  ...
+**WARN: (IMPUDM-33):	Global variable "soceUseIdealDelayForClkInAllMode" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+**WARN: (IMPUDM-33):	Global variable "timing_aocv_enable_gba_combine_launch_capture" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+**WARN: (IMPUDM-33):	Global variable "timing_aocv_enable_gba_combine_launch_capture" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+**WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+**WARN: (IMPUDM-33):	Global variable "timing_aocv_enable_gba_combine_launch_capture" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+**WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+**WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+**WARN: (IMPUDM-33):	Global variable "timing_enable_backward_compatible_latch_thru_mt_mode" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+**WARN: (IMPUDM-33):	Global variable "timing_enable_backward_compatible_latch_thru_mt_mode" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+**WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+**WARN: (IMPUDM-33):	Global variable "timing_enable_backward_compatible_latch_thru_mt_mode" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+**WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+**WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+**WARN: (GLOBAL-100):	Global 'timing_enable_backward_compatible_mmmc_mode' has become obsolete. It will be removed in the next release.
+**WARN: (GLOBAL-100):	Global 'timing_enable_backward_compatible_mmmc_mode' has become obsolete. It will be removed in the next release.
+**WARN: (GLOBAL-100):	Global 'timing_enable_backward_compatible_mmmc_mode' has become obsolete. It will be removed in the next release.
+(stylus_db): Load Flow-Kit settings ...
+% Begin Load Flow-Kit settings (date=03/03 09:03:11, mem=1802.9M)
+% End Load Flow-Kit settings (date=03/03 09:03:11, total cpu=0:00:00.0, real=0:00:00.0, peak res=1802.9M, current mem=1802.9M)
+% Begin Load MMMC data (date=03/03 09:03:11, mem=1802.9M)
+(stylus_db): Reading MMMC file ...
+The existing library_set 'wcl_fast' has been replaced with new attributes.
+The existing library_set 'wcl_slow' has been replaced with new attributes.
+**ERROR: (TCLCMD-995):	Can not open file '/projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcworst/qrcTechFile' for RC corner
+
+    while executing
+"create_rc_corner -name worst \
+    -temperature 125.0 \
+    -qrc_tech /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence..."
+    (file "/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/synthesis/cadence/pp_fir_u_0_work/INVS/cmn/pp_fir_u_0.mmmc.tcl" line 41)
+    invoked from within
+"::se_source_orig /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/synthesis/cadence/pp_fir_u_0_work/INVS/cmn/pp_fir_u_0.mmmc.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel [concat ::se_source_orig $args]"
+    invoked from within
+"if {$encrypted == 2} {
+      catch {set [uplevel [concat ::se::source_encrypted_compressed $args]]}
+    } else {
+      set st [uplevel [concat ::se_so..."
+    invoked from within
+"if {$largeFile == 1} {
+    if {$enableVerbose == 0 && [::SE::isEchoFile] == 1} {
+      $putCmd "Sourcing $file_name"
+    }
+    set st [uplevel [concat..."
+    (procedure "source" line 172)
+    invoked from within
+"source /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/synthesis/cadence/pp_fir_u_0_work/INVS/cmn/pp_fir_u_0.mmmc.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 {source /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/synthesis/cadence/pp_fir_u_0_work/INVS/cmn/pp_fir_u_0.mmmc.tcl}"
+% End Load MMMC data (date=03/03 09:03:11, total cpu=0:00:00.0, real=0:00:00.0, peak res=1802.9M, current mem=1801.8M)
+% End Load Common DB (date=03/03 09:03:11, total cpu=0:00:01.4, real=0:00:01.0, peak res=1805.6M, current mem=1801.8M)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPDBTCL-321         6  The attribute '%s' still works but will ...
+WARNING   IMPUDM-33            7  Global variable "%s" is obsolete and wil...
+WARNING   GLOBAL-100           3  Global '%s' has become obsolete. It will...
+ERROR     TCLCMD-995           1  Can not open file '%s' for %s            
+*** Message Summary: 16 warning(s), 1 error(s)
+
+0
+@innovus 5> exit
+
+*** Memory Usage v#2 (Current mem = 1614.559M, initial mem = 813.609M) ***
+*** Message Summary: 61 warning(s), 10 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:31.4, real=0:03:05, mem=1614.6M) ---

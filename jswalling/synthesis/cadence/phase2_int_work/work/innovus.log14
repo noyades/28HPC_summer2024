@@ -1,0 +1,583 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v23.14-s088_1, built Fri Feb 28 12:25:44 PST 2025
+Options:	-stylus 
+Date:		Wed Jan 21 11:32:05 2026
+Host:		lnx-prd-05.ece.vt.edu (x86_64 w/Linux 5.15.0-315.196.5.2.el9uek.x86_64) (16cores*32cpus*AMD EPYC 7313 16-Core Processor 512KB)
+OS:		Oracle Linux Server 9.7
+
+License:
+		[11:32:05.282465] Configured Lic search path (23.02-s006): 27002@license.ece.vt.edu
+
+		invs	Innovus Implementation System	23.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+
+
+Create and set the environment variable TMPDIR to /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/innovus_temp_2960708_aabf83d1-12cf-48f8-93ec-254d52c8cb0a_lnx-prd-05.ece.vt.edu_jswalling_u2Qllp.
+
+Change the soft stacksize limit to 0.2%RAM (255 mbytes). Set global soft_stack_size_limit to change the value.
+[INFO] Loading Pegasus 24.10 fill procedures
+Info: Process UID = 2960708 / aabf83d1-12cf-48f8-93ec-254d52c8cb0a / KSgcXZZeU6
+
+**INFO:  MMMC transition support version v31-84 
+
+@innovus 1> set_db edit_wire_type regular
+@innovus 2> read_db INVS/
+(stylus_db): ::init_mmmc_version set to version 2 from SQL db.
+#% Begin Load Common DB (date=01/21 11:34:13, mem=1866.4M)
+(stylus_db): Begin loading Common DB 'INVS' (Created by Genus(TM) Synthesis Solution 23.14-s090_1) ...
+(stylus_db): Initialized SQLite db version 0.2 ..
+(stylus_db): Sourcing .globals file  ...
+**WARN: (IMPUDM-33):	Global variable "soceUseIdealDelayForClkInAllMode" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+**WARN: (IMPUDM-33):	Global variable "timing_aocv_enable_gba_combine_launch_capture" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+**WARN: (IMPUDM-33):	Global variable "timing_aocv_enable_gba_combine_launch_capture" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+**WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+**WARN: (IMPUDM-33):	Global variable "timing_aocv_enable_gba_combine_launch_capture" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+**WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+**WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+**WARN: (IMPUDM-33):	Global variable "timing_enable_backward_compatible_latch_thru_mt_mode" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+**WARN: (IMPUDM-33):	Global variable "timing_enable_backward_compatible_latch_thru_mt_mode" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+**WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+**WARN: (IMPUDM-33):	Global variable "timing_enable_backward_compatible_latch_thru_mt_mode" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+**WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+**WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+**WARN: (GLOBAL-100):	Global 'timing_enable_backward_compatible_mmmc_mode' has become obsolete. It will be removed in the next release.
+**WARN: (GLOBAL-100):	Global 'timing_enable_backward_compatible_mmmc_mode' has become obsolete. It will be removed in the next release.
+**WARN: (GLOBAL-100):	Global 'timing_enable_backward_compatible_mmmc_mode' has become obsolete. It will be removed in the next release.
+(stylus_db): setting init_mmmc_version to 2
+(stylus_db): Setting Library Root attributes ...
+**WARN: (IMPUDM-33):	Global variable "timing_aocv_enable_gba_combine_launch_capture" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+**WARN: (IMPUDM-33):	Global variable "timing_aocv_enable_gba_combine_launch_capture" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+**WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+**WARN: (IMPUDM-33):	Global variable "timing_enable_backward_compatible_latch_thru_mt_mode" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+**WARN: (IMPUDM-33):	Global variable "timing_enable_backward_compatible_latch_thru_mt_mode" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+**WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+(stylus_db): Set 3704 timing library and user attributes of Root 
+(stylus_db): Load Flow-Kit settings ...
+% Begin Load Flow-Kit settings (date=01/21 11:34:14, mem=1878.6M)
+% End Load Flow-Kit settings (date=01/21 11:34:14, total cpu=0:00:00.1, real=0:00:00.0, peak res=1878.7M, current mem=1878.7M)
+% Begin Load MMMC data (date=01/21 11:34:14, mem=1878.7M)
+(stylus_db): Reading MMMC file ...
+Reading PVT_0P81V_125C timing library '/data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLTIE5_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'ENDCAPTIE3_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP8_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP64_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP4_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP3_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP32_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP2_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP16_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP128_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP8_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP64_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP4_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP3_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP32_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP2_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP16_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP128_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA2_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+Read 1003 cells in library 'sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c' 
+Reading PVT_0P81V_125C timing library '/data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_hpk_lvt_c30_ssg_cworstt_max_0p81v_125c.lib' ...
+**WARN: (TECHLIB-1277):	The attribute 'input_signal_level' has been defined for output pin 'Q0'. 'input_signal_level' cannot be defined at this level and is being ignored. (File /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_hpk_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 161820)
+**WARN: (TECHLIB-1277):	The attribute 'input_signal_level' has been defined for output pin 'Q0'. 'input_signal_level' cannot be defined at this level and is being ignored. (File /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_hpk_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 175902)
+**WARN: (TECHLIB-1277):	The attribute 'input_signal_level' has been defined for output pin 'Q0'. 'input_signal_level' cannot be defined at this level and is being ignored. (File /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_hpk_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 181422)
+**WARN: (TECHLIB-1277):	The attribute 'input_signal_level' has been defined for output pin 'Q1'. 'input_signal_level' cannot be defined at this level and is being ignored. (File /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_hpk_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 181689)
+**WARN: (TECHLIB-1277):	The attribute 'input_signal_level' has been defined for output pin 'Q2'. 'input_signal_level' cannot be defined at this level and is being ignored. (File /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_hpk_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 181956)
+**WARN: (TECHLIB-1277):	The attribute 'input_signal_level' has been defined for output pin 'Q0'. 'input_signal_level' cannot be defined at this level and is being ignored. (File /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_hpk_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 185412)
+**WARN: (TECHLIB-1277):	The attribute 'input_signal_level' has been defined for output pin 'Q1'. 'input_signal_level' cannot be defined at this level and is being ignored. (File /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_hpk_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 185679)
+**WARN: (TECHLIB-1277):	The attribute 'input_signal_level' has been defined for output pin 'Q2'. 'input_signal_level' cannot be defined at this level and is being ignored. (File /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_hpk_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 185946)
+**WARN: (TECHLIB-1277):	The attribute 'input_signal_level' has been defined for output pin 'QN0'. 'input_signal_level' cannot be defined at this level and is being ignored. (File /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_hpk_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 207855)
+**WARN: (TECHLIB-1277):	The attribute 'input_signal_level' has been defined for output pin 'Q0'. 'input_signal_level' cannot be defined at this level and is being ignored. (File /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_hpk_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 254352)
+**WARN: (TECHLIB-1277):	The attribute 'input_signal_level' has been defined for output pin 'Q0'. 'input_signal_level' cannot be defined at this level and is being ignored. (File /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_hpk_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 279525)
+**WARN: (TECHLIB-1277):	The attribute 'input_signal_level' has been defined for output pin 'Q0'. 'input_signal_level' cannot be defined at this level and is being ignored. (File /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_hpk_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 294124)
+**WARN: (TECHLIB-1277):	The attribute 'input_signal_level' has been defined for output pin 'Q1'. 'input_signal_level' cannot be defined at this level and is being ignored. (File /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_hpk_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 294593)
+**WARN: (TECHLIB-1277):	The attribute 'input_signal_level' has been defined for output pin 'Q2'. 'input_signal_level' cannot be defined at this level and is being ignored. (File /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_hpk_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 295062)
+**WARN: (TECHLIB-1277):	The attribute 'input_signal_level' has been defined for output pin 'Q0'. 'input_signal_level' cannot be defined at this level and is being ignored. (File /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_hpk_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 301537)
+**WARN: (TECHLIB-1277):	The attribute 'input_signal_level' has been defined for output pin 'Q1'. 'input_signal_level' cannot be defined at this level and is being ignored. (File /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_hpk_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 302006)
+**WARN: (TECHLIB-1277):	The attribute 'input_signal_level' has been defined for output pin 'Q2'. 'input_signal_level' cannot be defined at this level and is being ignored. (File /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_hpk_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 302475)
+**WARN: (TECHLIB-1277):	The attribute 'input_signal_level' has been defined for output pin 'QN0'. 'input_signal_level' cannot be defined at this level and is being ignored. (File /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_hpk_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 340496)
+**WARN: (TECHLIB-1277):	The attribute 'input_signal_level' has been defined for output pin 'Q0'. 'input_signal_level' cannot be defined at this level and is being ignored. (File /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_hpk_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 393461)
+**WARN: (TECHLIB-1277):	The attribute 'input_signal_level' has been defined for output pin 'Q0'. 'input_signal_level' cannot be defined at this level and is being ignored. (File /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_hpk_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 418634)
+Message <TECHLIB-1277> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+Read 167 cells in library 'sc9mcpp140z_cln28ht_hpk_lvt_c30_ssg_cworstt_max_0p81v_125c' 
+Reading PVT_0P81V_125C timing library '/data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_svt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_svt_c30_ssg_cworstt_max_0p81v_125c.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLTIE5_A9PP140ZTS_C30'. The cell will only be used for analysis. (File /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_svt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_svt_c30_ssg_cworstt_max_0p81v_125c.lib)
+Message <TECHLIB-302> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+Read 1003 cells in library 'sc9mcpp140z_cln28ht_base_svt_c30_ssg_cworstt_max_0p81v_125c' 
+Reading PVT_0P81V_125C timing library '/data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_svt_c30/r0p0/lib/sc9mcpp140z_cln28ht_hpk_svt_c30_ssg_cworstt_max_0p81v_125c.lib' ...
+Read 167 cells in library 'sc9mcpp140z_cln28ht_hpk_svt_c30_ssg_cworstt_max_0p81v_125c' 
+Reading PVT_0P81V_125C timing library '/data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_ulvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_ulvt_c30_ssg_cworstt_max_0p81v_125c.lib' ...
+Read 1003 cells in library 'sc9mcpp140z_cln28ht_base_ulvt_c30_ssg_cworstt_max_0p81v_125c' 
+Reading PVT_0P81V_125C timing library '/data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_ulvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_hpk_ulvt_c30_ssg_cworstt_max_0p81v_125c.lib' ...
+Read 167 cells in library 'sc9mcpp140z_cln28ht_hpk_ulvt_c30_ssg_cworstt_max_0p81v_125c' 
+% End Load MMMC data (date=01/21 11:34:26, total cpu=0:00:11.2, real=0:00:12.0, peak res=2221.3M, current mem=1913.9M)
+% Begin Load LEF files (date=01/21 11:34:26, mem=1913.9M)
+(stylus_db): Load LEF files ...
+
+Loading LEF file /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef ...
+
+Loading LEF file /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_ulvt_c30/r0p0/lef/sc9mcpp140z_cln28ht_base_ulvt_c30.lef ...
+Set DBUPerIGU to M1 pitch 280.
+
+Loading LEF file /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_ulvt_c30/r0p0/lef/sc9mcpp140z_cln28ht_hpk_ulvt_c30.lef ...
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+% End Load LEF files (date=01/21 11:34:26, total cpu=0:00:00.4, real=0:00:00.0, peak res=1923.8M, current mem=1923.8M)
+(stylus_db): Load Verilog Netlist ...
+% Begin Load netlist data ... (date=01/21 11:34:26, mem=1924.2M)
+*** Begin netlist parsing (mem=2130.7M) ***
+Created 3510 new cells from 6 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist 'INVS//cmn/scpa_dig_ana_ppfir.v.gz'
+
+*** Memory Usage v#2 (Current mem = 2130.664M, initial mem = 863.789M) ***
+*** End netlist parsing (cpu=0:00:01.1, real=0:00:01.0, mem=2130.7M) ***
+% End Load netlist data ... (date=01/21 11:34:27, total cpu=0:00:01.1, real=0:00:01.0, peak res=2156.5M, current mem=2156.5M)
+Top level cell is scpa_dig_ana_ppfir.
+Hooked 3510 DB cells to tlib cells.
+** Removed 2340 unused lib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell scpa_dig_ana_ppfir ...
+***** UseNewTieNetMode *****.
+*** Netlist is unique.
+** info: there are 1185 modules.
+** info: there are 134182 stdCell insts.
+** info: there are 134182 stdCell insts with at least one signal pin.
+
+*** Memory Usage v#2 (Current mem = 2289.078M, initial mem = 863.789M) ***
+(stylus_db): Init Design
+Set Shrink Factor to 0.90000
+*info: set bottom ioPad orient R0
+The core width changes from 769.680000 to 769.720000 when snapping to grid "PlacementGrid".
+The core height changes from 645.920000 to 645.900000 when snapping to grid "PlacementGrid".
+
+Honor LEF defined pitches for advanced node
+Start create_tracks
+*Info: initialize multi-corner CTS.
+Reading PVT_0P99V_m40C timing library '/data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ffg_cbestt_min_0p99v_m40c.lib' ...
+Read 0 cells in library 'sc9mcpp140z_cln28ht_base_lvt_c30_ffg_cbestt_min_0p99v_m40c' 
+Ignored 1003 cells in library 'sc9mcpp140z_cln28ht_base_lvt_c30_ffg_cbestt_min_0p99v_m40c' because they are not defined in the LEF file, and they are not used in the Verilog netlist.
+Reading PVT_0P99V_m40C timing library '/data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_hpk_lvt_c30_ffg_cbestt_min_0p99v_m40c.lib' ...
+Read 0 cells in library 'sc9mcpp140z_cln28ht_hpk_lvt_c30_ffg_cbestt_min_0p99v_m40c' 
+Ignored 167 cells in library 'sc9mcpp140z_cln28ht_hpk_lvt_c30_ffg_cbestt_min_0p99v_m40c' because they are not defined in the LEF file, and they are not used in the Verilog netlist.
+Reading PVT_0P99V_m40C timing library '/data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_svt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_svt_c30_ffg_cbestt_min_0p99v_m40c.lib' ...
+Read 0 cells in library 'sc9mcpp140z_cln28ht_base_svt_c30_ffg_cbestt_min_0p99v_m40c' 
+Ignored 1003 cells in library 'sc9mcpp140z_cln28ht_base_svt_c30_ffg_cbestt_min_0p99v_m40c' because they are not defined in the LEF file, and they are not used in the Verilog netlist.
+Reading PVT_0P99V_m40C timing library '/data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_svt_c30/r0p0/lib/sc9mcpp140z_cln28ht_hpk_svt_c30_ffg_cbestt_min_0p99v_m40c.lib' ...
+Read 0 cells in library 'sc9mcpp140z_cln28ht_hpk_svt_c30_ffg_cbestt_min_0p99v_m40c' 
+Ignored 167 cells in library 'sc9mcpp140z_cln28ht_hpk_svt_c30_ffg_cbestt_min_0p99v_m40c' because they are not defined in the LEF file, and they are not used in the Verilog netlist.
+Reading PVT_0P99V_m40C timing library '/data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_ulvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_ulvt_c30_ffg_cbestt_min_0p99v_m40c.lib' ...
+Read 1003 cells in library 'sc9mcpp140z_cln28ht_base_ulvt_c30_ffg_cbestt_min_0p99v_m40c' 
+Reading PVT_0P99V_m40C timing library '/data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_ulvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_hpk_ulvt_c30_ffg_cbestt_min_0p99v_m40c.lib' ...
+Read 167 cells in library 'sc9mcpp140z_cln28ht_hpk_ulvt_c30_ffg_cbestt_min_0p99v_m40c' 
+Reading PVT_0P90V_25C timing library '/data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_tt_ctypical_max_0p90v_25c.lib' ...
+Read 0 cells in library 'sc9mcpp140z_cln28ht_base_lvt_c30_tt_ctypical_max_0p90v_25c' 
+Ignored 1003 cells in library 'sc9mcpp140z_cln28ht_base_lvt_c30_tt_ctypical_max_0p90v_25c' because they are not defined in the LEF file, and they are not used in the Verilog netlist.
+Reading PVT_0P90V_25C timing library '/data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_hpk_lvt_c30_tt_ctypical_max_0p90v_25c.lib' ...
+Read 0 cells in library 'sc9mcpp140z_cln28ht_hpk_lvt_c30_tt_ctypical_max_0p90v_25c' 
+Ignored 167 cells in library 'sc9mcpp140z_cln28ht_hpk_lvt_c30_tt_ctypical_max_0p90v_25c' because they are not defined in the LEF file, and they are not used in the Verilog netlist.
+Reading PVT_0P90V_25C timing library '/data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_svt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_svt_c30_tt_ctypical_max_0p90v_25c.lib' ...
+Read 0 cells in library 'sc9mcpp140z_cln28ht_base_svt_c30_tt_ctypical_max_0p90v_25c' 
+Ignored 1003 cells in library 'sc9mcpp140z_cln28ht_base_svt_c30_tt_ctypical_max_0p90v_25c' because they are not defined in the LEF file, and they are not used in the Verilog netlist.
+Reading PVT_0P90V_25C timing library '/data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_svt_c30/r0p0/lib/sc9mcpp140z_cln28ht_hpk_svt_c30_tt_ctypical_max_0p90v_25c.lib' ...
+Read 0 cells in library 'sc9mcpp140z_cln28ht_hpk_svt_c30_tt_ctypical_max_0p90v_25c' 
+Ignored 167 cells in library 'sc9mcpp140z_cln28ht_hpk_svt_c30_tt_ctypical_max_0p90v_25c' because they are not defined in the LEF file, and they are not used in the Verilog netlist.
+Reading PVT_0P90V_25C timing library '/data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_ulvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_ulvt_c30_tt_ctypical_max_0p90v_25c.lib' ...
+Read 1003 cells in library 'sc9mcpp140z_cln28ht_base_ulvt_c30_tt_ctypical_max_0p90v_25c' 
+Reading PVT_0P90V_25C timing library '/data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_ulvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_hpk_ulvt_c30_tt_ctypical_max_0p90v_25c.lib' ...
+Read 167 cells in library 'sc9mcpp140z_cln28ht_hpk_ulvt_c30_tt_ctypical_max_0p90v_25c' 
+Total number of combinational cells: 845
+Total number of sequential cells: 307
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 18
+List of usable buffers: FRICG_X0P5B_A9PP140ZTUL_C30 FRICG_X0P6B_A9PP140ZTUL_C30 FRICG_X0P8B_A9PP140ZTUL_C30 FRICG_X0P7B_A9PP140ZTUL_C30 FRICG_X11B_A9PP140ZTUL_C30 FRICG_X13B_A9PP140ZTUL_C30 FRICG_X16B_A9PP140ZTUL_C30 FRICG_X1B_A9PP140ZTUL_C30 FRICG_X1P2B_A9PP140ZTUL_C30 FRICG_X1P4B_A9PP140ZTUL_C30 FRICG_X2B_A9PP140ZTUL_C30 FRICG_X1P7B_A9PP140ZTUL_C30 FRICG_X2P5B_A9PP140ZTUL_C30 FRICG_X3B_A9PP140ZTUL_C30 FRICG_X4B_A9PP140ZTUL_C30 FRICG_X3P5B_A9PP140ZTUL_C30 FRICG_X5B_A9PP140ZTUL_C30 FRICG_X6B_A9PP140ZTUL_C30 FRICG_X7P5B_A9PP140ZTUL_C30 FRICG_X9B_A9PP140ZTUL_C30 BUFH_X11M_A9PP140ZTUL_C30 BUFH_X13M_A9PP140ZTUL_C30 BUFH_X16M_A9PP140ZTUL_C30 BUFH_X1M_A9PP140ZTUL_C30 BUFH_X1P2M_A9PP140ZTUL_C30 BUFH_X1P4M_A9PP140ZTUL_C30 BUFH_X2M_A9PP140ZTUL_C30 BUFH_X1P7M_A9PP140ZTUL_C30 BUFH_X2P5M_A9PP140ZTUL_C30 BUFH_X3M_A9PP140ZTUL_C30 BUFH_X4M_A9PP140ZTUL_C30 BUFH_X3P5M_A9PP140ZTUL_C30 BUFH_X5M_A9PP140ZTUL_C30 BUFH_X6M_A9PP140ZTUL_C30 BUFH_X7P5M_A9PP140ZTUL_C30 BUFH_X9M_A9PP140ZTUL_C30 BUF_X0P5B_A9PP140ZTUL_C30 BUF_X0P5M_A9PP140ZTUL_C30 BUF_X0P7B_A9PP140ZTUL_C30 BUF_X0P7M_A9PP140ZTUL_C30 BUF_X0P8M_A9PP140ZTUL_C30 BUF_X0P8B_A9PP140ZTUL_C30 BUF_X11B_A9PP140ZTUL_C30 BUF_X11B_A9PP140ZTUL_C30_XGCAP11 BUF_X11M_A9PP140ZTUL_C30 BUF_X13B_A9PP140ZTUL_C30 BUF_X11M_A9PP140ZTUL_C30_XGCAP11 BUF_X13B_A9PP140ZTUL_C30_XGCAP13 BUF_X13M_A9PP140ZTUL_C30 BUF_X16B_A9PP140ZTUL_C30 BUF_X13M_A9PP140ZTUL_C30_XGCAP13 BUF_X16B_A9PP140ZTUL_C30_XGCAP16 BUF_X16M_A9PP140ZTUL_C30 BUF_X16M_A9PP140ZTUL_C30_XGCAP16 BUF_X1M_A9PP140ZTUL_C30 BUF_X1B_A9PP140ZTUL_C30 BUF_X1P2B_A9PP140ZTUL_C30 BUF_X1P2M_A9PP140ZTUL_C30 BUF_X1P4B_A9PP140ZTUL_C30 BUF_X1P4M_A9PP140ZTUL_C30 BUF_X1P7B_A9PP140ZTUL_C30 BUF_X1P7M_A9PP140ZTUL_C30 BUF_X2M_A9PP140ZTUL_C30 BUF_X2B_A9PP140ZTUL_C30 BUF_X2P5B_A9PP140ZTUL_C30 BUF_X2P5M_A9PP140ZTUL_C30 BUF_X3M_A9PP140ZTUL_C30 BUF_X3B_A9PP140ZTUL_C30 BUF_X3P5B_A9PP140ZTUL_C30 BUF_X3P5M_A9PP140ZTUL_C30 BUF_X4B_A9PP140ZTUL_C30 BUF_X4B_A9PP140ZTUL_C30_XGCAP4 BUF_X4M_A9PP140ZTUL_C30 BUF_X5B_A9PP140ZTUL_C30 BUF_X4M_A9PP140ZTUL_C30_XGCAP4 BUF_X5B_A9PP140ZTUL_C30_XGCAP5 BUF_X5M_A9PP140ZTUL_C30 BUF_X6B_A9PP140ZTUL_C30 BUF_X5M_A9PP140ZTUL_C30_XGCAP5 BUF_X6B_A9PP140ZTUL_C30_XGCAP6 BUF_X6M_A9PP140ZTUL_C30 BUF_X7P5B_A9PP140ZTUL_C30 BUF_X6M_A9PP140ZTUL_C30_XGCAP6 BUF_X7P5B_A9PP140ZTUL_C30_XGCAP8 BUF_X7P5M_A9PP140ZTUL_C30 BUF_X7P5M_A9PP140ZTUL_C30_XGCAP8 BUF_X9B_A9PP140ZTUL_C30 BUF_X9M_A9PP140ZTUL_C30 BUF_X9B_A9PP140ZTUL_C30_XGCAP9 BUF_X9M_A9PP140ZTUL_C30_XGCAP9 DLY2_X1M_A9PP140ZTUL_C30 DLY2_X0P5M_A9PP140ZTUL_C30 DLY2_X2M_A9PP140ZTUL_C30 DLYCLK8S2_X1B_A9PP140ZTUL_C30 DLYCLK8S2_X2B_A9PP140ZTUL_C30 DLYCLK8S4_X1B_A9PP140ZTUL_C30 DLYCLK8S4_X2B_A9PP140ZTUL_C30
+Total number of usable buffers: 97
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X20B_A9PP140ZTUL_C30 INV_X20M_A9PP140ZTUL_C30 INV_X0P5B_A9PP140ZTUL_C30 INV_X0P5M_A9PP140ZTUL_C30 INV_X0P6B_A9PP140ZTUL_C30 INV_X0P6M_A9PP140ZTUL_C30 INV_X0P7B_A9PP140ZTUL_C30 INV_X0P7M_A9PP140ZTUL_C30 INV_X0P8M_A9PP140ZTUL_C30 INV_X0P8B_A9PP140ZTUL_C30 INV_X11B_A9PP140ZTUL_C30 INV_X11B_A9PP140ZTUL_C30_XGCAP11 INV_X11M_A9PP140ZTUL_C30 INV_X13B_A9PP140ZTUL_C30 INV_X11M_A9PP140ZTUL_C30_XGCAP11 INV_X13B_A9PP140ZTUL_C30_XGCAP13 INV_X13M_A9PP140ZTUL_C30 INV_X16B_A9PP140ZTUL_C30 INV_X13M_A9PP140ZTUL_C30_XGCAP13 INV_X16B_A9PP140ZTUL_C30_XGCAP16 INV_X16M_A9PP140ZTUL_C30 INV_X16M_A9PP140ZTUL_C30_XGCAP16 INV_X1M_A9PP140ZTUL_C30 INV_X1B_A9PP140ZTUL_C30 INV_X1P2B_A9PP140ZTUL_C30 INV_X1P2M_A9PP140ZTUL_C30 INV_X1P4B_A9PP140ZTUL_C30 INV_X1P4M_A9PP140ZTUL_C30 INV_X1P7B_A9PP140ZTUL_C30 INV_X1P7M_A9PP140ZTUL_C30 INV_X2M_A9PP140ZTUL_C30 INV_X2B_A9PP140ZTUL_C30 INV_X2P5B_A9PP140ZTUL_C30 INV_X2P5M_A9PP140ZTUL_C30 INV_X3M_A9PP140ZTUL_C30 INV_X3B_A9PP140ZTUL_C30 INV_X3P5B_A9PP140ZTUL_C30 INV_X4B_A9PP140ZTUL_C30 INV_X3P5M_A9PP140ZTUL_C30 INV_X4B_A9PP140ZTUL_C30_XGCAP4 INV_X4M_A9PP140ZTUL_C30 INV_X5B_A9PP140ZTUL_C30 INV_X4M_A9PP140ZTUL_C30_XGCAP4 INV_X5B_A9PP140ZTUL_C30_XGCAP5 INV_X5M_A9PP140ZTUL_C30 INV_X6B_A9PP140ZTUL_C30 INV_X5M_A9PP140ZTUL_C30_XGCAP5 INV_X6B_A9PP140ZTUL_C30_XGCAP6 INV_X6M_A9PP140ZTUL_C30 INV_X7P5B_A9PP140ZTUL_C30 INV_X6M_A9PP140ZTUL_C30_XGCAP6 INV_X7P5B_A9PP140ZTUL_C30_XGCAP8 INV_X7P5M_A9PP140ZTUL_C30 INV_X9B_A9PP140ZTUL_C30 INV_X7P5M_A9PP140ZTUL_C30_XGCAP8 INV_X9B_A9PP140ZTUL_C30_XGCAP9 INV_X9M_A9PP140ZTUL_C30 INV_X9M_A9PP140ZTUL_C30_XGCAP9
+Total number of usable inverters: 58
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY10_X1M_A9PP140ZTUL_C30 DLY10_X0P5M_A9PP140ZTUL_C30 DLY10_X2M_A9PP140ZTUL_C30 DLY10_X4M_A9PP140ZTUL_C30 DLY2_X4M_A9PP140ZTUL_C30 DLY4_X1M_A9PP140ZTUL_C30 DLY4_X0P5M_A9PP140ZTUL_C30 DLY4_X2M_A9PP140ZTUL_C30 DLY4_X4M_A9PP140ZTUL_C30 DLY6_X1M_A9PP140ZTUL_C30 DLY6_X0P5M_A9PP140ZTUL_C30 DLY6_X2M_A9PP140ZTUL_C30 DLY6_X4M_A9PP140ZTUL_C30 DLY8_X0P5M_A9PP140ZTUL_C30 DLY8_X1M_A9PP140ZTUL_C30 DLY8_X2M_A9PP140ZTUL_C30 DLY8_X4M_A9PP140ZTUL_C30 DLYCLK8S6_X1B_A9PP140ZTUL_C30 DLYCLK8S6_X2B_A9PP140ZTUL_C30 DLYCLK8S8_X1B_A9PP140ZTUL_C30 DLYCLK8S8_X2B_A9PP140ZTUL_C30
+Total number of identified usable delay cells: 21
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+(stylus_db): Initialized design 'scpa_dig_ana_ppfir'
+(stylus_db): Load Metric file ...
+% Begin Load Metric file (date=01/21 11:34:39, mem=2695.2M)
+% End Load Metric file (date=01/21 11:34:39, total cpu=0:00:00.1, real=0:00:00.0, peak res=2711.7M, current mem=2708.5M)
+(stylus_db): Setting Root attributes ...
+**ERROR: (IMPDBTCL-248):	'error_on_lib_lef_pin_inconsistency' is not a recognized object or attribute for object type 'root'. Update its value to match one of the 'root' attributes. Run 'help root' to get a list of all 'root' attributes.
+**WARN: (IMPOPT-7155):	Option opt_skew_post_cts in 'set_db' will be obsolete. 'set_db opt_skew_post_cts true'will mapped to 'set_db opt_skew_ccopt standard' internally when design_flow_effort is not set to extreme and 'opt_skew_ccopt' has not been explict set by user.
+**WARN: (IMPOPT-7155):	Option opt_skew_post_cts in 'set_db' will be obsolete. 'set_db opt_skew_post_cts true'will mapped to 'set_db opt_skew_ccopt standard' internally when design_flow_effort is not set to extreme and 'opt_skew_ccopt' has not been explict set by user.
+(stylus_db): Set 62 attributes of Root 
+(stylus_db): Could not set 1 attributes of Root
+% Begin Set DB preserves (date=01/21 11:34:39, mem=2710.1M)
+(stylus_db): Setting preserves on design objects ...
+(stylus_db): Set 2347 preserves of design objects
+% End Set DB preserves (date=01/21 11:34:39, total cpu=0:00:00.1, real=0:00:00.0, peak res=2710.1M, current mem=2710.1M)
+% Begin Load Timing views and constraints (date=01/21 11:34:39, mem=2710.1M)
+func-typ-typ slow-slow-maxrc fast-fast-minrc
+(stylus_db): Read MMMC timing views ...
+Reading timing constraints file 'INVS/cmn/scpa_dig_ana_ppfir.mmmc/modes/func/func.sdc.gz' ...
+Current (total cpu=0:00:50.8, real=0:02:35, peak res=2827.3M, current mem=2827.3M)
+scpa_dig_ana_ppfir
+**WARN: (TCLCMD-1531):	'create_generated_clock' has been applied on hierarchical pin 'clkDiv_1_2/clk_out' (File INVS/cmn/scpa_dig_ana_ppfir.mmmc/modes/func/func.sdc.gz, Line 16).
+
+**WARN: (TCLCMD-1531):	'create_generated_clock' has been applied on hierarchical pin 'clkDiv_1_8/clk_out' (File INVS/cmn/scpa_dig_ana_ppfir.mmmc/modes/func/func.sdc.gz, Line 17).
+
+**WARN: (IMPCTE-290):	Could not locate cell BUF_X1B_A9PP140ZTUL_C30 in any library for view slow-slow-maxrc.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell BUF_X1B_A9PP140ZTUL_C30 in any library for view slow-slow-maxrc.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell BUF_X1B_A9PP140ZTUL_C30 in any library for view slow-slow-maxrc.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell BUF_X1B_A9PP140ZTUL_C30 in any library for view slow-slow-maxrc.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell BUF_X1B_A9PP140ZTUL_C30 in any library for view fast-fast-minrc.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell BUF_X1B_A9PP140ZTUL_C30 in any library for view fast-fast-minrc.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell BUF_X1B_A9PP140ZTUL_C30 in any library for view fast-fast-minrc.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell BUF_X1B_A9PP140ZTUL_C30 in any library for view fast-fast-minrc.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell BUF_X1B_A9PP140ZTUL_C30 in any library for view slow-slow-maxrc.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell BUF_X1B_A9PP140ZTUL_C30 in any library for view slow-slow-maxrc.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell BUF_X1B_A9PP140ZTUL_C30 in any library for view slow-slow-maxrc.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell BUF_X1B_A9PP140ZTUL_C30 in any library for view slow-slow-maxrc.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell BUF_X1B_A9PP140ZTUL_C30 in any library for view fast-fast-minrc.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell BUF_X1B_A9PP140ZTUL_C30 in any library for view fast-fast-minrc.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell BUF_X1B_A9PP140ZTUL_C30 in any library for view fast-fast-minrc.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell BUF_X1B_A9PP140ZTUL_C30 in any library for view fast-fast-minrc.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell BUF_X1B_A9PP140ZTUL_C30 in any library for view slow-slow-maxrc.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell BUF_X1B_A9PP140ZTUL_C30 in any library for view slow-slow-maxrc.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell BUF_X1B_A9PP140ZTUL_C30 in any library for view slow-slow-maxrc.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell BUF_X1B_A9PP140ZTUL_C30 in any library for view slow-slow-maxrc.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (EMS-27):	Message (IMPCTE-290) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Number of path exceptions in the constraint file = 8
+------------------------------------------------------------------------------------
+CONSTRAINT READING SUMMARY                                                          
+------------------------------------------------------------------------------------
+Constraint                                        | Success        | Fail           
+------------------------------------------------------------------------------------
+set_clock_uncertainty                             | 1              | 0              
+set_driving_cell                                  | 29             | 0              
+set_max_fanout                                    | 1              | 0              
+set_units                                         | 2              | 0              
+current_design                                    | 2              | 0              
+get_ports                                         | 4203           | 0              
+create_clock                                      | 1              | 0              
+get_pins                                          | 2              | 0              
+set_clock_gating_check                            | 1              | 0              
+set_output_delay                                  | 2056           | 0              
+create_generated_clock                            | 2              | 0              
+get_clocks                                        | 2094           | 0              
+set_max_transition                                | 29             | 0              
+set_false_path                                    | 4              | 0              
+set_clock_transition                              | 1              | 0              
+set_load                                          | 2056           | 0              
+set_input_delay                                   | 28             | 0              
+------------------------------------------------------------------------------------
+INFO (CTE): Reading of timing constraints file INVS/cmn/scpa_dig_ana_ppfir.mmmc/modes/func/func.sdc.gz completed, with 2 WARNING
+Ending "Constraint file reading stats" (total cpu=0:00:00.3, real=0:00:00.0, peak res=2870.1M, current mem=2870.1M)
+Current (total cpu=0:00:51.1, real=0:02:35, peak res=2870.1M, current mem=2870.1M)
+Reading latency file 'INVS/cmn/scpa_dig_ana_ppfir.mmmc/views/slow-slow-maxrc/latency.sdc.gz' ...
+Reading latency file 'INVS/cmn/scpa_dig_ana_ppfir.mmmc/views/fast-fast-minrc/latency.sdc.gz' ...
+Reading latency file 'INVS/cmn/scpa_dig_ana_ppfir.mmmc/views/func-typ-typ/latency.sdc.gz' ...
+% End Load Timing views and constraints (date=01/21 11:34:40, total cpu=0:00:00.9, real=0:00:01.0, peak res=2870.3M, current mem=2870.3M)
+(stylus_db): Load Mode file ...
+set_db opt_useful_skew already set.
+**WARN: (IMPOPT-3602):	The specified path group name tdgp_reg2reg_default is not defined.
+Type 'man IMPOPT-3602' for more detail.
+Effort level <high> specified for tdgp_reg2reg_default path_group
+Slack adjustment of -0 applied on tdgp_reg2reg_default path_group
+(stylus_db): Couldn't load power-intent, (scpa_dig_ana_ppfir.cpf or scpa_dig_ana_ppfir.upf doesn't exists)
+(stylus_db): Couldn't commit power-intent, (scpa_dig_ana_ppfir.cpf or scpa_dig_ana_ppfir.upf doesn't exists)
+(stylus_db): Load DEF file ...
+% Begin Load DEF (date=01/21 11:34:40, mem=2873.1M)
+Reading DEF file 'INVS/cmn/scpa_dig_ana_ppfir.def.gz', current time is Wed Jan 21 11:34:40 2026 ...
+--- DIVIDERCHAR '/'
+--- UnitsPerDBU = 1.0000
+
+Honor LEF defined pitches for advanced node
+Start create_tracks
+--- DIEAREA (-115520 -343920) (1444000 967920)
+defIn read 10000 lines...
+defIn read 20000 lines...
+defIn read 30000 lines...
+defIn read 40000 lines...
+defIn read 50000 lines...
+defIn read 60000 lines...
+defIn read 70000 lines...
+defIn read 80000 lines...
+defIn read 90000 lines...
+defIn read 100000 lines...
+defIn read 110000 lines...
+defIn read 120000 lines...
+defIn read 130000 lines...
+defIn read 140000 lines...
+defIn read 150000 lines...
+defIn read 160000 lines...
+defIn read 170000 lines...
+defIn read 180000 lines...
+defIn read 190000 lines...
+defIn read 200000 lines...
+defIn read 210000 lines...
+defIn read 220000 lines...
+defIn read 230000 lines...
+defIn read 240000 lines...
+defIn read 250000 lines...
+defIn read 260000 lines...
+defIn read 270000 lines...
+defIn read 280000 lines...
+defIn read 290000 lines...
+defIn read 300000 lines...
+defIn read 310000 lines...
+defIn read 320000 lines...
+DEF file 'INVS/cmn/scpa_dig_ana_ppfir.def.gz' is parsed, current time is Wed Jan 21 11:34:41 2026.
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Updating the floorplan ...
+% End Load DEF (date=01/21 11:34:41, total cpu=0:00:00.6, real=0:00:01.0, peak res=2880.5M, current mem=2880.5M)
+% Begin Set route_types (date=01/21 11:34:41, mem=2880.5M)
+(stylus_db): Setting route_types  ...
+% End Set route_types (date=01/21 11:34:41, total cpu=0:00:00.0, real=0:00:00.0, peak res=2880.5M, current mem=2880.5M)
+% Begin Set power_domain attributes (date=01/21 11:34:41, mem=2880.5M)
+(stylus_db): Setting power_domain attributes ...
+% End Set power_domain attributes (date=01/21 11:34:41, total cpu=0:00:00.1, real=0:00:00.0, peak res=2880.5M, current mem=2880.5M)
+(stylus_db): Load additional timing constraints ...
+% Begin Load Additional Timing constraints (date=01/21 11:34:41, mem=2880.5M)
+slow_maxrc fast_minrc typ_typ
+Loading timing derate file INVS//cmn/scpa_dig_ana_ppfir.mmmc/delayCorner/slow_maxrc/timingderate.sdc.gz ...
+Current (total cpu=0:00:52.4, real=0:02:36, peak res=2880.5M, current mem=2880.5M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:01.0, peak res=2880.8M, current mem=2880.8M)
+Current (total cpu=0:00:52.5, real=0:02:37, peak res=2880.8M, current mem=2880.8M)
+Loading timing derate file INVS//cmn/scpa_dig_ana_ppfir.mmmc/delayCorner/fast_minrc/timingderate.sdc.gz ...
+Current (total cpu=0:00:52.6, real=0:02:37, peak res=2880.8M, current mem=2880.8M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2881.1M, current mem=2881.1M)
+Current (total cpu=0:00:52.7, real=0:02:37, peak res=2881.1M, current mem=2881.1M)
+Loading timing derate file INVS//cmn/scpa_dig_ana_ppfir.mmmc/delayCorner/typ_typ/timingderate.sdc.gz ...
+Current (total cpu=0:00:52.8, real=0:02:37, peak res=2881.1M, current mem=2881.1M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2881.4M, current mem=2881.4M)
+Current (total cpu=0:00:52.9, real=0:02:37, peak res=2881.4M, current mem=2881.4M)
+Loading path adjust file INVS//cmn/scpa_dig_ana_ppfir.mmmc/pathadjust.sdc.gz ...
+Current (total cpu=0:00:53.0, real=0:02:37, peak res=2881.4M, current mem=2881.4M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2881.8M, current mem=2881.8M)
+Current (total cpu=0:00:53.1, real=0:02:37, peak res=2881.8M, current mem=2881.8M)
+% End Load Additional Timing constraints (date=01/21 11:34:42, total cpu=0:00:00.9, real=0:00:01.0, peak res=2881.8M, current mem=2881.8M)
+% Begin Set message attributes (date=01/21 11:34:42, mem=2881.8M)
+(stylus_db): Setting attributes on Synthesis message objects ...
+% End Set message attributes (date=01/21 11:34:42, total cpu=0:00:00.1, real=0:00:00.0, peak res=2881.8M, current mem=2881.8M)
+(stylus_db): Couldn't load SDP file, (file doesn't exists)
+% Begin Generate Vias (date=01/21 11:34:42, mem=2881.8M)
+(stylus_db): Generate advanced rule Vias ...
+Start generating vias ..
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Via generation completed successfully.
+% End Generate Vias (date=01/21 11:34:43, total cpu=0:00:00.5, real=0:00:01.0, peak res=2900.0M, current mem=2897.4M)
+% Begin Set attributes (date=01/21 11:34:43, mem=2897.4M)
+(stylus_db): Setting attributes on design objects ...
+(stylus_db): Set 64186 attributes of design objects
+(stylus_db): Could not set 254 attributes of design objects
+% End Set attributes (date=01/21 11:34:43, total cpu=0:00:00.4, real=0:00:00.0, peak res=2909.1M, current mem=2901.6M)
+(stylus_db): source flexmv file - INVS//cmn/pnr_cmn/scpa_dig_ana_ppfir.flexmv
+% Begin Load iHDB config (date=01/21 11:34:44, mem=2901.6M)
+% End Load iHDB config (date=01/21 11:34:44, total cpu=0:00:00.1, real=0:00:00.0, peak res=2901.6M, current mem=2901.6M)
+(stylus_db): Load RC preroute patterns ...
+% Begin Load RC preroute patterns (date=01/21 11:34:44, mem=2901.6M)
+Loading preRoute extraction data from directory 'INVS//cmn/scpa_dig_ana_ppfir.extraction/extraction/' ...
+Extraction setup Started for TopCell scpa_dig_ana_ppfir 
+Initializing multi-corner RC extraction with 3 active RC Corners ...
+Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For post_route extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+Generating auto layer map file.
+Importing multi-corner technology file(s) for preRoute extraction...
+/data/PDK/tsmc/28nm/tsri/RC_Extraction/Cadence/rcworst/qrcTechFile
+Generating auto layer map file.
+/data/PDK/tsmc/28nm/tsri/RC_Extraction/Cadence/rcbest/qrcTechFile
+Generating auto layer map file.
+/data/PDK/tsmc/28nm/tsri/RC_Extraction/Cadence/nominal/qrcTechFile
+Generating auto layer map file.
+Completed (cpu: 0:00:10.9 real: 0:00:16.0)
+Set Shrink Factor to 0.90000 (from technology file)
+Summary of Active RC-Corners : 
+ 
+ Analysis View: slow-slow-maxrc
+    RC-Corner Name        : rc_max
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/data/PDK/tsmc/28nm/tsri/RC_Extraction/Cadence/rcworst/qrcTechFile'
+ 
+ Analysis View: fast-fast-minrc
+    RC-Corner Name        : rc_min
+    RC-Corner Index       : 1
+    RC-Corner Temperature : -40 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/data/PDK/tsmc/28nm/tsri/RC_Extraction/Cadence/rcbest/qrcTechFile'
+ 
+ Analysis View: func-typ-typ
+    RC-Corner Name        : rc_typ
+    RC-Corner Index       : 2
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/data/PDK/tsmc/28nm/tsri/RC_Extraction/Cadence/nominal/qrcTechFile'
+Restored Grid density data
+Initializing multi-corner resistance tables ...
+Default value for post_route extraction mode's extract_rc_effort_level (extract_rc_effort_level option of set_db) changed to 'medium'.
+% End Load RC preroute patterns (date=01/21 11:35:00, total cpu=0:00:11.1, real=0:00:16.0, peak res=2999.0M, current mem=2995.2M)
+% Begin Load Min Layer Data (date=01/21 11:35:00, mem=2995.2M)
+Read 128 nets
+% End Load Min Layer Data (date=01/21 11:35:00, total cpu=0:00:00.1, real=0:00:00.0, peak res=2995.3M, current mem=2995.3M)
+(stylus_db): Load Route congestion map file ...
+% Begin Load Route congestion map (date=01/21 11:35:00, mem=2995.3M)
+Reading congestion map file INVS//cmn/scpa_dig_ana_ppfir.route.congestion.gz ...
+Suppress "**WARN ..." messages.
+Un-suppress "**WARN ..." messages.
+% End Load Route congestion map (date=01/21 11:35:01, total cpu=0:00:00.1, real=0:00:01.0, peak res=3019.2M, current mem=3019.2M)
+(stylus_db): Couldn't load SPEF, (spef data dir scpa_dig_ana_ppfir.mmmc/corners/ not found)
+(stylus_db): Couldn't load SCANDEF, (file doesn't exists)
+(stylus_db): Couldn't load Activity file, (file doesn't exists)
++----------------------------------------------------------------+
+    Summary of 'read_db INVS'                     
++----------------------------------------------------------------+
+    Generated by         :     Innovus 23.14-s088_1
+    Generated on         :     Wed Jan 21 11:35:01 EST 2026
+    Design               :     scpa_dig_ana_ppfir
+    process_node         :     90   
+    db units             :     2000 
+    tech_mfg_grid        :     0.005
+    bbox                 :     {-57.76 -171.96 722.0 483.96}
+    core_bbox            :     {-52.72 -166.96 716.96 478.96}
++----------------------------------------------------------------+
+    Object Type          :     Count
++-----------------------------------+
+    timing_libraries     :     18   
+    library_sets         :     3    
+    lib_cells            :     3510 
+    setup_analysis_views :     3    
+    hold_analysis_views  :     3    
+    rc_corners           :     3    
+    delay_corners        :     3    
+    constraint_modes     :     3    
+    clocks               :     9    
++-----------------------------------+
+    base_cells           :     1179 
+    modules              :     5    
+    insts                :     140819
+    hinsts               :     5    
+    physical_insts       :     6637 
+    ports                :     2085 
+    nets                 :     159008
+    hnets                :     159552
+    pins                 :     491082
+    hpins                :     551  
+    pg_nets              :     2    
++-----------------------------------+
+    layers               :     33   
+    via_defs             :     949  
+    via_def_rule         :     9    
+    sites                :     1    
+    core_rows            :     717  
+    track_patterns       :     20   
++-----------------------------------+
+#% End Load Common DB (date=01/21 11:35:01, total cpu=0:00:42.5, real=0:00:48.0, peak res=3103.6M, current mem=3062.2M)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPDBTCL-321         8  The attribute '%s' still works but will ...
+ERROR     IMPDBTCL-248         1  '%s' is not a recognized object or attri...
+WARNING   IMPOPT-3602          1  The specified path group name %s is not ...
+WARNING   IMPOPT-7155          2  Option %s in 'set_db' will be obsolete. ...
+WARNING   NRDB-317             1  Threshold min width %f is >= max width %...
+WARNING   IMPCTE-290         232  Could not locate cell %s in any library ...
+WARNING   IMPUDM-33           11  Global variable "%s" is obsolete and wil...
+WARNING   GLOBAL-100           3  Global '%s' has become obsolete. It will...
+WARNING   TCLCMD-1531          2  '%s' has been applied on hierarchical pi...
+WARNING   TECHLIB-302         95  No function defined for cell '%s'. The c...
+WARNING   TECHLIB-1277       135  The %s '%s' has been defined for %s %s '...
+*** Message Summary: 490 warning(s), 1 error(s)
+
+0
+@innovus 3> read_floorplan ../def/scpa_dig_ana_ppfir_cadence.def
+Reading floorplan file - ../def/scpa_dig_ana_ppfir_cadence.def (mem = 3448.5M).
+#% Begin Load floorplan data ... (date=01/21 11:35:23, mem=3244.9M)
+**ERROR: (IMPFP-710):	File version unknown is too old.
+Input floorplan file is too old and is not supported in EDI 10.1 and newer.
+You can use EDI 9.1 and before to read it in, then save again to create new version.
+@innovus 4> 
+**ERROR: (IMPSYT-6382):	
+--------------------------------------------------------------------------------
+Exiting Innovus on Wed Jan 21 11:35:49 2026
+  Total CPU time:     0:01:15
+  Total real time:    0:03:46
+  Peak memory (main): 3252.38MB
+
+
+*** Memory Usage v#2 (Current mem = 3448.477M, initial mem = 863.789M) ***
+*** Message Summary: 490 warning(s), 4 error(s)
+
+--- Ending "Innovus" (totcpu=0:01:09, real=0:03:44, mem=3448.5M) ---

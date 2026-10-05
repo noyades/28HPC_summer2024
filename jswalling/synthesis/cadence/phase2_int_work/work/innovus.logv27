@@ -1,0 +1,882 @@
+[08/15 10:58:26      0s] 
+[08/15 10:58:26      0s] Cadence Innovus(TM) Implementation System.
+[08/15 10:58:26      0s] Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+[08/15 10:58:26      0s] 
+[08/15 10:58:26      0s] Version:	v23.14-s088_1, built Fri Feb 28 12:25:44 PST 2025
+[08/15 10:58:26      0s] Options:	-stylus 
+[08/15 10:58:26      0s] Date:		Sat Aug 15 10:58:26 2026
+[08/15 10:58:26      0s] Host:		lnx-prd-05.ece.vt.edu (x86_64 w/Linux 5.15.0-320.202.8.3.el9uek.x86_64) (16cores*32cpus*AMD EPYC 7313 16-Core Processor 512KB)
+[08/15 10:58:26      0s] OS:		Oracle Linux Server 9.7
+[08/15 10:58:26      0s] 
+[08/15 10:58:26      0s] License:
+[08/15 10:58:26      0s] 		[10:58:26.282545] Configured Lic search path (23.02-s006): 27002@license.ece.vt.edu
+[08/15 10:58:26      0s] 
+[08/15 10:58:26      0s] 		invs	Innovus Implementation System	23.1	checkout succeeded
+[08/15 10:58:26      0s] 		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[08/15 10:58:38     12s] Memory management switch to non-aggressive memory release mode.
+[08/15 10:58:38     12s] 
+[08/15 10:58:38     12s] OS Mmap count monitoring thread starts. Limit of OS Mmap count is 65530
+[08/15 10:58:38     12s] 
+[08/15 10:58:38     12s] 
+[08/15 10:58:38     12s] 
+[08/15 10:58:40     14s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v23.14-s088_1 (64bit) 02/28/2025 12:25 (Linux 3.10.0-693.el7.x86_64)
+[08/15 10:58:42     16s] @(#)CDS: NanoRoute 23.14-s088_1 NR250219-0822/23_14-UB (database version 18.20.661) {superthreading v2.20}
+[08/15 10:58:42     16s] @(#)CDS: AAE 23.14-s018 (64bit) 02/28/2025 (Linux 3.10.0-693.el7.x86_64)
+[08/15 10:58:42     16s] @(#)CDS: CTE 23.14-s036_1 () Feb 22 2025 01:17:26 ( )
+[08/15 10:58:42     16s] @(#)CDS: SYNTECH 23.14-s010_1 () Feb 19 2025 23:56:49 ( )
+[08/15 10:58:42     16s] @(#)CDS: CPE v23.14-s082
+[08/15 10:58:42     16s] @(#)CDS: IQuantus/TQuantus 23.1.1-s336 (64bit) Mon Jan 20 22:11:00 PST 2025 (Linux 3.10.0-693.el7.x86_64)
+[08/15 10:58:42     16s] @(#)CDS: OA 22.61-p020 Fri Nov  1 12:14:48 2024
+[08/15 10:58:42     16s] @(#)CDS: SGN 23.10-d005 (03-Oct-2023) (64 bit executable, TkQt5.15.9)
+[08/15 10:58:42     16s] @(#)CDS: RCDB 11.15.0
+[08/15 10:58:42     16s] @(#)CDS: STYLUS 23.16-e002_1 (01/09/2025 16:47 PST)
+[08/15 10:58:42     16s] @(#)CDS: IntegrityPlanner-23.14-17034 (23.14) (2025-02-20 15:50:05+0800)
+[08/15 10:58:42     16s] @(#)CDS: SYNTHESIS_ENGINE 23.14-s090
+[08/15 10:58:42     16s] Create and set the environment variable TMPDIR to /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/innovus_temp_3349710_370eade3-b000-4a74-9371-c54b93228f1b_lnx-prd-05.ece.vt.edu_jswalling_bRy6aa.
+
+[08/15 10:58:42     16s] Create and set the environment variable TMPDIR to /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/innovus_temp_3349710_370eade3-b000-4a74-9371-c54b93228f1b_lnx-prd-05.ece.vt.edu_jswalling_bRy6aa.
+[08/15 10:58:42     16s] 
+[08/15 10:58:42     16s] Change the soft stacksize limit to 0.2%RAM (255 mbytes). Set global soft_stack_size_limit to change the value.
+[08/15 10:58:43     17s] [INFO] Loading Pegasus 24.10 fill procedures
+[08/15 10:58:44     18s] Info: Process UID = 3349710 / 370eade3-b000-4a74-9371-c54b93228f1b / HeLdY9dJxE
+[08/15 10:58:44     18s] source /var/RFIC/cadtools/cadence/ddi/DDI-ISR4_23.14.000_lnx86/INNOVUS231/tools.lnx86/../etc/synth/attr_def/plus_attr_defs.tcl
+[08/15 10:58:44     18s] Loading attribute definitions from mini dummy db...
+[08/15 10:58:45     19s] Info: Defined 24214 Synthesis attributes
+[08/15 10:58:45     19s] Info: Skipped defining 361 Synthesis attributes already defined in Innovus
+[08/15 10:58:45     19s] source /var/RFIC/cadtools/cadence/ddi/DDI-ISR4_23.14.000_lnx86/INNOVUS231/tools.lnx86/../etc/synth/attr_def/plus_msg_defs.tcl
+[08/15 10:58:46     20s] 
+[08/15 10:58:46     20s] **INFO:  MMMC transition support version v31-84 
+[08/15 10:58:46     20s] 
+[08/15 10:58:49     23s] @innovus 1> Suppress "**WARN ..." messages.
+[08/15 10:59:15     24s] read_db scpa_dig_ana_ppfir_inn.enc
+[08/15 10:59:15     24s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[08/15 10:59:15     24s] #% Begin load design ... (date=08/15 10:59:15, mem=1917.1M)
+[08/15 10:59:16     26s] AAE_INFO: switching set_db delaycal_enable_si from false to true ...
+[08/15 10:59:16     26s] AAE_INFO: The setting is changed from false to true in set_db delaycal_enable_si
+[08/15 10:59:16     26s] Loading design 'scpa_dig_ana_ppfir' saved by 'Innovus' '23.14-s088_1' on 'Mon Jan 26 17:04:12 2026'.
+[08/15 10:59:17     26s] Reading PVT_0P81V_125C timing library '/data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib' ...
+[08/15 10:59:19     28s] Read 1003 cells in library 'sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c' 
+[08/15 10:59:19     28s] Reading PVT_0P81V_125C timing library '/data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_hpk_lvt_c30_ssg_cworstt_max_0p81v_125c.lib' ...
+[08/15 10:59:20     29s] Message <TECHLIB-1277> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+[08/15 10:59:21     29s] Read 167 cells in library 'sc9mcpp140z_cln28ht_hpk_lvt_c30_ssg_cworstt_max_0p81v_125c' 
+[08/15 10:59:21     29s] Reading PVT_0P81V_125C timing library '/data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_svt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_svt_c30_ssg_cworstt_max_0p81v_125c.lib' ...
+[08/15 10:59:22     31s] Message <TECHLIB-302> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+[08/15 10:59:23     32s] Read 1003 cells in library 'sc9mcpp140z_cln28ht_base_svt_c30_ssg_cworstt_max_0p81v_125c' 
+[08/15 10:59:23     32s] Reading PVT_0P81V_125C timing library '/data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_svt_c30/r0p0/lib/sc9mcpp140z_cln28ht_hpk_svt_c30_ssg_cworstt_max_0p81v_125c.lib' ...
+[08/15 10:59:24     33s] Read 167 cells in library 'sc9mcpp140z_cln28ht_hpk_svt_c30_ssg_cworstt_max_0p81v_125c' 
+[08/15 10:59:24     33s] Reading PVT_0P81V_125C timing library '/data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_ulvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_ulvt_c30_ssg_cworstt_max_0p81v_125c.lib' ...
+[08/15 10:59:27     36s] Read 1003 cells in library 'sc9mcpp140z_cln28ht_base_ulvt_c30_ssg_cworstt_max_0p81v_125c' 
+[08/15 10:59:27     36s] Reading PVT_0P81V_125C timing library '/data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_ulvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_hpk_ulvt_c30_ssg_cworstt_max_0p81v_125c.lib' ...
+[08/15 10:59:28     37s] Read 167 cells in library 'sc9mcpp140z_cln28ht_hpk_ulvt_c30_ssg_cworstt_max_0p81v_125c' 
+[08/15 10:59:28     37s] Ending "PreSetAnalysisView" (total cpu=0:00:11.5, real=0:00:11.0, peak res=2274.6M, current mem=1962.7M)
+[08/15 10:59:28     37s] 
+[08/15 10:59:28     37s] Loading LEF file /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/scpa_dig_ana_ppfir_inn.enc/libs/lef/sc9mcpp140z_tech.lef ...
+[08/15 10:59:28     37s] 
+[08/15 10:59:28     37s] Loading LEF file /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/scpa_dig_ana_ppfir_inn.enc/libs/lef/sc9mcpp140z_cln28ht_base_ulvt_c30.lef ...
+[08/15 10:59:28     37s] Set DBUPerIGU to M1 pitch 280.
+[08/15 10:59:29     37s] 
+[08/15 10:59:29     37s] Loading LEF file /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/scpa_dig_ana_ppfir_inn.enc/libs/lef/sc9mcpp140z_cln28ht_hpk_ulvt_c30.lef ...
+[08/15 10:59:29     38s] 
+[08/15 10:59:29     38s] ##  Check design process and node:  
+[08/15 10:59:29     38s] ##  Both design process and tech node are not set.
+[08/15 10:59:29     38s] 
+[08/15 10:59:29     38s] Loading view definition file from /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/scpa_dig_ana_ppfir_inn.enc/viewDefinition.tcl
+[08/15 10:59:29     38s] % Begin Load netlist data ... (date=08/15 10:59:29, mem=1972.9M)
+[08/15 10:59:29     38s] *** Begin netlist parsing (mem=2192.7M) ***
+[08/15 10:59:29     38s] Created 3510 new cells from 6 timing libraries.
+[08/15 10:59:29     38s] Reading netlist ...
+[08/15 10:59:29     38s] Backslashed names will retain backslash and a trailing blank character.
+[08/15 10:59:29     38s] Reading verilogBinary netlist '/data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/scpa_dig_ana_ppfir_inn.enc/vbin/scpa_dig_ana_ppfir.v.bin'
+[08/15 10:59:29     38s] 
+[08/15 10:59:29     38s] *** Memory Usage v#2 (Current mem = 2192.660M, initial mem = 855.789M) ***
+[08/15 10:59:29     38s] *** End netlist parsing (cpu=0:00:00.3, real=0:00:00.0, mem=2192.7M) ***
+[08/15 10:59:29     38s] % End Load netlist data ... (date=08/15 10:59:29, total cpu=0:00:00.4, real=0:00:00.0, peak res=2171.6M, current mem=2171.6M)
+[08/15 10:59:29     38s] Top level cell is scpa_dig_ana_ppfir.
+[08/15 10:59:30     38s] Hooked 3510 DB cells to tlib cells.
+[08/15 10:59:30     38s] ** Removed 2340 unused lib cells.
+[08/15 10:59:30     38s] Ending "BindLib:" (total cpu=0:00:00.3, real=0:00:01.0, peak res=2284.8M, current mem=2284.8M)
+[08/15 10:59:30     38s] Starting recursive module instantiation check.
+[08/15 10:59:30     38s] No recursion found.
+[08/15 10:59:30     38s] Building hierarchical netlist for Cell scpa_dig_ana_ppfir ...
+[08/15 10:59:30     38s] ***** UseNewTieNetMode *****.
+[08/15 10:59:30     39s] *** Netlist is unique.
+[08/15 10:59:30     39s] Setting Std. cell height to 1800 DBU (smallest netlist inst).
+[08/15 10:59:30     39s] ** info: there are 1185 modules.
+[08/15 10:59:30     39s] ** info: there are 136840 stdCell insts.
+[08/15 10:59:30     39s] ** info: there are 136840 stdCell insts with at least one signal pin.
+[08/15 10:59:30     39s] 
+[08/15 10:59:30     39s] *** Memory Usage v#2 (Current mem = 2353.074M, initial mem = 855.789M) ***
+[08/15 10:59:30     39s] *info: set bottom ioPad orient R0
+[08/15 10:59:30     39s] The core width changes from 769.680000 to 769.720000 when snapping to grid "PlacementGrid".
+[08/15 10:59:30     39s] The core height changes from 645.920000 to 645.900000 when snapping to grid "PlacementGrid".
+[08/15 10:59:30     39s] 
+[08/15 10:59:30     39s] Honor LEF defined pitches for advanced node
+[08/15 10:59:30     39s] Start create_tracks
+[08/15 10:59:30     39s] Set Shrink Factor to 0.90000
+[08/15 10:59:30     39s] Loading preference file /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/scpa_dig_ana_ppfir_inn.enc/gui.pref.tcl ...
+[08/15 10:59:30     39s] Ignoring {/data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/scpa_dig_ana_ppfir_inn.enc/libs/misc/default} groups for Hold optimization.
+[08/15 10:59:30     39s] Ignoring {/data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/scpa_dig_ana_ppfir_inn.enc/libs/misc/default} groups for Hold optimization.
+[08/15 10:59:30     39s] set_db opt_useful_skew already set.
+[08/15 10:59:30     39s] set_db opt_useful_skew already set.
+[08/15 10:59:30     39s] Effort level <high> specified for tdgp_reg2reg_default path_group
+[08/15 10:59:30     39s] Slack adjustment of -0 applied on tdgp_reg2reg_default path_group
+[08/15 10:59:30     39s] #WARNING (NRIF-90) Option set_db route_bottom_routing_layer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option set_db design_bottom_routing_layer instead.
+[08/15 10:59:30     39s] #WARNING (NRIF-90) Option set_db route_bottom_routing_layer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option set_db design_bottom_routing_layer instead.
+[08/15 10:59:30     39s] #WARNING (NRIF-91) Option set_db route_top_routing_layer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option set_db design_top_routing_layer instead.
+[08/15 10:59:30     39s] #WARNING (NRIF-91) Option set_db route_top_routing_layer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option set_db design_top_routing_layer instead.
+[08/15 10:59:30     39s] Change floorplan default-technical-site to 'sc9mcpp140z_cln28ht'.
+[08/15 10:59:30     39s] Change floorplan default-technical-site to 'sc9mcpp140z_cln28ht'.
+[08/15 10:59:31     40s] Extraction setup Delayed 
+[08/15 10:59:31     40s] *Info: initialize multi-corner CTS.
+[08/15 10:59:31     40s] Reading PVT_0P99V_m40C timing library '/data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ffg_cbestt_min_0p99v_m40c.lib' ...
+[08/15 10:59:31     40s] Read 0 cells in library 'sc9mcpp140z_cln28ht_base_lvt_c30_ffg_cbestt_min_0p99v_m40c' 
+[08/15 10:59:31     40s] Ignored 1003 cells in library 'sc9mcpp140z_cln28ht_base_lvt_c30_ffg_cbestt_min_0p99v_m40c' because they are not defined in the LEF file, and they are not used in the Verilog netlist.
+[08/15 10:59:31     40s] Reading PVT_0P99V_m40C timing library '/data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_hpk_lvt_c30_ffg_cbestt_min_0p99v_m40c.lib' ...
+[08/15 10:59:31     40s] Read 0 cells in library 'sc9mcpp140z_cln28ht_hpk_lvt_c30_ffg_cbestt_min_0p99v_m40c' 
+[08/15 10:59:31     40s] Ignored 167 cells in library 'sc9mcpp140z_cln28ht_hpk_lvt_c30_ffg_cbestt_min_0p99v_m40c' because they are not defined in the LEF file, and they are not used in the Verilog netlist.
+[08/15 10:59:31     40s] Reading PVT_0P99V_m40C timing library '/data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_svt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_svt_c30_ffg_cbestt_min_0p99v_m40c.lib' ...
+[08/15 10:59:31     40s] Read 0 cells in library 'sc9mcpp140z_cln28ht_base_svt_c30_ffg_cbestt_min_0p99v_m40c' 
+[08/15 10:59:31     40s] Ignored 1003 cells in library 'sc9mcpp140z_cln28ht_base_svt_c30_ffg_cbestt_min_0p99v_m40c' because they are not defined in the LEF file, and they are not used in the Verilog netlist.
+[08/15 10:59:31     40s] Reading PVT_0P99V_m40C timing library '/data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_svt_c30/r0p0/lib/sc9mcpp140z_cln28ht_hpk_svt_c30_ffg_cbestt_min_0p99v_m40c.lib' ...
+[08/15 10:59:32     41s] Read 0 cells in library 'sc9mcpp140z_cln28ht_hpk_svt_c30_ffg_cbestt_min_0p99v_m40c' 
+[08/15 10:59:32     41s] Ignored 167 cells in library 'sc9mcpp140z_cln28ht_hpk_svt_c30_ffg_cbestt_min_0p99v_m40c' because they are not defined in the LEF file, and they are not used in the Verilog netlist.
+[08/15 10:59:32     41s] Reading PVT_0P99V_m40C timing library '/data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_ulvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_ulvt_c30_ffg_cbestt_min_0p99v_m40c.lib' ...
+[08/15 10:59:34     43s] Read 1003 cells in library 'sc9mcpp140z_cln28ht_base_ulvt_c30_ffg_cbestt_min_0p99v_m40c' 
+[08/15 10:59:34     43s] Reading PVT_0P99V_m40C timing library '/data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_ulvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_hpk_ulvt_c30_ffg_cbestt_min_0p99v_m40c.lib' ...
+[08/15 10:59:35     44s] Read 167 cells in library 'sc9mcpp140z_cln28ht_hpk_ulvt_c30_ffg_cbestt_min_0p99v_m40c' 
+[08/15 10:59:35     44s] Reading PVT_0P90V_25C timing library '/data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_tt_ctypical_max_0p90v_25c.lib' ...
+[08/15 10:59:36     45s] Read 0 cells in library 'sc9mcpp140z_cln28ht_base_lvt_c30_tt_ctypical_max_0p90v_25c' 
+[08/15 10:59:36     45s] Ignored 1003 cells in library 'sc9mcpp140z_cln28ht_base_lvt_c30_tt_ctypical_max_0p90v_25c' because they are not defined in the LEF file, and they are not used in the Verilog netlist.
+[08/15 10:59:36     45s] Reading PVT_0P90V_25C timing library '/data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_hpk_lvt_c30_tt_ctypical_max_0p90v_25c.lib' ...
+[08/15 10:59:36     45s] Read 0 cells in library 'sc9mcpp140z_cln28ht_hpk_lvt_c30_tt_ctypical_max_0p90v_25c' 
+[08/15 10:59:36     45s] Ignored 167 cells in library 'sc9mcpp140z_cln28ht_hpk_lvt_c30_tt_ctypical_max_0p90v_25c' because they are not defined in the LEF file, and they are not used in the Verilog netlist.
+[08/15 10:59:36     45s] Reading PVT_0P90V_25C timing library '/data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_svt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_svt_c30_tt_ctypical_max_0p90v_25c.lib' ...
+[08/15 10:59:36     45s] Read 0 cells in library 'sc9mcpp140z_cln28ht_base_svt_c30_tt_ctypical_max_0p90v_25c' 
+[08/15 10:59:36     45s] Ignored 1003 cells in library 'sc9mcpp140z_cln28ht_base_svt_c30_tt_ctypical_max_0p90v_25c' because they are not defined in the LEF file, and they are not used in the Verilog netlist.
+[08/15 10:59:36     45s] Reading PVT_0P90V_25C timing library '/data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_svt_c30/r0p0/lib/sc9mcpp140z_cln28ht_hpk_svt_c30_tt_ctypical_max_0p90v_25c.lib' ...
+[08/15 10:59:36     45s] Read 0 cells in library 'sc9mcpp140z_cln28ht_hpk_svt_c30_tt_ctypical_max_0p90v_25c' 
+[08/15 10:59:36     45s] Ignored 167 cells in library 'sc9mcpp140z_cln28ht_hpk_svt_c30_tt_ctypical_max_0p90v_25c' because they are not defined in the LEF file, and they are not used in the Verilog netlist.
+[08/15 10:59:36     45s] Reading PVT_0P90V_25C timing library '/data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_ulvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_ulvt_c30_tt_ctypical_max_0p90v_25c.lib' ...
+[08/15 10:59:39     48s] Read 1003 cells in library 'sc9mcpp140z_cln28ht_base_ulvt_c30_tt_ctypical_max_0p90v_25c' 
+[08/15 10:59:39     48s] Reading PVT_0P90V_25C timing library '/data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_ulvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_hpk_ulvt_c30_tt_ctypical_max_0p90v_25c.lib' ...
+[08/15 10:59:40     49s] Read 167 cells in library 'sc9mcpp140z_cln28ht_hpk_ulvt_c30_tt_ctypical_max_0p90v_25c' 
+[08/15 10:59:40     49s] Ending "SetAnalysisView" (total cpu=0:00:09.7, real=0:00:09.0, peak res=2722.0M, current mem=2294.6M)
+[08/15 10:59:41     50s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[08/15 10:59:41     50s] 
+[08/15 10:59:41     50s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[08/15 10:59:41     50s] SBFF Setting to complicate: SDFFYSQ2D_X4M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 10:59:41     50s] SBFF Setting to complicate: SDFFYSQ2D_X3M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 10:59:41     50s] SBFF Setting to complicate: SDFFYSQ2D_X2M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 10:59:41     50s] SBFF Setting to complicate: SDFFYSQ2D_X1M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 10:59:41     50s] SBFF Setting to complicate: SDFFYRPQ2D_X4M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 10:59:41     50s] SBFF Setting to complicate: SDFFYRPQ2D_X3M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 10:59:41     50s] SBFF Setting to complicate: SDFFYRPQ2D_X2M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 10:59:41     50s] SBFF Setting to complicate: SDFFYRPQ2D_X1M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 10:59:41     50s] SBFF Setting to complicate: SDFFYQ2D_X4M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 10:59:41     50s] SBFF Setting to complicate: SDFFYQ2D_X3M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 10:59:41     50s] SBFF Setting to complicate: SDFFYQ2D_X2M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 10:59:41     50s] SBFF Setting to complicate: SDFFYQ2D_X1M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 10:59:41     50s] Summary for sequential cells identification: 
+[08/15 10:59:41     50s]   Identified SBFF number: 142
+[08/15 10:59:41     50s]   Identified MBFF number: 21
+[08/15 10:59:41     50s]   Identified SB Latch number: 48
+[08/15 10:59:41     50s]   Identified MB Latch number: 0
+[08/15 10:59:41     50s]   Not identified SBFF number: 12
+[08/15 10:59:41     50s]   Not identified MBFF number: 0
+[08/15 10:59:41     50s]   Not identified SB Latch number: 0
+[08/15 10:59:41     50s]   Not identified MB Latch number: 0
+[08/15 10:59:41     50s]   Number of sequential cells which are not FFs: 84
+[08/15 10:59:41     50s] Total number of combinational cells: 845
+[08/15 10:59:41     50s] Total number of sequential cells: 307
+[08/15 10:59:41     50s] Total number of tristate cells: 0
+[08/15 10:59:41     50s] Total number of level shifter cells: 0
+[08/15 10:59:41     50s] Total number of power gating cells: 0
+[08/15 10:59:41     50s] Total number of isolation cells: 0
+[08/15 10:59:41     50s] Total number of power switch cells: 0
+[08/15 10:59:41     50s] Total number of pulse generator cells: 0
+[08/15 10:59:41     50s] Total number of always on buffers: 0
+[08/15 10:59:41     50s] Total number of retention cells: 0
+[08/15 10:59:41     50s] Total number of physical cells: 18
+[08/15 10:59:41     50s] List of usable buffers: FRICG_X0P5B_A9PP140ZTUL_C30 FRICG_X0P6B_A9PP140ZTUL_C30 FRICG_X0P8B_A9PP140ZTUL_C30 FRICG_X0P7B_A9PP140ZTUL_C30 FRICG_X11B_A9PP140ZTUL_C30 FRICG_X13B_A9PP140ZTUL_C30 FRICG_X16B_A9PP140ZTUL_C30 FRICG_X1B_A9PP140ZTUL_C30 FRICG_X1P2B_A9PP140ZTUL_C30 FRICG_X1P4B_A9PP140ZTUL_C30 FRICG_X2B_A9PP140ZTUL_C30 FRICG_X1P7B_A9PP140ZTUL_C30 FRICG_X2P5B_A9PP140ZTUL_C30 FRICG_X3B_A9PP140ZTUL_C30 FRICG_X4B_A9PP140ZTUL_C30 FRICG_X3P5B_A9PP140ZTUL_C30 FRICG_X5B_A9PP140ZTUL_C30 FRICG_X6B_A9PP140ZTUL_C30 FRICG_X7P5B_A9PP140ZTUL_C30 FRICG_X9B_A9PP140ZTUL_C30 BUFH_X11M_A9PP140ZTUL_C30 BUFH_X13M_A9PP140ZTUL_C30 BUFH_X16M_A9PP140ZTUL_C30 BUFH_X1M_A9PP140ZTUL_C30 BUFH_X1P2M_A9PP140ZTUL_C30 BUFH_X1P4M_A9PP140ZTUL_C30 BUFH_X2M_A9PP140ZTUL_C30 BUFH_X1P7M_A9PP140ZTUL_C30 BUFH_X2P5M_A9PP140ZTUL_C30 BUFH_X3M_A9PP140ZTUL_C30 BUFH_X4M_A9PP140ZTUL_C30 BUFH_X3P5M_A9PP140ZTUL_C30 BUFH_X5M_A9PP140ZTUL_C30 BUFH_X6M_A9PP140ZTUL_C30 BUFH_X7P5M_A9PP140ZTUL_C30 BUFH_X9M_A9PP140ZTUL_C30 BUF_X0P5B_A9PP140ZTUL_C30 BUF_X0P5M_A9PP140ZTUL_C30 BUF_X0P7B_A9PP140ZTUL_C30 BUF_X0P7M_A9PP140ZTUL_C30 BUF_X0P8M_A9PP140ZTUL_C30 BUF_X0P8B_A9PP140ZTUL_C30 BUF_X11B_A9PP140ZTUL_C30 BUF_X11B_A9PP140ZTUL_C30_XGCAP11 BUF_X11M_A9PP140ZTUL_C30 BUF_X13B_A9PP140ZTUL_C30 BUF_X11M_A9PP140ZTUL_C30_XGCAP11 BUF_X13B_A9PP140ZTUL_C30_XGCAP13 BUF_X13M_A9PP140ZTUL_C30 BUF_X16B_A9PP140ZTUL_C30 BUF_X13M_A9PP140ZTUL_C30_XGCAP13 BUF_X16B_A9PP140ZTUL_C30_XGCAP16 BUF_X16M_A9PP140ZTUL_C30 BUF_X16M_A9PP140ZTUL_C30_XGCAP16 BUF_X1M_A9PP140ZTUL_C30 BUF_X1B_A9PP140ZTUL_C30 BUF_X1P2B_A9PP140ZTUL_C30 BUF_X1P2M_A9PP140ZTUL_C30 BUF_X1P4B_A9PP140ZTUL_C30 BUF_X1P4M_A9PP140ZTUL_C30 BUF_X1P7B_A9PP140ZTUL_C30 BUF_X1P7M_A9PP140ZTUL_C30 BUF_X2M_A9PP140ZTUL_C30 BUF_X2B_A9PP140ZTUL_C30 BUF_X2P5B_A9PP140ZTUL_C30 BUF_X2P5M_A9PP140ZTUL_C30 BUF_X3M_A9PP140ZTUL_C30 BUF_X3B_A9PP140ZTUL_C30 BUF_X3P5B_A9PP140ZTUL_C30 BUF_X3P5M_A9PP140ZTUL_C30 BUF_X4B_A9PP140ZTUL_C30 BUF_X4B_A9PP140ZTUL_C30_XGCAP4 BUF_X4M_A9PP140ZTUL_C30 BUF_X5B_A9PP140ZTUL_C30 BUF_X4M_A9PP140ZTUL_C30_XGCAP4 BUF_X5B_A9PP140ZTUL_C30_XGCAP5 BUF_X5M_A9PP140ZTUL_C30 BUF_X6B_A9PP140ZTUL_C30 BUF_X5M_A9PP140ZTUL_C30_XGCAP5 BUF_X6B_A9PP140ZTUL_C30_XGCAP6 BUF_X6M_A9PP140ZTUL_C30 BUF_X7P5B_A9PP140ZTUL_C30 BUF_X6M_A9PP140ZTUL_C30_XGCAP6 BUF_X7P5B_A9PP140ZTUL_C30_XGCAP8 BUF_X7P5M_A9PP140ZTUL_C30 BUF_X7P5M_A9PP140ZTUL_C30_XGCAP8 BUF_X9B_A9PP140ZTUL_C30 BUF_X9M_A9PP140ZTUL_C30 BUF_X9B_A9PP140ZTUL_C30_XGCAP9 BUF_X9M_A9PP140ZTUL_C30_XGCAP9 DLY2_X1M_A9PP140ZTUL_C30 DLY2_X0P5M_A9PP140ZTUL_C30 DLY2_X2M_A9PP140ZTUL_C30 DLYCLK8S2_X1B_A9PP140ZTUL_C30 DLYCLK8S2_X2B_A9PP140ZTUL_C30 DLYCLK8S4_X1B_A9PP140ZTUL_C30 DLYCLK8S4_X2B_A9PP140ZTUL_C30
+[08/15 10:59:41     50s] Total number of usable buffers: 97
+[08/15 10:59:41     50s] List of unusable buffers:
+[08/15 10:59:41     50s] Total number of unusable buffers: 0
+[08/15 10:59:41     50s] List of usable inverters: INV_X20B_A9PP140ZTUL_C30 INV_X20M_A9PP140ZTUL_C30 INV_X0P5B_A9PP140ZTUL_C30 INV_X0P5M_A9PP140ZTUL_C30 INV_X0P6B_A9PP140ZTUL_C30 INV_X0P6M_A9PP140ZTUL_C30 INV_X0P7B_A9PP140ZTUL_C30 INV_X0P7M_A9PP140ZTUL_C30 INV_X0P8M_A9PP140ZTUL_C30 INV_X0P8B_A9PP140ZTUL_C30 INV_X11B_A9PP140ZTUL_C30 INV_X11B_A9PP140ZTUL_C30_XGCAP11 INV_X11M_A9PP140ZTUL_C30 INV_X13B_A9PP140ZTUL_C30 INV_X11M_A9PP140ZTUL_C30_XGCAP11 INV_X13B_A9PP140ZTUL_C30_XGCAP13 INV_X13M_A9PP140ZTUL_C30 INV_X16B_A9PP140ZTUL_C30 INV_X13M_A9PP140ZTUL_C30_XGCAP13 INV_X16B_A9PP140ZTUL_C30_XGCAP16 INV_X16M_A9PP140ZTUL_C30 INV_X16M_A9PP140ZTUL_C30_XGCAP16 INV_X1M_A9PP140ZTUL_C30 INV_X1B_A9PP140ZTUL_C30 INV_X1P2B_A9PP140ZTUL_C30 INV_X1P2M_A9PP140ZTUL_C30 INV_X1P4B_A9PP140ZTUL_C30 INV_X1P4M_A9PP140ZTUL_C30 INV_X1P7B_A9PP140ZTUL_C30 INV_X1P7M_A9PP140ZTUL_C30 INV_X2M_A9PP140ZTUL_C30 INV_X2B_A9PP140ZTUL_C30 INV_X2P5B_A9PP140ZTUL_C30 INV_X2P5M_A9PP140ZTUL_C30 INV_X3M_A9PP140ZTUL_C30 INV_X3B_A9PP140ZTUL_C30 INV_X3P5B_A9PP140ZTUL_C30 INV_X4B_A9PP140ZTUL_C30 INV_X3P5M_A9PP140ZTUL_C30 INV_X4B_A9PP140ZTUL_C30_XGCAP4 INV_X4M_A9PP140ZTUL_C30 INV_X5B_A9PP140ZTUL_C30 INV_X4M_A9PP140ZTUL_C30_XGCAP4 INV_X5B_A9PP140ZTUL_C30_XGCAP5 INV_X5M_A9PP140ZTUL_C30 INV_X6B_A9PP140ZTUL_C30 INV_X5M_A9PP140ZTUL_C30_XGCAP5 INV_X6B_A9PP140ZTUL_C30_XGCAP6 INV_X6M_A9PP140ZTUL_C30 INV_X7P5B_A9PP140ZTUL_C30 INV_X6M_A9PP140ZTUL_C30_XGCAP6 INV_X7P5B_A9PP140ZTUL_C30_XGCAP8 INV_X7P5M_A9PP140ZTUL_C30 INV_X9B_A9PP140ZTUL_C30 INV_X7P5M_A9PP140ZTUL_C30_XGCAP8 INV_X9B_A9PP140ZTUL_C30_XGCAP9 INV_X9M_A9PP140ZTUL_C30 INV_X9M_A9PP140ZTUL_C30_XGCAP9
+[08/15 10:59:41     50s] Total number of usable inverters: 58
+[08/15 10:59:41     50s] List of unusable inverters:
+[08/15 10:59:41     50s] Total number of unusable inverters: 0
+[08/15 10:59:41     50s] List of identified usable delay cells: DLY10_X1M_A9PP140ZTUL_C30 DLY10_X0P5M_A9PP140ZTUL_C30 DLY10_X2M_A9PP140ZTUL_C30 DLY10_X4M_A9PP140ZTUL_C30 DLY2_X4M_A9PP140ZTUL_C30 DLY4_X1M_A9PP140ZTUL_C30 DLY4_X0P5M_A9PP140ZTUL_C30 DLY4_X2M_A9PP140ZTUL_C30 DLY4_X4M_A9PP140ZTUL_C30 DLY6_X1M_A9PP140ZTUL_C30 DLY6_X0P5M_A9PP140ZTUL_C30 DLY6_X2M_A9PP140ZTUL_C30 DLY6_X4M_A9PP140ZTUL_C30 DLY8_X0P5M_A9PP140ZTUL_C30 DLY8_X1M_A9PP140ZTUL_C30 DLY8_X2M_A9PP140ZTUL_C30 DLY8_X4M_A9PP140ZTUL_C30 DLYCLK8S6_X1B_A9PP140ZTUL_C30 DLYCLK8S6_X2B_A9PP140ZTUL_C30 DLYCLK8S8_X1B_A9PP140ZTUL_C30 DLYCLK8S8_X2B_A9PP140ZTUL_C30
+[08/15 10:59:41     50s] Total number of identified usable delay cells: 21
+[08/15 10:59:41     50s] List of identified unusable delay cells:[08/15 10:59:41     50s] 
+[08/15 10:59:41     50s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+
+[08/15 10:59:41     50s] Total number of identified unusable delay cells: 0
+[08/15 10:59:41     50s] 
+[08/15 10:59:41     50s] TimeStamp Deleting Cell Server Begin ...
+[08/15 10:59:41     50s] 
+[08/15 10:59:41     50s] TimeStamp Deleting Cell Server End ...
+[08/15 10:59:41     50s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2779.7M, current mem=2779.7M)
+[08/15 10:59:41     50s] 
+[08/15 10:59:41     50s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[08/15 10:59:41     50s] SBFF Setting to complicate: SDFFYSQ2D_X4M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 10:59:41     50s] SBFF Setting to complicate: SDFFYSQ2D_X3M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 10:59:41     50s] SBFF Setting to complicate: SDFFYSQ2D_X2M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 10:59:41     50s] SBFF Setting to complicate: SDFFYSQ2D_X1M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 10:59:41     50s] SBFF Setting to complicate: SDFFYRPQ2D_X4M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 10:59:41     50s] SBFF Setting to complicate: SDFFYRPQ2D_X3M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 10:59:41     50s] SBFF Setting to complicate: SDFFYRPQ2D_X2M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 10:59:41     50s] SBFF Setting to complicate: SDFFYRPQ2D_X1M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 10:59:41     50s] SBFF Setting to complicate: SDFFYQ2D_X4M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 10:59:41     50s] SBFF Setting to complicate: SDFFYQ2D_X3M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 10:59:41     50s] SBFF Setting to complicate: SDFFYQ2D_X2M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 10:59:41     50s] SBFF Setting to complicate: SDFFYQ2D_X1M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 10:59:41     50s] Summary for sequential cells identification: 
+[08/15 10:59:41     50s]   Identified SBFF number: 142
+[08/15 10:59:41     50s]   Identified MBFF number: 21
+[08/15 10:59:41     50s]   Identified SB Latch number: 48
+[08/15 10:59:41     50s]   Identified MB Latch number: 0
+[08/15 10:59:41     50s]   Not identified SBFF number: 12
+[08/15 10:59:41     50s]   Not identified MBFF number: 0
+[08/15 10:59:41     50s]   Not identified SB Latch number: 0
+[08/15 10:59:41     50s]   Not identified MB Latch number: 0
+[08/15 10:59:41     50s]   Number of sequential cells which are not FFs: 84
+[08/15 10:59:41     50s]  Visiting view : slow-slow-maxrc
+[08/15 10:59:41     50s]    : PowerDomain = none : Weighted F : unweighted  = 5.00 (1.000) with rcCorner = 0
+[08/15 10:59:41     50s]    : PowerDomain = none : Weighted F : unweighted  = 4.50 (1.000) with rcCorner = -1
+[08/15 10:59:41     50s]  Visiting view : fast-fast-minrc
+[08/15 10:59:41     50s]    : PowerDomain = none : Weighted F : unweighted  = 3.10 (1.000) with rcCorner = 1
+[08/15 10:59:41     50s]    : PowerDomain = none : Weighted F : unweighted  = 2.80 (1.000) with rcCorner = -1
+[08/15 10:59:41     50s]  Visiting view : func-typ-typ
+[08/15 10:59:41     50s]    : PowerDomain = none : Weighted F : unweighted  = 3.90 (1.000) with rcCorner = 2
+[08/15 10:59:41     50s]    : PowerDomain = none : Weighted F : unweighted  = 3.50 (1.000) with rcCorner = -1
+[08/15 10:59:41     50s]  Visiting view : slow-slow-maxrc
+[08/15 10:59:41     50s]    : PowerDomain = none : Weighted F : unweighted  = 5.00 (1.000) with rcCorner = 0
+[08/15 10:59:41     50s]    : PowerDomain = none : Weighted F : unweighted  = 4.50 (1.000) with rcCorner = -1
+[08/15 10:59:41     50s]  Visiting view : fast-fast-minrc
+[08/15 10:59:41     50s]    : PowerDomain = none : Weighted F : unweighted  = 3.10 (1.000) with rcCorner = 1
+[08/15 10:59:41     50s]    : PowerDomain = none : Weighted F : unweighted  = 2.80 (1.000) with rcCorner = -1
+[08/15 10:59:41     50s]  Visiting view : func-typ-typ
+[08/15 10:59:41     50s]    : PowerDomain = none : Weighted F : unweighted  = 3.90 (1.000) with rcCorner = 2
+[08/15 10:59:41     50s]    : PowerDomain = none : Weighted F : unweighted  = 3.50 (1.000) with rcCorner = -1
+[08/15 10:59:41     50s] 
+[08/15 10:59:41     50s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[08/15 10:59:41     50s] 
+[08/15 10:59:41     50s] TimeStamp Deleting Cell Server Begin ...
+[08/15 10:59:41     50s] 
+[08/15 10:59:41     50s] TimeStamp Deleting Cell Server End ...
+[08/15 10:59:41     50s] Reading floorplan file - /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/scpa_dig_ana_ppfir_inn.enc/scpa_dig_ana_ppfir.fp.gz (mem = 2842.5M).
+[08/15 10:59:41     50s] % Begin Load floorplan data ... (date=08/15 10:59:41, mem=2781.5M)
+[08/15 10:59:41     50s] *info: reset 161476 existing net BottomPreferredLayer and AvoidDetour
+[08/15 10:59:41     50s] Deleting old partition specification.
+[08/15 10:59:41     50s] Set FPlanBox to (-115520 -343920 1444000 967920)
+[08/15 10:59:41     50s]  ... processed partition successfully.
+[08/15 10:59:41     50s] Reading binary special route file /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/scpa_dig_ana_ppfir_inn.enc/scpa_dig_ana_ppfir.fp.spr.gz (Created by Innovus v23.14-s088_1 on Mon Jan 26 17:04:09 2026, version: 1)
+[08/15 10:59:41     50s] Convert 0 swires and 0 svias from compressed groups
+[08/15 10:59:41     50s] 176 swires and 525 svias were compressed
+[08/15 10:59:41     50s] 176 swires and 509 svias were decompressed from small or sparse groups
+[08/15 10:59:41     50s] Ending "Read special route file" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2785.3M, current mem=2785.3M)
+[08/15 10:59:41     50s] There are 3600 nets with weight being set
+[08/15 10:59:41     50s] There are 161478 nets with bottomPreferredRoutingLayer being set
+[08/15 10:59:41     50s] There are 3600 nets with avoidDetour being set
+[08/15 10:59:41     50s] Extracting standard cell pins and blockage ...... 
+[08/15 10:59:41     50s] Pin and blockage extraction finished
+[08/15 10:59:41     50s] Delete all existing relative floorplan constraints.
+[08/15 10:59:41     50s] % End Load floorplan data ... (date=08/15 10:59:41, total cpu=0:00:00.4, real=0:00:00.0, peak res=2793.6M, current mem=2791.9M)
+[08/15 10:59:41     50s] Reading congestion map file /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/scpa_dig_ana_ppfir_inn.enc/scpa_dig_ana_ppfir.route.congmap.gz ...
+[08/15 10:59:41     50s] % Begin Load SymbolTable ... (date=08/15 10:59:41, mem=2792.0M)
+[08/15 10:59:41     50s] routingBox: (-115520 -343920) (1444000 967920)
+[08/15 10:59:41     50s] coreBox:    (-105440 -333920) (1433920 957920)
+[08/15 10:59:41     50s] Un-suppress "**WARN ..." messages.
+[08/15 10:59:42     51s] % End Load SymbolTable ... (date=08/15 10:59:42, total cpu=0:00:00.4, real=0:00:01.0, peak res=2840.3M, current mem=2840.2M)
+[08/15 10:59:42     51s] Loading place ...
+[08/15 10:59:42     51s] % Begin Load placement data ... (date=08/15 10:59:42, mem=2840.2M)
+[08/15 10:59:42     51s] Reading placement file - /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/scpa_dig_ana_ppfir_inn.enc/scpa_dig_ana_ppfir.place.gz.
+[08/15 10:59:42     51s] ** Reading stdCellPlacement_binary (Created by Innovus v23.14-s088_1 on Mon Jan 26 17:04:09 2026, version# 2) ...
+[08/15 10:59:42     51s] Read Views for adaptive view pruning ...
+[08/15 10:59:42     51s] Read 0 views from Binary DB for adaptive view pruning
+[08/15 10:59:42     51s] *** applyConnectGlobalNets disabled.
+[08/15 10:59:42     51s] *** Completed restorePlace (cpu=0:00:00.5 real=0:00:00.0 mem=2925.0M) ***
+[08/15 10:59:42     51s] Total net length = 1.203e+06 (6.415e+05 5.618e+05) (ext = 4.716e+04)
+[08/15 10:59:42     51s] % End Load placement data ... (date=08/15 10:59:42, total cpu=0:00:00.5, real=0:00:00.0, peak res=2893.9M, current mem=2891.4M)
+[08/15 10:59:43     51s] Reading PG file /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/scpa_dig_ana_ppfir_inn.enc/scpa_dig_ana_ppfir.pg.gz, version#2, (Created by Innovus v23.14-s088_1 on       Mon Jan 26 17:04:09 2026)
+[08/15 10:59:43     51s] *** Completed restorePGFile (cpu=0:00:00.1 real=0:00:01.0 mem=2931.0M) ***
+[08/15 10:59:43     52s] % Begin Load routing data ... (date=08/15 10:59:43, mem=2901.3M)
+[08/15 10:59:43     52s] Reading routing file - /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/scpa_dig_ana_ppfir_inn.enc/scpa_dig_ana_ppfir.route.gz.
+[08/15 10:59:43     52s] Reading Innovus routing data (Created by Innovus v23.14-s088_1 on Mon Jan 26 17:04:09 2026 Format: 23.1) ...
+[08/15 10:59:44     53s] *** Total 158126 nets are successfully restored.
+[08/15 10:59:44     53s] *** Completed restoreRoute (cpu=0:00:01.2 real=0:00:01.0 mem=3098.0M) ***
+[08/15 10:59:44     53s] % End Load routing data ... (date=08/15 10:59:44, total cpu=0:00:01.2, real=0:00:01.0, peak res=3070.3M, current mem=3070.3M)
+[08/15 10:59:44     53s] Loading Drc markers ...
+[08/15 10:59:44     53s] ... 75 markers are loaded ...
+[08/15 10:59:44     53s] ... 75 geometry drc markers are loaded ...
+[08/15 10:59:44     53s] ... 0 antenna drc markers are loaded ...
+[08/15 10:59:44     53s] TAT_INFO: ::restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
+[08/15 10:59:44     53s] Reading property file /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/scpa_dig_ana_ppfir_inn.enc/scpa_dig_ana_ppfir.prop
+[08/15 10:59:45     53s] *** Completed restoreProperty (cpu=0:00:00.3 real=0:00:01.0 mem=3126.5M) ***
+[08/15 10:59:45     53s] Reading dirtyarea snapshot file /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/scpa_dig_ana_ppfir_inn.enc/scpa_dig_ana_ppfir.db.da.gz (Create by Innovus v23.14-s088_1 on Mon Jan 26 17:04:10 2026, version: 7).
+[08/15 10:59:46     54s] Change floorplan default-technical-site to 'sc9mcpp140z_cln28ht'.
+[08/15 10:59:46     54s] Change floorplan default-technical-site to 'sc9mcpp140z_cln28ht'.
+[08/15 10:59:46     54s] Ignoring {default} groups for Hold optimization.
+[08/15 10:59:46     54s] Ignoring {default} groups for Hold optimization.
+[08/15 10:59:46     54s] set_db opt_useful_skew already set.
+[08/15 10:59:46     54s] set_db opt_useful_skew already set.
+[08/15 10:59:46     54s] **WARN: (IMPOPT-7155):	Option opt_skew_post_cts in 'set_db' will be obsolete. 'set_db opt_skew_post_cts true'will mapped to 'set_db opt_skew_ccopt standard' internally when design_flow_effort is not set to extreme and 'opt_skew_ccopt' has not been explict set by user.
+[08/15 10:59:46     54s] **WARN: (IMPOPT-7155):	Option opt_skew_post_cts in 'set_db' will be obsolete. 'set_db opt_skew_post_cts true'will mapped to 'set_db opt_skew_ccopt standard' internally when design_flow_effort is not set to extreme and 'opt_skew_ccopt' has not been explict set by user.
+[08/15 10:59:46     54s] #WARNING (NRIF-90) Option set_db route_bottom_routing_layer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option set_db design_bottom_routing_layer instead.
+[08/15 10:59:46     54s] #WARNING (NRIF-90) Option set_db route_bottom_routing_layer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option set_db design_bottom_routing_layer instead.
+[08/15 10:59:46     54s] #WARNING (NRIF-91) Option set_db route_top_routing_layer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option set_db design_top_routing_layer instead.
+[08/15 10:59:46     54s] #WARNING (NRIF-91) Option set_db route_top_routing_layer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option set_db design_top_routing_layer instead.
+[08/15 10:59:46     54s] eee: Design meta data check started
+[08/15 10:59:46     54s] Loading preRoute extraction data from directory '/data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/scpa_dig_ana_ppfir_inn.enc/extraction/' ...
+[08/15 10:59:46     54s] eee: Design meta data check completed
+[08/15 10:59:46     54s] Extraction setup Started for TopCell scpa_dig_ana_ppfir 
+[08/15 10:59:46     54s] Initializing multi-corner RC extraction with 3 active RC Corners ...
+[08/15 10:59:46     54s] Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For post_route extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+[08/15 10:59:46     54s] eee: __QRC_SADV_USE_LE__ is set 0
+[08/15 10:59:46     55s] Generating auto layer map file.
+[08/15 10:59:46     55s] eee:  LayerId	    Name	QrcTechId	QrcTechName	Type
+[08/15 10:59:46     55s] eee:        1	      M1	        5	         m1	Metal          
+[08/15 10:59:46     55s] eee:       34	    VIA1	        6	       via1	Via            
+[08/15 10:59:46     55s] eee:        2	      M2	        7	         m2	Metal          
+[08/15 10:59:46     55s] eee:       35	    VIA2	        8	       via2	Via            
+[08/15 10:59:46     55s] eee:        3	      M3	        9	         m3	Metal          
+[08/15 10:59:46     55s] eee:       36	    VIA3	       10	       via3	Via            
+[08/15 10:59:46     55s] eee:        4	      M4	       11	         m4	Metal          
+[08/15 10:59:46     55s] eee:       37	    VIA4	       12	       via4	Via            
+[08/15 10:59:46     55s] eee:        5	      M5	       13	         m5	Metal          
+[08/15 10:59:46     55s] eee:       38	    VIA5	       14	       via5	Via            
+[08/15 10:59:46     55s] eee:        6	      M6	       15	         m6	Metal          
+[08/15 10:59:46     55s] eee:       39	    VIA6	       16	       via6	Via            
+[08/15 10:59:46     55s] eee:        7	      M7	       17	         m7	Metal          
+[08/15 10:59:46     55s] eee:       40	    VIA7	       18	       via7	Via            
+[08/15 10:59:46     55s] eee:        8	      M8	       19	         m8	Metal          
+[08/15 10:59:46     55s] eee:       41	    VIA8	       20	       via8	Via            
+[08/15 10:59:46     55s] eee:        9	      M9	       21	         m9	Metal          
+[08/15 10:59:46     55s] eee:       42	      RV	       22	         rv	Via            
+[08/15 10:59:46     55s] eee:       10	      AP	       23	         ap	Metal          
+[08/15 10:59:46     55s] eee: TechFile: /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/scpa_dig_ana_ppfir_inn.enc/libs/mmmc/rc_max/qrcTechFile
+[08/15 10:59:46     55s] eee: HoWee  : 1 1 1 1 1 1 1 0 0 0 
+[08/15 10:59:46     55s] eee: Erosn  : 1 1 1 1 1 1 1 1 1 0 
+[08/15 10:59:46     55s] eee: nrColor: 0 0 0 0 0 0 0 0 0 0 
+[08/15 10:59:47     55s] eee: TechFile: /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/scpa_dig_ana_ppfir_inn.enc/libs/mmmc/rc_min/qrcTechFile
+[08/15 10:59:47     55s] eee: HoWee  : 1 1 1 1 1 1 1 0 0 0 
+[08/15 10:59:47     55s] eee: Erosn  : 1 1 1 1 1 1 1 1 1 0 
+[08/15 10:59:47     55s] eee: nrColor: 0 0 0 0 0 0 0 0 0 0 
+[08/15 10:59:47     55s] eee: TechFile: /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/scpa_dig_ana_ppfir_inn.enc/libs/mmmc/rc_typ/qrcTechFile
+[08/15 10:59:47     55s] eee: HoWee  : 1 1 1 1 1 1 1 0 0 0 
+[08/15 10:59:47     55s] eee: Erosn  : 1 1 1 1 1 1 1 1 1 0 
+[08/15 10:59:47     55s] eee: nrColor: 0 0 0 0 0 0 0 0 0 0 
+[08/15 10:59:47     55s] eee: Save / Restore of RC patterns enabled 
+[08/15 10:59:47     55s] eee: Pattern meta data check started
+[08/15 10:59:47     55s] eee:     Mismatch in Via count
+[08/15 10:59:47     55s] eee: Pattern meta data check failed
+[08/15 10:59:47     55s] eee: Pattern data restore failed for 3 tech files
+[08/15 10:59:47     55s] eee: Pattern extraction started for 3 tech files
+[08/15 10:59:47     55s] Importing multi-corner technology file(s) for preRoute extraction...
+[08/15 10:59:47     55s] /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/scpa_dig_ana_ppfir_inn.enc/libs/mmmc/rc_max/qrcTechFile
+[08/15 10:59:47     55s] Generating auto layer map file.
+[08/15 10:59:48      0s] eee:  LayerId	    Name	QrcTechId	QrcTechName	Type
+[08/15 10:59:48      0s] eee:        1	      M1	        5	         m1	Metal          
+[08/15 10:59:48      0s] eee:       34	    VIA1	        6	       via1	Via            
+[08/15 10:59:48      0s] eee:        2	      M2	        7	         m2	Metal          
+[08/15 10:59:48      0s] eee:       35	    VIA2	        8	       via2	Via            
+[08/15 10:59:48      0s] eee:        3	      M3	        9	         m3	Metal          
+[08/15 10:59:48      0s] eee:       36	    VIA3	       10	       via3	Via            
+[08/15 10:59:48      0s] eee:        4	      M4	       11	         m4	Metal          
+[08/15 10:59:48      0s] eee:       37	    VIA4	       12	       via4	Via            
+[08/15 10:59:48      0s] eee:        5	      M5	       13	         m5	Metal          
+[08/15 10:59:48      0s] eee:       38	    VIA5	       14	       via5	Via            
+[08/15 10:59:48      0s] eee:        6	      M6	       15	         m6	Metal          
+[08/15 10:59:48      0s] eee:       39	    VIA6	       16	       via6	Via            
+[08/15 10:59:48      0s] eee:        7	      M7	       17	         m7	Metal          
+[08/15 10:59:48      0s] eee:       40	    VIA7	       18	       via7	Via            
+[08/15 10:59:48      0s] eee:        8	      M8	       19	         m8	Metal          
+[08/15 10:59:48      0s] eee:       41	    VIA8	       20	       via8	Via            
+[08/15 10:59:48      0s] eee:        9	      M9	       21	         m9	Metal          
+[08/15 10:59:48      0s] eee:       42	      RV	       22	         rv	Via            
+[08/15 10:59:48      0s] eee:       10	      AP	       23	         ap	Metal          
+[08/15 10:59:48      0s] eee: Total Patterns: 7885 xTiles: 89 yTiles: 90 25micronYTiles: 0(0x4)
+[08/15 10:59:48      0s] eee: MaxTileSize:109 design urx:9763 ury:9873
+[08/15 10:59:48      0s] eee: ViaCellPattern Id: 7884 ts: 1097000 yTile:88 
+
+[08/15 10:59:52     59s] /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/scpa_dig_ana_ppfir_inn.enc/libs/mmmc/rc_min/qrcTechFile
+[08/15 10:59:53     59s] Generating auto layer map file.
+[08/15 10:59:53      0s] eee:  LayerId	    Name	QrcTechId	QrcTechName	Type
+[08/15 10:59:53      0s] eee:        1	      M1	        5	         m1	Metal          
+[08/15 10:59:53      0s] eee:       34	    VIA1	        6	       via1	Via            
+[08/15 10:59:53      0s] eee:        2	      M2	        7	         m2	Metal          
+[08/15 10:59:53      0s] eee:       35	    VIA2	        8	       via2	Via            
+[08/15 10:59:53      0s] eee:        3	      M3	        9	         m3	Metal          
+[08/15 10:59:53      0s] eee:       36	    VIA3	       10	       via3	Via            
+[08/15 10:59:53      0s] eee:        4	      M4	       11	         m4	Metal          
+[08/15 10:59:53      0s] eee:       37	    VIA4	       12	       via4	Via            
+[08/15 10:59:53      0s] eee:        5	      M5	       13	         m5	Metal          
+[08/15 10:59:53      0s] eee:       38	    VIA5	       14	       via5	Via            
+[08/15 10:59:53      0s] eee:        6	      M6	       15	         m6	Metal          
+[08/15 10:59:53      0s] eee:       39	    VIA6	       16	       via6	Via            
+[08/15 10:59:53      0s] eee:        7	      M7	       17	         m7	Metal          
+[08/15 10:59:53      0s] eee:       40	    VIA7	       18	       via7	Via            
+[08/15 10:59:53      0s] eee:        8	      M8	       19	         m8	Metal          
+[08/15 10:59:53      0s] eee:       41	    VIA8	       20	       via8	Via            
+[08/15 10:59:53      0s] eee:        9	      M9	       21	         m9	Metal          
+[08/15 10:59:53      0s] eee:       42	      RV	       22	         rv	Via            
+[08/15 10:59:53      0s] eee:       10	      AP	       23	         ap	Metal          
+[08/15 10:59:53      0s] eee: Total Patterns: 7885 xTiles: 89 yTiles: 90 25micronYTiles: 0(0x4)
+[08/15 10:59:53      0s] eee: MaxTileSize:109 design urx:9763 ury:9873
+[08/15 10:59:53      0s] eee: ViaCellPattern Id: 7884 ts: 1097000 yTile:88 
+
+[08/15 10:59:57     63s] /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/scpa_dig_ana_ppfir_inn.enc/libs/mmmc/rc_typ/qrcTechFile
+[08/15 10:59:58     63s] Generating auto layer map file.
+[08/15 10:59:58      0s] eee:  LayerId	    Name	QrcTechId	QrcTechName	Type
+[08/15 10:59:58      0s] eee:        1	      M1	        5	         m1	Metal          
+[08/15 10:59:58      0s] eee:       34	    VIA1	        6	       via1	Via            
+[08/15 10:59:58      0s] eee:        2	      M2	        7	         m2	Metal          
+[08/15 10:59:58      0s] eee:       35	    VIA2	        8	       via2	Via            
+[08/15 10:59:58      0s] eee:        3	      M3	        9	         m3	Metal          
+[08/15 10:59:58      0s] eee:       36	    VIA3	       10	       via3	Via            
+[08/15 10:59:58      0s] eee:        4	      M4	       11	         m4	Metal          
+[08/15 10:59:58      0s] eee:       37	    VIA4	       12	       via4	Via            
+[08/15 10:59:58      0s] eee:        5	      M5	       13	         m5	Metal          
+[08/15 10:59:58      0s] eee:       38	    VIA5	       14	       via5	Via            
+[08/15 10:59:58      0s] eee:        6	      M6	       15	         m6	Metal          
+[08/15 10:59:58      0s] eee:       39	    VIA6	       16	       via6	Via            
+[08/15 10:59:58      0s] eee:        7	      M7	       17	         m7	Metal          
+[08/15 10:59:58      0s] eee:       40	    VIA7	       18	       via7	Via            
+[08/15 10:59:58      0s] eee:        8	      M8	       19	         m8	Metal          
+[08/15 10:59:58      0s] eee:       41	    VIA8	       20	       via8	Via            
+[08/15 10:59:58      0s] eee:        9	      M9	       21	         m9	Metal          
+[08/15 10:59:58      0s] eee:       42	      RV	       22	         rv	Via            
+[08/15 10:59:58      0s] eee:       10	      AP	       23	         ap	Metal          
+[08/15 10:59:58      0s] eee: Total Patterns: 7885 xTiles: 89 yTiles: 90 25micronYTiles: 0(0x4)
+[08/15 10:59:58      0s] eee: MaxTileSize:109 design urx:9763 ury:9873
+[08/15 10:59:58      0s] eee: ViaCellPattern Id: 7884 ts: 1097000 yTile:88 
+
+[08/15 11:00:03     67s] eee: Pattern extraction completed
+[08/15 11:00:03     67s] Technology file '/data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/scpa_dig_ana_ppfir_inn.enc/libs/mmmc/rc_max/qrcTechFile' associated with first view 'slow-slow-maxrc' will be used as the primary corner for the multi-corner extraction.
+[08/15 11:00:03     67s] Completed (cpu: 0:00:13.1 real: 0:00:17.0)
+[08/15 11:00:03     67s] Set Shrink Factor to 0.90000 (from technology file)
+[08/15 11:00:03     67s] Summary of Active RC-Corners : 
+[08/15 11:00:03     67s]  
+[08/15 11:00:03     67s]  Analysis View: slow-slow-maxrc
+[08/15 11:00:03     67s]     RC-Corner Name        : rc_max
+[08/15 11:00:03     67s]     RC-Corner Index       : 0
+[08/15 11:00:03     67s]     RC-Corner Temperature : 125 Celsius
+[08/15 11:00:03     67s]     RC-Corner Cap Table   : ''
+[08/15 11:00:03     67s]     RC-Corner PreRoute Res Factor         : 1
+[08/15 11:00:03     67s]     RC-Corner PreRoute Cap Factor         : 1
+[08/15 11:00:03     67s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[08/15 11:00:03     67s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[08/15 11:00:03     67s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[08/15 11:00:03     67s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[08/15 11:00:03     67s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[08/15 11:00:03     67s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+[08/15 11:00:03     67s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+[08/15 11:00:03     67s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[08/15 11:00:03     67s]     RC-Corner Technology file: '/data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/scpa_dig_ana_ppfir_inn.enc/libs/mmmc/rc_max/qrcTechFile'
+[08/15 11:00:03     67s]  
+[08/15 11:00:03     67s]  Analysis View: fast-fast-minrc
+[08/15 11:00:03     67s]     RC-Corner Name        : rc_min
+[08/15 11:00:03     67s]     RC-Corner Index       : 1
+[08/15 11:00:03     67s]     RC-Corner Temperature : -40 Celsius
+[08/15 11:00:03     67s]     RC-Corner Cap Table   : ''
+[08/15 11:00:03     67s]     RC-Corner PreRoute Res Factor         : 1
+[08/15 11:00:03     67s]     RC-Corner PreRoute Cap Factor         : 1
+[08/15 11:00:03     67s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[08/15 11:00:03     67s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[08/15 11:00:03     67s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[08/15 11:00:03     67s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[08/15 11:00:03     67s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[08/15 11:00:03     67s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+[08/15 11:00:03     67s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+[08/15 11:00:03     67s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[08/15 11:00:03     67s]     RC-Corner Technology file: '/data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/scpa_dig_ana_ppfir_inn.enc/libs/mmmc/rc_min/qrcTechFile'
+[08/15 11:00:03     67s]  
+[08/15 11:00:03     67s]  Analysis View: func-typ-typ
+[08/15 11:00:03     67s]     RC-Corner Name        : rc_typ
+[08/15 11:00:03     67s]     RC-Corner Index       : 2
+[08/15 11:00:03     67s]     RC-Corner Temperature : 25 Celsius
+[08/15 11:00:03     67s]     RC-Corner Cap Table   : ''
+[08/15 11:00:03     67s]     RC-Corner PreRoute Res Factor         : 1
+[08/15 11:00:03     67s]     RC-Corner PreRoute Cap Factor         : 1
+[08/15 11:00:03     67s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[08/15 11:00:03     67s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[08/15 11:00:03     67s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[08/15 11:00:03     67s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[08/15 11:00:03     67s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[08/15 11:00:03     67s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+[08/15 11:00:03     67s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+[08/15 11:00:03     67s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[08/15 11:00:03     67s]     RC-Corner Technology file: '/data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/scpa_dig_ana_ppfir_inn.enc/libs/mmmc/rc_typ/qrcTechFile'
+[08/15 11:00:03     67s] eee: RC Grid memory allocated = 781440 (88 X 74 X 10 X 12b)
+[08/15 11:00:03     67s] eee: Grid density data restore started
+[08/15 11:00:03     67s] eee: Grid density data restore completed
+[08/15 11:00:03     67s] eee: pegSigSF=1.070000
+[08/15 11:00:03     67s] Initializing multi-corner resistance tables ...
+[08/15 11:00:03     67s] eee: Blockage data restore started... completed.
+[08/15 11:00:03     67s] eee: Grid unit RC data restore started
+[08/15 11:00:03     67s] eee:     Restore started for corner rc_max
+[08/15 11:00:03     67s] eee:         Current session: rc_max Tech: /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/scpa_dig_ana_ppfir_inn.enc/libs/mmmc/rc_max/qrcTechFile 125.000000 1.000000 1.000000 
+[08/15 11:00:03     67s] eee:         Saved   session: rc_max Tech: /data/PDK/tsmc/28nm/tsri/RC_Extraction/Cadence/rcworst/qrcTechFile 125.000000 1.000000 1.000000 
+[08/15 11:00:03     67s] eee:     Restore completed for corner rc_max
+[08/15 11:00:03     67s] eee:     Restore started for corner rc_min
+[08/15 11:00:03     67s] eee:         Current session: rc_min Tech: /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/scpa_dig_ana_ppfir_inn.enc/libs/mmmc/rc_min/qrcTechFile -40.000000 1.000000 1.000000 
+[08/15 11:00:03     67s] eee:         Saved   session: rc_min Tech: /data/PDK/tsmc/28nm/tsri/RC_Extraction/Cadence/rcbest/qrcTechFile -40.000000 1.000000 1.000000 
+[08/15 11:00:03     67s] eee:     Restore completed for corner rc_min
+[08/15 11:00:03     67s] eee:     Restore started for corner rc_typ
+[08/15 11:00:03     67s] eee:         Current session: rc_typ Tech: /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/scpa_dig_ana_ppfir_inn.enc/libs/mmmc/rc_typ/qrcTechFile 25.000000 1.000000 1.000000 
+[08/15 11:00:03     67s] eee:         Saved   session: rc_typ Tech: /data/PDK/tsmc/28nm/tsri/RC_Extraction/Cadence/nominal/qrcTechFile 25.000000 1.000000 1.000000 
+[08/15 11:00:03     67s] eee:     Restore completed for corner rc_typ
+[08/15 11:00:03     67s] eee: Grid unit RC data restore completed
+[08/15 11:00:03     67s] eee: l=1 avDens=0.018086 usedTrk=1615.456169 availTrk=89321.774502 sigTrk=1615.456169
+[08/15 11:00:03     67s] eee: l=2 avDens=0.216142 usedTrk=65157.224203 availTrk=301455.689076 sigTrk=65157.224203
+[08/15 11:00:03     67s] eee: l=3 avDens=0.199305 usedTrk=56814.345418 availTrk=285062.859984 sigTrk=56814.345418
+[08/15 11:00:03     67s] eee: l=4 avDens=0.156020 usedTrk=43591.568201 availTrk=279396.959944 sigTrk=43591.568201
+[08/15 11:00:03     67s] eee: l=5 avDens=0.085783 usedTrk=21137.461727 availTrk=246405.759535 sigTrk=21137.461727
+[08/15 11:00:03     67s] eee: l=6 avDens=0.164745 usedTrk=10801.457042 availTrk=65564.808989 sigTrk=10801.457042
+[08/15 11:00:03     67s] eee: l=7 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[08/15 11:00:03     67s] eee: l=8 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[08/15 11:00:03     67s] eee: l=9 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[08/15 11:00:03     67s] eee: l=10 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[08/15 11:00:03     67s] eee: LAM-FP: thresh=1 ; dimX=7797.600000 ; dimY=6559.200000 ; multX=1.000000 ; multY=1.000000 ; minP=200 ; fpMult=1.000000 ;
+[08/15 11:00:03     67s] eee: LAM: n=32 LLS=2-3 HLS=3-5 rDens=0.323428 uaWl=0.000000 uaWlH=0.000000 aWlH=0.437500 lMod=0 pMax=0.850000 pMod=82 pModAss=50 wcR=0.600000 crit=0.729167 siPrev=0 newSi=0.092400 wHLS=2.593800 viaL=0.000000 shortMod=3.645833 fModUnas=0.182292 fModAs=0.182292 pDens=0.500000 
+[08/15 11:00:03     67s] eee: dbu = 2000, Design = [ll(-57.760000, -171.960000) ur(722.000000, 483.960000)], Layers = [f(10) b(0)], Grid size = 9.000000 um, Grid Dim = (87 X 73)
+[08/15 11:00:03     67s] eee: Metal Layers Info:
+[08/15 11:00:03     67s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[08/15 11:00:03     67s] eee: |   Layer  |  Id |    W    |    S    |    P    |   uC   |   uR   | D | T | wS |
+[08/15 11:00:03     67s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[08/15 11:00:03     67s] eee: |       M1 |   1 |   0.050 |   0.050 |   0.140 |  0.162 |  10.01 | V | 0 |  1 |
+[08/15 11:00:03     67s] eee: |       M2 |   2 |   0.050 |   0.050 |   0.100 |  0.155 |  13.27 | H | 0 |  1 |
+[08/15 11:00:03     67s] eee: |       M3 |   3 |   0.050 |   0.050 |   0.100 |  0.159 |  13.27 | V | 0 |  1 |
+[08/15 11:00:03     67s] eee: |       M4 |   4 |   0.050 |   0.050 |   0.100 |  0.157 |  13.24 | H | 0 |  1 |
+[08/15 11:00:03     67s] eee: |       M5 |   5 |   0.050 |   0.050 |   0.100 |  0.157 |  13.27 | V | 0 |  1 |
+[08/15 11:00:03     67s] eee: |       M6 |   6 |   0.050 |   0.050 |   0.100 |  0.159 |  13.24 | H | 0 |  1 |
+[08/15 11:00:03     67s] eee: |       M7 |   7 |   0.050 |   0.050 |   0.100 |  0.158 |  13.26 | V | 0 |  1 |
+[08/15 11:00:03     67s] eee: |       M8 |   8 |   0.400 |   0.400 |   0.800 |  0.287 |   0.09 | H | 0 |  1 |
+[08/15 11:00:03     67s] eee: |       M9 |   9 |   0.400 |   0.400 |   0.800 |  0.088 |   0.03 | V | 0 |  1 |
+[08/15 11:00:03     67s] eee: |       AP |  10 |   2.000 |   2.000 |   4.500 |  0.315 |   0.01 | H | 0 |  1 |
+[08/15 11:00:03     67s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[08/15 11:00:03     67s] eee: uC/uR for corner rc_max, min-width/min-spacing, 30 perc over/under densities.
+[08/15 11:00:03     67s] eee: +-----------------------NDR Info-----------------------+
+[08/15 11:00:03     67s] eee: NDR Count = 0, Fake NDR = 0
+[08/15 11:00:03     67s] Default value for post_route extraction mode's extract_rc_effort_level (extract_rc_effort_level option of set_db) changed to 'medium'.
+[08/15 11:00:03     67s] Restore PreRoute all RC Grid data successful.[08/15 11:00:03     67s] Start generating vias ..
+#WARNING (NRDB-317) Threshold min width 0.180000 is >= max width 0.180000 for minimumcut 2 for LAYER M7
+[08/15 11:00:04     67s] ### import design signature (1): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 inst_orient=1 via=1001388956 routing_via=1 timing=1 sns=1 ppa_info=1
+[08/15 11:00:04     67s] Extracting standard cell pins and blockage ...... 
+[08/15 11:00:04     67s] Pin and blockage extraction finished
+[08/15 11:00:04     67s] Via generation completed successfully.
+[08/15 11:00:04     67s] eee: __QRC_SADV_USE_LE__ is set 0
+[08/15 11:00:04     68s] Generating auto layer map file.
+[08/15 11:00:04     68s] eee:  LayerId	    Name	QrcTechId	QrcTechName	Type
+[08/15 11:00:04     68s] eee:        1	      M1	        5	         m1	Metal          
+[08/15 11:00:04     68s] eee:       34	    VIA1	        6	       via1	Via            
+[08/15 11:00:04     68s] eee:        2	      M2	        7	         m2	Metal          
+[08/15 11:00:04     68s] eee:       35	    VIA2	        8	       via2	Via            
+[08/15 11:00:04     68s] eee:        3	      M3	        9	         m3	Metal          
+[08/15 11:00:04     68s] eee:       36	    VIA3	       10	       via3	Via            
+[08/15 11:00:04     68s] eee:        4	      M4	       11	         m4	Metal          
+[08/15 11:00:04     68s] eee:       37	    VIA4	       12	       via4	Via            
+[08/15 11:00:04     68s] eee:        5	      M5	       13	         m5	Metal          
+[08/15 11:00:04     68s] eee:       38	    VIA5	       14	       via5	Via            
+[08/15 11:00:04     68s] eee:        6	      M6	       15	         m6	Metal          
+[08/15 11:00:04     68s] eee:       39	    VIA6	       16	       via6	Via            
+[08/15 11:00:04     68s] eee:        7	      M7	       17	         m7	Metal          
+[08/15 11:00:04     68s] eee:       40	    VIA7	       18	       via7	Via            
+[08/15 11:00:04     68s] eee:        8	      M8	       19	         m8	Metal          
+[08/15 11:00:04     68s] eee:       41	    VIA8	       20	       via8	Via            
+[08/15 11:00:04     68s] eee:        9	      M9	       21	         m9	Metal          
+[08/15 11:00:04     68s] eee:       42	      RV	       22	         rv	Via            
+[08/15 11:00:04     68s] eee:       10	      AP	       23	         ap	Metal          
+[08/15 11:00:04     68s] eee: Save / Restore of RC patterns enabled 
+[08/15 11:00:04     68s] eee: Pattern meta data file doesn't exist
+[08/15 11:00:04     68s] eee: Pattern extraction for vias started
+[08/15 11:00:04     68s] Initializing preRoute extraction patterns for new vias...
+[08/15 11:00:05     68s] Generating auto layer map file.
+[08/15 11:00:05      0s] eee:  LayerId	    Name	QrcTechId	QrcTechName	Type
+[08/15 11:00:05      0s] eee:        1	      M1	        5	         m1	Metal          
+[08/15 11:00:05      0s] eee:       34	    VIA1	        6	       via1	Via            
+[08/15 11:00:05      0s] eee:        2	      M2	        7	         m2	Metal          
+[08/15 11:00:05      0s] eee:       35	    VIA2	        8	       via2	Via            
+[08/15 11:00:05      0s] eee:        3	      M3	        9	         m3	Metal          
+[08/15 11:00:05      0s] eee:       36	    VIA3	       10	       via3	Via            
+[08/15 11:00:05      0s] eee:        4	      M4	       11	         m4	Metal          
+[08/15 11:00:05      0s] eee:       37	    VIA4	       12	       via4	Via            
+[08/15 11:00:05      0s] eee:        5	      M5	       13	         m5	Metal          
+[08/15 11:00:05      0s] eee:       38	    VIA5	       14	       via5	Via            
+[08/15 11:00:05      0s] eee:        6	      M6	       15	         m6	Metal          
+[08/15 11:00:05      0s] eee:       39	    VIA6	       16	       via6	Via            
+[08/15 11:00:05      0s] eee:        7	      M7	       17	         m7	Metal          
+[08/15 11:00:05      0s] eee:       40	    VIA7	       18	       via7	Via            
+[08/15 11:00:05      0s] eee:        8	      M8	       19	         m8	Metal          
+[08/15 11:00:05      0s] eee:       41	    VIA8	       20	       via8	Via            
+[08/15 11:00:05      0s] eee:        9	      M9	       21	         m9	Metal          
+[08/15 11:00:05      0s] eee:       42	      RV	       22	         rv	Via            
+[08/15 11:00:05      0s] eee:       10	      AP	       23	         ap	Metal          
+[08/15 11:00:05      0s] eee: Total Patterns: 1 xTiles: 1 yTiles: 32 25micronYTiles: 0(0x1)
+[08/15 11:00:05      0s] eee: MaxTileSize:25 design urx:25 ury:806
+[08/15 11:00:05      0s] eee: ViaCellPattern Id: 0 ts: 252000 yTile:0 
+
+[08/15 11:00:06     68s] Generating auto layer map file.
+[08/15 11:00:06      0s] eee:  LayerId	    Name	QrcTechId	QrcTechName	Type
+[08/15 11:00:06      0s] eee:        1	      M1	        5	         m1	Metal          
+[08/15 11:00:06      0s] eee:       34	    VIA1	        6	       via1	Via            
+[08/15 11:00:06      0s] eee:        2	      M2	        7	         m2	Metal          
+[08/15 11:00:06      0s] eee:       35	    VIA2	        8	       via2	Via            
+[08/15 11:00:06      0s] eee:        3	      M3	        9	         m3	Metal          
+[08/15 11:00:06      0s] eee:       36	    VIA3	       10	       via3	Via            
+[08/15 11:00:06      0s] eee:        4	      M4	       11	         m4	Metal          
+[08/15 11:00:06      0s] eee:       37	    VIA4	       12	       via4	Via            
+[08/15 11:00:06      0s] eee:        5	      M5	       13	         m5	Metal          
+[08/15 11:00:06      0s] eee:       38	    VIA5	       14	       via5	Via            
+[08/15 11:00:06      0s] eee:        6	      M6	       15	         m6	Metal          
+[08/15 11:00:06      0s] eee:       39	    VIA6	       16	       via6	Via            
+[08/15 11:00:06      0s] eee:        7	      M7	       17	         m7	Metal          
+[08/15 11:00:06      0s] eee:       40	    VIA7	       18	       via7	Via            
+[08/15 11:00:06      0s] eee:        8	      M8	       19	         m8	Metal          
+[08/15 11:00:06      0s] eee:       41	    VIA8	       20	       via8	Via            
+[08/15 11:00:06      0s] eee:        9	      M9	       21	         m9	Metal          
+[08/15 11:00:06      0s] eee:       42	      RV	       22	         rv	Via            
+[08/15 11:00:06      0s] eee:       10	      AP	       23	         ap	Metal          
+[08/15 11:00:06      0s] eee: Total Patterns: 1 xTiles: 1 yTiles: 32 25micronYTiles: 0(0x1)
+[08/15 11:00:06      0s] eee: MaxTileSize:25 design urx:25 ury:806
+[08/15 11:00:06      0s] eee: ViaCellPattern Id: 0 ts: 252000 yTile:0 
+
+[08/15 11:00:07     68s] Generating auto layer map file.
+[08/15 11:00:07      0s] eee:  LayerId	    Name	QrcTechId	QrcTechName	Type
+[08/15 11:00:07      0s] eee:        1	      M1	        5	         m1	Metal          
+[08/15 11:00:07      0s] eee:       34	    VIA1	        6	       via1	Via            
+[08/15 11:00:07      0s] eee:        2	      M2	        7	         m2	Metal          
+[08/15 11:00:07      0s] eee:       35	    VIA2	        8	       via2	Via            
+[08/15 11:00:07      0s] eee:        3	      M3	        9	         m3	Metal          
+[08/15 11:00:07      0s] eee:       36	    VIA3	       10	       via3	Via            
+[08/15 11:00:07      0s] eee:        4	      M4	       11	         m4	Metal          
+[08/15 11:00:07      0s] eee:       37	    VIA4	       12	       via4	Via            
+[08/15 11:00:07      0s] eee:        5	      M5	       13	         m5	Metal          
+[08/15 11:00:07      0s] eee:       38	    VIA5	       14	       via5	Via            
+[08/15 11:00:07      0s] eee:        6	      M6	       15	         m6	Metal          
+[08/15 11:00:07      0s] eee:       39	    VIA6	       16	       via6	Via            
+[08/15 11:00:07      0s] eee:        7	      M7	       17	         m7	Metal          
+[08/15 11:00:07      0s] eee:       40	    VIA7	       18	       via7	Via            
+[08/15 11:00:07      0s] eee:        8	      M8	       19	         m8	Metal          
+[08/15 11:00:07      0s] eee:       41	    VIA8	       20	       via8	Via            
+[08/15 11:00:07      0s] eee:        9	      M9	       21	         m9	Metal          
+[08/15 11:00:07      0s] eee:       42	      RV	       22	         rv	Via            
+[08/15 11:00:07      0s] eee:       10	      AP	       23	         ap	Metal          
+[08/15 11:00:07      0s] eee: Total Patterns: 1 xTiles: 1 yTiles: 32 25micronYTiles: 0(0x1)
+[08/15 11:00:07      0s] eee: MaxTileSize:25 design urx:25 ury:806
+[08/15 11:00:07      0s] eee: ViaCellPattern Id: 0 ts: 252000 yTile:0 
+
+[08/15 11:00:07     68s] eee: Pattern extraction for vias completed
+[08/15 11:00:07     68s] Completed (cpu: 0:00:00.6 real: 0:00:03.0)
+[08/15 11:00:07     68s] % Begin Load power constraints ... (date=08/15 11:00:07, mem=3260.3M)
+[08/15 11:00:07     68s] source /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/scpa_dig_ana_ppfir_inn.enc/scpa_dig_ana_ppfir_power_constraints.tcl
+[08/15 11:00:07     68s] 'set_default_switching_activity' finished successfully.
+[08/15 11:00:07     68s] % End Load power constraints ... (date=08/15 11:00:07, total cpu=0:00:00.1, real=0:00:00.0, peak res=3266.4M, current mem=3266.4M)
+[08/15 11:00:07     69s] **WARN: (IMPCTE-290):	Could not locate cell BUF_X1B_A9PP140ZTUL_C30 in any library for view fast-fast-minrc.
+[08/15 11:00:07     69s] Type 'man IMPCTE-290' for more detail.
+[08/15 11:00:07     69s] **WARN: (IMPCTE-290):	Could not locate cell BUF_X1B_A9PP140ZTUL_C30 in any library for view fast-fast-minrc.
+[08/15 11:00:07     69s] Type 'man IMPCTE-290' for more detail.
+[08/15 11:00:07     69s] **WARN: (IMPCTE-290):	Could not locate cell BUF_X1B_A9PP140ZTUL_C30 in any library for view fast-fast-minrc.
+[08/15 11:00:07     69s] Type 'man IMPCTE-290' for more detail.
+[08/15 11:00:07     69s] **WARN: (IMPCTE-290):	Could not locate cell BUF_X1B_A9PP140ZTUL_C30 in any library for view fast-fast-minrc.
+[08/15 11:00:07     69s] Type 'man IMPCTE-290' for more detail.
+[08/15 11:00:07     69s] **WARN: (IMPCTE-290):	Could not locate cell BUF_X1B_A9PP140ZTUL_C30 in any library for view fast-fast-minrc.
+[08/15 11:00:07     69s] Type 'man IMPCTE-290' for more detail.
+[08/15 11:00:07     69s] **WARN: (IMPCTE-290):	Could not locate cell BUF_X1B_A9PP140ZTUL_C30 in any library for view fast-fast-minrc.
+[08/15 11:00:07     69s] Type 'man IMPCTE-290' for more detail.
+[08/15 11:00:07     69s] **WARN: (IMPCTE-290):	Could not locate cell BUF_X1B_A9PP140ZTUL_C30 in any library for view fast-fast-minrc.
+[08/15 11:00:07     69s] Type 'man IMPCTE-290' for more detail.
+[08/15 11:00:07     69s] **WARN: (IMPCTE-290):	Could not locate cell BUF_X1B_A9PP140ZTUL_C30 in any library for view fast-fast-minrc.
+[08/15 11:00:07     69s] Type 'man IMPCTE-290' for more detail.
+[08/15 11:00:07     69s] **WARN: (IMPCTE-290):	Could not locate cell BUF_X1B_A9PP140ZTUL_C30 in any library for view slow-slow-maxrc.
+[08/15 11:00:07     69s] Type 'man IMPCTE-290' for more detail.
+[08/15 11:00:07     69s] **WARN: (IMPCTE-290):	Could not locate cell BUF_X1B_A9PP140ZTUL_C30 in any library for view slow-slow-maxrc.
+[08/15 11:00:07     69s] Type 'man IMPCTE-290' for more detail.
+[08/15 11:00:07     69s] **WARN: (IMPCTE-290):	Could not locate cell BUF_X1B_A9PP140ZTUL_C30 in any library for view slow-slow-maxrc.
+[08/15 11:00:07     69s] Type 'man IMPCTE-290' for more detail.
+[08/15 11:00:07     69s] **WARN: (IMPCTE-290):	Could not locate cell BUF_X1B_A9PP140ZTUL_C30 in any library for view slow-slow-maxrc.
+[08/15 11:00:07     69s] Type 'man IMPCTE-290' for more detail.
+[08/15 11:00:07     69s] **WARN: (IMPCTE-290):	Could not locate cell BUF_X1B_A9PP140ZTUL_C30 in any library for view slow-slow-maxrc.
+[08/15 11:00:07     69s] Type 'man IMPCTE-290' for more detail.
+[08/15 11:00:07     69s] **WARN: (IMPCTE-290):	Could not locate cell BUF_X1B_A9PP140ZTUL_C30 in any library for view slow-slow-maxrc.
+[08/15 11:00:07     69s] Type 'man IMPCTE-290' for more detail.
+[08/15 11:00:07     69s] **WARN: (IMPCTE-290):	Could not locate cell BUF_X1B_A9PP140ZTUL_C30 in any library for view slow-slow-maxrc.
+[08/15 11:00:07     69s] Type 'man IMPCTE-290' for more detail.
+[08/15 11:00:07     69s] **WARN: (IMPCTE-290):	Could not locate cell BUF_X1B_A9PP140ZTUL_C30 in any library for view slow-slow-maxrc.
+[08/15 11:00:07     69s] Type 'man IMPCTE-290' for more detail.
+[08/15 11:00:07     69s] **WARN: (IMPCTE-290):	Could not locate cell BUF_X1B_A9PP140ZTUL_C30 in any library for view fast-fast-minrc.
+[08/15 11:00:07     69s] Type 'man IMPCTE-290' for more detail.
+[08/15 11:00:07     69s] **WARN: (IMPCTE-290):	Could not locate cell BUF_X1B_A9PP140ZTUL_C30 in any library for view fast-fast-minrc.
+[08/15 11:00:07     69s] Type 'man IMPCTE-290' for more detail.
+[08/15 11:00:07     69s] **WARN: (IMPCTE-290):	Could not locate cell BUF_X1B_A9PP140ZTUL_C30 in any library for view fast-fast-minrc.
+[08/15 11:00:07     69s] Type 'man IMPCTE-290' for more detail.
+[08/15 11:00:07     69s] **WARN: (IMPCTE-290):	Could not locate cell BUF_X1B_A9PP140ZTUL_C30 in any library for view fast-fast-minrc.
+[08/15 11:00:07     69s] Type 'man IMPCTE-290' for more detail.
+[08/15 11:00:07     69s] **WARN: (EMS-27):	Message (IMPCTE-290) has exceeded the current message display limit of 20.
+[08/15 11:00:07     69s] To increase the message display limit, refer to the product command reference manual.
+[08/15 11:00:07     69s] % Begin load AAE data ... (date=08/15 11:00:07, mem=3336.2M)
+[08/15 11:00:08     69s] **WARN: (IMPESI-3505):	set_db delaycal_eng_enablePrePlacedFlow false (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
+[08/15 11:00:08     69s] AAE DB initialization (MEM=3378.957031 CPU=0:00:00.0 REAL=0:00:00.0) 
+[08/15 11:00:08     69s] % End load AAE data ... (date=08/15 11:00:08, total cpu=0:00:00.4, real=0:00:01.0, peak res=3379.2M, current mem=3379.2M)
+[08/15 11:00:08     69s] Restoring CCOpt config...
+[08/15 11:00:08     69s] 
+[08/15 11:00:08     69s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[08/15 11:00:08     69s] SBFF Setting to complicate: SDFFYSQ2D_X4M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 11:00:08     69s] SBFF Setting to complicate: SDFFYSQ2D_X3M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 11:00:08     69s] SBFF Setting to complicate: SDFFYSQ2D_X2M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 11:00:08     69s] SBFF Setting to complicate: SDFFYSQ2D_X1M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 11:00:08     69s] SBFF Setting to complicate: SDFFYRPQ2D_X4M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 11:00:08     69s] SBFF Setting to complicate: SDFFYRPQ2D_X3M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 11:00:08     69s] SBFF Setting to complicate: SDFFYRPQ2D_X2M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 11:00:08     69s] SBFF Setting to complicate: SDFFYRPQ2D_X1M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 11:00:08     69s] SBFF Setting to complicate: SDFFYQ2D_X4M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 11:00:08     69s] SBFF Setting to complicate: SDFFYQ2D_X3M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 11:00:08     69s] SBFF Setting to complicate: SDFFYQ2D_X2M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 11:00:08     69s] SBFF Setting to complicate: SDFFYQ2D_X1M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 11:00:08     69s] Summary for sequential cells identification: 
+[08/15 11:00:08     69s]   Identified SBFF number: 142
+[08/15 11:00:08     69s]   Identified MBFF number: 21
+[08/15 11:00:08     69s]   Identified SB Latch number: 48
+[08/15 11:00:08     69s]   Identified MB Latch number: 0
+[08/15 11:00:08     69s]   Not identified SBFF number: 12
+[08/15 11:00:08     69s]   Not identified MBFF number: 0
+[08/15 11:00:08     69s]   Not identified SB Latch number: 0
+[08/15 11:00:08     69s]   Not identified MB Latch number: 0
+[08/15 11:00:08     69s]   Number of sequential cells which are not FFs: 84
+[08/15 11:00:08     69s]  Visiting view : slow-slow-maxrc
+[08/15 11:00:08     69s]    : PowerDomain = none : Weighted F : unweighted  = 4.80 (1.000) with rcCorner = 0
+[08/15 11:00:08     69s]    : PowerDomain = none : Weighted F : unweighted  = 4.50 (1.000) with rcCorner = -1
+[08/15 11:00:08     69s]  Visiting view : fast-fast-minrc
+[08/15 11:00:08     69s]    : PowerDomain = none : Weighted F : unweighted  = 3.00 (1.000) with rcCorner = 1
+[08/15 11:00:08     69s]    : PowerDomain = none : Weighted F : unweighted  = 2.80 (1.000) with rcCorner = -1
+[08/15 11:00:08     69s]  Visiting view : func-typ-typ
+[08/15 11:00:08     69s]    : PowerDomain = none : Weighted F : unweighted  = 3.80 (1.000) with rcCorner = 2
+[08/15 11:00:08     69s]    : PowerDomain = none : Weighted F : unweighted  = 3.50 (1.000) with rcCorner = -1
+[08/15 11:00:08     69s]  Visiting view : slow-slow-maxrc
+[08/15 11:00:08     69s]    : PowerDomain = none : Weighted F : unweighted  = 4.80 (1.000) with rcCorner = 0
+[08/15 11:00:08     69s]    : PowerDomain = none : Weighted F : unweighted  = 4.50 (1.000) with rcCorner = -1
+[08/15 11:00:08     69s]  Visiting view : fast-fast-minrc
+[08/15 11:00:08     69s]    : PowerDomain = none : Weighted F : unweighted  = 3.00 (1.000) with rcCorner = 1
+[08/15 11:00:08     69s]    : PowerDomain = none : Weighted F : unweighted  = 2.80 (1.000) with rcCorner = -1
+[08/15 11:00:08     69s]  Visiting view : func-typ-typ
+[08/15 11:00:08     69s]    : PowerDomain = none : Weighted F : unweighted  = 3.80 (1.000) with rcCorner = 2
+[08/15 11:00:08     69s]    : PowerDomain = none : Weighted F : unweighted  = 3.50 (1.000) with rcCorner = -1
+[08/15 11:00:08     69s] 
+[08/15 11:00:08     69s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[08/15 11:00:08     69s]   Extracting original clock gating for clk...
+[08/15 11:00:08     69s]     clock_tree clk contains 4158 sinks and 0 clock gates.
+[08/15 11:00:08     69s]   Extracting original clock gating for clk done.
+[08/15 11:00:08     69s]   Extracting original clock gating for clk_8...
+[08/15 11:00:08     69s]     clock_tree clk_8 contains 4051 sinks and 0 clock gates.
+[08/15 11:00:08     69s]   Extracting original clock gating for clk_8 done.
+[08/15 11:00:08     69s]   Found 1 generator input for clock tree clk_8.
+[08/15 11:00:08     69s]   Extracting original clock gating for clk_2...
+[08/15 11:00:08     70s]     clock_tree clk_2 contains 12110 sinks and 0 clock gates.
+[08/15 11:00:08     70s]   Extracting original clock gating for clk_2 done.
+[08/15 11:00:08     70s]   Found 1 generator input for clock tree clk_2.
+[08/15 11:00:08     70s]   The skew group _clock_gen_clk_clk_out_reg/func was created. It contains 3 sinks and 1 sources.
+[08/15 11:00:08     70s]   The skew group clk/func was created. It contains 20317 sinks and 1 sources.
+[08/15 11:00:08     70s]   The skew group clk_2/func was created. It contains 12110 sinks and 1 sources.
+[08/15 11:00:08     70s]   The skew group clk_8/func was created. It contains 4051 sinks and 1 sources.
+[08/15 11:00:09     70s]   The skew group _clock_gen_clk_clk_out_reg/func was created. It contains 3 sinks and 1 sources.
+[08/15 11:00:09     70s]   The skew group clk/func was created. It contains 20317 sinks and 1 sources.
+[08/15 11:00:09     70s] Restoring CCOpt config done.
+[08/15 11:00:09     70s] 
+[08/15 11:00:09     70s] TimeStamp Deleting Cell Server Begin ...
+[08/15 11:00:09     70s] 
+[08/15 11:00:09     70s] TimeStamp Deleting Cell Server End ...
+[08/15 11:00:09     70s] 
+[08/15 11:00:09     70s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[08/15 11:00:09     70s] SBFF Setting to complicate: SDFFYSQ2D_X4M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 11:00:09     70s] SBFF Setting to complicate: SDFFYSQ2D_X3M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 11:00:09     70s] SBFF Setting to complicate: SDFFYSQ2D_X2M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 11:00:09     70s] SBFF Setting to complicate: SDFFYSQ2D_X1M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 11:00:09     70s] SBFF Setting to complicate: SDFFYRPQ2D_X4M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 11:00:09     70s] SBFF Setting to complicate: SDFFYRPQ2D_X3M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 11:00:09     70s] SBFF Setting to complicate: SDFFYRPQ2D_X2M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 11:00:09     70s] SBFF Setting to complicate: SDFFYRPQ2D_X1M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 11:00:09     70s] SBFF Setting to complicate: SDFFYQ2D_X4M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 11:00:09     70s] SBFF Setting to complicate: SDFFYQ2D_X3M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 11:00:09     70s] SBFF Setting to complicate: SDFFYQ2D_X2M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 11:00:09     70s] SBFF Setting to complicate: SDFFYQ2D_X1M_A9PP140ZTUL_C30 complicate code: 24
+[08/15 11:00:09     70s] Summary for sequential cells identification: 
+[08/15 11:00:09     70s]   Identified SBFF number: 142
+[08/15 11:00:09     70s]   Identified MBFF number: 21
+[08/15 11:00:09     70s]   Identified SB Latch number: 48
+[08/15 11:00:09     70s]   Identified MB Latch number: 0
+[08/15 11:00:09     70s]   Not identified SBFF number: 12
+[08/15 11:00:09     70s]   Not identified MBFF number: 0
+[08/15 11:00:09     70s]   Not identified SB Latch number: 0
+[08/15 11:00:09     70s]   Not identified MB Latch number: 0
+[08/15 11:00:09     70s]   Number of sequential cells which are not FFs: 84
+[08/15 11:00:09     70s] Total number of combinational cells: 845
+[08/15 11:00:09     70s] Total number of sequential cells: 307
+[08/15 11:00:09     70s] Total number of tristate cells: 0
+[08/15 11:00:09     70s] Total number of level shifter cells: 0
+[08/15 11:00:09     70s] Total number of power gating cells: 0
+[08/15 11:00:09     70s] Total number of isolation cells: 0
+[08/15 11:00:09     70s] Total number of power switch cells: 0
+[08/15 11:00:09     70s] Total number of pulse generator cells: 0
+[08/15 11:00:09     70s] Total number of always on buffers: 0
+[08/15 11:00:09     70s] Total number of retention cells: 0
+[08/15 11:00:09     70s] Total number of physical cells: 18
+[08/15 11:00:09     70s] List of usable buffers: BUFH_X11M_A9PP140ZTUL_C30 BUFH_X13M_A9PP140ZTUL_C30 BUFH_X16M_A9PP140ZTUL_C30 BUFH_X1M_A9PP140ZTUL_C30 BUFH_X1P2M_A9PP140ZTUL_C30 BUFH_X1P4M_A9PP140ZTUL_C30 BUFH_X2M_A9PP140ZTUL_C30 BUFH_X1P7M_A9PP140ZTUL_C30 BUFH_X2P5M_A9PP140ZTUL_C30 BUFH_X3M_A9PP140ZTUL_C30 BUFH_X4M_A9PP140ZTUL_C30 BUFH_X3P5M_A9PP140ZTUL_C30 BUFH_X5M_A9PP140ZTUL_C30 BUFH_X6M_A9PP140ZTUL_C30 BUFH_X7P5M_A9PP140ZTUL_C30 BUFH_X9M_A9PP140ZTUL_C30 BUF_X0P5B_A9PP140ZTUL_C30 BUF_X0P5M_A9PP140ZTUL_C30 BUF_X0P7B_A9PP140ZTUL_C30 BUF_X0P7M_A9PP140ZTUL_C30 BUF_X0P8M_A9PP140ZTUL_C30 BUF_X0P8B_A9PP140ZTUL_C30 BUF_X11B_A9PP140ZTUL_C30 BUF_X11B_A9PP140ZTUL_C30_XGCAP11 BUF_X11M_A9PP140ZTUL_C30 BUF_X13B_A9PP140ZTUL_C30 BUF_X11M_A9PP140ZTUL_C30_XGCAP11 BUF_X13B_A9PP140ZTUL_C30_XGCAP13 BUF_X13M_A9PP140ZTUL_C30 BUF_X16B_A9PP140ZTUL_C30 BUF_X13M_A9PP140ZTUL_C30_XGCAP13 BUF_X16B_A9PP140ZTUL_C30_XGCAP16 BUF_X16M_A9PP140ZTUL_C30 BUF_X16M_A9PP140ZTUL_C30_XGCAP16 BUF_X1M_A9PP140ZTUL_C30 BUF_X1B_A9PP140ZTUL_C30 BUF_X1P2B_A9PP140ZTUL_C30 BUF_X1P2M_A9PP140ZTUL_C30 BUF_X1P4B_A9PP140ZTUL_C30 BUF_X1P4M_A9PP140ZTUL_C30 BUF_X1P7B_A9PP140ZTUL_C30 BUF_X1P7M_A9PP140ZTUL_C30 BUF_X2M_A9PP140ZTUL_C30 BUF_X2B_A9PP140ZTUL_C30 BUF_X2P5B_A9PP140ZTUL_C30 BUF_X2P5M_A9PP140ZTUL_C30 BUF_X3M_A9PP140ZTUL_C30 BUF_X3B_A9PP140ZTUL_C30 BUF_X3P5B_A9PP140ZTUL_C30 BUF_X3P5M_A9PP140ZTUL_C30 BUF_X4B_A9PP140ZTUL_C30 BUF_X4B_A9PP140ZTUL_C30_XGCAP4 BUF_X4M_A9PP140ZTUL_C30 BUF_X5B_A9PP140ZTUL_C30 BUF_X4M_A9PP140ZTUL_C30_XGCAP4 BUF_X5B_A9PP140ZTUL_C30_XGCAP5 BUF_X5M_A9PP140ZTUL_C30 BUF_X6B_A9PP140ZTUL_C30 BUF_X5M_A9PP140ZTUL_C30_XGCAP5 BUF_X6B_A9PP140ZTUL_C30_XGCAP6 BUF_X6M_A9PP140ZTUL_C30 BUF_X7P5B_A9PP140ZTUL_C30 BUF_X6M_A9PP140ZTUL_C30_XGCAP6 BUF_X7P5B_A9PP140ZTUL_C30_XGCAP8 BUF_X7P5M_A9PP140ZTUL_C30 BUF_X7P5M_A9PP140ZTUL_C30_XGCAP8 BUF_X9B_A9PP140ZTUL_C30 BUF_X9M_A9PP140ZTUL_C30 BUF_X9B_A9PP140ZTUL_C30_XGCAP9 BUF_X9M_A9PP140ZTUL_C30_XGCAP9 DLY2_X1M_A9PP140ZTUL_C30 DLY2_X0P5M_A9PP140ZTUL_C30 DLY2_X2M_A9PP140ZTUL_C30 DLYCLK8S2_X1B_A9PP140ZTUL_C30 DLYCLK8S2_X2B_A9PP140ZTUL_C30 DLYCLK8S4_X1B_A9PP140ZTUL_C30 DLYCLK8S4_X2B_A9PP140ZTUL_C30
+[08/15 11:00:09     70s] Total number of usable buffers: 77
+[08/15 11:00:09     70s] List of unusable buffers: FRICG_X0P5B_A9PP140ZTUL_C30 FRICG_X0P6B_A9PP140ZTUL_C30 FRICG_X0P8B_A9PP140ZTUL_C30 FRICG_X0P7B_A9PP140ZTUL_C30 FRICG_X11B_A9PP140ZTUL_C30 FRICG_X13B_A9PP140ZTUL_C30 FRICG_X16B_A9PP140ZTUL_C30 FRICG_X1B_A9PP140ZTUL_C30 FRICG_X1P2B_A9PP140ZTUL_C30 FRICG_X1P4B_A9PP140ZTUL_C30 FRICG_X2B_A9PP140ZTUL_C30 FRICG_X1P7B_A9PP140ZTUL_C30 FRICG_X2P5B_A9PP140ZTUL_C30 FRICG_X3B_A9PP140ZTUL_C30 FRICG_X4B_A9PP140ZTUL_C30 FRICG_X3P5B_A9PP140ZTUL_C30 FRICG_X5B_A9PP140ZTUL_C30 FRICG_X6B_A9PP140ZTUL_C30 FRICG_X7P5B_A9PP140ZTUL_C30 FRICG_X9B_A9PP140ZTUL_C30
+[08/15 11:00:09     70s] Total number of unusable buffers: 20
+[08/15 11:00:09     70s] List of usable inverters: INV_X20B_A9PP140ZTUL_C30 INV_X20M_A9PP140ZTUL_C30 INV_X0P5B_A9PP140ZTUL_C30 INV_X0P5M_A9PP140ZTUL_C30 INV_X0P6B_A9PP140ZTUL_C30 INV_X0P6M_A9PP140ZTUL_C30 INV_X0P7B_A9PP140ZTUL_C30 INV_X0P7M_A9PP140ZTUL_C30 INV_X0P8M_A9PP140ZTUL_C30 INV_X0P8B_A9PP140ZTUL_C30 INV_X11B_A9PP140ZTUL_C30 INV_X11B_A9PP140ZTUL_C30_XGCAP11 INV_X11M_A9PP140ZTUL_C30 INV_X13B_A9PP140ZTUL_C30 INV_X11M_A9PP140ZTUL_C30_XGCAP11 INV_X13B_A9PP140ZTUL_C30_XGCAP13 INV_X13M_A9PP140ZTUL_C30 INV_X16B_A9PP140ZTUL_C30 INV_X13M_A9PP140ZTUL_C30_XGCAP13 INV_X16B_A9PP140ZTUL_C30_XGCAP16 INV_X16M_A9PP140ZTUL_C30 INV_X16M_A9PP140ZTUL_C30_XGCAP16 INV_X1M_A9PP140ZTUL_C30 INV_X1B_A9PP140ZTUL_C30 INV_X1P2B_A9PP140ZTUL_C30 INV_X1P2M_A9PP140ZTUL_C30 INV_X1P4B_A9PP140ZTUL_C30 INV_X1P4M_A9PP140ZTUL_C30 INV_X1P7B_A9PP140ZTUL_C30 INV_X1P7M_A9PP140ZTUL_C30 INV_X2M_A9PP140ZTUL_C30 INV_X2B_A9PP140ZTUL_C30 INV_X2P5B_A9PP140ZTUL_C30 INV_X2P5M_A9PP140ZTUL_C30 INV_X3M_A9PP140ZTUL_C30 INV_X3B_A9PP140ZTUL_C30 INV_X3P5B_A9PP140ZTUL_C30 INV_X4B_A9PP140ZTUL_C30 INV_X3P5M_A9PP140ZTUL_C30 INV_X4B_A9PP140ZTUL_C30_XGCAP4 INV_X4M_A9PP140ZTUL_C30 INV_X5B_A9PP140ZTUL_C30 INV_X4M_A9PP140ZTUL_C30_XGCAP4 INV_X5B_A9PP140ZTUL_C30_XGCAP5 INV_X5M_A9PP140ZTUL_C30 INV_X6B_A9PP140ZTUL_C30 INV_X5M_A9PP140ZTUL_C30_XGCAP5 INV_X6B_A9PP140ZTUL_C30_XGCAP6 INV_X6M_A9PP140ZTUL_C30 INV_X7P5B_A9PP140ZTUL_C30 INV_X6M_A9PP140ZTUL_C30_XGCAP6 INV_X7P5B_A9PP140ZTUL_C30_XGCAP8 INV_X7P5M_A9PP140ZTUL_C30 INV_X9B_A9PP140ZTUL_C30 INV_X7P5M_A9PP140ZTUL_C30_XGCAP8 INV_X9B_A9PP140ZTUL_C30_XGCAP9 INV_X9M_A9PP140ZTUL_C30 INV_X9M_A9PP140ZTUL_C30_XGCAP9
+[08/15 11:00:09     70s] Total number of usable inverters: 58
+[08/15 11:00:09     70s] List of unusable inverters:
+[08/15 11:00:09     70s] Total number of unusable inverters: 0
+[08/15 11:00:09     70s] List of identified usable delay cells: DLY10_X1M_A9PP140ZTUL_C30 DLY10_X0P5M_A9PP140ZTUL_C30 DLY10_X2M_A9PP140ZTUL_C30 DLY10_X4M_A9PP140ZTUL_C30 DLY2_X4M_A9PP140ZTUL_C30 DLY4_X1M_A9PP140ZTUL_C30 DLY4_X0P5M_A9PP140ZTUL_C30 DLY4_X2M_A9PP140ZTUL_C30 DLY4_X4M_A9PP140ZTUL_C30 DLY6_X1M_A9PP140ZTUL_C30 DLY6_X0P5M_A9PP140ZTUL_C30 DLY6_X2M_A9PP140ZTUL_C30 DLY6_X4M_A9PP140ZTUL_C30 DLY8_X0P5M_A9PP140ZTUL_C30 DLY8_X1M_A9PP140ZTUL_C30 DLY8_X2M_A9PP140ZTUL_C30 DLY8_X4M_A9PP140ZTUL_C30 DLYCLK8S6_X1B_A9PP140ZTUL_C30 DLYCLK8S6_X2B_A9PP140ZTUL_C30 DLYCLK8S8_X1B_A9PP140ZTUL_C30 DLYCLK8S8_X2B_A9PP140ZTUL_C30
+[08/15 11:00:09     70s] Total number of identified usable delay cells: 21
+[08/15 11:00:09     70s] List of identified unusable delay cells:[08/15 11:00:09     70s] 
+[08/15 11:00:09     70s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+
+[08/15 11:00:09     70s] Total number of identified unusable delay cells: 0
+[08/15 11:00:09     70s] 
+[08/15 11:00:09     70s] TimeStamp Deleting Cell Server Begin ...
+[08/15 11:00:09     70s] 
+[08/15 11:00:09     70s] TimeStamp Deleting Cell Server End ...
+[08/15 11:00:09     70s] **WARN: (IMPCTE-107):	The following globals have been obsoleted since version (null). They will be removed in the next release. 
+[08/15 11:00:09     70s] timing_aocv_enable_gba_combine_launch_capture
+[08/15 11:00:09     70s] timing_enable_backward_compatible_latch_thru_mt_mode
+[08/15 11:00:09     70s] timing_enable_separate_device_slew_effect_sensitivities
+[08/15 11:00:09     70s] #% End load design ... (date=08/15 11:00:09, total cpu=0:00:45.7, real=0:00:54.0, peak res=3433.1M, current mem=3399.1M)
+[08/15 11:00:09     70s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[08/15 11:00:09     70s] 
+[08/15 11:00:09     70s] *** Summary of all messages that are not suppressed in this session:
+[08/15 11:00:09     70s] Severity  ID               Count  Summary                                  
+[08/15 11:00:09     70s] WARNING   IMPDBTCL-321        15  The attribute '%s' still works but will ...
+[08/15 11:00:09     70s] WARNING   IMPESI-3505          1  set_db delaycal_eng_%s (default=%s) will...
+[08/15 11:00:09     70s] WARNING   IMPOPT-7155          4  Option %s in 'set_db' will be obsolete. ...
+[08/15 11:00:09     70s] WARNING   NRDB-317             1  Threshold min width %f is >= max width %...
+[08/15 11:00:09     70s] WARNING   NRIF-90              4  Option set_db route_bottom_routing_layer...
+[08/15 11:00:09     70s] WARNING   NRIF-91              4  Option set_db route_top_routing_layer is...
+[08/15 11:00:09     70s] WARNING   IMPCTE-290         864  Could not locate cell %s in any library ...
+[08/15 11:00:09     70s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
+[08/15 11:00:09     70s] WARNING   IMPTCM-77            2  Option "%s" for command %s is obsolete a...
+[08/15 11:00:09     70s] WARNING   TECHLIB-302         95  No function defined for cell '%s'. The c...
+[08/15 11:00:09     70s] WARNING   TECHLIB-1277       135  The %s '%s' has been defined for %s %s '...
+[08/15 11:00:09     70s] *** Message Summary: 1126 warning(s), 0 error(s)
+[08/15 11:00:09     70s] 
+[08/15 11:00:09     70s] @innovus 2> exit
+
+[08/15 11:02:17     74s] *** Memory Usage v#2 (Current mem = 3575.152M, initial mem = 855.789M) ***
+[08/15 11:02:17     74s] 
+[08/15 11:02:17     74s] *** Summary of all messages that are not suppressed in this session:
+[08/15 11:02:17     74s] Severity  ID               Count  Summary                                  
+[08/15 11:02:17     74s] WARNING   IMPDBTCL-321        15  The attribute '%s' still works but will ...
+[08/15 11:02:17     74s] WARNING   IMPESI-3505          1  set_db delaycal_eng_%s (default=%s) will...
+[08/15 11:02:17     74s] WARNING   IMPOPT-7155          4  Option %s in 'set_db' will be obsolete. ...
+[08/15 11:02:17     74s] WARNING   NRDB-317             1  Threshold min width %f is >= max width %...
+[08/15 11:02:17     74s] WARNING   NRIF-90              4  Option set_db route_bottom_routing_layer...
+[08/15 11:02:17     74s] WARNING   NRIF-91              4  Option set_db route_top_routing_layer is...
+[08/15 11:02:17     74s] WARNING   IMPCTE-290         864  Could not locate cell %s in any library ...
+[08/15 11:02:17     74s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
+[08/15 11:02:17     74s] WARNING   IMPTCM-77            2  Option "%s" for command %s is obsolete a...
+[08/15 11:02:17     74s] WARNING   TECHLIB-302         95  No function defined for cell '%s'. The c...
+[08/15 11:02:17     74s] WARNING   TECHLIB-1277       135  The %s '%s' has been defined for %s %s '...
+[08/15 11:02:17     74s] *** Message Summary: 1126 warning(s), 0 error(s)
+[08/15 11:02:17     74s] 
+[08/15 11:02:17     74s] --- Ending "Innovus" (totcpu=0:01:15, real=0:03:51, mem=3575.2M) ---

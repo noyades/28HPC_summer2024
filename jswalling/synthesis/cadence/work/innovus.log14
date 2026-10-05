@@ -1,0 +1,809 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v22.10-p001_1, built Thu Sep 29 11:03:49 PDT 2022
+Options:	-stylus 
+Date:		Sat Jan 11 19:38:59 2025
+Host:		cluster15 (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (6cores*24cpus*Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz 15360KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		[19:38:59.284185] Configured Lic search path (21.01-s002): 27002@license.ece.vt.edu
+
+		invs	Innovus Implementation System	22.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+
+
+Create and set the environment variable TMPDIR to /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/innovus_temp_43627_cluster15_jswalling_V2Kclm.
+
+The soft stacksize limit is either up to the hard limit or larger than 0.2% of RAM. No change is needed.
+
+**INFO:  MMMC transition support version v31-84 
+
+@innovus 1> read_db INVS/
+(stylus_db): ::init_mmmc_version set to version 2 from SQL db.
+#% Begin Load Common DB (date=01/11 20:21:52, mem=1084.1M)
+(stylus_db): Begin loading Common DB 'INVS' (Created by Genus(TM) Synthesis Solution 22.10-p001_1) ...
+(stylus_db): Initialized SQLite db version 0.2 ..
+(stylus_db): Sourcing .globals file  ...
+**WARN: (IMPUDM-33):	Global variable "soceUseIdealDelayForClkInAllMode" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+(stylus_db): Load Flow-Kit settings ...
+% Begin Load Flow-Kit settings (date=01/11 20:21:52, mem=1087.6M)
+% End Load Flow-Kit settings (date=01/11 20:21:53, total cpu=0:00:00.1, real=0:00:00.0, peak res=1087.6M, current mem=1087.6M)
+% Begin Load MMMC data (date=01/11 20:21:53, mem=1087.6M)
+(stylus_db): Reading MMMC file ...
+Reading wcl_slow timing library '/software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLTIE5_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'ENDCAPTIE3_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP8_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP64_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP4_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP3_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP32_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP2_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP16_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP128_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP8_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP64_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP4_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP3_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP32_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP2_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP16_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP128_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA2_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+Read 1003 cells in library 'sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c' 
+% End Load MMMC data (date=01/11 20:21:59, total cpu=0:00:06.2, real=0:00:06.0, peak res=1256.0M, current mem=1110.2M)
+% Begin Load LEF files (date=01/11 20:21:59, mem=1110.2M)
+(stylus_db): Load LEF files ...
+
+Loading LEF file /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef ...
+
+Loading LEF file /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lef/sc9mcpp140z_cln28ht_base_lvt_c30.lef ...
+Set DBUPerIGU to M1 pitch 280.
+
+Loading LEF file /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_lvt_c30/r0p0/lef/sc9mcpp140z_cln28ht_hpk_lvt_c30.lef ...
+
+Loading LEF file /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_svt_c30/r0p0/lef/sc9mcpp140z_cln28ht_base_svt_c30.lef ...
+
+Loading LEF file /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_svt_c30/r0p0/lef/sc9mcpp140z_cln28ht_hpk_svt_c30.lef ...
+
+Loading LEF file /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_ulvt_c30/r0p0/lef/sc9mcpp140z_cln28ht_base_ulvt_c30.lef ...
+
+Loading LEF file /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_ulvt_c30/r0p0/lef/sc9mcpp140z_cln28ht_hpk_ulvt_c30.lef ...
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+% End Load LEF files (date=01/11 20:22:02, total cpu=0:00:02.4, real=0:00:02.0, peak res=1131.8M, current mem=1131.8M)
+(stylus_db): Load Verilog Netlist ...
+% Begin Load netlist data ... (date=01/11 20:22:02, mem=1131.8M)
+*** Begin netlist parsing (mem=1247.4M) ***
+Created 1003 new cells from 1 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist 'INVS//cmn/pp_fir_u_0.v.gz'
+
+*** Memory Usage v#1 (Current mem = 1264.438M, initial mem = 511.469M) ***
+*** End netlist parsing (cpu=0:00:00.6, real=0:00:01.0, mem=1264.4M) ***
+% End Load netlist data ... (date=01/11 20:22:03, total cpu=0:00:00.6, real=0:00:01.0, peak res=1166.3M, current mem=1166.3M)
+Top level cell is pp_fir_u_0.
+Hooked 1003 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell pp_fir_u_0 ...
+***** UseNewTieNetMode *****.
+*** Netlist is unique.
+** info: there are 3539 modules.
+** info: there are 20970 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 1342.910M, initial mem = 511.469M) ***
+(stylus_db): Init Design
+Set Shrink Factor to 0.90000
+*info: set bottom ioPad orient R0
+The core width changes from 207.370000 to 207.340000 when snapping to grid "PlacementGrid".
+
+Honor LEF defined pitches for advanced node
+Start create_tracks
+*Info: initialize multi-corner CTS.
+Reading wcl_fast timing library '/software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ffg_cbestt_min_0p99v_m40c.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLTIE5_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ffg_cbestt_min_0p99v_m40c.lib)
+Message <TECHLIB-302> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+Read 1003 cells in library 'sc9mcpp140z_cln28ht_base_lvt_c30_ffg_cbestt_min_0p99v_m40c' 
+Reading wcl_typical timing library '/software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_tt_ctypical_max_0p90v_25c.lib' ...
+Read 1003 cells in library 'sc9mcpp140z_cln28ht_base_lvt_c30_tt_ctypical_max_0p90v_25c' 
+Total number of combinational cells: 749
+Total number of sequential cells: 236
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 18
+List of usable buffers: FRICG_X0P5B_A9PP140ZTL_C30 FRICG_X0P6B_A9PP140ZTL_C30 FRICG_X0P8B_A9PP140ZTL_C30 FRICG_X0P7B_A9PP140ZTL_C30 FRICG_X11B_A9PP140ZTL_C30 FRICG_X13B_A9PP140ZTL_C30 FRICG_X16B_A9PP140ZTL_C30 FRICG_X1B_A9PP140ZTL_C30 FRICG_X1P2B_A9PP140ZTL_C30 FRICG_X1P4B_A9PP140ZTL_C30 FRICG_X2B_A9PP140ZTL_C30 FRICG_X1P7B_A9PP140ZTL_C30 FRICG_X2P5B_A9PP140ZTL_C30 FRICG_X3B_A9PP140ZTL_C30 FRICG_X4B_A9PP140ZTL_C30 FRICG_X3P5B_A9PP140ZTL_C30 FRICG_X5B_A9PP140ZTL_C30 FRICG_X6B_A9PP140ZTL_C30 FRICG_X7P5B_A9PP140ZTL_C30 FRICG_X9B_A9PP140ZTL_C30 BUFH_X11M_A9PP140ZTL_C30 BUFH_X13M_A9PP140ZTL_C30 BUFH_X16M_A9PP140ZTL_C30 BUFH_X1M_A9PP140ZTL_C30 BUFH_X1P2M_A9PP140ZTL_C30 BUFH_X1P4M_A9PP140ZTL_C30 BUFH_X2M_A9PP140ZTL_C30 BUFH_X1P7M_A9PP140ZTL_C30 BUFH_X2P5M_A9PP140ZTL_C30 BUFH_X3M_A9PP140ZTL_C30 BUFH_X4M_A9PP140ZTL_C30 BUFH_X3P5M_A9PP140ZTL_C30 BUFH_X5M_A9PP140ZTL_C30 BUFH_X6M_A9PP140ZTL_C30 BUFH_X7P5M_A9PP140ZTL_C30 BUFH_X9M_A9PP140ZTL_C30 BUF_X0P5B_A9PP140ZTL_C30 BUF_X0P5M_A9PP140ZTL_C30 BUF_X0P7B_A9PP140ZTL_C30 BUF_X0P7M_A9PP140ZTL_C30 BUF_X0P8M_A9PP140ZTL_C30 BUF_X0P8B_A9PP140ZTL_C30 BUF_X11B_A9PP140ZTL_C30 BUF_X11B_A9PP140ZTL_C30_XGCAP11 BUF_X11M_A9PP140ZTL_C30 BUF_X13B_A9PP140ZTL_C30 BUF_X11M_A9PP140ZTL_C30_XGCAP11 BUF_X13B_A9PP140ZTL_C30_XGCAP13 BUF_X13M_A9PP140ZTL_C30 BUF_X16B_A9PP140ZTL_C30 BUF_X13M_A9PP140ZTL_C30_XGCAP13 BUF_X16B_A9PP140ZTL_C30_XGCAP16 BUF_X16M_A9PP140ZTL_C30 BUF_X16M_A9PP140ZTL_C30_XGCAP16 BUF_X1M_A9PP140ZTL_C30 BUF_X1B_A9PP140ZTL_C30 BUF_X1P2B_A9PP140ZTL_C30 BUF_X1P2M_A9PP140ZTL_C30 BUF_X1P4B_A9PP140ZTL_C30 BUF_X1P4M_A9PP140ZTL_C30 BUF_X1P7B_A9PP140ZTL_C30 BUF_X1P7M_A9PP140ZTL_C30 BUF_X2M_A9PP140ZTL_C30 BUF_X2B_A9PP140ZTL_C30 BUF_X2P5B_A9PP140ZTL_C30 BUF_X2P5M_A9PP140ZTL_C30 BUF_X3M_A9PP140ZTL_C30 BUF_X3B_A9PP140ZTL_C30 BUF_X3P5B_A9PP140ZTL_C30 BUF_X3P5M_A9PP140ZTL_C30 BUF_X4B_A9PP140ZTL_C30 BUF_X4B_A9PP140ZTL_C30_XGCAP4 BUF_X4M_A9PP140ZTL_C30 BUF_X5B_A9PP140ZTL_C30 BUF_X4M_A9PP140ZTL_C30_XGCAP4 BUF_X5B_A9PP140ZTL_C30_XGCAP5 BUF_X5M_A9PP140ZTL_C30 BUF_X6B_A9PP140ZTL_C30 BUF_X5M_A9PP140ZTL_C30_XGCAP5 BUF_X6B_A9PP140ZTL_C30_XGCAP6 BUF_X6M_A9PP140ZTL_C30 BUF_X7P5B_A9PP140ZTL_C30 BUF_X6M_A9PP140ZTL_C30_XGCAP6 BUF_X7P5B_A9PP140ZTL_C30_XGCAP8 BUF_X7P5M_A9PP140ZTL_C30 BUF_X7P5M_A9PP140ZTL_C30_XGCAP8 BUF_X9B_A9PP140ZTL_C30 BUF_X9M_A9PP140ZTL_C30 BUF_X9B_A9PP140ZTL_C30_XGCAP9 BUF_X9M_A9PP140ZTL_C30_XGCAP9 DLY2_X1M_A9PP140ZTL_C30 DLY2_X0P5M_A9PP140ZTL_C30 DLY2_X2M_A9PP140ZTL_C30 DLYCLK8S2_X1B_A9PP140ZTL_C30 DLYCLK8S2_X2B_A9PP140ZTL_C30 DLYCLK8S4_X1B_A9PP140ZTL_C30 DLYCLK8S4_X2B_A9PP140ZTL_C30
+Total number of usable buffers: 97
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X0P5B_A9PP140ZTL_C30 INV_X0P5M_A9PP140ZTL_C30 INV_X0P6B_A9PP140ZTL_C30 INV_X0P6M_A9PP140ZTL_C30 INV_X0P7B_A9PP140ZTL_C30 INV_X0P7M_A9PP140ZTL_C30 INV_X0P8M_A9PP140ZTL_C30 INV_X0P8B_A9PP140ZTL_C30 INV_X11B_A9PP140ZTL_C30 INV_X11B_A9PP140ZTL_C30_XGCAP11 INV_X11M_A9PP140ZTL_C30 INV_X13B_A9PP140ZTL_C30 INV_X11M_A9PP140ZTL_C30_XGCAP11 INV_X13B_A9PP140ZTL_C30_XGCAP13 INV_X13M_A9PP140ZTL_C30 INV_X16B_A9PP140ZTL_C30 INV_X13M_A9PP140ZTL_C30_XGCAP13 INV_X16B_A9PP140ZTL_C30_XGCAP16 INV_X16M_A9PP140ZTL_C30 INV_X16M_A9PP140ZTL_C30_XGCAP16 INV_X1M_A9PP140ZTL_C30 INV_X1B_A9PP140ZTL_C30 INV_X1P2B_A9PP140ZTL_C30 INV_X1P2M_A9PP140ZTL_C30 INV_X1P4B_A9PP140ZTL_C30 INV_X1P4M_A9PP140ZTL_C30 INV_X1P7B_A9PP140ZTL_C30 INV_X1P7M_A9PP140ZTL_C30 INV_X2M_A9PP140ZTL_C30 INV_X2B_A9PP140ZTL_C30 INV_X2P5B_A9PP140ZTL_C30 INV_X2P5M_A9PP140ZTL_C30 INV_X3M_A9PP140ZTL_C30 INV_X3B_A9PP140ZTL_C30 INV_X3P5B_A9PP140ZTL_C30 INV_X4B_A9PP140ZTL_C30 INV_X3P5M_A9PP140ZTL_C30 INV_X4B_A9PP140ZTL_C30_XGCAP4 INV_X4M_A9PP140ZTL_C30 INV_X5B_A9PP140ZTL_C30 INV_X4M_A9PP140ZTL_C30_XGCAP4 INV_X5B_A9PP140ZTL_C30_XGCAP5 INV_X5M_A9PP140ZTL_C30 INV_X6B_A9PP140ZTL_C30 INV_X5M_A9PP140ZTL_C30_XGCAP5 INV_X6B_A9PP140ZTL_C30_XGCAP6 INV_X6M_A9PP140ZTL_C30 INV_X7P5B_A9PP140ZTL_C30 INV_X6M_A9PP140ZTL_C30_XGCAP6 INV_X7P5B_A9PP140ZTL_C30_XGCAP8 INV_X7P5M_A9PP140ZTL_C30 INV_X9B_A9PP140ZTL_C30 INV_X7P5M_A9PP140ZTL_C30_XGCAP8 INV_X9B_A9PP140ZTL_C30_XGCAP9 INV_X9M_A9PP140ZTL_C30 INV_X9M_A9PP140ZTL_C30_XGCAP9
+Total number of usable inverters: 56
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY10_X1M_A9PP140ZTL_C30 DLY10_X0P5M_A9PP140ZTL_C30 DLY10_X2M_A9PP140ZTL_C30 DLY10_X4M_A9PP140ZTL_C30 DLY2_X4M_A9PP140ZTL_C30 DLY4_X1M_A9PP140ZTL_C30 DLY4_X0P5M_A9PP140ZTL_C30 DLY4_X2M_A9PP140ZTL_C30 DLY4_X4M_A9PP140ZTL_C30 DLY6_X1M_A9PP140ZTL_C30 DLY6_X0P5M_A9PP140ZTL_C30 DLY6_X2M_A9PP140ZTL_C30 DLY6_X4M_A9PP140ZTL_C30 DLY8_X0P5M_A9PP140ZTL_C30 DLY8_X1M_A9PP140ZTL_C30 DLY8_X2M_A9PP140ZTL_C30 DLY8_X4M_A9PP140ZTL_C30 DLYCLK8S6_X1B_A9PP140ZTL_C30 DLYCLK8S6_X2B_A9PP140ZTL_C30 DLYCLK8S8_X1B_A9PP140ZTL_C30 DLYCLK8S8_X2B_A9PP140ZTL_C30
+Total number of identified usable delay cells: 21
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+(stylus_db): Initialized design 'pp_fir_u_0'
+(stylus_db): Load Metric file ...
+% Begin Load Metric file (date=01/11 20:22:17, mem=1562.5M)
+% End Load Metric file (date=01/11 20:22:18, total cpu=0:00:00.1, real=0:00:01.0, peak res=1565.7M, current mem=1563.7M)
+(stylus_db): Setting Root attributes ...
+Change floorplan default-technical-site to 'sc9mcpp140z_cln28ht'.
+(stylus_db): Set 3005 attributes of Root 
+% Begin Set DB preserves (date=01/11 20:22:18, mem=1564.6M)
+(stylus_db): Setting preserves on design objects ...
+(stylus_db): Set 119 preserves of design objects
+% End Set DB preserves (date=01/11 20:22:18, total cpu=0:00:00.1, real=0:00:00.0, peak res=1564.7M, current mem=1564.7M)
+% Begin Load Timing views and constraints (date=01/11 20:22:18, mem=1564.7M)
+view_wcl_slow view_wcl_typical view_wcl_fast
+(stylus_db): Read MMMC timing views ...
+Reading timing constraints file 'INVS/cmn/pp_fir_u_0.mmmc/modes/functional_wcl_typical/functional_wcl_typical.sdc.gz' ...
+Current (total cpu=0:06:34, real=0:43:20, peak res=1672.8M, current mem=1672.8M)
+**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File INVS/cmn/pp_fir_u_0.mmmc/modes/functional_wcl_typical/functional_wcl_typical.sdc.gz, Line 9).
+
+**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File INVS/cmn/pp_fir_u_0.mmmc/modes/functional_wcl_typical/functional_wcl_typical.sdc.gz, Line 10).
+
+pp_fir_u_0
+INFO (CTE): Reading of timing constraints file INVS/cmn/pp_fir_u_0.mmmc/modes/functional_wcl_typical/functional_wcl_typical.sdc.gz completed, with 2 WARNING
+Ending "Constraint file reading stats" (total cpu=0:00:00.4, real=0:00:00.0, peak res=1708.5M, current mem=1708.5M)
+Current (total cpu=0:06:35, real=0:43:20, peak res=1708.5M, current mem=1708.5M)
+% End Load Timing views and constraints (date=01/11 20:22:19, total cpu=0:00:01.0, real=0:00:01.0, peak res=1708.6M, current mem=1708.6M)
+(stylus_db): Load Mode file ...
+set_db opt_useful_skew already set.
+**WARN: (IMPOPT-3602):	The specified path group name in2out is not defined.
+Type 'man IMPOPT-3602' for more detail.
+Effort level <low> specified for in2out path_group
+**WARN: (IMPOPT-3602):	The specified path group name in2reg is not defined.
+Type 'man IMPOPT-3602' for more detail.
+Effort level <low> specified for in2reg path_group
+**WARN: (IMPOPT-3602):	The specified path group name reg2out is not defined.
+Type 'man IMPOPT-3602' for more detail.
+Effort level <low> specified for reg2out path_group
+**WARN: (IMPOPT-3602):	The specified path group name reg2reg is not defined.
+Type 'man IMPOPT-3602' for more detail.
+Effort level <high> specified for reg2reg path_group
+**WARN: (IMPOPT-3602):	The specified path group name tdgp_reg2reg_default is not defined.
+Type 'man IMPOPT-3602' for more detail.
+Effort level <high> specified for tdgp_reg2reg_default path_group
+Change floorplan default-technical-site to 'sc9mcpp140z_cln28ht'.
+(stylus_db): Couldn't load power-intent, (pp_fir_u_0.cpf or pp_fir_u_0.upf doesn't exists)
+(stylus_db): Couldn't commit power-intent, (pp_fir_u_0.cpf or pp_fir_u_0.upf doesn't exists)
+(stylus_db): Load DEF file ...
+% Begin Load DEF (date=01/11 20:22:20, mem=1711.1M)
+Reading DEF file 'INVS//cmn/pp_fir_u_0.def.gz', current time is Sat Jan 11 20:22:20 2025 ...
+--- DIVIDERCHAR '/'
+--- UnitsPerDBU = 1.0000
+
+Honor LEF defined pitches for advanced node
+Start create_tracks
+--- DIEAREA (-3600 -3600) (418420 363600)
+defIn read 10000 lines...
+defIn read 20000 lines...
+defIn read 30000 lines...
+defIn read 40000 lines...
+defIn read 50000 lines...
+defIn read 60000 lines...
+DEF file 'INVS//cmn/pp_fir_u_0.def.gz' is parsed, current time is Sat Jan 11 20:22:20 2025.
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Updating the floorplan ...
+% End Load DEF (date=01/11 20:22:20, total cpu=0:00:00.5, real=0:00:01.0, peak res=1719.4M, current mem=1719.4M)
+% Begin Set route_types (date=01/11 20:22:21, mem=1719.4M)
+(stylus_db): Setting route_types  ...
+% End Set route_types (date=01/11 20:22:21, total cpu=0:00:00.1, real=0:00:00.0, peak res=1719.4M, current mem=1719.4M)
+% Begin Set power_domain attributes (date=01/11 20:22:21, mem=1719.4M)
+(stylus_db): Setting power_domain attributes ...
+% End Set power_domain attributes (date=01/11 20:22:21, total cpu=0:00:00.1, real=0:00:00.0, peak res=1719.4M, current mem=1719.4M)
+(stylus_db): Load additional timing constraints ...
+% Begin Load Additional Timing constraints (date=01/11 20:22:21, mem=1719.4M)
+Loading path adjust file INVS//cmn/pp_fir_u_0.mmmc/pathadjust.sdc.gz ...
+Current (total cpu=0:06:36, real=0:43:22, peak res=1719.5M, current mem=1719.5M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:00.0, peak res=1719.8M, current mem=1719.8M)
+Current (total cpu=0:06:36, real=0:43:22, peak res=1719.8M, current mem=1719.8M)
+% End Load Additional Timing constraints (date=01/11 20:22:21, total cpu=0:00:00.4, real=0:00:00.0, peak res=1719.8M, current mem=1719.8M)
+% Begin Set message attributes (date=01/11 20:22:21, mem=1719.8M)
+(stylus_db): Setting attributes on Genus message objects ...
+% End Set message attributes (date=01/11 20:22:21, total cpu=0:00:00.1, real=0:00:00.0, peak res=1719.8M, current mem=1719.8M)
+(stylus_db): Couldn't load SDP file, (file doesn't exists)
+% Begin Generate Vias (date=01/11 20:22:21, mem=1719.8M)
+(stylus_db): Generate advanced rule Vias ...
+Start generating vias ..
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Via generation completed successfully.
+% End Generate Vias (date=01/11 20:22:22, total cpu=0:00:00.5, real=0:00:00.0, peak res=1735.4M, current mem=1732.1M)
+% Begin Set attributes (date=01/11 20:22:22, mem=1732.1M)
+(stylus_db): Setting attributes on design objects ...
+(stylus_db): Set 15150 attributes of design objects
+(stylus_db): Could not set 1 attributes of design objects
+% End Set attributes (date=01/11 20:22:22, total cpu=0:00:00.3, real=0:00:00.0, peak res=1735.0M, current mem=1735.0M)
+(stylus_db): Load RC preroute patterns ...
+% Begin Load RC preroute patterns (date=01/11 20:22:22, mem=1735.0M)
+Loading preRoute extraction data from directory 'INVS//cmn/pp_fir_u_0.extraction/extraction/' ...
+Extraction setup Started 
+Initializing multi-corner RC extraction with 3 active RC Corners ...
+Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For post_route extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+Generating auto layer map file.
+Importing multi-corner technology file(s) for preRoute extraction...
+/software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcworst/qrcTechFile
+Generating auto layer map file.
+/software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcbest/qrcTechFile
+Generating auto layer map file.
+/software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/nominal/qrcTechFile
+Generating auto layer map file.
+Completed (cpu: 0:00:44.0 real: 0:01:11)
+Set Shrink Factor to 0.90000 (from technology file)
+Summary of Active RC-Corners : 
+ 
+ Analysis View: view_wcl_slow
+    RC-Corner Name        : worst
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcworst/qrcTechFile'
+ 
+ Analysis View: view_wcl_fast
+    RC-Corner Name        : best
+    RC-Corner Index       : 1
+    RC-Corner Temperature : -40 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcbest/qrcTechFile'
+ 
+ Analysis View: view_wcl_typical
+    RC-Corner Name        : typical
+    RC-Corner Index       : 2
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/nominal/qrcTechFile'
+Restored RC grid for preRoute extraction.
+Initializing multi-corner resistance tables ...
+Default value for post_route extraction mode's extract_rc_effort_level (extract_rc_effort_level option of set_db) changed to 'medium'.
+% End Load RC preroute patterns (date=01/11 20:23:35, total cpu=0:00:44.5, real=0:01:13, peak res=2044.5M, current mem=1823.4M)
+(stylus_db): Couldn't load Min Layer File : INVS//cmn/pp_fir_u_0.min_layer not found)
+(stylus_db): Load Route congestion map file ...
+% Begin Load Route congestion map (date=01/11 20:23:35, mem=1823.4M)
+Reading congestion map file INVS//cmn/pp_fir_u_0.route.congestion.gz ...
+Suppress "**WARN ..." messages.
+Un-suppress "**WARN ..." messages.
+% End Load Route congestion map (date=01/11 20:23:36, total cpu=0:00:00.1, real=0:00:01.0, peak res=1825.2M, current mem=1825.2M)
+(stylus_db): Couldn't load SCANDEF, (file doesn't exists)
+(stylus_db): Couldn't load TCF file, (file doesn't exists)
++----------------------------------------------------------------+
+    Summary of 'read_db INVS'                     
++----------------------------------------------------------------+
+    Generated by         :     Innovus 22.10-p001_1
+    Generated on         :     Sat Jan 11 20:23:36 EST 2025
+    Design               :     pp_fir_u_0
+    process_node         :     90   
+    db units             :     2000 
+    tech_mfg_grid        :     0.005
+    bbox                 :     {-1.8 -1.8 209.21 181.8}
+    core_bbox            :     {0.02 0.0 207.39 180.0}
++----------------------------------------------------------------+
+    Object Type          :     Count
++-----------------------------------+
+    timing_libraries     :     3    
+    library_sets         :     3    
+    lib_cells            :     3009 
+    setup_analysis_views :     3    
+    hold_analysis_views  :     3    
+    rc_corners           :     3    
+    delay_corners        :     3    
+    constraint_modes     :     3    
+    clocks               :     3    
++-----------------------------------+
+    base_cells           :     3537 
+    modules              :     1    
+    insts                :     21976
+    physical_insts       :     1006 
+    ports                :     549  
+    nets                 :     22900
+    pg_nets              :     2    
++-----------------------------------+
+    layers               :     33   
+    via_defs             :     922  
+    via_def_rule         :     9    
+    sites                :     1    
+    core_rows            :     200  
+    track_patterns       :     20   
++-----------------------------------+
+#% End Load Common DB (date=01/11 20:23:36, total cpu=0:01:13, real=0:01:44, peak res=2044.5M, current mem=1825.8M)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPOPT-3602          5  The specified path group name %s is not ...
+WARNING   IMPUDM-33            1  Global variable "%s" is obsolete and wil...
+WARNING   TCLCMD-1461          2  Skipped unsupported command: %s          
+WARNING   TECHLIB-302         57  No function defined for cell '%s'. The c...
+*** Message Summary: 65 warning(s), 0 error(s)
+
+0
+@innovus 2> read_floorplan ../../pp_fir_u_0_power.fp
+Reading floorplan file - ../../pp_fir_u_0_power.fp (mem = 2000.7M).
+#% Begin Load floorplan data ... (date=01/11 20:29:47, mem=1911.2M)
+*info: reset 22900 existing net BottomPreferredLayer and AvoidDetour
+Deleting old partition specification.
+ ... processed partition successfully.
+Reading binary special route file ../../pp_fir_u_0_power.fp.spr (Created by Innovus v22.10-p001_1 on Tue Jan  7 08:44:42 2025, version: 1)
+Ending "Read special route file" (total cpu=0:00:00.1, real=0:00:00.0, peak res=1911.7M, current mem=1911.7M)
+Delete all existing relative floorplan constraints.
+#% End Load floorplan data ... (date=01/11 20:29:47, total cpu=0:00:00.3, real=0:00:00.0, peak res=1912.1M, current mem=1912.1M)
+@innovus 3> gui_select -point {7.57900 177.48100}
+@innovus 4> gui_select -toggle -point {8.13050 177.65750}
+@innovus 5> gui_select -toggle -point {19.46850 177.76800}
+@innovus 6> gui_select -toggle -point {20.06400 177.70200}
+@innovus 7> gui_select -toggle -point {31.48200 176.90750}
+@innovus 8> gui_select -toggle -point {32.23200 176.70900}
+@innovus 9> gui_select -toggle -point {43.32150 176.77550}
+@innovus 10> gui_select -toggle -point {44.11550 176.77550}
+@innovus 11> gui_select -toggle -point {55.43150 176.81950}
+@innovus 12> gui_select -toggle -point {56.22550 176.81950}
+@innovus 13> gui_select -toggle -point {67.68550 175.91500}
+@innovus 14> gui_select -toggle -point {68.08250 175.89300}
+@innovus 15> gui_select -toggle -point {79.48700 175.91500}
+@innovus 16> gui_select -toggle -point {80.17050 175.89300}
+@innovus 17> gui_select -toggle -point {91.49850 175.82700}
+@innovus 18> gui_select -toggle -point {92.29250 175.82700}
+@innovus 19> gui_select -toggle -point {103.63050 175.95900}
+@innovus 20> gui_select -toggle -point {104.20400 175.98150}
+@innovus 21> gui_select -toggle -point {115.35750 175.84900}
+@innovus 22> gui_select -toggle -point {116.15150 175.93700}
+@innovus 23> gui_select -toggle -point {127.62200 175.89300}
+@innovus 24> gui_select -toggle -point {128.19550 175.91500}
+@innovus 25> gui_select -toggle -point {139.30250 175.93700}
+@innovus 26> gui_select -toggle -point {140.14100 175.76050}
+@innovus 27> gui_select -toggle -point {151.30250 175.98150}
+@innovus 28> gui_select -toggle -point {152.09650 176.02550}
+@innovus 29> gui_select -toggle -point {163.49050 176.00350}
+@innovus 30> gui_select -toggle -point {164.19650 175.87100}
+@innovus 31> gui_select -toggle -point {175.53450 175.98150}
+@innovus 32> gui_select -toggle -point {176.13000 175.98150}
+@innovus 33> gui_select -toggle -point {187.54800 175.84900}
+@innovus 34> gui_select -toggle -point {188.16550 175.98150}
+@innovus 35> gui_select -toggle -point {199.41550 175.89300}
+@innovus 36> gui_select -toggle -point {200.07700 175.89300}
+@innovus 37> delete_selected_from_floorplan 
+@innovus 38> source ../scripts/cts.tcl 
+**ERROR: (IMPSYC-3602):	Command 'create_route_type' failed because NONDEFAULTRULE 'NDR_clock' specified with option '-non_default_rule' does not exist. Re-run the command with a valid NONDEFAULTRULE.
+
+
+@innovus 39> source ../scripts/cts.tcl 
+Creating clock tree spec for modes (timing configs): functional_wcl_typical
+cts_spec_config_create_generator_skew_groups=true: create_clock_tree_spec will generate skew groups with a name prefix of "_clock_gen" to balance clock generator connected flops with the clock generator they drive.
+Reset timing graph...
+Ignoring AAE DB Resetting ...
+Reset timing graph done.
+Ignoring AAE DB Resetting ...
+Multithreaded Timing Analysis is initialized with 8 threads
+
+Analyzing clock structure...
+Analyzing clock structure done.
+Reset timing graph...
+Ignoring AAE DB Resetting ...
+Reset timing graph done.
+Extracting original clock gating for clk...
+  clock_tree clk contains 3606 sinks and 0 clock gates.
+Extracting original clock gating for clk done.
+The skew group clk/functional_wcl_typical was created. It contains 3606 sinks and 1 sources.
+Checking clock tree convergence...
+Checking clock tree convergence done.
+#% Begin ccopt_design (date=01/11 21:07:00, mem=2015.3M)
+% Begin ccopt_design (date=01/11 21:07:00, mem=2015.3M)
+*** ccopt_design #1 [begin] : totSession cpu/real = 0:13:23.6/1:27:58.6 (0.2), mem = 2169.7M
+Runtime...
+**INFO: User's settings:
+delaycal_enable_high_fanout                                    true
+delaycal_eng_enablepreplacedflow                               false
+delaycal_ignore_net_load                                       false
+delaycal_socv_accuracy_mode                                    low
+delaycal_socv_use_lvf_tables                                   all
+setDelayCalMode -engine                                        aae
+design_bottom_routing_layer                                    M2
+design_power_effort                                            none
+extract_rc_engine                                              pre_route
+extract_rc_pre_place_cap_scale_factor                          2.7051
+extract_rc_pre_place_fanout_penalty                            0.0
+extract_rc_pre_place_fanout_threshold                          10
+extract_rc_pre_place_res_scale_factor                          0.3976
+extract_rc_pre_place_site_size                                 1.04
+extract_rc_pre_place_wire_length_slope                         1.6312
+extract_rc_pre_place_wire_length_y0                            0.9673
+extract_rc_shrink_factor                                       0.9
+opt_drv                                                        true
+opt_drv_margin                                                 0.0
+opt_leakage_to_dynamic_ratio                                   1.0
+opt_multi_bit_flop_opt                                         false
+opt_preserve_all_sequential                                    true
+opt_setup_target_slack                                         0.0
+opt_skew                                                       true
+opt_skew_pre_cts                                               true
+opt_spatial_power_driven                                       false
+opt_view_pruning_hold_views_active_list                        { view_wcl_slow view_wcl_fast view_wcl_typical }
+opt_view_pruning_placement_setup_view_list                     { view_wcl_slow  }
+opt_view_pruning_setup_views_active_list                       { view_wcl_slow view_wcl_fast view_wcl_typical }
+opt_view_pruning_setup_views_persistent_list                   { view_wcl_slow}
+opt_view_pruning_tdgr_setup_views_persistent_list              { view_wcl_slow}
+place_global_cong_effort                                       auto
+place_global_ignore_scan                                       false
+route_detail_use_multi_cut_via_effort                          high
+route_exp_design_mode_bottom_routing_layer                     2
+route_extract_third_party_compatible                           false
+route_global_exp_timing_driven_std_delay                       5.1
+setActiveLogicViewMode -keepHighFanoutCriticalInsts            false
+getDelayCalMode -engine                                        aae
+(ccopt_design): CTS Engine: auto. Used Spec: pre-existing CCOPT spec.
+Placement constraints of type 'region' or 'fence' will not be downgraded to 'guide' because the attribute cts_change_fences_to_guides has been set to false.
+Set place::cacheFPlanSiteMark to 1
+'setDesignMode -flowEffort standard' => 'setOptMode -usefulSkewCCOpt standard' 
+Using CCOpt effort standard.
+Updating ideal nets and annotations...
+Reset timing graph...
+Ignoring AAE DB Resetting ...
+Reset timing graph done.
+Ignoring AAE DB Resetting ...
+Reset timing graph...
+Ignoring AAE DB Resetting ...
+Reset timing graph done.
+Clock tree spec update: Ideal nets, transition and delay annotations were updated to match active timing constraints.
+Updating ideal nets and annotations done. (took cpu=0:00:02.7 real=0:00:02.4)
+CCOpt::Phase::Initialization...
+Check Prerequisites...
+Leaving CCOpt scope - CheckPlace...
+Begin checking placement ... (start mem=2203.6M, init mem=2255.1M)
+Overlapping with other instance:	3955
+Orientation Violation:	5
+*info: Placed = 21976          (Fixed = 400)
+*info: Unplaced = 0           
+Placement Density:61.97%(23033/37170)
+Placement Density (including fixed std cells):62.12%(23184/37321)
+Finished check_place (total: cpu=0:00:01.6, real=0:00:01.0; vio checks: cpu=0:00:00.6, real=0:00:00.0; mem=2263.1M)
+**WARN: (IMPCCOPT-2030):	Found placement violations. Run check_place for more details.
+Leaving CCOpt scope - CheckPlace done. (took cpu=0:00:01.6 real=0:00:01.2)
+Innovus will update I/O latencies
+Found 0 ideal nets, 0 pins with transition annotations, 0 instances with delay annotations, 0 nets with delay annotations, refer to logv for details.
+
+Check Prerequisites done. (took cpu=0:00:01.6 real=0:00:01.2)
+UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   Check Prerequisites
+CCOpt::Phase::Initialization done. (took cpu=0:00:01.7 real=0:00:01.3)
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   CCOpt::Phase::Initialization
+Executing ccopt post-processing.
+Synthesizing clock trees with CCOpt...
+*** CTS #1 [begin] (ccopt_design #1) : totSession cpu/real = 0:13:28.3/1:28:02.5 (0.2), mem = 2263.1M
+CCOpt::Phase::PreparingToBalance...
+Leaving CCOpt scope - Initializing power interface...
+Leaving CCOpt scope - Initializing power interface done. (took cpu=0:00:00.0 real=0:00:00.0)
+Found 0 advancing pin insertion delay (0.000% of 3606 clock tree sinks)
+Found 0 delaying pin insertion delay (0.000% of 3606 clock tree sinks)
+Leaving CCOpt scope - optDesignGlobalRouteStep...
+[NR-eGR] Started Early Global Route kernel ( Curr Mem: 2235.75 MB )
+[NR-eGR] Track table information for default rule: 
+[NR-eGR] M1 has single uniform track structure
+[NR-eGR] M2 has single uniform track structure
+[NR-eGR] M3 has single uniform track structure
+[NR-eGR] M4 has single uniform track structure
+[NR-eGR] M5 has single uniform track structure
+[NR-eGR] M6 has single uniform track structure
+[NR-eGR] M7 has single uniform track structure
+[NR-eGR] M8 has single uniform track structure
+[NR-eGR] M9 has single uniform track structure
+[NR-eGR] AP has single uniform track structure
+[NR-eGR] Read 1017 PG shapes
+[NR-eGR] Read 0 clock shapes
+[NR-eGR] Read 0 other shapes
+[NR-eGR] #Routing Blockages  : 0
+[NR-eGR] #Instance Blockages : 70326
+[NR-eGR] #PG Blockages       : 1017
+[NR-eGR] #Halo Blockages     : 0
+[NR-eGR] #Boundary Blockages : 0
+[NR-eGR] #Clock Blockages    : 0
+[NR-eGR] #Other Blockages    : 0
+[NR-eGR] Num Prerouted Nets = 0  Num Prerouted Wires = 0
+[NR-eGR] Read 22171 nets ( ignored 0 )
+[NR-eGR] There are 1 clock nets ( 0 with NDR ).
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id: 0  Nets: 22171
+[NR-eGR] ========================================
+[NR-eGR] 
+[NR-eGR] Layer group 1: route 22171 net(s) in layer range [2, 10]
+[NR-eGR] Early Global Route overflow of layer group 1: 0.00% H + 0.00% V. EstWL: 1.585089e+05um
+[NR-eGR] Congestion Analysis By layer: (blocked Gcells are excluded) 
+[NR-eGR]                        OverCon           OverCon           OverCon           OverCon            
+[NR-eGR]                         #Gcell            #Gcell            #Gcell            #Gcell     %Gcell
+[NR-eGR]        Layer             (1-4)             (5-8)            (9-12)           (13-16)    OverCon
+[NR-eGR] -------------------------------------------------------------------------------------------------
+[NR-eGR]      M1 ( 1)         0( 0.00%)         0( 0.00%)         0( 0.00%)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]      M2 ( 2)       187( 0.40%)        29( 0.06%)        19( 0.04%)         3( 0.01%)   ( 0.50%) 
+[NR-eGR]      M3 ( 3)         1( 0.00%)         0( 0.00%)         0( 0.00%)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]      M4 ( 4)         0( 0.00%)         0( 0.00%)         0( 0.00%)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]      M5 ( 5)         0( 0.00%)         0( 0.00%)         0( 0.00%)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]      M6 ( 6)         0( 0.00%)         0( 0.00%)         0( 0.00%)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]      M7 ( 7)         0( 0.00%)         0( 0.00%)         0( 0.00%)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]      M8 ( 8)         0( 0.00%)         0( 0.00%)         0( 0.00%)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]      M9 ( 9)         0( 0.00%)         0( 0.00%)         0( 0.00%)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]      AP (10)         0( 0.00%)         0( 0.00%)         0( 0.00%)         0( 0.00%)   ( 0.00%) 
+[NR-eGR] -------------------------------------------------------------------------------------------------
+[NR-eGR]        Total       188( 0.05%)        29( 0.01%)        19( 0.00%)         3( 0.00%)   ( 0.06%) 
+[NR-eGR] 
+[NR-eGR] Overflow after Early Global Route 0.00% H + 0.00% V
+[NR-eGR] Total eGR-routed clock nets wire length: 7220um, number of vias: 7979
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR]             Length (um)    Vias 
+[NR-eGR] --------------------------------
+[NR-eGR]  M1  (1V)             0   59941 
+[NR-eGR]  M2  (2H)         56225  113679 
+[NR-eGR]  M3  (3V)         76676    9604 
+[NR-eGR]  M4  (4H)         28082     991 
+[NR-eGR]  M5  (5V)          4923     134 
+[NR-eGR]  M6  (6H)           299       0 
+[NR-eGR]  M7  (7V)             0       0 
+[NR-eGR]  M8  (8H)             0       0 
+[NR-eGR]  M9  (9V)             0       0 
+[NR-eGR]  AP  (10H)            0       0 
+[NR-eGR] --------------------------------
+[NR-eGR]      Total       166204  184349 
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total half perimeter of net bounding box: 139707um
+[NR-eGR] Total length: 166204um, number of vias: 184349
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Finished Early Global Route kernel ( CPU: 2.60 sec, Real: 1.02 sec, Curr Mem: 2275.97 MB )
+Leaving CCOpt scope - optDesignGlobalRouteStep done. (took cpu=0:00:02.7 real=0:00:01.1)
+Legalization setup...
+Using cell based legalization.
+Initializing placement interface...
+  Use check_library -place or consult logv if problems occur.
+  Leaving CCOpt scope - Initializing placement interface...
+Estimated cell power/ground rail width = 0.154 um
+  Leaving CCOpt scope - Initializing placement interface done. (took cpu=0:00:00.5 real=0:00:00.4)
+Initializing placement interface done.
+Leaving CCOpt scope - Cleaning up placement interface...
+Leaving CCOpt scope - Cleaning up placement interface done. (took cpu=0:00:00.1 real=0:00:00.0)
+Leaving CCOpt scope - Initializing placement interface...
+Leaving CCOpt scope - Initializing placement interface done. (took cpu=0:00:00.3 real=0:00:00.3)
+Legalization setup done. (took cpu=0:00:01.0 real=0:00:00.8)
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   Legalization setup
+Validating CTS configuration...
+Checking module port directions...
+Checking module port directions done. (took cpu=0:00:00.0 real=0:00:00.0)
+Non-default attributes:
+  Public non-default attributes:
+    cts_buffer_cells is set for at least one object
+    cts_inverter_cells is set for at least one object
+    cts_merge_clock_gates is set for at least one object
+    cts_merge_clock_logic is set for at least one object
+    cts_route_type is set for at least one object
+    cts_target_max_transition_time is set for at least one object
+    cts_target_max_transition_time_sdc is set for at least one object
+    cts_target_skew is set for at least one object
+    cts_use_inverters is set for at least one object
+  No private non-default attributes
+Route type trimming info:
+  No route type modifications were made.
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner resistance tables ...
+**WARN: (IMPESI-3505):	set_db delaycal_eng_enablePrePlacedFlow false (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
+AAE DB initialization (MEM=2342.93 CPU=0:00:00.1 REAL=0:00:01.0) 
+siFlow : Timing analysis mode is single, using late cdB files
+Library trimming buffers in power domain auto-default and half-corner delay_corner_wcl_slow:both.late removed 0 of 4 cells
+Original list had 4 cells:
+BUF_X7P5B_A9PP140ZTL_C30 BUF_X6B_A9PP140ZTL_C30 BUF_X4B_A9PP140ZTL_C30 BUF_X2B_A9PP140ZTL_C30 
+Library trimming was not able to trim any cells:
+BUF_X7P5B_A9PP140ZTL_C30 BUF_X6B_A9PP140ZTL_C30 BUF_X4B_A9PP140ZTL_C30 BUF_X2B_A9PP140ZTL_C30 
+Library trimming inverters in power domain auto-default and half-corner delay_corner_wcl_slow:both.late removed 0 of 4 cells
+Original list had 4 cells:
+INV_X7P5B_A9PP140ZTL_C30 INV_X6B_A9PP140ZTL_C30 INV_X4B_A9PP140ZTL_C30 INV_X2B_A9PP140ZTL_C30 
+Library trimming was not able to trim any cells:
+INV_X7P5B_A9PP140ZTL_C30 INV_X6B_A9PP140ZTL_C30 INV_X4B_A9PP140ZTL_C30 INV_X2B_A9PP140ZTL_C30 
+Clock tree balancer configuration for clock_tree clk:
+Non-default attributes:
+  Public non-default attributes:
+    cts_merge_clock_gates: true (default: false)
+    cts_merge_clock_logic: true (default: false)
+    cts_route_type (leaf): default_route_type_leaf (default: default)
+    cts_route_type (top): default_route_type_nonleaf (default: default)
+    cts_route_type (trunk): default_route_type_nonleaf (default: default)
+    cts_use_inverters: true (default: auto)
+  No private non-default attributes
+For power domain auto-default:
+  Buffers:     BUF_X7P5B_A9PP140ZTL_C30 BUF_X6B_A9PP140ZTL_C30 BUF_X4B_A9PP140ZTL_C30 BUF_X2B_A9PP140ZTL_C30 
+  Inverters:   INV_X7P5B_A9PP140ZTL_C30 INV_X6B_A9PP140ZTL_C30 INV_X4B_A9PP140ZTL_C30 INV_X2B_A9PP140ZTL_C30 
+  Clock gates: PREICG_X16B_A9PP140ZTL_C30 PREICG_X13B_A9PP140ZTL_C30 PREICG_X11B_A9PP140ZTL_C30 PREICG_X9B_A9PP140ZTL_C30 PREICG_X7P5B_A9PP140ZTL_C30 PREICG_X6B_A9PP140ZTL_C30 PREICG_X5B_A9PP140ZTL_C30 PREICG_X4B_A9PP140ZTL_C30 PREICG_X3P5B_A9PP140ZTL_C30 PREICG_X3B_A9PP140ZTL_C30 PREICG_X2P5B_A9PP140ZTL_C30 PREICG_X2B_A9PP140ZTL_C30 PREICG_X1P7B_A9PP140ZTL_C30 PREICG_X1P4B_A9PP140ZTL_C30 PREICG_X1P2B_A9PP140ZTL_C30 PREICG_X1B_A9PP140ZTL_C30 PREICG_X0P8B_A9PP140ZTL_C30 PREICG_X0P7B_A9PP140ZTL_C30 PREICG_X0P6B_A9PP140ZTL_C30 PREICG_X0P5B_A9PP140ZTL_C30 
+  Unblocked area available for placement of any clock cells in power_domain auto-default: 37170.000um^2
+Top Routing info:
+  Route-type name: default_route_type_nonleaf; Top/bottom preferred layer name: M4/M3; 
+  Unshielded; Mask Constraint: 0; Source: cts_route_type.
+Trunk Routing info:
+  Route-type name: default_route_type_nonleaf; Top/bottom preferred layer name: M4/M3; 
+  Unshielded; Preferred extra space: 1; Mask Constraint: 0; Source: cts_route_type.
+Leaf Routing info:
+  Route-type name: default_route_type_leaf; Top/bottom preferred layer name: M4/M3; 
+  Unshielded; Preferred extra space: 1; Mask Constraint: 0; Source: cts_route_type.
+For timing_corner delay_corner_wcl_slow:both, late and power domain auto-default:
+  Slew time target (leaf):    0.015ns (Too low; min: 0.022ns)
+  Slew time target (trunk):   0.022ns
+  Slew time target (top):     0.025ns (Note: no nets are considered top nets in this clock tree)
+  Buffer unit delay: 0.018ns
+  Buffer max distance: 54.667um
+Fastest wire driving cells and distances:
+  Buffer    : {lib_cell:BUF_X7P5B_A9PP140ZTL_C30, fastest_considered_half_corner=delay_corner_wcl_slow:both.late, optimalDrivingDistance=80.000um, saturatedSlew=0.020ns, speed=3125.000um per ns, cellArea=18.900um^2 per 1000um}
+  Inverter  : {lib_cell:INV_X7P5B_A9PP140ZTL_C30, fastest_considered_half_corner=delay_corner_wcl_slow:both.late, optimalDrivingDistance=54.667um, saturatedSlew=0.019ns, speed=3904.785um per ns, cellArea=20.744um^2 per 1000um}
+  Clock gate: {lib_cell:PREICG_X16B_A9PP140ZTL_C30, fastest_considered_half_corner=delay_corner_wcl_slow:both.late, optimalDrivingDistance=97.021um, saturatedSlew=0.020ns, speed=3489.964um per ns, cellArea=53.246um^2 per 1000um}
+
+**ERROR: (IMPCCOPT-1013):	The cts_target_max_transition_time is too low for at least one clock tree, net type and timing corner. Search the log for the string 'Too low;' to find the minimum acceptable targets for each combination. CTS will now terminate.
+Type 'man IMPCCOPT-1013' for more detail.
+
+Logic Sizing Table:
+
+----------------------------------------------------------
+Cell    Instance count    Source    Eligible library cells
+----------------------------------------------------------
+  (empty table)
+----------------------------------------------------------
+
+
+Clock tree balancer configuration for skew_group clk/functional_wcl_typical:
+ Created from constraint modes: {[]}
+  Sources:                     pin clk
+  Total number of sinks:       3606
+  Delay constrained sinks:     3606
+  Constrains:                  default
+  Non-leaf sinks:              0
+  Ignore pins:                 0
+ Timing corner delay_corner_wcl_slow:both.late:
+  Skew target:                 0.010ns
+Primary reporting skew groups are:
+skew_group clk/functional_wcl_typical with 3606 clock sinks
+
+
+Constraint summary
+==================
+
+Transition constraints are active in the following delay corners:
+
+delay_corner_wcl_slow:both.late
+
+Cap constraints are active in the following delay corners:
+
+delay_corner_wcl_slow:both.late
+
+Transition constraint summary:
+
+------------------------------------------------------------------------------------------------------
+Delay corner                                 Target (ns)    Num pins    Target source    Clock tree(s)
+------------------------------------------------------------------------------------------------------
+delay_corner_wcl_slow:both.late (primary)         -            -              -                -
+                    -                           0.015         3607      explicit         all
+                    -                           0.022            1      explicit         all
+------------------------------------------------------------------------------------------------------
+
+Capacitance constraint summary:
+
+-----------------------------------------------------------------------------------------------------------------
+Delay corner                                 Limit (pF)    Num nets    Target source                Clock tree(s)
+-----------------------------------------------------------------------------------------------------------------
+delay_corner_wcl_slow:both.late (primary)        -            -                    -                      -
+                    -                          0.092          1        library_or_sdc_constraint    all
+-----------------------------------------------------------------------------------------------------------------
+
+
+Clock DAG stats initial state:
+  cell counts      : b=0, i=0, icg=0, dcg=0, l=0, total=0
+  sink counts      : regular=3606, enable_latch=0, load_capacitance=0, antenna=0, node_sink=0, total=3606
+  misc counts      : r=1, pp=0, mci=0
+  cell areas       : b=0.000um^2, i=0.000um^2, icg=0.000um^2, dcg=0.000um^2, l=0.000um^2, total=0.000um^2
+  hp wire lengths  : top=0.000um, trunk=0.000um, leaf=0.000um, total=0.000um
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   InitialState
+Have 8 CPUs available for CTS. Selected algorithms will run multithreaded.
+No ideal or dont_touch nets found in the clock tree
+No dont_touch hnets found in the clock tree
+No dont_touch hpins found in the clock network.
+Checking for illegal sizes of clock logic instances...
+Checking for illegal sizes of clock logic instances done. (took cpu=0:00:00.0 real=0:00:00.0)
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   Checking for illegal sizes of clock logic instances
+Validating CTS configuration done. (took cpu=0:00:06.7 real=0:00:07.8)
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   Validating CTS configuration
+
+CCOpt configuration status: cannot run ccopt_design.
+Check the log for details of problem(s) found:
+
+---------------------------------------------------
+Design configuration problems
+---------------------------------------------------
+One or more clock trees have configuration problems
+---------------------------------------------------
+
+Clock tree configuration problems:
+
+------------------------------------------------------
+Clock tree    Problem
+------------------------------------------------------
+clk           The maximum transition target is too low
+------------------------------------------------------
+
+
+CCOpt::Phase::PreparingToBalance done. (took cpu=0:00:10.7 real=0:00:09.9)
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   CCOpt::Phase::PreparingToBalance
+Runtime done. (took cpu=0:00:15.4 real=0:00:13.9)
+Runtime Summary
+===============
+Clock Runtime:  (83%) Core CTS          11.30 (Init 11.30, Construction 0.00, Implementation 0.00, eGRPC 0.00, PostConditioning 0.00, Other 0.00)
+Clock Runtime:   (0%) CTS services       0.00 (RefinePlace 0.00, EarlyGlobalClock 0.00, NanoRoute 0.00, ExtractRC 0.00, TimingAnalysis 0.00)
+Clock Runtime:  (16%) Other CTS          2.24 (Init 2.24, CongRepair/EGR-DP 0.00, TimingUpdate 0.00, Other 0.00)
+Clock Runtime: (100%) Total             13.53
+
+Leaving CCOpt scope - Cleaning up placement interface...
+Leaving CCOpt scope - Cleaning up placement interface done. (took cpu=0:00:00.2 real=0:00:00.1)
+**ERROR: 3
+*** CTS #1 [finish] (ccopt_design #1) : cpu/real = 0:00:11.0/0:00:10.1 (1.1), totSession cpu/real = 0:13:39.3/1:28:12.7 (0.2), mem = 2533.4M
+**ERROR: (IMPCCOPT-2196):	Cannot run ccopt_design because the command prerequisites were not met. Review the previous error messages for more details about the failure.
+Set place::cacheFPlanSiteMark to 0
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPESI-3505          1  set_db delaycal_eng_%s (default=%s) will...
+ERROR     IMPCCOPT-2196        1  Cannot run ccopt_design because the comm...
+WARNING   IMPCCOPT-2030        1  Found placement violations. Run check_pl...
+ERROR     IMPCCOPT-1013        1  The cts_target_max_transition_time is to...
+*** Message Summary: 2 warning(s), 2 error(s)
+
+*** ccopt_design #1 [finish] : cpu/real = 0:00:15.7/0:00:14.1 (1.1), totSession cpu/real = 0:13:39.3/1:28:12.7 (0.2), mem = 2457.4M
+% End ccopt_design (date=01/11 21:07:14, total cpu=0:00:15.8, real=0:00:14.0, peak res=2207.3M, current mem=2134.8M)
+#% End ccopt_design (date=01/11 21:07:14, total cpu=0:00:15.9, real=0:00:14.0, peak res=2207.3M, current mem=2134.8M)
+
+
+@innovus 40> exit
+
+*** Memory Usage v#1 (Current mem = 2459.789M, initial mem = 511.469M) ***
+*** Message Summary: 67 warning(s), 3 error(s)
+
+--- Ending "Innovus" (totcpu=0:19:03, real=2:10:28, mem=2459.8M) ---

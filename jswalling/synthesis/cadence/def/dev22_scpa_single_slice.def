@@ -1,0 +1,25 @@
+VERSION 5.8 ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+
+DESIGN test_def ;
+
+UNITS DISTANCE MICRONS 1000 ;
+PROPERTYDEFINITIONS
+  DESIGN lastSavedExtractCounter INTEGER 4277 ;
+END PROPERTYDEFINITIONS
+
+DIEAREA ( -90610 114420 ) ( 116040 261985 ) ;
+
+COMPONENTS 8 ;
+- I3 dev22_scpa_single_slice_quarter ;
+- I0 dev22_scpa_single_slice_quarter ;
+- I4 dev22_scpa_single_slice_supply_grid_v2 ;
+- I1 dev22_scpa_single_slice_quarter ;
+- I2 dev22_scpa_single_slice_quarter ;
+- I11 dev22_scpa_single_slice_supply_grid_v2 ;
+- I12 dev22_scpa_single_slice_supply_grid_v2 ;
+- I5 dev22_scpa_I_Q_routing ;
+END COMPONENTS
+
+END DESIGN

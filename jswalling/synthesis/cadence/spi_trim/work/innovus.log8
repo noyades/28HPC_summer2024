@@ -1,0 +1,1040 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v21.12-s106_1, built Wed Dec 8 18:19:02 PST 2021
+Options:	
+Date:		Wed May  8 15:59:25 2024
+Host:		cluster12 (x86_64 w/Linux 3.10.0-1160.102.1.el7.x86_64) (6cores*24cpus*Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz 15360KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		[15:59:25.150489] Configured Lic search path (20.02-s004): 27002@license.ece.vt.edu
+
+		invs	Innovus Implementation System	21.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+The soft stacksize limit is either up to the hard limit or larger than 0.2% of RAM. No change is needed.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> is_common_ui_mode
+<CMD> restoreDesign /home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/work/topPLLDigital_genus_22.enc.dat topPLLDigital
+#% Begin load design ... (date=05/08 16:31:43, mem=654.1M)
+Set Default Input Pin Transition as 0.1 ps.
+**WARN: (IMPUDM-33):	Global variable "timing_enable_separate_device_slew_effect_sensitivities" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+**WARN: (IMPUDM-33):	Global variable "timing_enable_separate_device_slew_effect_sensitivities" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+**WARN: (IMPUDM-33):	Global variable "timing_enable_separate_device_slew_effect_sensitivities" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+Set Default Input Pin Transition as 0.1 ps.
+Loading design 'topPLLDigital' saved by 'Innovus' '21.12-s106_1' on 'Wed May 8 12:31:00 2024'.
+% Begin Load MMMC data ... (date=05/08 16:31:44, mem=657.7M)
+% End Load MMMC data ... (date=05/08 16:31:44, total cpu=0:00:00.0, real=0:00:00.0, peak res=658.4M, current mem=658.4M)
+timing_cond_wcl_typical timing_cond_wcl_slow timing_cond_wcl_fast
+worst best typical
+
+Loading LEF file /home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/work/topPLLDigital_genus_22.enc.dat/libs/lef/gf22nsdvlogl28edl116a_9M_2Mx_5Cx_1Jx_1Ox_LB.lef ...
+
+Loading LEF file /home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/work/topPLLDigital_genus_22.enc.dat/libs/lef/gf22nsdvlogl28edl116a.lef ...
+Set DBUPerIGU to M2 pitch 116.
+[16:31:44.472674] Periodic Lic check successful
+[16:31:44.472723] Feature usage summary:
+[16:31:44.472723] Innovus_Impl_System
+[16:31:44.472723] Innovus_20nm_Opt
+
+This command "restoreDesign /home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/work/topPLLDigital_genus_22.enc.dat ..." required an extra checkout of license invs_20nm.
+Additional license(s) checked out: 1 'Innovus_20nm_Opt' license(s)
+**WARN: (IMPLF-200):	Pin 'X' in macro 'UDBSLT28_TIEDIN_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'X' in macro 'UDBSLT28_TIE1_V1_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'X' in macro 'UDBSLT28_TIE1_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'X' in macro 'UDBSLT28_TIE0_V1_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'X' in macro 'UDBSLT28_TIE0_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC3RBSBMSFQ_2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC3RBSBMSFQ_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC3MSFQNS_2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC3MSFQNS_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC3MSFQ_2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC3MSFQ_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC2SBMSFQ_2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC2SBMSFQ_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC2RBSBMSFQ_2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC2RBSBMSFQ_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC2RBMSFQ_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC2MSFQNS_2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC2MSFQNS_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC2MSFQ_2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC2MSFQ_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Z' in macro 'UDBSLT28_RAD8BOOTHMUX_2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-201) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPLF-200):	Pin 'X' in macro 'UDBSLT28_CLAMP_Y6_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+
+viaInitial starts at Wed May  8 16:31:45 2024
+viaInitial ends at Wed May  8 16:31:45 2024
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from /home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/work/topPLLDigital_genus_22.enc.dat/viewDefinition.tcl
+Reading wcl_slow timing library '/software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/6.01a/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'UDBSLT28_TIEDIN_1'. The cell will only be used for analysis. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/6.01a/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'UDBSLT28_CAPTOUCR9M1_8'. The cell will only be used for analysis. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/6.01a/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'UDBSLT28_CAPTOUCR9M1_6'. The cell will only be used for analysis. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/6.01a/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'UDBSLT28_CAPTOUCR9M1_4'. The cell will only be used for analysis. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/6.01a/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'UDBSLT28_CAPTOUCR9M1_2'. The cell will only be used for analysis. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/6.01a/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'UDBSLT28_CAPTOUCR9M1_1'. The cell will only be used for analysis. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/6.01a/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'UDBSLT28_CAPTOUCL9M1_8'. The cell will only be used for analysis. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/6.01a/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'UDBSLT28_CAPTOUCL9M1_6'. The cell will only be used for analysis. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/6.01a/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'UDBSLT28_CAPTOUCL9M1_4'. The cell will only be used for analysis. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/6.01a/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'UDBSLT28_CAPTOUCL9M1_2'. The cell will only be used for analysis. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/6.01a/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'UDBSLT28_CAPTOUCL9M1_1'. The cell will only be used for analysis. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/6.01a/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'UDBSLT28_CAPTM1_1'. The cell will only be used for analysis. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/6.01a/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'UDBSLT28_CAPBOUCR9M1_8'. The cell will only be used for analysis. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/6.01a/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'UDBSLT28_CAPBOUCR9M1_6'. The cell will only be used for analysis. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/6.01a/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'UDBSLT28_CAPBOUCR9M1_4'. The cell will only be used for analysis. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/6.01a/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'UDBSLT28_CAPBOUCR9M1_2'. The cell will only be used for analysis. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/6.01a/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'UDBSLT28_CAPBOUCR9M1_1'. The cell will only be used for analysis. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/6.01a/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'UDBSLT28_CAPBOUCL9M1_8'. The cell will only be used for analysis. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/6.01a/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'UDBSLT28_CAPBOUCL9M1_6'. The cell will only be used for analysis. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/6.01a/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'UDBSLT28_CAPBOUCL9M1_4'. The cell will only be used for analysis. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/6.01a/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib)
+Message <TECHLIB-302> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+Read 1436 cells in library 'gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C' 
+*** End library_loading (cpu=0.84min, real=0.83min, mem=292.1M, fe_cpu=4.66min, fe_real=33.17min, fe_mem=1093.9M) ***
+% Begin Load netlist data ... (date=05/08 16:32:35, mem=874.4M)
+*** Begin netlist parsing (mem=1093.9M) ***
+Created 1436 new cells from 1 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilogBinary netlist '/home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/work/topPLLDigital_genus_22.enc.dat/topPLLDigital.v.bin'
+
+*** Memory Usage v#1 (Current mem = 1099.879M, initial mem = 295.352M) ***
+*** End netlist parsing (cpu=0:00:00.1, real=0:00:00.0, mem=1099.9M) ***
+% End Load netlist data ... (date=05/08 16:32:35, total cpu=0:00:00.1, real=0:00:00.0, peak res=909.0M, current mem=909.0M)
+Top level cell is topPLLDigital.
+**WARN: (IMPTS-282):	Cell 'UDBSLT28_CLAMPB_Y6_1' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+Hooked 1436 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell topPLLDigital ...
+*** Netlist is unique.
+** info: there are 1441 modules.
+** info: there are 1765 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 1193.348M, initial mem = 295.352M) ***
+*info: set bottom ioPad orient R0
+
+Honor LEF defined pitches for advanced node
+Start create_tracks
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+Loading preference file /home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/work/topPLLDigital_genus_22.enc.dat/gui.pref.tcl ...
+**WARN: (IMPOPT-3602):	The specified path group name reg2reg is not defined.
+Type 'man IMPOPT-3602' for more detail.
+Effort level <high> specified for reg2reg path_group
+#WARNING (NRIF-90) Option setNanoRouteMode -routeBottomRoutingLayer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -bottomRoutingLayer instead.
+#WARNING (NRIF-91) Option setNanoRouteMode -routeTopRoutingLayer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -topRoutingLayer instead.
+Change floorplan default-technical-site to 'GF22_DST'.
+
+Loading LEF file /home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/work/topPLLDigital_genus_22.enc.dat/topPLLDigital.lef.info.gz ...
+*Info: initialize multi-corner CTS.
+Reading wcl_fast timing library '/software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/6.01a/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_FFG_0P88V_0P00V_0P00V_0P00V_M40C.lib' ...
+**WARN: (IMPTS-282):	Cell 'UDBSLT28_CLAMPB_Y6_1' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+Read 1436 cells in library 'gf22nsdvlogl28edl116a_FFG_0P88V_0P00V_0P00V_0P00V_M40C' 
+Reading wcl_typical timing library '/software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/6.01a/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_TT_0P80V_0P00V_0P00V_0P00V_25C.lib' ...
+**WARN: (IMPTS-282):	Cell 'UDBSLT28_CLAMPB_Y6_1' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+Read 1436 cells in library 'gf22nsdvlogl28edl116a_TT_0P80V_0P00V_0P00V_0P00V_25C' 
+Total number of combinational cells: 1022
+Total number of sequential cells: 414
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: UDBSLT28_BUF_1 UDBSLT28_BUF_10 UDBSLT28_BUF_12 UDBSLT28_BUF_12P5 UDBSLT28_BUF_16 UDBSLT28_BUF_16P5 UDBSLT28_BUF_1P5 UDBSLT28_BUF_2 UDBSLT28_BUF_1P75 UDBSLT28_BUF_20 UDBSLT28_BUF_24 UDBSLT28_BUF_2P75 UDBSLT28_BUF_3 UDBSLT28_BUF_32 UDBSLT28_BUF_3P5 UDBSLT28_BUF_4 UDBSLT28_BUF_3P75 UDBSLT28_BUF_5P5 UDBSLT28_BUF_5 UDBSLT28_BUF_6 UDBSLT28_BUF_6P5 UDBSLT28_BUF_S_1 UDBSLT28_BUF_7P5 UDBSLT28_BUF_8 UDBSLT28_BUF_S_10 UDBSLT28_BUF_S_12 UDBSLT28_BUF_S_16 UDBSLT28_BUF_S_2 UDBSLT28_BUF_S_1P5 UDBSLT28_BUF_S_20 UDBSLT28_BUF_S_24 UDBSLT28_BUF_S_3 UDBSLT28_BUF_S_2P5 UDBSLT28_BUF_S_32 UDBSLT28_BUF_S_4 UDBSLT28_BUF_S_5 UDBSLT28_BUF_S_6 UDBSLT28_BUF_9 UDBSLT28_BUF_S_8 UDBSLT28_BUF_D_16 UDBSLT28_BUF_D_32 UDBSLT28_BUF_D_4 UDBSLT28_BUF_D_8 UDBSLT28_BUF_ECOCT_1 UDBSLT28_BUF_ECOCT_2 UDBSLT28_BUF_ECOCT_4 UDBSLT28_BUF_L_1 UDBSLT28_BUF_MN_8 UDBSLT28_BUF_M_3 UDBSLT28_BUF_M_2 UDBSLT28_BUF_M_4 UDBSLT28_BUF_M_6
+Total number of usable buffers: 52
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: UDBSLT28_INV_1 UDBSLT28_INV_10 UDBSLT28_INV_12 UDBSLT28_INV_15 UDBSLT28_INV_16 UDBSLT28_INV_18 UDBSLT28_INV_2 UDBSLT28_INV_1P5 UDBSLT28_INV_3 UDBSLT28_INV_20 UDBSLT28_INV_24 UDBSLT28_INV_32 UDBSLT28_INV_S_1 UDBSLT28_INV_4 UDBSLT28_INV_5 UDBSLT28_INV_6 UDBSLT28_INV_8 UDBSLT28_INV_9 UDBSLT28_INV_S_10 UDBSLT28_INV_S_12 UDBSLT28_INV_S_16 UDBSLT28_INV_S_1P25 UDBSLT28_INV_S_2 UDBSLT28_INV_S_1P5 UDBSLT28_INV_S_20 UDBSLT28_INV_S_24 UDBSLT28_INV_S_3 UDBSLT28_INV_S_2P5 UDBSLT28_INV_S_32 UDBSLT28_INV_S_4 UDBSLT28_INV_S_5 UDBSLT28_INV_S_6 UDBSLT28_INV_S_7 UDBSLT28_INV_S_8 UDBSLT28_INV_S_9 UDBSLT28_INV_0P75 UDBSLT28_INV_ECOCT_1 UDBSLT28_INV_S_0P75 UDBSLT28_INV_ECOCT_2 UDBSLT28_INV_ECOCT_4
+Total number of usable inverters: 40
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: UDBSLT28_DEL_L10D250_2 UDBSLT28_DEL_L10D250_1 UDBSLT28_DEL_L10D250_4 UDBSLT28_DEL_L10D250_8 UDBSLT28_DEL_L10D300_2 UDBSLT28_DEL_L10D300_1 UDBSLT28_DEL_L10D300_4 UDBSLT28_DEL_L10D300_8 UDBSLT28_DEL_L14D500_2 UDBSLT28_DEL_L14D500_1 UDBSLT28_DEL_L14D500_4 UDBSLT28_DEL_L14D500_8 UDBSLT28_DEL_L22D1000_2 UDBSLT28_DEL_L22D1000_1 UDBSLT28_DEL_L22D1000_4 UDBSLT28_DEL_L22D1000_8 UDBSLT28_DEL_L4D50_2 UDBSLT28_DEL_L4D50_1 UDBSLT28_DEL_L4D50_4 UDBSLT28_DEL_L4D50_8 UDBSLT28_DEL_L4D75_2 UDBSLT28_DEL_L4D75_1 UDBSLT28_DEL_L4D75_4 UDBSLT28_DEL_L4D75_8 UDBSLT28_DEL_L6D100_2 UDBSLT28_DEL_L6D100_1 UDBSLT28_DEL_L6D100_4 UDBSLT28_DEL_L6D100_8 UDBSLT28_DEL_L6D125_2 UDBSLT28_DEL_L6D125_1 UDBSLT28_DEL_L6D125_4 UDBSLT28_DEL_L6D125_8 UDBSLT28_DEL_L6D150_2 UDBSLT28_DEL_L6D150_1 UDBSLT28_DEL_L6D150_4 UDBSLT28_DEL_L6D150_8 UDBSLT28_DEL_L8D175_2 UDBSLT28_DEL_L8D175_1 UDBSLT28_DEL_L8D175_4 UDBSLT28_DEL_L8D175_8 UDBSLT28_DEL_L8D200_2 UDBSLT28_DEL_L8D200_1 UDBSLT28_DEL_L8D200_4 UDBSLT28_DEL_L8D200_8
+Total number of identified usable delay cells: 44
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+view_wcl_slow view_wcl_typical view_wcl_fast
+Reading floorplan file - /home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/work/topPLLDigital_genus_22.enc.dat/topPLLDigital.fp.gz (mem = 1880.1M).
+% Begin Load floorplan data ... (date=05/08 16:34:25, mem=1834.1M)
+*info: reset 1968 existing net BottomPreferredLayer and AvoidDetour
+Deleting old partition specification.
+Set FPlanBox to (0 0 299976 450880)
+
+Honor LEF defined pitches for advanced node
+Start create_tracks
+ ... processed partition successfully.
+Reading binary special route file /home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/work/topPLLDigital_genus_22.enc.dat/topPLLDigital.fp.spr.gz (Created by Innovus v21.12-s106_1 on Wed May  8 12:30:58 2024, version: 1)
+Convert 0 swires and 0 svias from compressed groups
+0 swires and 0 svias were compressed
+0 swires and 0 svias were decompressed from small or sparse groups
+Ending "Read special route file" (total cpu=0:00:00.1, real=0:00:00.0, peak res=1836.4M, current mem=1836.4M)
+There are 11 nets with weight being set
+There are 11 nets with bottomPreferredRoutingLayer being set
+There are 11 nets with avoidDetour being set
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+% End Load floorplan data ... (date=05/08 16:34:27, total cpu=0:00:00.2, real=0:00:02.0, peak res=1837.7M, current mem=1837.7M)
+Reading congestion map file /home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/work/topPLLDigital_genus_22.enc.dat/topPLLDigital.route.congmap.gz ...
+% Begin Load SymbolTable ... (date=05/08 16:34:27, mem=1837.8M)
+Un-suppress "**WARN ..." messages.
+% End Load SymbolTable ... (date=05/08 16:34:27, total cpu=0:00:00.1, real=0:00:00.0, peak res=1842.7M, current mem=1842.7M)
+Loading place ...
+% Begin Load placement data ... (date=05/08 16:34:27, mem=1842.7M)
+Reading placement file - /home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/work/topPLLDigital_genus_22.enc.dat/topPLLDigital.place.gz.
+** Reading stdCellPlacement_binary (Created by Innovus v21.12-s106_1 on Wed May  8 12:30:58 2024, version# 2) ...
+Read Views for adaptive view pruning ...
+Read 0 views from Binary DB for adaptive view pruning
+*** Completed restorePlace (cpu=0:00:00.2 real=0:00:00.0 mem=1884.1M) ***
+Total net length = 1.232e+04 (7.115e+03 5.202e+03) (ext = 1.200e+03)
+% End Load placement data ... (date=05/08 16:34:27, total cpu=0:00:00.3, real=0:00:00.0, peak res=1850.1M, current mem=1850.1M)
+% Begin Load routing data ... (date=05/08 16:34:27, mem=1850.1M)
+Reading routing file - /home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/work/topPLLDigital_genus_22.enc.dat/topPLLDigital.route.gz.
+Reading Innovus routing data (Created by Innovus v21.12-s106_1 on Wed May  8 12:30:58 2024 Format: 20.1) ...
+*** Total 1829 nets are successfully restored.
+*** Completed restoreRoute (cpu=0:00:00.1 real=0:00:01.0 mem=1881.1M) ***
+% End Load routing data ... (date=05/08 16:34:28, total cpu=0:00:00.1, real=0:00:01.0, peak res=1850.4M, current mem=1850.4M)
+TAT_INFO: restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
+Reading property file /home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/work/topPLLDigital_genus_22.enc.dat/topPLLDigital.prop
+*** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1884.1M) ***
+Reading dirtyarea snapshot file /home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/work/topPLLDigital_genus_22.enc.dat/topPLLDigital.db.da.gz (Create by Innovus v21.12-s106_1 on Wed May  8 12:30:59 2024, version: 4).
+Start generating vias ..
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Via generation completed successfully.
+Extraction setup Started 
+Initializing multi-corner RC extraction with 3 active RC Corners ...
+Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For postRoute extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+Generating auto layer map file.
+Importing multi-corner technology file(s) for preRoute extraction...
+/home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/work/topPLLDigital_genus_22.enc.dat/libs/mmmc/worst/qrcTechFile
+Generating auto layer map file.
+/home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/work/topPLLDigital_genus_22.enc.dat/libs/mmmc/best/qrcTechFile
+Generating auto layer map file.
+/home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/work/topPLLDigital_genus_22.enc.dat/libs/mmmc/typical/qrcTechFile
+Generating auto layer map file.
+Completed (cpu: 0:00:27.9 real: 0:00:40.0)
+Set Shrink Factor to 1.00000
+Summary of Active RC-Corners : 
+ 
+ Analysis View: view_wcl_slow
+    RC-Corner Name        : worst
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/work/topPLLDigital_genus_22.enc.dat/libs/mmmc/worst/qrcTechFile'
+ 
+ Analysis View: view_wcl_fast
+    RC-Corner Name        : best
+    RC-Corner Index       : 1
+    RC-Corner Temperature : -40 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/work/topPLLDigital_genus_22.enc.dat/libs/mmmc/best/qrcTechFile'
+ 
+ Analysis View: view_wcl_typical
+    RC-Corner Name        : typical
+    RC-Corner Index       : 2
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/work/topPLLDigital_genus_22.enc.dat/libs/mmmc/typical/qrcTechFile'
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner resistance tables ...
+Default value for postRoute extraction mode's effortLevel (-effortLevel option of setExtractRCMode) changed to 'medium'.
+% Begin Load power constraints ... (date=05/08 16:35:10, mem=1908.6M)
+'set_default_switching_activity' finished successfully.
+% End Load power constraints ... (date=05/08 16:35:11, total cpu=0:00:00.1, real=0:00:00.0, peak res=1915.1M, current mem=1915.1M)
+delay_corner_wcl_slow delay_corner_wcl_typical delay_corner_wcl_fast
+% Begin load AAE data ... (date=05/08 16:35:11, mem=1935.6M)
+AAE DB initialization (MEM=1947.55 CPU=0:00:00.0 REAL=0:00:00.0) 
+% End load AAE data ... (date=05/08 16:35:11, total cpu=0:00:00.8, real=0:00:00.0, peak res=1941.4M, current mem=1941.4M)
+Restoring CCOpt config...
+  Extracting original clock gating for sclk...
+    clock_tree sclk contains 38 sinks and 0 clock gates.
+  Extracting original clock gating for sclk done.
+  Extracting original clock gating for clk...
+    clock_tree clk contains 859 sinks and 0 clock gates.
+  Extracting original clock gating for clk done.
+  The skew group clk/functional_wcl_fast was created. It contains 859 sinks and 1 sources.
+  The skew group clk/functional_wcl_slow was created. It contains 859 sinks and 1 sources.
+  The skew group clk/functional_wcl_typical was created. It contains 859 sinks and 1 sources.
+  The skew group sclk/functional_wcl_fast was created. It contains 38 sinks and 1 sources.
+  The skew group sclk/functional_wcl_slow was created. It contains 38 sinks and 1 sources.
+  The skew group sclk/functional_wcl_typical was created. It contains 38 sinks and 1 sources.
+  The skew group clk/functional_wcl_fast was created. It contains 859 sinks and 1 sources.
+  The skew group sclk/functional_wcl_fast was created. It contains 38 sinks and 1 sources.
+Restoring CCOpt config done.
+Total number of combinational cells: 1022
+Total number of sequential cells: 414
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: UDBSLT28_BUF_1 UDBSLT28_BUF_10 UDBSLT28_BUF_12 UDBSLT28_BUF_12P5 UDBSLT28_BUF_16 UDBSLT28_BUF_16P5 UDBSLT28_BUF_1P5 UDBSLT28_BUF_2 UDBSLT28_BUF_1P75 UDBSLT28_BUF_20 UDBSLT28_BUF_24 UDBSLT28_BUF_2P75 UDBSLT28_BUF_3 UDBSLT28_BUF_32 UDBSLT28_BUF_3P5 UDBSLT28_BUF_4 UDBSLT28_BUF_3P75 UDBSLT28_BUF_5P5 UDBSLT28_BUF_5 UDBSLT28_BUF_6 UDBSLT28_BUF_6P5 UDBSLT28_BUF_S_1 UDBSLT28_BUF_7P5 UDBSLT28_BUF_8 UDBSLT28_BUF_S_10 UDBSLT28_BUF_S_12 UDBSLT28_BUF_S_16 UDBSLT28_BUF_S_2 UDBSLT28_BUF_S_1P5 UDBSLT28_BUF_S_20 UDBSLT28_BUF_S_24 UDBSLT28_BUF_S_3 UDBSLT28_BUF_S_2P5 UDBSLT28_BUF_S_32 UDBSLT28_BUF_S_4 UDBSLT28_BUF_S_5 UDBSLT28_BUF_S_6 UDBSLT28_BUF_9 UDBSLT28_BUF_S_8 UDBSLT28_BUF_D_16 UDBSLT28_BUF_D_32 UDBSLT28_BUF_D_4 UDBSLT28_BUF_D_8 UDBSLT28_BUF_L_1 UDBSLT28_BUF_MN_8 UDBSLT28_BUF_M_3 UDBSLT28_BUF_M_2 UDBSLT28_BUF_M_4 UDBSLT28_BUF_M_6
+Total number of usable buffers: 49
+List of unusable buffers: UDBSLT28_BUF_ECOCT_1 UDBSLT28_BUF_ECOCT_2 UDBSLT28_BUF_ECOCT_4
+Total number of unusable buffers: 3
+List of usable inverters: UDBSLT28_INV_1 UDBSLT28_INV_10 UDBSLT28_INV_12 UDBSLT28_INV_15 UDBSLT28_INV_16 UDBSLT28_INV_18 UDBSLT28_INV_2 UDBSLT28_INV_1P5 UDBSLT28_INV_3 UDBSLT28_INV_20 UDBSLT28_INV_24 UDBSLT28_INV_32 UDBSLT28_INV_S_1 UDBSLT28_INV_4 UDBSLT28_INV_5 UDBSLT28_INV_6 UDBSLT28_INV_8 UDBSLT28_INV_9 UDBSLT28_INV_S_10 UDBSLT28_INV_S_12 UDBSLT28_INV_S_16 UDBSLT28_INV_S_1P25 UDBSLT28_INV_S_2 UDBSLT28_INV_S_1P5 UDBSLT28_INV_S_20 UDBSLT28_INV_S_24 UDBSLT28_INV_S_3 UDBSLT28_INV_S_2P5 UDBSLT28_INV_S_32 UDBSLT28_INV_S_4 UDBSLT28_INV_S_5 UDBSLT28_INV_S_6 UDBSLT28_INV_S_7 UDBSLT28_INV_S_8 UDBSLT28_INV_S_9 UDBSLT28_INV_0P75 UDBSLT28_INV_S_0P75
+Total number of usable inverters: 37
+List of unusable inverters: UDBSLT28_INV_ECOCT_1 UDBSLT28_INV_ECOCT_2 UDBSLT28_INV_ECOCT_4
+Total number of unusable inverters: 3
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells: UDBSLT28_DEL_L10D250_2 UDBSLT28_DEL_L10D250_1 UDBSLT28_DEL_L10D250_4 UDBSLT28_DEL_L10D250_8 UDBSLT28_DEL_L10D300_2 UDBSLT28_DEL_L10D300_1 UDBSLT28_DEL_L10D300_4 UDBSLT28_DEL_L10D300_8 UDBSLT28_DEL_L14D500_2 UDBSLT28_DEL_L14D500_1 UDBSLT28_DEL_L14D500_4 UDBSLT28_DEL_L14D500_8 UDBSLT28_DEL_L22D1000_2 UDBSLT28_DEL_L22D1000_1 UDBSLT28_DEL_L22D1000_4 UDBSLT28_DEL_L22D1000_8 UDBSLT28_DEL_L4D50_2 UDBSLT28_DEL_L4D50_1 UDBSLT28_DEL_L4D50_4 UDBSLT28_DEL_L4D50_8 UDBSLT28_DEL_L4D75_2 UDBSLT28_DEL_L4D75_1 UDBSLT28_DEL_L4D75_4 UDBSLT28_DEL_L4D75_8 UDBSLT28_DEL_L6D100_2 UDBSLT28_DEL_L6D100_1 UDBSLT28_DEL_L6D100_4 UDBSLT28_DEL_L6D100_8 UDBSLT28_DEL_L6D125_2 UDBSLT28_DEL_L6D125_1 UDBSLT28_DEL_L6D125_4 UDBSLT28_DEL_L6D125_8 UDBSLT28_DEL_L6D150_2 UDBSLT28_DEL_L6D150_1 UDBSLT28_DEL_L6D150_4 UDBSLT28_DEL_L6D150_8 UDBSLT28_DEL_L8D175_2 UDBSLT28_DEL_L8D175_1 UDBSLT28_DEL_L8D175_4 UDBSLT28_DEL_L8D175_8 UDBSLT28_DEL_L8D200_2 UDBSLT28_DEL_L8D200_1 UDBSLT28_DEL_L8D200_4 UDBSLT28_DEL_L8D200_8
+Total number of identified unusable delay cells: 44
+All delay cells are dont_use. Buffers will be used to fix hold violations.
+**WARN: (IMPCTE-107):	The following globals have been obsoleted since version . They will be removed in the next release. 
+timing_enable_separate_device_slew_effect_sensitivities
+#% End load design ... (date=05/08 16:35:12, total cpu=0:03:15, real=0:03:29, peak res=2700.5M, current mem=1944.1M)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-200            2  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPLF-201         1477  Pin '%s' in macro '%s' has no ANTENNADIF...
+WARNING   IMPTS-282            3  Cell '%s' is not a level shifter cell bu...
+WARNING   IMPOPT-3602          1  The specified path group name %s is not ...
+WARNING   IMPCTE-107           1  The following globals have been obsolete...
+WARNING   IMPUDM-33            3  Global variable "%s" is obsolete and wil...
+WARNING   TECHLIB-302        378  No function defined for cell '%s'. The c...
+*** Message Summary: 1865 warning(s), 0 error(s)
+
+<CMD> setDrawView fplan
+<CMD> encMessage warning 1
+<CMD> encMessage debug 0
+<CMD> zoomBox -122.23800 -15.28400 324.04000 343.05300
+<CMD> zoomBox -95.78200 -10.03900 226.65400 248.86000
+<CMD> zoomBox -63.01600 -1.56100 135.00100 157.43600
+<CMD> zoomBox -45.99300 3.56500 75.61500 101.21000
+<CMD> zoomBox -42.76800 4.74100 60.59900 87.73900
+<CMD> zoomBox -40.02800 5.74000 47.83500 76.28900
+<CMD> zoomBox -37.69800 6.63800 36.98600 66.60500
+<CMD> zoomBox -34.03400 8.05000 19.92500 51.37600
+<CMD> zoomBox -32.60300 8.60200 13.26200 45.42900
+<CMD> zoomBox -31.38700 9.07000 7.59900 40.37400
+<CMD> setDrawView place
+<CMD> fit
+<CMD> zoomBox 55.00300 406.30900 178.99500 303.93000
+<CMD> zoomBox 127.09600 382.35800 136.01900 349.71900
+<CMD> zoomBox 126.46700 377.04300 129.53600 370.45500
+<CMD> zoomBox 126.33900 375.60800 127.32100 374.12700
+<CMD> selectWire 126.7080 375.0630 299.5700 375.1070 3 {dsm_out[2]}
+**WARN: (IMPOAX-793):	Problem in processing library definition file /home/jswalling/cds.lib - Unable to open library asap7_TechLib at path /home/jswalling/$PDK_DIR/cdslib/asap7_TechLib: Invalid Lib Path..
+**WARN: (IMPOAX-793):	Problem in processing library definition file /home/jswalling/cds.lib - Unable to open library asap7ssc7p5t at path /home/jswalling/$PDK_DIR/asap7ssc7p5t_05: Invalid Lib Path..
+**WARN: (IMPOAX-793):	Problem in processing library definition file /home/jswalling/cds.lib - Unable to open library asap7_TechLib at path /home/jswalling/$PDK_DIR/cdslib/asap7_TechLib: Invalid Lib Path..
+**WARN: (IMPOAX-793):	Problem in processing library definition file /home/jswalling/cds.lib - Unable to open library asap7ssc7p5t at path /home/jswalling/$PDK_DIR/asap7ssc7p5t_05: Invalid Lib Path..
+<CMD> streamOut topPLLDigital_genus_22.gds -mapFile /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/lef/streamout.map_colored_9M_2Mx_5Cx_1Jx_1Ox_LB -libName DesignLib -units 1000 -mode ALL
+Parse flat map file...
+Writing GDSII file ...
+	****** db unit per micron = 1000 ******
+	****** output gds2 file unit per micron = 1000 ******
+	****** unit scaling factor = 1 ******
+Output for instance
+Output for bump
+Output for physical terminals
+Output for logical terminals
+Output for regular nets
+Output for special nets and metal fills
+**WARN: (IMPOGDS-1168):	The GDSII text type is out of range (0-255).
+**WARN: (IMPOGDS-1168):	The GDSII text type is out of range (0-255).
+**WARN: (IMPOGDS-1168):	The GDSII text type is out of range (0-255).
+**WARN: (IMPOGDS-1168):	The GDSII text type is out of range (0-255).
+**WARN: (IMPOGDS-1168):	The GDSII text type is out of range (0-255).
+**WARN: (IMPOGDS-1168):	The GDSII text type is out of range (0-255).
+**WARN: (IMPOGDS-1168):	The GDSII text type is out of range (0-255).
+**WARN: (IMPOGDS-1168):	The GDSII text type is out of range (0-255).
+**WARN: (IMPOGDS-1168):	The GDSII text type is out of range (0-255).
+**WARN: (IMPOGDS-1168):	The GDSII text type is out of range (0-255).
+**WARN: (IMPOGDS-1168):	The GDSII text type is out of range (0-255).
+**WARN: (IMPOGDS-1168):	The GDSII text type is out of range (0-255).
+**WARN: (IMPOGDS-1168):	The GDSII text type is out of range (0-255).
+**WARN: (IMPOGDS-1168):	The GDSII text type is out of range (0-255).
+**WARN: (IMPOGDS-1168):	The GDSII text type is out of range (0-255).
+**WARN: (IMPOGDS-1168):	The GDSII text type is out of range (0-255).
+**WARN: (IMPOGDS-1168):	The GDSII text type is out of range (0-255).
+**WARN: (IMPOGDS-1168):	The GDSII text type is out of range (0-255).
+**WARN: (IMPOGDS-1168):	The GDSII text type is out of range (0-255).
+**WARN: (IMPOGDS-1168):	The GDSII text type is out of range (0-255).
+**WARN: (EMS-27):	Message (IMPOGDS-1168) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Output for via structure generation total number 28
+**WARN: (IMPOGDS-1171):	Structure name NR_Stack_Via_LEF_DEFAULT_V23_1_MASK_1_0_0 too long(>32). 32 is limitation length of structure name in GDSII 3.0 which might be truncated in downstream tools, streamOut still keep the string length.
+**WARN: (IMPOGDS-1171):	Structure name NR_Stack_Via_LEF_DEFAULT_V23_MASK_2_0_0 too long(>32). 32 is limitation length of structure name in GDSII 3.0 which might be truncated in downstream tools, streamOut still keep the string length.
+Statistics for GDS generated (version 3)
+----------------------------------------
+Stream Out Layer Mapping Information:
+GDS Layer Number          GDS Layer Name
+----------------------------------------
+    62                           DIEAREA
+    651                        CLIB_MKR5
+    514                        CLIB_MKR4
+    4349                              JA
+    140                               C3
+    141                               C5
+    197                               C2
+    245                               CB
+    41                                C4
+    69                                LB
+    187                               C1
+    188                               A1
+    70                                VV
+    511                        CLIB_MKR1
+    33                                YS
+    7                                 PC
+    15                                M1
+    213                               AY
+    58                                JQ
+    138                               A2
+    16                                V1
+    17                                M2
+    14                                CA
+    59                                OI
+    153                               A4
+    152                               A3
+
+
+Stream Out Information Processed for GDS version 3:
+Units: 1000 DBU
+
+Object                             Count
+----------------------------------------
+Instances                          60348
+
+Ports/Pins                            12
+    metal layer C1                    12
+
+Nets                               28180
+    metal layer M1                    86
+    metal layer M2                  3785
+    metal layer C1                 16222
+    metal layer C2                  6669
+    metal layer C3                  1368
+    metal layer C4                    50
+
+    Via Instances                  18301
+
+Special Nets                           0
+
+    Via Instances                      0
+
+Metal Fills                            0
+
+    Via Instances                      0
+
+Metal FillOPCs                         0
+
+    Via Instances                      0
+
+Metal FillDRCs                         0
+
+    Via Instances                      0
+
+Text                                3666
+    metal layer M1                     6
+    metal layer M2                  3636
+    metal layer C1                    24
+
+
+Blockages                              0
+
+
+Custom Text                            0
+
+
+Custom Box                             0
+
+Trim Metal                             0
+
+######Streamout is finished!
+<CMD> fit
+<CMD> zoomBox -4.71800 456.36100 14.62000 433.61000
+<CMD> fit
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer LB -stacked_via_bottom_layer M1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+The ring targets are set to core/block ring wires.
+addRing command will consider rows while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will ignore shorts while creating rings.
+<CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top M1 bottom M1 left M2 right M2} -width {top 0.6 bottom 0.6 left 0.6 right 0.6} -spacing {top 0.6 bottom 0.6 left 0.6 right 0.6} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+
+Loading cell geometries (cpu: 0:00:00.1, real: 0:00:00.0, peak mem: 2027.9M)
+Ring generation is complete.
+vias are now being generated.
+addRing created 8 wires.
+ViaGen created 8 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|   M1   |        4       |       NA       |
+|   V1   |        8       |        0       |
+|   M2   |        4       |       NA       |
++--------+----------------+----------------+
+<CMD> setSrouteMode -viaConnectToShape { noshape }
+<CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { M1(1) LB(10) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { M1(1) LB(10) } -nets { VDD VSS } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { M1(1) LB(10) }
+*** Begin SPECIAL ROUTE on Wed May  8 16:41:46 2024 ***
+SPECIAL ROUTE ran on directory: /home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/work
+SPECIAL ROUTE ran on machine: cluster12 (Linux 3.10.0-1160.102.1.el7.x86_64 Xeon 2.30Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "VDD VSS"
+routeSpecial set to true
+srouteBlockPin set to "useLef"
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectConverterPin set to false
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 10
+srouteFloatingStripeTarget set to "blockring padring ring stripe ringpin blockpin followpin"
+srouteFollowCorePinEnd set to 3
+srouteJogControl set to "preferWithChanges differentLayer"
+srouteNoViaOnWireShape set to "padring ring stripe blockring blockpin coverpin blockwire corewire followpin iowire"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteTopLayerLimit set to 10
+srouteTopTargetLayerLimit set to 10
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 109.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+**WARN: (IMPSR-4302):	Cap-table/qrcTechFile is found in the design, so the same information from the technology file will be ignored.
+Read in 21 layers, 10 routing layers, 1 overlap layer
+Read in 1436 macros, 110 used
+Read in 60348 components
+  53752 core components: 0 unplaced, 43161 placed, 10591 fixed
+  6596 other components: 0 unplaced, 0 placed, 6596 fixed
+Read in 12 physical pins
+  12 physical pins: 0 unplaced, 0 placed, 12 fixed
+Read in 11 nets
+Read in 2 special nets, 2 routed
+Read in 12 terminals
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the up vias on single M1 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the down vias on single M2 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the up vias on single M1 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the down vias on single M2 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the up vias on single M1 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the down vias on single M2 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the up vias on single M1 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the down vias on single M2 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the up vias on single M1 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the down vias on single M2 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the up vias on single M1 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the down vias on single M2 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the up vias on single M1 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the down vias on single M2 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the up vias on single M1 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the down vias on single M2 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the up vias on single M1 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the down vias on single M2 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the up vias on single M1 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the down vias on single M2 layer. The excess vias will be ignored.
+**WARN: (EMS-27):	Message (IMPSR-4305) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+2 nets selected.
+
+Begin power routing ...
+**WARN: (IMPSR-1253):	Unable to find any standard cell pin connected to the VDD net.
+ Run the globalNetConnect command or change the CPF file to ensure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND' for the connection.
+**WARN: (IMPSR-1254):	Unable to connect the specified objects, since block pins of the VDD net were not found in the design. Check netlist or change the parameter value to include block pins in the design.
+**WARN: (IMPSR-1256):	Unable to find any CORE class pad pin of the VDD net due to unavailability of the pin or check netlist in the routing area or layer. Change routing area or layer to include the expected pin or check netlist. Alternatively, change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in the technology file, or change option to include pin in given range.
+**WARN: (IMPSR-1253):	Unable to find any standard cell pin connected to the VSS net.
+ Run the globalNetConnect command or change the CPF file to ensure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND' for the connection.
+**WARN: (IMPSR-1254):	Unable to connect the specified objects, since block pins of the VSS net were not found in the design. Check netlist or change the parameter value to include block pins in the design.
+**WARN: (IMPSR-1256):	Unable to find any CORE class pad pin of the VSS net due to unavailability of the pin or check netlist in the routing area or layer. Change routing area or layer to include the expected pin or check netlist. Alternatively, change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net VSS. Check net list, or change port class in the technology file, or change option to include pin in given range.
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (IMPSR-481):	Row/Power/Ground pin overlap with a block or obstruction around (293.715, 445.570), it will not be connected.
+CPU time for VDD FollowPin 0 seconds
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+CPU time for VSS FollowPin 0 seconds
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 0  open: 2
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+  Number of Followpin connections: 1
+End power routing: cpu: 0:00:01, real: 0:00:01, peak: 113.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 12 io pins ...
+ Updating DB with 0 via definition ...
+sroute created 1 wire.
+ViaGen created 0 via, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|   M1   |        1       |       NA       |
++--------+----------------+----------------+
+<CMD> zoomBox -3.58000 455.22300 33.95900 408.58400
+<CMD> setSrouteMode -viaConnectToShape { noshape }
+<CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { M1(1) LB(10) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { M1(1) LB(10) } -nets { VDD VSS } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { M1(1) LB(10) }
+*** Begin SPECIAL ROUTE on Wed May  8 16:42:24 2024 ***
+SPECIAL ROUTE ran on directory: /home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/work
+SPECIAL ROUTE ran on machine: cluster12 (Linux 3.10.0-1160.102.1.el7.x86_64 Xeon 2.39Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "VDD VSS"
+routeSpecial set to true
+srouteBlockPin set to "useLef"
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectConverterPin set to false
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 10
+srouteFloatingStripeTarget set to "blockring padring ring stripe ringpin blockpin followpin"
+srouteFollowCorePinEnd set to 3
+srouteJogControl set to "preferWithChanges differentLayer"
+srouteNoViaOnWireShape set to "padring ring stripe blockring blockpin coverpin blockwire corewire followpin iowire"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteTopLayerLimit set to 10
+srouteTopTargetLayerLimit set to 10
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 113.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+**WARN: (IMPSR-4302):	Cap-table/qrcTechFile is found in the design, so the same information from the technology file will be ignored.
+Read in 21 layers, 10 routing layers, 1 overlap layer
+Read in 1436 macros, 110 used
+Read in 60348 components
+  53752 core components: 0 unplaced, 43161 placed, 10591 fixed
+  6596 other components: 0 unplaced, 0 placed, 6596 fixed
+Read in 12 physical pins
+  12 physical pins: 0 unplaced, 0 placed, 12 fixed
+Read in 11 nets
+Read in 2 special nets, 2 routed
+Read in 12 terminals
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the up vias on single M1 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the down vias on single M2 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the up vias on single M1 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the down vias on single M2 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the up vias on single M1 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the down vias on single M2 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the up vias on single M1 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the down vias on single M2 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the up vias on single M1 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the down vias on single M2 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the up vias on single M1 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the down vias on single M2 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the up vias on single M1 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the down vias on single M2 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the up vias on single M1 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the down vias on single M2 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the up vias on single M1 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the down vias on single M2 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the up vias on single M1 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the down vias on single M2 layer. The excess vias will be ignored.
+**WARN: (EMS-27):	Message (IMPSR-4305) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+2 nets selected.
+
+Begin power routing ...
+**WARN: (IMPSR-1253):	Unable to find any standard cell pin connected to the VDD net.
+ Run the globalNetConnect command or change the CPF file to ensure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND' for the connection.
+**WARN: (IMPSR-1254):	Unable to connect the specified objects, since block pins of the VDD net were not found in the design. Check netlist or change the parameter value to include block pins in the design.
+**WARN: (IMPSR-1256):	Unable to find any CORE class pad pin of the VDD net due to unavailability of the pin or check netlist in the routing area or layer. Change routing area or layer to include the expected pin or check netlist. Alternatively, change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in the technology file, or change option to include pin in given range.
+**WARN: (IMPSR-1253):	Unable to find any standard cell pin connected to the VSS net.
+ Run the globalNetConnect command or change the CPF file to ensure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND' for the connection.
+**WARN: (IMPSR-1254):	Unable to connect the specified objects, since block pins of the VSS net were not found in the design. Check netlist or change the parameter value to include block pins in the design.
+**WARN: (IMPSR-1256):	Unable to find any CORE class pad pin of the VSS net due to unavailability of the pin or check netlist in the routing area or layer. Change routing area or layer to include the expected pin or check netlist. Alternatively, change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net VSS. Check net list, or change port class in the technology file, or change option to include pin in given range.
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (IMPSR-481):	Row/Power/Ground pin overlap with a block or obstruction around (293.715, 445.570), it will not be connected.
+CPU time for VDD FollowPin 0 seconds
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+CPU time for VSS FollowPin 0 seconds
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 0  open: 2
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+End power routing: cpu: 0:00:01, real: 0:00:00, peak: 113.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 12 io pins ...
+ Updating DB with 0 via definition ...
+sroute created 0 wire.
+ViaGen created 0 via, deleted 0 via to avoid violation.
+<CMD> fit
+<CMD> zoomBox -11.54300 29.78300 47.60900 -12.30600
+<CMD> zoomBox -6.48700 14.33700 22.86000 -0.04600
+<CMD> zoomBox 5.30600 7.10700 9.14700 3.80300
+<CMD> zoomBox 5.86200 5.87200 6.57400 4.79600
+<CMD> zoomBox 4.59200 4.46400 8.20400 6.52500
+<CMD> zoomBox 4.34000 4.34100 8.58900 6.76600
+<CMD> zoomBox 2.78600 3.56100 10.92900 8.20800
+<CMD> zoomBox 1.52100 2.91000 12.79200 9.34200
+<CMD> fit
+<CMD> setSrouteMode -viaConnectToShape { noshape }
+<CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { M1(1) LB(10) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { M1(1) LB(10) } -nets { VDD VSS } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { M1(1) LB(10) }
+*** Begin SPECIAL ROUTE on Wed May  8 16:43:13 2024 ***
+SPECIAL ROUTE ran on directory: /home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/work
+SPECIAL ROUTE ran on machine: cluster12 (Linux 3.10.0-1160.102.1.el7.x86_64 Xeon 2.30Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "VDD VSS"
+routeSpecial set to true
+srouteBlockPin set to "useLef"
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectConverterPin set to false
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 10
+srouteFloatingStripeTarget set to "blockring padring ring stripe ringpin blockpin followpin"
+srouteFollowCorePinEnd set to 3
+srouteJogControl set to "preferWithChanges differentLayer"
+srouteNoViaOnWireShape set to "padring ring stripe blockring blockpin coverpin blockwire corewire followpin iowire"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteTopLayerLimit set to 10
+srouteTopTargetLayerLimit set to 10
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 113.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+**WARN: (IMPSR-4302):	Cap-table/qrcTechFile is found in the design, so the same information from the technology file will be ignored.
+Read in 21 layers, 10 routing layers, 1 overlap layer
+Read in 1436 macros, 110 used
+Read in 60348 components
+  53752 core components: 0 unplaced, 43161 placed, 10591 fixed
+  6596 other components: 0 unplaced, 0 placed, 6596 fixed
+Read in 12 physical pins
+  12 physical pins: 0 unplaced, 0 placed, 12 fixed
+Read in 11 nets
+Read in 2 special nets, 2 routed
+Read in 12 terminals
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the up vias on single M1 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the down vias on single M2 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the up vias on single M1 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the down vias on single M2 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the up vias on single M1 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the down vias on single M2 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the up vias on single M1 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the down vias on single M2 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the up vias on single M1 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the down vias on single M2 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the up vias on single M1 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the down vias on single M2 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the up vias on single M1 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the down vias on single M2 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the up vias on single M1 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the down vias on single M2 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the up vias on single M1 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the down vias on single M2 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the up vias on single M1 layer. The excess vias will be ignored.
+**WARN: (IMPSR-4305):	Reached the limit of the 128 candidates for the down vias on single M2 layer. The excess vias will be ignored.
+**WARN: (EMS-27):	Message (IMPSR-4305) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+2 nets selected.
+
+Begin power routing ...
+**WARN: (IMPSR-1253):	Unable to find any standard cell pin connected to the VDD net.
+ Run the globalNetConnect command or change the CPF file to ensure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND' for the connection.
+**WARN: (IMPSR-1254):	Unable to connect the specified objects, since block pins of the VDD net were not found in the design. Check netlist or change the parameter value to include block pins in the design.
+**WARN: (IMPSR-1256):	Unable to find any CORE class pad pin of the VDD net due to unavailability of the pin or check netlist in the routing area or layer. Change routing area or layer to include the expected pin or check netlist. Alternatively, change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in the technology file, or change option to include pin in given range.
+**WARN: (IMPSR-1253):	Unable to find any standard cell pin connected to the VSS net.
+ Run the globalNetConnect command or change the CPF file to ensure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND' for the connection.
+**WARN: (IMPSR-1254):	Unable to connect the specified objects, since block pins of the VSS net were not found in the design. Check netlist or change the parameter value to include block pins in the design.
+**WARN: (IMPSR-1256):	Unable to find any CORE class pad pin of the VSS net due to unavailability of the pin or check netlist in the routing area or layer. Change routing area or layer to include the expected pin or check netlist. Alternatively, change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net VSS. Check net list, or change port class in the technology file, or change option to include pin in given range.
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (IMPSR-481):	Row/Power/Ground pin overlap with a block or obstruction around (293.715, 445.570), it will not be connected.
+CPU time for VDD FollowPin 0 seconds
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+CPU time for VSS FollowPin 0 seconds
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 0  open: 2
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+End power routing: cpu: 0:00:01, real: 0:00:01, peak: 115.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 12 io pins ...
+ Updating DB with 0 via definition ...
+sroute created 0 wire.
+ViaGen created 0 via, deleted 0 via to avoid violation.
+<CMD> zoomBox -9.26800 460.91100 46.47200 419.96000
+<CMD> zoomBox 1.03800 447.29200 10.14900 441.56300
+<CMD> streamOut topPLLDigital_genus_22.gds -mapFile /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/lef/streamout.map_colored_9M_2Mx_5Cx_1Jx_1Ox_LB -libName DesignLib -units 1000 -mode ALL
+Parse flat map file...
+Writing GDSII file ...
+	****** db unit per micron = 1000 ******
+	****** output gds2 file unit per micron = 1000 ******
+	****** unit scaling factor = 1 ******
+Output for instance
+Output for bump
+Output for physical terminals
+Output for logical terminals
+Output for regular nets
+Output for special nets and metal fills
+**WARN: (IMPOGDS-1168):	The GDSII text type is out of range (0-255).
+**WARN: (IMPOGDS-1168):	The GDSII text type is out of range (0-255).
+**WARN: (IMPOGDS-1168):	The GDSII text type is out of range (0-255).
+**WARN: (IMPOGDS-1168):	The GDSII text type is out of range (0-255).
+**WARN: (IMPOGDS-1168):	The GDSII text type is out of range (0-255).
+**WARN: (IMPOGDS-1168):	The GDSII text type is out of range (0-255).
+**WARN: (IMPOGDS-1168):	The GDSII text type is out of range (0-255).
+**WARN: (IMPOGDS-1168):	The GDSII text type is out of range (0-255).
+**WARN: (IMPOGDS-1168):	The GDSII text type is out of range (0-255).
+**WARN: (IMPOGDS-1168):	The GDSII text type is out of range (0-255).
+**WARN: (IMPOGDS-1168):	The GDSII text type is out of range (0-255).
+**WARN: (IMPOGDS-1168):	The GDSII text type is out of range (0-255).
+**WARN: (IMPOGDS-1168):	The GDSII text type is out of range (0-255).
+**WARN: (IMPOGDS-1168):	The GDSII text type is out of range (0-255).
+**WARN: (IMPOGDS-1168):	The GDSII text type is out of range (0-255).
+**WARN: (IMPOGDS-1168):	The GDSII text type is out of range (0-255).
+**WARN: (IMPOGDS-1168):	The GDSII text type is out of range (0-255).
+**WARN: (IMPOGDS-1168):	The GDSII text type is out of range (0-255).
+**WARN: (IMPOGDS-1168):	The GDSII text type is out of range (0-255).
+**WARN: (IMPOGDS-1168):	The GDSII text type is out of range (0-255).
+**WARN: (EMS-27):	Message (IMPOGDS-1168) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Output for via structure generation total number 29
+**WARN: (IMPOGDS-1171):	Structure name NR_Stack_Via_LEF_DEFAULT_V23_MASK_2_0_0 too long(>32). 32 is limitation length of structure name in GDSII 3.0 which might be truncated in downstream tools, streamOut still keep the string length.
+**WARN: (IMPOGDS-1171):	Structure name NR_Stack_Via_LEF_DEFAULT_V23_1_MASK_1_0_0 too long(>32). 32 is limitation length of structure name in GDSII 3.0 which might be truncated in downstream tools, streamOut still keep the string length.
+Statistics for GDS generated (version 3)
+----------------------------------------
+Stream Out Layer Mapping Information:
+GDS Layer Number          GDS Layer Name
+----------------------------------------
+    62                           DIEAREA
+    651                        CLIB_MKR5
+    514                        CLIB_MKR4
+    4349                              JA
+    140                               C3
+    141                               C5
+    197                               C2
+    245                               CB
+    41                                C4
+    69                                LB
+    187                               C1
+    188                               A1
+    70                                VV
+    511                        CLIB_MKR1
+    33                                YS
+    7                                 PC
+    15                                M1
+    213                               AY
+    58                                JQ
+    138                               A2
+    16                                V1
+    17                                M2
+    14                                CA
+    59                                OI
+    153                               A4
+    152                               A3
+
+
+Stream Out Information Processed for GDS version 3:
+Units: 1000 DBU
+
+Object                             Count
+----------------------------------------
+Instances                          60348
+
+Ports/Pins                            12
+    metal layer C1                    12
+
+Nets                               28180
+    metal layer M1                    86
+    metal layer M2                  3785
+    metal layer C1                 16222
+    metal layer C2                  6669
+    metal layer C3                  1368
+    metal layer C4                    50
+
+    Via Instances                  18301
+
+Special Nets                           9
+    metal layer M1                     5
+    metal layer M2                     4
+
+    Via Instances                      8
+
+Metal Fills                            0
+
+    Via Instances                      0
+
+Metal FillOPCs                         0
+
+    Via Instances                      0
+
+Metal FillDRCs                         0
+
+    Via Instances                      0
+
+Text                                3670
+    metal layer M1                     6
+    metal layer M2                  3640
+    metal layer C1                    24
+
+
+Blockages                              0
+
+
+Custom Text                            0
+
+
+Custom Box                             0
+
+Trim Metal                             0
+
+######Streamout is finished!
+
+*** Memory Usage v#1 (Current mem = 2029.031M, initial mem = 295.352M) ***
+*** Message Summary: 11231 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:33:55, real=4:43:48, mem=2029.0M) ---

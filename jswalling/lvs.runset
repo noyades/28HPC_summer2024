@@ -1,0 +1,62 @@
+//  Runset file generated on Wed Jan 15 16:53:11 2025
+//  by Calibre Interactive v2022.2_38.20    Thu Jun 2 16:14:38 PDT 2022
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+cmn.showOptionPages.value = [ "Options" ]
+lvs.rulesFile.value = "/software/RFIC/PDK/tsmc/28nm/tsri/Calibre/lvs/calibre.lvs"
+lvs.runDir.value = "/home/micsTapeouts/projects/28HPC_summer2024/jswalling/lvs"
+lvs.layout.layoutFile.value = "pp_fir_u_1.calibre.db"
+cmn.layout.defFiles.value = [ "pp_fir_u_1.def" ]
+lvs.layout.topCellLibrary.value = "jswalling_tapeout"
+cmn.layout.topCellLibraryFDI.value = "jswalling_tapeout"
+lvs.layout.topCell.value = "pp_fir_u_1"
+lvs.layout.topCellView.value = "layout"
+cmn.layout.topCellViewFDI.value = "layout"
+lvs.layout.layoutNetlist.value = "pp_fir_u_1.sp"
+lvs.source2.sourceFile.value = "pp_fir_u_1.sp"
+lvs.source2.topCellLibrary.value = "jswalling_tapeout"
+lvs.source2.topCellLibraryFDI.value = "jswalling_tapeout"
+lvs.source2.topCell.value = "pp_fir_u_1"
+lvs.source2.topCellFDI.value = "pp_fir_u_1"
+lvs.source2.topCellView.value = "schematic"
+lvs.source2.topCellViewFDI.value = "schematic"
+lvs.source.sourceFile.value = "pp_fir_u_1.src.net"
+lvs.source.topCellLibrary.value = "jswalling_tapeout"
+lvs.source.topCellLibraryFDI.value = "jswalling_tapeout"
+lvs.source.topCell.value = "pp_fir_u_1"
+lvs.source.topCellFDI.value = "pp_fir_u_1"
+lvs.source.topCellView.value = "schematic"
+lvs.source.topCellViewFDI.value = "schematic"
+lvs.reports.lvsReport.value = "pp_fir_u_1.lvs.report"
+lvs.lvsReduceGates.splitGates.specified = true
+lvs.lvsReduceGates.semiSplitGates.value = true
+lvs.lvsBox.parameters = [
+    [ true, "FILL1_A9PP140ZTL_C30"],
+    [ true, "FILL2_A9PP140ZTL_C30"],
+    [ false, "FILLSGCAP4_A9PP140ZTL_C30"],
+    [ false, "FILLSGCAP2_A9PP140ZTL_C30"],
+    [ false, "FILLSGCAP3_A9PP140ZTL_C30"],
+    [ false, "FILLSGCAP8_A9PP140ZTL_C30"],
+    [ false, "FILLSGCAP16_A9PP140ZTL_C30"],
+    [ false, "FILLSGCAP32_A9PP140ZTL_C30"],
+    [ false, "FILLSGCAP64_A9PP140ZTL_C30"],
+    [ false, "FILLSGCAP128_A9PP140ZTL_C30"]
+]
+lvs.lvsBox.specified = true
+lvs.svrfIncludes.specified = true
+lvs.svrfIncludes.statementType.value = "SVRF"
+lvs.svrfIncludes.svrfStatements.value = "LVS FILTER FILL1_A9PP140ZTL_C30 OPEN LAYOUT\nLVS FILTER FILL2_A9PP140ZTL_C30 OPEN LAYOUT"
+lvs.ercdb.resultsFile.value = "pp_fir_u_1.erc.results"
+lvs.ercSummaryReport.report.value = "pp_fir_u_1.erc.summary"
+
+cmn.turboCommand.runHow.value = "multi"
+cmn.turboCommand.numProcessors.value = 8
+cmn.turboCommand.runHyper.value = true
+cmn.remoteEnv.remoteMGCHOME_aoi.value = "/software/RFIC/cadtools/mentor/release"
+cmn.remoteEnv.remoteMGCHOME_aoj.value = "/software/RFIC/cadtools/mentor/release"
+cmn.remoteEnv.remoteMGCHOME_aok.value = "/software/RFIC/cadtools/mentor/release"
+cmn.miscPrefs.overwriteLayoutPref.value = false
+cmn.miscPrefs.overwriteSourcePref.value = false

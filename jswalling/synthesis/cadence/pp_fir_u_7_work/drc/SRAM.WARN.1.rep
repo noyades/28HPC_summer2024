@@ -1,0 +1,4 @@
+pp_fir_u_7 1000
+SRAM.WARN.1:L279167
+0 0 1 Mar 03 14:21:21 2025
+density {'file_name': '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/synthesis/cadence/pp_fir_u_7_work/drc/SRAM.WARN.1.rep', 'is_window_density_check': False, 'layer_names': ['CHIPx', 'SRM']}

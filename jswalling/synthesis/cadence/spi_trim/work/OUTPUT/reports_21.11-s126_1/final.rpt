@@ -1,0 +1,84 @@
+
+
+Working Directory = /home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/spi_trim/work
+QoS Summary for topVcoDigital
+==========================================================================================
+Metric                          generic         map             final          
+==========================================================================================
+
+View : view_wcl_slow
+Slack (ps):                      -344            -300            -321
+  R2R (ps):                     1,127           1,079           1,080
+  I2R (ps):                      -344            -300            -321
+  R2O (ps):                  no_value        no_value        no_value
+  I2O (ps):                  no_value        no_value        no_value
+  CG  (ps):                  no_value        no_value        no_value
+TNS (ps):                     -50,192         -43,278         -45,709
+  R2R (ps):                         0               0               0
+  I2R (ps):                   -50,192         -43,278         -45,709
+  R2O (ps):                  no_value        no_value        no_value
+  I2O (ps):                  no_value        no_value        no_value
+  CG  (ps):                  no_value        no_value        no_value
+Failing Paths:                    149             149             149
+
+View : view_wcl_fast
+Slack (ps):                       207             228             215
+  R2R (ps):                     1,197           1,172           1,173
+  I2R (ps):                       207             228             215
+  R2O (ps):                  no_value        no_value        no_value
+  I2O (ps):                  no_value        no_value        no_value
+  CG  (ps):                  no_value        no_value        no_value
+TNS (ps):                           0               0               0
+  R2R (ps):                         0               0               0
+  I2R (ps):                         0               0               0
+  R2O (ps):                  no_value        no_value        no_value
+  I2O (ps):                  no_value        no_value        no_value
+  CG  (ps):                  no_value        no_value        no_value
+Failing Paths:                      0               0               0
+
+View : view_wcl_typical
+Slack (ps):                     4,938           4,969           4,950
+  R2R (ps):                     6,173           6,138           6,139
+  I2R (ps):                     4,938           4,969           4,950
+  R2O (ps):                  no_value        no_value        no_value
+  I2O (ps):                  no_value        no_value        no_value
+  CG  (ps):                  no_value        no_value        no_value
+TNS (ps):                           0               0               0
+  R2R (ps):                         0               0               0
+  I2R (ps):                         0               0               0
+  R2O (ps):                  no_value        no_value        no_value
+  I2O (ps):                  no_value        no_value        no_value
+  CG  (ps):                  no_value        no_value        no_value
+Failing Paths:                      0               0               0
+
+Cell Area:                        901             533             617
+Total Cell Area:                1,158             790             874
+Leaf Instances:                   677             543             521
+Total Instances:                1,867           1,733           1,711
+Utilization (%):                22.89           23.95           27.72
+Tot. Net Length (um):        no_value        no_value           4,660
+Avg. Net Length (um):        no_value        no_value               9
+Route Overflow H (%):            0.00            0.00            0.00
+Route Overflow V (%):            0.00            0.00            0.00
+MBCI(%) (bits/gate) :            0.00            0.00            0.00
+Norm Cong Hotspot Area:
+  Max Cong:                      0.00            0.00            0.00
+  Tot Cong:                      0.00            0.00            0.00
+==========================================================================================
+CPU  Runtime (h:m:s):        00:14:59        00:06:43        00:01:25
+Real Runtime (h:m:s):        00:14:20        00:07:29        00:13:27
+CPU  Elapsed (h:m:s):        00:15:08        00:21:51        00:39:49
+Real Elapsed (h:m:s):        00:14:26        00:21:56        00:35:22
+Memory (MB):                  3973.94         3965.97         4555.50
+==========================================================================================
+==========================================================================================
+Flow Settings:
+==========================================================================================
+Total Runtime (h:m:s): 00:35:16
+Total Memory (MB):     4555.50
+Executable Version:    21.11-s126_1
+==========================================================================================
+Total Cell Area =  Cell Area + Physical Cell Area
+Total Instances =  Leaf Instances + Physical Instances
+
+

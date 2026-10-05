@@ -1,0 +1,10 @@
+set runDir {/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/synthesis/cadence/pp_fir_u_7_work/drc}
+set uniquifyCellNames true
+set uniquifyCellNamesPrefix false
+set mapFile {/projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/tsmcN28/tsmcN28.layermap}
+set additionalSetStreamOutModeParameters {}
+set additionalStreamOutParameters {}
+set dbuPerUU 2000
+set mergeFiles {}
+set outputFormat stream
+set area {}

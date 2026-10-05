@@ -1,0 +1,1250 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[23:26:10.231793] Configured Lic search path (23.02-s003): 27002@license.ece.vt.edu
+
+Version: 23.10-p004_1, built Thu Feb 01 10:43:46 PST 2024
+Options: -log pp_int_x4_presyn.log 
+Date:    Tue Feb 25 23:26:11 2025
+Host:    tc024 (x86_64 w/Linux 5.14.0-362.8.1.el9_3.x86_64) (64cores*128cpus*2physical cpus*AMD EPYC 7702 64-Core Processor 512KB) (263898208KB)
+PID:     3402950
+OS:      Rocky Linux release 9.5 (Blue Onyx)
+
+Checking out license: Genus_Synthesis
+[23:26:11.048472] Periodic Lic check successful
+[23:26:11.048490] Feature usage summary:
+[23:26:11.048491] Genus_Synthesis
+
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Finished executable startup (1 second elapsed).
+
+Loading tool scripts...
+Finished loading tool scripts (16 seconds elapsed).
+
+WARNING: This version of the tool is 390 days old.
+@genus:root: 1> source ../scripts/syn.tcl
+Sourcing '../scripts/syn.tcl' (Tue Feb 25 23:26:40 EST 2025)...
+#@ Begin verbose source ../scripts/syn.tcl
+@file(syn.tcl) 4: 	if {[file exists /proc/cpuinfo]} {
+	  sh grep "model name" /proc/cpuinfo
+	  sh grep "cpu MHz"    /proc/cpuinfo
+	}
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+cpu MHz		: 3270.132
+cpu MHz		: 3272.785
+cpu MHz		: 3272.389
+cpu MHz		: 3272.873
+cpu MHz		: 3272.806
+cpu MHz		: 3256.731
+cpu MHz		: 3272.520
+cpu MHz		: 3272.966
+cpu MHz		: 3251.362
+cpu MHz		: 3269.407
+cpu MHz		: 3268.389
+cpu MHz		: 3269.053
+cpu MHz		: 3269.645
+cpu MHz		: 3269.448
+cpu MHz		: 3269.187
+cpu MHz		: 3269.369
+cpu MHz		: 3274.278
+cpu MHz		: 3274.862
+cpu MHz		: 3274.861
+cpu MHz		: 3274.954
+cpu MHz		: 3270.061
+cpu MHz		: 3269.371
+cpu MHz		: 3270.146
+cpu MHz		: 3252.600
+cpu MHz		: 3269.391
+cpu MHz		: 3269.147
+cpu MHz		: 3266.904
+cpu MHz		: 3269.421
+cpu MHz		: 3266.963
+cpu MHz		: 3267.520
+cpu MHz		: 3269.123
+cpu MHz		: 3269.178
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 3308.819
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 3297.508
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+@file(syn.tcl) 9: 	puts "Hostname : [info hostname]"
+Hostname : tc024.cm.cluster
+@file(syn.tcl) 14: 	set DESIGN pp_int_x4
+@file(syn.tcl) 15: 	set SYN_EFF medium
+@file(syn.tcl) 16: 	set MAP_EFF medium
+@file(syn.tcl) 17: 	set OPT_EFF medium
+@file(syn.tcl) 19: 	set RELEASE [lindex [get_db program_version] end]
+@file(syn.tcl) 20: 	set _OUTPUTS_PATH OUTPUT/outputs_${RELEASE}
+@file(syn.tcl) 21: 	set _REPORTS_PATH OUTPUT/reports_${RELEASE}
+@file(syn.tcl) 22: 	set _LOG_PATH OUTPUT/logs_${RELEASE}
+@file(syn.tcl) 24: 	if {![file exists ${_OUTPUTS_PATH}]} {
+	  file mkdir ${_OUTPUTS_PATH}
+	  puts "Creating directory ${_OUTPUTS_PATH}"
+	}
+@file(syn.tcl) 29: 	if {![file exists ${_REPORTS_PATH}]} {
+	  file mkdir ${_REPORTS_PATH}
+	  puts "Creating directory ${_REPORTS_PATH}"
+	}
+@file(syn.tcl) 34: 	if {![file exists ${_LOG_PATH}]} {
+	  file mkdir ${_LOG_PATH}
+	  puts "Creating directory ${_REPORTS_PATH}"
+	}
+@file(syn.tcl) 39:         set write_sdf true
+@file(syn.tcl) 40: 	set rtlDir ../rtl
+@file(syn.tcl) 42: 	set_db init_lib_search_path {. 	   /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/ \
+     		                           /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/ \
+		                           /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_lvt_c30/ \
+		                           /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_svt_c30/ \
+		                           /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_svt_c30/ \
+		                           /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_ulvt_c30/ \
+		                           /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_ulvt_c30/}
+  Setting attribute of root '/': 'init_lib_search_path' = . 	   /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/  /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/  /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_lvt_c30/  /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_svt_c30/  /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_svt_c30/  /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_ulvt_c30/  /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_ulvt_c30/
+@file(syn.tcl) 49: 	set_db script_search_path { . }
+  Setting attribute of root '/': 'script_search_path' =  . 
+@file(syn.tcl) 50: 	set_db init_hdl_search_path {. ../rtl}
+  Setting attribute of root '/': 'init_hdl_search_path' = . ../rtl
+@file(syn.tcl) 52: 	set_db max_cpus_per_server 8
+  Setting attribute of root '/': 'max_cpus_per_server' = 8
+@file(syn.tcl) 54: 	set_db syn_generic_effort $SYN_EFF
+  Setting attribute of root '/': 'syn_generic_effort' = medium
+@file(syn.tcl) 55: 	set_db syn_map_effort $MAP_EFF
+  Setting attribute of root '/': 'syn_map_effort' = medium
+@file(syn.tcl) 56: 	set_db syn_opt_effort $OPT_EFF
+  Setting attribute of root '/': 'syn_opt_effort' = medium
+@file(syn.tcl) 58: 	set_db information_level 9
+  Setting attribute of root '/': 'information_level' = 9
+@file(syn.tcl) 59: 	set_db invs_temp_dir ${_OUTPUTS_PATH}/invs_tmp_dir
+  Setting attribute of root '/': 'invs_temp_dir' = OUTPUT/outputs_23.10-p004_1/invs_tmp_dir
+@file(syn.tcl) 65: 	read_mmmc ../scripts/mmmc-arc.tcl
+  Setting attribute of root '/': 'is_read_mmmc_flow' = true
+Sourcing '../scripts/mmmc-arc.tcl' (Tue Feb 25 23:26:40 EST 2025)...
+#@ Begin verbose source ../scripts/mmmc-arc.tcl
+@file(mmmc-arc.tcl) 1: create_library_set -name wcl_slow -timing {
+  /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib
+}
+@file(mmmc-arc.tcl) 5: create_library_set -name wcl_fast -timing {
+  /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ffg_cbestt_min_0p99v_m40c.lib
+}
+@file(mmmc-arc.tcl) 9: create_library_set -name wcl_typical -timing {
+  /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_tt_ctypical_max_0p90v_25c.lib
+}
+@file(mmmc-arc.tcl) 13: create_opcond -name op_cond_wcl_slow    -process 1 -voltage 0.81 -temperature 125
+@file(mmmc-arc.tcl) 14: create_opcond -name op_cond_wcl_fast    -process 1 -voltage 0.99 -temperature -40
+@file(mmmc-arc.tcl) 15: create_opcond -name op_cond_wcl_typical -process 1 -voltage 0.90 -temperature 25
+@file(mmmc-arc.tcl) 17: create_timing_condition -name timing_cond_wcl_slow -opcond op_cond_wcl_slow -library_sets { wcl_slow }
+@file(mmmc-arc.tcl) 18: create_timing_condition -name timing_cond_wcl_fast -opcond op_cond_wcl_fast -library_sets { wcl_fast }
+@file(mmmc-arc.tcl) 19: create_timing_condition -name timing_cond_wcl_typical -opcond op_cond_wcl_typical -library_sets { wcl_typical }
+@file(mmmc-arc.tcl) 21: create_rc_corner -name worst -temperature 125 -qrc_tech /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/tsri/RC_Extraction/QRC/rcworst/qrcTechFile
+@file(mmmc-arc.tcl) 23: create_rc_corner -name best -temperature -40 -qrc_tech /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/tsri/RC_Extraction/QRC/rcbest/qrcTechFile
+@file(mmmc-arc.tcl) 25: create_rc_corner -name typical -temperature 25 -qrc_tech /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/tsri/RC_Extraction/QRC/nominal/qrcTechFile
+@file(mmmc-arc.tcl) 29: create_delay_corner -name delay_corner_wcl_slow -early_timing_condition timing_cond_wcl_slow \
+                    -late_timing_condition timing_cond_wcl_slow -early_rc_corner worst \
+                    -late_rc_corner worst
+@file(mmmc-arc.tcl) 33: create_delay_corner -name delay_corner_wcl_fast -early_timing_condition timing_cond_wcl_fast \
+                    -late_timing_condition timing_cond_wcl_fast -early_rc_corner best \
+                    -late_rc_corner best
+@file(mmmc-arc.tcl) 37: create_delay_corner -name delay_corner_wcl_typical -early_timing_condition timing_cond_wcl_typical \
+                    -late_timing_condition timing_cond_wcl_typical -early_rc_corner typical \
+                    -late_rc_corner typical
+@file(mmmc-arc.tcl) 41: create_constraint_mode -name functional_wcl_slow -sdc_files { \
+  ../constraints/pp_int_x4_struct.sdc
+}
+            Reading file '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/synthesis/cadence/pp_int_x4_work/../constraints/pp_int_x4_struct.sdc'
+@file(mmmc-arc.tcl) 45: create_constraint_mode -name functional_wcl_fast -sdc_files { \
+  ../constraints/pp_int_x4_struct.sdc
+}
+            Reading file '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/synthesis/cadence/pp_int_x4_work/../constraints/pp_int_x4_struct.sdc'
+@file(mmmc-arc.tcl) 49: create_constraint_mode -name functional_wcl_typical -sdc_files { \
+  ../constraints/pp_int_x4_struct.sdc
+}
+            Reading file '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/synthesis/cadence/pp_int_x4_work/../constraints/pp_int_x4_struct.sdc'
+@file(mmmc-arc.tcl) 53: create_analysis_view -name view_wcl_slow -constraint_mode functional_wcl_typical -delay_corner delay_corner_wcl_slow
+@file(mmmc-arc.tcl) 54: create_analysis_view -name view_wcl_fast -constraint_mode functional_wcl_typical -delay_corner delay_corner_wcl_fast
+@file(mmmc-arc.tcl) 55: create_analysis_view -name view_wcl_typical -constraint_mode functional_wcl_typical -delay_corner delay_corner_wcl_typical
+@file(mmmc-arc.tcl) 57: set_analysis_view -setup {view_wcl_slow view_wcl_fast view_wcl_typical} 
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'library_features' encountered. Ignoring (File /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 48)
+        : Check to see if this construct is really needed for synthesis. Many liberty constructs are not actually required.
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'user_function_class' encountered. Ignoring (File /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 42008)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'is_decap_cell' encountered. Ignoring (File /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 301726)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'user_function_class' encountered. Ignoring (File /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 301727)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'is_decap_cell' encountered. Ignoring (File /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 301768)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'user_function_class' encountered. Ignoring (File /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 301769)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'is_decap_cell' encountered. Ignoring (File /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 301810)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'user_function_class' encountered. Ignoring (File /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 301811)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'is_decap_cell' encountered. Ignoring (File /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 301852)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'user_function_class' encountered. Ignoring (File /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 301853)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'is_decap_cell' encountered. Ignoring (File /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 301894)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'user_function_class' encountered. Ignoring (File /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 301895)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'is_decap_cell' encountered. Ignoring (File /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 301936)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'user_function_class' encountered. Ignoring (File /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 301937)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'is_decap_cell' encountered. Ignoring (File /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 301978)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'user_function_class' encountered. Ignoring (File /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 301979)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'is_decap_cell' encountered. Ignoring (File /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 302020)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'user_function_class' encountered. Ignoring (File /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 302021)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'is_decap_cell' encountered. Ignoring (File /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 302062)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'user_function_class' encountered. Ignoring (File /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 302063)
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'LBR-40'.
+
+  Message Summary for Library sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib:
+  ********************************************************************************************
+  An unsupported construct was detected in this library. [LBR-40]: 131
+  ********************************************************************************************
+ 
+            Reading file '/projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib'
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.810000, 125.000000) in library 'sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA2_A9PP140ZTL_C30' must have an output pin.
+        : Add the missing output pin(s), then reload the library. Else the library cell will be marked as timing model i.e. unusable. Timing_model means that the cell does not have any defined function. If there is no output pin, Genus will mark library cell as unusable i.e. the attribute 'usable' will be marked to 'false' on the libcell. Therefore, the cell is not used for mapping and it will not be picked up from the library for synthesis. If you query the attribute 'unusable_reason' on the libcell; result will be: 'Library cell has no output pins.'Note: The message LBR-9 is only for the logical pins and not for the power_ground pins. Genus will depend upon the output function defined in the pin group (output pin) of the cell, to use it for mapping. The pg_pin will not have any function defined.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA2_A9PP140ZTL_C30' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLSGCAP128_A9PP140ZTL_C30' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLSGCAP128_A9PP140ZTL_C30' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLSGCAP16_A9PP140ZTL_C30' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLSGCAP16_A9PP140ZTL_C30' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLSGCAP2_A9PP140ZTL_C30' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLSGCAP2_A9PP140ZTL_C30' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLSGCAP32_A9PP140ZTL_C30' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLSGCAP32_A9PP140ZTL_C30' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLSGCAP3_A9PP140ZTL_C30' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLSGCAP3_A9PP140ZTL_C30' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLSGCAP4_A9PP140ZTL_C30' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLSGCAP4_A9PP140ZTL_C30' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLSGCAP64_A9PP140ZTL_C30' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLSGCAP64_A9PP140ZTL_C30' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLSGCAP8_A9PP140ZTL_C30' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLSGCAP8_A9PP140ZTL_C30' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLXGCAP128_A9PP140ZTL_C30' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLXGCAP128_A9PP140ZTL_C30' must have an output pin.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'LBR-9'.
+Info    : Set default library domain. [LBR-109]
+        : The default library domain is 'library_domain:timing_cond_wcl_slow'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDF_X1M_A9PP140ZTL_C30'.
+        : Setting the 'timing_sense' to non_unate.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDF_X1M_A9PP140ZTL_C30'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDF_X1M_A9PP140ZTL_C30'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDF_X1P4M_A9PP140ZTL_C30'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDF_X1P4M_A9PP140ZTL_C30'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDF_X1P4M_A9PP140ZTL_C30'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDF_X2M_A9PP140ZTL_C30'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDF_X2M_A9PP140ZTL_C30'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDF_X2M_A9PP140ZTL_C30'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDH_X1M_A9PP140ZTL_C30'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDH_X1M_A9PP140ZTL_C30'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDH_X1P4M_A9PP140ZTL_C30'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDH_X1P4M_A9PP140ZTL_C30'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDH_X2M_A9PP140ZTL_C30'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDH_X2M_A9PP140ZTL_C30'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S0' and 'Y' in libcell 'MX2_X0P5B_A9PP140ZTL_C30' is 'pos_unate', but unateness determined from function is 'non_unate'.
+        : The 'timing_sense' attribute will be respected.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S0' and 'Y' in libcell 'MX2_X0P5B_A9PP140ZTL_C30' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'S0' and 'Y' in libcell 'MX2_X0P5B_A9PP140ZTL_C30'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S0' and 'Y' in libcell 'MX2_X0P7B_A9PP140ZTL_C30' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S0' and 'Y' in libcell 'MX2_X0P7B_A9PP140ZTL_C30' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'S0' and 'Y' in libcell 'MX2_X0P7B_A9PP140ZTL_C30'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S0' and 'Y' in libcell 'MX2_X1B_A9PP140ZTL_C30' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S0' and 'Y' in libcell 'MX2_X1B_A9PP140ZTL_C30' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'S0' and 'Y' in libcell 'MX2_X1B_A9PP140ZTL_C30'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S0' and 'Y' in libcell 'MX2_X1P4B_A9PP140ZTL_C30' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S0' and 'Y' in libcell 'MX2_X1P4B_A9PP140ZTL_C30' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'S0' and 'Y' in libcell 'MX2_X1P4B_A9PP140ZTL_C30'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S0' and 'Y' in libcell 'MX2_X2B_A9PP140ZTL_C30' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S0' and 'Y' in libcell 'MX2_X2B_A9PP140ZTL_C30' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'S0' and 'Y' in libcell 'MX2_X2B_A9PP140ZTL_C30'.
+Info    : Setting the maximum print count of this message to 10 if information_level is less than 9. [LBR-161]
+        : To print all the warning messages, set the information_level to 9.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S0' and 'Y' in libcell 'MX2_X3B_A9PP140ZTL_C30' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S0' and 'Y' in libcell 'MX2_X3B_A9PP140ZTL_C30' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'LBR-162'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S0' and 'Y' in libcell 'MX2_X4B_A9PP140ZTL_C30' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S0' and 'Y' in libcell 'MX2_X4B_A9PP140ZTL_C30' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S0' and 'Y' in libcell 'MX2_X6B_A9PP140ZTL_C30' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S0' and 'Y' in libcell 'MX2_X6B_A9PP140ZTL_C30' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S0' and 'Y' in libcell 'MX2_X8B_A9PP140ZTL_C30' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S0' and 'Y' in libcell 'MX2_X8B_A9PP140ZTL_C30' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S0' and 'Y' in libcell 'MXGL2_X0P5B_A9PP140ZTL_C30' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S0' and 'Y' in libcell 'MXGL2_X0P5B_A9PP140ZTL_C30' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'LBR-155'.
+  Library has 726 usable logic and 140 usable sequential lib-cells.
+Info    : Unusable library cells found at the time of loading a library.  [LBR-415]
+        : Library: 'sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib', Total cells: 1003, Unusable cells: 75.
+	List of unusable cells: 'ANTENNA2_A9PP140ZTL_C30 FILLSGCAP128_A9PP140ZTL_C30 FILLSGCAP16_A9PP140ZTL_C30 FILLSGCAP2_A9PP140ZTL_C30 FILLSGCAP32_A9PP140ZTL_C30 FILLSGCAP3_A9PP140ZTL_C30 FILLSGCAP4_A9PP140ZTL_C30 FILLSGCAP64_A9PP140ZTL_C30 FILLSGCAP8_A9PP140ZTL_C30 FILLXGCAP128_A9PP140ZTL_C30 FILLXGCAP16_A9PP140ZTL_C30 FILLXGCAP2_A9PP140ZTL_C30 FILLXGCAP32_A9PP140ZTL_C30 FILLXGCAP3_A9PP140ZTL_C30 FILLXGCAP4_A9PP140ZTL_C30 FILLXGCAP64_A9PP140ZTL_C30 FILLXGCAP8_A9PP140ZTL_C30 FRICG_X0P5B_A9PP140ZTL_C30 FRICG_X0P6B_A9PP140ZTL_C30 FRICG_X0P7B_A9PP140ZTL_C30 FRICG_X0P8B_A9PP140ZTL_C30 FRICG_X11B_A9PP140ZTL_C30 FRICG_X13B_A9PP140ZTL_C30 FRICG_X16B_A9PP140ZTL_C30 FRICG_X1B_A9PP140ZTL_C30 FRICG_X1P2B_A9PP140ZTL_C30 FRICG_X1P4B_A9PP140ZTL_C30 FRICG_X1P7B_A9PP140ZTL_C30 FRICG_X2B_A9PP140ZTL_C30 FRICG_X2P5B_A9PP140ZTL_C30 FRICG_X3B_A9PP140ZTL_C30 FRICG_X3P5B_A9PP140ZTL_C30 FRICG_X4B_A9PP140ZTL_C30 FRICG_X5B_A9PP140ZTL_C30 FRICG_X6B_A9PP140ZTL_C30 FRICG_X7P5B_A9PP140ZTL_C30 FRICG_X9B_A9PP140ZTL_C30 SDFFYQ2D_X1M_A9PP140ZTL_C30 SDFFYQ2D_X2M_A9PP140ZTL_C30 SDFFYQ2D_X3M_A9PP140ZTL_C30 SDFFYQ2D_X4M_A9PP140ZTL_C30 SDFFYQ3D_X1M_A9PP140ZTL_C30 SDFFYQ3D_X2M_A9PP140ZTL_C30 SDFFYQ3D_X3M_A9PP140ZTL_C30 SDFFYQ3D_X4M_A9PP140ZTL_C30 SDFFYQ4D_X1M_A9PP140ZTL_C30 SDFFYQ4D_X2M_A9PP140ZTL_C30 SDFFYQ4D_X3M_A9PP140ZTL_C30 SDFFYQ4D_X4M_A9PP140ZTL_C30 SDFFYRPQ2D_X1M_A9PP140ZTL_C30 SDFFYRPQ2D_X2M_A9PP140ZTL_C30 SDFFYRPQ2D_X3M_A9PP140ZTL_C30 SDFFYRPQ2D_X4M_A9PP140ZTL_C30 SDFFYRPQ3D_X1M_A9PP140ZTL_C30 SDFFYRPQ3D_X2M_A9PP140ZTL_C30 SDFFYRPQ3D_X3M_A9PP140ZTL_C30 SDFFYRPQ3D_X4M_A9PP140ZTL_C30 SDFFYRPQ4D_X1M_A9PP140ZTL_C30 SDFFYRPQ4D_X2M_A9PP140ZTL_C30 SDFFYRPQ4D_X3M_A9PP140ZTL_C30 SDFFYRPQ4D_X4M_A9PP140ZTL_C30 SDFFYSQ2D_X1M_A9PP140ZTL_C30 SDFFYSQ2D_X2M_A9PP140ZTL_C30 SDFFYSQ2D_X3M_A9PP140ZTL_C30 SDFFYSQ2D_X4M_A9PP140ZTL_C30 SDFFYSQ3D_X1M_A9PP140ZTL_C30 SDFFYSQ3D_X2M_A9PP140ZTL_C30 SDFFYSQ3D_X3M_A9PP140ZTL_C30 SDFFYSQ3D_X4M_A9PP140ZTL_C30 SDFFYSQ4D_X1M_A9PP140ZTL_C30 SDFFYSQ4D_X2M_A9PP140ZTL_C30 SDFFYSQ4D_X3M_A9PP140ZTL_C30 SDFFYSQ4D_X4M_A9PP140ZTL_C30 ENDCAPTIE3_A9PP140ZTL_C30 FILLTIE5_A9PP140ZTL_C30 .'
+        : For  more  information, refer to 'Cells Identified as Unusable' in the 'User Guide'. To know the reason why a cell is considered as unusable, check 'unusable_reason' libcell attribute.
+#@ End verbose source ../scripts/mmmc-arc.tcl
+@file(syn.tcl) 67: 	read_physical -lefs { \
+	  /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef \
+	  /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lef/sc9mcpp140z_cln28ht_base_lvt_c30.lef \
+	  /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_lvt_c30/r0p0/lef/sc9mcpp140z_cln28ht_hpk_lvt_c30.lef
+	  /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_svt_c30/r0p0/lef/sc9mcpp140z_cln28ht_base_svt_c30.lef \
+	  /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_svt_c30/r0p0/lef/sc9mcpp140z_cln28ht_hpk_svt_c30.lef
+	  /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_ulvt_c30/r0p0/lef/sc9mcpp140z_cln28ht_base_ulvt_c30.lef \
+	  /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_ulvt_c30/r0p0/lef/sc9mcpp140z_cln28ht_hpk_ulvt_c30.lef
+	}
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA1_0_40_0_40_VXRECT_H' has no resistance value.
+        : If this is the expected behavior, this message can be ignored.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA1_0_40_0_40_VXRECT_V' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA1_0_40_0_40_VXRECT_E' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA1_0_40_0_40_VXRECT_W' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA1_0_40_0_40_VXRECT_N' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA1_0_40_0_40_VXRECT_S' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA1_0_40_30_10_VXRECT_H' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA1_0_40_30_10_VXRECT_V' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA1_0_40_30_10_VXRECT_E' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA1_0_40_30_10_VXRECT_W' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA1_0_40_30_10_VXRECT_N' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA1_0_40_30_10_VXRECT_S' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA1_0_30_0_30_VH_VX' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA1_0_30_0_30_HH_VX' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA1_0_30_0_30_VV_VX' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA1_0_30_0_30_HV_VX' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA1_0_30_20_20_VX_VX' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA1_0_30_20_20_HX_VX' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA1_0_30_10_25_VH_VX' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA1_0_30_10_25_HH_VX' has no resistance value.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'PHYS-129'.
+Warning : Site already defined before, duplicated site will be ignored. [PHYS-106]
+        : Site 'sc9mcpp140z_cln28ht' read already, this site in file '/projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_lvt_c30/r0p0/lef/sc9mcpp140z_cln28ht_hpk_lvt_c30.lef' is ignored.
+Warning : Site already defined before, duplicated site will be ignored. [PHYS-106]
+        : Site 'sc9mcpp140z_cln28ht' read already, this site in file '/projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_svt_c30/r0p0/lef/sc9mcpp140z_cln28ht_base_svt_c30.lef' is ignored.
+Warning : Site already defined before, duplicated site will be ignored. [PHYS-106]
+        : Site 'sc9mcpp140z_cln28ht' read already, this site in file '/projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_svt_c30/r0p0/lef/sc9mcpp140z_cln28ht_hpk_svt_c30.lef' is ignored.
+Warning : Site already defined before, duplicated site will be ignored. [PHYS-106]
+        : Site 'sc9mcpp140z_cln28ht' read already, this site in file '/projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_ulvt_c30/r0p0/lef/sc9mcpp140z_cln28ht_base_ulvt_c30.lef' is ignored.
+Warning : Site already defined before, duplicated site will be ignored. [PHYS-106]
+        : Site 'sc9mcpp140z_cln28ht' read already, this site in file '/projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_ulvt_c30/r0p0/lef/sc9mcpp140z_cln28ht_hpk_ulvt_c30.lef' is ignored.
+
+  According to lef_library, there are total 10 routing layers [ V(5) / H(5) ]
+
+Warning : Missing wire parameter. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'M1' [line 227 in file /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef]
+        : Check the wire parameter in LEF technology files.
+Warning : Missing wire parameter. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'M2' [line 371 in file /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'M3' [line 515 in file /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'M4' [line 672 in file /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'M5' [line 829 in file /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'M6' [line 986 in file /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'M7' [line 1142 in file /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'M8' [line 1224 in file /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'M9' [line 1306 in file /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'M1' [line 227 in file /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'M2' [line 371 in file /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'M3' [line 515 in file /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'M4' [line 672 in file /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'M5' [line 829 in file /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'M6' [line 986 in file /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'M7' [line 1142 in file /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'M8' [line 1224 in file /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'M9' [line 1306 in file /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'RPERSQ' parameter is missing for layer 'M1' [line 227 in file /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'RPERSQ' parameter is missing for layer 'M2' [line 371 in file /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef]
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'PHYS-15'.
+Warning : The variant range of wire parameters is too large. An example of wire parameters are, a WIDTH for layer, PITCH for layer, MINSPACING for layers, etc. [PHYS-12]
+        : The variant range (0.05, 2) of 'WIDTH' for layers 'M7' and 'AP' is too large.
+        : Check the consistency of the parameters, and see if you can ignore this message or you're using different LEF file with wrong parameters.
+Warning : The variant range of wire parameters is too large. An example of wire parameters are, a WIDTH for layer, PITCH for layer, MINSPACING for layers, etc. [PHYS-12]
+        : The variant range (0.1, 4.5) of 'PITCH' for layers 'M2' and 'AP' is too large.
+Warning : The variant range of wire parameters is too large. An example of wire parameters are, a WIDTH for layer, PITCH for layer, MINSPACING for layers, etc. [PHYS-12]
+        : The variant range (0.05, 2) of 'MINSPACING' for layers 'M1' and 'AP' is too large.
+Warning : Cannot modify the attribute after loading library(s). [LBR-110]
+        : Cannot modify the attribute 'sort_library_pins'. The library has already been loaded in the libdomain 'timing_cond_wcl_slow'.
+        : You must set the attribute before you set the 'library' attribute.
+Warning : Cannot modify the attribute after loading library(s). [LBR-110]
+        : Cannot modify the attribute 'sort_library_pins'. The library has already been loaded in the libdomain 'timing_cond_wcl_slow'.
+Warning : Cannot modify the attribute after loading library(s). [LBR-110]
+        : Cannot modify the attribute 'sort_library_pins'. The library has already been loaded in the libdomain 'timing_cond_wcl_slow'.
+Warning : Cannot modify the attribute after loading library(s). [LBR-110]
+        : Cannot modify the attribute 'sort_library_pins'. The library has already been loaded in the libdomain 'timing_cond_wcl_slow'.
+Warning : Cannot modify the attribute after loading library(s). [LBR-110]
+        : Cannot modify the attribute 'sort_library_pins'. The library has already been loaded in the libdomain 'timing_cond_wcl_slow'.
+Warning : Cannot modify the attribute after loading library(s). [LBR-110]
+        : Cannot modify the attribute 'sort_library_pins'. The library has already been loaded in the libdomain 'timing_cond_wcl_slow'.
+Warning : Cannot modify the attribute after loading library(s). [LBR-110]
+        : Cannot modify the attribute 'sort_library_pins'. The library has already been loaded in the libdomain 'timing_cond_wcl_slow'.
+Warning : Cannot modify the attribute after loading library(s). [LBR-110]
+        : Cannot modify the attribute 'sort_library_pins'. The library has already been loaded in the libdomain 'timing_cond_wcl_slow'.
+Warning : Cannot modify the attribute after loading library(s). [LBR-110]
+        : Cannot modify the attribute 'sort_library_pins'. The library has already been loaded in the libdomain 'timing_cond_wcl_slow'.
+Warning : Cannot modify the attribute after loading library(s). [LBR-110]
+        : Cannot modify the attribute 'sort_library_pins'. The library has already been loaded in the libdomain 'timing_cond_wcl_slow'.
+Warning : Cannot modify the attribute after loading library(s). [LBR-110]
+        : Cannot modify the attribute 'sort_library_pins'. The library has already been loaded in the libdomain 'timing_cond_wcl_slow'.
+Warning : Cannot modify the attribute after loading library(s). [LBR-110]
+        : Cannot modify the attribute 'sort_library_pins'. The library has already been loaded in the libdomain 'timing_cond_wcl_slow'.
+Warning : Cannot modify the attribute after loading library(s). [LBR-110]
+        : Cannot modify the attribute 'sort_library_pins'. The library has already been loaded in the libdomain 'timing_cond_wcl_slow'.
+Warning : Cannot modify the attribute after loading library(s). [LBR-110]
+        : Cannot modify the attribute 'sort_library_pins'. The library has already been loaded in the libdomain 'timing_cond_wcl_slow'.
+Warning : Cannot modify the attribute after loading library(s). [LBR-110]
+        : Cannot modify the attribute 'sort_library_pins'. The library has already been loaded in the libdomain 'timing_cond_wcl_slow'.
+Warning : Cannot modify the attribute after loading library(s). [LBR-110]
+        : Cannot modify the attribute 'sort_library_pins'. The library has already been loaded in the libdomain 'timing_cond_wcl_slow'.
+Warning : Cannot modify the attribute after loading library(s). [LBR-110]
+        : Cannot modify the attribute 'sort_library_pins'. The library has already been loaded in the libdomain 'timing_cond_wcl_slow'.
+Warning : Cannot modify the attribute after loading library(s). [LBR-110]
+        : Cannot modify the attribute 'sort_library_pins'. The library has already been loaded in the libdomain 'timing_cond_wcl_slow'.
+Warning : Cannot modify the attribute after loading library(s). [LBR-110]
+        : Cannot modify the attribute 'sort_library_pins'. The library has already been loaded in the libdomain 'timing_cond_wcl_slow'.
+Warning : Cannot modify the attribute after loading library(s). [LBR-110]
+        : Cannot modify the attribute 'sort_library_pins'. The library has already been loaded in the libdomain 'timing_cond_wcl_slow'.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'LBR-110'.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL128_A9PP140ZTL_C30 cannot be found in library.
+        : Ensure that the proper library files are available and have been imported.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL16_A9PP140ZTL_C30 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL1_A9PP140ZTL_C30 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL2_A9PP140ZTL_C30 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL32_A9PP140ZTL_C30 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL3_A9PP140ZTL_C30 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL4_A9PP140ZTL_C30 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL64_A9PP140ZTL_C30 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL8_A9PP140ZTL_C30 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell AND2_X11TM_A9PP140ZTL_C30 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell AND2_X1P4TM_A9PP140ZTL_C30 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell AND2_X1TM_A9PP140ZTL_C30 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell AND2_X2TM_A9PP140ZTL_C30 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell AND2_X3TM_A9PP140ZTL_C30 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell AND2_X4TM_A9PP140ZTL_C30 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell AND2_X6TM_A9PP140ZTL_C30 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell AND2_X8TM_A9PP140ZTL_C30 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell AO21A1AI2_X8M_A9PP140ZTL_C30 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell AOI211_X6M_A9PP140ZTL_C30 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell AOI21_X0P5A_A9PP140ZTL_C30 cannot be found in library.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'PHYS-279'.
+@file(syn.tcl) 80: 	puts "Now load RTL LIST"
+Now load RTL LIST
+@file(syn.tcl) 81: 	set rtlList "\
+        ${rtlDir}/mc/clkDiv.v \
+	${rtlDir}/mc/pp_int_x4.v \
+	${rtlDir}/mc/pp_int_x4_tc.v \
+	${rtlDir}/mc/int_pp_3.v \
+	${rtlDir}/mc/int_pp_2.v \
+	${rtlDir}/mc/int_pp_1.v \
+	${rtlDir}/mc/int_pp_0.v \
+	"
+@file(syn.tcl) 90: 	suspend
+
+Execution has been suspended temporarily.
+Enter 'resume' to continue.
+Enter 'stop_suspend' to stop script execution
+[SUSPEND]genus:root: 1> read_hdl $rtlList
+            Reading Verilog file '../rtl/mc/clkDiv.v'
+            Reading Verilog file '../rtl/mc/pp_int_x4.v'
+            Reading Verilog file '../rtl/mc/pp_int_x4_tc.v'
+            Reading Verilog file '../rtl/mc/int_pp_3.v'
+            Reading Verilog file '../rtl/mc/int_pp_2.v'
+            Reading Verilog file '../rtl/mc/int_pp_1.v'
+            Reading Verilog file '../rtl/mc/int_pp_0.v'
+[SUSPEND]genus:root: 1> get_db pins *
+[SUSPEND]genus:root: 1> elaborate $DESIGN
+Info    : Unusable library cells found at the time of loading a library.  [LBR-415]
+        : Library: 'sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib', Total cells: 1003, Unusable cells: 75.
+	List of unusable cells: 'ANTENNA2_A9PP140ZTL_C30 FILLSGCAP128_A9PP140ZTL_C30 FILLSGCAP16_A9PP140ZTL_C30 FILLSGCAP2_A9PP140ZTL_C30 FILLSGCAP32_A9PP140ZTL_C30 FILLSGCAP3_A9PP140ZTL_C30 FILLSGCAP4_A9PP140ZTL_C30 FILLSGCAP64_A9PP140ZTL_C30 FILLSGCAP8_A9PP140ZTL_C30 FILLXGCAP128_A9PP140ZTL_C30 FILLXGCAP16_A9PP140ZTL_C30 FILLXGCAP2_A9PP140ZTL_C30 FILLXGCAP32_A9PP140ZTL_C30 FILLXGCAP3_A9PP140ZTL_C30 FILLXGCAP4_A9PP140ZTL_C30 FILLXGCAP64_A9PP140ZTL_C30 FILLXGCAP8_A9PP140ZTL_C30 FRICG_X0P5B_A9PP140ZTL_C30 FRICG_X0P6B_A9PP140ZTL_C30 FRICG_X0P7B_A9PP140ZTL_C30 FRICG_X0P8B_A9PP140ZTL_C30 FRICG_X11B_A9PP140ZTL_C30 FRICG_X13B_A9PP140ZTL_C30 FRICG_X16B_A9PP140ZTL_C30 FRICG_X1B_A9PP140ZTL_C30 FRICG_X1P2B_A9PP140ZTL_C30 FRICG_X1P4B_A9PP140ZTL_C30 FRICG_X1P7B_A9PP140ZTL_C30 FRICG_X2B_A9PP140ZTL_C30 FRICG_X2P5B_A9PP140ZTL_C30 FRICG_X3B_A9PP140ZTL_C30 FRICG_X3P5B_A9PP140ZTL_C30 FRICG_X4B_A9PP140ZTL_C30 FRICG_X5B_A9PP140ZTL_C30 FRICG_X6B_A9PP140ZTL_C30 FRICG_X7P5B_A9PP140ZTL_C30 FRICG_X9B_A9PP140ZTL_C30 SDFFYQ2D_X1M_A9PP140ZTL_C30 SDFFYQ2D_X2M_A9PP140ZTL_C30 SDFFYQ2D_X3M_A9PP140ZTL_C30 SDFFYQ2D_X4M_A9PP140ZTL_C30 SDFFYQ3D_X1M_A9PP140ZTL_C30 SDFFYQ3D_X2M_A9PP140ZTL_C30 SDFFYQ3D_X3M_A9PP140ZTL_C30 SDFFYQ3D_X4M_A9PP140ZTL_C30 SDFFYQ4D_X1M_A9PP140ZTL_C30 SDFFYQ4D_X2M_A9PP140ZTL_C30 SDFFYQ4D_X3M_A9PP140ZTL_C30 SDFFYQ4D_X4M_A9PP140ZTL_C30 SDFFYRPQ2D_X1M_A9PP140ZTL_C30 SDFFYRPQ2D_X2M_A9PP140ZTL_C30 SDFFYRPQ2D_X3M_A9PP140ZTL_C30 SDFFYRPQ2D_X4M_A9PP140ZTL_C30 SDFFYRPQ3D_X1M_A9PP140ZTL_C30 SDFFYRPQ3D_X2M_A9PP140ZTL_C30 SDFFYRPQ3D_X3M_A9PP140ZTL_C30 SDFFYRPQ3D_X4M_A9PP140ZTL_C30 SDFFYRPQ4D_X1M_A9PP140ZTL_C30 SDFFYRPQ4D_X2M_A9PP140ZTL_C30 SDFFYRPQ4D_X3M_A9PP140ZTL_C30 SDFFYRPQ4D_X4M_A9PP140ZTL_C30 SDFFYSQ2D_X1M_A9PP140ZTL_C30 SDFFYSQ2D_X2M_A9PP140ZTL_C30 SDFFYSQ2D_X3M_A9PP140ZTL_C30 SDFFYSQ2D_X4M_A9PP140ZTL_C30 SDFFYSQ3D_X1M_A9PP140ZTL_C30 SDFFYSQ3D_X2M_A9PP140ZTL_C30 SDFFYSQ3D_X3M_A9PP140ZTL_C30 SDFFYSQ3D_X4M_A9PP140ZTL_C30 SDFFYSQ4D_X1M_A9PP140ZTL_C30 SDFFYSQ4D_X2M_A9PP140ZTL_C30 SDFFYSQ4D_X3M_A9PP140ZTL_C30 SDFFYSQ4D_X4M_A9PP140ZTL_C30 ENDCAPTIE3_A9PP140ZTL_C30 FILLTIE5_A9PP140ZTL_C30 .'
+Warning : Message truncated because it exceeds the maximum length of 4096 characters. [MESG-6]
+        : Info portion of message 'LBR-415' truncated to length 4096 from 67775
+        : By default messages are limited to 4096 characters. All characters after the 4096 character limit are truncated. To remove this limit, set the message attribute 'truncate' to 'false'. However, this may dramatically increase the size of the log file.
+Info    : Unusable library cells found at the time of loading a library.  [LBR-415]
+        : Library: 'physical_cells', Total cells: 2534, Unusable cells: 2534.
+	List of unusable cells: 'FILL128_A9PP140ZTL_C30 FILL16_A9PP140ZTL_C30 FILL1_A9PP140ZTL_C30 FILL2_A9PP140ZTL_C30 FILL32_A9PP140ZTL_C30 FILL3_A9PP140ZTL_C30 FILL4_A9PP140ZTL_C30 FILL64_A9PP140ZTL_C30 FILL8_A9PP140ZTL_C30 AND2_X11TM_A9PP140ZTL_C30 AND2_X1P4TM_A9PP140ZTL_C30 AND2_X1TM_A9PP140ZTL_C30 AND2_X2TM_A9PP140ZTL_C30 AND2_X3TM_A9PP140ZTL_C30 AND2_X4TM_A9PP140ZTL_C30 AND2_X6TM_A9PP140ZTL_C30 AND2_X8TM_A9PP140ZTL_C30 AO21A1AI2_X8M_A9PP140ZTL_C30 AOI211_X6M_A9PP140ZTL_C30 AOI21_X0P5A_A9PP140ZTL_C30 AOI21_X0P7A_A9PP140ZTL_C30 AOI21_X11A_A9PP140ZTL_C30 AOI21_X11M_A9PP140ZTL_C30 AOI21_X1A_A9PP140ZTL_C30 AOI21_X1P4A_A9PP140ZTL_C30 AOI21_X2A_A9PP140ZTL_C30 AOI21_X3A_A9PP140ZTL_C30 AOI21_X4A_A9PP140ZTL_C30 AOI21_X6A_A9PP140ZTL_C30 AOI21_X8A_A9PP140ZTL_C30 AOI22_X0P5A_A9PP140ZTL_C30 AOI22_X0P7A_A9PP140ZTL_C30 AOI22_X11A_A9PP140ZTL_C30 AOI22_X11M_A9PP140ZTL_C30 AOI22_X1A_A9PP140ZTL_C30 AOI22_X1P4A_A9PP140ZTL_C30 AOI22_X2A_A9PP140ZTL_C30 AOI22_X3A_A9PP140ZTL_C30 AOI22_X4A_A9PP140ZTL_C30 AOI22_X6A_A9PP140ZTL_C30 AOI22_X8A_A9PP140ZTL_C30 AOI31_X8M_A9PP140ZTL_C30 DFFQL2W_X1M_A9PP140ZTL_C30 DFFQNL2W_X1M_A9PP140ZTL_C30 DFFRPQL2W_X1M_A9PP140ZTL_C30 DFFRPQNL2W_X1M_A9PP140ZTL_C30 DFFSQL2W_X1M_A9PP140ZTL_C30 DFFSQNL2W_X1M_A9PP140ZTL_C30 INV_X20B_A9PP140ZTL_C30 INV_X20M_A9PP140ZTL_C30 NAND2_X11A_A9PP140ZTL_C30 NAND2_X11B_A9PP140ZTL_C30 NAND2_X11M_A9PP140ZTL_C30 NAND2_X11TA_A9PP140ZTL_C30 NAND2_X1P4TA_A9PP140ZTL_C30 NAND2_X1TA_A9PP140ZTL_C30 NAND2_X2TA_A9PP140ZTL_C30 NAND2_X3TA_A9PP140ZTL_C30 NAND2_X4TA_A9PP140ZTL_C30 NAND2_X6TA_A9PP140ZTL_C30 NAND2_X8TA_A9PP140ZTL_C30 NAND3_X8A_A9PP140ZTL_C30 NAND3_X8M_A9PP140ZTL_C30 NAND4_X6A_A9PP140ZTL_C30 NAND4_X6M_A9PP140ZTL_C30 NOR2_X11A_A9PP140ZTL_C30 NOR2_X11B_A9PP140ZTL_C30 NOR2_X11M_A9PP140ZTL_C30 NOR2_X11TA_A9PP140ZTL_C30 NOR2_X1P4TA_A9PP140ZTL_C30 NOR2_X1TA_A9PP140ZTL_C30 NOR2_X2TA_A9PP140ZTL_C30 NOR2_X3TA_A9PP140ZTL_C30 NOR2_X4TA_A9PP140ZTL_C30 NOR2_X6TA_A9PP140ZTL_C30 NOR2_X8TA_A9PP140ZTL_C30 NOR3_X6A_A9PP140ZTL_C30 NOR3_X6M_A9PP140ZTL_C30 OA21A1OI2_X8M_A9PP140ZTL_C30 OAI211_X6M_A9PP140ZTL_C30 OAI21_X0P5A_A9PP140ZTL_C30 OAI21_X0P7A_A9PP140ZTL_C30 OAI21_X11A_A9PP140ZTL_C30 OAI21_X11M_A9PP140ZTL_C30 OAI21_X1A_A9PP140ZTL_C30 OAI21_X1P4A_A9PP140ZTL_C30 OAI21_X2A_A9PP140ZTL_C30 OAI21_X3A_A9PP140ZTL_C30 OAI21_X4A_A9PP140ZTL_C30 OAI21_X6A_A9PP140ZTL_C30 OAI21_X8A_A9PP140ZTL_C30 OAI22_X0P5A_A9PP140ZTL_C30 OAI22_X0P7A_A9PP140ZTL_C30 OAI22_X11A_A9PP140ZTL_C30 OAI22_X11M_A9PP140ZTL_C30 OAI22_X1A_A9PP140ZTL_C30 OAI22_X1P4A_A9PP140ZTL_C30 OAI22_X2A_A9PP140ZTL_C30 OAI22_X3A_A9PP140ZTL_C30 OAI22_X4A_A9PP140ZTL_C30 OAI22_X6A_A9PP140ZTL_C30 OAI22_X8A_A9PP140ZTL_C30 OAI31_X8M_A9PP140ZTL_C30 OR2_X11TM_A9PP140ZTL_C30 OR2_X1P4TM_A9PP140ZTL_C30 OR2_X1TM_A9PP140ZTL_C30 OR2_X2TM_A9PP140ZTL_C30 OR2_X3TM_A9PP140ZTL_C30 OR2_X4TM_A9PP140ZTL_C30 OR2_X6TM_A9PP140ZTL_C30 OR2_X8TM_A9PP140ZTL_C30 SDFFQH_X1M_A9PP140ZTL_C30 SDFFQH_X2M_A9PP140ZTL_C30 SDFFQH_X3M_A9PP140ZTL_C30 SDFFQH_X4M_A9PP140ZTL_C30 SDFFQL2W_X1M_A9PP140ZTL_C30 SDFFQL2W_X2M_A9PP140ZTL_C30 SDFFQL4W_X1M_A9PP140ZTL_C30 SDFFQL4W_X2M_A9PP140ZTL_C30 SDFFQNH_X1M_A9PP140ZTL_C30 SDFFQNH_X2M_A9PP140ZTL_C30 SDFFQNH_X3M_A9PP140ZTL_C30 SDFFQNL2W_X1M_A9PP140ZTL_C30 SDFFRPQH_X1M_A9PP140ZTL_C30 SDFFRPQH_X2M_A9PP140ZTL_C30 SDFFRPQH_X3M_A9PP140ZTL_C30 SDFFRPQH_X4M_A9PP140ZTL_C30 SDFFRPQL2W_X1M_A9PP140ZTL_C30 SDFFRPQL2W_X2M_A9PP140ZTL_C30 SDFFRPQL4W_X1M_A9PP140ZTL_C30 SDFFRPQL4W_X2M_A9PP140ZTL_C30 SDFFRPQNH_X1M_A9PP140ZTL_C30 SDFFRPQNH_X2M_A9PP140ZTL_C30 SDFFRPQNH_X3M_A9PP140ZTL_C30 SDFFRPQNL2W_X1M_A9PP140ZTL_C30 SDFFSQH_X1M_A9PP140ZTL_C30 SDFFSQH_X2M_A9PP140ZTL_C30 SDFFSQH_X3M_A9PP140ZTL_C30 SDFFSQH_X4M_A9PP140ZTL_C30 SDFFSQL2W_X1M_A9PP140ZTL_C30 SDFFSQL2W_X2M_A9PP140ZTL_C30 SDFFSQL4W_X1M_A9PP140ZTL_C30 SDFFSQL4W_X2M_A9PP140ZTL_C30 SDFFSQNH_X1M_A9PP140ZTL_C30 SDFFSQNH_X2M_A9PP140ZTL_C30 SDFFSQNH_X3M_A9PP140ZTL_C30 SDFFSQNL2W_X1M_A9PP140ZTL_C30 SDFFSRPQH_X1M_A9PP140ZTL_C30 SDFFSRPQH_X2M_A9PP140ZTL_C30 SDFFSRPQH_X3M_A9PP140ZTL_C30 SDFFSRPQH_X4M_A9PP140ZTL_C30 SDFFXQN_X1M_A9PP140ZTL_C30 SDFFXQN_X2M_A9PP140ZTL_C30
+                  INLINE_INFO: Skipping marking small hierarchies inline as the variable 'hdl_dissolve_primitive_instance_hierarchy_threshold' has not been set to a positive value.
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'pp_int_x4' from file '../rtl/mc/pp_int_x4.v'.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'delayMatch1_reg_re' in module 'pp_int_x4' in file '../rtl/mc/pp_int_x4.v' on line 140.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'delayMatch1_reg_im' in module 'pp_int_x4' in file '../rtl/mc/pp_int_x4.v' on line 141.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'delayMatch1_reg_next_re' in module 'pp_int_x4' in file '../rtl/mc/pp_int_x4.v' on line 142.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'delayMatch1_reg_next_im' in module 'pp_int_x4' in file '../rtl/mc/pp_int_x4.v' on line 143.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'delayMatch2_reg_re' in module 'pp_int_x4' in file '../rtl/mc/pp_int_x4.v' on line 166.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'delayMatch2_reg_im' in module 'pp_int_x4' in file '../rtl/mc/pp_int_x4.v' on line 167.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'delayMatch2_reg_next_re' in module 'pp_int_x4' in file '../rtl/mc/pp_int_x4.v' on line 168.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'delayMatch2_reg_next_im' in module 'pp_int_x4' in file '../rtl/mc/pp_int_x4.v' on line 169.
+Info    : Instantiating Subdesign. [CDFG-567]
+        : Linking instance 'pp_int_x4.u_pp_int_x4_tc' in module 'pp_int_x4' of library 'default' to module 'pp_int_x4_tc' of library 'default' (line 28 in file '../rtl/mc/pp_int_x4_tc.v') in file '../rtl/mc/pp_int_x4.v' on line 187.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'pp_int_x4_tc' from file '../rtl/mc/pp_int_x4_tc.v'.
+Info    : Common subexpression eliminated. [CDFG-738]
+        : Eliminated '==' in file '../rtl/mc/pp_int_x4_tc.v' on line 90.
+Info    : Common subexpression kept. [CDFG-739]
+        : Kept '==' in file '../rtl/mc/pp_int_x4_tc.v' on line 68.
+Info    : Common subexpression eliminated. [CDFG-738]
+        : Eliminated '==' in file '../rtl/mc/pp_int_x4_tc.v' on line 118.
+Info    : Common subexpression kept. [CDFG-739]
+        : Kept '==' in file '../rtl/mc/pp_int_x4_tc.v' on line 68.
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/equal_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=1 B=1 Z=1) at line 68 in the file '../rtl/mc/pp_int_x4_tc.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=1 B=1 Z=1) at line 68 in the file '../rtl/mc/pp_int_x4_tc.v' will be considered in the following order: {'hdl_implementation:GB/equal_unsigned/very_fast' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/add_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=2 B=1 Z=2) at line 73 in the file '../rtl/mc/pp_int_x4_tc.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=2 B=1 Z=2) at line 73 in the file '../rtl/mc/pp_int_x4_tc.v' will be considered in the following order: {'hdl_implementation:GB/add_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/add_unsigned/medium' (priority 1), 'hdl_implementation:GB/add_unsigned/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/equal_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=2 B=2 Z=1) at line 80 in the file '../rtl/mc/pp_int_x4_tc.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=2 B=2 Z=1) at line 80 in the file '../rtl/mc/pp_int_x4_tc.v' will be considered in the following order: {'hdl_implementation:GB/equal_unsigned/very_fast' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/equal_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=2 B=1 Z=1) at line 108 in the file '../rtl/mc/pp_int_x4_tc.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=2 B=1 Z=1) at line 108 in the file '../rtl/mc/pp_int_x4_tc.v' will be considered in the following order: {'hdl_implementation:GB/equal_unsigned/very_fast' (priority 1)}
+Info    : Instantiating Subdesign. [CDFG-567]
+        : Linking instance 'pp_int_x4.u_int_pp_0' in module 'pp_int_x4' of library 'default' to module 'int_pp_0' of library 'default' (line 22 in file '../rtl/mc/int_pp_0.v') in file '../rtl/mc/pp_int_x4.v' on line 196.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'int_pp_0' from file '../rtl/mc/int_pp_0.v'.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'Delay_Pipeline_reg_re' in module 'int_pp_0' in file '../rtl/mc/int_pp_0.v' on line 41.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'Delay_Pipeline_reg_im' in module 'int_pp_0' in file '../rtl/mc/int_pp_0.v' on line 42.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'Delay_Pipeline_reg_next_re' in module 'int_pp_0' in file '../rtl/mc/int_pp_0.v' on line 43.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'Delay_Pipeline_reg_next_im' in module 'int_pp_0' in file '../rtl/mc/int_pp_0.v' on line 44.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'delay_pipeline_re' in module 'int_pp_0' in file '../rtl/mc/int_pp_0.v' on line 45.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'delay_pipeline_im' in module 'int_pp_0' in file '../rtl/mc/int_pp_0.v' on line 46.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'multiplier_mul_temp' [29] doesn't match the width of right hand side [16] in assignment in file '../rtl/mc/int_pp_0.v' on line 807.
+        : Review and make sure the mismatch is intentional. Genus can possibly issue bitwidth mismatch warning for explicit assignments present in RTL as-well-as for implicit assignments inferred by the tool. For example, in case of enum declaration without value, the tool will implicitly assign value to the enum variables. It also issues the warning for any bitwidth mismatch that appears in this implicit assignment.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'multiplier_mul_temp_1' [29] doesn't match the width of right hand side [16] in assignment in file '../rtl/mc/int_pp_0.v' on line 809.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'multiplier_mul_temp_2' [29] doesn't match the width of right hand side [16] in assignment in file '../rtl/mc/int_pp_0.v' on line 822.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'multiplier_mul_temp_3' [29] doesn't match the width of right hand side [16] in assignment in file '../rtl/mc/int_pp_0.v' on line 824.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'multiplier_mul_temp_4' [29] doesn't match the width of right hand side [16] in assignment in file '../rtl/mc/int_pp_0.v' on line 870.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'multiplier_mul_temp_5' [29] doesn't match the width of right hand side [16] in assignment in file '../rtl/mc/int_pp_0.v' on line 872.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'multiplier_mul_temp_6' [29] doesn't match the width of right hand side [16] in assignment in file '../rtl/mc/int_pp_0.v' on line 1061.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'multiplier_mul_temp_7' [29] doesn't match the width of right hand side [16] in assignment in file '../rtl/mc/int_pp_0.v' on line 1063.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'multiplier_mul_temp_8' [29] doesn't match the width of right hand side [16] in assignment in file '../rtl/mc/int_pp_0.v' on line 1076.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'multiplier_mul_temp_9' [29] doesn't match the width of right hand side [16] in assignment in file '../rtl/mc/int_pp_0.v' on line 1078.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'multiplier_mul_temp_10' [29] doesn't match the width of right hand side [16] in assignment in file '../rtl/mc/int_pp_0.v' on line 1112.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'multiplier_mul_temp_11' [29] doesn't match the width of right hand side [16] in assignment in file '../rtl/mc/int_pp_0.v' on line 1114.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'multiplier_mul_temp_12' [29] doesn't match the width of right hand side [16] in assignment in file '../rtl/mc/int_pp_0.v' on line 1127.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'multiplier_mul_temp_13' [29] doesn't match the width of right hand side [16] in assignment in file '../rtl/mc/int_pp_0.v' on line 1129.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'multiplier_mul_temp_14' [29] doesn't match the width of right hand side [16] in assignment in file '../rtl/mc/int_pp_0.v' on line 1184.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'multiplier_mul_temp_15' [29] doesn't match the width of right hand side [16] in assignment in file '../rtl/mc/int_pp_0.v' on line 1186.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'multiplier_mul_temp_16' [29] doesn't match the width of right hand side [16] in assignment in file '../rtl/mc/int_pp_0.v' on line 1199.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'multiplier_mul_temp_17' [29] doesn't match the width of right hand side [16] in assignment in file '../rtl/mc/int_pp_0.v' on line 1201.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'multiplier_mul_temp_18' [29] doesn't match the width of right hand side [16] in assignment in file '../rtl/mc/int_pp_0.v' on line 1235.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'multiplier_mul_temp_19' [29] doesn't match the width of right hand side [16] in assignment in file '../rtl/mc/int_pp_0.v' on line 1237.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'CDFG-372'.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused latch register 'delay_pipeline_re[56]' in module 'int_pp_0' in file '../rtl/mc/int_pp_0.v' on line 45.
+        : Genus removes the flip-flop or latch inferred for an unused signal or variable. To preserve the flip-flop or latch, set the hdl_preserve_unused_registers attribute to true or use a pragma in the RTL.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused latch register 'delay_pipeline_re[6]' in module 'int_pp_0' in file '../rtl/mc/int_pp_0.v' on line 45.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused latch register 'delay_pipeline_im[56]' in module 'int_pp_0' in file '../rtl/mc/int_pp_0.v' on line 46.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused latch register 'delay_pipeline_im[6]' in module 'int_pp_0' in file '../rtl/mc/int_pp_0.v' on line 46.
+Info    : Common subexpression eliminated. [CDFG-738]
+        : Eliminated '==' in file '../rtl/mc/int_pp_0.v' on line 836.
+Info    : Common subexpression kept. [CDFG-739]
+        : Kept '==' in file '../rtl/mc/int_pp_0.v' on line 764.
+Info    : Common subexpression eliminated. [CDFG-738]
+        : Eliminated '==' in file '../rtl/mc/int_pp_0.v' on line 884.
+Info    : Common subexpression kept. [CDFG-739]
+        : Kept '==' in file '../rtl/mc/int_pp_0.v' on line 764.
+Info    : Common subexpression eliminated. [CDFG-738]
+        : Eliminated '==' in file '../rtl/mc/int_pp_0.v' on line 905.
+Info    : Common subexpression kept. [CDFG-739]
+        : Kept '==' in file '../rtl/mc/int_pp_0.v' on line 764.
+Info    : Common subexpression eliminated. [CDFG-738]
+        : Eliminated '==' in file '../rtl/mc/int_pp_0.v' on line 954.
+Info    : Common subexpression kept. [CDFG-739]
+        : Kept '==' in file '../rtl/mc/int_pp_0.v' on line 764.
+Info    : Common subexpression eliminated. [CDFG-738]
+        : Eliminated '==' in file '../rtl/mc/int_pp_0.v' on line 997.
+Info    : Common subexpression kept. [CDFG-739]
+        : Kept '==' in file '../rtl/mc/int_pp_0.v' on line 764.
+Info    : Common subexpression eliminated. [CDFG-738]
+        : Eliminated '==' in file '../rtl/mc/int_pp_0.v' on line 1018.
+Info    : Common subexpression kept. [CDFG-739]
+        : Kept '==' in file '../rtl/mc/int_pp_0.v' on line 764.
+Info    : Common subexpression eliminated. [CDFG-738]
+        : Eliminated '==' in file '../rtl/mc/int_pp_0.v' on line 1039.
+Info    : Common subexpression kept. [CDFG-739]
+        : Kept '==' in file '../rtl/mc/int_pp_0.v' on line 764.
+Info    : Common subexpression eliminated. [CDFG-738]
+        : Eliminated '==' in file '../rtl/mc/int_pp_0.v' on line 1090.
+Info    : Common subexpression kept. [CDFG-739]
+        : Kept '==' in file '../rtl/mc/int_pp_0.v' on line 764.
+Info    : Common subexpression eliminated. [CDFG-738]
+        : Eliminated '==' in file '../rtl/mc/int_pp_0.v' on line 1141.
+Info    : Common subexpression kept. [CDFG-739]
+        : Kept '==' in file '../rtl/mc/int_pp_0.v' on line 764.
+Info    : Common subexpression eliminated. [CDFG-738]
+        : Eliminated '==' in file '../rtl/mc/int_pp_0.v' on line 1162.
+Info    : Common subexpression kept. [CDFG-739]
+        : Kept '==' in file '../rtl/mc/int_pp_0.v' on line 764.
+Info    : Common subexpression eliminated. [CDFG-738]
+        : Eliminated '==' in file '../rtl/mc/int_pp_0.v' on line 1213.
+Info    : Common subexpression kept. [CDFG-739]
+        : Kept '==' in file '../rtl/mc/int_pp_0.v' on line 764.
+Info    : Common subexpression eliminated. [CDFG-738]
+        : Eliminated '==' in file '../rtl/mc/int_pp_0.v' on line 1261.
+Info    : Common subexpression kept. [CDFG-739]
+        : Kept '==' in file '../rtl/mc/int_pp_0.v' on line 764.
+Info    : Common subexpression eliminated. [CDFG-738]
+        : Eliminated '==' in file '../rtl/mc/int_pp_0.v' on line 1282.
+Info    : Common subexpression kept. [CDFG-739]
+        : Kept '==' in file '../rtl/mc/int_pp_0.v' on line 764.
+Info    : Common subexpression eliminated. [CDFG-738]
+        : Eliminated '==' in file '../rtl/mc/int_pp_0.v' on line 1303.
+Info    : Common subexpression kept. [CDFG-739]
+        : Kept '==' in file '../rtl/mc/int_pp_0.v' on line 764.
+Info    : Common subexpression eliminated. [CDFG-738]
+        : Eliminated '==' in file '../rtl/mc/int_pp_0.v' on line 1324.
+Info    : Common subexpression kept. [CDFG-739]
+        : Kept '==' in file '../rtl/mc/int_pp_0.v' on line 764.
+Info    : Common subexpression eliminated. [CDFG-738]
+        : Eliminated '==' in file '../rtl/mc/int_pp_0.v' on line 1375.
+Info    : Common subexpression kept. [CDFG-739]
+        : Kept '==' in file '../rtl/mc/int_pp_0.v' on line 764.
+Info    : Common subexpression eliminated. [CDFG-738]
+        : Eliminated '==' in file '../rtl/mc/int_pp_0.v' on line 1426.
+Info    : Common subexpression kept. [CDFG-739]
+        : Kept '==' in file '../rtl/mc/int_pp_0.v' on line 764.
+Info    : Common subexpression eliminated. [CDFG-738]
+        : Eliminated '==' in file '../rtl/mc/int_pp_0.v' on line 1447.
+Info    : Common subexpression kept. [CDFG-739]
+        : Kept '==' in file '../rtl/mc/int_pp_0.v' on line 764.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'CDFG-738'.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'CDFG-739'.
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/equal_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=1 B=1 Z=1) at line 764 in the file '../rtl/mc/int_pp_0.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=1 B=1 Z=1) at line 764 in the file '../rtl/mc/int_pp_0.v' will be considered in the following order: {'hdl_implementation:GB/equal_unsigned/very_fast' (priority 1)}
+Info    : Skipping an invalid binding for a subprogram call. [CWD-21]
+        : The binding 'hdl_bind:CW/CW_mult_signed/b1' is invalid for the call to synthetic operator 'MULT_TC_OP' (pin widths: A=13 B=4 Z=17) at line 807 in the file '../rtl/mc/int_pp_0.v' because the 'avoid' attribute on the binding is set to 'true'.
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/mult_signed/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'MULT_TC_OP' (pin widths: A=13 B=4 Z=17) at line 807 in the file '../rtl/mc/int_pp_0.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'MULT_TC_OP' (pin widths: A=13 B=4 Z=17) at line 807 in the file '../rtl/mc/int_pp_0.v' will be considered in the following order: {'hdl_implementation:GB/mult_signed/very_fast' (priority 1), 'hdl_implementation:GB/mult_signed/medium' (priority 1), 'hdl_implementation:GB/mult_signed/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/add_signed/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'ADD_TC_OP' (pin widths: A=17 B=17 Z=18) at line 829 in the file '../rtl/mc/int_pp_0.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'ADD_TC_OP' (pin widths: A=17 B=17 Z=18) at line 829 in the file '../rtl/mc/int_pp_0.v' will be considered in the following order: {'hdl_implementation:GB/add_signed/very_fast' (priority 1), 'hdl_implementation:GB/add_signed/medium' (priority 1), 'hdl_implementation:GB/add_signed/slow' (priority 1)}
+Info    : Skipping an invalid binding for a subprogram call. [CWD-21]
+        : The binding 'hdl_bind:CW/CW_mult_signed/b1' is invalid for the call to synthetic operator 'MULT_TC_OP' (pin widths: A=13 B=4 Z=17) at line 822 in the file '../rtl/mc/int_pp_0.v' because the 'avoid' attribute on the binding is set to 'true'.
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/mult_signed/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'MULT_TC_OP' (pin widths: A=13 B=4 Z=17) at line 822 in the file '../rtl/mc/int_pp_0.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'MULT_TC_OP' (pin widths: A=13 B=4 Z=17) at line 822 in the file '../rtl/mc/int_pp_0.v' will be considered in the following order: {'hdl_implementation:GB/mult_signed/very_fast' (priority 1), 'hdl_implementation:GB/mult_signed/medium' (priority 1), 'hdl_implementation:GB/mult_signed/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/mult_signed/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'MULT_TC_OP' (pin widths: A=13 B=4 Z=17) at line 809 in the file '../rtl/mc/int_pp_0.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'MULT_TC_OP' (pin widths: A=13 B=4 Z=17) at line 809 in the file '../rtl/mc/int_pp_0.v' will be considered in the following order: {'hdl_implementation:GB/mult_signed/very_fast' (priority 1), 'hdl_implementation:GB/mult_signed/medium' (priority 1), 'hdl_implementation:GB/mult_signed/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/add_signed/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'ADD_TC_OP' (pin widths: A=17 B=17 Z=18) at line 830 in the file '../rtl/mc/int_pp_0.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'ADD_TC_OP' (pin widths: A=17 B=17 Z=18) at line 830 in the file '../rtl/mc/int_pp_0.v' will be considered in the following order: {'hdl_implementation:GB/add_signed/very_fast' (priority 1), 'hdl_implementation:GB/add_signed/medium' (priority 1), 'hdl_implementation:GB/add_signed/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/mult_signed/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'MULT_TC_OP' (pin widths: A=13 B=4 Z=17) at line 824 in the file '../rtl/mc/int_pp_0.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'MULT_TC_OP' (pin widths: A=13 B=4 Z=17) at line 824 in the file '../rtl/mc/int_pp_0.v' will be considered in the following order: {'hdl_implementation:GB/mult_signed/very_fast' (priority 1), 'hdl_implementation:GB/mult_signed/medium' (priority 1), 'hdl_implementation:GB/mult_signed/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/add_signed/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'ADD_TC_OP' (pin widths: A=15 B=17 Z=18) at line 877 in the file '../rtl/mc/int_pp_0.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'ADD_TC_OP' (pin widths: A=15 B=17 Z=18) at line 877 in the file '../rtl/mc/int_pp_0.v' will be considered in the following order: {'hdl_implementation:GB/add_signed/very_fast' (priority 1), 'hdl_implementation:GB/add_signed/medium' (priority 1), 'hdl_implementation:GB/add_signed/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/mult_signed/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'MULT_TC_OP' (pin widths: A=13 B=4 Z=17) at line 870 in the file '../rtl/mc/int_pp_0.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'MULT_TC_OP' (pin widths: A=13 B=4 Z=17) at line 870 in the file '../rtl/mc/int_pp_0.v' will be considered in the following order: {'hdl_implementation:GB/mult_signed/very_fast' (priority 1), 'hdl_implementation:GB/mult_signed/medium' (priority 1), 'hdl_implementation:GB/mult_signed/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/add_signed/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'ADD_TC_OP' (pin widths: A=15 B=17 Z=18) at line 878 in the file '../rtl/mc/int_pp_0.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'ADD_TC_OP' (pin widths: A=15 B=17 Z=18) at line 878 in the file '../rtl/mc/int_pp_0.v' will be considered in the following order: {'hdl_implementation:GB/add_signed/very_fast' (priority 1), 'hdl_implementation:GB/add_signed/medium' (priority 1), 'hdl_implementation:GB/add_signed/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/mult_signed/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'MULT_TC_OP' (pin widths: A=13 B=4 Z=17) at line 872 in the file '../rtl/mc/int_pp_0.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'MULT_TC_OP' (pin widths: A=13 B=4 Z=17) at line 872 in the file '../rtl/mc/int_pp_0.v' will be considered in the following order: {'hdl_implementation:GB/mult_signed/very_fast' (priority 1), 'hdl_implementation:GB/mult_signed/medium' (priority 1), 'hdl_implementation:GB/mult_signed/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/add_signed/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'ADD_TC_OP' (pin widths: A=32 B=32 Z=32) at line 898 in the file '../rtl/mc/int_pp_0.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'ADD_TC_OP' (pin widths: A=32 B=32 Z=32) at line 898 in the file '../rtl/mc/int_pp_0.v' will be considered in the following order: {'hdl_implementation:GB/add_signed/very_fast' (priority 1), 'hdl_implementation:GB/add_signed/medium' (priority 1), 'hdl_implementation:GB/add_signed/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/add_signed/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'ADD_TC_OP' (pin widths: A=32 B=32 Z=32) at line 899 in the file '../rtl/mc/int_pp_0.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'ADD_TC_OP' (pin widths: A=32 B=32 Z=32) at line 899 in the file '../rtl/mc/int_pp_0.v' will be considered in the following order: {'hdl_implementation:GB/add_signed/very_fast' (priority 1), 'hdl_implementation:GB/add_signed/medium' (priority 1), 'hdl_implementation:GB/add_signed/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/sub_signed/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'SUB_TC_OP' (pin widths: A=15 B=15 Z=16) at line 924 in the file '../rtl/mc/int_pp_0.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'SUB_TC_OP' (pin widths: A=15 B=15 Z=16) at line 924 in the file '../rtl/mc/int_pp_0.v' will be considered in the following order: {'hdl_implementation:GB/sub_signed/very_fast' (priority 1), 'hdl_implementation:GB/sub_signed/medium' (priority 1), 'hdl_implementation:GB/sub_signed/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/sub_signed/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'SUB_TC_OP' (pin widths: A=15 B=15 Z=16) at line 926 in the file '../rtl/mc/int_pp_0.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'SUB_TC_OP' (pin widths: A=15 B=15 Z=16) at line 926 in the file '../rtl/mc/int_pp_0.v' will be considered in the following order: {'hdl_implementation:GB/sub_signed/very_fast' (priority 1), 'hdl_implementation:GB/sub_signed/medium' (priority 1), 'hdl_implementation:GB/sub_signed/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/add_signed/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'ADD_TC_OP' (pin widths: A=32 B=32 Z=32) at line 1011 in the file '../rtl/mc/int_pp_0.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'ADD_TC_OP' (pin widths: A=32 B=32 Z=32) at line 1011 in the file '../rtl/mc/int_pp_0.v' will be considered in the following order: {'hdl_implementation:GB/add_signed/very_fast' (priority 1), 'hdl_implementation:GB/add_signed/medium' (priority 1), 'hdl_implementation:GB/add_signed/slow' (priority 1)}
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'CWD-19'.
+Info    : Skipping an invalid binding for a subprogram call. [CWD-21]
+        : The binding 'hdl_bind:CW/CW_mult_signed/b1' is invalid for the call to synthetic operator 'MULT_TC_OP' (pin widths: A=13 B=3 Z=16) at line 1061 in the file '../rtl/mc/int_pp_0.v' because the 'avoid' attribute on the binding is set to 'true'.
+Info    : Skipping an invalid binding for a subprogram call. [CWD-21]
+        : The binding 'hdl_bind:CW/CW_mult_signed/b1' is invalid for the call to synthetic operator 'MULT_TC_OP' (pin widths: A=13 B=4 Z=17) at line 1076 in the file '../rtl/mc/int_pp_0.v' because the 'avoid' attribute on the binding is set to 'true'.
+Info    : Skipping an invalid binding for a subprogram call. [CWD-21]
+        : The binding 'hdl_bind:CW/CW_mult_signed/b1' is invalid for the call to synthetic operator 'MULT_TC_OP' (pin widths: A=13 B=5 Z=18) at line 1112 in the file '../rtl/mc/int_pp_0.v' because the 'avoid' attribute on the binding is set to 'true'.
+Info    : Skipping an invalid binding for a subprogram call. [CWD-21]
+        : The binding 'hdl_bind:CW/CW_mult_signed/b1' is invalid for the call to synthetic operator 'MULT_TC_OP' (pin widths: A=13 B=6 Z=19) at line 1127 in the file '../rtl/mc/int_pp_0.v' because the 'avoid' attribute on the binding is set to 'true'.
+Info    : Skipping an invalid binding for a subprogram call. [CWD-21]
+        : The binding 'hdl_bind:CW/CW_mult_signed/b1' is invalid for the call to synthetic operator 'MULT_TC_OP' (pin widths: A=13 B=6 Z=19) at line 1184 in the file '../rtl/mc/int_pp_0.v' because the 'avoid' attribute on the binding is set to 'true'.
+Info    : Skipping an invalid binding for a subprogram call. [CWD-21]
+        : The binding 'hdl_bind:CW/CW_mult_signed/b1' is invalid for the call to synthetic operator 'MULT_TC_OP' (pin widths: A=13 B=7 Z=20) at line 1199 in the file '../rtl/mc/int_pp_0.v' because the 'avoid' attribute on the binding is set to 'true'.
+Info    : Skipping an invalid binding for a subprogram call. [CWD-21]
+        : The binding 'hdl_bind:CW/CW_mult_signed/b1' is invalid for the call to synthetic operator 'MULT_TC_OP' (pin widths: A=13 B=7 Z=20) at line 1235 in the file '../rtl/mc/int_pp_0.v' because the 'avoid' attribute on the binding is set to 'true'.
+Info    : Skipping an invalid binding for a subprogram call. [CWD-21]
+        : The binding 'hdl_bind:CW/CW_mult_signed/b1' is invalid for the call to synthetic operator 'MULT_TC_OP' (pin widths: A=13 B=8 Z=21) at line 1346 in the file '../rtl/mc/int_pp_0.v' because the 'avoid' attribute on the binding is set to 'true'.
+Info    : Skipping an invalid binding for a subprogram call. [CWD-21]
+        : The binding 'hdl_bind:CW/CW_mult_signed/b1' is invalid for the call to synthetic operator 'MULT_TC_OP' (pin widths: A=13 B=8 Z=21) at line 1361 in the file '../rtl/mc/int_pp_0.v' because the 'avoid' attribute on the binding is set to 'true'.
+Info    : Skipping an invalid binding for a subprogram call. [CWD-21]
+        : The binding 'hdl_bind:CW/CW_mult_signed/b1' is invalid for the call to synthetic operator 'MULT_TC_OP' (pin widths: A=13 B=8 Z=21) at line 1397 in the file '../rtl/mc/int_pp_0.v' because the 'avoid' attribute on the binding is set to 'true'.
+Info    : Skipping an invalid binding for a subprogram call. [CWD-21]
+        : The binding 'hdl_bind:CW/CW_mult_signed/b1' is invalid for the call to synthetic operator 'MULT_TC_OP' (pin widths: A=13 B=9 Z=22) at line 1412 in the file '../rtl/mc/int_pp_0.v' because the 'avoid' attribute on the binding is set to 'true'.
+Info    : Skipping an invalid binding for a subprogram call. [CWD-21]
+        : The binding 'hdl_bind:CW/CW_mult_signed/b1' is invalid for the call to synthetic operator 'MULT_TC_OP' (pin widths: A=13 B=9 Z=22) at line 1469 in the file '../rtl/mc/int_pp_0.v' because the 'avoid' attribute on the binding is set to 'true'.
+Info    : Skipping an invalid binding for a subprogram call. [CWD-21]
+        : The binding 'hdl_bind:CW/CW_mult_signed/b1' is invalid for the call to synthetic operator 'MULT_TC_OP' (pin widths: A=13 B=9 Z=22) at line 1484 in the file '../rtl/mc/int_pp_0.v' because the 'avoid' attribute on the binding is set to 'true'.
+Info    : Skipping an invalid binding for a subprogram call. [CWD-21]
+        : The binding 'hdl_bind:CW/CW_mult_signed/b1' is invalid for the call to synthetic operator 'MULT_TC_OP' (pin widths: A=13 B=9 Z=22) at line 1520 in the file '../rtl/mc/int_pp_0.v' because the 'avoid' attribute on the binding is set to 'true'.
+Info    : Skipping an invalid binding for a subprogram call. [CWD-21]
+        : The binding 'hdl_bind:CW/CW_mult_signed/b1' is invalid for the call to synthetic operator 'MULT_TC_OP' (pin widths: A=13 B=9 Z=22) at line 1535 in the file '../rtl/mc/int_pp_0.v' because the 'avoid' attribute on the binding is set to 'true'.
+Info    : Skipping an invalid binding for a subprogram call. [CWD-21]
+        : The binding 'hdl_bind:CW/CW_mult_signed/b1' is invalid for the call to synthetic operator 'MULT_TC_OP' (pin widths: A=13 B=9 Z=22) at line 1613 in the file '../rtl/mc/int_pp_0.v' because the 'avoid' attribute on the binding is set to 'true'.
+Info    : Skipping an invalid binding for a subprogram call. [CWD-21]
+        : The binding 'hdl_bind:CW/CW_mult_signed/b1' is invalid for the call to synthetic operator 'MULT_TC_OP' (pin widths: A=13 B=10 Z=23) at line 1628 in the file '../rtl/mc/int_pp_0.v' because the 'avoid' attribute on the binding is set to 'true'.
+Info    : Skipping an invalid binding for a subprogram call. [CWD-21]
+        : The binding 'hdl_bind:CW/CW_mult_signed/b1' is invalid for the call to synthetic operator 'MULT_TC_OP' (pin widths: A=13 B=10 Z=23) at line 1664 in the file '../rtl/mc/int_pp_0.v' because the 'avoid' attribute on the binding is set to 'true'.
+Info    : Instantiating Subdesign. [CDFG-567]
+        : Linking instance 'pp_int_x4.u_int_pp_1' in module 'pp_int_x4' of library 'default' to module 'int_pp_1' of library 'default' (line 22 in file '../rtl/mc/int_pp_1.v') in file '../rtl/mc/pp_int_x4.v' on line 245.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'int_pp_1' from file '../rtl/mc/int_pp_1.v'.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'Delay_Pipeline_reg_re' in module 'int_pp_1' in file '../rtl/mc/int_pp_1.v' on line 41.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'Delay_Pipeline_reg_im' in module 'int_pp_1' in file '../rtl/mc/int_pp_1.v' on line 42.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'Delay_Pipeline_reg_next_re' in module 'int_pp_1' in file '../rtl/mc/int_pp_1.v' on line 43.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'Delay_Pipeline_reg_next_im' in module 'int_pp_1' in file '../rtl/mc/int_pp_1.v' on line 44.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'delay_pipeline_re' in module 'int_pp_1' in file '../rtl/mc/int_pp_1.v' on line 45.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'delay_pipeline_im' in module 'int_pp_1' in file '../rtl/mc/int_pp_1.v' on line 46.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'Delay_Pipeline_reg_re[63]' in module 'int_pp_1' in file '../rtl/mc/int_pp_1.v' on line 771.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'Delay_Pipeline_reg_re[62]' in module 'int_pp_1' in file '../rtl/mc/int_pp_1.v' on line 771.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'Delay_Pipeline_reg_im[63]' in module 'int_pp_1' in file '../rtl/mc/int_pp_1.v' on line 772.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'Delay_Pipeline_reg_im[62]' in module 'int_pp_1' in file '../rtl/mc/int_pp_1.v' on line 772.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused latch register 'Delay_Pipeline_reg_next_re[63]' in module 'int_pp_1' in file '../rtl/mc/int_pp_1.v' on line 43.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused latch register 'Delay_Pipeline_reg_next_re[62]' in module 'int_pp_1' in file '../rtl/mc/int_pp_1.v' on line 43.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused latch register 'Delay_Pipeline_reg_next_im[63]' in module 'int_pp_1' in file '../rtl/mc/int_pp_1.v' on line 44.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused latch register 'Delay_Pipeline_reg_next_im[62]' in module 'int_pp_1' in file '../rtl/mc/int_pp_1.v' on line 44.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused latch register 'delay_pipeline_re[63]' in module 'int_pp_1' in file '../rtl/mc/int_pp_1.v' on line 45.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused latch register 'delay_pipeline_re[62]' in module 'int_pp_1' in file '../rtl/mc/int_pp_1.v' on line 45.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused latch register 'delay_pipeline_re[37]' in module 'int_pp_1' in file '../rtl/mc/int_pp_1.v' on line 45.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused latch register 'delay_pipeline_re[12]' in module 'int_pp_1' in file '../rtl/mc/int_pp_1.v' on line 45.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused latch register 'delay_pipeline_im[63]' in module 'int_pp_1' in file '../rtl/mc/int_pp_1.v' on line 46.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused latch register 'delay_pipeline_im[62]' in module 'int_pp_1' in file '../rtl/mc/int_pp_1.v' on line 46.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused latch register 'delay_pipeline_im[37]' in module 'int_pp_1' in file '../rtl/mc/int_pp_1.v' on line 46.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused latch register 'delay_pipeline_im[12]' in module 'int_pp_1' in file '../rtl/mc/int_pp_1.v' on line 46.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'int_pp_1' in file '../rtl/mc/int_pp_1.v' on line 817.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'int_pp_1' in file '../rtl/mc/int_pp_1.v' on line 818.
+Info    : Instantiating Subdesign. [CDFG-567]
+        : Linking instance 'pp_int_x4.u_int_pp_2' in module 'pp_int_x4' of library 'default' to module 'int_pp_2' of library 'default' (line 22 in file '../rtl/mc/int_pp_2.v') in file '../rtl/mc/pp_int_x4.v' on line 321.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'int_pp_2' from file '../rtl/mc/int_pp_2.v'.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'CDFG-250'.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'CDFG-508'.
+Info    : Instantiating Subdesign. [CDFG-567]
+        : Linking instance 'pp_int_x4.u_int_pp_3' in module 'pp_int_x4' of library 'default' to module 'int_pp_3' of library 'default' (line 22 in file '../rtl/mc/int_pp_3.v') in file '../rtl/mc/pp_int_x4.v' on line 408.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'int_pp_3' from file '../rtl/mc/int_pp_3.v'.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'pp_int_x4'.
+Checking for analog nets...
+Check completed for analog nets.
+Checking for source RTL...
+Check completed for source RTL.
+Running Unified Mux Engine Tricks...
+Completed Unified Mux Engine Tricks
+
+Stage: post_elab
+-------------------------------------------------------
+| Trick             | Accepts | Rejects | Runtime (s) | 
+-------------------------------------------------------
+| ume_constant_bmux |       0 |       0 |        0.00 | 
+| ume_merge         |       0 |       0 |        0.00 | 
+| ume_ssm           |       0 |       0 |        0.00 | 
+| ume_cse           |       1 |       0 |        0.28 | 
+| ume_shrink        |       8 |       0 |        0.01 | 
+| ume_sweep         |       0 |       0 |        0.00 | 
+| ume_constant_bmux |       0 |       0 |        0.00 | 
+| ume_merge         |       0 |       0 |        0.00 | 
+| ume_ssm           |       0 |       0 |        0.00 | 
+| ume_cse           |       0 |       0 |        0.26 | 
+| ume_shrink        |       0 |       0 |        0.00 | 
+| ume_sweep         |       0 |       0 |        0.00 | 
+-------------------------------------------------------
+Starting optimize datapath shifters [v1.0] (stage: post_elab, startdef: pp_int_x4, recur: true)
+Completed optimize datapath shifters (accepts: 0, rejects: 0, runtime: 0.001s)
+Starting clip mux common data inputs [v1.0] (stage: post_elab, startdef: pp_int_x4, recur: true)
+Completed clip mux common data inputs (accepts: 0, rejects: 0, runtime: 0.002s)
+Starting clip the non-user hierarchies [v2.0] (stage: post_elab, startdef: pp_int_x4, recur: true)
+Completed clip the non-user hierarchies (accepts: 0, rejects: 0, runtime: 0.002s)
+Starting basic netlist cleanup [v1.0] (stage: post_elab, startdef: pp_int_x4, recur: true)
+Completed basic netlist cleanup (accepts: 0, rejects: 0, runtime: 0.002s)
+
+Stage: post_elab
+--------------------------------------------------------------------
+| Transform                      | Accepts | Rejects | Runtime (s) | 
+--------------------------------------------------------------------
+| hlo_optimize_datapath_shifters |       0 |       0 |        0.00 | 
+| hlo_clip_mux_input             |       0 |       0 |        0.00 | 
+| hlo_clip                       |       0 |       0 |        0.00 | 
+| hlo_cleanup                    |       0 |       0 |        0.00 | 
+--------------------------------------------------------------------
+UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+design:pp_int_x4
+[SUSPEND]genus:root: 1> get_db pins pp_int_x4
+[SUSPEND]genus:root: 1> get_db pins pp_int_x4/*
+pin:pp_int_x4/u_pp_int_x4_tc/add_73_28/g1/in_0 pin:pp_int_x4/u_pp_int_x4_tc/add_73_28/g1/in_1 pin:pp_int_x4/u_pp_int_x4_tc/add_73_28/g1/z pin:pp_int_x4/u_pp_int_x4_tc/add_73_28/g2/in_0 pin:pp_int_x4/u_pp_int_x4_tc/add_73_28/g2/in_1 pin:pp_int_x4/u_pp_int_x4_tc/add_73_28/g2/z pin:pp_int_x4/u_pp_int_x4_tc/add_73_28/g12/in_0 pin:pp_int_x4/u_pp_int_x4_tc/add_73_28/g12/in_1 pin:pp_int_x4/u_pp_int_x4_tc/add_73_28/g12/z pin:pp_int_x4/u_pp_int_x4_tc/add_73_28/g15/in_0 pin:pp_int_x4/u_pp_int_x4_tc/add_73_28/g15/z pin:pp_int_x4/u_pp_int_x4_tc/add_73_28/g16/in_0 pin:pp_int_x4/u_pp_int_x4_tc/add_73_28/g16/z pin:pp_int_x4/u_pp_int_x4_tc/g2/in_0 pin:pp_int_x4/u_pp_int_x4_tc/g2/in_1 pin:pp_int_x4/u_pp_int_x4_tc/g2/z pin:pp_int_x4/u_pp_int_x4_tc/g4/in_0 pin:pp_int_x4/u_pp_int_x4_tc/g4/in_1 pin:pp_int_x4/u_pp_int_x4_tc/g4/z pin:pp_int_x4/u_pp_int_x4_tc/g5/in_0 pin:pp_int_x4/u_pp_int_x4_tc/g5/in_1 pin:pp_int_x4/u_pp_int_x4_tc/g5/z pin:pp_int_x4/u_pp_int_x4_tc/g7/in_0 pin:pp_int_x4/u_pp_int_x4_tc/g7/in_1 pin:pp_int_x4/u_pp_int_x4_tc/g7/z {pin:pp_int_x4/u_pp_int_x4_tc/count4_reg[0]/clk} {pin:pp_int_x4/u_pp_int_x4_tc/count4_reg[0]/d} {pin:pp_int_x4/u_pp_int_x4_tc/count4_reg[0]/sena} {pin:pp_int_x4/u_pp_int_x4_tc/count4_reg[0]/aclr} {pin:pp_int_x4/u_pp_int_x4_tc/count4_reg[0]/apre} {pin:pp_int_x4/u_pp_int_x4_tc/count4_reg[0]/srl} {pin:pp_int_x4/u_pp_int_x4_tc/count4_reg[0]/srd} {pin:pp_int_x4/u_pp_int_x4_tc/count4_reg[0]/q} {pin:pp_int_x4/u_pp_int_x4_tc/count4_reg[1]/clk} {pin:pp_int_x4/u_pp_int_x4_tc/count4_reg[1]/d} {pin:pp_int_x4/u_pp_int_x4_tc/count4_reg[1]/sena} {pin:pp_int_x4/u_pp_int_x4_tc/count4_reg[1]/aclr} {pin:pp_int_x4/u_pp_int_x4_tc/count4_reg[1]/apre} {pin:pp_int_x4/u_pp_int_x4_tc/count4_reg[1]/srl} {pin:pp_int_x4/u_pp_int_x4_tc/count4_reg[1]/srd} {pin:pp_int_x4/u_pp_int_x4_tc/count4_reg[1]/q} pin:pp_int_x4/u_pp_int_x4_tc/phase_0_reg/clk pin:pp_int_x4/u_pp_int_x4_tc/phase_0_reg/d pin:pp_int_x4/u_pp_int_x4_tc/phase_0_reg/sena pin:pp_int_x4/u_pp_int_x4_tc/phase_0_reg/aclr pin:pp_int_x4/u_pp_int_x4_tc/phase_0_reg/apre pin:pp_int_x4/u_pp_int_x4_tc/phase_0_reg/srl pin:pp_int_x4/u_pp_int_x4_tc/phase_0_reg/srd pin:pp_int_x4/u_pp_int_x4_tc/phase_0_reg/q pin:pp_int_x4/u_pp_int_x4_tc/phase_1_reg/clk pin:pp_int_x4/u_pp_int_x4_tc/phase_1_reg/d pin:pp_int_x4/u_pp_int_x4_tc/phase_1_reg/sena pin:pp_int_x4/u_pp_int_x4_tc/phase_1_reg/aclr pin:pp_int_x4/u_pp_int_x4_tc/phase_1_reg/apre pin:pp_int_x4/u_pp_int_x4_tc/phase_1_reg/srl pin:pp_int_x4/u_pp_int_x4_tc/phase_1_reg/srd pin:pp_int_x4/u_pp_int_x4_tc/phase_1_reg/q pin:pp_int_x4/u_pp_int_x4_tc/g3/in_0 pin:pp_int_x4/u_pp_int_x4_tc/g3/in_1 pin:pp_int_x4/u_pp_int_x4_tc/g3/z pin:pp_int_x4/u_pp_int_x4_tc/g16/in_0 pin:pp_int_x4/u_pp_int_x4_tc/g16/z pin:pp_int_x4/u_pp_int_x4_tc/g18/in_0 pin:pp_int_x4/u_pp_int_x4_tc/g18/z pin:pp_int_x4/u_pp_int_x4_tc/g19/in_0 pin:pp_int_x4/u_pp_int_x4_tc/g19/in_1 pin:pp_int_x4/u_pp_int_x4_tc/g19/z pin:pp_int_x4/u_pp_int_x4_tc/g20/in_0 pin:pp_int_x4/u_pp_int_x4_tc/g20/z pin:pp_int_x4/u_pp_int_x4_tc/g21/in_0 pin:pp_int_x4/u_pp_int_x4_tc/g21/z pin:pp_int_x4/u_pp_int_x4_tc/g22/in_0 pin:pp_int_x4/u_pp_int_x4_tc/g22/z pin:pp_int_x4/u_int_pp_0/mul_807_53/g1/in_0 pin:pp_int_x4/u_int_pp_0/mul_807_53/g1/in_1 pin:pp_int_x4/u_int_pp_0/mul_807_53/g1/z pin:pp_int_x4/u_int_pp_0/mul_807_53/g2/in_0 pin:pp_int_x4/u_int_pp_0/mul_807_53/g2/in_1 pin:pp_int_x4/u_int_pp_0/mul_807_53/g2/z pin:pp_int_x4/u_int_pp_0/mul_807_53/g3/in_0 pin:pp_int_x4/u_int_pp_0/mul_807_53/g3/in_1 pin:pp_int_x4/u_int_pp_0/mul_807_53/g3/z pin:pp_int_x4/u_int_pp_0/mul_807_53/g4/in_0 pin:pp_int_x4/u_int_pp_0/mul_807_53/g4/in_1 pin:pp_int_x4/u_int_pp_0/mul_807_53/g4/z pin:pp_int_x4/u_int_pp_0/mul_807_53/g5/in_0 pin:pp_int_x4/u_int_pp_0/mul_807_53/g5/in_1 pin:pp_int_x4/u_int_pp_0/mul_807_53/g5/z pin:pp_int_x4/u_int_pp_0/mul_807_53/g6/in_0 pin:pp_int_x4/u_int_pp_0/mul_807_53/g6/in_1 pin:pp_int_x4/u_int_pp_0/mul_807_53/g6/z pin:pp_int_x4/u_int_pp_0/mul_807_53/g7/in_0 pin:pp_int_x4/u_int_pp_0/mul_807_53/g7/in_1 pin:pp_int_x4/u_int_pp_0/mul_807_53/g7/z pin:pp_int_x4/u_int_pp_0/mul_807_53/g8/in_0 pin:pp_int_x4/u_int_pp_0/mul_8... <result is 73867165 characters long and printing is truncated to 4096 characters, use 'puts [command]' to view the entire result>
+[SUSPEND]genus:root: 1> get_db pins pp_int_x4/Out*
+[SUSPEND]genus:root: 1> get_db pins pp_int_x4/*ut*
+[SUSPEND]genus:root: 1> get_db nets pp_int_x4
+[SUSPEND]genus:root: 1> get_db nets pp_int_x4/*
+{net:pp_int_x4/Upsample_bypass_reg_re[0]} {net:pp_int_x4/Upsample_bypass_reg_re[1]} {net:pp_int_x4/Upsample_bypass_reg_re[2]} {net:pp_int_x4/Upsample_bypass_reg_re[3]} {net:pp_int_x4/Upsample_bypass_reg_re[4]} {net:pp_int_x4/Upsample_bypass_reg_re[5]} {net:pp_int_x4/Upsample_bypass_reg_re[6]} {net:pp_int_x4/Upsample_bypass_reg_re[7]} {net:pp_int_x4/Upsample_bypass_reg_re[8]} {net:pp_int_x4/Upsample_bypass_reg_re[9]} {net:pp_int_x4/Upsample_bypass_reg_re[10]} {net:pp_int_x4/Upsample_bypass_reg_re[11]} {net:pp_int_x4/Upsample_bypass_reg_re[12]} {net:pp_int_x4/Upsample_bypass_reg_re[13]} {net:pp_int_x4/Upsample_bypass_reg_re[14]} {net:pp_int_x4/Upsample_bypass_reg_re[15]} {net:pp_int_x4/Upsample_bypass_reg_re[16]} {net:pp_int_x4/Upsample_bypass_reg_re[17]} {net:pp_int_x4/Upsample_bypass_reg_re[18]} {net:pp_int_x4/Upsample_bypass_reg_re[19]} {net:pp_int_x4/Upsample_bypass_reg_re[20]} {net:pp_int_x4/Upsample_bypass_reg_re[21]} {net:pp_int_x4/Upsample_bypass_reg_re[22]} {net:pp_int_x4/Upsample_bypass_reg_re[23]} {net:pp_int_x4/Upsample_bypass_reg_re[24]} {net:pp_int_x4/Upsample_bypass_reg_re[25]} {net:pp_int_x4/Upsample_bypass_reg_re[26]} {net:pp_int_x4/Upsample_bypass_reg_re[27]} {net:pp_int_x4/Upsample_bypass_reg_re[28]} {net:pp_int_x4/Upsample_bypass_reg_re[29]} {net:pp_int_x4/Upsample_bypass_reg_re[30]} {net:pp_int_x4/Upsample_bypass_reg_re[31]} {net:pp_int_x4/Upsample_bypass_reg_im[0]} {net:pp_int_x4/Upsample_bypass_reg_im[1]} {net:pp_int_x4/Upsample_bypass_reg_im[2]} {net:pp_int_x4/Upsample_bypass_reg_im[3]} {net:pp_int_x4/Upsample_bypass_reg_im[4]} {net:pp_int_x4/Upsample_bypass_reg_im[5]} {net:pp_int_x4/Upsample_bypass_reg_im[6]} {net:pp_int_x4/Upsample_bypass_reg_im[7]} {net:pp_int_x4/Upsample_bypass_reg_im[8]} {net:pp_int_x4/Upsample_bypass_reg_im[9]} {net:pp_int_x4/Upsample_bypass_reg_im[10]} {net:pp_int_x4/Upsample_bypass_reg_im[11]} {net:pp_int_x4/Upsample_bypass_reg_im[12]} {net:pp_int_x4/Upsample_bypass_reg_im[13]} {net:pp_int_x4/Upsample_bypass_reg_im[14]} {net:pp_int_x4/Upsample_bypass_reg_im[15]} {net:pp_int_x4/Upsample_bypass_reg_im[16]} {net:pp_int_x4/Upsample_bypass_reg_im[17]} {net:pp_int_x4/Upsample_bypass_reg_im[18]} {net:pp_int_x4/Upsample_bypass_reg_im[19]} {net:pp_int_x4/Upsample_bypass_reg_im[20]} {net:pp_int_x4/Upsample_bypass_reg_im[21]} {net:pp_int_x4/Upsample_bypass_reg_im[22]} {net:pp_int_x4/Upsample_bypass_reg_im[23]} {net:pp_int_x4/Upsample_bypass_reg_im[24]} {net:pp_int_x4/Upsample_bypass_reg_im[25]} {net:pp_int_x4/Upsample_bypass_reg_im[26]} {net:pp_int_x4/Upsample_bypass_reg_im[27]} {net:pp_int_x4/Upsample_bypass_reg_im[28]} {net:pp_int_x4/Upsample_bypass_reg_im[29]} {net:pp_int_x4/Upsample_bypass_reg_im[30]} {net:pp_int_x4/Upsample_bypass_reg_im[31]} {net:pp_int_x4/Upsample1_bypass_reg_re[0]} {net:pp_int_x4/Upsample1_bypass_reg_re[1]} {net:pp_int_x4/Upsample1_bypass_reg_re[2]} {net:pp_int_x4/Upsample1_bypass_reg_re[3]} {net:pp_int_x4/Upsample1_bypass_reg_re[4]} {net:pp_int_x4/Upsample1_bypass_reg_re[5]} {net:pp_int_x4/Upsample1_bypass_reg_re[6]} {net:pp_int_x4/Upsample1_bypass_reg_re[7]} {net:pp_int_x4/Upsample1_bypass_reg_re[8]} {net:pp_int_x4/Upsample1_bypass_reg_re[9]} {net:pp_int_x4/Upsample1_bypass_reg_re[10]} {net:pp_int_x4/Upsample1_bypass_reg_re[11]} {net:pp_int_x4/Upsample1_bypass_reg_re[12]} {net:pp_int_x4/Upsample1_bypass_reg_re[13]} {net:pp_int_x4/Upsample1_bypass_reg_re[14]} {net:pp_int_x4/Upsample1_bypass_reg_re[15]} {net:pp_int_x4/Upsample1_bypass_reg_re[16]} {net:pp_int_x4/Upsample1_bypass_reg_re[17]} {net:pp_int_x4/Upsample1_bypass_reg_re[18]} {net:pp_int_x4/Upsample1_bypass_reg_re[19]} {net:pp_int_x4/Upsample1_bypass_reg_re[20]} {net:pp_int_x4/Upsample1_bypass_reg_re[21]} {net:pp_int_x4/Upsample1_bypass_reg_re[22]} {net:pp_int_x4/Upsample1_bypass_reg_re[23]} {net:pp_int_x4/Upsample1_bypass_reg_re[24]} {net:pp_int_x4/Upsample1_bypass_reg_re[25]} {net:pp_int_x4/Upsample1_bypass_reg_re[26]} {net:pp_int_x4/Upsample1_bypass_reg_re[27]} {net:pp_int_x4/Upsample1_bypass_reg_re[28]} {net:pp_int_x4/Upsample1_bypass_reg_re[29]} {net:pp_int_x4/Upsample1_bypass_reg_re[30]} {net:pp_in... <result is 22493747 characters long and printing is truncated to 4096 characters, use 'puts [command]' to view the entire result>
+[SUSPEND]genus:root: 1> get_db nets pp_int_x4/Out*
+[SUSPEND]genus:root: 1> get_db ports Out*
+{port:pp_int_x4/Out1_re[15]} {port:pp_int_x4/Out1_re[14]} {port:pp_int_x4/Out1_re[13]} {port:pp_int_x4/Out1_re[12]} {port:pp_int_x4/Out1_re[11]} {port:pp_int_x4/Out1_re[10]} {port:pp_int_x4/Out1_re[9]} {port:pp_int_x4/Out1_re[8]} {port:pp_int_x4/Out1_re[7]} {port:pp_int_x4/Out1_re[6]} {port:pp_int_x4/Out1_re[5]} {port:pp_int_x4/Out1_re[4]} {port:pp_int_x4/Out1_re[3]} {port:pp_int_x4/Out1_re[2]} {port:pp_int_x4/Out1_re[1]} {port:pp_int_x4/Out1_re[0]} {port:pp_int_x4/Out1_im[15]} {port:pp_int_x4/Out1_im[14]} {port:pp_int_x4/Out1_im[13]} {port:pp_int_x4/Out1_im[12]} {port:pp_int_x4/Out1_im[11]} {port:pp_int_x4/Out1_im[10]} {port:pp_int_x4/Out1_im[9]} {port:pp_int_x4/Out1_im[8]} {port:pp_int_x4/Out1_im[7]} {port:pp_int_x4/Out1_im[6]} {port:pp_int_x4/Out1_im[5]} {port:pp_int_x4/Out1_im[4]} {port:pp_int_x4/Out1_im[3]} {port:pp_int_x4/Out1_im[2]} {port:pp_int_x4/Out1_im[1]} {port:pp_int_x4/Out1_im[0]} {port:pp_int_x4/Out2_re[15]} {port:pp_int_x4/Out2_re[14]} {port:pp_int_x4/Out2_re[13]} {port:pp_int_x4/Out2_re[12]} {port:pp_int_x4/Out2_re[11]} {port:pp_int_x4/Out2_re[10]} {port:pp_int_x4/Out2_re[9]} {port:pp_int_x4/Out2_re[8]} {port:pp_int_x4/Out2_re[7]} {port:pp_int_x4/Out2_re[6]} {port:pp_int_x4/Out2_re[5]} {port:pp_int_x4/Out2_re[4]} {port:pp_int_x4/Out2_re[3]} {port:pp_int_x4/Out2_re[2]} {port:pp_int_x4/Out2_re[1]} {port:pp_int_x4/Out2_re[0]} {port:pp_int_x4/Out2_im[15]} {port:pp_int_x4/Out2_im[14]} {port:pp_int_x4/Out2_im[13]} {port:pp_int_x4/Out2_im[12]} {port:pp_int_x4/Out2_im[11]} {port:pp_int_x4/Out2_im[10]} {port:pp_int_x4/Out2_im[9]} {port:pp_int_x4/Out2_im[8]} {port:pp_int_x4/Out2_im[7]} {port:pp_int_x4/Out2_im[6]} {port:pp_int_x4/Out2_im[5]} {port:pp_int_x4/Out2_im[4]} {port:pp_int_x4/Out2_im[3]} {port:pp_int_x4/Out2_im[2]} {port:pp_int_x4/Out2_im[1]} {port:pp_int_x4/Out2_im[0]} {port:pp_int_x4/Out3_re[15]} {port:pp_int_x4/Out3_re[14]} {port:pp_int_x4/Out3_re[13]} {port:pp_int_x4/Out3_re[12]} {port:pp_int_x4/Out3_re[11]} {port:pp_int_x4/Out3_re[10]} {port:pp_int_x4/Out3_re[9]} {port:pp_int_x4/Out3_re[8]} {port:pp_int_x4/Out3_re[7]} {port:pp_int_x4/Out3_re[6]} {port:pp_int_x4/Out3_re[5]} {port:pp_int_x4/Out3_re[4]} {port:pp_int_x4/Out3_re[3]} {port:pp_int_x4/Out3_re[2]} {port:pp_int_x4/Out3_re[1]} {port:pp_int_x4/Out3_re[0]} {port:pp_int_x4/Out3_im[15]} {port:pp_int_x4/Out3_im[14]} {port:pp_int_x4/Out3_im[13]} {port:pp_int_x4/Out3_im[12]} {port:pp_int_x4/Out3_im[11]} {port:pp_int_x4/Out3_im[10]} {port:pp_int_x4/Out3_im[9]} {port:pp_int_x4/Out3_im[8]} {port:pp_int_x4/Out3_im[7]} {port:pp_int_x4/Out3_im[6]} {port:pp_int_x4/Out3_im[5]} {port:pp_int_x4/Out3_im[4]} {port:pp_int_x4/Out3_im[3]} {port:pp_int_x4/Out3_im[2]} {port:pp_int_x4/Out3_im[1]} {port:pp_int_x4/Out3_im[0]} {port:pp_int_x4/Out4_re[15]} {port:pp_int_x4/Out4_re[14]} {port:pp_int_x4/Out4_re[13]} {port:pp_int_x4/Out4_re[12]} {port:pp_int_x4/Out4_re[11]} {port:pp_int_x4/Out4_re[10]} {port:pp_int_x4/Out4_re[9]} {port:pp_int_x4/Out4_re[8]} {port:pp_int_x4/Out4_re[7]} {port:pp_int_x4/Out4_re[6]} {port:pp_int_x4/Out4_re[5]} {port:pp_int_x4/Out4_re[4]} {port:pp_int_x4/Out4_re[3]} {port:pp_int_x4/Out4_re[2]} {port:pp_int_x4/Out4_re[1]} {port:pp_int_x4/Out4_re[0]} {port:pp_int_x4/Out4_im[15]} {port:pp_int_x4/Out4_im[14]} {port:pp_int_x4/Out4_im[13]} {port:pp_int_x4/Out4_im[12]} {port:pp_int_x4/Out4_im[11]} {port:pp_int_x4/Out4_im[10]} {port:pp_int_x4/Out4_im[9]} {port:pp_int_x4/Out4_im[8]} {port:pp_int_x4/Out4_im[7]} {port:pp_int_x4/Out4_im[6]} {port:pp_int_x4/Out4_im[5]} {port:pp_int_x4/Out4_im[4]} {port:pp_int_x4/Out4_im[3]} {port:pp_int_x4/Out4_im[2]} {port:pp_int_x4/Out4_im[1]} {port:pp_int_x4/Out4_im[0]} {port:pp_int_x4/Out5_re[15]} {port:pp_int_x4/Out5_re[14]} {port:pp_int_x4/Out5_re[13]} {port:pp_int_x4/Out5_re[12]} {port:pp_int_x4/Out5_re[11]} {port:pp_int_x4/Out5_re[10]} {port:pp_int_x4/Out5_re[9]} {port:pp_int_x4/Out5_re[8]} {port:pp_int_x4/Out5_re[7]} {port:pp_int_x4/Out5_re[6]} {port:pp_int_x4/Out5_re[5]} {port:pp_int_x4/Out5_re[4]} {port:pp_int_x4/Out5_re[3]} {port:pp_int_x4/Out5_re[2]} {port:pp_int_x4/Out5_re[1]} {port:pp_int_x4/Out5_re[0]} {port:pp_i... <result is 7263 characters long and printing is truncated to 4096 characters, use 'puts [command]' to view the entire result>
+[SUSPEND]genus:root: 1> set_db [get_db ports Out*] .preserve true
+Error   : Unrecognized attribute. [TUI-183] [set_db]
+        : 'preserve' is not a recognized attribute for object 'port'.
+        : To see the usage/description for this attribute, type 'help * <attr_name> -detail'.
+1
+[SUSPEND]genus:root: 1> exit
+
+Lic Summary:
+[23:45:14.368289] Cdslmd servers: license
+[23:45:14.892601] Feature usage summary:
+[23:45:14.892602] Genus_Synthesis
+
+Normal exit.

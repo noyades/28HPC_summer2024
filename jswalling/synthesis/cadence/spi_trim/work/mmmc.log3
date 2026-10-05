@@ -1,0 +1,139 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Version: 21.11-s126_1, built Mon Dec 20 09:52:46 PST 2021
+Options: -files ../scripts/run.tcl -log mmmc.log 
+Date:    Tue May 07 13:34:59 2024
+Host:    cluster12 (x86_64 w/Linux 3.10.0-1160.102.1.el7.x86_64) (6cores*24cpus*2physical cpus*Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz 15360KB) (40983880KB)
+PID:     19724
+OS:      CentOS Linux release 7.9.2009 (Core)
+
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (16 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source ../scripts/run.tcl
+#@ Begin verbose source ../scripts/run.tcl
+@file(run.tcl) 1: if {[file exists /proc/cpuinfo]} {
+  sh grep "model name" /proc/cpuinfo
+  sh grep "cpu MHz"    /proc/cpuinfo
+}
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+cpu MHz		: 2315.917
+cpu MHz		: 1297.607
+cpu MHz		: 2399.902
+cpu MHz		: 1223.999
+cpu MHz		: 2388.427
+cpu MHz		: 1220.947
+cpu MHz		: 2263.427
+cpu MHz		: 1225.952
+cpu MHz		: 2361.938
+cpu MHz		: 1299.316
+cpu MHz		: 2364.135
+cpu MHz		: 1202.026
+cpu MHz		: 2305.908
+cpu MHz		: 2499.877
+cpu MHz		: 2236.816
+cpu MHz		: 1219.970
+cpu MHz		: 2301.025
+cpu MHz		: 1200.561
+cpu MHz		: 2268.798
+cpu MHz		: 1298.461
+cpu MHz		: 2300.415
+cpu MHz		: 2047.363
+cpu MHz		: 2300.292
+cpu MHz		: 1297.363
+@file(run.tcl) 6: puts "Hostname : [info hostname]"
+Hostname : cluster12.lan.ece
+@file(run.tcl) 8: set DESIGN topPLLDigital
+@file(run.tcl) 9: set SYN_EFF medium
+@file(run.tcl) 10: set MAP_EFF medium
+@file(run.tcl) 11: set OPT_EFF medium
+@file(run.tcl) 13: set RELEASE [lindex [get_db program_version] end]
+@file(run.tcl) 14: set _OUTPUTS_PATH OUTPUT/outputs_${RELEASE}
+@file(run.tcl) 15: set _REPORTS_PATH OUTPUT/reports_${RELEASE}
+@file(run.tcl) 17: if {![file exists ${_OUTPUTS_PATH}]} {
+  file mkdir ${_OUTPUTS_PATH}
+  puts "Creating directory ${_OUTPUTS_PATH}"
+}
+@file(run.tcl) 22: if {![file exists ${_REPORTS_PATH}]} {
+  file mkdir ${_REPORTS_PATH}
+  puts "Creating directory ${_REPORTS_PATH}"
+}
+@file(run.tcl) 27: set rtlDir ../rtl
+@file(run.tcl) 29: set_db init_lib_search_path {. /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/}
+  Setting attribute of root '/': 'init_lib_search_path' = . /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/
+@file(run.tcl) 30: set_db script_search_path { . }
+  Setting attribute of root '/': 'script_search_path' =  . 
+@file(run.tcl) 31: set_db init_hdl_search_path {. ../rtl}
+  Setting attribute of root '/': 'init_hdl_search_path' = . ../rtl
+@file(run.tcl) 33: set_db max_cpus_per_server 8
+  Setting attribute of root '/': 'max_cpus_per_server' = 8
+@file(run.tcl) 35: set_db syn_generic_effort $SYN_EFF
+  Setting attribute of root '/': 'syn_generic_effort' = medium
+@file(run.tcl) 36: set_db syn_map_effort $MAP_EFF
+  Setting attribute of root '/': 'syn_map_effort' = medium
+@file(run.tcl) 37: set_db syn_opt_effort $OPT_EFF
+  Setting attribute of root '/': 'syn_opt_effort' = medium
+@file(run.tcl) 39: set_db information_level 9
+  Setting attribute of root '/': 'information_level' = 9
+@file(run.tcl) 41: set_db tns_opto true
+  Setting attribute of root '/': 'tns_opto' = true
+@file(run.tcl) 42: set_db lp_insert_clock_gating true
+  Setting attribute of root '/': 'lp_insert_clock_gating' = true
+@file(run.tcl) 43: set_db opt_spatial_effort medium
+Error   : The data value for this attribute is invalid. [TUI-24] [set_db]
+        : The value 'medium' cannot be set for attribute 'opt_spatial_effort'.
+        : To see the usage/description for this attribute, type '::legacy::set_attribute -h <attr_name> *' (in legacy UI mode) or 'help * <attr_name> -detail' (in CUI mode).
+#@ End verbose source ../scripts/run.tcl
+1
+Encountered problems processing file: ../scripts/run.tcl
+WARNING: This version of the tool is 868 days old.
+@genus:root: 2> help * opt_spatial_effort -detail
+
+============================================================
+Attribute: opt_spatial_effort (on obj_type: root)
+  Description:            Optimization effort level for 'syn_opt -spatial'. Values can be one of: 'extreme', 'standard', or 'legacy'. The 'legacy' value will be removed in the 21.1 release.
+  category:               netlist
+  default_value:          standard
+  is_computed:            false
+  is_settable:            true
+  skip_in_db:             false
+  type:                   enum
+
+@genus:root: 3> 
+@genus:root: 3> exit
+Normal exit.

@@ -1,0 +1,991 @@
+[01/11 17:28:08      0s] 
+[01/11 17:28:08      0s] Cadence Innovus(TM) Implementation System.
+[01/11 17:28:08      0s] Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+[01/11 17:28:08      0s] 
+[01/11 17:28:08      0s] Version:	v22.10-p001_1, built Thu Sep 29 11:03:49 PDT 2022
+[01/11 17:28:08      0s] Options:	-stylus 
+[01/11 17:28:08      0s] Date:		Sat Jan 11 17:28:08 2025
+[01/11 17:28:08      0s] Host:		cluster15 (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (6cores*24cpus*Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz 15360KB)
+[01/11 17:28:08      0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[01/11 17:28:08      0s] 
+[01/11 17:28:08      0s] License:
+[01/11 17:28:08      0s] 		[17:28:08.284113] Configured Lic search path (21.01-s002): 27002@license.ece.vt.edu
+[01/11 17:28:08      0s] 
+[01/11 17:28:08      0s] 		invs	Innovus Implementation System	22.1	checkout succeeded
+[01/11 17:28:08      0s] 		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[01/11 17:28:28     18s] 
+[01/11 17:28:28     18s] 
+[01/11 17:28:38     27s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v22.10-p001_1 (64bit) 09/29/2022 11:03 (Linux 3.10.0-693.el7.x86_64)
+[01/11 17:28:43     33s] @(#)CDS: NanoRoute 22.10-p001_1 NR220915-0329/22_10-UB (database version 18.20.590) {superthreading v2.19}
+[01/11 17:28:43     33s] @(#)CDS: AAE 22.10-p002 (64bit) 09/29/2022 (Linux 3.10.0-693.el7.x86_64)
+[01/11 17:28:43     33s] @(#)CDS: CTE 22.10-p004_1 () Sep  7 2022 21:57:29 ( )
+[01/11 17:28:43     33s] @(#)CDS: SYNTECH 22.10-p001_1 () Aug  8 2022 11:26:34 ( )
+[01/11 17:28:43     33s] @(#)CDS: CPE v22.10-p005
+[01/11 17:28:43     33s] @(#)CDS: IQuantus/TQuantus 21.2.0-s201 (64bit) Wed Jul 6 19:14:09 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+[01/11 17:28:43     33s] @(#)CDS: OA 22.60-p076 Wed May 18 13:45:29 2022
+[01/11 17:28:43     33s] @(#)CDS: SGN 21.20-d001 (11-Feb-2022) (64 bit executable, TkQt5.9.1)
+[01/11 17:28:43     33s] @(#)CDS: RCDB 11.15.0
+[01/11 17:28:43     33s] @(#)CDS: STYLUS 22.10-p001_1 (08/24/2022 07:47 PDT)
+[01/11 17:28:43     33s] @(#)CDS: Orbit-22.10Rel-9221 (22.10) (2022-09-28 18:03:21+0800)
+[01/11 17:28:43     33s] Create and set the environment variable TMPDIR to /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/innovus_temp_30478_cluster15_jswalling_ztcblF.
+
+[01/11 17:28:43     33s] Create and set the environment variable TMPDIR to /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/innovus_temp_30478_cluster15_jswalling_ztcblF.
+[01/11 17:28:43     33s] 
+[01/11 17:28:44     33s] The soft stacksize limit is either up to the hard limit or larger than 0.2% of RAM. No change is needed.
+[01/11 17:28:47     37s] 
+[01/11 17:28:47     37s] **INFO:  MMMC transition support version v31-84 
+[01/11 17:28:47     37s] 
+[01/11 17:28:52     41s] @innovus 1> Suppress "**WARN ..." messages.
+[01/11 17:29:43     51s] read_db pp_fir_u_0_06_postcts_stylus.enc
+[01/11 17:29:43     51s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[01/11 17:29:43     51s] #% Begin load design ... (date=01/11 17:29:43, mem=1089.4M)
+[01/11 17:29:44     52s] Loading design 'pp_fir_u_0' saved by 'Innovus' '22.10-p001_1' on 'Sat Jan 11 10:57:12 2025'.
+[01/11 17:29:44     52s] Reading wcl_slow timing library '/software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib' ...
+[01/11 17:29:50     58s] Read 1003 cells in library 'sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c' 
+[01/11 17:29:51     58s] Ending "PreSetAnalysisView" (total cpu=0:00:06.1, real=0:00:07.0, peak res=1267.4M, current mem=1120.2M)
+[01/11 17:29:51     58s] 
+[01/11 17:29:51     58s] Loading LEF file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postcts_stylus.enc/libs/lef/sc9mcpp140z_tech.lef ...
+[01/11 17:29:51     58s] 
+[01/11 17:29:51     58s] Loading LEF file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postcts_stylus.enc/libs/lef/sc9mcpp140z_cln28ht_base_lvt_c30.lef ...
+[01/11 17:29:51     58s] Set DBUPerIGU to M1 pitch 280.
+[01/11 17:29:52     59s] 
+[01/11 17:29:52     59s] Loading LEF file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postcts_stylus.enc/libs/lef/sc9mcpp140z_cln28ht_hpk_lvt_c30.lef ...
+[01/11 17:29:52     59s] 
+[01/11 17:29:52     59s] Loading LEF file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postcts_stylus.enc/libs/lef/sc9mcpp140z_cln28ht_base_svt_c30.lef ...
+[01/11 17:29:52     60s] 
+[01/11 17:29:52     60s] Loading LEF file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postcts_stylus.enc/libs/lef/sc9mcpp140z_cln28ht_hpk_svt_c30.lef ...
+[01/11 17:29:53     60s] 
+[01/11 17:29:53     60s] Loading LEF file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postcts_stylus.enc/libs/lef/sc9mcpp140z_cln28ht_base_ulvt_c30.lef ...
+[01/11 17:29:53     60s] 
+[01/11 17:29:53     60s] Loading LEF file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postcts_stylus.enc/libs/lef/sc9mcpp140z_cln28ht_hpk_ulvt_c30.lef ...
+[01/11 17:29:53     61s] 
+[01/11 17:29:53     61s] ##  Check design process and node:  
+[01/11 17:29:53     61s] ##  Both design process and tech node are not set.
+[01/11 17:29:53     61s] 
+[01/11 17:29:53     61s] Loading view definition file from /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postcts_stylus.enc/viewDefinition.tcl
+[01/11 17:29:53     61s] % Begin Load netlist data ... (date=01/11 17:29:53, mem=1142.0M)
+[01/11 17:29:53     61s] *** Begin netlist parsing (mem=1260.2M) ***
+[01/11 17:29:53     61s] Created 1003 new cells from 1 timing libraries.
+[01/11 17:29:53     61s] Reading netlist ...
+[01/11 17:29:53     61s] Backslashed names will retain backslash and a trailing blank character.
+[01/11 17:29:53     61s] Reading verilogBinary netlist '/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postcts_stylus.enc/vbin/pp_fir_u_0.v.bin'
+[01/11 17:29:54     61s] 
+[01/11 17:29:54     61s] *** Memory Usage v#1 (Current mem = 1284.191M, initial mem = 511.469M) ***
+[01/11 17:29:54     61s] *** End netlist parsing (cpu=0:00:00.2, real=0:00:01.0, mem=1284.2M) ***
+[01/11 17:29:54     61s] % End Load netlist data ... (date=01/11 17:29:54, total cpu=0:00:00.3, real=0:00:01.0, peak res=1172.4M, current mem=1172.4M)
+[01/11 17:29:54     61s] Top level cell is pp_fir_u_0.
+[01/11 17:29:54     61s] Hooked 1003 DB cells to tlib cells.
+[01/11 17:29:54     61s] Ending "BindLib:" (total cpu=0:00:00.3, real=0:00:00.0, peak res=1215.6M, current mem=1215.6M)
+[01/11 17:29:54     61s] Starting recursive module instantiation check.
+[01/11 17:29:54     61s] No recursion found.
+[01/11 17:29:54     61s] Building hierarchical netlist for Cell pp_fir_u_0 ...
+[01/11 17:29:54     61s] ***** UseNewTieNetMode *****.
+[01/11 17:29:54     61s] *** Netlist is unique.
+[01/11 17:29:54     62s] Setting Std. cell height to 1800 DBU (smallest netlist inst).
+[01/11 17:29:54     62s] ** info: there are 3539 modules.
+[01/11 17:29:54     62s] ** info: there are 21652 stdCell insts.
+[01/11 17:29:54     62s] 
+[01/11 17:29:54     62s] *** Memory Usage v#1 (Current mem = 1354.664M, initial mem = 511.469M) ***
+[01/11 17:29:54     62s] *info: set bottom ioPad orient R0
+[01/11 17:29:54     62s] The core width changes from 207.370000 to 207.340000 when snapping to grid "PlacementGrid".
+[01/11 17:29:54     62s] 
+[01/11 17:29:54     62s] Honor LEF defined pitches for advanced node
+[01/11 17:29:54     62s] Start create_tracks
+[01/11 17:29:54     62s] Set Shrink Factor to 0.90000
+[01/11 17:29:55     62s] Loading preference file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postcts_stylus.enc/gui.pref.tcl ...
+[01/11 17:29:55     62s] Ignoring {default} groups for Hold optimization.
+[01/11 17:29:55     62s] Ignoring {default} groups for Hold optimization.
+[01/11 17:29:55     62s] set_db opt_useful_skew already set.
+[01/11 17:29:55     62s] set_db opt_useful_skew already set.
+[01/11 17:29:55     62s] Effort level <high> specified for reg2reg path_group
+[01/11 17:29:55     62s] Effort level <low> specified for in2reg path_group
+[01/11 17:29:55     62s] Effort level <low> specified for reg2out path_group
+[01/11 17:29:55     62s] Effort level <low> specified for in2out path_group
+[01/11 17:29:55     62s] Effort level <high> specified for tdgp_reg2reg_default path_group
+[01/11 17:29:55     62s] Change floorplan default-technical-site to 'sc9mcpp140z_cln28ht'.
+[01/11 17:29:55     62s] Change floorplan default-technical-site to 'sc9mcpp140z_cln28ht'.
+[01/11 17:29:56     63s] Extraction setup Delayed 
+[01/11 17:29:56     63s] *Info: initialize multi-corner CTS.
+[01/11 17:29:56     63s] Reading wcl_fast timing library '/software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ffg_cbestt_min_0p99v_m40c.lib' ...
+[01/11 17:30:01     68s] Message <TECHLIB-302> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+[01/11 17:30:01     68s] Read 1003 cells in library 'sc9mcpp140z_cln28ht_base_lvt_c30_ffg_cbestt_min_0p99v_m40c' 
+[01/11 17:30:01     68s] Reading wcl_typical timing library '/software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_tt_ctypical_max_0p90v_25c.lib' ...
+[01/11 17:30:06     73s] Read 1003 cells in library 'sc9mcpp140z_cln28ht_base_lvt_c30_tt_ctypical_max_0p90v_25c' 
+[01/11 17:30:08     74s] Ending "SetAnalysisView" (total cpu=0:00:10.4, real=0:00:12.0, peak res=1587.2M, current mem=1306.4M)
+[01/11 17:30:08     74s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[01/11 17:30:08     74s] 
+[01/11 17:30:08     74s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[01/11 17:30:08     74s] Summary for sequential cells identification: 
+[01/11 17:30:08     74s]   Identified SBFF number: 92
+[01/11 17:30:08     74s]   Identified MBFF number: 0
+[01/11 17:30:08     74s]   Identified SB Latch number: 0
+[01/11 17:30:08     74s]   Identified MB Latch number: 0
+[01/11 17:30:08     74s]   Not identified SBFF number: 12
+[01/11 17:30:08     74s]   Not identified MBFF number: 0
+[01/11 17:30:08     74s]   Not identified SB Latch number: 0
+[01/11 17:30:08     74s]   Not identified MB Latch number: 0
+[01/11 17:30:08     74s]   Number of sequential cells which are not FFs: 132
+[01/11 17:30:08     74s] Total number of combinational cells: 749
+[01/11 17:30:08     74s] Total number of sequential cells: 236
+[01/11 17:30:08     74s] Total number of tristate cells: 0
+[01/11 17:30:08     74s] Total number of level shifter cells: 0
+[01/11 17:30:08     74s] Total number of power gating cells: 0
+[01/11 17:30:08     74s] Total number of isolation cells: 0
+[01/11 17:30:08     74s] Total number of power switch cells: 0
+[01/11 17:30:08     74s] Total number of pulse generator cells: 0
+[01/11 17:30:08     74s] Total number of always on buffers: 0
+[01/11 17:30:08     74s] Total number of retention cells: 0
+[01/11 17:30:08     74s] Total number of physical cells: 18
+[01/11 17:30:08     74s] List of usable buffers: FRICG_X0P5B_A9PP140ZTL_C30 FRICG_X0P6B_A9PP140ZTL_C30 FRICG_X0P8B_A9PP140ZTL_C30 FRICG_X0P7B_A9PP140ZTL_C30 FRICG_X11B_A9PP140ZTL_C30 FRICG_X13B_A9PP140ZTL_C30 FRICG_X16B_A9PP140ZTL_C30 FRICG_X1B_A9PP140ZTL_C30 FRICG_X1P2B_A9PP140ZTL_C30 FRICG_X1P4B_A9PP140ZTL_C30 FRICG_X2B_A9PP140ZTL_C30 FRICG_X1P7B_A9PP140ZTL_C30 FRICG_X2P5B_A9PP140ZTL_C30 FRICG_X3B_A9PP140ZTL_C30 FRICG_X4B_A9PP140ZTL_C30 FRICG_X3P5B_A9PP140ZTL_C30 FRICG_X5B_A9PP140ZTL_C30 FRICG_X6B_A9PP140ZTL_C30 FRICG_X7P5B_A9PP140ZTL_C30 FRICG_X9B_A9PP140ZTL_C30 BUFH_X11M_A9PP140ZTL_C30 BUFH_X13M_A9PP140ZTL_C30 BUFH_X16M_A9PP140ZTL_C30 BUFH_X1M_A9PP140ZTL_C30 BUFH_X1P2M_A9PP140ZTL_C30 BUFH_X1P4M_A9PP140ZTL_C30 BUFH_X2M_A9PP140ZTL_C30 BUFH_X1P7M_A9PP140ZTL_C30 BUFH_X2P5M_A9PP140ZTL_C30 BUFH_X3M_A9PP140ZTL_C30 BUFH_X4M_A9PP140ZTL_C30 BUFH_X3P5M_A9PP140ZTL_C30 BUFH_X5M_A9PP140ZTL_C30 BUFH_X6M_A9PP140ZTL_C30 BUFH_X7P5M_A9PP140ZTL_C30 BUFH_X9M_A9PP140ZTL_C30 BUF_X0P5B_A9PP140ZTL_C30 BUF_X0P5M_A9PP140ZTL_C30 BUF_X0P7B_A9PP140ZTL_C30 BUF_X0P7M_A9PP140ZTL_C30 BUF_X0P8M_A9PP140ZTL_C30 BUF_X0P8B_A9PP140ZTL_C30 BUF_X11B_A9PP140ZTL_C30 BUF_X11B_A9PP140ZTL_C30_XGCAP11 BUF_X11M_A9PP140ZTL_C30 BUF_X13B_A9PP140ZTL_C30 BUF_X11M_A9PP140ZTL_C30_XGCAP11 BUF_X13B_A9PP140ZTL_C30_XGCAP13 BUF_X13M_A9PP140ZTL_C30 BUF_X16B_A9PP140ZTL_C30 BUF_X13M_A9PP140ZTL_C30_XGCAP13 BUF_X16B_A9PP140ZTL_C30_XGCAP16 BUF_X16M_A9PP140ZTL_C30 BUF_X16M_A9PP140ZTL_C30_XGCAP16 BUF_X1M_A9PP140ZTL_C30 BUF_X1B_A9PP140ZTL_C30 BUF_X1P2B_A9PP140ZTL_C30 BUF_X1P2M_A9PP140ZTL_C30 BUF_X1P4B_A9PP140ZTL_C30 BUF_X1P4M_A9PP140ZTL_C30 BUF_X1P7B_A9PP140ZTL_C30 BUF_X1P7M_A9PP140ZTL_C30 BUF_X2M_A9PP140ZTL_C30 BUF_X2B_A9PP140ZTL_C30 BUF_X2P5B_A9PP140ZTL_C30 BUF_X2P5M_A9PP140ZTL_C30 BUF_X3M_A9PP140ZTL_C30 BUF_X3B_A9PP140ZTL_C30 BUF_X3P5B_A9PP140ZTL_C30 BUF_X3P5M_A9PP140ZTL_C30 BUF_X4B_A9PP140ZTL_C30 BUF_X4B_A9PP140ZTL_C30_XGCAP4 BUF_X4M_A9PP140ZTL_C30 BUF_X5B_A9PP140ZTL_C30 BUF_X4M_A9PP140ZTL_C30_XGCAP4 BUF_X5B_A9PP140ZTL_C30_XGCAP5 BUF_X5M_A9PP140ZTL_C30 BUF_X6B_A9PP140ZTL_C30 BUF_X5M_A9PP140ZTL_C30_XGCAP5 BUF_X6B_A9PP140ZTL_C30_XGCAP6 BUF_X6M_A9PP140ZTL_C30 BUF_X7P5B_A9PP140ZTL_C30 BUF_X6M_A9PP140ZTL_C30_XGCAP6 BUF_X7P5B_A9PP140ZTL_C30_XGCAP8 BUF_X7P5M_A9PP140ZTL_C30 BUF_X7P5M_A9PP140ZTL_C30_XGCAP8 BUF_X9B_A9PP140ZTL_C30 BUF_X9M_A9PP140ZTL_C30 BUF_X9B_A9PP140ZTL_C30_XGCAP9 BUF_X9M_A9PP140ZTL_C30_XGCAP9 DLY2_X1M_A9PP140ZTL_C30 DLY2_X0P5M_A9PP140ZTL_C30 DLY2_X2M_A9PP140ZTL_C30 DLYCLK8S2_X1B_A9PP140ZTL_C30 DLYCLK8S2_X2B_A9PP140ZTL_C30 DLYCLK8S4_X1B_A9PP140ZTL_C30 DLYCLK8S4_X2B_A9PP140ZTL_C30
+[01/11 17:30:08     74s] Total number of usable buffers: 97
+[01/11 17:30:08     74s] List of unusable buffers:
+[01/11 17:30:08     74s] Total number of unusable buffers: 0
+[01/11 17:30:08     74s] List of usable inverters: INV_X0P5B_A9PP140ZTL_C30 INV_X0P5M_A9PP140ZTL_C30 INV_X0P6B_A9PP140ZTL_C30 INV_X0P6M_A9PP140ZTL_C30 INV_X0P7B_A9PP140ZTL_C30 INV_X0P7M_A9PP140ZTL_C30 INV_X0P8M_A9PP140ZTL_C30 INV_X0P8B_A9PP140ZTL_C30 INV_X11B_A9PP140ZTL_C30 INV_X11B_A9PP140ZTL_C30_XGCAP11 INV_X11M_A9PP140ZTL_C30 INV_X13B_A9PP140ZTL_C30 INV_X11M_A9PP140ZTL_C30_XGCAP11 INV_X13B_A9PP140ZTL_C30_XGCAP13 INV_X13M_A9PP140ZTL_C30 INV_X16B_A9PP140ZTL_C30 INV_X13M_A9PP140ZTL_C30_XGCAP13 INV_X16B_A9PP140ZTL_C30_XGCAP16 INV_X16M_A9PP140ZTL_C30 INV_X16M_A9PP140ZTL_C30_XGCAP16 INV_X1M_A9PP140ZTL_C30 INV_X1B_A9PP140ZTL_C30 INV_X1P2B_A9PP140ZTL_C30 INV_X1P2M_A9PP140ZTL_C30 INV_X1P4B_A9PP140ZTL_C30 INV_X1P4M_A9PP140ZTL_C30 INV_X1P7B_A9PP140ZTL_C30 INV_X1P7M_A9PP140ZTL_C30 INV_X2M_A9PP140ZTL_C30 INV_X2B_A9PP140ZTL_C30 INV_X2P5B_A9PP140ZTL_C30 INV_X2P5M_A9PP140ZTL_C30 INV_X3M_A9PP140ZTL_C30 INV_X3B_A9PP140ZTL_C30 INV_X3P5B_A9PP140ZTL_C30 INV_X4B_A9PP140ZTL_C30 INV_X3P5M_A9PP140ZTL_C30 INV_X4B_A9PP140ZTL_C30_XGCAP4 INV_X4M_A9PP140ZTL_C30 INV_X5B_A9PP140ZTL_C30 INV_X4M_A9PP140ZTL_C30_XGCAP4 INV_X5B_A9PP140ZTL_C30_XGCAP5 INV_X5M_A9PP140ZTL_C30 INV_X6B_A9PP140ZTL_C30 INV_X5M_A9PP140ZTL_C30_XGCAP5 INV_X6B_A9PP140ZTL_C30_XGCAP6 INV_X6M_A9PP140ZTL_C30 INV_X7P5B_A9PP140ZTL_C30 INV_X6M_A9PP140ZTL_C30_XGCAP6 INV_X7P5B_A9PP140ZTL_C30_XGCAP8 INV_X7P5M_A9PP140ZTL_C30 INV_X9B_A9PP140ZTL_C30 INV_X7P5M_A9PP140ZTL_C30_XGCAP8 INV_X9B_A9PP140ZTL_C30_XGCAP9 INV_X9M_A9PP140ZTL_C30 INV_X9M_A9PP140ZTL_C30_XGCAP9
+[01/11 17:30:08     74s] Total number of usable inverters: 56
+[01/11 17:30:08     74s] List of unusable inverters:[01/11 17:30:08     74s] 
+[01/11 17:30:08     74s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+
+[01/11 17:30:08     74s] Total number of unusable inverters: 0
+[01/11 17:30:08     74s] List of identified usable delay cells: DLY10_X1M_A9PP140ZTL_C30 DLY10_X0P5M_A9PP140ZTL_C30 DLY10_X2M_A9PP140ZTL_C30 DLY10_X4M_A9PP140ZTL_C30 DLY2_X4M_A9PP140ZTL_C30 DLY4_X1M_A9PP140ZTL_C30 DLY4_X0P5M_A9PP140ZTL_C30 DLY4_X2M_A9PP140ZTL_C30 DLY4_X4M_A9PP140ZTL_C30 DLY6_X1M_A9PP140ZTL_C30 DLY6_X0P5M_A9PP140ZTL_C30 DLY6_X2M_A9PP140ZTL_C30 DLY6_X4M_A9PP140ZTL_C30 DLY8_X0P5M_A9PP140ZTL_C30 DLY8_X1M_A9PP140ZTL_C30 DLY8_X2M_A9PP140ZTL_C30 DLY8_X4M_A9PP140ZTL_C30 DLYCLK8S6_X1B_A9PP140ZTL_C30 DLYCLK8S6_X2B_A9PP140ZTL_C30 DLYCLK8S8_X1B_A9PP140ZTL_C30 DLYCLK8S8_X2B_A9PP140ZTL_C30
+[01/11 17:30:08     74s] Total number of identified usable delay cells: 21
+[01/11 17:30:08     74s] List of identified unusable delay cells:
+[01/11 17:30:08     74s] Total number of identified unusable delay cells: 0
+[01/11 17:30:08     74s] 
+[01/11 17:30:08     74s] TimeStamp Deleting Cell Server Begin ...
+[01/11 17:30:08     74s] 
+[01/11 17:30:08     74s] TimeStamp Deleting Cell Server End ...
+[01/11 17:30:08     74s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1622.4M, current mem=1622.4M)
+[01/11 17:30:08     74s] 
+[01/11 17:30:08     74s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[01/11 17:30:08     74s] Summary for sequential cells identification: 
+[01/11 17:30:08     74s]   Identified SBFF number: 92
+[01/11 17:30:08     74s]   Identified MBFF number: 0
+[01/11 17:30:08     74s]   Identified SB Latch number: 0
+[01/11 17:30:08     74s]   Identified MB Latch number: 0
+[01/11 17:30:08     74s]   Not identified SBFF number: 12
+[01/11 17:30:08     74s]   Not identified MBFF number: 0
+[01/11 17:30:08     74s]   Not identified SB Latch number: 0
+[01/11 17:30:08     74s]   Not identified MB Latch number: 0
+[01/11 17:30:08     74s]   Number of sequential cells which are not FFs: 132
+[01/11 17:30:08     74s] eee: Trim Metal Layers: { }
+[01/11 17:30:08     74s]  Visiting view : view_wcl_slow
+[01/11 17:30:08     74s]    : PowerDomain = none : Weighted F : unweighted  = 5.40 (1.000) with rcCorner = 0
+[01/11 17:30:08     74s]    : PowerDomain = none : Weighted F : unweighted  = 4.80 (1.000) with rcCorner = -1
+[01/11 17:30:08     74s]  Visiting view : view_wcl_fast
+[01/11 17:30:08     74s]    : PowerDomain = none : Weighted F : unweighted  = 3.40 (1.000) with rcCorner = 1
+[01/11 17:30:08     74s]    : PowerDomain = none : Weighted F : unweighted  = 3.00 (1.000) with rcCorner = -1
+[01/11 17:30:08     74s]  Visiting view : view_wcl_typical
+[01/11 17:30:08     74s]    : PowerDomain = none : Weighted F : unweighted  = 4.20 (1.000) with rcCorner = 2
+[01/11 17:30:08     74s]    : PowerDomain = none : Weighted F : unweighted  = 3.70 (1.000) with rcCorner = -1
+[01/11 17:30:08     74s]  Visiting view : view_wcl_slow
+[01/11 17:30:08     74s]    : PowerDomain = none : Weighted F : unweighted  = 5.40 (1.000) with rcCorner = 0
+[01/11 17:30:08     74s]    : PowerDomain = none : Weighted F : unweighted  = 4.80 (1.000) with rcCorner = -1
+[01/11 17:30:08     74s]  Visiting view : view_wcl_fast
+[01/11 17:30:08     74s]    : PowerDomain = none : Weighted F : unweighted  = 3.40 (1.000) with rcCorner = 1
+[01/11 17:30:08     74s]    : PowerDomain = none : Weighted F : unweighted  = 3.00 (1.000) with rcCorner = -1
+[01/11 17:30:08     74s]  Visiting view : view_wcl_typical
+[01/11 17:30:08     74s]    : PowerDomain = none : Weighted F : unweighted  = 4.20 (1.000) with rcCorner = 2
+[01/11 17:30:08     74s]    : PowerDomain = none : Weighted F : unweighted  = 3.70 (1.000) with rcCorner = -1
+[01/11 17:30:08     74s] 
+[01/11 17:30:08     74s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[01/11 17:30:08     74s] 
+[01/11 17:30:08     74s] TimeStamp Deleting Cell Server Begin ...
+[01/11 17:30:08     74s] 
+[01/11 17:30:08     74s] TimeStamp Deleting Cell Server End ...
+[01/11 17:30:08     74s] Reading floorplan file - /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postcts_stylus.enc/pp_fir_u_0.fp.gz (mem = 1689.1M).
+[01/11 17:30:08     74s] % Begin Load floorplan data ... (date=01/11 17:30:08, mem=1623.7M)
+[01/11 17:30:08     74s] *info: reset 23533 existing net BottomPreferredLayer and AvoidDetour
+[01/11 17:30:08     74s] Deleting old partition specification.
+[01/11 17:30:09     74s] Set FPlanBox to (-3600 -3600 418420 363600)
+[01/11 17:30:09     74s] 
+[01/11 17:30:09     74s] Honor LEF defined pitches for advanced node
+[01/11 17:30:09     74s] Start create_tracks
+[01/11 17:30:09     74s]  ... processed partition successfully.
+[01/11 17:30:09     74s] Reading binary special route file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postcts_stylus.enc/pp_fir_u_0.fp.spr.gz (Created by Innovus v22.10-p001_1 on Sat Jan 11 10:57:09 2025, version: 1)
+[01/11 17:30:09     74s] Ending "Read special route file" (total cpu=0:00:00.1, real=0:00:00.0, peak res=1626.2M, current mem=1626.2M)
+[01/11 17:30:09     74s] There are 602 nets with weight being set
+[01/11 17:30:09     74s] There are 606 nets with bottomPreferredRoutingLayer being set
+[01/11 17:30:09     74s] There are 602 nets with avoidDetour being set
+[01/11 17:30:09     74s] Extracting standard cell pins and blockage ...... 
+[01/11 17:30:09     75s] Pin and blockage extraction finished
+[01/11 17:30:09     75s] Delete all existing relative floorplan constraints.
+[01/11 17:30:09     75s] % End Load floorplan data ... (date=01/11 17:30:09, total cpu=0:00:00.4, real=0:00:01.0, peak res=1627.3M, current mem=1627.3M)
+[01/11 17:30:09     75s] Reading congestion map file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postcts_stylus.enc/pp_fir_u_0.route.congmap.gz ...
+[01/11 17:30:09     75s] % Begin Load SymbolTable ... (date=01/11 17:30:09, mem=1627.4M)
+[01/11 17:30:09     75s] routingBox: (-3600 -9000) (418420 369000)
+[01/11 17:30:09     75s] coreBox:    (40 0) (414780 360000)
+[01/11 17:30:09     75s] Un-suppress "**WARN ..." messages.
+[01/11 17:30:09     75s] % End Load SymbolTable ... (date=01/11 17:30:09, total cpu=0:00:00.2, real=0:00:00.0, peak res=1631.6M, current mem=1631.6M)
+[01/11 17:30:09     75s] Loading place ...
+[01/11 17:30:09     75s] % Begin Load placement data ... (date=01/11 17:30:09, mem=1631.6M)
+[01/11 17:30:09     75s] Reading placement file - /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postcts_stylus.enc/pp_fir_u_0.place.gz.
+[01/11 17:30:09     75s] ** Reading stdCellPlacement_binary (Created by Innovus v22.10-p001_1 on Sat Jan 11 10:57:09 2025, version# 2) ...
+[01/11 17:30:10     75s] Read Views for adaptive view pruning ...
+[01/11 17:30:10     75s] Read 0 views from Binary DB for adaptive view pruning
+[01/11 17:30:10     75s] *** Completed restorePlace (cpu=0:00:00.1 real=0:00:01.0 mem=1695.6M) ***
+[01/11 17:30:10     75s] Total net length = 1.332e+05 (6.594e+04 6.731e+04) (ext = 6.845e+03)
+[01/11 17:30:10     75s] % End Load placement data ... (date=01/11 17:30:10, total cpu=0:00:00.2, real=0:00:01.0, peak res=1637.3M, current mem=1636.2M)
+[01/11 17:30:10     75s] % Begin Load routing data ... (date=01/11 17:30:10, mem=1636.3M)
+[01/11 17:30:10     75s] Reading routing file - /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postcts_stylus.enc/pp_fir_u_0.route.gz.
+[01/11 17:30:10     75s] Reading Innovus routing data (Created by Innovus v22.10-p001_1 on Sat Jan 11 10:57:09 2025 Format: 20.1) ...
+[01/11 17:30:10     76s] *** Total 22811 nets are successfully restored.
+[01/11 17:30:10     76s] *** Completed restoreRoute (cpu=0:00:00.4 real=0:00:00.0 mem=1717.6M) ***
+[01/11 17:30:10     76s] % End Load routing data ... (date=01/11 17:30:10, total cpu=0:00:00.4, real=0:00:00.0, peak res=1662.3M, current mem=1661.3M)
+[01/11 17:30:10     76s] TAT_INFO: restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
+[01/11 17:30:10     76s] Reading property file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postcts_stylus.enc/pp_fir_u_0.prop
+[01/11 17:30:10     76s] *** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1721.6M) ***
+[01/11 17:30:11     76s] Reading dirtyarea snapshot file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postcts_stylus.enc/pp_fir_u_0.db.da.gz (Create by Innovus v22.10-p001_1 on Sat Jan 11 10:57:09 2025, version: 6).
+[01/11 17:30:11     76s] Change floorplan default-technical-site to 'sc9mcpp140z_cln28ht'.
+[01/11 17:30:11     76s] Change floorplan default-technical-site to 'sc9mcpp140z_cln28ht'.
+[01/11 17:30:11     76s] Ignoring {default} groups for Hold optimization.
+[01/11 17:30:11     76s] Ignoring {default} groups for Hold optimization.
+[01/11 17:30:11     76s] set_db opt_useful_skew already set.
+[01/11 17:30:11     76s] set_db opt_useful_skew already set.
+[01/11 17:30:11     76s] eee: Restore PreRoute RC Grid meta data successful.
+[01/11 17:30:11     76s] Loading preRoute extraction data from directory '/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postcts_stylus.enc/extraction/' ...
+[01/11 17:30:11     76s] Extraction setup Started 
+[01/11 17:30:11     76s] eee: Trim Metal Layers: { }
+[01/11 17:30:11     76s] Initializing multi-corner RC extraction with 3 active RC Corners ...
+[01/11 17:30:11     76s] Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For post_route extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+[01/11 17:30:11     76s] eee: __QRC_SADV_USE_LE__ is set 0
+[01/11 17:30:13     77s] eee: Metal Layer Id 1 is M1 
+[01/11 17:30:13     77s] eee: Metal Layer Id 2 is M2 
+[01/11 17:30:13     77s] eee: Metal Layer Id 3 is M3 
+[01/11 17:30:13     77s] eee: Metal Layer Id 4 is M4 
+[01/11 17:30:13     77s] eee: Metal Layer Id 5 is M5 
+[01/11 17:30:13     77s] eee: Metal Layer Id 6 is M6 
+[01/11 17:30:13     77s] eee: Metal Layer Id 7 is M7 
+[01/11 17:30:13     77s] eee: Metal Layer Id 8 is M8 
+[01/11 17:30:13     77s] eee: Metal Layer Id 9 is M9 
+[01/11 17:30:13     77s] eee: Metal Layer Id 10 is AP 
+[01/11 17:30:13     77s] eee: Via Layer Id 34 is VIA1 
+[01/11 17:30:13     77s] eee: Via Layer Id 35 is VIA2 
+[01/11 17:30:13     77s] eee: Via Layer Id 36 is VIA3 
+[01/11 17:30:13     77s] eee: Via Layer Id 37 is VIA4 
+[01/11 17:30:13     77s] eee: Via Layer Id 38 is VIA5 
+[01/11 17:30:13     77s] eee: Via Layer Id 39 is VIA6 
+[01/11 17:30:13     77s] eee: Via Layer Id 40 is VIA7 
+[01/11 17:30:13     77s] eee: Via Layer Id 41 is VIA8 
+[01/11 17:30:13     77s] eee: Via Layer Id 42 is RV 
+[01/11 17:30:13     77s] eee: Trim Metal Layers: { }
+[01/11 17:30:13     77s] eee:  lef metal Layer Id 1 mapped to tech Id 5 of Layer m1 
+[01/11 17:30:13     77s] eee:  lef via Layer Id 1 mapped to tech Id 6 of Layer via1 
+[01/11 17:30:13     77s] eee:  lef metal Layer Id 2 mapped to tech Id 7 of Layer m2 
+[01/11 17:30:13     77s] eee:  lef via Layer Id 2 mapped to tech Id 8 of Layer via2 
+[01/11 17:30:13     77s] eee:  lef metal Layer Id 3 mapped to tech Id 9 of Layer m3 
+[01/11 17:30:13     77s] eee:  lef via Layer Id 3 mapped to tech Id 10 of Layer via3 
+[01/11 17:30:13     77s] eee:  lef metal Layer Id 4 mapped to tech Id 11 of Layer m4 
+[01/11 17:30:13     77s] Generating auto layer map file.
+[01/11 17:30:13     77s] eee:  lef via Layer Id 4 mapped to tech Id 12 of Layer via4 
+[01/11 17:30:13     77s] eee:  lef metal Layer Id 5 mapped to tech Id 13 of Layer m5 
+[01/11 17:30:13     77s] eee:  lef via Layer Id 5 mapped to tech Id 14 of Layer via5 
+[01/11 17:30:13     77s] eee:  lef metal Layer Id 6 mapped to tech Id 15 of Layer m6 
+[01/11 17:30:13     77s] eee:  lef via Layer Id 6 mapped to tech Id 16 of Layer via6 
+[01/11 17:30:13     77s] eee:  lef metal Layer Id 7 mapped to tech Id 17 of Layer m7 
+[01/11 17:30:13     77s] eee:  lef via Layer Id 7 mapped to tech Id 18 of Layer via7 
+[01/11 17:30:13     77s] eee:  lef metal Layer Id 8 mapped to tech Id 19 of Layer m8 
+[01/11 17:30:13     77s] eee:  lef via Layer Id 8 mapped to tech Id 20 of Layer via8 
+[01/11 17:30:13     77s] eee:  lef metal Layer Id 9 mapped to tech Id 21 of Layer m9 
+[01/11 17:30:13     77s] eee:  lef via Layer Id 9 mapped to tech Id 22 of Layer rv 
+[01/11 17:30:13     77s] eee:  lef metal Layer Id 10 mapped to tech Id 23 of Layer ap 
+[01/11 17:30:13     77s] eee: Metal Layer Id 1 mapped to 5 
+[01/11 17:30:13     77s] eee: Via Layer Id 1 mapped to 6 
+[01/11 17:30:13     77s] eee: Metal Layer Id 2 mapped to 7 
+[01/11 17:30:13     77s] eee: Via Layer Id 2 mapped to 8 
+[01/11 17:30:13     77s] eee: Metal Layer Id 3 mapped to 9 
+[01/11 17:30:13     77s] eee: Via Layer Id 3 mapped to 10 
+[01/11 17:30:13     77s] eee: Metal Layer Id 4 mapped to 11 
+[01/11 17:30:13     77s] eee: Via Layer Id 4 mapped to 12 
+[01/11 17:30:13     77s] eee: Metal Layer Id 5 mapped to 13 
+[01/11 17:30:13     77s] eee: Via Layer Id 5 mapped to 14 
+[01/11 17:30:13     77s] eee: Metal Layer Id 6 mapped to 15 
+[01/11 17:30:13     77s] eee: Via Layer Id 6 mapped to 16 
+[01/11 17:30:13     77s] eee: Metal Layer Id 7 mapped to 17 
+[01/11 17:30:13     77s] eee: Via Layer Id 7 mapped to 18 
+[01/11 17:30:13     77s] eee: Metal Layer Id 8 mapped to 19 
+[01/11 17:30:13     77s] eee: Via Layer Id 8 mapped to 20 
+[01/11 17:30:13     77s] eee: Metal Layer Id 9 mapped to 21 
+[01/11 17:30:13     77s] eee: Via Layer Id 9 mapped to 22 
+[01/11 17:30:13     77s] eee: Metal Layer Id 10 mapped to 23 
+[01/11 17:30:14     78s] eee: pegPreRouteEnableSaveRestoreRCPatterns=1, retVal=1, doesAnyTechFileNeedExtraction=1
+[01/11 17:30:14     78s] eee: Reading patterns meta data.
+[01/11 17:30:14     78s] eee: Restore PreRoute Pattern Extraction data failed in NDR or Via validation.
+[01/11 17:30:14     78s] eee: PatternAvail=0, PreRoutePatternReadFailed=3
+[01/11 17:30:14     78s] eee: Restore PreRoute Pattern Extraction data failed.
+[01/11 17:30:14     78s] Importing multi-corner technology file(s) for preRoute extraction...
+[01/11 17:30:14     78s] /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postcts_stylus.enc/libs/mmmc/worst/qrcTechFile
+[01/11 17:30:15     78s] Generating auto layer map file.
+[01/11 17:30:15      0s] eee: Metal Layer Id 1 is M1 
+[01/11 17:30:15      0s] eee: Metal Layer Id 2 is M2 
+[01/11 17:30:15      0s] eee: Metal Layer Id 3 is M3 
+[01/11 17:30:15      0s] eee: Metal Layer Id 4 is M4 
+[01/11 17:30:15      0s] eee: Metal Layer Id 5 is M5 
+[01/11 17:30:15      0s] eee: Metal Layer Id 6 is M6 
+[01/11 17:30:15      0s] eee: Metal Layer Id 7 is M7 
+[01/11 17:30:15      0s] eee: Metal Layer Id 8 is M8 
+[01/11 17:30:15      0s] eee: Metal Layer Id 9 is M9 
+[01/11 17:30:15      0s] eee: Metal Layer Id 10 is AP 
+[01/11 17:30:15      0s] eee: Via Layer Id 34 is VIA1 
+[01/11 17:30:15      0s] eee: Via Layer Id 35 is VIA2 
+[01/11 17:30:15      0s] eee: Via Layer Id 36 is VIA3 
+[01/11 17:30:15      0s] eee: Via Layer Id 37 is VIA4 
+[01/11 17:30:15      0s] eee: Via Layer Id 38 is VIA5 
+[01/11 17:30:15      0s] eee: Via Layer Id 39 is VIA6 
+[01/11 17:30:15      0s] eee: Via Layer Id 40 is VIA7 
+[01/11 17:30:15      0s] eee: Via Layer Id 41 is VIA8 
+[01/11 17:30:15      0s] eee: Via Layer Id 42 is RV 
+[01/11 17:30:15      0s] eee: Trim Metal Layers: { }
+[01/11 17:30:15      0s] eee:  lef metal Layer Id 1 mapped to tech Id 5 of Layer m1 
+[01/11 17:30:15      0s] eee:  lef via Layer Id 1 mapped to tech Id 6 of Layer via1 
+[01/11 17:30:15      0s] eee:  lef metal Layer Id 2 mapped to tech Id 7 of Layer m2 
+[01/11 17:30:15      0s] eee:  lef via Layer Id 2 mapped to tech Id 8 of Layer via2 
+[01/11 17:30:15      0s] eee:  lef metal Layer Id 3 mapped to tech Id 9 of Layer m3 
+[01/11 17:30:15      0s] eee:  lef via Layer Id 3 mapped to tech Id 10 of Layer via3 
+[01/11 17:30:15      0s] eee:  lef metal Layer Id 4 mapped to tech Id 11 of Layer m4 
+[01/11 17:30:15      0s] eee:  lef via Layer Id 4 mapped to tech Id 12 of Layer via4 
+[01/11 17:30:15      0s] eee:  lef metal Layer Id 5 mapped to tech Id 13 of Layer m5 
+[01/11 17:30:15      0s] eee:  lef via Layer Id 5 mapped to tech Id 14 of Layer via5 
+[01/11 17:30:15      0s] eee:  lef metal Layer Id 6 mapped to tech Id 15 of Layer m6 
+[01/11 17:30:15      0s] eee:  lef via Layer Id 6 mapped to tech Id 16 of Layer via6 
+[01/11 17:30:15      0s] eee:  lef metal Layer Id 7 mapped to tech Id 17 of Layer m7 
+[01/11 17:30:15      0s] eee:  lef via Layer Id 7 mapped to tech Id 18 of Layer via7 
+[01/11 17:30:15      0s] eee:  lef metal Layer Id 8 mapped to tech Id 19 of Layer m8 
+[01/11 17:30:15      0s] eee:  lef via Layer Id 8 mapped to tech Id 20 of Layer via8 
+[01/11 17:30:15      0s] eee:  lef metal Layer Id 9 mapped to tech Id 21 of Layer m9 
+[01/11 17:30:15      0s] eee:  lef via Layer Id 9 mapped to tech Id 22 of Layer rv 
+[01/11 17:30:15      0s] eee:  lef metal Layer Id 10 mapped to tech Id 23 of Layer ap 
+[01/11 17:30:15      0s] eee: Metal Layer Id 1 mapped to 5 
+[01/11 17:30:15      0s] eee: Via Layer Id 1 mapped to 6 
+[01/11 17:30:15      0s] eee: Metal Layer Id 2 mapped to 7 
+[01/11 17:30:15      0s] eee: Via Layer Id 2 mapped to 8 
+[01/11 17:30:15      0s] eee: Metal Layer Id 3 mapped to 9 
+[01/11 17:30:15      0s] eee: Via Layer Id 3 mapped to 10 
+[01/11 17:30:15      0s] eee: Metal Layer Id 4 mapped to 11 
+[01/11 17:30:15      0s] eee: Via Layer Id 4 mapped to 12 
+[01/11 17:30:15      0s] eee: Metal Layer Id 5 mapped to 13 
+[01/11 17:30:15      0s] eee: Via Layer Id 5 mapped to 14 
+[01/11 17:30:15      0s] eee: Metal Layer Id 6 mapped to 15 
+[01/11 17:30:15      0s] eee: Via Layer Id 6 mapped to 16 
+[01/11 17:30:15      0s] eee: Metal Layer Id 7 mapped to 17 
+[01/11 17:30:15      0s] eee: Via Layer Id 7 mapped to 18 
+[01/11 17:30:15      0s] eee: Metal Layer Id 8 mapped to 19 
+[01/11 17:30:15      0s] eee: Via Layer Id 8 mapped to 20 
+[01/11 17:30:15      0s] eee: Metal Layer Id 9 mapped to 21 
+[01/11 17:30:15      0s] eee: Via Layer Id 9 mapped to 22 
+[01/11 17:30:15      0s] eee: Metal Layer Id 10 mapped to 23 
+
+[01/11 17:30:36     92s] /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postcts_stylus.enc/libs/mmmc/best/qrcTechFile
+[01/11 17:30:37     92s] Generating auto layer map file.
+[01/11 17:30:37      0s] eee: Metal Layer Id 1 is M1 
+[01/11 17:30:37      0s] eee: Metal Layer Id 2 is M2 
+[01/11 17:30:37      0s] eee: Metal Layer Id 3 is M3 
+[01/11 17:30:37      0s] eee: Metal Layer Id 4 is M4 
+[01/11 17:30:37      0s] eee: Metal Layer Id 5 is M5 
+[01/11 17:30:37      0s] eee: Metal Layer Id 6 is M6 
+[01/11 17:30:37      0s] eee: Metal Layer Id 7 is M7 
+[01/11 17:30:37      0s] eee: Metal Layer Id 8 is M8 
+[01/11 17:30:37      0s] eee: Metal Layer Id 9 is M9 
+[01/11 17:30:37      0s] eee: Metal Layer Id 10 is AP 
+[01/11 17:30:37      0s] eee: Via Layer Id 34 is VIA1 
+[01/11 17:30:37      0s] eee: Via Layer Id 35 is VIA2 
+[01/11 17:30:37      0s] eee: Via Layer Id 36 is VIA3 
+[01/11 17:30:37      0s] eee: Via Layer Id 37 is VIA4 
+[01/11 17:30:37      0s] eee: Via Layer Id 38 is VIA5 
+[01/11 17:30:37      0s] eee: Via Layer Id 39 is VIA6 
+[01/11 17:30:37      0s] eee: Via Layer Id 40 is VIA7 
+[01/11 17:30:37      0s] eee: Via Layer Id 41 is VIA8 
+[01/11 17:30:37      0s] eee: Via Layer Id 42 is RV 
+[01/11 17:30:37      0s] eee: Trim Metal Layers: { }
+[01/11 17:30:37      0s] eee:  lef metal Layer Id 1 mapped to tech Id 5 of Layer m1 
+[01/11 17:30:37      0s] eee:  lef via Layer Id 1 mapped to tech Id 6 of Layer via1 
+[01/11 17:30:37      0s] eee:  lef metal Layer Id 2 mapped to tech Id 7 of Layer m2 
+[01/11 17:30:37      0s] eee:  lef via Layer Id 2 mapped to tech Id 8 of Layer via2 
+[01/11 17:30:37      0s] eee:  lef metal Layer Id 3 mapped to tech Id 9 of Layer m3 
+[01/11 17:30:37      0s] eee:  lef via Layer Id 3 mapped to tech Id 10 of Layer via3 
+[01/11 17:30:37      0s] eee:  lef metal Layer Id 4 mapped to tech Id 11 of Layer m4 
+[01/11 17:30:37      0s] eee:  lef via Layer Id 4 mapped to tech Id 12 of Layer via4 
+[01/11 17:30:37      0s] eee:  lef metal Layer Id 5 mapped to tech Id 13 of Layer m5 
+[01/11 17:30:37      0s] eee:  lef via Layer Id 5 mapped to tech Id 14 of Layer via5 
+[01/11 17:30:37      0s] eee:  lef metal Layer Id 6 mapped to tech Id 15 of Layer m6 
+[01/11 17:30:37      0s] eee:  lef via Layer Id 6 mapped to tech Id 16 of Layer via6 
+[01/11 17:30:37      0s] eee:  lef metal Layer Id 7 mapped to tech Id 17 of Layer m7 
+[01/11 17:30:37      0s] eee:  lef via Layer Id 7 mapped to tech Id 18 of Layer via7 
+[01/11 17:30:37      0s] eee:  lef metal Layer Id 8 mapped to tech Id 19 of Layer m8 
+[01/11 17:30:37      0s] eee:  lef via Layer Id 8 mapped to tech Id 20 of Layer via8 
+[01/11 17:30:37      0s] eee:  lef metal Layer Id 9 mapped to tech Id 21 of Layer m9 
+[01/11 17:30:37      0s] eee:  lef via Layer Id 9 mapped to tech Id 22 of Layer rv 
+[01/11 17:30:37      0s] eee:  lef metal Layer Id 10 mapped to tech Id 23 of Layer ap 
+[01/11 17:30:37      0s] eee: Metal Layer Id 1 mapped to 5 
+[01/11 17:30:37      0s] eee: Via Layer Id 1 mapped to 6 
+[01/11 17:30:37      0s] eee: Metal Layer Id 2 mapped to 7 
+[01/11 17:30:37      0s] eee: Via Layer Id 2 mapped to 8 
+[01/11 17:30:37      0s] eee: Metal Layer Id 3 mapped to 9 
+[01/11 17:30:37      0s] eee: Via Layer Id 3 mapped to 10 
+[01/11 17:30:37      0s] eee: Metal Layer Id 4 mapped to 11 
+[01/11 17:30:37      0s] eee: Via Layer Id 4 mapped to 12 
+[01/11 17:30:37      0s] eee: Metal Layer Id 5 mapped to 13 
+[01/11 17:30:37      0s] eee: Via Layer Id 5 mapped to 14 
+[01/11 17:30:37      0s] eee: Metal Layer Id 6 mapped to 15 
+[01/11 17:30:37      0s] eee: Via Layer Id 6 mapped to 16 
+[01/11 17:30:37      0s] eee: Metal Layer Id 7 mapped to 17 
+[01/11 17:30:37      0s] eee: Via Layer Id 7 mapped to 18 
+[01/11 17:30:37      0s] eee: Metal Layer Id 8 mapped to 19 
+[01/11 17:30:37      0s] eee: Via Layer Id 8 mapped to 20 
+[01/11 17:30:37      0s] eee: Metal Layer Id 9 mapped to 21 
+[01/11 17:30:37      0s] eee: Via Layer Id 9 mapped to 22 
+[01/11 17:30:37      0s] eee: Metal Layer Id 10 mapped to 23 
+
+[01/11 17:30:59    105s] /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postcts_stylus.enc/libs/mmmc/typical/qrcTechFile
+[01/11 17:31:00    106s] Generating auto layer map file.
+[01/11 17:31:00      0s] eee: Metal Layer Id 1 is M1 
+[01/11 17:31:00      0s] eee: Metal Layer Id 2 is M2 
+[01/11 17:31:00      0s] eee: Metal Layer Id 3 is M3 
+[01/11 17:31:00      0s] eee: Metal Layer Id 4 is M4 
+[01/11 17:31:00      0s] eee: Metal Layer Id 5 is M5 
+[01/11 17:31:00      0s] eee: Metal Layer Id 6 is M6 
+[01/11 17:31:00      0s] eee: Metal Layer Id 7 is M7 
+[01/11 17:31:00      0s] eee: Metal Layer Id 8 is M8 
+[01/11 17:31:00      0s] eee: Metal Layer Id 9 is M9 
+[01/11 17:31:00      0s] eee: Metal Layer Id 10 is AP 
+[01/11 17:31:00      0s] eee: Via Layer Id 34 is VIA1 
+[01/11 17:31:00      0s] eee: Via Layer Id 35 is VIA2 
+[01/11 17:31:00      0s] eee: Via Layer Id 36 is VIA3 
+[01/11 17:31:00      0s] eee: Via Layer Id 37 is VIA4 
+[01/11 17:31:00      0s] eee: Via Layer Id 38 is VIA5 
+[01/11 17:31:00      0s] eee: Via Layer Id 39 is VIA6 
+[01/11 17:31:00      0s] eee: Via Layer Id 40 is VIA7 
+[01/11 17:31:00      0s] eee: Via Layer Id 41 is VIA8 
+[01/11 17:31:00      0s] eee: Via Layer Id 42 is RV 
+[01/11 17:31:00      0s] eee: Trim Metal Layers: { }
+[01/11 17:31:00      0s] eee:  lef metal Layer Id 1 mapped to tech Id 5 of Layer m1 
+[01/11 17:31:00      0s] eee:  lef via Layer Id 1 mapped to tech Id 6 of Layer via1 
+[01/11 17:31:00      0s] eee:  lef metal Layer Id 2 mapped to tech Id 7 of Layer m2 
+[01/11 17:31:00      0s] eee:  lef via Layer Id 2 mapped to tech Id 8 of Layer via2 
+[01/11 17:31:00      0s] eee:  lef metal Layer Id 3 mapped to tech Id 9 of Layer m3 
+[01/11 17:31:00      0s] eee:  lef via Layer Id 3 mapped to tech Id 10 of Layer via3 
+[01/11 17:31:00      0s] eee:  lef metal Layer Id 4 mapped to tech Id 11 of Layer m4 
+[01/11 17:31:00      0s] eee:  lef via Layer Id 4 mapped to tech Id 12 of Layer via4 
+[01/11 17:31:00      0s] eee:  lef metal Layer Id 5 mapped to tech Id 13 of Layer m5 
+[01/11 17:31:00      0s] eee:  lef via Layer Id 5 mapped to tech Id 14 of Layer via5 
+[01/11 17:31:00      0s] eee:  lef metal Layer Id 6 mapped to tech Id 15 of Layer m6 
+[01/11 17:31:00      0s] eee:  lef via Layer Id 6 mapped to tech Id 16 of Layer via6 
+[01/11 17:31:00      0s] eee:  lef metal Layer Id 7 mapped to tech Id 17 of Layer m7 
+[01/11 17:31:00      0s] eee:  lef via Layer Id 7 mapped to tech Id 18 of Layer via7 
+[01/11 17:31:00      0s] eee:  lef metal Layer Id 8 mapped to tech Id 19 of Layer m8 
+[01/11 17:31:00      0s] eee:  lef via Layer Id 8 mapped to tech Id 20 of Layer via8 
+[01/11 17:31:00      0s] eee:  lef metal Layer Id 9 mapped to tech Id 21 of Layer m9 
+[01/11 17:31:00      0s] eee:  lef via Layer Id 9 mapped to tech Id 22 of Layer rv 
+[01/11 17:31:00      0s] eee:  lef metal Layer Id 10 mapped to tech Id 23 of Layer ap 
+[01/11 17:31:00      0s] eee: Metal Layer Id 1 mapped to 5 
+[01/11 17:31:00      0s] eee: Via Layer Id 1 mapped to 6 
+[01/11 17:31:00      0s] eee: Metal Layer Id 2 mapped to 7 
+[01/11 17:31:00      0s] eee: Via Layer Id 2 mapped to 8 
+[01/11 17:31:00      0s] eee: Metal Layer Id 3 mapped to 9 
+[01/11 17:31:00      0s] eee: Via Layer Id 3 mapped to 10 
+[01/11 17:31:00      0s] eee: Metal Layer Id 4 mapped to 11 
+[01/11 17:31:00      0s] eee: Via Layer Id 4 mapped to 12 
+[01/11 17:31:00      0s] eee: Metal Layer Id 5 mapped to 13 
+[01/11 17:31:00      0s] eee: Via Layer Id 5 mapped to 14 
+[01/11 17:31:00      0s] eee: Metal Layer Id 6 mapped to 15 
+[01/11 17:31:00      0s] eee: Via Layer Id 6 mapped to 16 
+[01/11 17:31:00      0s] eee: Metal Layer Id 7 mapped to 17 
+[01/11 17:31:00      0s] eee: Via Layer Id 7 mapped to 18 
+[01/11 17:31:00      0s] eee: Metal Layer Id 8 mapped to 19 
+[01/11 17:31:00      0s] eee: Via Layer Id 8 mapped to 20 
+[01/11 17:31:00      0s] eee: Metal Layer Id 9 mapped to 21 
+[01/11 17:31:00      0s] eee: Via Layer Id 9 mapped to 22 
+[01/11 17:31:00      0s] eee: Metal Layer Id 10 mapped to 23 
+
+[01/11 17:31:21    120s] Completed (cpu: 0:00:43.9 real: 0:01:10)
+[01/11 17:31:21    120s] Set Shrink Factor to 0.90000 (from technology file)
+[01/11 17:31:21    120s] Summary of Active RC-Corners : 
+[01/11 17:31:21    120s]  
+[01/11 17:31:21    120s]  Analysis View: view_wcl_slow
+[01/11 17:31:21    120s]     RC-Corner Name        : worst
+[01/11 17:31:21    120s]     RC-Corner Index       : 0
+[01/11 17:31:21    120s]     RC-Corner Temperature : 125 Celsius
+[01/11 17:31:21    120s]     RC-Corner Cap Table   : ''
+[01/11 17:31:21    120s] Technology file '/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postcts_stylus.enc/libs/mmmc/worst/qrcTechFile' associated with first view 'view_wcl_slow' will be used as the primary corner for the multi-corner extraction.
+[01/11 17:31:21    120s]     RC-Corner PreRoute Res Factor         : 1
+[01/11 17:31:21    120s]     RC-Corner PreRoute Cap Factor         : 1
+[01/11 17:31:21    120s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[01/11 17:31:21    120s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[01/11 17:31:21    120s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[01/11 17:31:21    120s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[01/11 17:31:21    120s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[01/11 17:31:21    120s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+[01/11 17:31:21    120s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+[01/11 17:31:21    120s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[01/11 17:31:21    120s]     RC-Corner Technology file: '/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postcts_stylus.enc/libs/mmmc/worst/qrcTechFile'
+[01/11 17:31:21    120s]  
+[01/11 17:31:21    120s]  Analysis View: view_wcl_fast
+[01/11 17:31:21    120s]     RC-Corner Name        : best
+[01/11 17:31:21    120s]     RC-Corner Index       : 1
+[01/11 17:31:21    120s]     RC-Corner Temperature : -40 Celsius
+[01/11 17:31:21    120s]     RC-Corner Cap Table   : ''
+[01/11 17:31:21    120s]     RC-Corner PreRoute Res Factor         : 1
+[01/11 17:31:21    120s]     RC-Corner PreRoute Cap Factor         : 1
+[01/11 17:31:21    120s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[01/11 17:31:21    120s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[01/11 17:31:21    120s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[01/11 17:31:21    120s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[01/11 17:31:21    120s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[01/11 17:31:21    120s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+[01/11 17:31:21    120s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+[01/11 17:31:21    120s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[01/11 17:31:21    120s]     RC-Corner Technology file: '/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postcts_stylus.enc/libs/mmmc/best/qrcTechFile'
+[01/11 17:31:21    120s]  
+[01/11 17:31:21    120s]  Analysis View: view_wcl_typical
+[01/11 17:31:21    120s]     RC-Corner Name        : typical
+[01/11 17:31:21    120s]     RC-Corner Index       : 2
+[01/11 17:31:21    120s]     RC-Corner Temperature : 25 Celsius
+[01/11 17:31:21    120s]     RC-Corner Cap Table   : ''
+[01/11 17:31:21    120s]     RC-Corner PreRoute Res Factor         : 1
+[01/11 17:31:21    120s]     RC-Corner PreRoute Cap Factor         : 1
+[01/11 17:31:21    120s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[01/11 17:31:21    120s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[01/11 17:31:21    120s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[01/11 17:31:21    120s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[01/11 17:31:21    120s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[01/11 17:31:21    120s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+[01/11 17:31:21    120s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+[01/11 17:31:21    120s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[01/11 17:31:21    120s]     RC-Corner Technology file: '/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postcts_stylus.enc/libs/mmmc/typical/qrcTechFile'
+[01/11 17:31:21    120s] eee: Trim Metal Layers: { }
+[01/11 17:31:21    120s] eee: RC Grid Memory allocated=72600
+[01/11 17:31:21    120s] eee: LayerId=1 widthSet size=1
+[01/11 17:31:21    120s] eee: LayerId=2 widthSet size=1
+[01/11 17:31:21    120s] eee: LayerId=3 widthSet size=1
+[01/11 17:31:21    120s] eee: LayerId=4 widthSet size=1
+[01/11 17:31:21    120s] eee: LayerId=5 widthSet size=1
+[01/11 17:31:21    120s] eee: LayerId=6 widthSet size=1
+[01/11 17:31:21    120s] eee: LayerId=7 widthSet size=1
+[01/11 17:31:21    120s] eee: LayerId=8 widthSet size=1
+[01/11 17:31:21    120s] eee: LayerId=9 widthSet size=1
+[01/11 17:31:21    120s] eee: LayerId=10 widthSet size=1
+[01/11 17:31:21    120s] eee: Total RC Grid memory=72600
+[01/11 17:31:21    120s] eee: Checksum of RC Grid density data read:(120 120) passed=1
+[01/11 17:31:21    120s] eee: Restore PreRoute RC Grid data successful.
+[01/11 17:31:21    120s] eee: Metal Layers Info:
+[01/11 17:31:21    120s] eee: L: M1 M2 M3 M4 M5 M6 M7 M8 M9 AP
+[01/11 17:31:21    120s] eee: W: 0.050000 0.050000[01/11 17:31:21    120s] Restored RC grid for preRoute extraction.
+ 0.050000 0.050000 0.050000 0.050000 0.050000 0.400000 0.400000 2.000000
+[01/11 17:31:21    120s] eee: S: 0.050000 0.050000 0.050000 0.050000 0.050000 0.050000 0.050000 0.400000 0.400000 2.000000
+[01/11 17:31:21    120s] eee: pegSigSF=1.070000
+[01/11 17:31:21    120s] Initializing multi-corner resistance tables ...
+[01/11 17:31:21    120s] eee: ReadRoutingBlockageFactor status=1
+[01/11 17:31:21    120s] eee: Restore PreRoute Blockage data successful.
+[01/11 17:31:21    120s] eee: Reading Grid unit RC.
+[01/11 17:31:22    120s] eee: pesRestorePreRouteExtractionData::readRCGridUnitRC called for corner::worst
+[01/11 17:31:22    120s] eee: RCCorner in design data Name: worst Tech: /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postcts_stylus.enc/libs/mmmc/worst/qrcTechFile 125.000000 1.000000 1.000000 
+[01/11 17:31:22    120s] eee: RCCorner in saved data Name: worst Tech: /software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcworst/qrcTechFile 125.000000 1.000000 1.000000 
+[01/11 17:31:22    120s] eee: RCCorner in design data Name: worst Tech: /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postcts_stylus.enc/libs/mmmc/worst/qrcTechFile 125.000000 1.000000 1.000000 
+[01/11 17:31:22    120s] eee: RCCorner in saved data Name: best Tech: /software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcbest/qrcTechFile -40.000000 1.000000 1.000000 
+[01/11 17:31:22    120s] eee: RCCorner in design data Name: worst Tech: /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postcts_stylus.enc/libs/mmmc/worst/qrcTechFile 125.000000 1.000000 1.000000 
+[01/11 17:31:22    120s] eee: RCCorner in saved data Name: typical Tech: /software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/nominal/qrcTechFile 25.000000 1.000000 1.000000 
+[01/11 17:31:22    120s] eee: RCGridUnitRC data read failed.
+[01/11 17:31:22    120s] RC corner worst not found in the saved preRoute extraction data.
+[01/11 17:31:22    120s] eee: pesRestorePreRouteExtractionData::readRCGridUnitRC called for corner::best
+[01/11 17:31:22    120s] eee: RCCorner in design data Name: best Tech: /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postcts_stylus.enc/libs/mmmc/best/qrcTechFile -40.000000 1.000000 1.000000 
+[01/11 17:31:22    120s] eee: RCCorner in saved data Name: worst Tech: /software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcworst/qrcTechFile 125.000000 1.000000 1.000000 
+[01/11 17:31:22    120s] eee: RCCorner in design data Name: best Tech: /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postcts_stylus.enc/libs/mmmc/best/qrcTechFile -40.000000 1.000000 1.000000 
+[01/11 17:31:22    120s] eee: RCCorner in saved data Name: best Tech: /software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcbest/qrcTechFile -40.000000 1.000000 1.000000 
+[01/11 17:31:22    120s] eee: RCCorner in design data Name: best Tech: /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postcts_stylus.enc/libs/mmmc/best/qrcTechFile -40.000000 1.000000 1.000000 
+[01/11 17:31:22    120s] eee: RCCorner in saved data Name: typical Tech: /software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/nominal/qrcTechFile 25.000000 1.000000 1.000000 
+[01/11 17:31:22    120s] eee: RCGridUnitRC data read failed.
+[01/11 17:31:22    120s] RC corner best not found in the saved preRoute extraction data.
+[01/11 17:31:22    120s] eee: pesRestorePreRouteExtractionData::readRCGridUnitRC called for corner::typical
+[01/11 17:31:22    120s] eee: RCCorner in design data Name: typical Tech: /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postcts_stylus.enc/libs/mmmc/typical/qrcTechFile 25.000000 1.000000 1.000000 
+[01/11 17:31:22    120s] eee: RCCorner in saved data Name: worst Tech: /software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcworst/qrcTechFile 125.000000 1.000000 1.000000 
+[01/11 17:31:22    120s] eee: RCCorner in design data Name: typical Tech: /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postcts_stylus.enc/libs/mmmc/typical/qrcTechFile 25.000000 1.000000 1.000000 
+[01/11 17:31:22    120s] eee: RCCorner in saved data Name: best Tech: /software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcbest/qrcTechFile -40.000000 1.000000 1.000000 
+[01/11 17:31:22    120s] eee: RCCorner in design data Name: typical Tech: /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postcts_stylus.enc/libs/mmmc/typical/qrcTechFile 25.000000 1.000000 1.000000 
+[01/11 17:31:22    120s] eee: RCCorner in saved data Name: typical Tech: /software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/nominal/qrcTechFile 25.000000 1.000000 1.000000 
+[01/11 17:31:22    120s] eee: RCGridUnitRC data read failed.
+[01/11 17:31:22    120s] RC corner typical not found in the saved preRoute extraction data.
+[01/11 17:31:22    120s] eee: Number of RC corner to be extracted=6
+[01/11 17:31:22    120s] eee: l=1 avDens=0.047522 usedTrk=128.308997 availTrk=2700.000000 sigTrk=128.308997
+[01/11 17:31:22    120s] eee: l=2 avDens=0.240274 usedTrk=10898.834611 availTrk=45360.000000 sigTrk=10898.834611
+[01/11 17:31:22    120s] eee: l=3 avDens=0.194393 usedTrk=8187.835335 availTrk=42120.000000 sigTrk=8187.835335
+[01/11 17:31:22    120s] eee: l=4 avDens=0.071055 usedTrk=2960.881381 availTrk=41670.000000 sigTrk=2960.881381
+[01/11 17:31:22    120s] eee: l=5 avDens=0.029322 usedTrk=818.077504 availTrk=27900.000000 sigTrk=818.077504
+[01/11 17:31:22    120s] eee: l=6 avDens=0.021570 usedTrk=163.066666 availTrk=7560.000000 sigTrk=163.066666
+[01/11 17:31:22    120s] eee: l=7 avDens=0.001009 usedTrk=4.722222 availTrk=4680.000000 sigTrk=4.722222
+[01/11 17:31:22    120s] eee: l=8 avDens=0.058622 usedTrk=50.122222 availTrk=855.000000 sigTrk=50.122222
+[01/11 17:31:22    120s] eee: l=9 avDens=0.063564 usedTrk=52.916667 availTrk=832.500000 sigTrk=52.916667
+[01/11 17:31:22    120s] eee: l=10 avDens=0.382222 usedTrk=3.822222 availTrk=10.000000 sigTrk=3.822222
+[01/11 17:31:22    120s] {RT worst 0 10 10 {8 0} 1}
+[01/11 17:31:22    120s] eee: LAM: n=32 LLS=2-3 HLS=3-5 rDens=0.230781 uaWl=0.000000 uaWlH=0.000000 aWlH=0.000000 lMod=0 pMax=0.821000 pMod=82 wcR=0.681100 newSi=0.001700 wHLS=1.717820 siPrev=0 viaL=0.000000
+[01/11 17:31:23    120s] Restore PreRoute all RC Grid data successful.[01/11 17:31:23    120s] Default value for post_route extraction mode's extract_rc_effort_level (extract_rc_effort_level option of set_db) changed to 'medium'.
+[01/11 17:31:23    120s] Start generating vias ..
+#WARNING (NRDB-317) Threshold min width 0.180000 is >= max width 0.180000 for minimumcut 2 for LAYER M7
+[01/11 17:31:23    121s] ### import design signature (1): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 inst_orient=1 via=2086305574
+[01/11 17:31:23    121s] Extracting standard cell pins and blockage ...... 
+[01/11 17:31:23    121s] Pin and blockage extraction finished
+[01/11 17:31:23    121s] Via generation completed successfully.
+[01/11 17:31:23    121s] eee: __QRC_SADV_USE_LE__ is set 0
+[01/11 17:31:24    122s] eee: Metal Layer Id 1 is M1 
+[01/11 17:31:24    122s] eee: Metal Layer Id 2 is M2 
+[01/11 17:31:24    122s] eee: Metal Layer Id 3 is M3 
+[01/11 17:31:24    122s] eee: Metal Layer Id 4 is M4 
+[01/11 17:31:24    122s] eee: Metal Layer Id 5 is M5 
+[01/11 17:31:24    122s] eee: Metal Layer Id 6 is M6 
+[01/11 17:31:24    122s] eee: Metal Layer Id 7 is M7 
+[01/11 17:31:24    122s] eee: Metal Layer Id 8 is M8 
+[01/11 17:31:24    122s] eee: Metal Layer Id 9 is M9 
+[01/11 17:31:24    122s] eee: Metal Layer Id 10 is AP 
+[01/11 17:31:24    122s] eee: Via Layer Id 34 is VIA1 
+[01/11 17:31:24    122s] eee: Via Layer Id 35 is VIA2 
+[01/11 17:31:24    122s] eee: Via Layer Id 36 is VIA3 
+[01/11 17:31:24    122s] eee: Via Layer Id 37 is VIA4 
+[01/11 17:31:24    122s] eee: Via Layer Id 38 is VIA5 
+[01/11 17:31:24    122s] eee: Via Layer Id 39 is VIA6 
+[01/11 17:31:24    122s] eee: Via Layer Id 40 is VIA7 
+[01/11 17:31:24    122s] eee: Via Layer Id 41 is VIA8 
+[01/11 17:31:24    122s] eee: Via Layer Id 42 is RV 
+[01/11 17:31:24    122s] eee: Trim Metal Layers: { }
+[01/11 17:31:24    122s] eee:  lef metal Layer Id 1 mapped to tech Id 5 of Layer m1 
+[01/11 17:31:24    122s] eee:  lef via Layer Id 1 mapped to tech Id 6 of Layer via1 
+[01/11 17:31:24    122s] eee:  lef metal Layer Id 2 mapped to tech Id 7 of Layer m2 
+[01/11 17:31:24    122s] eee:  lef via Layer Id 2 mapped to tech Id 8 of Layer via2 
+[01/11 17:31:24    122s] Generating auto layer map file.
+[01/11 17:31:24    122s] eee:  lef metal Layer Id 3 mapped to tech Id 9 of Layer m3 
+[01/11 17:31:24    122s] eee:  lef via Layer Id 3 mapped to tech Id 10 of Layer via3 
+[01/11 17:31:24    122s] eee:  lef metal Layer Id 4 mapped to tech Id 11 of Layer m4 
+[01/11 17:31:24    122s] eee:  lef via Layer Id 4 mapped to tech Id 12 of Layer via4 
+[01/11 17:31:24    122s] eee:  lef metal Layer Id 5 mapped to tech Id 13 of Layer m5 
+[01/11 17:31:24    122s] eee:  lef via Layer Id 5 mapped to tech Id 14 of Layer via5 
+[01/11 17:31:24    122s] eee:  lef metal Layer Id 6 mapped to tech Id 15 of Layer m6 
+[01/11 17:31:24    122s] eee:  lef via Layer Id 6 mapped to tech Id 16 of Layer via6 
+[01/11 17:31:24    122s] eee:  lef metal Layer Id 7 mapped to tech Id 17 of Layer m7 
+[01/11 17:31:24    122s] eee:  lef via Layer Id 7 mapped to tech Id 18 of Layer via7 
+[01/11 17:31:24    122s] eee:  lef metal Layer Id 8 mapped to tech Id 19 of Layer m8 
+[01/11 17:31:24    122s] eee:  lef via Layer Id 8 mapped to tech Id 20 of Layer via8 
+[01/11 17:31:24    122s] eee:  lef metal Layer Id 9 mapped to tech Id 21 of Layer m9 
+[01/11 17:31:24    122s] eee:  lef via Layer Id 9 mapped to tech Id 22 of Layer rv 
+[01/11 17:31:24    122s] eee:  lef metal Layer Id 10 mapped to tech Id 23 of Layer ap 
+[01/11 17:31:24    122s] eee: Metal Layer Id 1 mapped to 5 
+[01/11 17:31:24    122s] eee: Via Layer Id 1 mapped to 6 
+[01/11 17:31:24    122s] eee: Metal Layer Id 2 mapped to 7 
+[01/11 17:31:24    122s] eee: Via Layer Id 2 mapped to 8 
+[01/11 17:31:24    122s] eee: Metal Layer Id 3 mapped to 9 
+[01/11 17:31:24    122s] eee: Via Layer Id 3 mapped to 10 
+[01/11 17:31:24    122s] eee: Metal Layer Id 4 mapped to 11 
+[01/11 17:31:24    122s] eee: Via Layer Id 4 mapped to 12 
+[01/11 17:31:24    122s] eee: Metal Layer Id 5 mapped to 13 
+[01/11 17:31:24    122s] eee: Via Layer Id 5 mapped to 14 
+[01/11 17:31:24    122s] eee: Metal Layer Id 6 mapped to 15 
+[01/11 17:31:24    122s] eee: Via Layer Id 6 mapped to 16 
+[01/11 17:31:24    122s] eee: Metal Layer Id 7 mapped to 17 
+[01/11 17:31:24    122s] eee: Via Layer Id 7 mapped to 18 
+[01/11 17:31:24    122s] eee: Metal Layer Id 8 mapped to 19 
+[01/11 17:31:24    122s] eee: Via Layer Id 8 mapped to 20 
+[01/11 17:31:24    122s] eee: Metal Layer Id 9 mapped to 21 
+[01/11 17:31:24    122s] eee: Via Layer Id 9 mapped to 22 
+[01/11 17:31:24    122s] eee: Metal Layer Id 10 mapped to 23 
+[01/11 17:31:25    122s] eee: pegPreRouteEnableSaveRestoreRCPatterns=1, retVal=1, doesAnyTechFileNeedExtraction=1
+[01/11 17:31:25    122s] eee: Reading patterns meta data.
+[01/11 17:31:25    122s] eee: PatternAvail=0, PreRoutePatternReadFailed=3
+[01/11 17:31:25    122s] eee: Restore PreRoute Pattern Extraction data failed.
+[01/11 17:31:25    122s] Initializing preRoute extraction patterns for new vias... [01/11 17:31:26    123s] eee: Metal Layer Id 1 is M1 
+[01/11 17:31:26    123s] eee: Metal Layer Id 2 is M2 
+[01/11 17:31:26    123s] eee: Metal Layer Id 3 is M3 
+[01/11 17:31:26    123s] eee: Metal Layer Id 4 is M4 
+[01/11 17:31:26    123s] eee: Metal Layer Id 5 is M5 
+[01/11 17:31:26    123s] eee: Metal Layer Id 6 is M6 
+[01/11 17:31:26    123s] eee: Metal Layer Id 7 is M7 
+[01/11 17:31:26    123s] eee: Metal Layer Id 8 is M8 
+[01/11 17:31:26    123s] eee: Metal Layer Id 9 is M9 
+[01/11 17:31:26    123s] eee: Metal Layer Id 10 is AP 
+[01/11 17:31:26    123s] eee: Via Layer Id 34 is VIA1 
+[01/11 17:31:26    123s] eee: Via Layer Id 35 is VIA2 
+[01/11 17:31:26    123s] eee: Via Layer Id 36 is VIA3 
+[01/11 17:31:26    123s] eee: Via Layer Id 37 is VIA4 
+[01/11 17:31:26    123s] eee: Via Layer Id 38 is VIA5 
+[01/11 17:31:26    123s] eee: Via Layer Id 39 is VIA6 
+[01/11 17:31:26    123s] eee: Via Layer Id 40 is VIA7 
+[01/11 17:31:26    123s] eee: Via Layer Id 41 is VIA8 
+[01/11 17:31:26    123s] eee: Via Layer Id 42 is RV 
+[01/11 17:31:26    123s] eee: Trim Metal Layers: { }
+[01/11 17:31:26    123s] eee:  lef metal Layer Id 1 mapped to tech Id 5 of Layer m1 
+[01/11 17:31:26    123s] eee:  lef via Layer Id 1 mapped to tech Id 6 of Layer via1 
+[01/11 17:31:26    123s] eee:  lef metal Layer Id 2 mapped to tech Id 7 of Layer m2 
+[01/11 17:31:26    123s] eee:  lef via Layer Id 2 mapped to tech Id 8 of Layer via2 
+[01/11 17:31:26    123s] eee:  lef metal Layer Id 3 mapped to tech Id 9 of Layer m3 
+Generating auto layer map file.
+[01/11 17:31:26    123s] eee:  lef via Layer Id 3 mapped to tech Id 10 of Layer via3 
+[01/11 17:31:26    123s] eee:  lef metal Layer Id 4 mapped to tech Id 11 of Layer m4 
+[01/11 17:31:26    123s] eee:  lef via Layer Id 4 mapped to tech Id 12 of Layer via4 
+[01/11 17:31:26    123s] eee:  lef metal Layer Id 5 mapped to tech Id 13 of Layer m5 
+[01/11 17:31:26    123s] eee:  lef via Layer Id 5 mapped to tech Id 14 of Layer via5 
+[01/11 17:31:26    123s] eee:  lef metal Layer Id 6 mapped to tech Id 15 of Layer m6 
+[01/11 17:31:26    123s] eee:  lef via Layer Id 6 mapped to tech Id 16 of Layer via6 
+[01/11 17:31:26    123s] eee:  lef metal Layer Id 7 mapped to tech Id 17 of Layer m7 
+[01/11 17:31:26    123s] eee:  lef via Layer Id 7 mapped to tech Id 18 of Layer via7 
+[01/11 17:31:26    123s] eee:  lef metal Layer Id 8 mapped to tech Id 19 of Layer m8 
+[01/11 17:31:26    123s] eee:  lef via Layer Id 8 mapped to tech Id 20 of Layer via8 
+[01/11 17:31:26    123s] eee:  lef metal Layer Id 9 mapped to tech Id 21 of Layer m9 
+[01/11 17:31:26    123s] eee:  lef via Layer Id 9 mapped to tech Id 22 of Layer rv 
+[01/11 17:31:26    123s] eee:  lef metal Layer Id 10 mapped to tech Id 23 of Layer ap 
+[01/11 17:31:26    123s] eee: Metal Layer Id 1 mapped to 5 
+[01/11 17:31:26    123s] eee: Via Layer Id 1 mapped to 6 
+[01/11 17:31:26    123s] eee: Metal Layer Id 2 mapped to 7 
+[01/11 17:31:26    123s] eee: Via Layer Id 2 mapped to 8 
+[01/11 17:31:26    123s] eee: Metal Layer Id 3 mapped to 9 
+[01/11 17:31:26    123s] eee: Via Layer Id 3 mapped to 10 
+[01/11 17:31:26    123s] eee: Metal Layer Id 4 mapped to 11 
+[01/11 17:31:26    123s] eee: Via Layer Id 4 mapped to 12 
+[01/11 17:31:26    123s] eee: Metal Layer Id 5 mapped to 13 
+[01/11 17:31:26    123s] eee: Via Layer Id 5 mapped to 14 
+[01/11 17:31:26    123s] eee: Metal Layer Id 6 mapped to 15 
+[01/11 17:31:26    123s] eee: Via Layer Id 6 mapped to 16 
+[01/11 17:31:26    123s] eee: Metal Layer Id 7 mapped to 17 
+[01/11 17:31:26    123s] eee: Via Layer Id 7 mapped to 18 
+[01/11 17:31:26    123s] eee: Metal Layer Id 8 mapped to 19 
+[01/11 17:31:26    123s] eee: Via Layer Id 8 mapped to 20 
+[01/11 17:31:26    123s] eee: Metal Layer Id 9 mapped to 21 
+[01/11 17:31:26    123s] eee: Via Layer Id 9 mapped to 22 
+[01/11 17:31:26    123s] eee: Metal Layer Id 10 mapped to 23 
+[01/11 17:31:29    125s] eee: Metal Layer Id 1 is M1 
+[01/11 17:31:29    125s] eee: Metal Layer Id 2 is M2 
+[01/11 17:31:29    125s] eee: Metal Layer Id 3 is M3 
+[01/11 17:31:29    125s] eee: Metal Layer Id 4 is M4 
+[01/11 17:31:29    125s] eee: Metal Layer Id 5 is M5 
+[01/11 17:31:29    125s] eee: Metal Layer Id 6 is M6 
+[01/11 17:31:29    125s] eee: Metal Layer Id 7 is M7 
+[01/11 17:31:29    125s] eee: Metal Layer Id 8 is M8 
+[01/11 17:31:29    125s] eee: Metal Layer Id 9 is M9 
+[01/11 17:31:29    125s] eee: Metal Layer Id 10 is AP 
+[01/11 17:31:29    125s] eee: Via Layer Id 34 is VIA1 
+[01/11 17:31:29    125s] eee: Via Layer Id 35 is VIA2 
+[01/11 17:31:29    125s] eee: Via Layer Id 36 is VIA3 
+[01/11 17:31:29    125s] eee: Via Layer Id 37 is VIA4 
+[01/11 17:31:29    125s] eee: Via Layer Id 38 is VIA5 
+[01/11 17:31:29    125s] eee: Via Layer Id 39 is VIA6 
+[01/11 17:31:29    125s] eee: Via Layer Id 40 is VIA7 
+[01/11 17:31:29    125s] eee: Via Layer Id 41 is VIA8 
+[01/11 17:31:29    125s] eee: Via Layer Id 42 is RV 
+[01/11 17:31:29    125s] eee: Trim Metal Layers: { }
+[01/11 17:31:29    125s] eee:  lef metal Layer Id 1 mapped to tech Id 5 of Layer m1 
+[01/11 17:31:29    125s] eee:  lef via Layer Id 1 mapped to tech Id 6 of Layer via1 
+[01/11 17:31:29    125s] eee:  lef metal Layer Id 2 mapped to tech Id 7 of Layer m2 
+[01/11 17:31:29    125s] eee:  lef via Layer Id 2 mapped to tech Id 8 of Layer via2 
+[01/11 17:31:29    125s] eee:  lef metal Layer Id 3 mapped to tech Id 9 of Layer m3 
+[01/11 17:31:29    125s] eee:  lef via Layer Id 3 mapped to tech Id 10 of Layer via3 
+[01/11 17:31:29    125s] eee:  lef metal Layer Id 4 mapped to tech Id 11 of Layer m4 
+[01/11 17:31:29    125s] eee:  lef via Layer Id 4 mapped to tech Id 12 of Layer via4 
+[01/11 17:31:29    125s] Generating auto layer map file.
+[01/11 17:31:29    125s] eee:  lef metal Layer Id 5 mapped to tech Id 13 of Layer m5 
+[01/11 17:31:29    125s] eee:  lef via Layer Id 5 mapped to tech Id 14 of Layer via5 
+[01/11 17:31:29    125s] eee:  lef metal Layer Id 6 mapped to tech Id 15 of Layer m6 
+[01/11 17:31:29    125s] eee:  lef via Layer Id 6 mapped to tech Id 16 of Layer via6 
+[01/11 17:31:29    125s] eee:  lef metal Layer Id 7 mapped to tech Id 17 of Layer m7 
+[01/11 17:31:29    125s] eee:  lef via Layer Id 7 mapped to tech Id 18 of Layer via7 
+[01/11 17:31:29    125s] eee:  lef metal Layer Id 8 mapped to tech Id 19 of Layer m8 
+[01/11 17:31:29    125s] eee:  lef via Layer Id 8 mapped to tech Id 20 of Layer via8 
+[01/11 17:31:29    125s] eee:  lef metal Layer Id 9 mapped to tech Id 21 of Layer m9 
+[01/11 17:31:29    125s] eee:  lef via Layer Id 9 mapped to tech Id 22 of Layer rv 
+[01/11 17:31:29    125s] eee:  lef metal Layer Id 10 mapped to tech Id 23 of Layer ap 
+[01/11 17:31:29    125s] eee: Metal Layer Id 1 mapped to 5 
+[01/11 17:31:29    125s] eee: Via Layer Id 1 mapped to 6 
+[01/11 17:31:29    125s] eee: Metal Layer Id 2 mapped to 7 
+[01/11 17:31:29    125s] eee: Via Layer Id 2 mapped to 8 
+[01/11 17:31:29    125s] eee: Metal Layer Id 3 mapped to 9 
+[01/11 17:31:29    125s] eee: Via Layer Id 3 mapped to 10 
+[01/11 17:31:29    125s] eee: Metal Layer Id 4 mapped to 11 
+[01/11 17:31:29    125s] eee: Via Layer Id 4 mapped to 12 
+[01/11 17:31:29    125s] eee: Metal Layer Id 5 mapped to 13 
+[01/11 17:31:29    125s] eee: Via Layer Id 5 mapped to 14 
+[01/11 17:31:29    125s] eee: Metal Layer Id 6 mapped to 15 
+[01/11 17:31:29    125s] eee: Via Layer Id 6 mapped to 16 
+[01/11 17:31:29    125s] eee: Metal Layer Id 7 mapped to 17 
+[01/11 17:31:29    125s] eee: Via Layer Id 7 mapped to 18 
+[01/11 17:31:29    125s] eee: Metal Layer Id 8 mapped to 19 
+[01/11 17:31:29    125s] eee: Via Layer Id 8 mapped to 20 
+[01/11 17:31:29    125s] eee: Metal Layer Id 9 mapped to 21 
+[01/11 17:31:29    125s] eee: Via Layer Id 9 mapped to 22 
+[01/11 17:31:29    125s] eee: Metal Layer Id 10 mapped to 23 
+[01/11 17:31:32    127s] eee: Metal Layer Id 1 is M1 
+[01/11 17:31:32    127s] eee: Metal Layer Id 2 is M2 
+[01/11 17:31:32    127s] eee: Metal Layer Id 3 is M3 
+[01/11 17:31:32    127s] eee: Metal Layer Id 4 is M4 
+[01/11 17:31:32    127s] eee: Metal Layer Id 5 is M5 
+[01/11 17:31:32    127s] eee: Metal Layer Id 6 is M6 
+[01/11 17:31:32    127s] eee: Metal Layer Id 7 is M7 
+[01/11 17:31:32    127s] eee: Metal Layer Id 8 is M8 
+[01/11 17:31:32    127s] eee: Metal Layer Id 9 is M9 
+[01/11 17:31:32    127s] eee: Metal Layer Id 10 is AP 
+[01/11 17:31:32    127s] eee: Via Layer Id 34 is VIA1 
+[01/11 17:31:32    127s] eee: Via Layer Id 35 is VIA2 
+[01/11 17:31:32    127s] eee: Via Layer Id 36 is VIA3 
+[01/11 17:31:32    127s] eee: Via Layer Id 37 is VIA4 
+[01/11 17:31:32    127s] eee: Via Layer Id 38 is VIA5 
+[01/11 17:31:32    127s] eee: Via Layer Id 39 is VIA6 
+[01/11 17:31:32    127s] eee: Via Layer Id 40 is VIA7 
+[01/11 17:31:32    127s] eee: Via Layer Id 41 is VIA8 
+[01/11 17:31:32    127s] eee: Via Layer Id 42 is RV 
+[01/11 17:31:32    127s] eee: Trim Metal Layers: { }
+[01/11 17:31:32    127s] eee:  lef metal Layer Id 1 mapped to tech Id 5 of Layer m1 
+[01/11 17:31:32    127s] eee:  lef via Layer Id 1 mapped to tech Id 6 of Layer via1 
+[01/11 17:31:32    127s] eee:  lef metal Layer Id 2 mapped to tech Id 7 of Layer m2 
+[01/11 17:31:32    127s] eee:  lef via Layer Id 2 mapped to tech Id 8 of Layer via2 
+[01/11 17:31:32    127s] eee:  lef metal Layer Id 3 mapped to tech Id 9 of Layer m3 
+[01/11 17:31:32    127s] eee:  lef via Layer Id 3 mapped to tech Id 10 of Layer via3 
+[01/11 17:31:32    127s] Generating auto layer map file.
+[01/11 17:31:32    127s] eee:  lef metal Layer Id 4 mapped to tech Id 11 of Layer m4 
+[01/11 17:31:32    127s] eee:  lef via Layer Id 4 mapped to tech Id 12 of Layer via4 
+[01/11 17:31:32    127s] eee:  lef metal Layer Id 5 mapped to tech Id 13 of Layer m5 
+[01/11 17:31:32    127s] eee:  lef via Layer Id 5 mapped to tech Id 14 of Layer via5 
+[01/11 17:31:32    127s] eee:  lef metal Layer Id 6 mapped to tech Id 15 of Layer m6 
+[01/11 17:31:32    127s] eee:  lef via Layer Id 6 mapped to tech Id 16 of Layer via6 
+[01/11 17:31:32    127s] eee:  lef metal Layer Id 7 mapped to tech Id 17 of Layer m7 
+[01/11 17:31:32    127s] eee:  lef via Layer Id 7 mapped to tech Id 18 of Layer via7 
+[01/11 17:31:32    127s] eee:  lef metal Layer Id 8 mapped to tech Id 19 of Layer m8 
+[01/11 17:31:32    127s] eee:  lef via Layer Id 8 mapped to tech Id 20 of Layer via8 
+[01/11 17:31:32    127s] eee:  lef metal Layer Id 9 mapped to tech Id 21 of Layer m9 
+[01/11 17:31:32    127s] eee:  lef via Layer Id 9 mapped to tech Id 22 of Layer rv 
+[01/11 17:31:32    127s] eee:  lef metal Layer Id 10 mapped to tech Id 23 of Layer ap 
+[01/11 17:31:32    127s] eee: Metal Layer Id 1 mapped to 5 
+[01/11 17:31:32    127s] eee: Via Layer Id 1 mapped to 6 
+[01/11 17:31:32    127s] eee: Metal Layer Id 2 mapped to 7 
+[01/11 17:31:32    127s] eee: Via Layer Id 2 mapped to 8 
+[01/11 17:31:32    127s] eee: Metal Layer Id 3 mapped to 9 
+[01/11 17:31:32    127s] eee: Via Layer Id 3 mapped to 10 
+[01/11 17:31:32    127s] eee: Metal Layer Id 4 mapped to 11 
+[01/11 17:31:32    127s] eee: Via Layer Id 4 mapped to 12 
+[01/11 17:31:32    127s] eee: Metal Layer Id 5 mapped to 13 
+[01/11 17:31:32    127s] eee: Via Layer Id 5 mapped to 14 
+[01/11 17:31:32    127s] eee: Metal Layer Id 6 mapped to 15 
+[01/11 17:31:32    127s] eee: Via Layer Id 6 mapped to 16 
+[01/11 17:31:32    127s] eee: Metal Layer Id 7 mapped to 17 
+[01/11 17:31:32    127s] eee: Via Layer Id 7 mapped to 18 
+[01/11 17:31:32    127s] eee: Metal Layer Id 8 mapped to 19 
+[01/11 17:31:32    127s] eee: Via Layer Id 8 mapped to 20 
+[01/11 17:31:32    127s] eee: Metal Layer Id 9 mapped to 21 
+[01/11 17:31:32    127s] eee: Via Layer Id 9 mapped to 22 
+[01/11 17:31:32    127s] eee: Metal Layer Id 10 mapped to 23 
+[01/11 17:31:34    128s] Completed (cpu: 0:00:07.2 real: 0:00:11.0)
+[01/11 17:31:34    128s] % Begin Load power constraints ... (date=01/11 17:31:34, mem=1794.3M)
+[01/11 17:31:34    128s] source /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postcts_stylus.enc/pp_fir_u_0_power_constraints.tcl
+[01/11 17:31:34    128s] 'set_default_switching_activity' finished successfully.
+[01/11 17:31:34    128s] % End Load power constraints ... (date=01/11 17:31:34, total cpu=0:00:00.1, real=0:00:00.0, peak res=1800.8M, current mem=1800.8M)
+[01/11 17:31:35    129s] % Begin load AAE data ... (date=01/11 17:31:34, mem=1848.4M)
+[01/11 17:31:35    129s] **WARN: (IMPESI-3505):	set_db delaycal_eng_enablePrePlacedFlow false (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
+[01/11 17:31:35    129s] AAE DB initialization (MEM=1933.23 CPU=0:00:00.1 REAL=0:00:00.0) 
+[01/11 17:31:35    129s] % End load AAE data ... (date=01/11 17:31:35, total cpu=0:00:00.8, real=0:00:00.0, peak res=1859.6M, current mem=1859.6M)
+[01/11 17:31:35    129s] Restoring CCOpt config...
+[01/11 17:31:35    129s] 
+[01/11 17:31:35    129s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[01/11 17:31:35    130s] Summary for sequential cells identification: 
+[01/11 17:31:35    130s]   Identified SBFF number: 92
+[01/11 17:31:35    130s]   Identified MBFF number: 0
+[01/11 17:31:35    130s]   Identified SB Latch number: 0
+[01/11 17:31:35    130s]   Identified MB Latch number: 0
+[01/11 17:31:35    130s]   Not identified SBFF number: 12
+[01/11 17:31:35    130s]   Not identified MBFF number: 0
+[01/11 17:31:35    130s]   Not identified SB Latch number: 0
+[01/11 17:31:35    130s]   Not identified MB Latch number: 0
+[01/11 17:31:35    130s]   Number of sequential cells which are not FFs: 132
+[01/11 17:31:35    130s]  Visiting view : view_wcl_slow
+[01/11 17:31:35    130s]    : PowerDomain = none : Weighted F : unweighted  = 5.10 (1.000) with rcCorner = 0
+[01/11 17:31:35    130s]    : PowerDomain = none : Weighted F : unweighted  = 4.80 (1.000) with rcCorner = -1
+[01/11 17:31:35    130s]  Visiting view : view_wcl_fast
+[01/11 17:31:35    130s]    : PowerDomain = none : Weighted F : unweighted  = 3.30 (1.000) with rcCorner = 1
+[01/11 17:31:35    130s]    : PowerDomain = none : Weighted F : unweighted  = 3.00 (1.000) with rcCorner = -1
+[01/11 17:31:35    130s]  Visiting view : view_wcl_typical
+[01/11 17:31:35    130s]    : PowerDomain = none : Weighted F : unweighted  = 4.00 (1.000) with rcCorner = 2
+[01/11 17:31:35    130s]    : PowerDomain = none : Weighted F : unweighted  = 3.70 (1.000) with rcCorner = -1
+[01/11 17:31:35    130s]  Visiting view : view_wcl_slow
+[01/11 17:31:35    130s]    : PowerDomain = none : Weighted F : unweighted  = 5.10 (1.000) with rcCorner = 0
+[01/11 17:31:35    130s]    : PowerDomain = none : Weighted F : unweighted  = 4.80 (1.000) with rcCorner = -1
+[01/11 17:31:35    130s]  Visiting view : view_wcl_fast
+[01/11 17:31:35    130s]    : PowerDomain = none : Weighted F : unweighted  = 3.30 (1.000) with rcCorner = 1
+[01/11 17:31:35    130s]    : PowerDomain = none : Weighted F : unweighted  = 3.00 (1.000) with rcCorner = -1
+[01/11 17:31:35    130s]  Visiting view : view_wcl_typical
+[01/11 17:31:35    130s]    : PowerDomain = none : Weighted F : unweighted  = 4.00 (1.000) with rcCorner = 2
+[01/11 17:31:35    130s]    : PowerDomain = none : Weighted F : unweighted  = 3.70 (1.000) with rcCorner = -1
+[01/11 17:31:35    130s] 
+[01/11 17:31:35    130s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[01/11 17:31:36    130s]   Extracting original clock gating for clk...
+[01/11 17:31:36    130s]     clock_tree clk contains 3606 sinks and 0 clock gates.
+[01/11 17:31:36    130s]   Extracting original clock gating for clk done.
+[01/11 17:31:36    130s]   The skew group clk/functional_wcl_typical was created. It contains 3606 sinks and 1 sources.
+[01/11 17:31:36    130s]   The skew group clk/functional_wcl_typical was created. It contains 3606 sinks and 1 sources.
+[01/11 17:31:36    130s] Restoring CCOpt config done.
+[01/11 17:31:37    131s] 
+[01/11 17:31:37    131s] TimeStamp Deleting Cell Server Begin ...
+[01/11 17:31:37    131s] 
+[01/11 17:31:37    131s] TimeStamp Deleting Cell Server End ...
+[01/11 17:31:37    131s] 
+[01/11 17:31:37    131s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[01/11 17:31:37    131s] Summary for sequential cells identification: 
+[01/11 17:31:37    131s]   Identified SBFF number: 92
+[01/11 17:31:37    131s]   Identified MBFF number: 0
+[01/11 17:31:37    131s]   Identified SB Latch number: 0
+[01/11 17:31:37    131s]   Identified MB Latch number: 0
+[01/11 17:31:37    131s]   Not identified SBFF number: 12
+[01/11 17:31:37    131s]   Not identified MBFF number: 0
+[01/11 17:31:37    131s]   Not identified SB Latch number: 0
+[01/11 17:31:37    131s]   Not identified MB Latch number: 0
+[01/11 17:31:37    131s]   Number of sequential cells which are not FFs: 132
+[01/11 17:31:37    131s] Total number of combinational cells: 749
+[01/11 17:31:37    131s] Total number of sequential cells: 236
+[01/11 17:31:37    131s] Total number of tristate cells: 0
+[01/11 17:31:37    131s] Total number of level shifter cells: 0
+[01/11 17:31:37    131s] Total number of power gating cells: 0
+[01/11 17:31:37    131s] Total number of isolation cells: 0
+[01/11 17:31:37    131s] Total number of power switch cells: 0
+[01/11 17:31:37    131s] Total number of pulse generator cells: 0
+[01/11 17:31:37    131s] Total number of always on buffers: 0
+[01/11 17:31:37    131s] Total number of retention cells: 0
+[01/11 17:31:37    131s] Total number of physical cells: 18
+[01/11 17:31:37    131s] List of usable buffers: BUFH_X11M_A9PP140ZTL_C30 BUFH_X13M_A9PP140ZTL_C30 BUFH_X16M_A9PP140ZTL_C30 BUFH_X1M_A9PP140ZTL_C30 BUFH_X1P2M_A9PP140ZTL_C30 BUFH_X1P4M_A9PP140ZTL_C30 BUFH_X2M_A9PP140ZTL_C30 BUFH_X1P7M_A9PP140ZTL_C30 BUFH_X2P5M_A9PP140ZTL_C30 BUFH_X3M_A9PP140ZTL_C30 BUFH_X4M_A9PP140ZTL_C30 BUFH_X3P5M_A9PP140ZTL_C30 BUFH_X5M_A9PP140ZTL_C30 BUFH_X6M_A9PP140ZTL_C30 BUFH_X7P5M_A9PP140ZTL_C30 BUFH_X9M_A9PP140ZTL_C30 BUF_X0P5B_A9PP140ZTL_C30 BUF_X0P5M_A9PP140ZTL_C30 BUF_X0P7B_A9PP140ZTL_C30 BUF_X0P7M_A9PP140ZTL_C30 BUF_X0P8M_A9PP140ZTL_C30 BUF_X0P8B_A9PP140ZTL_C30 BUF_X11B_A9PP140ZTL_C30 BUF_X11B_A9PP140ZTL_C30_XGCAP11 BUF_X11M_A9PP140ZTL_C30 BUF_X13B_A9PP140ZTL_C30 BUF_X11M_A9PP140ZTL_C30_XGCAP11 BUF_X13B_A9PP140ZTL_C30_XGCAP13 BUF_X13M_A9PP140ZTL_C30 BUF_X16B_A9PP140ZTL_C30 BUF_X13M_A9PP140ZTL_C30_XGCAP13 BUF_X16B_A9PP140ZTL_C30_XGCAP16 BUF_X16M_A9PP140ZTL_C30 BUF_X16M_A9PP140ZTL_C30_XGCAP16 BUF_X1M_A9PP140ZTL_C30 BUF_X1B_A9PP140ZTL_C30 BUF_X1P2B_A9PP140ZTL_C30 BUF_X1P2M_A9PP140ZTL_C30 BUF_X1P4B_A9PP140ZTL_C30 BUF_X1P4M_A9PP140ZTL_C30 BUF_X1P7B_A9PP140ZTL_C30 BUF_X1P7M_A9PP140ZTL_C30 BUF_X2M_A9PP140ZTL_C30 BUF_X2B_A9PP140ZTL_C30 BUF_X2P5B_A9PP140ZTL_C30 BUF_X2P5M_A9PP140ZTL_C30 BUF_X3M_A9PP140ZTL_C30 BUF_X3B_A9PP140ZTL_C30 BUF_X3P5B_A9PP140ZTL_C30 BUF_X3P5M_A9PP140ZTL_C30 BUF_X4B_A9PP140ZTL_C30 BUF_X4B_A9PP140ZTL_C30_XGCAP4 BUF_X4M_A9PP140ZTL_C30 BUF_X5B_A9PP140ZTL_C30 BUF_X4M_A9PP140ZTL_C30_XGCAP4 BUF_X5B_A9PP140ZTL_C30_XGCAP5 BUF_X5M_A9PP140ZTL_C30 BUF_X6B_A9PP140ZTL_C30 BUF_X5M_A9PP140ZTL_C30_XGCAP5 BUF_X6B_A9PP140ZTL_C30_XGCAP6 BUF_X6M_A9PP140ZTL_C30 BUF_X7P5B_A9PP140ZTL_C30 BUF_X6M_A9PP140ZTL_C30_XGCAP6 BUF_X7P5B_A9PP140ZTL_C30_XGCAP8 BUF_X7P5M_A9PP140ZTL_C30 BUF_X7P5M_A9PP140ZTL_C30_XGCAP8 BUF_X9B_A9PP140ZTL_C30 BUF_X9M_A9PP140ZTL_C30 BUF_X9B_A9PP140ZTL_C30_XGCAP9 BUF_X9M_A9PP140ZTL_C30_XGCAP9 DLY2_X1M_A9PP140ZTL_C30 DLY2_X0P5M_A9PP140ZTL_C30 DLY2_X2M_A9PP140ZTL_C30 DLYCLK8S2_X1B_A9PP140ZTL_C30 DLYCLK8S2_X2B_A9PP140ZTL_C30 DLYCLK8S4_X1B_A9PP140ZTL_C30 DLYCLK8S4_X2B_A9PP140ZTL_C30
+[01/11 17:31:37    131s] Total number of usable buffers: 77
+[01/11 17:31:37    131s] List of unusable buffers: FRICG_X0P5B_A9PP140ZTL_C30 FRICG_X0P6B_A9PP140ZTL_C30 FRICG_X0P8B_A9PP140ZTL_C30 FRICG_X0P7B_A9PP140ZTL_C30 FRICG_X11B_A9PP140ZTL_C30 FRICG_X13B_A9PP140ZTL_C30 FRICG_X16B_A9PP140ZTL_C30 FRICG_X1B_A9PP140ZTL_C30 FRICG_X1P2B_A9PP140ZTL_C30 FRICG_X1P4B_A9PP140ZTL_C30 FRICG_X2B_A9PP140ZTL_C30 FRICG_X1P7B_A9PP140ZTL_C30 FRICG_X2P5B_A9PP140ZTL_C30 FRICG_X3B_A9PP140ZTL_C30 FRICG_X4B_A9PP140ZTL_C30 FRICG_X3P5B_A9PP140ZTL_C30 FRICG_X5B_A9PP140ZTL_C30 FRICG_X6B_A9PP140ZTL_C30 FRICG_X7P5B_A9PP140ZTL_C30 FRICG_X9B_A9PP140ZTL_C30
+[01/11 17:31:37    131s] Total number of unusable buffers: 20
+[01/11 17:31:37    131s] List of usable inverters: INV_X0P5B_A9PP140ZTL_C30 INV_X0P5M_A9PP140ZTL_C30 INV_X0P6B_A9PP140ZTL_C30 INV_X0P6M_A9PP140ZTL_C30 INV_X0P7B_A9PP140ZTL_C30 INV_X0P7M_A9PP140ZTL_C30 INV_X0P8M_A9PP140ZTL_C30 INV_X0P8B_A9PP140ZTL_C30 INV_X11B_A9PP140ZTL_C30 INV_X11B_A9PP140ZTL_C30_XGCAP11 INV_X11M_A9PP140ZTL_C30 INV_X13B_A9PP140ZTL_C30 INV_X11M_A9PP140ZTL_C30_XGCAP11 INV_X13B_A9PP140ZTL_C30_XGCAP13 INV_X13M_A9PP140ZTL_C30 INV_X16B_A9PP140ZTL_C30 INV_X13M_A9PP140ZTL_C30_XGCAP13 INV_X16B_A9PP140ZTL_C30_XGCAP16 INV_X16M_A9PP140ZTL_C30 INV_X16M_A9PP140ZTL_C30_XGCAP16 INV_X1M_A9PP140ZTL_C30 INV_X1B_A9PP140ZTL_C30 INV_X1P2B_A9PP140ZTL_C30 INV_X1P2M_A9PP140ZTL_C30 INV_X1P4B_A9PP140ZTL_C30 INV_X1P4M_A9PP140ZTL_C30 INV_X1P7B_A9PP140ZTL_C30 INV_X1P7M_A9PP140ZTL_C30 INV_X2M_A9PP140ZTL_C30 INV_X2B_A9PP140ZTL_C30 INV_X2P5B_A9PP140ZTL_C30 INV_X2P5M_A9PP140ZTL_C30 INV_X3M_A9PP140ZTL_C30 INV_X3B_A9PP140ZTL_C30 INV_X3P5B_A9PP140ZTL_C30 INV_X4B_A9PP140ZTL_C30 INV_X3P5M_A9PP140ZTL_C30 INV_X4B_A9PP140ZTL_C30_XGCAP4 INV_X4M_A9PP140ZTL_C30 INV_X5B_A9PP140ZTL_C30 INV_X4M_A9PP140ZTL_C30_XGCAP4 INV_X5B_A9PP140ZTL_C30_XGCAP5 INV_X5M_A9PP140ZTL_C30 INV_X6B_A9PP140ZTL_C30 INV_X5M_A9PP140ZTL_C30_XGCAP5 INV_X6B_A9PP140ZTL_C30_XGCAP6 INV_X6M_A9PP140ZTL_C30 INV_X7P5B_A9PP140ZTL_C30 INV_X6M_A9PP140ZTL_C30_XGCAP6 INV_X7P5B_A9PP140ZTL_C30_XGCAP8 INV_X7P5M_A9PP140ZTL_C30 INV_X9B_A9PP140ZTL_C30 INV_X7P5M_A9PP140ZTL_C30_XGCAP8 INV_X9B_A9PP140ZTL_C30_XGCAP9 INV_X9M_A9PP140ZTL_C30 INV_X9M_A9PP140ZTL_C30_XGCAP9
+[01/11 17:31:37    131s] Total number of usable inverters: 56
+[01/11 17:31:37    131s] List of unusable inverters:
+[01/11 17:31:37    131s] Total number of unusable inverters: 0
+[01/11 17:31:37    131s] List of identified usable delay cells: DLY10_X1M_A9PP140ZTL_C30 DLY10_X0P5M_A9PP140ZTL_C30 DLY10_X2M_A9PP140ZTL_C30 DLY10_X4M_A9PP140ZTL_C30 DLY2_X4M_A9PP140ZTL_C30 DLY4_X1M_A9PP140ZTL_C30 DLY4_X0P5M_A9PP140ZTL_C30 DLY4_X2M_A9PP140ZTL_C30 DLY4_X4M_A9PP140ZTL_C30 DLY6_X1M_A9PP140ZTL_C30 DLY6_X0P5M_A9PP140ZTL_C30 DLY6_X2M_A9PP140ZTL_C30 DLY6_X4M_A9PP140ZTL_C30 DLY8_X0P5M_A9PP140ZTL_C30 DLY8_X1M_A9PP140ZTL_C30 DLY8_X2M_A9PP140ZTL_C30 DLY8_X4M_A9PP140ZTL_C30 DLYCLK8S6_X1B_A9PP140ZTL_C30 DLYCLK8S6_X2B_A9PP140ZTL_C30 DLYCLK8S8_X1B_A9PP140ZTL_C30 DLYCLK8S8_X2B_A9PP140ZTL_C30
+[01/11 17:31:37    131s] 
+[01/11 17:31:37    131s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+[01/11 17:31:37    131s] Total number of identified usable delay cells: 21
+[01/11 17:31:37    131s] List of identified unusable delay cells:
+[01/11 17:31:37    131s] Total number of identified unusable delay cells: 0
+[01/11 17:31:37    131s] 
+[01/11 17:31:37    131s] TimeStamp Deleting Cell Server Begin ...
+[01/11 17:31:37    131s] 
+[01/11 17:31:37    131s] TimeStamp Deleting Cell Server End ...
+[01/11 17:31:37    131s] **WARN: (IMPCTE-107):	The following globals have been obsoleted since version . They will be removed in the next release. 
+[01/11 17:31:37    131s] timing_enable_separate_device_slew_effect_sensitivities
+[01/11 17:31:37    131s] #% End load design ... (date=01/11 17:31:37, total cpu=0:01:20, real=0:01:54, peak res=1969.3M, current mem=1866.3M)
+[01/11 17:31:37    131s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[01/11 17:31:37    131s] 
+[01/11 17:31:37    131s] *** Summary of all messages that are not suppressed in this session:
+[01/11 17:31:37    131s] Severity  ID               Count  Summary                                  
+[01/11 17:31:37    131s] WARNING   IMPDBTCL-321         1  The attribute '%s' still works but will ...
+[01/11 17:31:37    131s] WARNING   IMPESI-3505          1  set_db delaycal_eng_%s (default=%s) will...
+[01/11 17:31:37    131s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
+[01/11 17:31:37    131s] WARNING   TECHLIB-302         57  No function defined for cell '%s'. The c...
+[01/11 17:31:37    131s] *** Message Summary: 60 warning(s), 0 error(s)
+[01/11 17:31:37    131s] 
+[01/11 17:31:37    131s] @innovus 2> 
+[01/11 17:31:58    136s] --------------------------------------------------------------------------------
+[01/11 17:31:58    136s] Exiting Innovus on Sat Jan 11 17:31:58 2025
+[01/11 17:31:58    136s]   Total CPU time:     0:02:34
+[01/11 17:31:58    136s]   Total real time:    0:03:52
+[01/11 17:31:58    136s]   Peak memory (main): 1962.71MB
+[01/11 17:31:58    136s] 
+[01/11 17:31:58    136s] 
+[01/11 17:31:58    136s] *** Memory Usage v#1 (Current mem = 2050.648M, initial mem = 511.469M) ***
+[01/11 17:31:58    136s] 
+[01/11 17:31:58    136s] *** Summary of all messages that are not suppressed in this session:
+[01/11 17:31:58    136s] Severity  ID               Count  Summary                                  
+[01/11 17:31:58    136s] WARNING   IMPDBTCL-321         1  The attribute '%s' still works but will ...
+[01/11 17:31:59    136s] WARNING   IMPESI-3505          1  set_db delaycal_eng_%s (default=%s) will...
+[01/11 17:31:59    136s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
+[01/11 17:31:59    136s] WARNING   TECHLIB-302         57  No function defined for cell '%s'. The c...
+[01/11 17:31:59    136s] *** Message Summary: 60 warning(s), 0 error(s)
+[01/11 17:31:59    136s] 
+[01/11 17:31:59    136s] --- Ending "Innovus" (totcpu=0:02:17, real=0:03:51, mem=2050.6M) ---

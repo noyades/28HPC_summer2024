@@ -1,0 +1,94 @@
+*** Message Type: info ***
+When: Tue Feb 04 22:35:43 EST 2025
+SimVision started.
+Version: TOOL:  simvision(64)   15.20-s086
+User: jswalling
+Host: cluster04.lan.ece
+Platform: Linux/x86_64/3.10.0-1160.119.1.el7.x86_64
+Started: Tue Feb 04 22:35:43 EST 2025
+Command: /software/RFIC/cadtools/cadence/incisive/INCISIVE152/tools.lnx86/simvision/bin/64bit/simvision.exe -connect dc:cluster04.lan.ece:37737 -64BIT
+Work Directory: /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/pp_int_x4_work/simulations
+ 
+*** Message Type: info ***
+When: Tue Feb 04 22:35:43 EST 2025
+Create browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Tue Feb 04 22:35:46 EST 2025
+Create console window: "Console"
+ 
+*** Message Type: info ***
+When: Tue Feb 04 22:35:47 EST 2025
+Exit Simulator: abnormal
+      Design: Unknown
+   Languages: Unknown
+   Simulator: Unknown
+     Version: Unknown
+        User: Unknown
+        Host: Unknown
+Time Started: Unknown
+  Process ID: Unknown
+   Directory: Unknown
+     Command: Unknown
+
+ 
+*** Message Type: error ***
+When: Tue Feb 04 22:35:47 EST 2025
+Simulator Crashed:
+      Design: Unknown
+   Languages: Unknown
+   Simulator: Unknown
+     Version: Unknown
+        User: Unknown
+        Host: Unknown
+Time Started: Unknown
+  Process ID: Unknown
+   Directory: Unknown
+     Command: Unknown
+      Design: Unknown
+   Languages: Unknown
+   Simulator: Unknown
+     Version: Unknown
+        User: Unknown
+        Host: Unknown
+Time Started: Unknown
+  Process ID: Unknown
+   Directory: Unknown
+     Command: Unknown
+
+Outstanding STRAP Requests:
+        strap::get g . -sa
+        strap::get g . -xu
+        strap::get g . -ck
+ 
+*** Message Type: info ***
+When: Tue Feb 04 22:35:47 EST 2025
+Connect to Simulator
+      Design: Unknown
+   Languages: Unknown
+   Simulator: Unknown
+     Version: Unknown
+        User: Unknown
+        Host: Unknown
+Time Started: Unknown
+  Process ID: Unknown
+   Directory: Unknown
+     Command: Unknown
+
+ 
+*** Message Type: info ***
+When: Tue Feb 04 22:35:48 EST 2025
+Create utility window: "Properties"
+ 
+*** Message Type: info ***
+When: Tue Feb 04 22:36:10 EST 2025
+Recall Simulator
+ 
+*** Message Type: info ***
+When: Tue Feb 04 22:36:34 EST 2025
+Delete browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Tue Feb 04 22:36:52 EST 2025
+SimVision Exit.
+ 

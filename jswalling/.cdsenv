@@ -1,0 +1,6 @@
+license	VLSXL_UseNextLicense	string	"always"
+;; Set General Environment Variables
+ui showOptionForms boolean t
+
+;; Set Schematic Environment Variables
+schematic stubLength int 1

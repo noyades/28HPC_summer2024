@@ -1,0 +1,17 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; TSMC 28NM Pegasus Rule Set File
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+pegasusRuleSet( "default"
+     (DrcRules          "PVS/DRC/PLN28HP_10M_7X2R_002.20b.encrypt" )
+     (LvsRules          "PVS/LVS/profile/PVS_FLOW/DFM_LVS_RC_PVS_N28HP_1p10m_ALRDL.v1.8_2p2a" )
+)
+ruleSet( "typ" 
+     (RcxSetupDir       "PVS/QRC/nominal" )
+)
+ruleSet( "wc" 
+     (RcxSetupDir       "PVS/QRC/rcworst" )
+)
+ruleSet( "bc" 
+     (RcxSetupDir       "PVS/QRC/rcbest" )
+)

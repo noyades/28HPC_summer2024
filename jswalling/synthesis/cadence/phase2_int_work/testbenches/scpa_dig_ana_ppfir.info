@@ -1,0 +1,8 @@
+.in clk rst_n en In1_re<12:0> In1_im<12:0>
+.vih 0.9
+.vil 0.0
+.trise 10
+.tfall 10
+.alias CLK clk
+.alias EN en
+.alias RST_n rst_n

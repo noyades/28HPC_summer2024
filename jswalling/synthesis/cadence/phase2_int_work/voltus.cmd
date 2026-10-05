@@ -1,0 +1,16 @@
+#######################################################
+#                                                     
+#  Voltus IC Power Integrity Solution Command Logging File                     
+#  Created on Tue Jan 27 08:34:04 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Voltus IC Power Integrity Solution v25.10-p001_1 (64bit) 04/11/2025 11:58 (Linux 4.18.0-305.el8.x86_64)
+#@(#)CDS: NanoRoute 25.10-p001_1 NR250317-0405/25_10-UB (database version 18.20.663) {superthreading v2.20}
+#@(#)CDS: AAE 25.10-b008 (64bit) 04/11/2025 (Linux 4.18.0-305.el8.x86_64)
+#@(#)CDS: CTE 25.10-b014_1 () Mar 28 2025 03:11:49 ( )
+#@(#)CDS: SYNTECH 25.10-b006_1 () Mar 13 2025 03:32:26 ( )
+#@(#)CDS: CPE v25.10-b011
+
+write_flow_template -directory .
+exit

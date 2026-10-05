@@ -1,0 +1,12 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-64bit
+-access
++rwc
+-top
+int_work.pp_int_x4_tb
+-gui
+-ENTCHWIDTHCOND
+-NOTIMINGCHECKS

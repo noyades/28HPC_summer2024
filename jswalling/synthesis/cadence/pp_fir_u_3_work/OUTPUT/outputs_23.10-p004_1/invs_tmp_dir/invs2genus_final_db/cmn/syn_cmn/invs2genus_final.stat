@@ -1,0 +1,47 @@
+# metrics_wirelen
+set enc_stats(enc_net) 28634
+set enc_stats(enc_vias) 205097
+set enc_stats(enc_netlen) 172855.5755
+set enc_stats(enc_avglen) 6.03672471537
+set enc_stats(enc_totcap) 0
+set enc_stats(enc_totres) 0
+set enc_stats(enc_totviares) 0
+# metrics_drv
+set enc_stats(enc_drvcap) 0.000
+set enc_stats(enc_drvtran) 0.000
+set enc_stats(enc_drvfout) 0.000
+set enc_stats(enc_area) 31361.904
+set enc_stats(enc_logical_area) 31361.904000
+set enc_stats(enc_cell) 27468
+set enc_stats(enc_logical_cell) 27468
+# route_stats
+set enc_stats(enc_ver) 23.10-p003_1
+set enc_stats(enc_cpu) 2382.170000
+set enc_stats(enc_mem) 5537.730469
+set enc_stats(enc_real) 559.000000
+set enc_stats(enc_mode) qos_mode
+set enc_stats(enc_lic) FE_GPS
+set enc_stats(enc_oflowh) 0.00
+set enc_stats(enc_oflowv) 0.00
+set enc_stats(enc_max_cong) 0
+set enc_stats(enc_tot_cong) 0
+# metrics_timing
+set enc_stats(enc_slk) -67.0
+set enc_stats(enc_tns) 98510.0
+set enc_stats(enc_nvio) 2755
+set enc_stats(enc_slk_r2r) -10.0
+set enc_stats(enc_tns_r2r) 304.0
+set enc_stats(enc_r2r_nvio) 93
+set enc_stats(enc_slk_i2r) -67.0
+set enc_stats(enc_tns_i2r) 98508.0
+set enc_stats(enc_i2r_nvio) 2749
+set enc_stats(enc_slk_r2o) 252.0
+set enc_stats(enc_tns_r2o) -0.0
+set enc_stats(enc_r2o_nvio) 0
+set enc_stats(enc_slk_i2o) no_value
+set enc_stats(enc_tns_i2o) no_value
+set enc_stats(enc_i2o_nvio) no_value
+set enc_stats(enc_slk_cg) no_value
+set enc_stats(enc_tns_cg) no_value
+set enc_stats(enc_cg_nvio) no_value
+set enc_stats(enc_util) 0.853976

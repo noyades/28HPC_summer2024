@@ -1,0 +1,4 @@
+if {! [is_attribute original_location_y -obj_type inst]} {define_attribute -obj_type inst -category PHYS -data_type coord original_location_y}
+if {! [is_attribute original_location_x -obj_type inst]} {define_attribute -obj_type inst -category PHYS -data_type coord original_location_x}
+if {! [is_attribute original_location_y -obj_type hinst]} {define_attribute -obj_type hinst -category PHYS -data_type coord original_location_y}
+if {! [is_attribute original_location_x -obj_type hinst]} {define_attribute -obj_type hinst -category PHYS -data_type coord original_location_x}

@@ -1,0 +1,30 @@
+
+Cadence Voltus(TM) IC Power Integrity Solution.
+Copyright 2025 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v25.10-p001_1, built Fri Apr 11 11:58:59 PDT 2025
+Options:	
+Date:		Fri Jan 23 16:45:54 2026
+Host:		lnx-prd-05.ece.vt.edu (x86_64 w/Linux 5.15.0-315.196.5.2.el9uek.x86_64) (16cores*32cpus*AMD EPYC 7313 16-Core Processor 512KB)
+OS:		Oracle Linux Server 9.7
+
+License:
+		[16:45:54.268233] Configured Lic search path (25.01-s002): 27002@license.ece.vt.edu
+
+		vtsxl	Voltus Power Integrity Solution XL	25.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (255 mbytes). Set global soft_stack_size_limit to change the value.
+environment variable TMPDIR is '/tmp/ssv_tmpdir_351937_f8b6bf2d-f90e-41d2-91ba-eb894e6d7c60_mktVW2'.
+<CMD> ::stop_gui -keepDgui
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+Turn off visibility of signal net in Voltus by default.
+<CMD> setLayerPreference net -isVisible 0
+<CMD> setLayerPreference clock -isVisible 0
+
+--------------------------------------------------------------------------------
+Exiting Voltus IC Power Integrity Solution on Fri Jan 23 16:47:45 2026
+  Total CPU time:     0:00:16
+  Total real time:    0:01:57
+  Peak memory (main): 1754.66MB
+

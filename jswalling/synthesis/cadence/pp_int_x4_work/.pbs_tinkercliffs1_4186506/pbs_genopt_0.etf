@@ -1,0 +1,33 @@
+--pragma protect begin_protected
+--pragma protect encrypt_agent="NCPROTECT"
+--pragma protect encrypt_agent_info="Encrypted using API"
+--pragma protect key_keyowner=Cadence Design Systems.
+--pragma protect key_keyname=prv(CDS_RSA_KEY_VER_2)
+--pragma protect key_method=RSA
+--pragma protect key_block
+Asau4ZHLT9AITKSz+ZxsRmi/H/WHGTc07CV2OLtxoVBjhrKvcQwkNFVVA7q+YGoj
+tXfxcBwlD/yz9iiZY+C/ESC4zxq7eTgk1gtmwvUhbqJVE6YtAZcfEPDqesZsPazl
+kiGBfvAY1DLV58VRrBo1wYpq6yEf7OKVVN8OCwwN6DEcjhiTjkRA6+0/wjuZG4P6
+I5sa3cMGnnQHPF57u0mwMQRH4trW957gVkAprvH1Nk078TIGJpl5JKZg/ROMo3rL
+pEkW66EJ/FAhH4mTbdcfJn1S6Vcu3LNk0lUpK6HiMWvqlLxIeleP1tfuaJXfPpnO
+L5kzlMi2ieXTWtJpAxAmcA==
+--pragma protect end_key_block
+--pragma protect digest_block
+gj0R8jVFBpReQE55Ahnla2iPi84=
+--pragma protect end_digest_block
+--pragma protect data_block
+rbFy/AJniPLUFqXimsbUcikvfDtggsz4JRwFgsU1HAcq79TIxqQSUB5qJvwiPf25
+tN0lmqYhZFAyhtXI2ONCKWHG3Dtlum7+dMHYnrW7myhyOabMJ7PuLchsdlEAmKj+
+yJNa/7qbbyfWY6H0+32ytUcWafceIGLUs+2AOnD793h/fE3ZV+4xaZurKKHILF2y
+r6bXIig2yG4KJBCXvzCs1eHKVIfYbWkicn2ysCjJY+P3T7/4LpCMrVYBw1k7D/ig
+y44NLF+gQ/RKTNWxmPlcy055+48tV0M3Y50KWG9RDllFByuy/ALgbf9Fggu5ocsx
+vzR3YPqM3vgTf30Q9c5CCTKmziyXAFwAU5bE/wsWgT/aEysP8sSBmQsbrDFU61s1
+ePd5Nwk1zrNOIb5/1xXthTOunuU1VN3gvE1UdBI9Y8MZgQ2NcFSB6I+oZWLqBwkP
+2FULD3e/KdhnOZIhAO6UE9vX6E8tT2CB5Hpza+elKj6+ISDDexzxWFhKicI5gqFt
+jpPCSnkrOo23VWVk7ByrrSUPAe5YPHToGwOYDVL7uWk=
+--pragma protect end_data_block
+--pragma protect digest_block
+VY3a1FJ+ZpGMrSGtoVL2Vukt0vU=
+--pragma protect end_digest_block
+--pragma protect end_protected
+

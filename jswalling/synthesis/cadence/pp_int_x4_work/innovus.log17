@@ -1,0 +1,35 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v23.10-p003_1, built Thu Feb 1 13:54:57 PST 2024
+Options:	-stylus 
+Date:		Wed Feb 26 20:43:54 2025
+Host:		tc046 (x86_64 w/Linux 5.14.0-362.8.1.el9_3.x86_64) (64cores*128cpus*AMD EPYC 7702 64-Core Processor 512KB)
+OS:		Rocky Linux 9.5 (Blue Onyx)
+
+License:
+		[20:43:54.231825] Configured Lic search path (23.02-s003): 27002@license.ece.vt.edu
+
+		invs	Innovus Implementation System	23.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+
+
+Create and set the environment variable TMPDIR to /localscratch/2949543/innovus_temp_274403_tc046_jswalling_H8oqQC.
+
+The soft stacksize limit is either up to the hard limit or larger than 0.2% of RAM. No change is needed.
+[INFO] Loading Pegasus 23.20 fill procedures
+
+**INFO:  MMMC transition support version v31-84 
+
+@innovus 1> nano ../scripts/invs-x4.tcl 
+[?2004h[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;34H(B[0;7m[ Reading... ](B[m[22;33H(B[0;7m[ Read 7 lines ](B[m[H(B[0;7m  GNU nano 5.6.1 [15b../scripts/invs-x4.tcl [24b [1;79H(B[m[23d(B[0;7m^G(B[m Help[14G(B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut[53G(B[0;7m^T(B[m Execute   (B[0;7m^C(B[m Location[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste     (B[0;7m^J(B[m Justify   (B[0;7m^_(B[m Go To Line[2dread_db ./INVS[3dread_floorplan ./pp_int_x4_presyn_v2.fp[4d[32msource[39m(B[m ../scripts/init.tcl[5d[32msource[39m(B[m ../scripts/cts.tcl[6d[32msource[39m(B[m ../scripts/postcts.tcl[7d[32msource[39m(B[m ../scripts/route.tcl[8d[32msource[39m(B[m ../scripts/postroute.tcl[2d[?12l[?25h[?25l[22d[J[24d[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>[?2004l@innovus 2> 
+@innovus 2> 
+@innovus 2> 
+@innovus 2> 
+@innovus 2> exit
+
+*** Memory Usage v#2 (Current mem = 1587.941M, initial mem = 813.609M) ***
+*** Message Summary: 0 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:21.9, real=0:01:01, mem=1587.9M) ---

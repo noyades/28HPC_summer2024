@@ -1,0 +1,11 @@
+  =================
+   Message Summary
+  =================
+----------------------------------------------------------------------------------------------
+|   Id   |  Sev  |Count|                            Message Text                             |
+----------------------------------------------------------------------------------------------
+|MESG-11 |Warning|   20|Maximum message print count reached.                                 |
+|PHYS-428|Error  |    1|The command has to be run with the '-initialize' switch first.       |
+|        |       |     |Before highlighting movement the '-initialize' switch has to be used.|
+|SYNTH-8 |Info   |    1|Done incrementally optimizing.                                       |
+----------------------------------------------------------------------------------------------

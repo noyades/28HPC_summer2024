@@ -1,0 +1,71 @@
+
+Cadence Voltus(TM) IC Power Integrity Solution.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v22.10-p001_1, built Tue Aug 9 17:51:02 PDT 2022
+Options:	-stylus 
+Date:		Mon Jan 26 08:42:26 2026
+Host:		lnx-prd-05.ece.vt.edu (x86_64 w/Linux 5.15.0-315.196.5.2.el9uek.x86_64) (16cores*32cpus*AMD EPYC 7313 16-Core Processor 512KB)
+OS:		Red Hat Enterprise Linux release 9.7 (Plow)
+
+License:
+		[08:42:26.284081] Configured Lic search path (21.01-s002): 27002@license.ece.vt.edu
+
+		vtsxl	Voltus Power Integrity Solution XL	22.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+
+
+Change the soft stacksize limit to 0.2%RAM (255 mbytes). Set global soft_stack_size_limit to change the value.
+environment variable TMPDIR is '/tmp/ssv_tmpdir_2657383_u3SFID'.
+#@ Processing -execute option
+@voltus 1> 
+Turn off visibility of signal net in Voltus by default.
+@voltus 1> read_db scpa_dig_ana_ppfir_inn.enc/
+**ERROR: (IMPSYT-6790):	Failed to load file /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/scpa_dig_ana_ppfir_inn.enc/user.attrdef
+**WARN: (IMPIMEX-4008):	Variable '::CTE::cte_active_view_mode' is no longer supported in user data manager and will be ignored.
+**WARN: (IMPIMEX-4008):	Variable '::CTE::timing_constraint_binary_compatibility_23_1_saved' is no longer supported in user data manager and will be ignored.
+**WARN: (IMPIMEX-4008):	Variable '::DelayCal::InMemoryDataFlow' is no longer supported in user data manager and will be ignored.
+**WARN: (IMPIMEX-4008):	Variable '::MSV::initSNetPrimarySNetDone' is no longer supported in user data manager and will be ignored.
+**WARN: (IMPIMEX-4008):	Variable '_timing_report_coverage_use_cached_real_gba_arrival' is no longer supported in user data manager and will be ignored.
+**WARN: (IMPIMEX-4008):	Variable '_timing_report_disable_calculate_arrival_assert' is no longer supported in user data manager and will be ignored.
+**WARN: (IMPIMEX-4008):	Variable 'dbgIsInnovusPlusFlow' is no longer supported in user data manager and will be ignored.
+**WARN: (IMPIMEX-4008):	Variable 'dbgLastReadCmdbSessionDir' is no longer supported in user data manager and will be ignored.
+**WARN: (IMPIMEX-4008):	Variable 'enc_before_startup_file' is no longer supported in user data manager and will be ignored.
+**WARN: (IMPSYC-141):	You have set -timerMode to 1 so the setting in the config file will be ignored.
+**WARN: (IMPIMEX-4008):	Variable 'spgCheckAdjacentFourCutsInFiller' is no longer supported in user data manager and will be ignored.
+**WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+**WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+**WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+**WARN: (IMPIMEX-4008):	Variable 'timing_disable_backward_compatible_hierarchical_skip_pin_mode' is no longer supported in user data manager and will be ignored.
+**WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+**WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+**WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+**WARN: (IMPIMEX-4008):	Variable 'timing_library_derate_thermal_lower_bound' is no longer supported in user data manager and will be ignored.
+**WARN: (IMPIMEX-4008):	Variable 'timing_library_derate_thermal_upper_bound' is no longer supported in user data manager and will be ignored.
+**ERROR: (IMPDBTCL-247):	'keepAggDistributed' is not a recognized object or root attribute. Run 'help root:' to get a list of all root attributes, or 'man get_db' for more information about accessing objects and attributes.
+**ERROR: (IMPSYT-6790):	Failed to load file /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/scpa_dig_ana_ppfir_inn.enc/scpa_dig_ana_ppfir.globals
+AAE_INFO: switching -siAware from false to true ...
+AAE_INFO: The setting is changed from false to true in setDelayCalMode -SIAware
+**WARN: (IMPSYC-6134):	Setting analysis mode to setup does not have any impact on timing analysis as simultaneous setup/hold mode analysis is on. Use '-late' option to report setup timing reports.
+**WARN: (IMPSYC-6134):	Setting analysis mode to setup does not have any impact on timing analysis as simultaneous setup/hold mode analysis is on. Use '-late' option to report setup timing reports.
+**WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+**WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+**WARN: (IMPDBTCL-321):	The attribute 'timing_enable_separate_device_slew_effect_sensitivities' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+**WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+**WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+**WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+**WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+**WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+**WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+Loading design 'scpa_dig_ana_ppfir' saved by 'Innovus' '23.14-s088_1' on 'Sat Jan 24 16:22:40 2026'.
+**ERROR: (IMPIMEX-7017):	Unable to load the design in the current version '22.10' as design is saved with newer version '23.14' of the software. Refer to previous messages issued regarding design restoration failure.
+''.
+1
+@voltus 2> exit
+
+--------------------------------------------------------------------------------
+Exiting Voltus IC Power Integrity Solution on Mon Jan 26 08:47:34 2026
+  Total CPU time:     0:00:33
+  Total real time:    0:05:10
+  Peak memory (main): 1188.18MB
+

@@ -1,0 +1,3 @@
+SOFTINCLUDE $(csf_search:eesof.reg);
+
+SOFTINCLUDE $(csf_search:eesof.reg);

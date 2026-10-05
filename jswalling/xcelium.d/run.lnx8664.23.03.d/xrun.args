@@ -1,0 +1,24 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-compile
+-nocopy
+-nostdout
+-nowarn
+DLNOHV
+-nowarn
+SPDUSD
+-messages
+-update
+-log
+/data/projects/28HPC_summer2024/jswalling/.cadence/dfII/TextSupport/Logs/Parser/verilog/jswalling_dsp/functional/compile16.log
+-incdir
+"/data/projects/28HPC_summer2024/jswalling/"
+-cdslib
+/data/projects/28HPC_summer2024/jswalling/cds.lib
+-view
+functional
+-work
+jswalling_dsp
+/data/projects/28HPC_summer2024/AIDLL/scpa_dig_ana_ppfir/functional/verilog.v

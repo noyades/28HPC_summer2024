@@ -1,0 +1,61 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Sun Jan 12 09:11:19 2025                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v22.10-p001_1 (64bit) 09/29/2022 11:03 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 22.10-p001_1 NR220915-0329/22_10-UB (database version 18.20.590) {superthreading v2.19}
+#@(#)CDS: AAE 22.10-p002 (64bit) 09/29/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 22.10-p004_1 () Sep  7 2022 21:57:29 ( )
+#@(#)CDS: SYNTECH 22.10-p001_1 () Aug  8 2022 11:26:34 ( )
+#@(#)CDS: CPE v22.10-p005
+#@(#)CDS: IQuantus/TQuantus 21.2.0-s201 (64bit) Wed Jul 6 19:14:09 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+
+read_db pp_fir_u_0_04_prects_stylus.enc
+gui_select -point {219.61600 65.37050}
+connect_global_net VDD -type pgpin -pin VDD -inst *
+connect_global_net VSS -type pgpin -pin VSS -inst *
+connect_global_net VDD -type tiehi
+connect_global_net VSS -type tielo
+add_tieoffs -lib_cell {TIELO_X1M_A9PP140ZTL_C30 TIEHI_X1M_A9PP140ZTL_C30} -prefix LTIE
+gui_select -point {201.65300 181.75900}
+set_db init_ground_nets VSS
+set_db init_ground_nets VDD
+source ../scripts/cts.tcl 
+write_db pp_fir_u_0_05_cts_stylus.enc
+source ../scripts/postcts.tcl 
+write_db pp_fir_u_0_06_postcts_stylus.enc
+source ../scripts/route.tcl 
+set_layer_preference node_layer -is_visible 0
+set_layer_preference M7 -is_visible 1
+set_layer_preference M6 -is_visible 1
+set_layer_preference M9 -is_visible 1
+set_layer_preference M8 -is_visible 1
+write_db pp_fir_u_0_07_route_stylus.enc
+source ../scripts/postroute.tcl  
+set_layer_preference node_layer -is_visible 1
+write_db pp_fir_u_0_08_postroute_stylus.enc
+set_db check_drc_disable_rules {}
+set_db check_drc_ndr_spacing auto
+set_db check_drc_check_only default
+set_db check_drc_inside_via_def true
+set_db check_drc_exclude_pg_net false
+set_db check_drc_ignore_trial_route false
+set_db check_drc_ignore_cell_blockage false
+set_db check_drc_use_min_spacing_on_block_obs auto
+set_db check_drc_report pp_fir_u_0.drc.rpt
+set_db check_drc_limit 1000
+check_drc
+set_db check_drc_area {0 0 0 0}
+gui_select -point {-9.12800 186.05400}
+gui_select -point {38.95800 181.76400}
+check_connectivity -type all -geometry_connect -error 1000 -warning 50
+set_layer_preference violation -is_visible 1
+edit_move_routes -dx -0.0595 -dy -0.4165
+gui_deselect -all
+write_stream pp_fir_u_0_struct_inn.gds -map_file /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/tech.map -lib_name DesignLib -unit 2000 -mode all
+write_netlist pp_fir_u_0_struct_inn.v
+report_power
+exit

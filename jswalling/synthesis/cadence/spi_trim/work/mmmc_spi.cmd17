@@ -1,0 +1,35 @@
+# Cadence Genus(TM) Synthesis Solution, Version 21.11-s126_1, built Dec 20 2021 12:52:46
+
+# Date: Fri May 10 15:25:51 2024
+# Host: cluster12 (x86_64 w/Linux 3.10.0-1160.102.1.el7.x86_64) (6cores*24cpus*2physical cpus*Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz 15360KB)
+# OS:   CentOS Linux release 7.9.2009 (Core)
+
+source ../scripts/run.tcl
+# entering suspend mode
+resume
+# resuming normal operation
+get_dont_use
+get dont_use
+[get_lib_cells */*FSDPQ_*]
+list dont_use
+set_dont_use [get_lib_cells */*FD*]
+set_dont_use [get_lib_cells */*FSD*]
+echo ${dont_use}
+set dont_use_list_6p75t [list *_0P* *_16 *_16P5 *_17 *_18 *_20 *_24 *_32 *_33 *_65 *_DEL* *_TIE* *ECO* *CLAMP* *DICE*]
+remove_attribute [get_lib_cells */*FSDPSBQ_*_4] dont_use ;
+set dont_use_list_6p75t [list *_0P* *_16 *_16P5 *_17 *_18 *_20 *_24 *_32 *_33 *_65 *_DEL* *_TIE* *ECO* *CLAMP* *DICE*]
+foreach dont_use ${dont_use_list_#} {
+        echo "[get_attribute [get_lib_cells */${dont_use}] full_name]"
+               set_dont_use [get_lib_cells */${dont_use} ]}
+foreach dont_use ${avoid_list_#} {
+        echo "[get_attribute [get_lib_cells */${dont_use}] full_name]"
+               set_dont_use [get_lib_cells */${dont_use} ]}
+set_attribute avoid false [get_lib_cells */*_FSDPQ_*]
+set_db avoid false [get_lib_cells */*_FSDPQ_*]
+set_db [get_lib_cells */*_FSDPQ_*] .avoid false
+get_db [get_lib_cells */*FD*] .avoid
+get_db [get_lib_cells */*FSD*] .avoid
+set_dont_use [list *_0P* *_16 *_16P5 *_17 *_18 *_20 *_24 *_32 *_33 *_65 *_DEL* *_TIE* *ECO* *CLAMP* *DICE*]
+get_db [get_lib_cells *DICE*] .avoid
+get_db [get_lib_cells *CLAMP*] .avoid
+exit

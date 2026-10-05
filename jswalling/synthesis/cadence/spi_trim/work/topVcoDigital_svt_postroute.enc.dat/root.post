@@ -1,0 +1,50 @@
+::db::check_and_set_root_attr extract_rc_engine post_route
+::db::check_and_set_root_attr check_drc_area {0.0 0.0 0.0 0.0}
+::db::check_and_set_root_attr check_drc_check_only default
+::db::check_and_set_root_attr check_drc_exclude_pg_net false
+::db::check_and_set_root_attr check_drc_ignore_cell_blockage false
+::db::check_and_set_root_attr check_drc_ignore_trial_route false
+::db::check_and_set_root_attr check_drc_inside_via_def true
+::db::check_and_set_root_attr check_drc_limit 10000
+::db::check_and_set_root_attr check_drc_ndr_spacing auto
+::db::check_and_set_root_attr check_drc_report topVcoDigital.drc.rpt
+::db::check_and_set_root_attr check_drc_use_min_spacing_on_block_obs auto
+::db::check_and_set_root_attr delaycal_enable_high_fanout true
+::db::check_and_set_root_attr delaycal_ignore_net_load false
+::db::check_and_set_root_attr design_bottom_routing_layer M2
+::db::check_and_set_root_attr extract_design_signature 85619783
+::db::check_and_set_root_attr extract_rc_coupled false
+::db::check_and_set_root_attr extract_rc_layer_independent 1
+::db::check_and_set_root_attr extract_rc_model_file rc_model.bin
+::db::check_and_set_root_attr floorplan_default_tech_site GF22_DST
+::db::check_and_set_root_attr floorplan_max_io_height false
+::db::check_and_set_root_attr opt_drv_margin 0.0
+::db::check_and_set_root_attr opt_fix_drv true
+::db::check_and_set_root_attr opt_hier_trial_route_honor_read_only false
+::db::check_and_set_root_attr opt_multi_bit_flop_opt false
+::db::check_and_set_root_attr opt_preserve_all_sequential false
+::db::check_and_set_root_attr opt_setup_target_slack 0.0
+::db::check_and_set_root_attr opt_useful_skew true
+::db::check_and_set_root_attr opt_useful_skew_eco_route false
+::db::check_and_set_root_attr opt_useful_skew_pre_cts true
+::db::check_and_set_root_attr opt_view_pruning_hold_views_active_list { view_wcl_slow view_wcl_fast view_wcl_typical }
+::db::check_and_set_root_attr opt_view_pruning_placement_setup_view_list { view_wcl_slow  }
+::db::check_and_set_root_attr opt_view_pruning_setup_views_active_list { view_wcl_slow view_wcl_fast view_wcl_typical }
+::db::check_and_set_root_attr opt_view_pruning_setup_views_persistent_list { view_wcl_slow view_wcl_fast}
+::db::check_and_set_root_attr place_detail_dpt_flow true
+::db::check_and_set_root_attr place_global_cong_effort auto
+::db::check_and_set_root_attr place_global_reorder_scan false
+::db::check_and_set_root_attr route_design_bottom_routing_layer 1
+::db::check_and_set_root_attr route_design_detail_end_iteration 1
+::db::check_and_set_root_attr route_design_detail_post_route_litho_repair true
+::db::check_and_set_root_attr route_design_detail_use_lef_pin_taper_rule true
+::db::check_and_set_root_attr route_design_detail_use_min_spacing_for_blockage auto
+::db::check_and_set_root_attr route_design_extract_third_party_compatible false
+::db::check_and_set_root_attr route_design_global_exp_timing_driven_std_delay 8.1
+::db::check_and_set_root_attr route_design_global_exp_timing_driven_use_tif_timing_engine_for_import_design false
+::db::check_and_set_root_attr route_design_strict_honor_route_rule false
+::db::check_and_set_root_attr route_design_top_routing_layer 6
+::db::check_and_set_root_attr route_design_with_litho_driven true
+::db::check_and_set_root_attr route_design_with_si_driven false
+::db::check_and_set_root_attr route_design_with_timing_driven false
+::db::check_and_set_root_attr write_def_stream_check_uncolored false

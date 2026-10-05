@@ -1,0 +1,84 @@
+
+
+Working Directory = /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/synthesis/cadence/pp_fir_u_0_work
+QoS Summary for pp_fir_u_0
+==========================================================================================
+Metric                          generic         map             final          
+==========================================================================================
+
+View : view_wcl_slow
+Slack (ps):                       -14             -16             -50
+  R2R (ps):                       -14             -15              -3
+  I2R (ps):                        47             -16             -50
+  R2O (ps):                       259             264             253
+  I2O (ps):                  no_value        no_value        no_value
+  CG  (ps):                  no_value        no_value        no_value
+TNS (ps):                        -486         -21,523         -46,840
+  R2R (ps):                      -486          -1,107             -54
+  I2R (ps):                         0         -21,496         -46,838
+  R2O (ps):                         0               0               0
+  I2O (ps):                  no_value        no_value        no_value
+  CG  (ps):                  no_value        no_value        no_value
+Failing Paths:                     54           2,082           2,284
+
+View : view_wcl_fast
+Slack (ps):                        59              24               4
+  R2R (ps):                       148             150             152
+  I2R (ps):                        59              24               4
+  R2O (ps):                       286             288             281
+  I2O (ps):                  no_value        no_value        no_value
+  CG  (ps):                  no_value        no_value        no_value
+TNS (ps):                           0               0               0
+  R2R (ps):                         0               0               0
+  I2R (ps):                         0               0               0
+  R2O (ps):                         0               0               0
+  I2O (ps):                  no_value        no_value        no_value
+  CG  (ps):                  no_value        no_value        no_value
+Failing Paths:                      0               0               0
+
+View : view_wcl_typical
+Slack (ps):                        54               7             -20
+  R2R (ps):                        83              80              89
+  I2R (ps):                        54               7             -20
+  R2O (ps):                       276             278             270
+  I2O (ps):                  no_value        no_value        no_value
+  CG  (ps):                  no_value        no_value        no_value
+TNS (ps):                           0               0          -4,665
+  R2R (ps):                         0               0               0
+  I2R (ps):                         0               0          -4,665
+  R2O (ps):                         0               0               0
+  I2O (ps):                  no_value        no_value        no_value
+  CG  (ps):                  no_value        no_value        no_value
+Failing Paths:                      0               0             844
+
+Cell Area:                     40,699          27,011          28,295
+Total Cell Area:               41,295          27,608          28,892
+Leaf Instances:                23,824          24,783          25,078
+Total Instances:               24,931          25,890          26,185
+Utilization (%):                58.85           73.55           77.05
+Tot. Net Length (um):        no_value        no_value         164,116
+Avg. Net Length (um):        no_value        no_value               6
+Route Overflow H (%):            0.00            0.00            0.00
+Route Overflow V (%):            0.00            0.00            0.00
+MBCI(%) (bits/gate) :            0.00            0.00            0.00
+Norm Cong Hotspot Area:
+  Max Cong:                      0.00            0.00            0.00
+  Tot Cong:                      0.00            0.00            0.00
+==========================================================================================
+CPU  Runtime (h:m:s):        00:11:00        00:12:50        00:01:27
+Real Runtime (h:m:s):        00:09:00        00:05:14        00:22:41
+CPU  Elapsed (h:m:s):        00:11:09        00:23:57        01:27:48
+Real Elapsed (h:m:s):        00:09:04        00:14:17        00:47:21
+Memory (MB):                  2658.84         2764.58         3523.16
+==========================================================================================
+==========================================================================================
+Flow Settings:
+==========================================================================================
+Total Runtime (h:m:s): 00:47:21
+Total Memory (MB):     3523.16
+Executable Version:    23.10-p004_1
+==========================================================================================
+Total Cell Area =  Cell Area + Physical Cell Area
+Total Instances =  Leaf Instances + Physical Instances
+
+

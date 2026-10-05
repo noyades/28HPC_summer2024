@@ -1,0 +1,48 @@
+set_cpf_version 1.1
+#################################################
+#       Technology part of the CPF
+#################################################
+# define the library sets
+define_library_set -name PVT_0P90V_25C -libraries {data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_ulvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_ulvt_c30_tt_ctypical_max_0p90v_25c.lib /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_ulvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_hpk_ulvt_c30_tt_ctypical_max_0p90v_25c.lib}
+define_library_set -name PVT_0P99V_M40C -libraries {/data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_ulvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_ulvt_c30_ffg_cbestt_min_0p99v_m40c.lib /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_ulvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_hpk_ulvt_c30_ffg_cbestt_min_0p99v_m40c.lib}
+define_library_set -name PVT_0P81V_125C -libraries {/data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_ulvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_ulvt_c30_ssg_cworstt_max_0p81v_125c.lib \
+             /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_ulvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_hpk_ulvt_c30_ssg_cworstt_max_0p81v_125c.lib}
+             
+#################################################
+#       Design part of the CPF
+#################################################
+# identify the design for which the CPF file is created
+set_design scpa_dig_ana_ppfir
+create_power_domain -name PD1 -default
+
+create_nominal_condition -name off -voltage 0
+create_nominal_condition -name on -voltage 0.9
+
+create_power_mode -name PM1 -domain_conditions {PD1@on} -default
+
+update_nominal_condition -name on -library_set PVT_0P90V_25C
+
+set_power_target -leakage 30 -dynamic 250
+
+update_power_mode -name PM1 -sdc_files ../constraints/topPPFilter_struct.sdc
+
+create_power_nets -nets VDD -voltage 0.9
+create_ground_nets -nets VSS -voltage 0
+
+update_power_domain -name PD1 -primary_power_net VDD -primary_ground_net VSS
+
+create_operating_corner -name TYP \
+    -process 1 -temperature 25 -voltage 0.9 -library_set PVT_0P90V_25C
+create_operating_corner -name BC \
+    -process 1 -temperature -40 -voltage 0.99 -library_set PVT_0P99V_M40C
+create_operating_corner -name WC \
+    -process 1 -temperature 125 -voltage 0.81 -library_set PVT_0P81V_125C
+
+create_analysis_view -name AV_PM1_TYP -mode PM1 \
+    -domain_corners {PD1@TYP}
+create_analysis_view -name AV_PM1_BC -mode PM1 \
+    -domain_corners {PD1@BC}
+create_analysis_view -name AV_PM1_WC -mode PM1 \
+    -domain_corners {PD1@WC}
+        
+end_design

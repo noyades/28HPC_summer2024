@@ -1,0 +1,47 @@
+  =================
+   Message Summary
+  =================
+---------------------------------------------------------------------------------------------------------------------------------------
+|    Id     |  Sev   |Count |                                              Message Text                                               |
+---------------------------------------------------------------------------------------------------------------------------------------
+| CFM-1     |Info    |    2 |Wrote dofile.                                                                                            |
+| CFM-5     |Info    |    1 |Wrote formal verification information.                                                                   |
+| CPI-506   |Warning |    1 |Command 'commit_power_intent' cannot proceed as there is no power intent loaded.                         |
+| INVS-8    |Info    |    2 |Innovus executable found.                                                                                |
+|           |        |      |The specified Innovus executable will be used for the Innovus batch jobs.                                |
+| INVS-13   |Info    |    1 |The design has been changed by Innovus.                                                                  |
+|           |        |      |The design was changed during QoS prediction. This may include netlist structural changes.               |
+| INVS-18   |Info    |    1 |The following executable version was used for the Innovus session.                                       |
+|           |        |      |The specified Innovus version was used for the Innovus batch job.                                        |
+| LBR-415   |Info    |   24 |Unusable library cells found at the time of loading a library.                                           |
+|           |        |      |For  more  information, refer to 'Cells Identified as Unusable' in the 'User Guide'. To know the reason  |
+|           |        |      | why a cell is considered as unusable, check 'unusable_reason' libcell attribute.                        |
+| MESG-6    |Warning |   19 |Message truncated because it exceeds the maximum length of 4096 characters.                              |
+|           |        |      |By default messages are limited to 4096 characters. All characters after the 4096 character limit are    |
+|           |        |      | truncated. To remove this limit, set the message attribute 'truncate' to 'false'. However, this may     |
+|           |        |      | dramatically increase the size of the log file.                                                         |
+| PHYS-52   |Info    |    1 |Physical information has been annotated.                                                                 |
+|           |        |      |The physical information for the design has been prepared and annotated.                                 |
+| PHYS-58   |Warning |    2 |Option ignored.                                                                                          |
+|           |        |      |The specified option will be treated as indicated above.                                                 |
+| PHYS-90   |Info    |   15 |Generating design database.                                                                              |
+|           |        |      |The database contains all the files required to restore the design in the specified application.         |
+| PHYS-256  |Warning |    3 |Annotated physical data will be ignored for timing analysis.                                             |
+| PHYS-262  |Warning |    3 |Small lumped capacitance will be ignored.                                                                |
+| PHYS-280  |Warning |    8 |Duplicate via definition.                                                                                |
+|           |        |      |Only one via definition allowed. Check LEF and DEF via definitions.                                      |
+| PHYS-420  |Info    |    1 |The original location attributes have been populated.                                                    |
+|           |        |      |The original location attributes have been populated.                                                    |
+| PHYS-422  |Info    |    1 |Highlight statistics.                                                                                    |
+|           |        |      |Printing movement highlight statistics.                                                                  |
+| PHYS-752  |Info    |    1 |Partition Based Synthesis execution skipped.                                                             |
+| PHYS-1011 |Warning |    1 |Attribute design_process_node is not set for this design.                                                |
+|           |        |      |When attribute design_process_node is not set to an appropriate integer value >=5 and <=250, then        |
+|           |        |      | Innovus will assume its own default value for the design process node. See the Innovus setDesignMode    |
+|           |        |      | -process <> command for more information about what this setting does.                                  |
+| RPT-16    |Info    |    1 |Joules engine is used.                                                                                   |
+| SYNTH-2   |Info    |    1 |Done synthesizing.                                                                                       |
+| SYNTH-4   |Info    |    1 |Mapping.                                                                                                 |
+| SYNTH-5   |Info    |    1 |Done mapping.                                                                                            |
+| TIM-45    |Info    |    1 |AAE enabled for delay calculation.                                                                       |
+---------------------------------------------------------------------------------------------------------------------------------------

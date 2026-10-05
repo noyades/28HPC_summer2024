@@ -1,0 +1,1501 @@
+[01/10 09:19:30      0s] 
+[01/10 09:19:30      0s] Cadence Innovus(TM) Implementation System.
+[01/10 09:19:30      0s] Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+[01/10 09:19:30      0s] 
+[01/10 09:19:30      0s] Version:	v22.10-p001_1, built Thu Sep 29 11:03:49 PDT 2022
+[01/10 09:19:30      0s] Options:	
+[01/10 09:19:30      0s] Date:		Fri Jan 10 09:19:30 2025
+[01/10 09:19:30      0s] Host:		cluster15 (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (6cores*24cpus*Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz 15360KB)
+[01/10 09:19:30      0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[01/10 09:19:30      0s] 
+[01/10 09:19:30      0s] License:
+[01/10 09:19:30      0s] 		[09:19:30.284081] Configured Lic search path (21.01-s002): 27002@license.ece.vt.edu
+
+[01/10 09:19:30      0s] 		invs	Innovus Implementation System	22.1	checkout succeeded
+[01/10 09:19:30      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[01/10 09:20:01     27s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v22.10-p001_1 (64bit) 09/29/2022 11:03 (Linux 3.10.0-693.el7.x86_64)
+[01/10 09:20:07     33s] @(#)CDS: NanoRoute 22.10-p001_1 NR220915-0329/22_10-UB (database version 18.20.590) {superthreading v2.19}
+[01/10 09:20:07     33s] @(#)CDS: AAE 22.10-p002 (64bit) 09/29/2022 (Linux 3.10.0-693.el7.x86_64)
+[01/10 09:20:07     33s] @(#)CDS: CTE 22.10-p004_1 () Sep  7 2022 21:57:29 ( )
+[01/10 09:20:07     33s] @(#)CDS: SYNTECH 22.10-p001_1 () Aug  8 2022 11:26:34 ( )
+[01/10 09:20:07     33s] @(#)CDS: CPE v22.10-p005
+[01/10 09:20:07     33s] @(#)CDS: IQuantus/TQuantus 21.2.0-s201 (64bit) Wed Jul 6 19:14:09 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+[01/10 09:20:07     33s] @(#)CDS: OA 22.60-p076 Wed May 18 13:45:29 2022
+[01/10 09:20:07     33s] @(#)CDS: SGN 21.20-d001 (11-Feb-2022) (64 bit executable, TkQt5.9.1)
+[01/10 09:20:07     33s] @(#)CDS: RCDB 11.15.0
+[01/10 09:20:07     33s] @(#)CDS: STYLUS 22.10-p001_1 (08/24/2022 07:47 PDT)
+[01/10 09:20:07     33s] @(#)CDS: Orbit-22.10Rel-9221 (22.10) (2022-09-28 18:03:21+0800)
+[01/10 09:20:07     33s] Create and set the environment variable TMPDIR to /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/innovus_temp_4680_cluster15_jswalling_0g9ztr.
+
+[01/10 09:20:07     33s] The soft stacksize limit is either up to the hard limit or larger than 0.2% of RAM. No change is needed.
+[01/10 09:20:10     36s] 
+[01/10 09:20:10     36s] **INFO:  MMMC transition support version v31-84 
+[01/10 09:20:10     36s] 
+[01/10 09:20:10     36s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[01/10 09:20:10     36s] <CMD> suppressMessage ENCEXT-2799
+[01/10 09:20:11     36s] <CMD> win
+[01/10 09:20:11     36s] <CMD> set enc_check_rename_command_name 1
+[01/10 09:21:45     51s] <CMD> encMessage warning 0
+[01/10 09:21:45     51s] Suppress "**WARN ..." messages.
+[01/10 09:21:45     51s] <CMD> encMessage debug 0
+[01/10 09:21:45     51s] <CMD> is_common_ui_mode
+[01/10 09:21:45     51s] <CMD> restoreDesign /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postctsopt.inn.dat pp_fir_u_0
+[01/10 09:21:45     51s] #% Begin load design ... (date=01/10 09:21:45, mem=1080.4M)
+[01/10 09:21:47     52s] Loading design 'pp_fir_u_0' saved by 'Innovus' '22.10-p001_1' on 'Wed Jan 8 13:38:03 2025'.
+[01/10 09:21:47     52s] % Begin Load MMMC data ... (date=01/10 09:21:47, mem=1086.9M)
+[01/10 09:21:48     52s] % End Load MMMC data ... (date=01/10 09:21:48, total cpu=0:00:00.1, real=0:00:01.0, peak res=1088.0M, current mem=1086.9M)
+[01/10 09:21:48     52s] 
+[01/10 09:21:48     52s] Loading LEF file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postctsopt.inn.dat/libs/lef/sc9mcpp140z_tech.lef ...
+[01/10 09:21:48     52s] 
+[01/10 09:21:48     52s] Loading LEF file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postctsopt.inn.dat/libs/lef/sc9mcpp140z_cln28ht_base_lvt_c30.lef ...
+[01/10 09:21:48     52s] Set DBUPerIGU to M1 pitch 280.
+[01/10 09:21:48     53s] 
+[01/10 09:21:48     53s] Loading LEF file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postctsopt.inn.dat/libs/lef/sc9mcpp140z_cln28ht_hpk_lvt_c30.lef ...
+[01/10 09:21:48     53s] 
+[01/10 09:21:48     53s] Loading LEF file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postctsopt.inn.dat/libs/lef/sc9mcpp140z_cln28ht_base_svt_c30.lef ...
+[01/10 09:21:49     54s] 
+[01/10 09:21:49     54s] Loading LEF file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postctsopt.inn.dat/libs/lef/sc9mcpp140z_cln28ht_hpk_svt_c30.lef ...
+[01/10 09:21:49     54s] 
+[01/10 09:21:49     54s] Loading LEF file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postctsopt.inn.dat/libs/lef/sc9mcpp140z_cln28ht_base_ulvt_c30.lef ...
+[01/10 09:21:50     54s] 
+[01/10 09:21:50     54s] Loading LEF file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postctsopt.inn.dat/libs/lef/sc9mcpp140z_cln28ht_hpk_ulvt_c30.lef ...
+[01/10 09:21:50     55s] 
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+[01/10 09:21:50     55s] Loading view definition file from /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postctsopt.inn.dat/viewDefinition.tcl
+[01/10 09:21:50     55s] Reading wcl_slow timing library '/software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib' ...
+[01/10 09:21:54     59s] **WARN: (TECHLIB-302):	No function defined for cell 'FILLTIE5_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+[01/10 09:21:54     59s] **WARN: (TECHLIB-302):	No function defined for cell 'ENDCAPTIE3_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+[01/10 09:21:54     59s] **WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP8_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+[01/10 09:21:54     59s] **WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP64_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+[01/10 09:21:54     59s] **WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP4_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+[01/10 09:21:54     59s] **WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP3_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+[01/10 09:21:54     59s] **WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP32_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+[01/10 09:21:54     59s] **WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP2_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+[01/10 09:21:54     59s] **WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP16_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+[01/10 09:21:54     59s] **WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP128_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+[01/10 09:21:54     59s] **WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP8_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+[01/10 09:21:54     59s] **WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP64_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+[01/10 09:21:54     59s] **WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP4_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+[01/10 09:21:54     59s] **WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP3_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+[01/10 09:21:54     59s] **WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP32_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+[01/10 09:21:54     59s] **WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP2_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+[01/10 09:21:54     59s] **WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP16_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+[01/10 09:21:54     59s] **WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP128_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+[01/10 09:21:54     59s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA2_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+[01/10 09:21:56     61s] Read 1003 cells in library 'sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c' 
+[01/10 09:21:56     61s] Ending "PreSetAnalysisView" (total cpu=0:00:06.1, real=0:00:06.0, peak res=1286.8M, current mem=1139.8M)
+[01/10 09:21:56     61s] *** End library_loading (cpu=0.10min, real=0.10min, mem=36.5M, fe_cpu=1.02min, fe_real=2.43min, fe_mem=1274.2M) ***
+[01/10 09:21:57     61s] % Begin Load netlist data ... (date=01/10 09:21:56, mem=1139.8M)
+[01/10 09:21:57     61s] *** Begin netlist parsing (mem=1274.2M) ***
+[01/10 09:21:57     61s] Created 1003 new cells from 1 timing libraries.
+[01/10 09:21:57     61s] Reading netlist ...
+[01/10 09:21:57     61s] Backslashed names will retain backslash and a trailing blank character.
+[01/10 09:21:57     61s] Reading verilogBinary netlist '/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postctsopt.inn.dat/pp_fir_u_0.v.bin'
+[01/10 09:21:57     61s] 
+[01/10 09:21:57     61s] *** Memory Usage v#1 (Current mem = 1281.184M, initial mem = 509.465M) ***
+[01/10 09:21:57     61s] *** End netlist parsing (cpu=0:00:00.2, real=0:00:00.0, mem=1281.2M) ***
+[01/10 09:21:57     61s] % End Load netlist data ... (date=01/10 09:21:57, total cpu=0:00:00.2, real=0:00:00.0, peak res=1165.2M, current mem=1165.2M)
+[01/10 09:21:57     61s] Top level cell is pp_fir_u_0.
+[01/10 09:21:57     61s] Hooked 1003 DB cells to tlib cells.
+[01/10 09:21:57     61s] Ending "BindLib:" (total cpu=0:00:00.2, real=0:00:00.0, peak res=1203.1M, current mem=1203.1M)
+[01/10 09:21:57     61s] Starting recursive module instantiation check.
+[01/10 09:21:57     61s] No recursion found.
+[01/10 09:21:57     61s] Building hierarchical netlist for Cell pp_fir_u_0 ...
+[01/10 09:21:57     61s] ***** UseNewTieNetMode *****.
+[01/10 09:21:57     62s] *** Netlist is unique.
+[01/10 09:21:57     62s] Setting Std. cell height to 1800 DBU (smallest netlist inst).
+[01/10 09:21:57     62s] ** info: there are 3539 modules.
+[01/10 09:21:57     62s] ** info: there are 21079 stdCell insts.
+[01/10 09:21:57     62s] 
+[01/10 09:21:57     62s] *** Memory Usage v#1 (Current mem = 1342.656M, initial mem = 509.465M) ***
+[01/10 09:21:57     62s] *info: set bottom ioPad orient R0
+[01/10 09:21:57     62s] The core width changes from 207.370000 to 207.340000 when snapping to grid "PlacementGrid".
+[01/10 09:21:57     62s] 
+[01/10 09:21:57     62s] Honor LEF defined pitches for advanced node
+[01/10 09:21:57     62s] Start create_tracks
+[01/10 09:21:57     62s] Set Shrink Factor to 0.90000
+[01/10 09:21:58     62s] Loading preference file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postctsopt.inn.dat/gui.pref.tcl ...
+[01/10 09:21:58     62s] setAnalysisMode -usefulSkew already set.
+[01/10 09:21:58     62s] **WARN: (IMPOPT-3602):	The specified path group name tdgp_reg2reg_default is not defined.
+[01/10 09:21:58     62s] Type 'man IMPOPT-3602' for more detail.
+[01/10 09:21:58     62s] Effort level <high> specified for tdgp_reg2reg_default path_group
+[01/10 09:21:58     62s] **WARN: (IMPOPT-3602):	The specified path group name in2out is not defined.
+[01/10 09:21:58     62s] Type 'man IMPOPT-3602' for more detail.
+[01/10 09:21:58     62s] Effort level <low> specified for in2out path_group
+[01/10 09:21:58     62s] **WARN: (IMPOPT-3602):	The specified path group name reg2out is not defined.
+[01/10 09:21:58     62s] Type 'man IMPOPT-3602' for more detail.
+[01/10 09:21:58     62s] Effort level <low> specified for reg2out path_group
+[01/10 09:21:58     62s] **WARN: (IMPOPT-3602):	The specified path group name in2reg is not defined.
+[01/10 09:21:58     62s] Type 'man IMPOPT-3602' for more detail.
+[01/10 09:21:58     62s] Effort level <low> specified for in2reg path_group
+[01/10 09:21:58     62s] **WARN: (IMPOPT-3602):	The specified path group name reg2reg is not defined.
+[01/10 09:21:58     62s] Type 'man IMPOPT-3602' for more detail.
+[01/10 09:21:58     62s] Effort level <high> specified for reg2reg path_group
+[01/10 09:21:58     62s] Change floorplan default-technical-site to 'sc9mcpp140z_cln28ht'.
+[01/10 09:21:59     63s] Extraction setup Delayed 
+[01/10 09:21:59     63s] *Info: initialize multi-corner CTS.
+[01/10 09:21:59     63s] Reading wcl_fast timing library '/software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ffg_cbestt_min_0p99v_m40c.lib' ...
+[01/10 09:22:03     67s] **WARN: (TECHLIB-302):	No function defined for cell 'FILLTIE5_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ffg_cbestt_min_0p99v_m40c.lib)
+[01/10 09:22:03     67s] Message <TECHLIB-302> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+[01/10 09:22:03     67s] Read 1003 cells in library 'sc9mcpp140z_cln28ht_base_lvt_c30_ffg_cbestt_min_0p99v_m40c' 
+[01/10 09:22:03     67s] Reading wcl_typical timing library '/software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_tt_ctypical_max_0p90v_25c.lib' ...
+[01/10 09:22:08     72s] Read 1003 cells in library 'sc9mcpp140z_cln28ht_base_lvt_c30_tt_ctypical_max_0p90v_25c' 
+[01/10 09:22:10     73s] Ending "SetAnalysisView" (total cpu=0:00:10.1, real=0:00:11.0, peak res=1497.4M, current mem=1263.1M)
+[01/10 09:22:10     73s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[01/10 09:22:10     73s] 
+[01/10 09:22:10     73s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[01/10 09:22:10     73s] Summary for sequential cells identification: 
+[01/10 09:22:10     73s]   Identified SBFF number: 92
+[01/10 09:22:10     73s]   Identified MBFF number: 0
+[01/10 09:22:10     73s]   Identified SB Latch number: 0
+[01/10 09:22:10     73s]   Identified MB Latch number: 0
+[01/10 09:22:10     73s]   Not identified SBFF number: 12
+[01/10 09:22:10     73s]   Not identified MBFF number: 0
+[01/10 09:22:10     73s]   Not identified SB Latch number: 0
+[01/10 09:22:10     73s]   Not identified MB Latch number: 0
+[01/10 09:22:10     73s]   Number of sequential cells which are not FFs: 132
+[01/10 09:22:10     73s] Total number of combinational cells: 749
+[01/10 09:22:10     73s] Total number of sequential cells: 236
+[01/10 09:22:10     73s] Total number of tristate cells: 0
+[01/10 09:22:10     73s] Total number of level shifter cells: 0
+[01/10 09:22:10     73s] Total number of power gating cells: 0
+[01/10 09:22:10     73s] Total number of isolation cells: 0
+[01/10 09:22:10     73s] Total number of power switch cells: 0
+[01/10 09:22:10     73s] Total number of pulse generator cells: 0
+[01/10 09:22:10     73s] Total number of always on buffers: 0
+[01/10 09:22:10     73s] Total number of retention cells: 0
+[01/10 09:22:10     73s] Total number of physical cells: 18
+[01/10 09:22:10     73s] List of usable buffers: FRICG_X0P5B_A9PP140ZTL_C30 FRICG_X0P6B_A9PP140ZTL_C30 FRICG_X0P8B_A9PP140ZTL_C30 FRICG_X0P7B_A9PP140ZTL_C30 FRICG_X11B_A9PP140ZTL_C30 FRICG_X13B_A9PP140ZTL_C30 FRICG_X16B_A9PP140ZTL_C30 FRICG_X1B_A9PP140ZTL_C30 FRICG_X1P2B_A9PP140ZTL_C30 FRICG_X1P4B_A9PP140ZTL_C30 FRICG_X2B_A9PP140ZTL_C30 FRICG_X1P7B_A9PP140ZTL_C30 FRICG_X2P5B_A9PP140ZTL_C30 FRICG_X3B_A9PP140ZTL_C30 FRICG_X4B_A9PP140ZTL_C30 FRICG_X3P5B_A9PP140ZTL_C30 FRICG_X5B_A9PP140ZTL_C30 FRICG_X6B_A9PP140ZTL_C30 FRICG_X7P5B_A9PP140ZTL_C30 FRICG_X9B_A9PP140ZTL_C30 BUFH_X11M_A9PP140ZTL_C30 BUFH_X13M_A9PP140ZTL_C30 BUFH_X16M_A9PP140ZTL_C30 BUFH_X1M_A9PP140ZTL_C30 BUFH_X1P2M_A9PP140ZTL_C30 BUFH_X1P4M_A9PP140ZTL_C30 BUFH_X2M_A9PP140ZTL_C30 BUFH_X1P7M_A9PP140ZTL_C30 BUFH_X2P5M_A9PP140ZTL_C30 BUFH_X3M_A9PP140ZTL_C30 BUFH_X4M_A9PP140ZTL_C30 BUFH_X3P5M_A9PP140ZTL_C30 BUFH_X5M_A9PP140ZTL_C30 BUFH_X6M_A9PP140ZTL_C30 BUFH_X7P5M_A9PP140ZTL_C30 BUFH_X9M_A9PP140ZTL_C30 BUF_X0P5B_A9PP140ZTL_C30 BUF_X0P5M_A9PP140ZTL_C30 BUF_X0P7B_A9PP140ZTL_C30 BUF_X0P7M_A9PP140ZTL_C30 BUF_X0P8M_A9PP140ZTL_C30 BUF_X0P8B_A9PP140ZTL_C30 BUF_X11B_A9PP140ZTL_C30 BUF_X11B_A9PP140ZTL_C30_XGCAP11 BUF_X11M_A9PP140ZTL_C30 BUF_X13B_A9PP140ZTL_C30 BUF_X11M_A9PP140ZTL_C30_XGCAP11 BUF_X13B_A9PP140ZTL_C30_XGCAP13 BUF_X13M_A9PP140ZTL_C30 BUF_X16B_A9PP140ZTL_C30 BUF_X13M_A9PP140ZTL_C30_XGCAP13 BUF_X16B_A9PP140ZTL_C30_XGCAP16 BUF_X16M_A9PP140ZTL_C30 BUF_X16M_A9PP140ZTL_C30_XGCAP16 BUF_X1M_A9PP140ZTL_C30 BUF_X1B_A9PP140ZTL_C30 BUF_X1P2B_A9PP140ZTL_C30 BUF_X1P2M_A9PP140ZTL_C30 BUF_X1P4B_A9PP140ZTL_C30 BUF_X1P4M_A9PP140ZTL_C30 BUF_X1P7B_A9PP140ZTL_C30 BUF_X1P7M_A9PP140ZTL_C30 BUF_X2M_A9PP140ZTL_C30 BUF_X2B_A9PP140ZTL_C30 BUF_X2P5B_A9PP140ZTL_C30 BUF_X2P5M_A9PP140ZTL_C30 BUF_X3M_A9PP140ZTL_C30 BUF_X3B_A9PP140ZTL_C30 BUF_X3P5B_A9PP140ZTL_C30 BUF_X3P5M_A9PP140ZTL_C30 BUF_X4B_A9PP140ZTL_C30 BUF_X4B_A9PP140ZTL_C30_XGCAP4 BUF_X4M_A9PP140ZTL_C30 BUF_X5B_A9PP140ZTL_C30 BUF_X4M_A9PP140ZTL_C30_XGCAP4 BUF_X5B_A9PP140ZTL_C30_XGCAP5 BUF_X5M_A9PP140ZTL_C30 BUF_X6B_A9PP140ZTL_C30 BUF_X5M_A9PP140ZTL_C30_XGCAP5 BUF_X6B_A9PP140ZTL_C30_XGCAP6 BUF_X6M_A9PP140ZTL_C30 BUF_X7P5B_A9PP140ZTL_C30 BUF_X6M_A9PP140ZTL_C30_XGCAP6 BUF_X7P5B_A9PP140ZTL_C30_XGCAP8 BUF_X7P5M_A9PP140ZTL_C30 BUF_X7P5M_A9PP140ZTL_C30_XGCAP8 BUF_X9B_A9PP140ZTL_C30 BUF_X9M_A9PP140ZTL_C30 BUF_X9B_A9PP140ZTL_C30_XGCAP9 BUF_X9M_A9PP140ZTL_C30_XGCAP9 DLY2_X1M_A9PP140ZTL_C30 DLY2_X0P5M_A9PP140ZTL_C30 DLY2_X2M_A9PP140ZTL_C30 DLYCLK8S2_X1B_A9PP140ZTL_C30 DLYCLK8S2_X2B_A9PP140ZTL_C30 DLYCLK8S4_X1B_A9PP140ZTL_C30 DLYCLK8S4_X2B_A9PP140ZTL_C30
+[01/10 09:22:10     73s] Total number of usable buffers: 97
+[01/10 09:22:10     73s] List of unusable buffers:
+[01/10 09:22:10     73s] Total number of unusable buffers: 0
+[01/10 09:22:10     73s] List of usable inverters: INV_X0P5B_A9PP140ZTL_C30 INV_X0P5M_A9PP140ZTL_C30 INV_X0P6B_A9PP140ZTL_C30 INV_X0P6M_A9PP140ZTL_C30 INV_X0P7B_A9PP140ZTL_C30 INV_X0P7M_A9PP140ZTL_C30 INV_X0P8M_A9PP140ZTL_C30 INV_X0P8B_A9PP140ZTL_C30 INV_X11B_A9PP140ZTL_C30 INV_X11B_A9PP140ZTL_C30_XGCAP11 INV_X11M_A9PP140ZTL_C30 INV_X13B_A9PP140ZTL_C30 INV_X11M_A9PP140ZTL_C30_XGCAP11 INV_X13B_A9PP140ZTL_C30_XGCAP13 INV_X13M_A9PP140ZTL_C30 INV_X16B_A9PP140ZTL_C30 INV_X13M_A9PP140ZTL_C30_XGCAP13 INV_X16B_A9PP140ZTL_C30_XGCAP16 INV_X16M_A9PP140ZTL_C30 INV_X16M_A9PP140ZTL_C30_XGCAP16 INV_X1M_A9PP140ZTL_C30 INV_X1B_A9PP140ZTL_C30 INV_X1P2B_A9PP140ZTL_C30 INV_X1P2M_A9PP140ZTL_C30 INV_X1P4B_A9PP140ZTL_C30 INV_X1P4M_A9PP140ZTL_C30 INV_X1P7B_A9PP140ZTL_C30 INV_X1P7M_A9PP140ZTL_C30 INV_X2M_A9PP140ZTL_C30 INV_X2B_A9PP140ZTL_C30 INV_X2P5B_A9PP140ZTL_C30 INV_X2P5M_A9PP140ZTL_C30 INV_X3M_A9PP140ZTL_C30 INV_X3B_A9PP140ZTL_C30 INV_X3P5B_A9PP140ZTL_C30 INV_X4B_A9PP140ZTL_C30 INV_X3P5M_A9PP140ZTL_C30 INV_X4B_A9PP140ZTL_C30_XGCAP4 INV_X4M_A9PP140ZTL_C30 INV_X5B_A9PP140ZTL_C30 INV_X4M_A9PP140ZTL_C30_XGCAP4 INV_X5B_A9PP140ZTL_C30_XGCAP5 INV_X5M_A9PP140ZTL_C30 INV_X6B_A9PP140ZTL_C30 INV_X5M_A9PP140ZTL_C30_XGCAP5 INV_X6B_A9PP140ZTL_C30_XGCAP6 INV_X6M_A9PP140ZTL_C30 INV_X7P5B_A9PP140ZTL_C30 INV_X6M_A9PP140ZTL_C30_XGCAP6 INV_X7P5B_A9PP140ZTL_C30_XGCAP8 INV_X7P5M_A9PP140ZTL_C30 INV_X9B_A9PP140ZTL_C30 INV_X7P5M_A9PP140ZTL_C30_XGCAP8 INV_X9B_A9PP140ZTL_C30_XGCAP9 INV_X9M_A9PP140ZTL_C30 INV_X9M_A9PP140ZTL_C30_XGCAP9
+[01/10 09:22:10     73s] Total number of usable inverters: 56
+[01/10 09:22:10     73s] List of unusable inverters:
+[01/10 09:22:10     73s] Total number of unusable inverters: 0
+[01/10 09:22:10     73s] List of identified usable delay cells: DLY10_X1M_A9PP140ZTL_C30 DLY10_X0P5M_A9PP140ZTL_C30 DLY10_X2M_A9PP140ZTL_C30 DLY10_X4M_A9PP140ZTL_C30 DLY2_X4M_A9PP140ZTL_C30 DLY4_X1M_A9PP140ZTL_C30 DLY4_X0P5M_A9PP140ZTL_C30 DLY4_X2M_A9PP140ZTL_C30 DLY4_X4M_A9PP140ZTL_C30 DLY6_X1M_A9PP140ZTL_C30 DLY6_X0P5M_A9PP140ZTL_C30 DLY6_X2M_A9PP140ZTL_C30 DLY6_X4M_A9PP140ZTL_C30 DLY8_X0P5M_A9PP140ZTL_C30 DLY8_X1M_A9PP140ZTL_C30 DLY8_X2M_A9PP140ZTL_C30 DLY8_X4M_A9PP140ZTL_C30 DLYCLK8S6_X1B_A9PP140ZTL_C30 DLYCLK8S6_X2B_A9PP140ZTL_C30 DLYCLK8S8_X1B_A9PP140ZTL_C30 DLYCLK8S8_X2B_A9PP140ZTL_C30
+[01/10 09:22:10     73s] Total number of identified usable delay cells: 21
+[01/10 09:22:10     73s] List of identified unusable delay cells:
+[01/10 09:22:10     73s] Total number of identified unusable delay cells: 0
+[01/10 09:22:10     73s] 
+[01/10 09:22:10     73s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+[01/10 09:22:10     73s] 
+[01/10 09:22:10     73s] TimeStamp Deleting Cell Server Begin ...
+[01/10 09:22:10     73s] 
+[01/10 09:22:10     73s] TimeStamp Deleting Cell Server End ...
+[01/10 09:22:10     73s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1579.2M, current mem=1579.2M)
+[01/10 09:22:10     73s] 
+[01/10 09:22:10     73s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[01/10 09:22:10     73s] Summary for sequential cells identification: 
+[01/10 09:22:10     73s]   Identified SBFF number: 92
+[01/10 09:22:10     73s]   Identified MBFF number: 0
+[01/10 09:22:10     73s]   Identified SB Latch number: 0
+[01/10 09:22:10     73s]   Identified MB Latch number: 0
+[01/10 09:22:10     73s]   Not identified SBFF number: 12
+[01/10 09:22:10     73s]   Not identified MBFF number: 0
+[01/10 09:22:10     73s]   Not identified SB Latch number: 0
+[01/10 09:22:10     73s]   Not identified MB Latch number: 0
+[01/10 09:22:10     73s]   Number of sequential cells which are not FFs: 132
+[01/10 09:22:10     73s] eee: Trim Metal Layers: { }
+[01/10 09:22:10     73s]  Visiting view : view_wcl_slow
+[01/10 09:22:10     73s]    : PowerDomain = none : Weighted F : unweighted  = 5.40 (1.000) with rcCorner = 0
+[01/10 09:22:10     73s]    : PowerDomain = none : Weighted F : unweighted  = 4.80 (1.000) with rcCorner = -1
+[01/10 09:22:10     73s]  Visiting view : view_wcl_fast
+[01/10 09:22:10     73s]    : PowerDomain = none : Weighted F : unweighted  = 3.40 (1.000) with rcCorner = 1
+[01/10 09:22:10     73s]    : PowerDomain = none : Weighted F : unweighted  = 3.00 (1.000) with rcCorner = -1
+[01/10 09:22:10     73s]  Visiting view : view_wcl_typical
+[01/10 09:22:10     73s]    : PowerDomain = none : Weighted F : unweighted  = 4.20 (1.000) with rcCorner = 2
+[01/10 09:22:10     73s]    : PowerDomain = none : Weighted F : unweighted  = 3.70 (1.000) with rcCorner = -1
+[01/10 09:22:10     73s]  Visiting view : view_wcl_slow
+[01/10 09:22:10     73s]    : PowerDomain = none : Weighted F : unweighted  = 5.40 (1.000) with rcCorner = 0
+[01/10 09:22:10     73s]    : PowerDomain = none : Weighted F : unweighted  = 4.80 (1.000) with rcCorner = -1
+[01/10 09:22:10     73s]  Visiting view : view_wcl_fast
+[01/10 09:22:10     73s]    : PowerDomain = none : Weighted F : unweighted  = 3.40 (1.000) with rcCorner = 1
+[01/10 09:22:10     73s]    : PowerDomain = none : Weighted F : unweighted  = 3.00 (1.000) with rcCorner = -1
+[01/10 09:22:10     73s]  Visiting view : view_wcl_typical
+[01/10 09:22:10     73s]    : PowerDomain = none : Weighted F : unweighted  = 4.20 (1.000) with rcCorner = 2
+[01/10 09:22:10     73s]    : PowerDomain = none : Weighted F : unweighted  = 3.70 (1.000) with rcCorner = -1
+[01/10 09:22:10     73s] 
+[01/10 09:22:10     73s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[01/10 09:22:10     73s] 
+[01/10 09:22:10     73s] TimeStamp Deleting Cell Server Begin ...
+[01/10 09:22:10     73s] 
+[01/10 09:22:10     73s] TimeStamp Deleting Cell Server End ...
+[01/10 09:22:10     73s] Reading floorplan file - /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postctsopt.inn.dat/pp_fir_u_0.fp.gz (mem = 1656.1M).
+[01/10 09:22:10     73s] % Begin Load floorplan data ... (date=01/10 09:22:10, mem=1580.6M)
+[01/10 09:22:11     73s] *info: reset 22935 existing net BottomPreferredLayer and AvoidDetour
+[01/10 09:22:11     73s] Deleting old partition specification.
+[01/10 09:22:11     73s] Set FPlanBox to (-3600 -3600 418420 363600)
+[01/10 09:22:11     73s] 
+[01/10 09:22:11     73s] Honor LEF defined pitches for advanced node
+[01/10 09:22:11     73s] Start create_tracks
+[01/10 09:22:11     73s]  ... processed partition successfully.
+[01/10 09:22:11     73s] Reading binary special route file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postctsopt.inn.dat/pp_fir_u_0.fp.spr.gz (Created by Innovus v22.10-p001_1 on Wed Jan  8 13:38:00 2025, version: 1)
+[01/10 09:22:11     73s] Convert 0 swires and 0 svias from compressed groups
+[01/10 09:22:11     73s] 26 swires and 40 svias were compressed
+[01/10 09:22:11     73s] 26 swires and 40 svias were decompressed from small or sparse groups
+[01/10 09:22:11     73s] Ending "Read special route file" (total cpu=0:00:00.1, real=0:00:00.0, peak res=1583.2M, current mem=1583.2M)
+[01/10 09:22:11     73s] There are 45 nets with bottomPreferredRoutingLayer being set
+[01/10 09:22:11     73s] Extracting standard cell pins and blockage ...... 
+[01/10 09:22:11     74s] Pin and blockage extraction finished
+[01/10 09:22:11     74s] % End Load floorplan data ... (date=01/10 09:22:11, total cpu=0:00:00.3, real=0:00:01.0, peak res=1584.3M, current mem=1584.3M)
+[01/10 09:22:11     74s] Reading congestion map file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postctsopt.inn.dat/pp_fir_u_0.route.congmap.gz ...
+[01/10 09:22:11     74s] % Begin Load SymbolTable ... (date=01/10 09:22:11, mem=1584.4M)
+[01/10 09:22:11     74s] routingBox: (-3600 -9000) (418420 369000)
+[01/10 09:22:11     74s] coreBox:    (40 0) (414780 360000)
+[01/10 09:22:11     74s] Un-suppress "**WARN ..." messages.
+[01/10 09:22:12     74s] % End Load SymbolTable ... (date=01/10 09:22:11, total cpu=0:00:00.2, real=0:00:01.0, peak res=1588.6M, current mem=1588.6M)
+[01/10 09:22:12     74s] Loading place ...
+[01/10 09:22:12     74s] % Begin Load placement data ... (date=01/10 09:22:12, mem=1588.6M)
+[01/10 09:22:12     74s] Reading placement file - /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postctsopt.inn.dat/pp_fir_u_0.place.gz.
+[01/10 09:22:12     74s] ** Reading stdCellPlacement_binary (Created by Innovus v22.10-p001_1 on Wed Jan  8 13:38:00 2025, version# 2) ...
+[01/10 09:22:12     74s] Read Views for adaptive view pruning ...
+[01/10 09:22:12     74s] Read 0 views from Binary DB for adaptive view pruning
+[01/10 09:22:12     74s] *** Completed restorePlace (cpu=0:00:00.1 real=0:00:00.0 mem=1661.5M) ***
+[01/10 09:22:12     74s] Total net length = 1.274e+05 (6.375e+04 6.367e+04) (ext = 7.271e+03)
+[01/10 09:22:12     74s] % End Load placement data ... (date=01/10 09:22:12, total cpu=0:00:00.2, real=0:00:00.0, peak res=1594.3M, current mem=1593.3M)
+[01/10 09:22:12     74s] % Begin Load routing data ... (date=01/10 09:22:12, mem=1593.3M)
+[01/10 09:22:12     74s] Reading routing file - /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postctsopt.inn.dat/pp_fir_u_0.route.gz.
+[01/10 09:22:12     74s] Reading Innovus routing data (Created by Innovus v22.10-p001_1 on Wed Jan  8 13:38:00 2025 Format: 20.1) ...
+[01/10 09:22:12     74s] *** Total 22214 nets are successfully restored.
+[01/10 09:22:12     74s] *** Completed restoreRoute (cpu=0:00:00.4 real=0:00:00.0 mem=1682.5M) ***
+[01/10 09:22:12     75s] % End Load routing data ... (date=01/10 09:22:12, total cpu=0:00:00.4, real=0:00:00.0, peak res=1619.3M, current mem=1618.7M)
+[01/10 09:22:12     75s] TAT_INFO: restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
+[01/10 09:22:12     75s] Reading property file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postctsopt.inn.dat/pp_fir_u_0.prop
+[01/10 09:22:12     75s] *** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1687.5M) ***
+[01/10 09:22:13     75s] Change floorplan default-technical-site to 'sc9mcpp140z_cln28ht'.
+[01/10 09:22:13     75s] setAnalysisMode -usefulSkew already set.
+[01/10 09:22:13     75s] Loading preRoute extraction data from directory '/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postctsopt.inn.dat/extraction/' ...
+[01/10 09:22:13     75s] eee: Restore PreRoute RC Grid meta data successful.
+[01/10 09:22:13     75s] Extraction setup Started 
+[01/10 09:22:13     75s] eee: Trim Metal Layers: { }
+[01/10 09:22:13     75s] Initializing multi-corner RC extraction with 3 active RC Corners ...
+[01/10 09:22:13     75s] Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For postRoute extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+[01/10 09:22:13     75s] eee: __QRC_SADV_USE_LE__ is set 0
+[01/10 09:22:14     76s] eee: Metal Layer Id 1 is M1 
+[01/10 09:22:14     76s] eee: Metal Layer Id 2 is M2 
+[01/10 09:22:14     76s] eee: Metal Layer Id 3 is M3 
+[01/10 09:22:14     76s] eee: Metal Layer Id 4 is M4 
+[01/10 09:22:14     76s] eee: Metal Layer Id 5 is M5 
+[01/10 09:22:14     76s] eee: Metal Layer Id 6 is M6 
+[01/10 09:22:14     76s] eee: Metal Layer Id 7 is M7 
+[01/10 09:22:14     76s] eee: Metal Layer Id 8 is M8 
+[01/10 09:22:14     76s] eee: Metal Layer Id 9 is M9 
+[01/10 09:22:14     76s] eee: Metal Layer Id 10 is AP 
+[01/10 09:22:14     76s] eee: Via Layer Id 34 is VIA1 
+[01/10 09:22:14     76s] eee: Via Layer Id 35 is VIA2 
+[01/10 09:22:14     76s] eee: Via Layer Id 36 is VIA3 
+[01/10 09:22:14     76s] eee: Via Layer Id 37 is VIA4 
+[01/10 09:22:14     76s] eee: Via Layer Id 38 is VIA5 
+[01/10 09:22:14     76s] eee: Via Layer Id 39 is VIA6 
+[01/10 09:22:14     76s] eee: Via Layer Id 40 is VIA7 
+[01/10 09:22:14     76s] eee: Via Layer Id 41 is VIA8 
+[01/10 09:22:14     76s] eee: Via Layer Id 42 is RV 
+[01/10 09:22:14     76s] eee: Trim Metal Layers: { }
+[01/10 09:22:14     76s] Generating auto layer map file.
+[01/10 09:22:14     76s] eee:  lef metal Layer Id 1 mapped to tech Id 5 of Layer m1 
+[01/10 09:22:14     76s] eee:  lef via Layer Id 1 mapped to tech Id 6 of Layer via1 
+[01/10 09:22:14     76s] eee:  lef metal Layer Id 2 mapped to tech Id 7 of Layer m2 
+[01/10 09:22:14     76s] eee:  lef via Layer Id 2 mapped to tech Id 8 of Layer via2 
+[01/10 09:22:14     76s] eee:  lef metal Layer Id 3 mapped to tech Id 9 of Layer m3 
+[01/10 09:22:14     76s] eee:  lef via Layer Id 3 mapped to tech Id 10 of Layer via3 
+[01/10 09:22:14     76s] eee:  lef metal Layer Id 4 mapped to tech Id 11 of Layer m4 
+[01/10 09:22:14     76s] eee:  lef via Layer Id 4 mapped to tech Id 12 of Layer via4 
+[01/10 09:22:14     76s] eee:  lef metal Layer Id 5 mapped to tech Id 13 of Layer m5 
+[01/10 09:22:14     76s] eee:  lef via Layer Id 5 mapped to tech Id 14 of Layer via5 
+[01/10 09:22:14     76s] eee:  lef metal Layer Id 6 mapped to tech Id 15 of Layer m6 
+[01/10 09:22:14     76s] eee:  lef via Layer Id 6 mapped to tech Id 16 of Layer via6 
+[01/10 09:22:14     76s] eee:  lef metal Layer Id 7 mapped to tech Id 17 of Layer m7 
+[01/10 09:22:14     76s] eee:  lef via Layer Id 7 mapped to tech Id 18 of Layer via7 
+[01/10 09:22:14     76s] eee:  lef metal Layer Id 8 mapped to tech Id 19 of Layer m8 
+[01/10 09:22:14     76s] eee:  lef via Layer Id 8 mapped to tech Id 20 of Layer via8 
+[01/10 09:22:14     76s] eee:  lef metal Layer Id 9 mapped to tech Id 21 of Layer m9 
+[01/10 09:22:14     76s] eee:  lef via Layer Id 9 mapped to tech Id 22 of Layer rv 
+[01/10 09:22:14     76s] eee:  lef metal Layer Id 10 mapped to tech Id 23 of Layer ap 
+[01/10 09:22:14     76s] eee: Metal Layer Id 1 mapped to 5 
+[01/10 09:22:14     76s] eee: Via Layer Id 1 mapped to 6 
+[01/10 09:22:14     76s] eee: Metal Layer Id 2 mapped to 7 
+[01/10 09:22:14     76s] eee: Via Layer Id 2 mapped to 8 
+[01/10 09:22:14     76s] eee: Metal Layer Id 3 mapped to 9 
+[01/10 09:22:14     76s] eee: Via Layer Id 3 mapped to 10 
+[01/10 09:22:14     76s] eee: Metal Layer Id 4 mapped to 11 
+[01/10 09:22:14     76s] eee: Via Layer Id 4 mapped to 12 
+[01/10 09:22:14     76s] eee: Metal Layer Id 5 mapped to 13 
+[01/10 09:22:14     76s] eee: Via Layer Id 5 mapped to 14 
+[01/10 09:22:14     76s] eee: Metal Layer Id 6 mapped to 15 
+[01/10 09:22:14     76s] eee: Via Layer Id 6 mapped to 16 
+[01/10 09:22:14     76s] eee: Metal Layer Id 7 mapped to 17 
+[01/10 09:22:14     76s] eee: Via Layer Id 7 mapped to 18 
+[01/10 09:22:14     76s] eee: Metal Layer Id 8 mapped to 19 
+[01/10 09:22:14     76s] eee: Via Layer Id 8 mapped to 20 
+[01/10 09:22:14     76s] eee: Metal Layer Id 9 mapped to 21 
+[01/10 09:22:14     76s] eee: Via Layer Id 9 mapped to 22 
+[01/10 09:22:14     76s] eee: Metal Layer Id 10 mapped to 23 
+[01/10 09:22:16     77s] eee: pegPreRouteEnableSaveRestoreRCPatterns=1, retVal=1, doesAnyTechFileNeedExtraction=1
+[01/10 09:22:16     77s] eee: Reading patterns meta data.
+[01/10 09:22:16     77s] eee: Restore PreRoute Pattern Extraction data successful in header.
+[01/10 09:22:16     77s] Loading preRoute extracted patterns from file '/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postctsopt.inn.dat/pp_fir_u_0.techData.gz' ...
+[01/10 09:22:16     77s] eee: readViaRC viaRead=845, nrVia=845
+[01/10 09:22:16     77s] eee: isWireRCValid Validate checksum=8938840, FromFile=8938840eee: accessWirePatterns Pattern count=54756, FromFile=54756eee:  Checksum=8938840, FromFile=8938840
+[01/10 09:22:16     77s] eee: readViaRC viaRead=845, nrVia=845
+[01/10 09:22:16     77s] eee: isWireRCValid Validate checksum=17405472, FromFile=17405472eee: accessWirePatterns Pattern count=54756, FromFile=54756eee:  Checksum=17405472, FromFile=17405472
+[01/10 09:22:16     77s] eee: readViaRC viaRead=845, nrVia=845
+[01/10 09:22:16     77s] eee: isWireRCValid Validate checksum=25872104, FromFile=25872104eee: accessWirePatterns Pattern count=54756, FromFile=54756eee:  Checksum=25872104, FromFile=25872104
+[01/10 09:22:16     77s] eee: PatternAvail=1, PreRoutePatternReadFailed=0
+[01/10 09:22:16     77s] eee: Restore PreRoute Pattern Extraction data successful.
+[01/10 09:22:16     77s] Completed (cpu: 0:00:01.9 real: 0:00:03.0)
+[01/10 09:22:16     77s] Set Shrink Factor to 0.90000 (from technology file)
+[01/10 09:22:16     77s] Summary of Active RC-Corners : 
+[01/10 09:22:16     77s]  
+[01/10 09:22:16     77s]  Analysis View: view_wcl_slow
+[01/10 09:22:16     77s]     RC-Corner Name        : worst
+[01/10 09:22:16     77s]     RC-Corner Index       : 0
+[01/10 09:22:16     77s]     RC-Corner Temperature : 125 Celsius
+[01/10 09:22:16     77s]     RC-Corner Cap Table   : ''
+[01/10 09:22:16     77s]     RC-Corner PreRoute Res Factor         : 1
+[01/10 09:22:16     77s]     RC-Corner PreRoute Cap Factor         : 1
+[01/10 09:22:16     77s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[01/10 09:22:16     77s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[01/10 09:22:16     77s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[01/10 09:22:16     77s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[01/10 09:22:16     77s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[01/10 09:22:16     77s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+[01/10 09:22:16     77s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+[01/10 09:22:16     77s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[01/10 09:22:16     77s]     RC-Corner Technology file: '/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postctsopt.inn.dat/libs/mmmc/worst/qrcTechFile'
+[01/10 09:22:16     77s]  
+[01/10 09:22:16     77s]  Analysis View: view_wcl_fast
+[01/10 09:22:16     77s]     RC-Corner Name        : best
+[01/10 09:22:16     77s]     RC-Corner Index       : 1
+[01/10 09:22:16     77s]     RC-Corner Temperature : -40 Celsius
+[01/10 09:22:16     77s]     RC-Corner Cap Table   : ''
+[01/10 09:22:16     77s]     RC-Corner PreRoute Res Factor         : 1
+[01/10 09:22:16     77s]     RC-Corner PreRoute Cap Factor         : 1
+[01/10 09:22:16     77s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[01/10 09:22:16     77s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[01/10 09:22:16     77s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[01/10 09:22:16     77s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[01/10 09:22:16     77s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[01/10 09:22:16     77s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+[01/10 09:22:16     77s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+[01/10 09:22:16     77s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[01/10 09:22:16     77s]     RC-Corner Technology file: '/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postctsopt.inn.dat/libs/mmmc/best/qrcTechFile'
+[01/10 09:22:16     77s]  
+[01/10 09:22:16     77s]  Analysis View: view_wcl_typical
+[01/10 09:22:16     77s]     RC-Corner Name        : typical
+[01/10 09:22:16     77s]     RC-Corner Index       : 2
+[01/10 09:22:16     77s]     RC-Corner Temperature : 25 Celsius
+[01/10 09:22:16     77s]     RC-Corner Cap Table   : ''
+[01/10 09:22:16     77s]     RC-Corner PreRoute Res Factor         : 1
+[01/10 09:22:16     77s]     RC-Corner PreRoute Cap Factor         : 1
+[01/10 09:22:16     77s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[01/10 09:22:16     77s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[01/10 09:22:16     77s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[01/10 09:22:16     77s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[01/10 09:22:16     77s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[01/10 09:22:16     77s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+[01/10 09:22:16     77s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+[01/10 09:22:16     77s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[01/10 09:22:16     77s]     RC-Corner Technology file: '/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postctsopt.inn.dat/libs/mmmc/typical/qrcTechFile'
+[01/10 09:22:16     77s] Technology file '/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postctsopt.inn.dat/libs/mmmc/worst/qrcTechFile' associated with first view 'view_wcl_slow' will be used as the primary corner for the multi-corner extraction.
+[01/10 09:22:16     77s] eee: Trim Metal Layers: { }
+[01/10 09:22:16     77s] eee: RC Grid Memory allocated=72600
+[01/10 09:22:16     77s] eee: LayerId=1 widthSet size=1
+[01/10 09:22:16     77s] eee: LayerId=2 widthSet size=1
+[01/10 09:22:16     77s] eee: LayerId=3 widthSet size=1
+[01/10 09:22:16     77s] eee: LayerId=4 widthSet size=1
+[01/10 09:22:16     77s] eee: LayerId=5 widthSet size=1
+[01/10 09:22:16     77s] eee: LayerId=6 widthSet size=1
+[01/10 09:22:16     77s] eee: LayerId=7 widthSet size=1
+[01/10 09:22:16     77s] eee: LayerId=8 widthSet size=1
+[01/10 09:22:16     77s] eee: LayerId=9 widthSet size=1
+[01/10 09:22:16     77s] eee: LayerId=10 widthSet size=1
+[01/10 09:22:16     77s] eee: Total RC Grid memory=72600
+[01/10 09:22:16     77s] eee: Checksum of RC Grid density data read:(120 120) passed=1
+[01/10 09:22:16     77s] eee: Restore PreRoute RC Grid data successful.
+[01/10 09:22:16     77s] Restored RC grid for preRoute extraction.
+[01/10 09:22:16     77s] eee: Metal Layers Info:
+[01/10 09:22:16     77s] eee: L: M1 M2 M3 M4 M5 M6 M7 M8 M9 AP
+[01/10 09:22:16     77s] eee: W: 0.050000 0.050000 0.050000 0.050000 0.050000 0.050000 0.050000 0.400000 0.400000 2.000000
+[01/10 09:22:16     77s] eee: S: 0.050000 0.050000 0.050000 0.050000 0.050000 0.050000 0.050000 0.400000 0.400000 2.000000
+[01/10 09:22:16     77s] eee: pegSigSF=1.070000
+[01/10 09:22:16     77s] Initializing multi-corner resistance tables ...
+[01/10 09:22:16     77s] eee: ReadRoutingBlockageFactor status=1
+[01/10 09:22:16     77s] eee: Restore PreRoute Blockage data successful.
+[01/10 09:22:16     77s] eee: Reading Grid unit RC.
+[01/10 09:22:16     77s] eee: pesRestorePreRouteExtractionData::readRCGridUnitRC called for corner::worst
+[01/10 09:22:16     77s] eee: RCCorner in design data Name: worst Tech: /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postctsopt.inn.dat/libs/mmmc/worst/qrcTechFile 125.000000 1.000000 1.000000 
+[01/10 09:22:16     77s] eee: RCCorner in saved data Name: worst Tech: /software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcworst/qrcTechFile 125.000000 1.000000 1.000000 
+[01/10 09:22:16     77s] eee: RCCorner in design data Name: worst Tech: /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postctsopt.inn.dat/libs/mmmc/worst/qrcTechFile 125.000000 1.000000 1.000000 
+[01/10 09:22:16     77s] eee: RCCorner in saved data Name: best Tech: /software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcbest/qrcTechFile -40.000000 1.000000 1.000000 
+[01/10 09:22:16     77s] eee: RCCorner in design data Name: worst Tech: /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postctsopt.inn.dat/libs/mmmc/worst/qrcTechFile 125.000000 1.000000 1.000000 
+[01/10 09:22:16     77s] eee: RCCorner in saved data Name: typical Tech: /software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/nominal/qrcTechFile 25.000000 1.000000 1.000000 
+[01/10 09:22:16     77s] RC corner worst not found in the saved preRoute extraction data.
+[01/10 09:22:16     77s] eee: RCGridUnitRC data read failed.
+[01/10 09:22:16     77s] eee: pesRestorePreRouteExtractionData::readRCGridUnitRC called for corner::best
+[01/10 09:22:16     77s] eee: RCCorner in design data Name: best Tech: /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postctsopt.inn.dat/libs/mmmc/best/qrcTechFile -40.000000 1.000000 1.000000 
+[01/10 09:22:16     77s] eee: RCCorner in saved data Name: worst Tech: /software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcworst/qrcTechFile 125.000000 1.000000 1.000000 
+[01/10 09:22:16     77s] eee: RCCorner in design data Name: best Tech: /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postctsopt.inn.dat/libs/mmmc/best/qrcTechFile -40.000000 1.000000 1.000000 
+[01/10 09:22:16     77s] eee: RCCorner in saved data Name: best Tech: /software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcbest/qrcTechFile -40.000000 1.000000 1.000000 
+[01/10 09:22:16     77s] eee: RCCorner in design data Name: best Tech: /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postctsopt.inn.dat/libs/mmmc/best/qrcTechFile -40.000000 1.000000 1.000000 
+[01/10 09:22:16     77s] eee: RCCorner in saved data Name: typical Tech: /software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/nominal/qrcTechFile 25.000000 1.000000 1.000000 
+[01/10 09:22:16     77s] RC corner best not found in the saved preRoute extraction data.
+[01/10 09:22:16     77s] eee: RCGridUnitRC data read failed.
+[01/10 09:22:17     77s] eee: pesRestorePreRouteExtractionData::readRCGridUnitRC called for corner::typical
+[01/10 09:22:17     77s] eee: RCCorner in design data Name: typical Tech: /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postctsopt.inn.dat/libs/mmmc/typical/qrcTechFile 25.000000 1.000000 1.000000 
+[01/10 09:22:17     77s] eee: RCCorner in saved data Name: worst Tech: /software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcworst/qrcTechFile 125.000000 1.000000 1.000000 
+[01/10 09:22:17     77s] eee: RCCorner in design data Name: typical Tech: /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postctsopt.inn.dat/libs/mmmc/typical/qrcTechFile 25.000000 1.000000 1.000000 
+[01/10 09:22:17     77s] eee: RCCorner in saved data Name: best Tech: /software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcbest/qrcTechFile -40.000000 1.000000 1.000000 
+[01/10 09:22:17     77s] eee: RCCorner in design data Name: typical Tech: /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postctsopt.inn.dat/libs/mmmc/typical/qrcTechFile 25.000000 1.000000 1.000000 
+[01/10 09:22:17     77s] eee: RCCorner in saved data Name: typical Tech: /software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/nominal/qrcTechFile 25.000000 1.000000 1.000000 
+[01/10 09:22:17     77s] RC corner typical not found in the saved preRoute extraction data.
+[01/10 09:22:17     77s] eee: RCGridUnitRC data read failed.
+[01/10 09:22:17     77s] eee: Number of RC corner to be extracted=6
+[01/10 09:22:17     77s] eee: l=1 avDens=0.034467 usedTrk=418.770108 availTrk=12150.000000 sigTrk=418.770108
+[01/10 09:22:17     77s] eee: l=2 avDens=0.247743 usedTrk=11237.619565 availTrk=45360.000000 sigTrk=11237.619565
+[01/10 09:22:17     77s] eee: l=3 avDens=0.194012 usedTrk=8119.385294 availTrk=41850.000000 sigTrk=8119.385294
+[01/10 09:22:17     77s] eee: l=4 avDens=0.064767 usedTrk=2658.026670 availTrk=41040.000000 sigTrk=2658.026670
+[01/10 09:22:17     77s] eee: l=5 avDens=0.032492 usedTrk=587.774723 availTrk=18090.000000 sigTrk=587.774723
+[01/10 09:22:17     77s] eee: l=6 avDens=0.008789 usedTrk=29.266667 availTrk=3330.000000 sigTrk=29.266667
+[01/10 09:22:17     77s] eee: l=7 avDens=0.001510 usedTrk=19.294445 availTrk=12780.000000 sigTrk=19.294445
+[01/10 09:22:17     77s] eee: l=8 avDens=0.080898 usedTrk=155.627779 availTrk=1923.750000 sigTrk=155.627779
+[01/10 09:22:17     77s] eee: l=9 avDens=0.098506 usedTrk=179.527779 availTrk=1822.500000 sigTrk=179.527779
+[01/10 09:22:17     77s] eee: l=10 avDens=0.044444 usedTrk=0.088889 availTrk=2.000000 sigTrk=0.088889
+[01/10 09:22:17     77s] {RT worst 0 10 10 {8 0} 1}
+[01/10 09:22:17     77s] eee: LAM: n=32 LLS=2-3 HLS=3-5 rDens=0.225205 uaWl=0.000000 uaWlH=0.000000 aWlH=0.000000 lMod=0 pMax=0.817800 pMod=83 wcR=0.681100 newSi=0.001900 wHLS=1.747590 siPrev=0 viaL=0.000000
+[01/10 09:22:17     77s] Default value for postRoute extraction mode's effortLevel (-effortLevel option of setExtractRCMode) changed to 'medium'.
+[01/10 09:22:17     77s] Restore PreRoute all RC Grid data successful.Start generating vias ..
+[01/10 09:22:17     77s] #WARNING (NRDB-317) Threshold min width 0.180000 is >= max width 0.180000 for minimumcut 2 for LAYER M7
+[01/10 09:22:17     77s] ### import design signature (1): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 inst_orient=1 via=1319715003
+[01/10 09:22:17     77s] Extracting standard cell pins and blockage ...... 
+[01/10 09:22:17     77s] Pin and blockage extraction finished
+[01/10 09:22:17     77s] Via generation completed successfully.
+[01/10 09:22:17     77s] eee: __QRC_SADV_USE_LE__ is set 0
+[01/10 09:22:19     79s] eee: Metal Layer Id 1 is M1 
+[01/10 09:22:19     79s] eee: Metal Layer Id 2 is M2 
+[01/10 09:22:19     79s] eee: Metal Layer Id 3 is M3 
+[01/10 09:22:19     79s] eee: Metal Layer Id 4 is M4 
+[01/10 09:22:19     79s] eee: Metal Layer Id 5 is M5 
+[01/10 09:22:19     79s] eee: Metal Layer Id 6 is M6 
+[01/10 09:22:19     79s] eee: Metal Layer Id 7 is M7 
+[01/10 09:22:19     79s] eee: Metal Layer Id 8 is M8 
+[01/10 09:22:19     79s] eee: Metal Layer Id 9 is M9 
+[01/10 09:22:19     79s] eee: Metal Layer Id 10 is AP 
+[01/10 09:22:19     79s] eee: Via Layer Id 34 is VIA1 
+[01/10 09:22:19     79s] eee: Via Layer Id 35 is VIA2 
+[01/10 09:22:19     79s] eee: Via Layer Id 36 is VIA3 
+[01/10 09:22:19     79s] eee: Via Layer Id 37 is VIA4 
+[01/10 09:22:19     79s] eee: Via Layer Id 38 is VIA5 
+[01/10 09:22:19     79s] eee: Via Layer Id 39 is VIA6 
+[01/10 09:22:19     79s] eee: Via Layer Id 40 is VIA7 
+[01/10 09:22:19     79s] eee: Via Layer Id 41 is VIA8 
+[01/10 09:22:19     79s] eee: Via Layer Id 42 is RV 
+[01/10 09:22:19     79s] eee: Trim Metal Layers: { }
+[01/10 09:22:19     79s] Generating auto layer map file.
+[01/10 09:22:19     79s] eee:  lef metal Layer Id 1 mapped to tech Id 5 of Layer m1 
+[01/10 09:22:19     79s] eee:  lef via Layer Id 1 mapped to tech Id 6 of Layer via1 
+[01/10 09:22:19     79s] eee:  lef metal Layer Id 2 mapped to tech Id 7 of Layer m2 
+[01/10 09:22:19     79s] eee:  lef via Layer Id 2 mapped to tech Id 8 of Layer via2 
+[01/10 09:22:19     79s] eee:  lef metal Layer Id 3 mapped to tech Id 9 of Layer m3 
+[01/10 09:22:19     79s] eee:  lef via Layer Id 3 mapped to tech Id 10 of Layer via3 
+[01/10 09:22:19     79s] eee:  lef metal Layer Id 4 mapped to tech Id 11 of Layer m4 
+[01/10 09:22:19     79s] eee:  lef via Layer Id 4 mapped to tech Id 12 of Layer via4 
+[01/10 09:22:19     79s] eee:  lef metal Layer Id 5 mapped to tech Id 13 of Layer m5 
+[01/10 09:22:19     79s] eee:  lef via Layer Id 5 mapped to tech Id 14 of Layer via5 
+[01/10 09:22:19     79s] eee:  lef metal Layer Id 6 mapped to tech Id 15 of Layer m6 
+[01/10 09:22:19     79s] eee:  lef via Layer Id 6 mapped to tech Id 16 of Layer via6 
+[01/10 09:22:19     79s] eee:  lef metal Layer Id 7 mapped to tech Id 17 of Layer m7 
+[01/10 09:22:19     79s] eee:  lef via Layer Id 7 mapped to tech Id 18 of Layer via7 
+[01/10 09:22:19     79s] eee:  lef metal Layer Id 8 mapped to tech Id 19 of Layer m8 
+[01/10 09:22:19     79s] eee:  lef via Layer Id 8 mapped to tech Id 20 of Layer via8 
+[01/10 09:22:19     79s] eee:  lef metal Layer Id 9 mapped to tech Id 21 of Layer m9 
+[01/10 09:22:19     79s] eee:  lef via Layer Id 9 mapped to tech Id 22 of Layer rv 
+[01/10 09:22:19     79s] eee:  lef metal Layer Id 10 mapped to tech Id 23 of Layer ap 
+[01/10 09:22:19     79s] eee: Metal Layer Id 1 mapped to 5 
+[01/10 09:22:19     79s] eee: Via Layer Id 1 mapped to 6 
+[01/10 09:22:19     79s] eee: Metal Layer Id 2 mapped to 7 
+[01/10 09:22:19     79s] eee: Via Layer Id 2 mapped to 8 
+[01/10 09:22:19     79s] eee: Metal Layer Id 3 mapped to 9 
+[01/10 09:22:19     79s] eee: Via Layer Id 3 mapped to 10 
+[01/10 09:22:19     79s] eee: Metal Layer Id 4 mapped to 11 
+[01/10 09:22:19     79s] eee: Via Layer Id 4 mapped to 12 
+[01/10 09:22:19     79s] eee: Metal Layer Id 5 mapped to 13 
+[01/10 09:22:19     79s] eee: Via Layer Id 5 mapped to 14 
+[01/10 09:22:19     79s] eee: Metal Layer Id 6 mapped to 15 
+[01/10 09:22:19     79s] eee: Via Layer Id 6 mapped to 16 
+[01/10 09:22:19     79s] eee: Metal Layer Id 7 mapped to 17 
+[01/10 09:22:19     79s] eee: Via Layer Id 7 mapped to 18 
+[01/10 09:22:19     79s] eee: Metal Layer Id 8 mapped to 19 
+[01/10 09:22:19     79s] eee: Via Layer Id 8 mapped to 20 
+[01/10 09:22:19     79s] eee: Metal Layer Id 9 mapped to 21 
+[01/10 09:22:19     79s] eee: Via Layer Id 9 mapped to 22 
+[01/10 09:22:19     79s] eee: Metal Layer Id 10 mapped to 23 
+[01/10 09:22:19     79s] eee: pegPreRouteEnableSaveRestoreRCPatterns=1, retVal=1, doesAnyTechFileNeedExtraction=1
+[01/10 09:22:19     79s] eee: Reading patterns meta data.
+[01/10 09:22:19     79s] eee: PatternAvail=0, PreRoutePatternReadFailed=3
+[01/10 09:22:19     79s] eee: Restore PreRoute Pattern Extraction data failed.
+[01/10 09:22:19     79s] Initializing preRoute extraction patterns for new vias... eee: Metal Layer Id 1 is M1 
+[01/10 09:22:21     80s] eee: Metal Layer Id 2 is M2 
+[01/10 09:22:21     80s] eee: Metal Layer Id 3 is M3 
+[01/10 09:22:21     80s] eee: Metal Layer Id 4 is M4 
+[01/10 09:22:21     80s] eee: Metal Layer Id 5 is M5 
+[01/10 09:22:21     80s] eee: Metal Layer Id 6 is M6 
+[01/10 09:22:21     80s] eee: Metal Layer Id 7 is M7 
+[01/10 09:22:21     80s] eee: Metal Layer Id 8 is M8 
+[01/10 09:22:21     80s] eee: Metal Layer Id 9 is M9 
+[01/10 09:22:21     80s] eee: Metal Layer Id 10 is AP 
+[01/10 09:22:21     80s] eee: Via Layer Id 34 is VIA1 
+[01/10 09:22:21     80s] eee: Via Layer Id 35 is VIA2 
+[01/10 09:22:21     80s] eee: Via Layer Id 36 is VIA3 
+[01/10 09:22:21     80s] eee: Via Layer Id 37 is VIA4 
+[01/10 09:22:21     80s] eee: Via Layer Id 38 is VIA5 
+[01/10 09:22:21     80s] eee: Via Layer Id 39 is VIA6 
+[01/10 09:22:21     80s] eee: Via Layer Id 40 is VIA7 
+[01/10 09:22:21     80s] eee: Via Layer Id 41 is VIA8 
+[01/10 09:22:21     80s] eee: Via Layer Id 42 is RV 
+[01/10 09:22:21     80s] eee: Trim Metal Layers: { }
+[01/10 09:22:21     80s] Generating auto layer map file.
+[01/10 09:22:21     80s] eee:  lef metal Layer Id 1 mapped to tech Id 5 of Layer m1 
+[01/10 09:22:21     80s] eee:  lef via Layer Id 1 mapped to tech Id 6 of Layer via1 
+[01/10 09:22:21     80s] eee:  lef metal Layer Id 2 mapped to tech Id 7 of Layer m2 
+[01/10 09:22:21     80s] eee:  lef via Layer Id 2 mapped to tech Id 8 of Layer via2 
+[01/10 09:22:21     80s] eee:  lef metal Layer Id 3 mapped to tech Id 9 of Layer m3 
+[01/10 09:22:21     80s] eee:  lef via Layer Id 3 mapped to tech Id 10 of Layer via3 
+[01/10 09:22:21     80s] eee:  lef metal Layer Id 4 mapped to tech Id 11 of Layer m4 
+[01/10 09:22:21     80s] eee:  lef via Layer Id 4 mapped to tech Id 12 of Layer via4 
+[01/10 09:22:21     80s] eee:  lef metal Layer Id 5 mapped to tech Id 13 of Layer m5 
+[01/10 09:22:21     80s] eee:  lef via Layer Id 5 mapped to tech Id 14 of Layer via5 
+[01/10 09:22:21     80s] eee:  lef metal Layer Id 6 mapped to tech Id 15 of Layer m6 
+[01/10 09:22:21     80s] eee:  lef via Layer Id 6 mapped to tech Id 16 of Layer via6 
+[01/10 09:22:21     80s] eee:  lef metal Layer Id 7 mapped to tech Id 17 of Layer m7 
+[01/10 09:22:21     80s] eee:  lef via Layer Id 7 mapped to tech Id 18 of Layer via7 
+[01/10 09:22:21     80s] eee:  lef metal Layer Id 8 mapped to tech Id 19 of Layer m8 
+[01/10 09:22:21     80s] eee:  lef via Layer Id 8 mapped to tech Id 20 of Layer via8 
+[01/10 09:22:21     80s] eee:  lef metal Layer Id 9 mapped to tech Id 21 of Layer m9 
+[01/10 09:22:21     80s] eee:  lef via Layer Id 9 mapped to tech Id 22 of Layer rv 
+[01/10 09:22:21     80s] eee:  lef metal Layer Id 10 mapped to tech Id 23 of Layer ap 
+[01/10 09:22:21     80s] eee: Metal Layer Id 1 mapped to 5 
+[01/10 09:22:21     80s] eee: Via Layer Id 1 mapped to 6 
+[01/10 09:22:21     80s] eee: Metal Layer Id 2 mapped to 7 
+[01/10 09:22:21     80s] eee: Via Layer Id 2 mapped to 8 
+[01/10 09:22:21     80s] eee: Metal Layer Id 3 mapped to 9 
+[01/10 09:22:21     80s] eee: Via Layer Id 3 mapped to 10 
+[01/10 09:22:21     80s] eee: Metal Layer Id 4 mapped to 11 
+[01/10 09:22:21     80s] eee: Via Layer Id 4 mapped to 12 
+[01/10 09:22:21     80s] eee: Metal Layer Id 5 mapped to 13 
+[01/10 09:22:21     80s] eee: Via Layer Id 5 mapped to 14 
+[01/10 09:22:21     80s] eee: Metal Layer Id 6 mapped to 15 
+[01/10 09:22:21     80s] eee: Via Layer Id 6 mapped to 16 
+[01/10 09:22:21     80s] eee: Metal Layer Id 7 mapped to 17 
+[01/10 09:22:21     80s] eee: Via Layer Id 7 mapped to 18 
+[01/10 09:22:21     80s] eee: Metal Layer Id 8 mapped to 19 
+[01/10 09:22:21     80s] eee: Via Layer Id 8 mapped to 20 
+[01/10 09:22:21     80s] eee: Metal Layer Id 9 mapped to 21 
+[01/10 09:22:21     80s] eee: Via Layer Id 9 mapped to 22 
+[01/10 09:22:21     80s] eee: Metal Layer Id 10 mapped to 23 
+[01/10 09:22:27     82s] eee: Metal Layer Id 1 is M1 
+[01/10 09:22:27     82s] eee: Metal Layer Id 2 is M2 
+[01/10 09:22:27     82s] eee: Metal Layer Id 3 is M3 
+[01/10 09:22:27     82s] eee: Metal Layer Id 4 is M4 
+[01/10 09:22:27     82s] eee: Metal Layer Id 5 is M5 
+[01/10 09:22:27     82s] eee: Metal Layer Id 6 is M6 
+[01/10 09:22:27     82s] eee: Metal Layer Id 7 is M7 
+[01/10 09:22:27     82s] eee: Metal Layer Id 8 is M8 
+[01/10 09:22:27     82s] eee: Metal Layer Id 9 is M9 
+[01/10 09:22:27     82s] eee: Metal Layer Id 10 is AP 
+[01/10 09:22:27     82s] eee: Via Layer Id 34 is VIA1 
+[01/10 09:22:27     82s] eee: Via Layer Id 35 is VIA2 
+[01/10 09:22:27     82s] eee: Via Layer Id 36 is VIA3 
+[01/10 09:22:27     82s] eee: Via Layer Id 37 is VIA4 
+[01/10 09:22:27     82s] eee: Via Layer Id 38 is VIA5 
+[01/10 09:22:27     82s] eee: Via Layer Id 39 is VIA6 
+[01/10 09:22:27     82s] eee: Via Layer Id 40 is VIA7 
+[01/10 09:22:27     82s] eee: Via Layer Id 41 is VIA8 
+[01/10 09:22:27     82s] eee: Via Layer Id 42 is RV 
+[01/10 09:22:27     82s] eee: Trim Metal Layers: { }
+[01/10 09:22:27     82s] Generating auto layer map file.
+[01/10 09:22:27     82s] eee:  lef metal Layer Id 1 mapped to tech Id 5 of Layer m1 
+[01/10 09:22:27     82s] eee:  lef via Layer Id 1 mapped to tech Id 6 of Layer via1 
+[01/10 09:22:27     82s] eee:  lef metal Layer Id 2 mapped to tech Id 7 of Layer m2 
+[01/10 09:22:27     82s] eee:  lef via Layer Id 2 mapped to tech Id 8 of Layer via2 
+[01/10 09:22:27     82s] eee:  lef metal Layer Id 3 mapped to tech Id 9 of Layer m3 
+[01/10 09:22:27     82s] eee:  lef via Layer Id 3 mapped to tech Id 10 of Layer via3 
+[01/10 09:22:27     82s] eee:  lef metal Layer Id 4 mapped to tech Id 11 of Layer m4 
+[01/10 09:22:27     82s] eee:  lef via Layer Id 4 mapped to tech Id 12 of Layer via4 
+[01/10 09:22:27     82s] eee:  lef metal Layer Id 5 mapped to tech Id 13 of Layer m5 
+[01/10 09:22:27     82s] eee:  lef via Layer Id 5 mapped to tech Id 14 of Layer via5 
+[01/10 09:22:27     82s] eee:  lef metal Layer Id 6 mapped to tech Id 15 of Layer m6 
+[01/10 09:22:27     82s] eee:  lef via Layer Id 6 mapped to tech Id 16 of Layer via6 
+[01/10 09:22:27     82s] eee:  lef metal Layer Id 7 mapped to tech Id 17 of Layer m7 
+[01/10 09:22:27     82s] eee:  lef via Layer Id 7 mapped to tech Id 18 of Layer via7 
+[01/10 09:22:27     82s] eee:  lef metal Layer Id 8 mapped to tech Id 19 of Layer m8 
+[01/10 09:22:27     82s] eee:  lef via Layer Id 8 mapped to tech Id 20 of Layer via8 
+[01/10 09:22:27     82s] eee:  lef metal Layer Id 9 mapped to tech Id 21 of Layer m9 
+[01/10 09:22:27     82s] eee:  lef via Layer Id 9 mapped to tech Id 22 of Layer rv 
+[01/10 09:22:27     82s] eee:  lef metal Layer Id 10 mapped to tech Id 23 of Layer ap 
+[01/10 09:22:27     82s] eee: Metal Layer Id 1 mapped to 5 
+[01/10 09:22:27     82s] eee: Via Layer Id 1 mapped to 6 
+[01/10 09:22:27     82s] eee: Metal Layer Id 2 mapped to 7 
+[01/10 09:22:27     82s] eee: Via Layer Id 2 mapped to 8 
+[01/10 09:22:27     82s] eee: Metal Layer Id 3 mapped to 9 
+[01/10 09:22:27     82s] eee: Via Layer Id 3 mapped to 10 
+[01/10 09:22:27     82s] eee: Metal Layer Id 4 mapped to 11 
+[01/10 09:22:27     82s] eee: Via Layer Id 4 mapped to 12 
+[01/10 09:22:27     82s] eee: Metal Layer Id 5 mapped to 13 
+[01/10 09:22:27     82s] eee: Via Layer Id 5 mapped to 14 
+[01/10 09:22:27     82s] eee: Metal Layer Id 6 mapped to 15 
+[01/10 09:22:27     82s] eee: Via Layer Id 6 mapped to 16 
+[01/10 09:22:27     82s] eee: Metal Layer Id 7 mapped to 17 
+[01/10 09:22:27     82s] eee: Via Layer Id 7 mapped to 18 
+[01/10 09:22:27     82s] eee: Metal Layer Id 8 mapped to 19 
+[01/10 09:22:27     82s] eee: Via Layer Id 8 mapped to 20 
+[01/10 09:22:27     82s] eee: Metal Layer Id 9 mapped to 21 
+[01/10 09:22:27     82s] eee: Via Layer Id 9 mapped to 22 
+[01/10 09:22:27     82s] eee: Metal Layer Id 10 mapped to 23 
+[01/10 09:22:32     84s] eee: Metal Layer Id 1 is M1 
+[01/10 09:22:32     84s] eee: Metal Layer Id 2 is M2 
+[01/10 09:22:32     84s] eee: Metal Layer Id 3 is M3 
+[01/10 09:22:32     84s] eee: Metal Layer Id 4 is M4 
+[01/10 09:22:32     84s] eee: Metal Layer Id 5 is M5 
+[01/10 09:22:32     84s] eee: Metal Layer Id 6 is M6 
+[01/10 09:22:32     84s] eee: Metal Layer Id 7 is M7 
+[01/10 09:22:32     84s] eee: Metal Layer Id 8 is M8 
+[01/10 09:22:32     84s] eee: Metal Layer Id 9 is M9 
+[01/10 09:22:32     84s] eee: Metal Layer Id 10 is AP 
+[01/10 09:22:32     84s] eee: Via Layer Id 34 is VIA1 
+[01/10 09:22:32     84s] eee: Via Layer Id 35 is VIA2 
+[01/10 09:22:32     84s] eee: Via Layer Id 36 is VIA3 
+[01/10 09:22:32     84s] eee: Via Layer Id 37 is VIA4 
+[01/10 09:22:32     84s] eee: Via Layer Id 38 is VIA5 
+[01/10 09:22:32     84s] eee: Via Layer Id 39 is VIA6 
+[01/10 09:22:32     84s] eee: Via Layer Id 40 is VIA7 
+[01/10 09:22:32     84s] eee: Via Layer Id 41 is VIA8 
+[01/10 09:22:32     84s] eee: Via Layer Id 42 is RV 
+[01/10 09:22:32     84s] eee: Trim Metal Layers: { }
+[01/10 09:22:32     84s] Generating auto layer map file.
+[01/10 09:22:32     84s] eee:  lef metal Layer Id 1 mapped to tech Id 5 of Layer m1 
+[01/10 09:22:32     84s] eee:  lef via Layer Id 1 mapped to tech Id 6 of Layer via1 
+[01/10 09:22:32     84s] eee:  lef metal Layer Id 2 mapped to tech Id 7 of Layer m2 
+[01/10 09:22:32     84s] eee:  lef via Layer Id 2 mapped to tech Id 8 of Layer via2 
+[01/10 09:22:32     84s] eee:  lef metal Layer Id 3 mapped to tech Id 9 of Layer m3 
+[01/10 09:22:32     84s] eee:  lef via Layer Id 3 mapped to tech Id 10 of Layer via3 
+[01/10 09:22:32     84s] eee:  lef metal Layer Id 4 mapped to tech Id 11 of Layer m4 
+[01/10 09:22:32     84s] eee:  lef via Layer Id 4 mapped to tech Id 12 of Layer via4 
+[01/10 09:22:32     84s] eee:  lef metal Layer Id 5 mapped to tech Id 13 of Layer m5 
+[01/10 09:22:32     84s] eee:  lef via Layer Id 5 mapped to tech Id 14 of Layer via5 
+[01/10 09:22:32     84s] eee:  lef metal Layer Id 6 mapped to tech Id 15 of Layer m6 
+[01/10 09:22:32     84s] eee:  lef via Layer Id 6 mapped to tech Id 16 of Layer via6 
+[01/10 09:22:32     84s] eee:  lef metal Layer Id 7 mapped to tech Id 17 of Layer m7 
+[01/10 09:22:32     84s] eee:  lef via Layer Id 7 mapped to tech Id 18 of Layer via7 
+[01/10 09:22:32     84s] eee:  lef metal Layer Id 8 mapped to tech Id 19 of Layer m8 
+[01/10 09:22:32     84s] eee:  lef via Layer Id 8 mapped to tech Id 20 of Layer via8 
+[01/10 09:22:32     84s] eee:  lef metal Layer Id 9 mapped to tech Id 21 of Layer m9 
+[01/10 09:22:32     84s] eee:  lef via Layer Id 9 mapped to tech Id 22 of Layer rv 
+[01/10 09:22:32     84s] eee:  lef metal Layer Id 10 mapped to tech Id 23 of Layer ap 
+[01/10 09:22:32     84s] eee: Metal Layer Id 1 mapped to 5 
+[01/10 09:22:32     84s] eee: Via Layer Id 1 mapped to 6 
+[01/10 09:22:32     84s] eee: Metal Layer Id 2 mapped to 7 
+[01/10 09:22:32     84s] eee: Via Layer Id 2 mapped to 8 
+[01/10 09:22:32     84s] eee: Metal Layer Id 3 mapped to 9 
+[01/10 09:22:32     84s] eee: Via Layer Id 3 mapped to 10 
+[01/10 09:22:32     84s] eee: Metal Layer Id 4 mapped to 11 
+[01/10 09:22:32     84s] eee: Via Layer Id 4 mapped to 12 
+[01/10 09:22:32     84s] eee: Metal Layer Id 5 mapped to 13 
+[01/10 09:22:32     84s] eee: Via Layer Id 5 mapped to 14 
+[01/10 09:22:32     84s] eee: Metal Layer Id 6 mapped to 15 
+[01/10 09:22:32     84s] eee: Via Layer Id 6 mapped to 16 
+[01/10 09:22:32     84s] eee: Metal Layer Id 7 mapped to 17 
+[01/10 09:22:32     84s] eee: Via Layer Id 7 mapped to 18 
+[01/10 09:22:32     84s] eee: Metal Layer Id 8 mapped to 19 
+[01/10 09:22:32     84s] eee: Via Layer Id 8 mapped to 20 
+[01/10 09:22:32     84s] eee: Metal Layer Id 9 mapped to 21 
+[01/10 09:22:32     84s] eee: Via Layer Id 9 mapped to 22 
+[01/10 09:22:32     84s] eee: Metal Layer Id 10 mapped to 23 
+[01/10 09:22:36     85s] Completed (cpu: 0:00:07.9 real: 0:00:19.0)
+[01/10 09:22:36     86s] % Begin Load power constraints ... (date=01/10 09:22:36, mem=1746.2M)
+[01/10 09:22:36     86s] % End Load power constraints ... (date=01/10 09:22:36, total cpu=0:00:00.1, real=0:00:00.0, peak res=1752.8M, current mem=1752.8M)
+[01/10 09:22:36     86s] % Begin load AAE data ... (date=01/10 09:22:36, mem=1796.8M)
+[01/10 09:22:37     87s] **WARN: (IMPESI-3505):	setDelayCalMode -eng_enablePrePlacedFlow false (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
+[01/10 09:22:37     87s] AAE DB initialization (MEM=1889.39 CPU=0:00:00.0 REAL=0:00:00.0) 
+[01/10 09:22:37     87s] % End load AAE data ... (date=01/10 09:22:37, total cpu=0:00:00.8, real=0:00:01.0, peak res=1807.5M, current mem=1807.5M)
+[01/10 09:22:37     87s] Restoring CCOpt config...
+[01/10 09:22:37     87s] 
+[01/10 09:22:37     87s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[01/10 09:22:37     87s] Summary for sequential cells identification: 
+[01/10 09:22:37     87s]   Identified SBFF number: 92
+[01/10 09:22:37     87s]   Identified MBFF number: 0
+[01/10 09:22:37     87s]   Identified SB Latch number: 0
+[01/10 09:22:37     87s]   Identified MB Latch number: 0
+[01/10 09:22:37     87s]   Not identified SBFF number: 12
+[01/10 09:22:37     87s]   Not identified MBFF number: 0
+[01/10 09:22:37     87s]   Not identified SB Latch number: 0
+[01/10 09:22:37     87s]   Not identified MB Latch number: 0
+[01/10 09:22:37     87s]   Number of sequential cells which are not FFs: 132
+[01/10 09:22:37     87s]  Visiting view : view_wcl_slow
+[01/10 09:22:37     87s]    : PowerDomain = none : Weighted F : unweighted  = 5.10 (1.000) with rcCorner = 0
+[01/10 09:22:37     87s]    : PowerDomain = none : Weighted F : unweighted  = 4.80 (1.000) with rcCorner = -1
+[01/10 09:22:37     87s]  Visiting view : view_wcl_fast
+[01/10 09:22:37     87s]    : PowerDomain = none : Weighted F : unweighted  = 3.30 (1.000) with rcCorner = 1
+[01/10 09:22:37     87s]    : PowerDomain = none : Weighted F : unweighted  = 3.00 (1.000) with rcCorner = -1
+[01/10 09:22:37     87s]  Visiting view : view_wcl_typical
+[01/10 09:22:37     87s]    : PowerDomain = none : Weighted F : unweighted  = 4.00 (1.000) with rcCorner = 2
+[01/10 09:22:37     87s]    : PowerDomain = none : Weighted F : unweighted  = 3.70 (1.000) with rcCorner = -1
+[01/10 09:22:37     87s]  Visiting view : view_wcl_slow
+[01/10 09:22:37     87s]    : PowerDomain = none : Weighted F : unweighted  = 5.10 (1.000) with rcCorner = 0
+[01/10 09:22:37     87s]    : PowerDomain = none : Weighted F : unweighted  = 4.80 (1.000) with rcCorner = -1
+[01/10 09:22:37     87s]  Visiting view : view_wcl_fast
+[01/10 09:22:37     87s]    : PowerDomain = none : Weighted F : unweighted  = 3.30 (1.000) with rcCorner = 1
+[01/10 09:22:37     87s]    : PowerDomain = none : Weighted F : unweighted  = 3.00 (1.000) with rcCorner = -1
+[01/10 09:22:37     87s]  Visiting view : view_wcl_typical
+[01/10 09:22:37     87s]    : PowerDomain = none : Weighted F : unweighted  = 4.00 (1.000) with rcCorner = 2
+[01/10 09:22:37     87s]    : PowerDomain = none : Weighted F : unweighted  = 3.70 (1.000) with rcCorner = -1
+[01/10 09:22:37     87s] 
+[01/10 09:22:37     87s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[01/10 09:22:37     87s]   Extracting original clock gating for clk...
+[01/10 09:22:37     87s]     clock_tree clk contains 3606 sinks and 0 clock gates.
+[01/10 09:22:37     87s]   Extracting original clock gating for clk done.
+[01/10 09:22:37     87s]   The skew group clk/functional_wcl_typical was created. It contains 3606 sinks and 1 sources.
+[01/10 09:22:37     87s]   The skew group clk/functional_wcl_typical was created. It contains 3606 sinks and 1 sources.
+[01/10 09:22:37     87s] Restoring CCOpt config done.
+[01/10 09:22:38     87s] 
+[01/10 09:22:38     87s] TimeStamp Deleting Cell Server Begin ...
+[01/10 09:22:38     87s] 
+[01/10 09:22:38     87s] TimeStamp Deleting Cell Server End ...
+[01/10 09:22:38     87s] 
+[01/10 09:22:38     87s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[01/10 09:22:38     88s] Summary for sequential cells identification: 
+[01/10 09:22:38     88s]   Identified SBFF number: 92
+[01/10 09:22:38     88s]   Identified MBFF number: 0
+[01/10 09:22:38     88s]   Identified SB Latch number: 0
+[01/10 09:22:38     88s]   Identified MB Latch number: 0
+[01/10 09:22:38     88s]   Not identified SBFF number: 12
+[01/10 09:22:38     88s]   Not identified MBFF number: 0
+[01/10 09:22:38     88s]   Not identified SB Latch number: 0
+[01/10 09:22:38     88s]   Not identified MB Latch number: 0
+[01/10 09:22:38     88s]   Number of sequential cells which are not FFs: 132
+[01/10 09:22:38     88s] Total number of combinational cells: 749
+[01/10 09:22:38     88s] Total number of sequential cells: 236
+[01/10 09:22:38     88s] Total number of tristate cells: 0
+[01/10 09:22:38     88s] Total number of level shifter cells: 0
+[01/10 09:22:38     88s] Total number of power gating cells: 0
+[01/10 09:22:38     88s] Total number of isolation cells: 0
+[01/10 09:22:38     88s] Total number of power switch cells: 0
+[01/10 09:22:38     88s] Total number of pulse generator cells: 0
+[01/10 09:22:38     88s] Total number of always on buffers: 0
+[01/10 09:22:38     88s] Total number of retention cells: 0
+[01/10 09:22:38     88s] Total number of physical cells: 18
+[01/10 09:22:38     88s] List of usable buffers: BUFH_X11M_A9PP140ZTL_C30 BUFH_X13M_A9PP140ZTL_C30 BUFH_X16M_A9PP140ZTL_C30 BUFH_X1M_A9PP140ZTL_C30 BUFH_X1P2M_A9PP140ZTL_C30 BUFH_X1P4M_A9PP140ZTL_C30 BUFH_X2M_A9PP140ZTL_C30 BUFH_X1P7M_A9PP140ZTL_C30 BUFH_X2P5M_A9PP140ZTL_C30 BUFH_X3M_A9PP140ZTL_C30 BUFH_X4M_A9PP140ZTL_C30 BUFH_X3P5M_A9PP140ZTL_C30 BUFH_X5M_A9PP140ZTL_C30 BUFH_X6M_A9PP140ZTL_C30 BUFH_X7P5M_A9PP140ZTL_C30 BUFH_X9M_A9PP140ZTL_C30 BUF_X0P5B_A9PP140ZTL_C30 BUF_X0P5M_A9PP140ZTL_C30 BUF_X0P7B_A9PP140ZTL_C30 BUF_X0P7M_A9PP140ZTL_C30 BUF_X0P8M_A9PP140ZTL_C30 BUF_X0P8B_A9PP140ZTL_C30 BUF_X11B_A9PP140ZTL_C30 BUF_X11B_A9PP140ZTL_C30_XGCAP11 BUF_X11M_A9PP140ZTL_C30 BUF_X13B_A9PP140ZTL_C30 BUF_X11M_A9PP140ZTL_C30_XGCAP11 BUF_X13B_A9PP140ZTL_C30_XGCAP13 BUF_X13M_A9PP140ZTL_C30 BUF_X16B_A9PP140ZTL_C30 BUF_X13M_A9PP140ZTL_C30_XGCAP13 BUF_X16B_A9PP140ZTL_C30_XGCAP16 BUF_X16M_A9PP140ZTL_C30 BUF_X16M_A9PP140ZTL_C30_XGCAP16 BUF_X1M_A9PP140ZTL_C30 BUF_X1B_A9PP140ZTL_C30 BUF_X1P2B_A9PP140ZTL_C30 BUF_X1P2M_A9PP140ZTL_C30 BUF_X1P4B_A9PP140ZTL_C30 BUF_X1P4M_A9PP140ZTL_C30 BUF_X1P7B_A9PP140ZTL_C30 BUF_X1P7M_A9PP140ZTL_C30 BUF_X2M_A9PP140ZTL_C30 BUF_X2B_A9PP140ZTL_C30 BUF_X2P5B_A9PP140ZTL_C30 BUF_X2P5M_A9PP140ZTL_C30 BUF_X3M_A9PP140ZTL_C30 BUF_X3B_A9PP140ZTL_C30 BUF_X3P5B_A9PP140ZTL_C30 BUF_X3P5M_A9PP140ZTL_C30 BUF_X4B_A9PP140ZTL_C30 BUF_X4B_A9PP140ZTL_C30_XGCAP4 BUF_X4M_A9PP140ZTL_C30 BUF_X5B_A9PP140ZTL_C30 BUF_X4M_A9PP140ZTL_C30_XGCAP4 BUF_X5B_A9PP140ZTL_C30_XGCAP5 BUF_X5M_A9PP140ZTL_C30 BUF_X6B_A9PP140ZTL_C30 BUF_X5M_A9PP140ZTL_C30_XGCAP5 BUF_X6B_A9PP140ZTL_C30_XGCAP6 BUF_X6M_A9PP140ZTL_C30 BUF_X7P5B_A9PP140ZTL_C30 BUF_X6M_A9PP140ZTL_C30_XGCAP6 BUF_X7P5B_A9PP140ZTL_C30_XGCAP8 BUF_X7P5M_A9PP140ZTL_C30 BUF_X7P5M_A9PP140ZTL_C30_XGCAP8 BUF_X9B_A9PP140ZTL_C30 BUF_X9M_A9PP140ZTL_C30 BUF_X9B_A9PP140ZTL_C30_XGCAP9 BUF_X9M_A9PP140ZTL_C30_XGCAP9 DLY2_X1M_A9PP140ZTL_C30 DLY2_X0P5M_A9PP140ZTL_C30 DLY2_X2M_A9PP140ZTL_C30 DLYCLK8S2_X1B_A9PP140ZTL_C30 DLYCLK8S2_X2B_A9PP140ZTL_C30 DLYCLK8S4_X1B_A9PP140ZTL_C30 DLYCLK8S4_X2B_A9PP140ZTL_C30
+[01/10 09:22:38     88s] Total number of usable buffers: 77
+[01/10 09:22:38     88s] List of unusable buffers: FRICG_X0P5B_A9PP140ZTL_C30 FRICG_X0P6B_A9PP140ZTL_C30 FRICG_X0P8B_A9PP140ZTL_C30 FRICG_X0P7B_A9PP140ZTL_C30 FRICG_X11B_A9PP140ZTL_C30 FRICG_X13B_A9PP140ZTL_C30 FRICG_X16B_A9PP140ZTL_C30 FRICG_X1B_A9PP140ZTL_C30 FRICG_X1P2B_A9PP140ZTL_C30 FRICG_X1P4B_A9PP140ZTL_C30 FRICG_X2B_A9PP140ZTL_C30 FRICG_X1P7B_A9PP140ZTL_C30 FRICG_X2P5B_A9PP140ZTL_C30 FRICG_X3B_A9PP140ZTL_C30 FRICG_X4B_A9PP140ZTL_C30 FRICG_X3P5B_A9PP140ZTL_C30 FRICG_X5B_A9PP140ZTL_C30 FRICG_X6B_A9PP140ZTL_C30 FRICG_X7P5B_A9PP140ZTL_C30 FRICG_X9B_A9PP140ZTL_C30
+[01/10 09:22:38     88s] Total number of unusable buffers: 20
+[01/10 09:22:38     88s] List of usable inverters: INV_X0P5B_A9PP140ZTL_C30 INV_X0P5M_A9PP140ZTL_C30 INV_X0P6B_A9PP140ZTL_C30 INV_X0P6M_A9PP140ZTL_C30 INV_X0P7B_A9PP140ZTL_C30 INV_X0P7M_A9PP140ZTL_C30 INV_X0P8M_A9PP140ZTL_C30 INV_X0P8B_A9PP140ZTL_C30 INV_X11B_A9PP140ZTL_C30 INV_X11B_A9PP140ZTL_C30_XGCAP11 INV_X11M_A9PP140ZTL_C30 INV_X13B_A9PP140ZTL_C30 INV_X11M_A9PP140ZTL_C30_XGCAP11 INV_X13B_A9PP140ZTL_C30_XGCAP13 INV_X13M_A9PP140ZTL_C30 INV_X16B_A9PP140ZTL_C30 INV_X13M_A9PP140ZTL_C30_XGCAP13 INV_X16B_A9PP140ZTL_C30_XGCAP16 INV_X16M_A9PP140ZTL_C30 INV_X16M_A9PP140ZTL_C30_XGCAP16 INV_X1M_A9PP140ZTL_C30 INV_X1B_A9PP140ZTL_C30 INV_X1P2B_A9PP140ZTL_C30 INV_X1P2M_A9PP140ZTL_C30 INV_X1P4B_A9PP140ZTL_C30 INV_X1P4M_A9PP140ZTL_C30 INV_X1P7B_A9PP140ZTL_C30 INV_X1P7M_A9PP140ZTL_C30 INV_X2M_A9PP140ZTL_C30 INV_X2B_A9PP140ZTL_C30 INV_X2P5B_A9PP140ZTL_C30 INV_X2P5M_A9PP140ZTL_C30 INV_X3M_A9PP140ZTL_C30 INV_X3B_A9PP140ZTL_C30 INV_X3P5B_A9PP140ZTL_C30 INV_X4B_A9PP140ZTL_C30 INV_X3P5M_A9PP140ZTL_C30 INV_X4B_A9PP140ZTL_C30_XGCAP4 INV_X4M_A9PP140ZTL_C30 INV_X5B_A9PP140ZTL_C30 INV_X4M_A9PP140ZTL_C30_XGCAP4 INV_X5B_A9PP140ZTL_C30_XGCAP5 INV_X5M_A9PP140ZTL_C30 INV_X6B_A9PP140ZTL_C30 INV_X5M_A9PP140ZTL_C30_XGCAP5 INV_X6B_A9PP140ZTL_C30_XGCAP6 INV_X6M_A9PP140ZTL_C30 INV_X7P5B_A9PP140ZTL_C30 INV_X6M_A9PP140ZTL_C30_XGCAP6 INV_X7P5B_A9PP140ZTL_C30_XGCAP8 INV_X7P5M_A9PP140ZTL_C30 INV_X9B_A9PP140ZTL_C30 INV_X7P5M_A9PP140ZTL_C30_XGCAP8 INV_X9B_A9PP140ZTL_C30_XGCAP9 INV_X9M_A9PP140ZTL_C30 INV_X9M_A9PP140ZTL_C30_XGCAP9
+[01/10 09:22:38     88s] Total number of usable inverters: 56
+[01/10 09:22:38     88s] List of unusable inverters:
+[01/10 09:22:38     88s] Total number of unusable inverters: 0
+[01/10 09:22:38     88s] List of identified usable delay cells: DLY10_X1M_A9PP140ZTL_C30 DLY10_X0P5M_A9PP140ZTL_C30 DLY10_X2M_A9PP140ZTL_C30 DLY10_X4M_A9PP140ZTL_C30 DLY2_X4M_A9PP140ZTL_C30 DLY4_X1M_A9PP140ZTL_C30 DLY4_X0P5M_A9PP140ZTL_C30 DLY4_X2M_A9PP140ZTL_C30 DLY4_X4M_A9PP140ZTL_C30 DLY6_X1M_A9PP140ZTL_C30 DLY6_X0P5M_A9PP140ZTL_C30 DLY6_X2M_A9PP140ZTL_C30 DLY6_X4M_A9PP140ZTL_C30 DLY8_X0P5M_A9PP140ZTL_C30 DLY8_X1M_A9PP140ZTL_C30 DLY8_X2M_A9PP140ZTL_C30 DLY8_X4M_A9PP140ZTL_C30 DLYCLK8S6_X1B_A9PP140ZTL_C30 DLYCLK8S6_X2B_A9PP140ZTL_C30 DLYCLK8S8_X1B_A9PP140ZTL_C30 DLYCLK8S8_X2B_A9PP140ZTL_C30
+[01/10 09:22:38     88s] Total number of identified usable delay cells: 21
+[01/10 09:22:38     88s] List of identified unusable delay cells:
+[01/10 09:22:38     88s] Total number of identified unusable delay cells: 0
+[01/10 09:22:38     88s] 
+[01/10 09:22:38     88s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+[01/10 09:22:38     88s] 
+[01/10 09:22:38     88s] TimeStamp Deleting Cell Server Begin ...
+[01/10 09:22:38     88s] 
+[01/10 09:22:38     88s] TimeStamp Deleting Cell Server End ...
+[01/10 09:22:38     88s] **WARN: (IMPCTE-107):	The following globals have been obsoleted since version . They will be removed in the next release. 
+[01/10 09:22:38     88s] timing_enable_separate_device_slew_effect_sensitivities
+[01/10 09:22:38     88s] #% End load design ... (date=01/10 09:22:38, total cpu=0:00:36.9, real=0:00:53.0, peak res=1827.9M, current mem=1811.1M)
+[01/10 09:22:38     88s] 
+[01/10 09:22:38     88s] *** Summary of all messages that are not suppressed in this session:
+[01/10 09:22:38     88s] Severity  ID               Count  Summary                                  
+[01/10 09:22:38     88s] WARNING   IMPESI-3505          1  setDelayCalMode -eng_%s (default=%s) wil...
+[01/10 09:22:38     88s] WARNING   IMPOPT-3602          5  The specified path group name %s is not ...
+[01/10 09:22:38     88s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
+[01/10 09:22:38     88s] WARNING   TECHLIB-302         57  No function defined for cell '%s'. The c...
+[01/10 09:22:38     88s] *** Message Summary: 64 warning(s), 0 error(s)
+[01/10 09:22:38     88s] 
+[01/10 09:22:38     88s] <CMD> setDrawView fplan
+[01/10 09:22:38     88s] <CMD> encMessage warning 1
+[01/10 09:22:38     88s] <CMD> encMessage debug 0
+[01/10 09:22:42     89s] <CMD> setDrawView place
+[01/10 09:22:53     94s] <CMD> fit
+[01/10 09:29:09    143s] <CMD> getFillerMode -quiet
+[01/10 09:32:17    168s] **WARN: (IMPTCM-77):	Option "-allowSwapping" for command getScanReorderMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+[01/10 09:32:56    173s] <CMD> setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+[01/10 09:32:56    173s] <CMD> setEndCapMode -reset
+[01/10 09:32:56    173s] <CMD> setEndCapMode -boundary_tap false
+[01/10 09:32:56    173s] <CMD> setNanoRouteMode -quiet -drouteAutoStop 0
+[01/10 09:32:56    173s] <CMD> setNanoRouteMode -quiet -drouteFixAntenna 0
+[01/10 09:32:56    173s] <CMD> setNanoRouteMode -quiet -droutePostRouteSwapVia {}
+[01/10 09:32:56    173s] <CMD> setNanoRouteMode -quiet -droutePostRouteSpreadWire 1
+[01/10 09:32:56    173s] <CMD> setNanoRouteMode -quiet -drouteUseMultiCutViaEffort {}
+[01/10 09:32:56    173s] <CMD> setNanoRouteMode -quiet -drouteOnGridOnly 0
+[01/10 09:32:56    173s] #WARNING (NRIF-67) In option 'OnGridOnly 0', 0 is an unknown type. It will be ignored.
+[01/10 09:32:56    173s] #WARNING (NRIF-68) Option 'OnGridOnly 0' did not specify a correct type. It will be ignored.
+[01/10 09:32:56    173s] <CMD> setNanoRouteMode -quiet -routeIgnoreAntennaTopCellPin 0
+[01/10 09:32:56    173s] <CMD> setNanoRouteMode -quiet -timingEngine {}
+[01/10 09:32:56    173s] <CMD> setUsefulSkewMode -noBoundary false -maxAllowedDelay 1
+[01/10 09:32:56    173s] **WARN: (IMPTCM-77):	Option "-allowSwapping" for command getScanReorderMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+[01/10 09:38:19    215s] <CMD> setNanoRouteMode -quiet -drouteFixAntenna 1
+[01/10 09:38:19    215s] <CMD> setNanoRouteMode -quiet -routeInsertAntennaDiode 0
+[01/10 09:38:19    215s] <CMD> setNanoRouteMode -quiet -routeWithTimingDriven 1
+[01/10 09:38:19    215s] <CMD> setNanoRouteMode -quiet -routeWithEco 0
+[01/10 09:38:19    215s] <CMD> setNanoRouteMode -quiet -routeWithLithoDriven 1
+[01/10 09:38:19    215s] <CMD> setNanoRouteMode -quiet -droutePostRouteLithoRepair 0
+[01/10 09:38:19    215s] <CMD> setNanoRouteMode -quiet -routeWithSiDriven 0
+[01/10 09:38:19    215s] <CMD> setNanoRouteMode -quiet -drouteAutoStop 0
+[01/10 09:38:19    215s] <CMD> setNanoRouteMode -quiet -routeSelectedNetOnly 0
+[01/10 09:38:19    215s] <CMD> setNanoRouteMode -quiet -routeTopRoutingLayer 6
+[01/10 09:38:19    215s] #WARNING (NRIF-91) Option setNanoRouteMode -route_top_routing_layer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -topRoutingLayer instead.
+[01/10 09:38:19    215s] <CMD> setNanoRouteMode -quiet -routeBottomRoutingLayer 1
+[01/10 09:38:19    215s] #WARNING (NRIF-90) Option setNanoRouteMode -route_bottom_routing_layer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -bottomRoutingLayer instead.
+[01/10 09:38:19    215s] <CMD> setNanoRouteMode -quiet -drouteEndIteration 1
+[01/10 09:38:19    215s] <CMD> setNanoRouteMode -quiet -routeWithTimingDriven true
+[01/10 09:38:19    215s] <CMD> setNanoRouteMode -quiet -routeWithSiDriven false
+[01/10 09:38:19    215s] <CMD> routeDesign -globalDetail
+[01/10 09:38:19    215s] ### Time Record (routeDesign) is installed.
+[01/10 09:38:19    215s] #routeDesign: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 2058.36 (MB), peak = 2095.01 (MB)
+[01/10 09:38:19    215s] AAE_INFO: Pre Route call back at the beginning of routeDesign
+[01/10 09:38:19    215s] #**INFO: setDesignMode -flowEffort standard
+[01/10 09:38:19    215s] #**INFO: setDesignMode -powerEffort none
+[01/10 09:38:19    215s] #WARNING (NRIG-96) Selected single pass global detail route "-globalDetail". Clock eco and post optimizations will not be run. See "man NRIG-96" for more details.
+[01/10 09:38:19    215s] **INFO: User settings:
+[01/10 09:38:19    215s] setNanoRouteMode -route_detail_auto_stop                      false
+[01/10 09:38:19    215s] setNanoRouteMode -route_detail_end_iteration                  1
+[01/10 09:38:19    215s] setNanoRouteMode -route_detail_fix_antenna                    true
+[01/10 09:38:19    215s] setNanoRouteMode -route_detail_on_grid_only                   0
+[01/10 09:38:19    215s] setNanoRouteMode -route_detail_post_route_litho_repair        false
+[01/10 09:38:19    215s] setNanoRouteMode -route_detail_post_route_spread_wire         1
+[01/10 09:38:19    215s] setNanoRouteMode -route_detail_post_route_swap_via            {}
+[01/10 09:38:19    215s] setNanoRouteMode -route_detail_use_multi_cut_via_effort       {}
+[01/10 09:38:19    215s] setNanoRouteMode -route_extract_third_party_compatible        false
+[01/10 09:38:19    215s] setNanoRouteMode -route_global_exp_timing_driven_std_delay    5.1
+[01/10 09:38:19    215s] setNanoRouteMode -route_bottom_routing_layer                  1
+[01/10 09:38:19    215s] setNanoRouteMode -route_exp_design_mode_bottom_routing_layer  2
+[01/10 09:38:19    215s] setNanoRouteMode -route_ignore_antenna_top_cell_pin           false
+[01/10 09:38:19    215s] setNanoRouteMode -route_antenna_diode_insertion               false
+[01/10 09:38:19    215s] setNanoRouteMode -route_selected_net_only                     false
+[01/10 09:38:19    215s] setNanoRouteMode -route_top_routing_layer                     6
+[01/10 09:38:19    215s] setNanoRouteMode -route_with_eco                              false
+[01/10 09:38:19    215s] setNanoRouteMode -route_with_litho_driven                     true
+[01/10 09:38:19    215s] setNanoRouteMode -route_with_si_driven                        false
+[01/10 09:38:19    215s] setNanoRouteMode -route_with_timing_driven                    true
+[01/10 09:38:19    215s] setNanoRouteMode -timingEngine                                {}
+[01/10 09:38:19    215s] setDesignMode -bottomRoutingLayer                             M2
+[01/10 09:38:19    215s] setDesignMode -powerEffort                                    none
+[01/10 09:38:19    215s] setExtractRCMode -engine                                      preRoute
+[01/10 09:38:19    215s] setExtractRCMode -prePlaceCapScaleFactor                      2.7051
+[01/10 09:38:19    215s] setExtractRCMode -prePlaceFanoutPenalty                       0
+[01/10 09:38:19    215s] setExtractRCMode -prePlaceFanoutThreshold                     10
+[01/10 09:38:19    215s] setExtractRCMode -prePlaceResScaleFactor                      0.3976
+[01/10 09:38:19    215s] setExtractRCMode -prePlaceSiteSize                            1.04
+[01/10 09:38:19    215s] setExtractRCMode -prePlaceWireLengthSlope                     1.6312
+[01/10 09:38:19    215s] setExtractRCMode -prePlaceWireLengthY0                        0.9673
+[01/10 09:38:19    215s] setDelayCalMode -enable_high_fanout                           true
+[01/10 09:38:19    215s] setDelayCalMode -eng_enablePrePlacedFlow                      false
+[01/10 09:38:19    215s] setDelayCalMode -engine                                       aae
+[01/10 09:38:19    215s] setDelayCalMode -ignoreNetLoad                                false
+[01/10 09:38:19    215s] setDelayCalMode -SIAware                                      false
+[01/10 09:38:19    215s] setDelayCalMode -socv_accuracy_mode                           low
+[01/10 09:38:19    215s] setDelayCalMode -socv_use_lvf_tables                          all
+[01/10 09:38:19    215s] setSIMode -separate_delta_delay_on_data                       true
+[01/10 09:38:19    215s] 
+[01/10 09:38:19    215s] #**INFO: multi-cut via swapping will not be performed after routing.
+[01/10 09:38:19    215s] #**INFO: All auto set options tuned by routeDesign will be restored to their original settings on command completion.
+[01/10 09:38:19    215s] OPERPROF: Starting checkPlace at level 1, MEM:2157.1M, EPOCH TIME: 1736519899.322562
+[01/10 09:38:19    215s] # Init pin-track-align, new floorplan.
+[01/10 09:38:19    215s] Processing tracks to init pin-track alignment.
+[01/10 09:38:19    215s] z: 1, totalTracks: 1
+[01/10 09:38:19    215s] z: 3, totalTracks: 1
+[01/10 09:38:19    215s] z: 5, totalTracks: 1
+[01/10 09:38:19    215s] z: 7, totalTracks: 1
+[01/10 09:38:20    216s] #spOpts: N=32 hrOri=1 hrSnap=1 rpCkHalo=4 
+[01/10 09:38:20    216s] Cell pp_fir_u_0 LLGs are deleted
+[01/10 09:38:20    216s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[01/10 09:38:20    216s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[01/10 09:38:20    216s] # Building pp_fir_u_0 llgBox search-tree.
+[01/10 09:38:20    216s] OPERPROF:   Starting SiteArray-Init at level 2, MEM:2201.1M, EPOCH TIME: 1736519900.239882
+[01/10 09:38:20    216s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[01/10 09:38:20    216s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[01/10 09:38:20    216s] OPERPROF:     Starting SiteArray-Init-FPlan at level 3, MEM:2201.1M, EPOCH TIME: 1736519900.243112
+[01/10 09:38:20    216s] Max number of tech site patterns supported in site array is 256.
+[01/10 09:38:20    216s] Core basic site is sc9mcpp140z_cln28ht
+[01/10 09:38:20    216s] After signature check, allow fast init is false, keep pre-filter is false.
+[01/10 09:38:20    216s] After signature check and other controls, allow fast init is false, keep pre-filter is false.
+[01/10 09:38:20    216s] Use non-trimmed site array because memory saving is not enough.
+[01/10 09:38:20    216s] SiteArray: non-trimmed site array dimensions = 200 x 1481
+[01/10 09:38:20    216s] SiteArray: use 1,536,000 bytes
+[01/10 09:38:20    216s] SiteArray: current memory after site array memory allocation 2202.6M
+[01/10 09:38:20    216s] SiteArray: FP blocked sites are writable
+[01/10 09:38:20    216s] SiteArray: number of non floorplan blocked sites for llg default is 296200
+[01/10 09:38:20    216s] Atter site array init, number of instance map data is 0.
+[01/10 09:38:20    216s] OPERPROF:     Finished SiteArray-Init-FPlan at level 3, CPU:0.020, REAL:0.017, MEM:2202.6M, EPOCH TIME: 1736519900.259740
+[01/10 09:38:20    216s] 
+[01/10 09:38:20    216s]  Pre_CCE_Colorizing is not ON! (0:0:3537:0)
+[01/10 09:38:20    216s] OPERPROF:   Finished SiteArray-Init at level 2, CPU:0.020, REAL:0.023, MEM:2202.6M, EPOCH TIME: 1736519900.262856
+[01/10 09:38:20    216s] Begin checking placement ... (start mem=2157.1M, init mem=2202.6M)
+[01/10 09:38:20    216s] Begin checking exclusive groups violation ...
+[01/10 09:38:20    216s] There are 0 groups to check, max #box is 0, total #box is 0
+[01/10 09:38:20    216s] Finished checking exclusive groups violations. Found 0 Vio.
+[01/10 09:38:20    216s] 
+[01/10 09:38:20    216s] Running CheckPlace using 1 thread in normal mode...
+[01/10 09:38:20    216s] 
+[01/10 09:38:20    216s] ...checkPlace normal is done!
+[01/10 09:38:20    216s] OPERPROF:   Starting checkPlace/Vio-Check at level 2, MEM:2207.6M, EPOCH TIME: 1736519900.710254
+[01/10 09:38:20    216s] OPERPROF:   Finished checkPlace/Vio-Check at level 2, CPU:0.030, REAL:0.032, MEM:2207.6M, EPOCH TIME: 1736519900.741856
+[01/10 09:38:20    216s] *info: Placed = 22085          (Fixed = 1006)
+[01/10 09:38:20    216s] *info: Unplaced = 0           
+[01/10 09:38:20    216s] Placement Density:62.13%(22858/36788)
+[01/10 09:38:20    216s] Placement Density (including fixed std cells):62.68%(23391/37321)
+[01/10 09:38:20    216s] Cell pp_fir_u_0 LLGs are deleted
+[01/10 09:38:20    216s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:22085).
+[01/10 09:38:20    216s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[01/10 09:38:20    216s] # Resetting pin-track-align track data.
+[01/10 09:38:20    216s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[01/10 09:38:20    216s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[01/10 09:38:20    216s] Finished checkPlace (total: cpu=0:00:01.5, real=0:00:01.0; vio checks: cpu=0:00:00.5, real=0:00:00.0; mem=2207.6M)
+[01/10 09:38:20    216s] OPERPROF: Finished checkPlace at level 1, CPU:1.470, REAL:1.467, MEM:2207.6M, EPOCH TIME: 1736519900.789515
+[01/10 09:38:20    216s] #WARNING (NRIG-87) Timing file "" not found, resetting timing engine to default for this session.
+[01/10 09:38:20    216s] 
+[01/10 09:38:20    216s] changeUseClockNetStatus Option :  -noFixedNetWires 
+[01/10 09:38:20    216s] *** Changed status on (0) nets in Clock.
+[01/10 09:38:20    216s] *** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=2207.6M) ***
+[01/10 09:38:20    216s] 
+[01/10 09:38:20    216s] globalDetailRoute
+[01/10 09:38:20    216s] 
+[01/10 09:38:20    216s] #Start globalDetailRoute on Fri Jan 10 09:38:20 2025
+[01/10 09:38:20    216s] #
+[01/10 09:38:20    216s] ### Time Record (globalDetailRoute) is installed.
+[01/10 09:38:20    216s] ### Time Record (Pre Callback) is installed.
+[01/10 09:38:20    216s] eee: Design is marked Stenier-routed. RC Grid update will be skipped.
+[01/10 09:38:20    216s] ### Time Record (Pre Callback) is uninstalled.
+[01/10 09:38:20    216s] ### Time Record (DB Import) is installed.
+[01/10 09:38:20    216s] ### Time Record (Timing Data Generation) is installed.
+[01/10 09:38:20    216s] #Generating timing data, please wait...
+[01/10 09:38:20    216s] #22210 total nets, 22202 already routed, 22202 will ignore in trialRoute
+[01/10 09:38:20    216s] ### run_trial_route starts on Fri Jan 10 09:38:20 2025 with memory = 2092.59 (MB), peak = 2116.36 (MB)
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:31) is out of routing layer range (1:6) for net rst_n
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:31) is out of routing layer range (1:6) for net FE_OFN333_FE_OCPN985
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:31) is out of routing layer range (1:6) for net FE_OCPN222_rst_n
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:31) is out of routing layer range (1:6) for net FE_OCPN888_FE_OFN30_n_0
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:31) is out of routing layer range (1:6) for net FE_OCPN985_FE_OFN30_n_0
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:31) is out of routing layer range (1:6) for net FE_OCPN1082_FE_OFN374_rst_n
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:31) is out of routing layer range (1:6) for net FE_OFN30_n_0
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:31) is out of routing layer range (1:6) for net FE_OFN33_n_0
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:31) is out of routing layer range (1:6) for net FE_OFN55_n_0
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:31) is out of routing layer range (1:6) for net FE_OFN57_n_0
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:31) is out of routing layer range (1:6) for net FE_OFN360_rst_n
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:31) is out of routing layer range (1:6) for net FE_OFN372_rst_n
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:31) is out of routing layer range (1:6) for net FE_OFN376_rst_n
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:0) is out of routing layer range (1:6) for net FE_OFN377_rst_n
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:31) is out of routing layer range (1:6) for net FE_OFN380_rst_n
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:0) is out of routing layer range (1:6) for net FE_OFN487_n
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:31) is out of routing layer range (1:6) for net FE_OFN491_n
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:31) is out of routing layer range (1:6) for net pp_fir_0_1_1/FE_RN_30
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:31) is out of routing layer range (1:6) for net pp_fir_0_1_1/FE_OFN332_n
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:31) is out of routing layer range (1:6) for net pp_fir_0_1_1/FE_OFN328_n
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:31) is out of routing layer range (1:6) for net pp_fir_0_1_1/FE_OCPN221_FE_OFN358_rst_n
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:31) is out of routing layer range (1:6) for net pp_fir_0_1_1/FE_OCPN220_FE_OFN358_rst_n
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:31) is out of routing layer range (1:6) for net pp_fir_0_1_1/FE_OCPN50_n
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:31) is out of routing layer range (1:6) for net pp_fir_0_1_1/FE_OCPN883_FE_OFN30_n_0
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:0) is out of routing layer range (1:6) for net pp_fir_0_1_1/FE_OCPN885_FE_OFN30_n_0
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:31) is out of routing layer range (1:6) for net pp_fir_0_1_1/FE_OCPN900_FE_OFN58_n_0
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:31) is out of routing layer range (1:6) for net pp_fir_0_1_1/FE_OCPN1003_FE_OFN58_n_0
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:0) is out of routing layer range (1:6) for net pp_fir_0_1_1/FE_OCPN1117_FE_OFN715_n
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:31) is out of routing layer range (1:6) for net pp_fir_0_1_1/FE_OFN45_n_0
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:0) is out of routing layer range (1:6) for net pp_fir_0_1_1/FE_OFN51_n_0
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:0) is out of routing layer range (1:6) for net pp_fir_0_1_1/FE_OFN61_n_0
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:0) is out of routing layer range (1:6) for net pp_fir_0_1_1/FE_OFN67_n_0
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:31) is out of routing layer range (1:6) for net pp_fir_0_1_1/FE_OFN69_n_0
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:31) is out of routing layer range (1:6) for net pp_fir_0_1_1/FE_OFN87_n_0
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:31) is out of routing layer range (1:6) for net pp_fir_0_1_1/FE_OFN88_n_0
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:0) is out of routing layer range (1:6) for net pp_fir_0_1_1/FE_OFN356_rst_n
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:31) is out of routing layer range (1:6) for net pp_fir_0_1_1/FE_OFN358_rst_n
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:0) is out of routing layer range (1:6) for net pp_fir_0_1_1/FE_OFN382_rst_n
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:0) is out of routing layer range (1:6) for net pp_fir_0_1_1/FE_OFN485_n
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:31) is out of routing layer range (1:6) for net pp_fir_0_1_1/FE_OFN580_n
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:0) is out of routing layer range (1:6) for net pp_fir_0_1_1/FE_OFN1189_n
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:0) is out of routing layer range (1:6) for net pp_fir_0_1_1/FE_OFN1191_n
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:0) is out of routing layer range (1:6) for net pp_fir_0_1_1/FE_RN_14
+[01/10 09:38:21    217s] **WARN: [NR-eGR] preferred routing layer (8:31) is out of routing layer range (1:6) for net pp_fir_0_1_1/FE_RN_16
+[01/10 09:38:21    217s] ### run_trial_route cpu:00:00:01, real:00:00:01, mem:2.0 GB, peak:2.1 GB
+[01/10 09:38:21    217s] ### dump_timing_file starts on Fri Jan 10 09:38:21 2025 with memory = 2096.34 (MB), peak = 2135.73 (MB)
+[01/10 09:38:21    217s] ### extractRC starts on Fri Jan 10 09:38:21 2025 with memory = 2096.39 (MB), peak = 2135.73 (MB)
+[01/10 09:38:21    217s] **WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+[01/10 09:38:21    217s] **WARN: (IMPEXT-7040):	A horizontal wire, passing through or close to location (158400,363610), lies outside of design boundary. Correct the wire routing and rerun extraction.
+[01/10 09:38:21    217s] **WARN: (IMPEXT-7040):	A horizontal wire, passing through or close to location (68400,363610), lies outside of design boundary. Correct the wire routing and rerun extraction.
+[01/10 09:38:21    217s] **WARN: (IMPEXT-7040):	A horizontal wire, passing through or close to location (86400,363610), lies outside of design boundary. Correct the wire routing and rerun extraction.
+[01/10 09:38:21    217s] **WARN: (IMPEXT-7040):	A horizontal wire, passing through or close to location (68400,363610), lies outside of design boundary. Correct the wire routing and rerun extraction.
+[01/10 09:38:22    217s] {RT worst 0 6 6 0}
+[01/10 09:38:22    218s] ### extractRC cpu:00:00:01, real:00:00:01, mem:2.0 GB, peak:2.1 GB
+[01/10 09:38:22    218s] ### view view_wcl_slow is active and enabled.
+[01/10 09:38:22    218s] ### view view_wcl_fast is active and enabled.
+[01/10 09:38:22    218s] ###     It's not selected for tming-driven routing.
+[01/10 09:38:22    218s] ### view view_wcl_typical is active and enabled.
+[01/10 09:38:22    218s] ###     It's not selected for tming-driven routing.
+[01/10 09:38:22    218s] 2 out of 3 active views are pruned
+[01/10 09:38:22    218s] #View pruning: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 2093.67 (MB), peak = 2135.73 (MB)
+[01/10 09:38:22    218s] ### generate_preroute_timing_data starts on Fri Jan 10 09:38:22 2025 with memory = 2093.67 (MB), peak = 2135.73 (MB)
+[01/10 09:38:22    218s] #Reporting timing...
+[01/10 09:38:24    220s] ### report_timing starts on Fri Jan 10 09:38:24 2025 with memory = 2138.45 (MB), peak = 2138.45 (MB)
+[01/10 09:38:42    235s] ### report_timing cpu:00:00:15, real:00:00:18, mem:2.2 GB, peak:2.2 GB
+[01/10 09:38:42    235s] 
+[01/10 09:38:42    235s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) Begin ...
+[01/10 09:38:42    235s] TLC MultiMap info (StdDelay):
+[01/10 09:38:42    235s]   : delay_corner_wcl_slow + wcl_slow + 1 + no RcCorner := 4.8ps
+[01/10 09:38:42    235s]   : delay_corner_wcl_slow + wcl_slow + 1 + worst := 5.1ps
+[01/10 09:38:42    235s]  Setting StdDelay to: 5.1ps
+[01/10 09:38:42    235s] 
+[01/10 09:38:42    235s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) End ...
+[01/10 09:38:42    235s] #Normalized TNS: -0.234 -> -0.468, r2r -0.152 -> -0.304, unit 1000.000, clk period 0.500 (ns)
+[01/10 09:38:42    235s] #OPT Pruned View (First enabled view): view_wcl_slow
+[01/10 09:38:42    235s] #Default setup view is reset to view_wcl_slow.
+[01/10 09:38:42    235s] #Stage 1: cpu time = 00:00:17, elapsed time = 00:00:21, memory = 2288.59 (MB), peak = 2303.82 (MB)
+[01/10 09:38:42    235s] #Library Standard Delay: 5.10ps
+[01/10 09:38:42    235s] #Slack threshold: 10.20ps
+[01/10 09:38:42    235s] ### generate_net_cdm_timing starts on Fri Jan 10 09:38:42 2025 with memory = 2288.59 (MB), peak = 2303.82 (MB)
+[01/10 09:38:44    237s] ### generate_net_cdm_timing cpu:00:00:01, real:00:00:01, mem:2.2 GB, peak:2.2 GB
+[01/10 09:38:44    237s] #*** Analyzed 1705 timing critical paths, and collected 990.
+[01/10 09:38:44    237s] #Stage 2: cpu time = 00:00:02, elapsed time = 00:00:02, memory = 2292.20 (MB), peak = 2303.82 (MB)
+[01/10 09:38:45    237s] {RT worst 0 6 6 0}
+[01/10 09:38:49    242s] #Stage 3: cpu time = 00:00:05, elapsed time = 00:00:05, memory = 2313.63 (MB), peak = 2313.65 (MB)
+[01/10 09:38:49    242s] #Stage 4: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 2313.64 (MB), peak = 2313.65 (MB)
+[01/10 09:38:49    242s] ### generate_preroute_timing_data cpu:00:00:24, real:00:00:28, mem:2.3 GB, peak:2.3 GB
+[01/10 09:38:49    242s] #Current view: view_wcl_slow view_wcl_fast view_wcl_typical 
+[01/10 09:38:49    242s] #Current enabled view: view_wcl_slow 
+[01/10 09:38:52    245s] #Generating timing data took: cpu time = 00:00:28, elapsed time = 00:00:31, memory = 2312.94 (MB), peak = 2321.43 (MB)
+[01/10 09:38:52    245s] ### dump_timing_file cpu:00:00:28, real:00:00:31, mem:2.3 GB, peak:2.3 GB
+[01/10 09:38:52    245s] #Done generating timing data.
+[01/10 09:38:52    245s] ### Time Record (Timing Data Generation) is uninstalled.
+[01/10 09:38:54    247s] #WARNING (NRDB-317) Threshold min width 0.180000 is >= max width 0.180000 for minimumcut 2 for LAYER M7
+[01/10 09:38:54    247s] #WARNING (NRIG-1303) The congestion map does not match the GCELL grid. Clearing the map.
+[01/10 09:38:55    247s] ### Net info: total nets: 22937
+[01/10 09:38:55    247s] ### Net info: dirty nets: 94
+[01/10 09:38:55    247s] ### Net info: marked as disconnected nets: 0
+[01/10 09:38:55    247s] #num needed restored net=0
+[01/10 09:38:55    247s] #need_extraction net=0 (total=22937)
+[01/10 09:38:55    247s] ### Net info: fully routed nets: 0
+[01/10 09:38:55    247s] ### Net info: trivial (< 2 pins) nets: 735
+[01/10 09:38:55    247s] ### Net info: unrouted nets: 22202
+[01/10 09:38:55    247s] ### Net info: re-extraction nets: 0
+[01/10 09:38:55    247s] ### Net info: ignored nets: 0
+[01/10 09:38:55    247s] ### Net info: skip routing nets: 0
+[01/10 09:38:55    247s] #WARNING (NRDB-2005) SPECIAL_NET VDD has special wires but no definitions for instance pins or top level pins. This will cause routability problems later.
+[01/10 09:38:55    247s] #WARNING (NRDB-2005) SPECIAL_NET VSS has special wires but no definitions for instance pins or top level pins. This will cause routability problems later.
+[01/10 09:38:55    248s] ### import design signature (2): route=1559912691 fixed_route=1559912691 flt_obj=0 vio=1905142130 swire=282492057 shield_wire=1 net_attr=2095256552 dirty_area=0 del_dirty_area=0 cell=60645414 placement=1074087299 pin_access=1 inst_pattern=1 inst_orient=1 via=1304780868
+[01/10 09:38:55    248s] ### Time Record (DB Import) is uninstalled.
+[01/10 09:38:55    248s] #NanoRoute Version 22.10-p001_1 NR220915-0329/22_10-UB
+[01/10 09:38:55    248s] #WARNING (NRIF-79) Wrong option value for drouteUseMultiCutViaEffort <>, reset to default.
+[01/10 09:38:55    248s] #WARNING (NRIF-79) Wrong option value for drouteUseMultiCutViaEffort <>, reset to default.
+[01/10 09:38:55    248s] #WARNING (NRIF-67) In option 'OnGridOnly 0', 0 is an unknown type. It will be ignored.
+[01/10 09:38:55    248s] #WARNING (NRIF-68) Option 'OnGridOnly 0' did not specify a correct type. It will be ignored.
+[01/10 09:38:55    248s] #WARNING (NRDR-157) In option 'PostRouteSwapVia ',  is invalid and will be ignored.
+[01/10 09:38:55    248s] #RTESIG:78da95964d4fe330108639efaf18190e5d89969989edd857a4bdb22b045c51d8b825529b
+[01/10 09:38:55    248s] #       a0c439f0ef772aed0150e938b9e6f13be337f391cbaba75ff760983784eb37447a26b8bb
+[01/10 09:38:55    248s] #       67c6486e8d15c71be66779f5786b7e5c5efdfef350316c9bfd9460f5320cfb6b68dffbe6
+[01/10 09:38:55    248s] #       d0fd85366d9b799f614a3977fdeee77fba5a4293b59ff1794ae31786ab0804abaecf6997
+[01/10 09:38:55    248s] #       c6d38863c8e35c18949d0573c40daca63cca0bfd845b7ac233e087a4153ac625aed9e816
+[01/10 09:38:55    248s] #       5cd7dbfa137dc23f1f3c9866ce83dc2fa7b16fc6f7ebefd4a298871f7c382157a353bf6a
+[01/10 09:38:55    248s] #       4d0886141d22300a2297531042d28b8c48f2515c22b2b4c07722e717e17e4911d3b12671
+[01/10 09:38:55    248s] #       830ee581d5763f34f974d65c4730afddee55b18943a16045ac5a65aba87b6e5d05f67c67
+[01/10 09:38:55    248s] #       0be361cd2889a19a980d0cae0cb4401ba7830e09b844d1498d699e3876054c5dc0049df1
+[01/10 09:38:55    248s] #       053a3eea8c38e56453a80678d4fbc74b3fab45e1493afa90da6e3e2805eb0bbc0a68b5e5
+[01/10 09:38:55    248s] #       41e1388a0a1a244a319829377ddb8cadb0a99f0fdf910cac448d9299e9873e9d5362fa3a
+[01/10 09:38:55    248s] #       4a954542e8f5854a180ba04aed72615c815008e095fd4d71f14a9699a0c76654db5298a0
+[01/10 09:38:55    248s] #       ad90e3df5141b0b373f1e21fbfc8eaeb
+[01/10 09:38:55    248s] #
+[01/10 09:38:55    248s] #WARNING (NRIF-79) Wrong option value for drouteUseMultiCutViaEffort <>, reset to default.
+[01/10 09:38:55    248s] #WARNING (NRIF-79) Wrong option value for drouteUseMultiCutViaEffort <>, reset to default.
+[01/10 09:38:55    248s] #WARNING (NRIF-67) In option 'OnGridOnly 0', 0 is an unknown type. It will be ignored.
+[01/10 09:38:55    248s] #WARNING (NRIF-68) Option 'OnGridOnly 0' did not specify a correct type. It will be ignored.
+[01/10 09:38:55    248s] #WARNING (NRDR-157) In option 'PostRouteSwapVia ',  is invalid and will be ignored.
+[01/10 09:38:55    248s] ### Time Record (Data Preparation) is installed.
+[01/10 09:38:55    248s] #WARNING (NRIF-79) Wrong option value for drouteUseMultiCutViaEffort <>, reset to default.
+[01/10 09:38:55    248s] #WARNING (NRIF-79) Wrong option value for drouteUseMultiCutViaEffort <>, reset to default.
+[01/10 09:38:55    248s] #WARNING (NRIF-67) In option 'OnGridOnly 0', 0 is an unknown type. It will be ignored.
+[01/10 09:38:55    248s] #WARNING (NRIF-68) Option 'OnGridOnly 0' did not specify a correct type. It will be ignored.
+[01/10 09:38:55    248s] #WARNING (NRDR-157) In option 'PostRouteSwapVia ',  is invalid and will be ignored.
+[01/10 09:38:55    248s] #RTESIG:78da95964d6fdb300c8677deaf20d41e32a0c9485a92a5eb805edba1d8762dbc59490d24
+[01/10 09:38:55    248s] #       f660cb87fefbd1c50e6d9186b2af7ef4927acd0f5f5dffba7d00c3bc23dcfe45a44782bb
+[01/10 09:38:55    248s] #       07668ce4b65871fccafc28af7e7e339fafaeefbfffa818f6cd714ab0f93d0cc71b689ffb
+[01/10 09:38:55    248s] #       e6d4fd8136ed9bf998614a3977fde1cb7fba5a4393b56ff1794ae33b86ab08049baecfe9
+[01/10 09:38:55    248s] #       90c6f38863c8e35c18949d05b3e00636531ee5857ec2ad3de119f055d20a1de31ad76c74
+[01/10 09:38:55    248s] #       2baeeb6dfd863ee39f0f1e4c33e741ee97d3d837e3f3cd476a51ccc3573e9c91abd1a95f
+[01/10 09:38:55    248s] #       b52604438a0e11180591cb290821e9454624f9282e11595ae13b91f3ab70bfa68869a949
+[01/10 09:38:55    248s] #       dca1437960b33f0e4d3e9f35d711cc537778526ce250285811ab56d92aea9e5b5781bddc
+[01/10 09:38:55    248s] #       d9c278d8324a62a8266603832b032dd0cee9a043022e517452639a278e5d015317304167
+[01/10 09:38:55    248s] #       7c818e8f3a234e39d914aa011ef5fef1d2cf6a5178928e3ea5b69b4f4ac1fa02af025a6d
+[01/10 09:38:55    248s] #       7950584651418344290633e5a66f9bb11536f5f3e923928195a8513233fdd0a7cb4acb7c
+[01/10 09:38:55    248s] #       7bf1ec72724cef67aeb27108bdbe7909630154a9e34018572014027865d1535cbdbb6578
+[01/10 09:38:55    248s] #       e8b119d5fe152668bb66f98d2a087671807efa07410af7a4
+[01/10 09:38:55    248s] #
+[01/10 09:38:55    248s] ### Time Record (Data Preparation) is uninstalled.
+[01/10 09:38:55    248s] ### Time Record (Global Routing) is installed.
+[01/10 09:38:55    248s] ### Time Record (Global Routing) is uninstalled.
+[01/10 09:38:55    248s] #WARNING (NRIF-79) Wrong option value for drouteUseMultiCutViaEffort <>, reset to default.
+[01/10 09:38:55    248s] #WARNING (NRIF-79) Wrong option value for drouteUseMultiCutViaEffort <>, reset to default.
+[01/10 09:38:55    248s] #WARNING (NRIF-67) In option 'OnGridOnly 0', 0 is an unknown type. It will be ignored.
+[01/10 09:38:55    248s] #WARNING (NRIF-68) Option 'OnGridOnly 0' did not specify a correct type. It will be ignored.
+[01/10 09:38:55    248s] #WARNING (NRDR-157) In option 'PostRouteSwapVia ',  is invalid and will be ignored.
+[01/10 09:38:55    248s] ### Time Record (Data Preparation) is installed.
+[01/10 09:38:55    248s] #Start routing data preparation on Fri Jan 10 09:38:55 2025
+[01/10 09:38:55    248s] #
+[01/10 09:38:55    248s] #WARNING (NRIF-79) Wrong option value for drouteUseMultiCutViaEffort <>, reset to default.
+[01/10 09:38:55    248s] #WARNING (NRIF-79) Wrong option value for drouteUseMultiCutViaEffort <>, reset to default.
+[01/10 09:38:55    248s] #WARNING (NRIF-67) In option 'OnGridOnly 0', 0 is an unknown type. It will be ignored.
+[01/10 09:38:55    248s] #WARNING (NRIF-68) Option 'OnGridOnly 0' did not specify a correct type. It will be ignored.
+[01/10 09:38:55    248s] #WARNING (NRDR-157) In option 'PostRouteSwapVia ',  is invalid and will be ignored.
+[01/10 09:38:56    249s] #Minimum voltage of a net in the design = 0.000.
+[01/10 09:38:56    249s] #Maximum voltage of a net in the design = 0.990.
+[01/10 09:38:56    249s] #Voltage range [0.000 - 0.990] has 22919 nets.
+[01/10 09:38:56    249s] #Voltage range [0.000 - 0.000] has 17 nets.
+[01/10 09:38:56    249s] #Voltage range [0.810 - 0.990] has 1 net.
+[01/10 09:38:56    249s] #Build and mark too close pins for the same net.
+[01/10 09:38:56    249s] ### Time Record (Cell Pin Access) is installed.
+[01/10 09:38:56    249s] #Rebuild pin access data for design.
+[01/10 09:38:56    249s] #Initial pin access analysis.
+[01/10 09:40:41    354s] #Detail pin access analysis.
+[01/10 09:42:02    435s] ### Time Record (Cell Pin Access) is uninstalled.
+[01/10 09:42:02    435s] # M1           V   Track-Pitch = 0.14000    Line-2-Via Pitch = 0.10000
+[01/10 09:42:02    435s] # M2           H   Track-Pitch = 0.10000    Line-2-Via Pitch = 0.10000
+[01/10 09:42:02    435s] # M3           V   Track-Pitch = 0.10000    Line-2-Via Pitch = 0.10000
+[01/10 09:42:02    435s] # M4           H   Track-Pitch = 0.10000    Line-2-Via Pitch = 0.10000
+[01/10 09:42:02    435s] # M5           V   Track-Pitch = 0.10000    Line-2-Via Pitch = 0.10000
+[01/10 09:42:02    435s] # M6           H   Track-Pitch = 0.10000    Line-2-Via Pitch = 0.10000
+[01/10 09:42:02    435s] # M7           V   Track-Pitch = 0.10000    Line-2-Via Pitch = 0.10000
+[01/10 09:42:02    435s] # M8           H   Track-Pitch = 0.80000    Line-2-Via Pitch = 0.80000
+[01/10 09:42:02    435s] # M9           V   Track-Pitch = 0.80000    Line-2-Via Pitch = 0.80000
+[01/10 09:42:02    435s] # AP           H   Track-Pitch = 4.50000    Line-2-Via Pitch = 5.00000
+[01/10 09:42:02    435s] #WARNING (NRAG-44) Track pitch is too small compared with line-2-via pitch.
+[01/10 09:42:02    435s] #cpu time = 00:00:00, elapsed time = 00:00:00, memory = 2568.59 (MB), peak = 2569.42 (MB)
+[01/10 09:42:03    436s] #ERROR (NRDB-2276) Net FE_OFN377_rst_n has the top and bottom routing layers as M6 and M1 respectively. However, the top and bottom preferred routing layers are M10 and M8 and the preferred routing layer effort is set to medium or high. To resolve this issue, ensure that the top and bottom preferred routing layers are within the top and bottom routing layer range.
+[01/10 09:42:03    436s] ### Time Record (Data Preparation) is uninstalled.
+[01/10 09:42:03    436s] #Cpu time = 00:03:40
+[01/10 09:42:03    436s] #Elapsed time = 00:03:43
+[01/10 09:42:03    436s] #Increased memory = 381.24 (MB)
+[01/10 09:42:03    436s] #Total memory = 2497.57 (MB)
+[01/10 09:42:03    436s] #Peak memory = 2626.24 (MB)
+[01/10 09:42:03    436s] #WARNING (NRIF-19) Check ERROR messages in log file and correct them if possible.
+[01/10 09:42:03    436s] ### Time Record (globalDetailRoute) is uninstalled.
+[01/10 09:42:04    437s] **WARN: (IMPEXT-3493):	The design extraction status has been reset by set_analysis_view/update_rc_corner or setExtractRCMode  command. The parasitic data can be regenerated either by extracting the design using the extractRC command or by loading the SPEF or RCDB file(s). To prevent resetting of the extraction status, avoid changing extraction modes.
+[01/10 09:42:04    437s] #***Restoring views
+[01/10 09:42:04    437s] #Default setup view is reset to view_wcl_slow.
+[01/10 09:42:04    437s] #routeDesign: cpu time = 00:03:42, elapsed time = 00:03:45, memory = 2472.82 (MB), peak = 2626.24 (MB)
+[01/10 09:42:04    437s] 
+[01/10 09:42:04    437s] *** Summary of all messages that are not suppressed in this session:
+[01/10 09:42:04    437s] Severity  ID               Count  Summary                                  
+[01/10 09:42:04    437s] WARNING   IMPEXT-7040          4  A %s wire, passing through or close to l...
+[01/10 09:42:04    437s] WARNING   IMPEXT-3493          1  The design extraction status has been re...
+[01/10 09:42:04    437s] WARNING   IMPEXT-3530          1  The process node is not set. Use the com...
+[01/10 09:42:04    437s] *** Message Summary: 6 warning(s), 0 error(s)
+[01/10 09:42:04    437s] 
+[01/10 09:42:04    437s] ### Time Record (routeDesign) is uninstalled.
+[01/10 09:42:04    437s] ### 
+[01/10 09:42:04    437s] ###   Scalability Statistics
+[01/10 09:42:04    437s] ### 
+[01/10 09:42:04    437s] ### --------------------------------+----------------+----------------+----------------+
+[01/10 09:42:04    437s] ###   routeDesign                   |        cpu time|    elapsed time|     scalability|
+[01/10 09:42:04    437s] ### --------------------------------+----------------+----------------+----------------+
+[01/10 09:42:04    437s] ###   Pre Callback                  |        00:00:00|        00:00:00|             1.0|
+[01/10 09:42:04    437s] ###   Timing Data Generation        |        00:00:28|        00:00:32|             0.9|
+[01/10 09:42:04    437s] ###   DB Import                     |        00:00:03|        00:00:03|             1.0|
+[01/10 09:42:04    437s] ###   Cell Pin Access               |        00:03:06|        00:03:06|             1.0|
+[01/10 09:42:04    437s] ###   Data Preparation              |        00:00:02|        00:00:02|             1.0|
+[01/10 09:42:04    437s] ###   Global Routing                |        00:00:00|        00:00:00|             1.0|
+[01/10 09:42:04    437s] ###   Entire Command                |        00:03:42|        00:03:45|             1.0|
+[01/10 09:42:04    437s] ### --------------------------------+----------------+----------------+----------------+
+[01/10 09:42:04    437s] ### 
+[01/10 09:42:04    437s] 1
+[01/10 09:43:13    446s] <CMD> setDrawView ameba
+[01/10 09:43:13    446s] <CMD> setDrawView place
+[01/10 09:43:19    447s] <CMD> zoomBox 83.72650 184.45250 98.95750 162.49600
+[01/10 09:44:40    459s] <CMD> setNanoRouteMode -quiet -drouteFixAntenna 1
+[01/10 09:44:40    459s] <CMD> setNanoRouteMode -quiet -routeInsertAntennaDiode 0
+[01/10 09:44:40    459s] <CMD> setNanoRouteMode -quiet -routeWithTimingDriven 0
+[01/10 09:44:40    459s] <CMD> setNanoRouteMode -quiet -routeWithEco 0
+[01/10 09:44:40    459s] <CMD> setNanoRouteMode -quiet -routeWithLithoDriven 1
+[01/10 09:44:40    459s] <CMD> setNanoRouteMode -quiet -droutePostRouteLithoRepair 0
+[01/10 09:44:40    459s] <CMD> setNanoRouteMode -quiet -routeWithSiDriven 0
+[01/10 09:44:40    459s] <CMD> setNanoRouteMode -quiet -drouteAutoStop 0
+[01/10 09:44:40    459s] <CMD> setNanoRouteMode -quiet -routeSelectedNetOnly 0
+[01/10 09:44:40    459s] <CMD> setNanoRouteMode -quiet -routeWithTimingDriven false
+[01/10 09:44:40    459s] <CMD> setNanoRouteMode -quiet -routeWithSiDriven false
+[01/10 09:44:40    459s] <CMD> routeDesign -globalDetail
+[01/10 09:44:40    459s] ### Time Record (routeDesign) is installed.
+[01/10 09:44:40    459s] #routeDesign: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 2474.27 (MB), peak = 2626.24 (MB)
+[01/10 09:44:40    459s] AAE_INFO: Pre Route call back at the beginning of routeDesign
+[01/10 09:44:40    459s] #**INFO: setDesignMode -flowEffort standard
+[01/10 09:44:40    459s] #**INFO: setDesignMode -powerEffort none
+[01/10 09:44:40    459s] #WARNING (NRIG-96) Selected single pass global detail route "-globalDetail". Clock eco and post optimizations will not be run. See "man NRIG-96" for more details.
+[01/10 09:44:40    459s] **INFO: User settings:
+[01/10 09:44:40    459s] setNanoRouteMode -route_detail_auto_stop                                                  false
+[01/10 09:44:40    459s] setNanoRouteMode -route_detail_end_iteration                                              1
+[01/10 09:44:40    459s] setNanoRouteMode -route_detail_fix_antenna                                                true
+[01/10 09:44:40    459s] setNanoRouteMode -route_detail_on_grid_only                                               0
+[01/10 09:44:40    459s] setNanoRouteMode -route_detail_post_route_litho_repair                                    false
+[01/10 09:44:40    459s] setNanoRouteMode -route_detail_post_route_spread_wire                                     1
+[01/10 09:44:40    459s] setNanoRouteMode -route_detail_post_route_swap_via                                        {}
+[01/10 09:44:40    459s] setNanoRouteMode -route_detail_use_multi_cut_via_effort                                   {}
+[01/10 09:44:40    459s] setNanoRouteMode -route_extract_third_party_compatible                                    false
+[01/10 09:44:40    459s] setNanoRouteMode -route_global_exp_timing_driven_std_delay                                5.1
+[01/10 09:44:40    459s] setNanoRouteMode -route_global_exp_timing_driven_use_tif_timing_engine_for_import_design  false
+[01/10 09:44:40    459s] setNanoRouteMode -route_bottom_routing_layer                                              1
+[01/10 09:44:40    459s] setNanoRouteMode -route_exp_design_mode_bottom_routing_layer                              2
+[01/10 09:44:40    459s] setNanoRouteMode -route_ignore_antenna_top_cell_pin                                       false
+[01/10 09:44:40    459s] setNanoRouteMode -route_antenna_diode_insertion                                           false
+[01/10 09:44:40    459s] setNanoRouteMode -route_selected_net_only                                                 false
+[01/10 09:44:40    459s] setNanoRouteMode -route_top_routing_layer                                                 6
+[01/10 09:44:40    459s] setNanoRouteMode -route_with_eco                                                          false
+[01/10 09:44:40    459s] setNanoRouteMode -route_with_litho_driven                                                 true
+[01/10 09:44:40    459s] setNanoRouteMode -route_with_si_driven                                                    false
+[01/10 09:44:40    459s] setNanoRouteMode -route_with_timing_driven                                                false
+[01/10 09:44:40    459s] setNanoRouteMode -timingEngine                                                            {}
+[01/10 09:44:40    459s] setDesignMode -bottomRoutingLayer                                                         M2
+[01/10 09:44:40    459s] setDesignMode -powerEffort                                                                none
+[01/10 09:44:40    459s] setExtractRCMode -engine                                                                  preRoute
+[01/10 09:44:40    459s] setExtractRCMode -prePlaceCapScaleFactor                                                  2.7051
+[01/10 09:44:40    459s] setExtractRCMode -prePlaceFanoutPenalty                                                   0
+[01/10 09:44:40    459s] setExtractRCMode -prePlaceFanoutThreshold                                                 10
+[01/10 09:44:40    459s] setExtractRCMode -prePlaceResScaleFactor                                                  0.3976
+[01/10 09:44:40    459s] setExtractRCMode -prePlaceSiteSize                                                        1.04
+[01/10 09:44:40    459s] setExtractRCMode -prePlaceWireLengthSlope                                                 1.6312
+[01/10 09:44:40    459s] setExtractRCMode -prePlaceWireLengthY0                                                    0.9673
+[01/10 09:44:40    459s] setDelayCalMode -enable_high_fanout                                                       true
+[01/10 09:44:40    459s] setDelayCalMode -eng_enablePrePlacedFlow                                                  false
+[01/10 09:44:40    459s] setDelayCalMode -engine                                                                   aae
+[01/10 09:44:40    459s] setDelayCalMode -ignoreNetLoad                                                            false
+[01/10 09:44:40    459s] setDelayCalMode -SIAware                                                                  false
+[01/10 09:44:40    459s] setDelayCalMode -socv_accuracy_mode                                                       low
+[01/10 09:44:40    459s] setDelayCalMode -socv_use_lvf_tables                                                      all
+[01/10 09:44:40    459s] setSIMode -separate_delta_delay_on_data                                                   true
+[01/10 09:44:40    459s] 
+[01/10 09:44:40    459s] #**INFO: multi-cut via swapping will not be performed after routing.
+[01/10 09:44:40    459s] #**INFO: All auto set options tuned by routeDesign will be restored to their original settings on command completion.
+[01/10 09:44:40    459s] OPERPROF: Starting checkPlace at level 1, MEM:2632.6M, EPOCH TIME: 1736520280.665254
+[01/10 09:44:40    459s] Processing tracks to init pin-track alignment.
+[01/10 09:44:40    459s] z: 1, totalTracks: 1
+[01/10 09:44:40    459s] z: 3, totalTracks: 1
+[01/10 09:44:40    459s] z: 5, totalTracks: 1
+[01/10 09:44:40    459s] z: 7, totalTracks: 1
+[01/10 09:44:40    459s] #spOpts: N=32 hrOri=1 hrSnap=1 rpCkHalo=4 
+[01/10 09:44:40    459s] Cell pp_fir_u_0 LLGs are deleted
+[01/10 09:44:40    459s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[01/10 09:44:40    459s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[01/10 09:44:40    459s] # Building pp_fir_u_0 llgBox search-tree.
+[01/10 09:44:40    459s] OPERPROF:   Starting SiteArray-Init at level 2, MEM:2632.6M, EPOCH TIME: 1736520280.756999
+[01/10 09:44:40    459s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[01/10 09:44:40    459s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[01/10 09:44:40    459s] OPERPROF:     Starting SiteArray-Init-FPlan at level 3, MEM:2632.6M, EPOCH TIME: 1736520280.761587
+[01/10 09:44:40    459s] Max number of tech site patterns supported in site array is 256.
+[01/10 09:44:40    459s] Core basic site is sc9mcpp140z_cln28ht
+[01/10 09:44:40    459s] After signature check, allow fast init is true, keep pre-filter is true.
+[01/10 09:44:40    459s] After signature check and other controls, allow fast init is false, keep pre-filter is true.
+[01/10 09:44:40    459s] SiteArray: non-trimmed site array dimensions = 200 x 1481
+[01/10 09:44:40    459s] SiteArray: use 1,536,000 bytes
+[01/10 09:44:40    459s] SiteArray: current memory after site array memory allocation 2632.6M
+[01/10 09:44:40    459s] SiteArray: FP blocked sites are writable
+[01/10 09:44:40    459s] SiteArray: number of non floorplan blocked sites for llg default is 296200
+[01/10 09:44:40    459s] Atter site array init, number of instance map data is 0.
+[01/10 09:44:40    459s] OPERPROF:     Finished SiteArray-Init-FPlan at level 3, CPU:0.030, REAL:0.027, MEM:2632.6M, EPOCH TIME: 1736520280.788834
+[01/10 09:44:40    459s] 
+[01/10 09:44:40    459s]  Pre_CCE_Colorizing is not ON! (0:0:3537:0)
+[01/10 09:44:40    459s] OPERPROF:   Finished SiteArray-Init at level 2, CPU:0.050, REAL:0.036, MEM:2632.6M, EPOCH TIME: 1736520280.792787
+[01/10 09:44:40    459s] Begin checking placement ... (start mem=2632.6M, init mem=2632.6M)
+[01/10 09:44:40    459s] Begin checking exclusive groups violation ...
+[01/10 09:44:40    459s] There are 0 groups to check, max #box is 0, total #box is 0
+[01/10 09:44:40    459s] Finished checking exclusive groups violations. Found 0 Vio.
+[01/10 09:44:40    459s] 
+[01/10 09:44:40    459s] Running CheckPlace using 1 thread in normal mode...
+[01/10 09:44:41    459s] 
+[01/10 09:44:41    459s] ...checkPlace normal is done!
+[01/10 09:44:41    459s] OPERPROF:   Starting checkPlace/Vio-Check at level 2, MEM:2632.6M, EPOCH TIME: 1736520281.220252
+[01/10 09:44:41    459s] OPERPROF:   Finished checkPlace/Vio-Check at level 2, CPU:0.030, REAL:0.031, MEM:2632.6M, EPOCH TIME: 1736520281.250805
+[01/10 09:44:41    459s] *info: Placed = 22085          (Fixed = 1006)
+[01/10 09:44:41    459s] *info: Unplaced = 0           
+[01/10 09:44:41    459s] Placement Density:62.13%(22858/36788)
+[01/10 09:44:41    459s] Placement Density (including fixed std cells):62.68%(23391/37321)
+[01/10 09:44:41    459s] Cell pp_fir_u_0 LLGs are deleted
+[01/10 09:44:41    459s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:22085).
+[01/10 09:44:41    459s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[01/10 09:44:41    459s] # Resetting pin-track-align track data.
+[01/10 09:44:41    459s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[01/10 09:44:41    459s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[01/10 09:44:41    459s] Finished checkPlace (total: cpu=0:00:00.7, real=0:00:01.0; vio checks: cpu=0:00:00.5, real=0:00:01.0; mem=2632.6M)
+[01/10 09:44:41    459s] OPERPROF: Finished checkPlace at level 1, CPU:0.650, REAL:0.659, MEM:2632.6M, EPOCH TIME: 1736520281.323835
+[01/10 09:44:41    459s] 
+[01/10 09:44:41    459s] changeUseClockNetStatus Option :  -noFixedNetWires 
+[01/10 09:44:41    459s] *** Changed status on (0) nets in Clock.
+[01/10 09:44:41    459s] *** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=2632.6M) ***
+[01/10 09:44:41    459s] 
+[01/10 09:44:41    459s] globalDetailRoute
+[01/10 09:44:41    459s] 
+[01/10 09:44:41    459s] #Start globalDetailRoute on Fri Jan 10 09:44:41 2025
+[01/10 09:44:41    459s] #
+[01/10 09:44:41    459s] ### Time Record (globalDetailRoute) is installed.
+[01/10 09:44:41    459s] ### Time Record (Pre Callback) is installed.
+[01/10 09:44:41    459s] eee: RC Grid Memory freed=72600
+[01/10 09:44:41    459s] ### Time Record (Pre Callback) is uninstalled.
+[01/10 09:44:41    459s] ### Time Record (DB Import) is installed.
+[01/10 09:44:41    459s] ### Time Record (Timing Data Generation) is installed.
+[01/10 09:44:41    459s] ### Time Record (Timing Data Generation) is uninstalled.
+[01/10 09:44:43    462s] #WARNING (NRDB-317) Threshold min width 0.180000 is >= max width 0.180000 for minimumcut 2 for LAYER M7
+[01/10 09:44:43    462s] #WARNING (NRIG-1303) The congestion map does not match the GCELL grid. Clearing the map.
+[01/10 09:44:44    462s] ### Net info: total nets: 22937
+[01/10 09:44:44    462s] ### Net info: dirty nets: 0
+[01/10 09:44:44    462s] ### Net info: marked as disconnected nets: 0
+[01/10 09:44:44    462s] #num needed restored net=0
+[01/10 09:44:44    462s] #need_extraction net=0 (total=22937)
+[01/10 09:44:44    462s] ### Net info: fully routed nets: 0
+[01/10 09:44:44    462s] ### Net info: trivial (< 2 pins) nets: 735
+[01/10 09:44:44    462s] ### Net info: unrouted nets: 22202
+[01/10 09:44:44    462s] ### Net info: re-extraction nets: 0
+[01/10 09:44:44    462s] ### Net info: ignored nets: 0
+[01/10 09:44:44    462s] ### Net info: skip routing nets: 0
+[01/10 09:44:44    462s] #WARNING (NRDB-2005) SPECIAL_NET VDD has special wires but no definitions for instance pins or top level pins. This will cause routability problems later.
+[01/10 09:44:44    462s] #WARNING (NRDB-2005) SPECIAL_NET VSS has special wires but no definitions for instance pins or top level pins. This will cause routability problems later.
+[01/10 09:44:44    462s] #WARNING (NRIG-100) Ignoring auto generated timing constraints when routeWithTimingDriven set to false.
+[01/10 09:44:44    462s] ### import design signature (3): route=1559912691 fixed_route=1559912691 flt_obj=0 vio=1905142130 swire=282492057 shield_wire=1 net_attr=1882147208 dirty_area=0 del_dirty_area=0 cell=60645414 placement=1074087299 pin_access=1 inst_pattern=1 inst_orient=1 via=1304780868
+[01/10 09:44:44    462s] ### Time Record (DB Import) is uninstalled.
+[01/10 09:44:44    462s] #NanoRoute Version 22.10-p001_1 NR220915-0329/22_10-UB
+[01/10 09:44:44    462s] #WARNING (NRIF-79) Wrong option value for drouteUseMultiCutViaEffort <>, reset to default.
+[01/10 09:44:44    462s] #WARNING (NRIF-79) Wrong option value for drouteUseMultiCutViaEffort <>, reset to default.
+[01/10 09:44:44    462s] #WARNING (NRIF-67) In option 'OnGridOnly 0', 0 is an unknown type. It will be ignored.
+[01/10 09:44:44    462s] #WARNING (NRIF-68) Option 'OnGridOnly 0' did not specify a correct type. It will be ignored.
+[01/10 09:44:44    462s] #WARNING (NRDR-157) In option 'PostRouteSwapVia ',  is invalid and will be ignored.
+[01/10 09:44:44    462s] #RTESIG:78da95953d4fc330108699f915a7b443905af05d6c375e91580155c05a05e2b691520725
+[01/10 09:44:44    462s] #       ced07f8f2331b455da8bb3faf17bbef73e329b7fbdac21217a44b1fc15023708af6b2261
+[01/10 09:44:44    462s] #       502d4546e68968138e3e9f93fbd9fcedfd2323d816756721fd6e9a7a01e5d11587ea074a
+[01/10 09:44:44    462s] #       bb2dfada4367bdafdceee19fce626894f21cef3bdb5e30941940482be7edceb6e38822f0
+[01/10 09:44:44    462s] #       6d3f31282909c980279076be0d07fc0d157b431388934733b43131ae49adcfc4471c9146
+[01/10 09:44:44    462s] #       4538a2e5ea8c1e11d4b986a4e87d132cf0b675457b5c5c5333c15f7162d588dc4a28b6f0
+[01/10 09:44:44    462s] #       2b149020a38308098384e4180405f27d882831c25344a5a3701dd3c3a872092a8cf0f041
+[01/10 09:44:44    462s] #       baad9bc28fbf5a0787d8d4b4211eca85e40611f3a166fb6ab7670c3722d4adf3852b8bb6
+[01/10 09:44:44    462s] #       0cac75fde11a49404c54135e96b8c6d95b4a84973dc70c250acd2f271466029411375f81
+[01/10 09:44:44    462s] #       511384f21c34b30bd144af370a3dc4c6a660329704899c9bb5e14f332118d20448ea1bd1
+[01/10 09:44:44    462s] #       eefe001131272e
+[01/10 09:44:44    462s] #
+[01/10 09:44:44    462s] #WARNING (NRIF-79) Wrong option value for drouteUseMultiCutViaEffort <>, reset to default.
+[01/10 09:44:44    462s] #WARNING (NRIF-79) Wrong option value for drouteUseMultiCutViaEffort <>, reset to default.
+[01/10 09:44:44    462s] #WARNING (NRIF-67) In option 'OnGridOnly 0', 0 is an unknown type. It will be ignored.
+[01/10 09:44:44    462s] #WARNING (NRIF-68) Option 'OnGridOnly 0' did not specify a correct type. It will be ignored.
+[01/10 09:44:44    462s] #WARNING (NRDR-157) In option 'PostRouteSwapVia ',  is invalid and will be ignored.
+[01/10 09:44:44    462s] ### Time Record (Data Preparation) is installed.
+[01/10 09:44:44    462s] #WARNING (NRIF-79) Wrong option value for drouteUseMultiCutViaEffort <>, reset to default.
+[01/10 09:44:44    462s] #WARNING (NRIF-79) Wrong option value for drouteUseMultiCutViaEffort <>, reset to default.
+[01/10 09:44:44    462s] #WARNING (NRIF-67) In option 'OnGridOnly 0', 0 is an unknown type. It will be ignored.
+[01/10 09:44:44    462s] #WARNING (NRIF-68) Option 'OnGridOnly 0' did not specify a correct type. It will be ignored.
+[01/10 09:44:44    462s] #WARNING (NRDR-157) In option 'PostRouteSwapVia ',  is invalid and will be ignored.
+[01/10 09:44:44    462s] #RTESIG:78da9595c14ec3300c8639f31456b743913688dd246bae485c014dc0752a34db2a75296a
+[01/10 09:44:44    462s] #       d3c3de9e1471d8a63237bde6cb6ffbb79dcee61f4f6b4888ee512cbf85c00dc2f39a4818
+[01/10 09:44:44    462s] #       544b91917920da84a3f7c7e476367f797dcb08b645dd59483f9ba65e407974c5a1fa82d2
+[01/10 09:44:44    462s] #       6e8bbef6d059ef2bb7bbfba3b3181aa53cc7fbceb6170c650610d2ca79bbb3ed38a2087c
+[01/10 09:44:44    462s] #       db4f0c4a4a4232e009a49d6fc3017f43c5ded004e22469863626c635a9f599f88823d2a8
+[01/10 09:44:44    462s] #       0847b45c9dd123823ad79014bd6f8205deb6ae688f8bffd44cf0579c583522b7128a6dfc
+[01/10 09:44:44    462s] #       0a0524c8e82042c220a138064181fc1c224a8cf01451e9285cc7cc30aa5c820a2b3c7c90
+[01/10 09:44:44    462s] #       6eeba6f0e359ebe0105b9a36c443b990dc22623ef46c5fedf68ce14684be75be7065d196
+[01/10 09:44:44    462s] #       81b5ae3ffc47121013d584cc12d7387b5d691884df2aaf274778399cccf6a2d0fc2b86c2
+[01/10 09:44:44    462s] #       4c8032e21631306a82509e83661e4d34d1ef208561636353e8065704899c5bcae1973421
+[01/10 09:44:44    462s] #       18d20448ea2bd16e7e004d4933e7
+[01/10 09:44:44    462s] #
+[01/10 09:44:44    462s] ### Time Record (Data Preparation) is uninstalled.
+[01/10 09:44:44    462s] ### Time Record (Global Routing) is installed.
+[01/10 09:44:44    462s] ### Time Record (Global Routing) is uninstalled.
+[01/10 09:44:44    462s] #Total number of trivial nets (e.g. < 2 pins) = 735 (skipped).
+[01/10 09:44:44    462s] #Total number of routable nets = 22202.
+[01/10 09:44:44    462s] #Total number of nets in the design = 22937.
+[01/10 09:44:44    462s] #22202 routable nets do not have any wires.
+[01/10 09:44:44    462s] #22202 nets will be global routed.
+[01/10 09:44:44    462s] #44 global routed or unrouted (routable) nets have been constrained (e.g. have preferred extra spacing, require shielding etc.)
+[01/10 09:44:44    462s] ### Time Record (Data Preparation) is installed.
+[01/10 09:44:44    462s] #WARNING (NRIF-79) Wrong option value for drouteUseMultiCutViaEffort <>, reset to default.
+[01/10 09:44:44    462s] #WARNING (NRIF-79) Wrong option value for drouteUseMultiCutViaEffort <>, reset to default.
+[01/10 09:44:44    462s] #WARNING (NRIF-67) In option 'OnGridOnly 0', 0 is an unknown type. It will be ignored.
+[01/10 09:44:44    462s] #WARNING (NRIF-68) Option 'OnGridOnly 0' did not specify a correct type. It will be ignored.
+[01/10 09:44:44    462s] #WARNING (NRDR-157) In option 'PostRouteSwapVia ',  is invalid and will be ignored.
+[01/10 09:44:44    462s] #Start routing data preparation on Fri Jan 10 09:44:44 2025
+[01/10 09:44:44    462s] #
+[01/10 09:44:44    462s] #WARNING (NRIF-79) Wrong option value for drouteUseMultiCutViaEffort <>, reset to default.
+[01/10 09:44:44    462s] #WARNING (NRIF-79) Wrong option value for drouteUseMultiCutViaEffort <>, reset to default.
+[01/10 09:44:44    462s] #WARNING (NRIF-67) In option 'OnGridOnly 0', 0 is an unknown type. It will be ignored.
+[01/10 09:44:44    462s] #WARNING (NRIF-68) Option 'OnGridOnly 0' did not specify a correct type. It will be ignored.
+[01/10 09:44:44    462s] #WARNING (NRDR-157) In option 'PostRouteSwapVia ',  is invalid and will be ignored.
+[01/10 09:44:45    463s] #Minimum voltage of a net in the design = 0.000.
+[01/10 09:44:45    463s] #Maximum voltage of a net in the design = 0.990.
+[01/10 09:44:45    463s] #Voltage range [0.000 - 0.990] has 22919 nets.
+[01/10 09:44:45    463s] #Voltage range [0.000 - 0.000] has 17 nets.
+[01/10 09:44:45    463s] #Voltage range [0.810 - 0.990] has 1 net.
+[01/10 09:44:45    464s] #Build and mark too close pins for the same net.
+[01/10 09:44:45    464s] ### Time Record (Cell Pin Access) is installed.
+[01/10 09:44:45    464s] #Rebuild pin access data for design.
+[01/10 09:44:45    464s] #Initial pin access analysis.
+[01/10 09:46:30    569s] #Detail pin access analysis.
+[01/10 09:47:51    650s] ### Time Record (Cell Pin Access) is uninstalled.
+[01/10 09:47:51    650s] # M1           V   Track-Pitch = 0.14000    Line-2-Via Pitch = 0.10000
+[01/10 09:47:51    650s] # M2           H   Track-Pitch = 0.10000    Line-2-Via Pitch = 0.10000
+[01/10 09:47:51    650s] # M3           V   Track-Pitch = 0.10000    Line-2-Via Pitch = 0.10000
+[01/10 09:47:51    650s] # M4           H   Track-Pitch = 0.10000    Line-2-Via Pitch = 0.10000
+[01/10 09:47:51    650s] # M5           V   Track-Pitch = 0.10000    Line-2-Via Pitch = 0.10000
+[01/10 09:47:51    650s] # M6           H   Track-Pitch = 0.10000    Line-2-Via Pitch = 0.10000
+[01/10 09:47:51    650s] # M7           V   Track-Pitch = 0.10000    Line-2-Via Pitch = 0.10000
+[01/10 09:47:51    650s] # M8           H   Track-Pitch = 0.80000    Line-2-Via Pitch = 0.80000
+[01/10 09:47:51    650s] # M9           V   Track-Pitch = 0.80000    Line-2-Via Pitch = 0.80000
+[01/10 09:47:51    650s] # AP           H   Track-Pitch = 4.50000    Line-2-Via Pitch = 5.00000
+[01/10 09:47:51    650s] #WARNING (NRAG-44) Track pitch is too small compared with line-2-via pitch.
+[01/10 09:47:51    650s] #cpu time = 00:00:00, elapsed time = 00:00:00, memory = 2518.02 (MB), peak = 2626.24 (MB)
+[01/10 09:47:52    650s] #ERROR (NRDB-2276) Net FE_OFN377_rst_n has the top and bottom routing layers as M6 and M1 respectively. However, the top and bottom preferred routing layers are M10 and M8 and the preferred routing layer effort is set to medium or high. To resolve this issue, ensure that the top and bottom preferred routing layers are within the top and bottom routing layer range.
+[01/10 09:47:52    650s] ### Time Record (Data Preparation) is uninstalled.
+[01/10 09:47:52    651s] #Cpu time = 00:03:11
+[01/10 09:47:52    651s] #Elapsed time = 00:03:11
+[01/10 09:47:52    651s] #Increased memory = 42.39 (MB)
+[01/10 09:47:52    651s] #Total memory = 2517.59 (MB)
+[01/10 09:47:52    651s] #Peak memory = 2626.24 (MB)
+[01/10 09:47:52    651s] #WARNING (NRIF-19) Check ERROR messages in log file and correct them if possible.
+[01/10 09:47:52    651s] ### Time Record (globalDetailRoute) is uninstalled.
+[01/10 09:47:52    651s] #Default setup view is reset to view_wcl_slow.
+[01/10 09:47:52    651s] #routeDesign: cpu time = 00:03:12, elapsed time = 00:03:12, memory = 2517.58 (MB), peak = 2626.24 (MB)
+[01/10 09:47:52    651s] *** Message Summary: 0 warning(s), 0 error(s)
+[01/10 09:47:52    651s] 
+[01/10 09:47:52    651s] ### Time Record (routeDesign) is uninstalled.
+[01/10 09:47:52    651s] ### 
+[01/10 09:47:52    651s] ###   Scalability Statistics
+[01/10 09:47:52    651s] ### 
+[01/10 09:47:52    651s] ### --------------------------------+----------------+----------------+----------------+
+[01/10 09:47:52    651s] ###   routeDesign                   |        cpu time|    elapsed time|     scalability|
+[01/10 09:47:52    651s] ### --------------------------------+----------------+----------------+----------------+
+[01/10 09:47:52    651s] ###   Pre Callback                  |        00:00:00|        00:00:00|             1.0|
+[01/10 09:47:52    651s] ###   Timing Data Generation        |        00:00:00|        00:00:00|             1.0|
+[01/10 09:47:52    651s] ###   DB Import                     |        00:00:03|        00:00:03|             1.0|
+[01/10 09:47:52    651s] ###   Cell Pin Access               |        00:03:06|        00:03:06|             1.0|
+[01/10 09:47:52    651s] ###   Data Preparation              |        00:00:02|        00:00:02|             1.0|
+[01/10 09:47:52    651s] ###   Global Routing                |        00:00:00|        00:00:00|             1.0|
+[01/10 09:47:52    651s] ###   Entire Command                |        00:03:12|        00:03:12|             1.0|
+[01/10 09:47:52    651s] ### --------------------------------+----------------+----------------+----------------+
+[01/10 09:47:52    651s] ### 
+[01/10 09:47:52    651s] 1
+[01/10 09:49:55    667s] **WARN: (IMPTCM-77):	Option "-allowSwapping" for command getScanReorderMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+[01/10 09:50:41    674s] <CMD> fit
+[01/10 09:50:45    675s] 
+--------------------------------------------------------------------------------
+Exiting Innovus on Fri Jan 10 09:50:45 2025
+  Total CPU time:     0:11:19
+  Total real time:    0:31:17
+  Peak memory (main): 2563.56MB
+
+[01/10 09:50:45    675s] 
+[01/10 09:50:45    675s] *** Memory Usage v#1 (Current mem = 2656.809M, initial mem = 509.465M) ***
+[01/10 09:50:45    675s] 
+[01/10 09:50:45    675s] *** Summary of all messages that are not suppressed in this session:
+[01/10 09:50:45    675s] Severity  ID               Count  Summary                                  
+[01/10 09:50:45    675s] WARNING   IMPEXT-7040          4  A %s wire, passing through or close to l...
+[01/10 09:50:45    675s] WARNING   IMPEXT-3493          1  The design extraction status has been re...
+[01/10 09:50:45    675s] WARNING   IMPEXT-3530          1  The process node is not set. Use the com...
+[01/10 09:50:45    675s] WARNING   IMPESI-3505          1  setDelayCalMode -eng_%s (default=%s) wil...
+[01/10 09:50:45    675s] WARNING   IMPOPT-3602          5  The specified path group name %s is not ...
+[01/10 09:50:45    675s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
+[01/10 09:50:45    675s] WARNING   IMPTCM-77            3  Option "%s" for command %s is obsolete a...
+[01/10 09:50:45    675s] WARNING   TECHLIB-302         57  No function defined for cell '%s'. The c...
+[01/10 09:50:45    675s] *** Message Summary: 73 warning(s), 0 error(s)
+[01/10 09:50:45    675s] 
+[01/10 09:50:45    675s] --- Ending "Innovus" (totcpu=0:11:15, real=0:31:15, mem=2656.8M) ---

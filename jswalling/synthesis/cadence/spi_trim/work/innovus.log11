@@ -1,0 +1,413 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v21.12-s106_1, built Wed Dec 8 18:19:02 PST 2021
+Options:	
+Date:		Thu May  9 07:38:13 2024
+Host:		cluster12 (x86_64 w/Linux 3.10.0-1160.102.1.el7.x86_64) (6cores*24cpus*Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz 15360KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		[07:38:13.150449] Configured Lic search path (20.02-s004): 27002@license.ece.vt.edu
+
+		invs	Innovus Implementation System	21.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+The soft stacksize limit is either up to the hard limit or larger than 0.2% of RAM. No change is needed.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+**WARN: (IMPOAX-793):	Problem in processing library definition file /home/jswalling/cds.lib - Unable to open library asap7_TechLib at path /home/jswalling/$PDK_DIR/cdslib/asap7_TechLib: Invalid Lib Path..
+**WARN: (IMPOAX-793):	Problem in processing library definition file /home/jswalling/cds.lib - Unable to open library asap7ssc7p5t at path /home/jswalling/$PDK_DIR/asap7ssc7p5t_05: Invalid Lib Path..
+**WARN: (IMPOAX-793):	Problem in processing library definition file /home/jswalling/cds.lib - Unable to open library asap7_TechLib at path /home/jswalling/$PDK_DIR/cdslib/asap7_TechLib: Invalid Lib Path..
+**WARN: (IMPOAX-793):	Problem in processing library definition file /home/jswalling/cds.lib - Unable to open library asap7ssc7p5t at path /home/jswalling/$PDK_DIR/asap7ssc7p5t_05: Invalid Lib Path..
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file {/software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/lef/5.8/gf22nsdvlogl28edl116a_9M_2Mx_5Cx_1Jx_1Ox_LB.lef /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/lef/5.8/gf22nsdvlogl28edl116a.lef}
+<CMD> set init_verilog topVcoDigital_noRoute.v
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+
+Loading LEF file /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/lef/5.8/gf22nsdvlogl28edl116a_9M_2Mx_5Cx_1Jx_1Ox_LB.lef ...
+
+Loading LEF file /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/lef/5.8/gf22nsdvlogl28edl116a.lef ...
+Set DBUPerIGU to M2 pitch 116.
+[08:06:53.155360] Periodic Lic check successful
+[08:06:53.155426] Feature usage summary:
+[08:06:53.155432] Innovus_Impl_System
+[08:06:53.155434] Innovus_20nm_Opt
+
+This command "init_design" required an extra checkout of license invs_20nm.
+Additional license(s) checked out: 1 'Innovus_20nm_Opt' license(s)
+**WARN: (IMPLF-200):	Pin 'X' in macro 'UDBSLT28_TIEDIN_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'X' in macro 'UDBSLT28_TIE1_V1_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'X' in macro 'UDBSLT28_TIE1_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'X' in macro 'UDBSLT28_TIE0_V1_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'X' in macro 'UDBSLT28_TIE0_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC3RBSBMSFQ_2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC3RBSBMSFQ_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC3MSFQNS_2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC3MSFQNS_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC3MSFQ_2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC3MSFQ_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC2SBMSFQ_2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC2SBMSFQ_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC2RBSBMSFQ_2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC2RBSBMSFQ_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC2RBMSFQ_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC2MSFQNS_2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC2MSFQNS_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC2MSFQ_2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'UDBSLT28_SYNC2MSFQ_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Z' in macro 'UDBSLT28_RAD8BOOTHMUX_2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-201) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPLF-200):	Pin 'X' in macro 'UDBSLT28_CLAMP_Y6_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+
+viaInitial starts at Thu May  9 08:06:54 2024
+viaInitial ends at Thu May  9 08:06:54 2024
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+*** End library_loading (cpu=0.00min, real=0.00min, mem=0.0M, fe_cpu=3.96min, fe_real=28.68min, fe_mem=795.7M) ***
+#% Begin Load netlist data ... (date=05/09 08:06:54, mem=680.1M)
+*** Begin netlist parsing (mem=795.7M) ***
+Created 0 new cells from 0 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist 'topVcoDigital_noRoute.v'
+
+*** Memory Usage v#1 (Current mem = 799.727M, initial mem = 295.352M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=799.7M) ***
+#% End Load netlist data ... (date=05/09 08:06:54, total cpu=0:00:00.0, real=0:00:00.0, peak res=684.8M, current mem=684.8M)
+Top level cell is topVcoDigital.
+Hooked 0 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell topVcoDigital ...
+*** Netlist is unique.
+** info: there are 1438 modules.
+** info: there are 533 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 852.195M, initial mem = 295.352M) ***
+
+Honor LEF defined pitches for advanced node
+Start create_tracks
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+**WARN: (IMPSYT-7328):	The design has been initialized in physical-only mode because the init_mmmc_file global variable was not defined. Timing analysis will not be possible within this session. You can only use commands that do not depend on timing data. If you need to use timing, you need to restart with an init_mmmc_file to define the timing setup, or you can save this design and use restoreDesign -mmmc_file <viewDef.tcl> to add the timing setup information.
+Extraction setup Started 
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-200            2  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPLF-201         1477  Pin '%s' in macro '%s' has no ANTENNADIF...
+WARNING   IMPSYT-7328          1  The design has been initialized in physi...
+*** Message Summary: 1480 warning(s), 0 error(s)
+
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site GF22_DST -s 90 40 5 5 5 5
+**WARN: (IMPFP-4026):	Adjusting core to 'Left' to 4.988000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+**WARN: (IMPFP-4026):	Adjusting core to 'Bottom' to 4.960000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+**WARN: (IMPFP-4026):	Adjusting core to 'Right' to 4.988000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+**WARN: (IMPFP-4026):	Adjusting core to 'Top' to 4.960000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+
+Honor LEF defined pitches for advanced node
+Start create_tracks
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> defIn ../def/topVcoDigital_fp.def
+Reading DEF file '../def/topVcoDigital_fp.def', current time is Thu May  9 08:08:03 2024 ...
+--- DIVIDERCHAR '/'
+--- UnitsPerDBU = 1.0000
+
+Honor LEF defined pitches for advanced node
+Start create_tracks
+--- DIEAREA (0 0) (99896 60880)
+**WARN: (IMPDF-248):	The direction of pin 'mosi' is inconsistent with
+        netlist or timing library (INPUT in db)
+**WARN: (IMPDF-248):	The direction of pin 'ss' is inconsistent with
+        netlist or timing library (INPUT in db)
+**WARN: (IMPDF-248):	The direction of pin 'sclk' is inconsistent with
+        netlist or timing library (INPUT in db)
+**WARN: (IMPDF-248):	The direction of pin 'rst' is inconsistent with
+        netlist or timing library (INPUT in db)
+**WARN: (IMPDF-248):	The direction of pin 'clk' is inconsistent with
+        netlist or timing library (INPUT in db)
+**WARN: (IMPDF-248):	The direction of pin 'vcoTrim[15]' is inconsistent with
+        netlist or timing library (OUTPUT in db)
+**WARN: (IMPDF-248):	The direction of pin 'vcoTrim[0]' is inconsistent with
+        netlist or timing library (OUTPUT in db)
+**WARN: (IMPDF-248):	The direction of pin 'vcoTrim[1]' is inconsistent with
+        netlist or timing library (OUTPUT in db)
+**WARN: (IMPDF-248):	The direction of pin 'vcoTrim[2]' is inconsistent with
+        netlist or timing library (OUTPUT in db)
+**WARN: (IMPDF-248):	The direction of pin 'vcoTrim[3]' is inconsistent with
+        netlist or timing library (OUTPUT in db)
+**WARN: (IMPDF-248):	The direction of pin 'vcoTrim[4]' is inconsistent with
+        netlist or timing library (OUTPUT in db)
+**WARN: (IMPDF-248):	The direction of pin 'vcoTrim[5]' is inconsistent with
+        netlist or timing library (OUTPUT in db)
+**WARN: (IMPDF-248):	The direction of pin 'vcoTrim[6]' is inconsistent with
+        netlist or timing library (OUTPUT in db)
+**WARN: (IMPDF-248):	The direction of pin 'vcoTrim[7]' is inconsistent with
+        netlist or timing library (OUTPUT in db)
+**WARN: (IMPDF-248):	The direction of pin 'vcoTrim[8]' is inconsistent with
+        netlist or timing library (OUTPUT in db)
+**WARN: (IMPDF-248):	The direction of pin 'vcoTrim[9]' is inconsistent with
+        netlist or timing library (OUTPUT in db)
+**WARN: (IMPDF-248):	The direction of pin 'vcoTrim[10]' is inconsistent with
+        netlist or timing library (OUTPUT in db)
+**WARN: (IMPDF-248):	The direction of pin 'vcoTrim[11]' is inconsistent with
+        netlist or timing library (OUTPUT in db)
+**WARN: (IMPDF-248):	The direction of pin 'vcoTrim[12]' is inconsistent with
+        netlist or timing library (OUTPUT in db)
+**WARN: (IMPDF-248):	The direction of pin 'vcoTrim[13]' is inconsistent with
+        netlist or timing library (OUTPUT in db)
+**WARN: (EMS-27):	Message (IMPDF-248) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+DEF file '../def/topVcoDigital_fp.def' is parsed, current time is Thu May  9 08:08:03 2024.
+Updating the floorplan ...
+<CMD> fit
+<CMD> zoomBox 102.90100 37.83200 93.80300 14.23400
+<CMD> zoomBox 102.88900 32.13000 98.44200 20.79700
+<CMD> gui_select -rect {101.05200 30.25300 99.45100 22.91500}
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.1 -pinDepth 0.52 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 3 -spreadType center -spacing 0.4 -pin {{vcoTrim[0]} {vcoTrim[1]} {vcoTrim[2]} {vcoTrim[3]} {vcoTrim[4]} {vcoTrim[5]} {vcoTrim[6]} {vcoTrim[7]} {vcoTrim[8]} {vcoTrim[9]} {vcoTrim[10]} {vcoTrim[11]} {vcoTrim[12]} {vcoTrim[13]} {vcoTrim[14]} {vcoTrim[15]}}
+Successfully spread [16] pins.
+editPin : finished (cpu = 0:00:00.1 real = 0:00:00.0, mem = 1125.4M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> deselectAll
+<CMD> fit
+<CMD> zoomBox -3.14700 36.12600 6.52000 21.91100
+<CMD> gui_select -rect {-1.43500 32.15100 1.52500 27.98200}
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.1 -pinDepth 0.52 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 3 -spreadType center -spacing 0.4 -pin {clk mosi rst sclk ss}
+Successfully spread [5] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1127.3M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> deselectAll
+<CMD> fit
+<CMD> zoomBox -2.80000 -13.40800 90.60400 66.10000
+<CMD> zoomBox -1.54900 -10.92500 77.84400 56.65700
+<CMD> zoomBox 1.10000 -4.91300 49.85800 36.59100
+<CMD> zoomBox 2.78000 -1.33500 32.72300 24.15300
+<CMD> zoomBox 3.81200 0.83100 22.20100 16.48400
+<CMD> zoomBox 2.28700 -1.42700 32.23100 24.06200
+<CMD> zoomBox 1.59000 -2.45900 36.81800 27.52800
+<CMD> zoomBox 0.76900 -3.67300 42.21400 31.60600
+<CMD> zoomBox -0.19600 -5.11100 48.56300 36.39400
+<CMD> zoomBox -4.23900 -11.13600 75.15700 56.44800
+<CMD> zoomBox -6.08800 -13.89100 87.31900 65.62000
+<CMD> zoomBox -8.26300 -17.13200 101.62800 76.41000
+<CMD> zoomBox -10.82200 -20.94600 118.46200 89.10400
+<CMD> setEndCapMode -reset
+<CMD> setEndCapMode -rightEdge UDBSLT28_CAPR9_1 -leftEdge UDBSLT28_CAPL9_1 -topEdge UDBSLT28_CAPT_1 -bottomEdge UDBSLT28_CAPB_1 -rightTopCorner UDBSLT28_CAPTOUCR9_1 -rightBottomCorner UDBSLT28_CAPBOUCR9_1 -leftTopCorner UDBSLT28_CAPTOUCL9_1 -leftBottomCorner UDBSLT28_CAPBOUCL9_1
+<CMD> addEndCap -prefix ENDCAP
+Estimated cell power/ground rail width = 0.067 um
+#WARNING (NRDB-2135) Color conflict in cell UDBSLT28_AO2222_0P75, layer M2
+#WARNING (NRDB-2135) Color conflict in cell UDBSLT28_AO2222_0P75, layer M2
+#WARNING (NRDB-2135) Color conflict in cell UDBSLT28_AO2222_0P75, layer M2
+#WARNING (NRDB-2135) Color conflict in cell UDBSLT28_AO2222_0P75, layer M2
+#WARNING (NRDB-2135) Color conflict in cell UDBSLT28_AO2222_0P75, layer M2
+#WARNING (NRDB-2135) Color conflict in cell UDBSLT28_AO2222_0P75, layer M2
+#WARNING (NRDB-2135) Color conflict in cell UDBSLT28_AO2222_0P75, layer M2
+#WARNING (NRDB-2135) Color conflict in cell UDBSLT28_AO2222_0P75, layer M2
+#WARNING (NRDB-2135) Color conflict in cell UDBSLT28_AO2222_0P75, layer M2
+#WARNING (NRDB-2135) Color conflict in cell UDBSLT28_AO2222_0P75, layer M2
+#WARNING (NRDB-2135) Color conflict in cell UDBSLT28_AO2222_0P75, layer M2
+#WARNING (NRDB-2135) Color conflict in cell UDBSLT28_AO2222_0P75, layer M2
+#WARNING (NRDB-2135) Color conflict in cell UDBSLT28_AO2222_0P75, layer M2
+#WARNING (NRDB-2135) Color conflict in cell UDBSLT28_AO2222_0P75, layer M2
+#WARNING (NRDB-2135) Color conflict in cell UDBSLT28_AO2222_0P75, layer M2
+#WARNING (NRDB-2135) Color conflict in cell UDBSLT28_AO2222_0P75, layer M2
+#WARNING (NRDB-2135) Color conflict in cell UDBSLT28_AO2222_0P75, layer M2
+#WARNING (NRDB-2135) Color conflict in cell UDBSLT28_AO2222_0P75, layer M2
+#WARNING (NRDB-2135) Color conflict in cell UDBSLT28_AO2222_0P75, layer M2
+#WARNING (NRDB-2135) Color conflict in cell UDBSLT28_AO2222_0P75, layer M2
+#WARNING (EMS-27) Message (NRDB-2135) has exceeded the current message display limit of 20.
+#To increase the message display limit, refer to the product command reference manual.
+**Info: (IMPSP-2051): cell: "UDBSLT28_AO2222_0P75" has been colorized, but may have problem!
+
+**Info: (IMPSP-2051): cell: "UDBSLT28_EN3_1" has been colorized, but may have problem!
+
+**Info: (IMPSP-2051): cell: "UDBSLT28_EN3_2" has been colorized, but may have problem!
+
+**Info: (IMPSP-2051): cell: "UDBSLT28_FSDPQ_V3_1" has been colorized, but may have problem!
+
+**Info: (IMPSP-2051): cell: "UDBSLT28_FSDPQ_V3_2" has been colorized, but may have problem!
+
+**Info: (IMPSP-2051): cell: "UDBSLT28_FSDPRBQ_F4_6" has been colorized, but may have problem!
+
+*INFO*: Added 3975 triple-well end caps with prefix 'ENDCAP'.
+For 3975 new insts, *** Applied 0 GNC rules (cpu = 0:00:00.0)
+<CMD> addWellTap -cell UDBSLT28_TAPPN_DN -cellInterval 23 -inRowOffset 18 -prefix WELLTAP
+**WARN: (IMPSP-368):	Found 1 topVcoDigital mis-aligned rows. Use 'checkFPlan' to report their locations. Some rows listed in logv.
+**DIAG[/icd/cm_t1nb_002/INNOVUS211/Rel/21.12/main/lnx86_64_opt/21.12-s106_1/fe/src/sp/spSite.c:3393:spiBuildFindColRowEnv]: Row(@28720) while 45 entry in siteArr topVcoDigital is 28180.
+**WARN: (IMPSP-5134):	Setting cellInterval to 22.968 (microns) as a multiple of cell UDBSLT28_TAPPN_DN's techSite 'GF22_DST' width of 0.116 microns
+Type 'man IMPSP-5134' for more detail.
+**WARN: (IMPSP-5134):	Setting inRowOffset to 17.980 (microns) as a multiple of cell UDBSLT28_TAPPN_DN's techSite 'GF22_DST' width of 0.116 microns
+Type 'man IMPSP-5134' for more detail.
+For 172 new insts, *** Applied 0 GNC rules (cpu = 0:00:00.0)
+Inserted 172 well-taps <UDBSLT28_TAPPN_DN> cells (prefix WELLTAP).
+<CMD> zoomBox 1.55400 37.42400 18.27900 27.72300
+<CMD> zoomBox 4.25900 34.60700 7.67700 30.97200
+<CMD> fit
+<CMD> zoomBox 23.72000 29.87100 15.61800 4.85200
+<CMD> fit
+<CMD> gui_select -rect {2.68100 63.56200 98.49400 -1.82900}
+<CMD> deleteSelectedFromFPlan
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site GF22_DST -s 89.91 50.96 4.988 4.96 4.998 4.96
+**WARN: (IMPFP-4026):	Adjusting core to 'Right' to 4.988000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+
+Honor LEF defined pitches for advanced node
+Start create_tracks
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> gui_select -rect {102.73800 13.66800 96.76900 -5.94500}
+<CMD> deselectAll
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.1 -pinDepth 0.52 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 3 -spreadType center -spacing -0.45 -pin {{vcoTrim[0]} {vcoTrim[1]} {vcoTrim[2]} {vcoTrim[3]} {vcoTrim[4]} {vcoTrim[5]} {vcoTrim[6]} {vcoTrim[7]} {vcoTrim[8]} {vcoTrim[9]} {vcoTrim[10]} {vcoTrim[11]} {vcoTrim[12]} {vcoTrim[13]} {vcoTrim[14]} {vcoTrim[15]}}
+**ERROR: (IMPPTN-1668):	Specifying negative spacing value to spread the pins along the partition fence in anti-clockwise direction is obsolete. Use [-spreadDirection counterclockwise] option to specify the spreading direction.
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.1 -pinDepth 0.52 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 3 -spreadType center -spacing 0.45 -pin {clk mosi rst sclk ss}
+Successfully spread [5] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1243.1M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.1 -pinDepth 0.52 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -edge 2 -layer 3 -spreadType center -spacing -0.45 -pin {{vcoTrim[0]} {vcoTrim[1]} {vcoTrim[2]} {vcoTrim[3]} {vcoTrim[4]} {vcoTrim[5]} {vcoTrim[6]} {vcoTrim[7]} {vcoTrim[8]} {vcoTrim[9]} {vcoTrim[10]} {vcoTrim[11]} {vcoTrim[12]} {vcoTrim[13]} {vcoTrim[14]} {vcoTrim[15]}}
+**ERROR: (IMPPTN-1668):	Specifying negative spacing value to spread the pins along the partition fence in anti-clockwise direction is obsolete. Use [-spreadDirection counterclockwise] option to specify the spreading direction.
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.1 -pinDepth 0.52 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -edge 2 -layer 3 -spreadType center -spacing -0.45 -pin {{vcoTrim[0]} {vcoTrim[1]} {vcoTrim[2]} {vcoTrim[3]} {vcoTrim[4]} {vcoTrim[5]} {vcoTrim[6]} {vcoTrim[7]} {vcoTrim[8]} {vcoTrim[9]} {vcoTrim[10]} {vcoTrim[11]} {vcoTrim[12]} {vcoTrim[13]} {vcoTrim[14]} {vcoTrim[15]}}
+**ERROR: (IMPPTN-1668):	Specifying negative spacing value to spread the pins along the partition fence in anti-clockwise direction is obsolete. Use [-spreadDirection counterclockwise] option to specify the spreading direction.
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> zoomBox 10.95300 -13.03700 104.33700 66.45400
+<CMD> zoomBox 24.50700 -10.30100 103.88400 57.26700
+<CMD> zoomBox 36.02800 -7.97500 103.49900 49.45800
+<CMD> zoomBox 66.90100 -1.71800 102.12300 28.26400
+<CMD> zoomBox 71.95800 -0.69300 101.89700 24.79200
+<CMD> zoomBox 79.71800 1.02700 101.34900 19.44000
+<CMD> gui_select -rect {99.64200 6.65200 98.10300 12.92000}
+<CMD> deselectAll
+<CMD> gui_select -rect {99.58600 6.70800 97.59900 11.12900}
+<CMD> zoomBox 76.28600 -0.14300 101.73400 21.51900
+<CMD> zoomBox 72.05100 -1.49700 101.99000 23.98800
+<CMD> zoomBox 67.06100 -3.07000 102.28400 26.91300
+<CMD> gui_select -rect {101.14500 8.09400 98.13800 -1.24700}
+<CMD> deselectAll
+**ERROR: (IMPSYT-16250):	Choose the pin list first.
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.1 -pinDepth 0.52 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -edge 2 -layer 3 -spreadType center -spacing 0.4 -pin {}
+**ERROR: (IMPPTN-963):	Either specified pin name for the selected partition does not exist or has status 'cover'. Specify the pin or the list of pins correctly and run the command again.
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> gui_select -rect {101.60100 8.82300 96.86200 -2.97900}
+<CMD> gui_select -rect {100.23400 5.26900 100.09700 11.96700}
+<CMD> deselectAll
+<CMD> gui_select -rect {101.64600 8.86900 96.40600 -3.38900}
+<CMD> uiSetTool moveWire
+<CMD> deselectAll
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.1 -pinDepth 0.52 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -edge 2 -layer 3 -spreadType center -spacing 0.4 -pin {{vcoTrim[0]} {vcoTrim[1]} {vcoTrim[2]} {vcoTrim[3]} {vcoTrim[4]} {vcoTrim[5]} {vcoTrim[6]} {vcoTrim[7]} {vcoTrim[8]} {vcoTrim[9]} {vcoTrim[10]} {vcoTrim[11]} {vcoTrim[12]} {vcoTrim[13]} {vcoTrim[14]} {vcoTrim[15]}}
+Successfully spread [16] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1242.1M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> zoomBox 41.77500 -15.96400 109.25300 41.47500
+<CMD> zoomBox 8.53500 -33.13300 118.41400 60.39900
+<CMD> zoomBox 104.76800 35.52300 97.09200 24.86200
+<CMD> zoomBox 100.77600 34.14600 99.18800 32.91400
+<CMD> zoomBox 98.32800 31.77500 101.91100 34.82500
+<CMD> zoomBox 96.95000 30.04000 103.81700 35.88500
+<CMD> fit
+<CMD> setEndCapMode -reset
+-bottomEdge ""
+-leftBottomCorner ""
+-leftEdge ""
+-leftTopCorner ""
+-rightBottomCorner ""
+-rightEdge ""
+-rightTopCorner ""
+-topEdge ""
+<CMD> setEndCapMode -rightEdge UDBSLT28_CAPR9_1 -leftEdge UDBSLT28_CAPL9_1 -topEdge UDBSLT28_CAPT_1 -bottomEdge UDBSLT28_CAPB_1 -rightTopCorner UDBSLT28_CAPTOUCR9_1 -rightBottomCorner UDBSLT28_CAPBOUCR9_1 -leftTopCorner UDBSLT28_CAPTOUCL9_1 -leftBottomCorner UDBSLT28_CAPBOUCL9_1
+<CMD> addEndCap -prefix ENDCAP
+*INFO*: Added 1600 triple-well end caps with prefix 'ENDCAP'.
+For 1600 new insts, *** Applied 0 GNC rules (cpu = 0:00:00.0)
+<CMD> addWellTap -cell UDBSLT28_TAPPN_DN -cellInterval 23 -inRowOffset 18 -prefix WELLTAP
+**WARN: (IMPSP-5134):	Setting cellInterval to 22.968 (microns) as a multiple of cell UDBSLT28_TAPPN_DN's techSite 'GF22_DST' width of 0.116 microns
+Type 'man IMPSP-5134' for more detail.
+**WARN: (IMPSP-5134):	Setting inRowOffset to 17.980 (microns) as a multiple of cell UDBSLT28_TAPPN_DN's techSite 'GF22_DST' width of 0.116 microns
+Type 'man IMPSP-5134' for more detail.
+For 164 new insts, *** Applied 0 GNC rules (cpu = 0:00:00.0)
+Inserted 164 well-taps <UDBSLT28_TAPPN_DN> cells (prefix WELLTAP).
+<CMD> zoomBox 4.51100 1.89400 83.88800 69.46200
+<CMD> zoomBox 8.22300 9.10200 75.69400 66.53500
+<CMD> zoomBox 16.00800 29.54400 51.22900 59.52500
+<CMD> zoomBox 17.27900 32.89300 47.21700 58.37700
+<CMD> zoomBox 18.33600 35.75700 43.78400 57.41900
+<CMD> zoomBox 20.85400 43.78200 34.13800 55.09000
+<CMD> zoomBox 21.26600 45.09700 32.55800 54.70900
+<CMD> zoomBox 22.38200 48.65700 28.27800 53.67600
+<CMD> zoomBox 21.26500 45.09500 32.55900 54.70900
+<CMD> fit
+<CMD> zoomBox 2.53900 11.67900 10.78200 0.16600
+<CMD> zoomBox 4.46500 7.51500 9.10100 3.98000
+<CMD> selectInst ENDCAP_3976
+<CMD> zoomBox 4.21200 3.27600 9.66600 7.91900
+<CMD> zoomBox 3.56400 2.00200 11.11300 8.42800
+<CMD> zoomBox 3.15200 1.19200 12.03300 8.75200
+<CMD> zoomBox 2.66700 0.23900 13.11600 9.13300
+<CMD> zoomBox 1.42600 -2.20200 15.88900 10.10900
+<CMD> zoomBox -2.43000 -10.30600 25.27700 13.27900
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Thu May  9 08:46:47 2024
+  Total CPU time:     0:09:05
+  Total real time:    1:08:36
+  Peak memory (main): 1113.91MB
+
+
+*** Memory Usage v#1 (Current mem = 1245.910M, initial mem = 295.352M) ***
+*** Message Summary: 1516 warning(s), 6 error(s)
+
+--- Ending "Innovus" (totcpu=0:09:03, real=1:08:34, mem=1245.9M) ---

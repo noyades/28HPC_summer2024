@@ -1,0 +1,870 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[15:02:34.231801] Configured Lic search path (23.02-s003): 27002@license.ece.vt.edu
+
+Version: 23.10-p004_1, built Thu Feb 01 10:43:46 PST 2024
+Options: 
+Date:    Sat Jan 25 15:02:34 2025
+Host:    tinkercliffs1 (x86_64 w/Linux 5.14.0-362.8.1.el9_3.x86_64) (64cores*128cpus*2physical cpus*AMD EPYC 7702 64-Core Processor 512KB) (528181812KB)
+PID:     1442917
+OS:      Rocky Linux release 9.5 (Blue Onyx)
+
+Checking out license: Genus_Synthesis
+[15:02:34.279843] Periodic Lic check successful
+[15:02:34.279857] Feature usage summary:
+[15:02:34.279858] Genus_Synthesis
+
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Finished executable startup (1 second elapsed).
+
+Loading tool scripts...
+Finished loading tool scripts (17 seconds elapsed).
+
+WARNING: This version of the tool is 359 days old.
+@genus:root: 1> source ../scripts/run.tcl
+Sourcing '../scripts/run.tcl' (Sat Jan 25 15:03:19 EST 2025)...
+#@ Begin verbose source ../scripts/run.tcl
+@file(run.tcl) 4: 	if {[file exists /proc/cpuinfo]} {
+	  sh grep "model name" /proc/cpuinfo
+	  sh grep "cpu MHz"    /proc/cpuinfo
+	}
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+model name	: AMD EPYC 7702 64-Core Processor
+cpu MHz		: 3238.938
+cpu MHz		: 1957.238
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 3274.445
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 3183.284
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 3140.628
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 3281.381
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 3350.079
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 3350.080
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 3347.330
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 3241.281
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+cpu MHz		: 2000.000
+@file(run.tcl) 9: 	puts "Hostname : [info hostname]"
+Hostname : tinkercliffs1.cm.cluster
+@file(run.tcl) 14:         set TSMC_PDK_HOME /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/tsri
+@file(run.tcl) 15: 	set DESIGN pp_in_x4
+@file(run.tcl) 16: 	set SYN_EFF medium
+@file(run.tcl) 17: 	set MAP_EFF medium
+@file(run.tcl) 18: 	set OPT_EFF medium
+@file(run.tcl) 20: 	set RELEASE [lindex [get_db program_version] end]
+@file(run.tcl) 21: 	set _OUTPUTS_PATH OUTPUT/outputs_${RELEASE}
+@file(run.tcl) 22: 	set _REPORTS_PATH OUTPUT/reports_${RELEASE}
+@file(run.tcl) 23: 	set _LOG_PATH OUTPUT/logs_${RELEASE}
+@file(run.tcl) 25: 	if {![file exists ${_OUTPUTS_PATH}]} {
+	  file mkdir ${_OUTPUTS_PATH}
+	  puts "Creating directory ${_OUTPUTS_PATH}"
+	}
+@file(run.tcl) 30: 	if {![file exists ${_REPORTS_PATH}]} {
+	  file mkdir ${_REPORTS_PATH}
+	  puts "Creating directory ${_REPORTS_PATH}"
+	}
+@file(run.tcl) 35: 	if {![file exists ${_LOG_PATH}]} {
+	  file mkdir ${_LOG_PATH}
+	  puts "Creating directory ${_REPORTS_PATH}"
+	}
+@file(run.tcl) 40: 	set rtlDir ../rtl
+@file(run.tcl) 42: 	set_db init_lib_search_path {. /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/ \
+		                       /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/ \
+		                       /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_lvt_c30/ \
+		                       /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_svt_c30/ \
+		                       /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_svt_c30/ \
+		                       /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_ulvt_c30/ \
+		                       /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_ulvt_c30/}
+  Setting attribute of root '/': 'init_lib_search_path' = . /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/  /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/  /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_lvt_c30/  /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_svt_c30/  /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_svt_c30/  /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_ulvt_c30/  /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_ulvt_c30/
+@file(run.tcl) 49: 	set_db script_search_path { . }
+  Setting attribute of root '/': 'script_search_path' =  . 
+@file(run.tcl) 50: 	set_db init_hdl_search_path {. ../rtl}
+  Setting attribute of root '/': 'init_hdl_search_path' = . ../rtl
+@file(run.tcl) 52: 	set_db max_cpus_per_server 8
+  Setting attribute of root '/': 'max_cpus_per_server' = 8
+@file(run.tcl) 54: 	set_db syn_generic_effort $SYN_EFF
+  Setting attribute of root '/': 'syn_generic_effort' = medium
+@file(run.tcl) 55: 	set_db syn_map_effort $MAP_EFF
+  Setting attribute of root '/': 'syn_map_effort' = medium
+@file(run.tcl) 56: 	set_db syn_opt_effort $OPT_EFF
+  Setting attribute of root '/': 'syn_opt_effort' = medium
+@file(run.tcl) 58: 	set_db information_level 9
+  Setting attribute of root '/': 'information_level' = 9
+@file(run.tcl) 66: 	set_db opt_spatial_effort extreme
+  Setting attribute of root '/': 'opt_spatial_effort' = extreme
+@file(run.tcl) 68: 	set_db invs_temp_dir ${_OUTPUTS_PATH}/invs_tmp_dir
+  Setting attribute of root '/': 'invs_temp_dir' = OUTPUT/outputs_23.10-p004_1/invs_tmp_dir
+@file(run.tcl) 74: 	read_mmmc ../scripts/mmmc.tcl
+  Setting attribute of root '/': 'is_read_mmmc_flow' = true
+Sourcing '../scripts/mmmc.tcl' (Sat Jan 25 15:03:20 EST 2025)...
+#@ Begin verbose source ../scripts/mmmc.tcl
+@file(mmmc.tcl) 1: set TSMC_PDK_HOME /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/tsri
+@file(mmmc.tcl) 3: create_library_set -name wcl_slow -timing {
+  /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib
+}
+@file(mmmc.tcl) 7: create_library_set -name wcl_fast -timing {
+  /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ffg_cbestt_min_0p99v_m40c.lib
+}
+@file(mmmc.tcl) 11: create_library_set -name wcl_typical -timing {
+  /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_tt_ctypical_max_0p90v_25c.lib
+}
+@file(mmmc.tcl) 15: create_opcond -name op_cond_wcl_slow    -process 1 -voltage 0.81 -temperature 125
+@file(mmmc.tcl) 16: create_opcond -name op_cond_wcl_fast    -process 1 -voltage 0.99 -temperature -40
+@file(mmmc.tcl) 17: create_opcond -name op_cond_wcl_typical -process 1 -voltage 0.90 -temperature 25
+@file(mmmc.tcl) 19: create_timing_condition -name timing_cond_wcl_slow -opcond op_cond_wcl_slow -library_sets { wcl_slow }
+@file(mmmc.tcl) 20: create_timing_condition -name timing_cond_wcl_fast -opcond op_cond_wcl_fast -library_sets { wcl_fast }
+@file(mmmc.tcl) 21: create_timing_condition -name timing_cond_wcl_typical -opcond op_cond_wcl_typical -library_sets { wcl_typical }
+@file(mmmc.tcl) 23: create_rc_corner -name worst -temperature 125 -qrc_tech /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/tsri/RC_Extraction/Cadence/rcworst/qrcTechFile
+@file(mmmc.tcl) 25: create_rc_corner -name best -temperature -40 -qrc_tech /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/tsri/RC_Extraction/Cadence/rcbest/qrcTechFile
+@file(mmmc.tcl) 27: create_rc_corner -name typical -temperature 25 -qrc_tech /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/tsri/RC_Extraction/Cadence/nominal/qrcTechFile
+@file(mmmc.tcl) 31: create_delay_corner -name delay_corner_wcl_slow -early_timing_condition timing_cond_wcl_slow \
+                    -late_timing_condition timing_cond_wcl_slow -early_rc_corner worst \
+                    -late_rc_corner worst
+@file(mmmc.tcl) 35: create_delay_corner -name delay_corner_wcl_fast -early_timing_condition timing_cond_wcl_fast \
+                    -late_timing_condition timing_cond_wcl_fast -early_rc_corner best \
+                    -late_rc_corner best
+@file(mmmc.tcl) 39: create_delay_corner -name delay_corner_wcl_typical -early_timing_condition timing_cond_wcl_typical \
+                    -late_timing_condition timing_cond_wcl_typical -early_rc_corner typical \
+                    -late_rc_corner typical
+@file(mmmc.tcl) 43: create_constraint_mode -name functional_wcl_slow -sdc_files { \
+  ../constraints/pp_int_x4_struct.sdc
+}
+            Reading file '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/synthesis/cadence/pp_int_x4_work/../constraints/pp_int_x4_struct.sdc'
+@file(mmmc.tcl) 47: create_constraint_mode -name functional_wcl_fast -sdc_files { \
+  ../constraints/pp_int_x4_struct.sdc
+}
+            Reading file '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/synthesis/cadence/pp_int_x4_work/../constraints/pp_int_x4_struct.sdc'
+@file(mmmc.tcl) 51: create_constraint_mode -name functional_wcl_typical -sdc_files { \
+  ../constraints/pp_int_x4_struct.sdc
+}
+            Reading file '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/synthesis/cadence/pp_int_x4_work/../constraints/pp_int_x4_struct.sdc'
+@file(mmmc.tcl) 55: create_analysis_view -name view_wcl_slow -constraint_mode functional_wcl_typical -delay_corner delay_corner_wcl_slow
+@file(mmmc.tcl) 56: create_analysis_view -name view_wcl_fast -constraint_mode functional_wcl_typical -delay_corner delay_corner_wcl_fast
+@file(mmmc.tcl) 57: create_analysis_view -name view_wcl_typical -constraint_mode functional_wcl_typical -delay_corner delay_corner_wcl_typical
+@file(mmmc.tcl) 59: set_analysis_view -setup {view_wcl_slow view_wcl_fast view_wcl_typical} 
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'library_features' encountered. Ignoring (File /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 48)
+        : Check to see if this construct is really needed for synthesis. Many liberty constructs are not actually required.
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'user_function_class' encountered. Ignoring (File /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 42008)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'is_decap_cell' encountered. Ignoring (File /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 301726)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'user_function_class' encountered. Ignoring (File /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 301727)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'is_decap_cell' encountered. Ignoring (File /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 301768)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'user_function_class' encountered. Ignoring (File /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 301769)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'is_decap_cell' encountered. Ignoring (File /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 301810)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'user_function_class' encountered. Ignoring (File /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 301811)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'is_decap_cell' encountered. Ignoring (File /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 301852)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'user_function_class' encountered. Ignoring (File /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 301853)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'is_decap_cell' encountered. Ignoring (File /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 301894)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'user_function_class' encountered. Ignoring (File /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 301895)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'is_decap_cell' encountered. Ignoring (File /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 301936)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'user_function_class' encountered. Ignoring (File /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 301937)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'is_decap_cell' encountered. Ignoring (File /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 301978)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'user_function_class' encountered. Ignoring (File /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 301979)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'is_decap_cell' encountered. Ignoring (File /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 302020)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'user_function_class' encountered. Ignoring (File /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 302021)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'is_decap_cell' encountered. Ignoring (File /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 302062)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'user_function_class' encountered. Ignoring (File /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib, Line 302063)
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'LBR-40'.
+
+  Message Summary for Library sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib:
+  ********************************************************************************************
+  An unsupported construct was detected in this library. [LBR-40]: 131
+  ********************************************************************************************
+ 
+            Reading file '/projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib'
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.810000, 125.000000) in library 'sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA2_A9PP140ZTL_C30' must have an output pin.
+        : Add the missing output pin(s), then reload the library. Else the library cell will be marked as timing model i.e. unusable. Timing_model means that the cell does not have any defined function. If there is no output pin, Genus will mark library cell as unusable i.e. the attribute 'usable' will be marked to 'false' on the libcell. Therefore, the cell is not used for mapping and it will not be picked up from the library for synthesis. If you query the attribute 'unusable_reason' on the libcell; result will be: 'Library cell has no output pins.'Note: The message LBR-9 is only for the logical pins and not for the power_ground pins. Genus will depend upon the output function defined in the pin group (output pin) of the cell, to use it for mapping. The pg_pin will not have any function defined.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA2_A9PP140ZTL_C30' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLSGCAP128_A9PP140ZTL_C30' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLSGCAP128_A9PP140ZTL_C30' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLSGCAP16_A9PP140ZTL_C30' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLSGCAP16_A9PP140ZTL_C30' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLSGCAP2_A9PP140ZTL_C30' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLSGCAP2_A9PP140ZTL_C30' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLSGCAP32_A9PP140ZTL_C30' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLSGCAP32_A9PP140ZTL_C30' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLSGCAP3_A9PP140ZTL_C30' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLSGCAP3_A9PP140ZTL_C30' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLSGCAP4_A9PP140ZTL_C30' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLSGCAP4_A9PP140ZTL_C30' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLSGCAP64_A9PP140ZTL_C30' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLSGCAP64_A9PP140ZTL_C30' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLSGCAP8_A9PP140ZTL_C30' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLSGCAP8_A9PP140ZTL_C30' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLXGCAP128_A9PP140ZTL_C30' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLXGCAP128_A9PP140ZTL_C30' must have an output pin.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'LBR-9'.
+Info    : Set default library domain. [LBR-109]
+        : The default library domain is 'library_domain:timing_cond_wcl_slow'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDF_X1M_A9PP140ZTL_C30'.
+        : Setting the 'timing_sense' to non_unate.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDF_X1M_A9PP140ZTL_C30'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDF_X1M_A9PP140ZTL_C30'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDF_X1P4M_A9PP140ZTL_C30'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDF_X1P4M_A9PP140ZTL_C30'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDF_X1P4M_A9PP140ZTL_C30'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDF_X2M_A9PP140ZTL_C30'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDF_X2M_A9PP140ZTL_C30'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDF_X2M_A9PP140ZTL_C30'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDH_X1M_A9PP140ZTL_C30'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDH_X1M_A9PP140ZTL_C30'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDH_X1P4M_A9PP140ZTL_C30'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDH_X1P4M_A9PP140ZTL_C30'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDH_X2M_A9PP140ZTL_C30'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDH_X2M_A9PP140ZTL_C30'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S0' and 'Y' in libcell 'MX2_X0P5B_A9PP140ZTL_C30' is 'pos_unate', but unateness determined from function is 'non_unate'.
+        : The 'timing_sense' attribute will be respected.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S0' and 'Y' in libcell 'MX2_X0P5B_A9PP140ZTL_C30' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'S0' and 'Y' in libcell 'MX2_X0P5B_A9PP140ZTL_C30'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S0' and 'Y' in libcell 'MX2_X0P7B_A9PP140ZTL_C30' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S0' and 'Y' in libcell 'MX2_X0P7B_A9PP140ZTL_C30' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'S0' and 'Y' in libcell 'MX2_X0P7B_A9PP140ZTL_C30'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S0' and 'Y' in libcell 'MX2_X1B_A9PP140ZTL_C30' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S0' and 'Y' in libcell 'MX2_X1B_A9PP140ZTL_C30' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'S0' and 'Y' in libcell 'MX2_X1B_A9PP140ZTL_C30'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S0' and 'Y' in libcell 'MX2_X1P4B_A9PP140ZTL_C30' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S0' and 'Y' in libcell 'MX2_X1P4B_A9PP140ZTL_C30' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'S0' and 'Y' in libcell 'MX2_X1P4B_A9PP140ZTL_C30'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S0' and 'Y' in libcell 'MX2_X2B_A9PP140ZTL_C30' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S0' and 'Y' in libcell 'MX2_X2B_A9PP140ZTL_C30' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'S0' and 'Y' in libcell 'MX2_X2B_A9PP140ZTL_C30'.
+Info    : Setting the maximum print count of this message to 10 if information_level is less than 9. [LBR-161]
+        : To print all the warning messages, set the information_level to 9.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S0' and 'Y' in libcell 'MX2_X3B_A9PP140ZTL_C30' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S0' and 'Y' in libcell 'MX2_X3B_A9PP140ZTL_C30' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'LBR-162'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S0' and 'Y' in libcell 'MX2_X4B_A9PP140ZTL_C30' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S0' and 'Y' in libcell 'MX2_X4B_A9PP140ZTL_C30' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S0' and 'Y' in libcell 'MX2_X6B_A9PP140ZTL_C30' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S0' and 'Y' in libcell 'MX2_X6B_A9PP140ZTL_C30' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S0' and 'Y' in libcell 'MX2_X8B_A9PP140ZTL_C30' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S0' and 'Y' in libcell 'MX2_X8B_A9PP140ZTL_C30' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S0' and 'Y' in libcell 'MXGL2_X0P5B_A9PP140ZTL_C30' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S0' and 'Y' in libcell 'MXGL2_X0P5B_A9PP140ZTL_C30' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'LBR-155'.
+  Library has 726 usable logic and 140 usable sequential lib-cells.
+Info    : Unusable library cells found at the time of loading a library.  [LBR-415]
+        : Library: 'sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib', Total cells: 1003, Unusable cells: 75.
+	List of unusable cells: 'ANTENNA2_A9PP140ZTL_C30 FILLSGCAP128_A9PP140ZTL_C30 FILLSGCAP16_A9PP140ZTL_C30 FILLSGCAP2_A9PP140ZTL_C30 FILLSGCAP32_A9PP140ZTL_C30 FILLSGCAP3_A9PP140ZTL_C30 FILLSGCAP4_A9PP140ZTL_C30 FILLSGCAP64_A9PP140ZTL_C30 FILLSGCAP8_A9PP140ZTL_C30 FILLXGCAP128_A9PP140ZTL_C30 FILLXGCAP16_A9PP140ZTL_C30 FILLXGCAP2_A9PP140ZTL_C30 FILLXGCAP32_A9PP140ZTL_C30 FILLXGCAP3_A9PP140ZTL_C30 FILLXGCAP4_A9PP140ZTL_C30 FILLXGCAP64_A9PP140ZTL_C30 FILLXGCAP8_A9PP140ZTL_C30 FRICG_X0P5B_A9PP140ZTL_C30 FRICG_X0P6B_A9PP140ZTL_C30 FRICG_X0P7B_A9PP140ZTL_C30 FRICG_X0P8B_A9PP140ZTL_C30 FRICG_X11B_A9PP140ZTL_C30 FRICG_X13B_A9PP140ZTL_C30 FRICG_X16B_A9PP140ZTL_C30 FRICG_X1B_A9PP140ZTL_C30 FRICG_X1P2B_A9PP140ZTL_C30 FRICG_X1P4B_A9PP140ZTL_C30 FRICG_X1P7B_A9PP140ZTL_C30 FRICG_X2B_A9PP140ZTL_C30 FRICG_X2P5B_A9PP140ZTL_C30 FRICG_X3B_A9PP140ZTL_C30 FRICG_X3P5B_A9PP140ZTL_C30 FRICG_X4B_A9PP140ZTL_C30 FRICG_X5B_A9PP140ZTL_C30 FRICG_X6B_A9PP140ZTL_C30 FRICG_X7P5B_A9PP140ZTL_C30 FRICG_X9B_A9PP140ZTL_C30 SDFFYQ2D_X1M_A9PP140ZTL_C30 SDFFYQ2D_X2M_A9PP140ZTL_C30 SDFFYQ2D_X3M_A9PP140ZTL_C30 SDFFYQ2D_X4M_A9PP140ZTL_C30 SDFFYQ3D_X1M_A9PP140ZTL_C30 SDFFYQ3D_X2M_A9PP140ZTL_C30 SDFFYQ3D_X3M_A9PP140ZTL_C30 SDFFYQ3D_X4M_A9PP140ZTL_C30 SDFFYQ4D_X1M_A9PP140ZTL_C30 SDFFYQ4D_X2M_A9PP140ZTL_C30 SDFFYQ4D_X3M_A9PP140ZTL_C30 SDFFYQ4D_X4M_A9PP140ZTL_C30 SDFFYRPQ2D_X1M_A9PP140ZTL_C30 SDFFYRPQ2D_X2M_A9PP140ZTL_C30 SDFFYRPQ2D_X3M_A9PP140ZTL_C30 SDFFYRPQ2D_X4M_A9PP140ZTL_C30 SDFFYRPQ3D_X1M_A9PP140ZTL_C30 SDFFYRPQ3D_X2M_A9PP140ZTL_C30 SDFFYRPQ3D_X3M_A9PP140ZTL_C30 SDFFYRPQ3D_X4M_A9PP140ZTL_C30 SDFFYRPQ4D_X1M_A9PP140ZTL_C30 SDFFYRPQ4D_X2M_A9PP140ZTL_C30 SDFFYRPQ4D_X3M_A9PP140ZTL_C30 SDFFYRPQ4D_X4M_A9PP140ZTL_C30 SDFFYSQ2D_X1M_A9PP140ZTL_C30 SDFFYSQ2D_X2M_A9PP140ZTL_C30 SDFFYSQ2D_X3M_A9PP140ZTL_C30 SDFFYSQ2D_X4M_A9PP140ZTL_C30 SDFFYSQ3D_X1M_A9PP140ZTL_C30 SDFFYSQ3D_X2M_A9PP140ZTL_C30 SDFFYSQ3D_X3M_A9PP140ZTL_C30 SDFFYSQ3D_X4M_A9PP140ZTL_C30 SDFFYSQ4D_X1M_A9PP140ZTL_C30 SDFFYSQ4D_X2M_A9PP140ZTL_C30 SDFFYSQ4D_X3M_A9PP140ZTL_C30 SDFFYSQ4D_X4M_A9PP140ZTL_C30 ENDCAPTIE3_A9PP140ZTL_C30 FILLTIE5_A9PP140ZTL_C30 .'
+        : For  more  information, refer to 'Cells Identified as Unusable' in the 'User Guide'. To know the reason why a cell is considered as unusable, check 'unusable_reason' libcell attribute.
+#@ End verbose source ../scripts/mmmc.tcl
+@file(run.tcl) 76: 	read_physical -lefs { \
+	  /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef \
+	  /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lef/sc9mcpp140z_cln28ht_base_lvt_c30.lef \
+	  /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_lvt_c30/r0p0/lef/sc9mcpp140z_cln28ht_hpk_lvt_c30.lef
+	  /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_svt_c30/r0p0/lef/sc9mcpp140z_cln28ht_base_svt_c30.lef \
+	  /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_svt_c30/r0p0/lef/sc9mcpp140z_cln28ht_hpk_svt_c30.lef
+	  /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_ulvt_c30/r0p0/lef/sc9mcpp140z_cln28ht_base_ulvt_c30.lef \
+	  /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_ulvt_c30/r0p0/lef/sc9mcpp140z_cln28ht_hpk_ulvt_c30.lef
+	}
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA1_0_40_0_40_VXRECT_H' has no resistance value.
+        : If this is the expected behavior, this message can be ignored.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA1_0_40_0_40_VXRECT_V' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA1_0_40_0_40_VXRECT_E' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA1_0_40_0_40_VXRECT_W' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA1_0_40_0_40_VXRECT_N' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA1_0_40_0_40_VXRECT_S' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA1_0_40_30_10_VXRECT_H' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA1_0_40_30_10_VXRECT_V' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA1_0_40_30_10_VXRECT_E' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA1_0_40_30_10_VXRECT_W' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA1_0_40_30_10_VXRECT_N' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA1_0_40_30_10_VXRECT_S' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA1_0_30_0_30_VH_VX' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA1_0_30_0_30_HH_VX' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA1_0_30_0_30_VV_VX' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA1_0_30_0_30_HV_VX' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA1_0_30_20_20_VX_VX' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA1_0_30_20_20_HX_VX' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA1_0_30_10_25_VH_VX' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA1_0_30_10_25_HH_VX' has no resistance value.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'PHYS-129'.
+Warning : Site already defined before, duplicated site will be ignored. [PHYS-106]
+        : Site 'sc9mcpp140z_cln28ht' read already, this site in file '/projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_lvt_c30/r0p0/lef/sc9mcpp140z_cln28ht_hpk_lvt_c30.lef' is ignored.
+Warning : Site already defined before, duplicated site will be ignored. [PHYS-106]
+        : Site 'sc9mcpp140z_cln28ht' read already, this site in file '/projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_svt_c30/r0p0/lef/sc9mcpp140z_cln28ht_base_svt_c30.lef' is ignored.
+Warning : Site already defined before, duplicated site will be ignored. [PHYS-106]
+        : Site 'sc9mcpp140z_cln28ht' read already, this site in file '/projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_svt_c30/r0p0/lef/sc9mcpp140z_cln28ht_hpk_svt_c30.lef' is ignored.
+Warning : Site already defined before, duplicated site will be ignored. [PHYS-106]
+        : Site 'sc9mcpp140z_cln28ht' read already, this site in file '/projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_ulvt_c30/r0p0/lef/sc9mcpp140z_cln28ht_base_ulvt_c30.lef' is ignored.
+Warning : Site already defined before, duplicated site will be ignored. [PHYS-106]
+        : Site 'sc9mcpp140z_cln28ht' read already, this site in file '/projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_ulvt_c30/r0p0/lef/sc9mcpp140z_cln28ht_hpk_ulvt_c30.lef' is ignored.
+
+  According to lef_library, there are total 10 routing layers [ V(5) / H(5) ]
+
+Warning : Missing wire parameter. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'M1' [line 227 in file /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef]
+        : Check the wire parameter in LEF technology files.
+Warning : Missing wire parameter. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'M2' [line 371 in file /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'M3' [line 515 in file /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'M4' [line 672 in file /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'M5' [line 829 in file /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'M6' [line 986 in file /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'M7' [line 1142 in file /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'M8' [line 1224 in file /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'M9' [line 1306 in file /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'M1' [line 227 in file /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'M2' [line 371 in file /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'M3' [line 515 in file /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'M4' [line 672 in file /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'M5' [line 829 in file /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'M6' [line 986 in file /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'M7' [line 1142 in file /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'M8' [line 1224 in file /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'M9' [line 1306 in file /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'RPERSQ' parameter is missing for layer 'M1' [line 227 in file /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'RPERSQ' parameter is missing for layer 'M2' [line 371 in file /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef]
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'PHYS-15'.
+Warning : The variant range of wire parameters is too large. An example of wire parameters are, a WIDTH for layer, PITCH for layer, MINSPACING for layers, etc. [PHYS-12]
+        : The variant range (0.05, 2) of 'WIDTH' for layers 'M7' and 'AP' is too large.
+        : Check the consistency of the parameters, and see if you can ignore this message or you're using different LEF file with wrong parameters.
+Warning : The variant range of wire parameters is too large. An example of wire parameters are, a WIDTH for layer, PITCH for layer, MINSPACING for layers, etc. [PHYS-12]
+        : The variant range (0.1, 4.5) of 'PITCH' for layers 'M2' and 'AP' is too large.
+Warning : The variant range of wire parameters is too large. An example of wire parameters are, a WIDTH for layer, PITCH for layer, MINSPACING for layers, etc. [PHYS-12]
+        : The variant range (0.05, 2) of 'MINSPACING' for layers 'M1' and 'AP' is too large.
+Warning : Cannot modify the attribute after loading library(s). [LBR-110]
+        : Cannot modify the attribute 'sort_library_pins'. The library has already been loaded in the libdomain 'timing_cond_wcl_slow'.
+        : You must set the attribute before you set the 'library' attribute.
+Warning : Cannot modify the attribute after loading library(s). [LBR-110]
+        : Cannot modify the attribute 'sort_library_pins'. The library has already been loaded in the libdomain 'timing_cond_wcl_slow'.
+Warning : Cannot modify the attribute after loading library(s). [LBR-110]
+        : Cannot modify the attribute 'sort_library_pins'. The library has already been loaded in the libdomain 'timing_cond_wcl_slow'.
+Warning : Cannot modify the attribute after loading library(s). [LBR-110]
+        : Cannot modify the attribute 'sort_library_pins'. The library has already been loaded in the libdomain 'timing_cond_wcl_slow'.
+Warning : Cannot modify the attribute after loading library(s). [LBR-110]
+        : Cannot modify the attribute 'sort_library_pins'. The library has already been loaded in the libdomain 'timing_cond_wcl_slow'.
+Warning : Cannot modify the attribute after loading library(s). [LBR-110]
+        : Cannot modify the attribute 'sort_library_pins'. The library has already been loaded in the libdomain 'timing_cond_wcl_slow'.
+Warning : Cannot modify the attribute after loading library(s). [LBR-110]
+        : Cannot modify the attribute 'sort_library_pins'. The library has already been loaded in the libdomain 'timing_cond_wcl_slow'.
+Warning : Cannot modify the attribute after loading library(s). [LBR-110]
+        : Cannot modify the attribute 'sort_library_pins'. The library has already been loaded in the libdomain 'timing_cond_wcl_slow'.
+Warning : Cannot modify the attribute after loading library(s). [LBR-110]
+        : Cannot modify the attribute 'sort_library_pins'. The library has already been loaded in the libdomain 'timing_cond_wcl_slow'.
+Warning : Cannot modify the attribute after loading library(s). [LBR-110]
+        : Cannot modify the attribute 'sort_library_pins'. The library has already been loaded in the libdomain 'timing_cond_wcl_slow'.
+Warning : Cannot modify the attribute after loading library(s). [LBR-110]
+        : Cannot modify the attribute 'sort_library_pins'. The library has already been loaded in the libdomain 'timing_cond_wcl_slow'.
+Warning : Cannot modify the attribute after loading library(s). [LBR-110]
+        : Cannot modify the attribute 'sort_library_pins'. The library has already been loaded in the libdomain 'timing_cond_wcl_slow'.
+Warning : Cannot modify the attribute after loading library(s). [LBR-110]
+        : Cannot modify the attribute 'sort_library_pins'. The library has already been loaded in the libdomain 'timing_cond_wcl_slow'.
+Warning : Cannot modify the attribute after loading library(s). [LBR-110]
+        : Cannot modify the attribute 'sort_library_pins'. The library has already been loaded in the libdomain 'timing_cond_wcl_slow'.
+Warning : Cannot modify the attribute after loading library(s). [LBR-110]
+        : Cannot modify the attribute 'sort_library_pins'. The library has already been loaded in the libdomain 'timing_cond_wcl_slow'.
+Warning : Cannot modify the attribute after loading library(s). [LBR-110]
+        : Cannot modify the attribute 'sort_library_pins'. The library has already been loaded in the libdomain 'timing_cond_wcl_slow'.
+Warning : Cannot modify the attribute after loading library(s). [LBR-110]
+        : Cannot modify the attribute 'sort_library_pins'. The library has already been loaded in the libdomain 'timing_cond_wcl_slow'.
+Warning : Cannot modify the attribute after loading library(s). [LBR-110]
+        : Cannot modify the attribute 'sort_library_pins'. The library has already been loaded in the libdomain 'timing_cond_wcl_slow'.
+Warning : Cannot modify the attribute after loading library(s). [LBR-110]
+        : Cannot modify the attribute 'sort_library_pins'. The library has already been loaded in the libdomain 'timing_cond_wcl_slow'.
+Warning : Cannot modify the attribute after loading library(s). [LBR-110]
+        : Cannot modify the attribute 'sort_library_pins'. The library has already been loaded in the libdomain 'timing_cond_wcl_slow'.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'LBR-110'.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL128_A9PP140ZTL_C30 cannot be found in library.
+        : Ensure that the proper library files are available and have been imported.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL16_A9PP140ZTL_C30 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL1_A9PP140ZTL_C30 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL2_A9PP140ZTL_C30 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL32_A9PP140ZTL_C30 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL3_A9PP140ZTL_C30 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL4_A9PP140ZTL_C30 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL64_A9PP140ZTL_C30 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL8_A9PP140ZTL_C30 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell AND2_X11TM_A9PP140ZTL_C30 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell AND2_X1P4TM_A9PP140ZTL_C30 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell AND2_X1TM_A9PP140ZTL_C30 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell AND2_X2TM_A9PP140ZTL_C30 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell AND2_X3TM_A9PP140ZTL_C30 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell AND2_X4TM_A9PP140ZTL_C30 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell AND2_X6TM_A9PP140ZTL_C30 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell AND2_X8TM_A9PP140ZTL_C30 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell AO21A1AI2_X8M_A9PP140ZTL_C30 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell AOI211_X6M_A9PP140ZTL_C30 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell AOI21_X0P5A_A9PP140ZTL_C30 cannot be found in library.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'PHYS-279'.
+@file(run.tcl) 87:         set_db use_scan_seqs_for_non_dft false
+  Setting attribute of root '/': 'use_scan_seqs_for_non_dft' = false
+@file(run.tcl) 91: 	puts "Now load RTL LIST"
+Now load RTL LIST
+@file(run.tcl) 92: 	set rtlList "\
+        ${rtlDir}/mc/clkDiv.v \
+        ${rtlDir}/mc/pp_int_x4.v \
+        ${rtlDir}/mc/pp_int_x4_tc.v \
+        ${rtlDir}/mc/fir_int_p3.v \
+        ${rtlDir}/mc/fir_int_p2.v \
+        ${rtlDir}/mc/fir_int_p1.v \
+        ${rtlDir}/mc/fir_int_p0.v \
+	${rtlDir}/pp_fir.v \
+	${rtlDir}/pp_fir_u_7.v \
+	${rtlDir}/pp_fir_u_6.v \
+	${rtlDir}/pp_fir_u_5.v \
+	${rtlDir}/pp_fir_u_4.v \
+	${rtlDir}/pp_fir_u_3.v \
+	${rtlDir}/pp_fir_u_2.v \
+	${rtlDir}/pp_fir_u_1.v \
+	${rtlDir}/pp_fir_u_0.v \
+	${rtlDir}/pp_fir_7.v \
+	${rtlDir}/pp_fir_6.v \
+	${rtlDir}/pp_fir_5.v \
+	${rtlDir}/pp_fir_4.v \
+	${rtlDir}/pp_fir_3.v \
+	${rtlDir}/pp_fir_2.v \
+	${rtlDir}/pp_fir_1.v \
+	${rtlDir}/pp_fir_0.v \
+	${rtlDir}/signed_mag.v \
+	${rtlDir}/b2u_8to255_quad.v \
+	"
+@file(run.tcl) 123: 	read_hdl $rtlList
+            Reading Verilog file '../rtl/mc/clkDiv.v'
+            Reading Verilog file '../rtl/mc/pp_int_x4.v'
+            Reading Verilog file '../rtl/mc/pp_int_x4_tc.v'
+            Reading Verilog file '../rtl/mc/fir_int_p3.v'
+            Reading Verilog file '../rtl/mc/fir_int_p2.v'
+            Reading Verilog file '../rtl/mc/fir_int_p1.v'
+            Reading Verilog file '../rtl/mc/fir_int_p0.v'
+            Reading Verilog file '../rtl/pp_fir.v'
+            Reading Verilog file '../rtl/pp_fir_u_7.v'
+            Reading Verilog file '../rtl/pp_fir_u_6.v'
+            Reading Verilog file '../rtl/pp_fir_u_5.v'
+            Reading Verilog file '../rtl/pp_fir_u_4.v'
+            Reading Verilog file '../rtl/pp_fir_u_3.v'
+            Reading Verilog file '../rtl/pp_fir_u_2.v'
+            Reading Verilog file '../rtl/pp_fir_u_1.v'
+            Reading Verilog file '../rtl/pp_fir_u_0.v'
+            Reading Verilog file '../rtl/pp_fir_7.v'
+            Reading Verilog file '../rtl/pp_fir_6.v'
+            Reading Verilog file '../rtl/pp_fir_5.v'
+            Reading Verilog file '../rtl/pp_fir_4.v'
+            Reading Verilog file '../rtl/pp_fir_3.v'
+            Reading Verilog file '../rtl/pp_fir_2.v'
+            Reading Verilog file '../rtl/pp_fir_1.v'
+            Reading Verilog file '../rtl/pp_fir_0.v'
+            Reading Verilog file '../rtl/signed_mag.v'
+            Reading Verilog file '../rtl/b2u_8to255_quad.v'
+@file(run.tcl) 124: 	elaborate $DESIGN
+Info    : Unusable library cells found at the time of loading a library.  [LBR-415]
+        : Library: 'sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib', Total cells: 1003, Unusable cells: 75.
+	List of unusable cells: 'ANTENNA2_A9PP140ZTL_C30 FILLSGCAP128_A9PP140ZTL_C30 FILLSGCAP16_A9PP140ZTL_C30 FILLSGCAP2_A9PP140ZTL_C30 FILLSGCAP32_A9PP140ZTL_C30 FILLSGCAP3_A9PP140ZTL_C30 FILLSGCAP4_A9PP140ZTL_C30 FILLSGCAP64_A9PP140ZTL_C30 FILLSGCAP8_A9PP140ZTL_C30 FILLXGCAP128_A9PP140ZTL_C30 FILLXGCAP16_A9PP140ZTL_C30 FILLXGCAP2_A9PP140ZTL_C30 FILLXGCAP32_A9PP140ZTL_C30 FILLXGCAP3_A9PP140ZTL_C30 FILLXGCAP4_A9PP140ZTL_C30 FILLXGCAP64_A9PP140ZTL_C30 FILLXGCAP8_A9PP140ZTL_C30 FRICG_X0P5B_A9PP140ZTL_C30 FRICG_X0P6B_A9PP140ZTL_C30 FRICG_X0P7B_A9PP140ZTL_C30 FRICG_X0P8B_A9PP140ZTL_C30 FRICG_X11B_A9PP140ZTL_C30 FRICG_X13B_A9PP140ZTL_C30 FRICG_X16B_A9PP140ZTL_C30 FRICG_X1B_A9PP140ZTL_C30 FRICG_X1P2B_A9PP140ZTL_C30 FRICG_X1P4B_A9PP140ZTL_C30 FRICG_X1P7B_A9PP140ZTL_C30 FRICG_X2B_A9PP140ZTL_C30 FRICG_X2P5B_A9PP140ZTL_C30 FRICG_X3B_A9PP140ZTL_C30 FRICG_X3P5B_A9PP140ZTL_C30 FRICG_X4B_A9PP140ZTL_C30 FRICG_X5B_A9PP140ZTL_C30 FRICG_X6B_A9PP140ZTL_C30 FRICG_X7P5B_A9PP140ZTL_C30 FRICG_X9B_A9PP140ZTL_C30 SDFFYQ2D_X1M_A9PP140ZTL_C30 SDFFYQ2D_X2M_A9PP140ZTL_C30 SDFFYQ2D_X3M_A9PP140ZTL_C30 SDFFYQ2D_X4M_A9PP140ZTL_C30 SDFFYQ3D_X1M_A9PP140ZTL_C30 SDFFYQ3D_X2M_A9PP140ZTL_C30 SDFFYQ3D_X3M_A9PP140ZTL_C30 SDFFYQ3D_X4M_A9PP140ZTL_C30 SDFFYQ4D_X1M_A9PP140ZTL_C30 SDFFYQ4D_X2M_A9PP140ZTL_C30 SDFFYQ4D_X3M_A9PP140ZTL_C30 SDFFYQ4D_X4M_A9PP140ZTL_C30 SDFFYRPQ2D_X1M_A9PP140ZTL_C30 SDFFYRPQ2D_X2M_A9PP140ZTL_C30 SDFFYRPQ2D_X3M_A9PP140ZTL_C30 SDFFYRPQ2D_X4M_A9PP140ZTL_C30 SDFFYRPQ3D_X1M_A9PP140ZTL_C30 SDFFYRPQ3D_X2M_A9PP140ZTL_C30 SDFFYRPQ3D_X3M_A9PP140ZTL_C30 SDFFYRPQ3D_X4M_A9PP140ZTL_C30 SDFFYRPQ4D_X1M_A9PP140ZTL_C30 SDFFYRPQ4D_X2M_A9PP140ZTL_C30 SDFFYRPQ4D_X3M_A9PP140ZTL_C30 SDFFYRPQ4D_X4M_A9PP140ZTL_C30 SDFFYSQ2D_X1M_A9PP140ZTL_C30 SDFFYSQ2D_X2M_A9PP140ZTL_C30 SDFFYSQ2D_X3M_A9PP140ZTL_C30 SDFFYSQ2D_X4M_A9PP140ZTL_C30 SDFFYSQ3D_X1M_A9PP140ZTL_C30 SDFFYSQ3D_X2M_A9PP140ZTL_C30 SDFFYSQ3D_X3M_A9PP140ZTL_C30 SDFFYSQ3D_X4M_A9PP140ZTL_C30 SDFFYSQ4D_X1M_A9PP140ZTL_C30 SDFFYSQ4D_X2M_A9PP140ZTL_C30 SDFFYSQ4D_X3M_A9PP140ZTL_C30 SDFFYSQ4D_X4M_A9PP140ZTL_C30 ENDCAPTIE3_A9PP140ZTL_C30 FILLTIE5_A9PP140ZTL_C30 .'
+Warning : Message truncated because it exceeds the maximum length of 4096 characters. [MESG-6]
+        : Info portion of message 'LBR-415' truncated to length 4096 from 67775
+        : By default messages are limited to 4096 characters. All characters after the 4096 character limit are truncated. To remove this limit, set the message attribute 'truncate' to 'false'. However, this may dramatically increase the size of the log file.
+Info    : Unusable library cells found at the time of loading a library.  [LBR-415]
+        : Library: 'physical_cells', Total cells: 2534, Unusable cells: 2534.
+	List of unusable cells: 'FILL128_A9PP140ZTL_C30 FILL16_A9PP140ZTL_C30 FILL1_A9PP140ZTL_C30 FILL2_A9PP140ZTL_C30 FILL32_A9PP140ZTL_C30 FILL3_A9PP140ZTL_C30 FILL4_A9PP140ZTL_C30 FILL64_A9PP140ZTL_C30 FILL8_A9PP140ZTL_C30 AND2_X11TM_A9PP140ZTL_C30 AND2_X1P4TM_A9PP140ZTL_C30 AND2_X1TM_A9PP140ZTL_C30 AND2_X2TM_A9PP140ZTL_C30 AND2_X3TM_A9PP140ZTL_C30 AND2_X4TM_A9PP140ZTL_C30 AND2_X6TM_A9PP140ZTL_C30 AND2_X8TM_A9PP140ZTL_C30 AO21A1AI2_X8M_A9PP140ZTL_C30 AOI211_X6M_A9PP140ZTL_C30 AOI21_X0P5A_A9PP140ZTL_C30 AOI21_X0P7A_A9PP140ZTL_C30 AOI21_X11A_A9PP140ZTL_C30 AOI21_X11M_A9PP140ZTL_C30 AOI21_X1A_A9PP140ZTL_C30 AOI21_X1P4A_A9PP140ZTL_C30 AOI21_X2A_A9PP140ZTL_C30 AOI21_X3A_A9PP140ZTL_C30 AOI21_X4A_A9PP140ZTL_C30 AOI21_X6A_A9PP140ZTL_C30 AOI21_X8A_A9PP140ZTL_C30 AOI22_X0P5A_A9PP140ZTL_C30 AOI22_X0P7A_A9PP140ZTL_C30 AOI22_X11A_A9PP140ZTL_C30 AOI22_X11M_A9PP140ZTL_C30 AOI22_X1A_A9PP140ZTL_C30 AOI22_X1P4A_A9PP140ZTL_C30 AOI22_X2A_A9PP140ZTL_C30 AOI22_X3A_A9PP140ZTL_C30 AOI22_X4A_A9PP140ZTL_C30 AOI22_X6A_A9PP140ZTL_C30 AOI22_X8A_A9PP140ZTL_C30 AOI31_X8M_A9PP140ZTL_C30 DFFQL2W_X1M_A9PP140ZTL_C30 DFFQNL2W_X1M_A9PP140ZTL_C30 DFFRPQL2W_X1M_A9PP140ZTL_C30 DFFRPQNL2W_X1M_A9PP140ZTL_C30 DFFSQL2W_X1M_A9PP140ZTL_C30 DFFSQNL2W_X1M_A9PP140ZTL_C30 INV_X20B_A9PP140ZTL_C30 INV_X20M_A9PP140ZTL_C30 NAND2_X11A_A9PP140ZTL_C30 NAND2_X11B_A9PP140ZTL_C30 NAND2_X11M_A9PP140ZTL_C30 NAND2_X11TA_A9PP140ZTL_C30 NAND2_X1P4TA_A9PP140ZTL_C30 NAND2_X1TA_A9PP140ZTL_C30 NAND2_X2TA_A9PP140ZTL_C30 NAND2_X3TA_A9PP140ZTL_C30 NAND2_X4TA_A9PP140ZTL_C30 NAND2_X6TA_A9PP140ZTL_C30 NAND2_X8TA_A9PP140ZTL_C30 NAND3_X8A_A9PP140ZTL_C30 NAND3_X8M_A9PP140ZTL_C30 NAND4_X6A_A9PP140ZTL_C30 NAND4_X6M_A9PP140ZTL_C30 NOR2_X11A_A9PP140ZTL_C30 NOR2_X11B_A9PP140ZTL_C30 NOR2_X11M_A9PP140ZTL_C30 NOR2_X11TA_A9PP140ZTL_C30 NOR2_X1P4TA_A9PP140ZTL_C30 NOR2_X1TA_A9PP140ZTL_C30 NOR2_X2TA_A9PP140ZTL_C30 NOR2_X3TA_A9PP140ZTL_C30 NOR2_X4TA_A9PP140ZTL_C30 NOR2_X6TA_A9PP140ZTL_C30 NOR2_X8TA_A9PP140ZTL_C30 NOR3_X6A_A9PP140ZTL_C30 NOR3_X6M_A9PP140ZTL_C30 OA21A1OI2_X8M_A9PP140ZTL_C30 OAI211_X6M_A9PP140ZTL_C30 OAI21_X0P5A_A9PP140ZTL_C30 OAI21_X0P7A_A9PP140ZTL_C30 OAI21_X11A_A9PP140ZTL_C30 OAI21_X11M_A9PP140ZTL_C30 OAI21_X1A_A9PP140ZTL_C30 OAI21_X1P4A_A9PP140ZTL_C30 OAI21_X2A_A9PP140ZTL_C30 OAI21_X3A_A9PP140ZTL_C30 OAI21_X4A_A9PP140ZTL_C30 OAI21_X6A_A9PP140ZTL_C30 OAI21_X8A_A9PP140ZTL_C30 OAI22_X0P5A_A9PP140ZTL_C30 OAI22_X0P7A_A9PP140ZTL_C30 OAI22_X11A_A9PP140ZTL_C30 OAI22_X11M_A9PP140ZTL_C30 OAI22_X1A_A9PP140ZTL_C30 OAI22_X1P4A_A9PP140ZTL_C30 OAI22_X2A_A9PP140ZTL_C30 OAI22_X3A_A9PP140ZTL_C30 OAI22_X4A_A9PP140ZTL_C30 OAI22_X6A_A9PP140ZTL_C30 OAI22_X8A_A9PP140ZTL_C30 OAI31_X8M_A9PP140ZTL_C30 OR2_X11TM_A9PP140ZTL_C30 OR2_X1P4TM_A9PP140ZTL_C30 OR2_X1TM_A9PP140ZTL_C30 OR2_X2TM_A9PP140ZTL_C30 OR2_X3TM_A9PP140ZTL_C30 OR2_X4TM_A9PP140ZTL_C30 OR2_X6TM_A9PP140ZTL_C30 OR2_X8TM_A9PP140ZTL_C30 SDFFQH_X1M_A9PP140ZTL_C30 SDFFQH_X2M_A9PP140ZTL_C30 SDFFQH_X3M_A9PP140ZTL_C30 SDFFQH_X4M_A9PP140ZTL_C30 SDFFQL2W_X1M_A9PP140ZTL_C30 SDFFQL2W_X2M_A9PP140ZTL_C30 SDFFQL4W_X1M_A9PP140ZTL_C30 SDFFQL4W_X2M_A9PP140ZTL_C30 SDFFQNH_X1M_A9PP140ZTL_C30 SDFFQNH_X2M_A9PP140ZTL_C30 SDFFQNH_X3M_A9PP140ZTL_C30 SDFFQNL2W_X1M_A9PP140ZTL_C30 SDFFRPQH_X1M_A9PP140ZTL_C30 SDFFRPQH_X2M_A9PP140ZTL_C30 SDFFRPQH_X3M_A9PP140ZTL_C30 SDFFRPQH_X4M_A9PP140ZTL_C30 SDFFRPQL2W_X1M_A9PP140ZTL_C30 SDFFRPQL2W_X2M_A9PP140ZTL_C30 SDFFRPQL4W_X1M_A9PP140ZTL_C30 SDFFRPQL4W_X2M_A9PP140ZTL_C30 SDFFRPQNH_X1M_A9PP140ZTL_C30 SDFFRPQNH_X2M_A9PP140ZTL_C30 SDFFRPQNH_X3M_A9PP140ZTL_C30 SDFFRPQNL2W_X1M_A9PP140ZTL_C30 SDFFSQH_X1M_A9PP140ZTL_C30 SDFFSQH_X2M_A9PP140ZTL_C30 SDFFSQH_X3M_A9PP140ZTL_C30 SDFFSQH_X4M_A9PP140ZTL_C30 SDFFSQL2W_X1M_A9PP140ZTL_C30 SDFFSQL2W_X2M_A9PP140ZTL_C30 SDFFSQL4W_X1M_A9PP140ZTL_C30 SDFFSQL4W_X2M_A9PP140ZTL_C30 SDFFSQNH_X1M_A9PP140ZTL_C30 SDFFSQNH_X2M_A9PP140ZTL_C30 SDFFSQNH_X3M_A9PP140ZTL_C30 SDFFSQNL2W_X1M_A9PP140ZTL_C30 SDFFSRPQH_X1M_A9PP140ZTL_C30 SDFFSRPQH_X2M_A9PP140ZTL_C30 SDFFSRPQH_X3M_A9PP140ZTL_C30 SDFFSRPQH_X4M_A9PP140ZTL_C30 SDFFXQN_X1M_A9PP140ZTL_C30 SDFFXQN_X2M_A9PP140ZTL_C30
+Error   : Could not find an HDL design. [CDFG-210] [elaborate]
+        : The design is 'pp_in_x4'.
+        : This error may happen if you read a set of files, and you try to elaborate a design which description is not part of the files read. To fix this, check the name of the design you want to elaborate, or check if you have read all the expected RTL files.
+UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+#@ End verbose source ../scripts/run.tcl
+1
+@genus:root: 2> exit
+
+Lic Summary:
+[15:03:37.072123] Cdslmd servers: license
+[15:03:37.072139] Feature usage summary:
+[15:03:37.072144] Genus_Synthesis
+
+Normal exit.

@@ -1,0 +1,86 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Thu May  9 08:47:56 2024                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.12-s106_1 (64bit) 12/08/2021 18:19 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.12-s106_1 NR211128-2235/21_12-UB (database version 18.20.567) {superthreading v2.17}
+#@(#)CDS: AAE 21.12-s039 (64bit) 12/08/2021 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.12-s043_1 () Dec  1 2021 10:06:22 ( )
+#@(#)CDS: SYNTECH 21.12-s014_1 () Oct 27 2021 04:39:25 ( )
+#@(#)CDS: CPE v21.12-s094
+#@(#)CDS: IQuantus/TQuantus 20.1.2-s624 (64bit) Thu Sep 2 20:12:03 PDT 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+save_global ../../Default_22.globals
+set init_gnd_net VSS
+set init_lef_file {/software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/lef/5.8/gf22nsdvlogl28edl116a_9M_2Mx_5Cx_1Jx_1Ox_LB.lef /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/lef/5.8/gf22nsdvlogl28edl116a.lef}
+set init_verilog topVcoDigital_noRoute.v
+set init_pwr_net VDD
+init_design
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -site GF22_DST -s 90 50 5 5 5 5
+uiSetTool select
+getIoFlowFlag
+fit
+setEndCapMode -reset
+setEndCapMode -rightEdge UDBSLT28_CAPR9_1 -leftEdge UDBSLT28_CAPL9_1 -topEdge UDBSLT28_CAPT_1 -bottomEdge UDBSLT28_CAPB_1 -rightTopCorner UDBSLT28_CAPTOUCR9_1 -rightBottomCorner UDBSLT28_CAPBOUCR9_1 -leftTopCorner UDBSLT28_CAPTOUCL9_1 -leftBottomCorner UDBSLT28_CAPBOUCL9_1
+addEndCap -prefix ENDCAP
+addWellTap -cell UDBSLT28_TAPPN_DN -cellInterval 23 -inRowOffset 18 -prefix WELLTAP
+zoomBox 87.20500 56.85300 97.30800 48.60000
+zoomBox 82.36900 43.34500 101.72400 60.67200
+zoomBox 80.58300 41.55500 103.35400 61.94000
+zoomBox 76.01200 36.97300 107.52900 65.18700
+zoomBox 65.66200 26.59600 116.98300 72.53900
+fit
+zoomBox 82.65200 58.27600 99.01600 1.35900
+gui_select -rect {90.54600 6.21200 93.42500 54.16400}
+deleteSelectedFromFPlan
+zoomBox 90.87500 9.42000 94.74100 3.16900
+gui_select -rect {91.36700 7.56800 92.97400 5.31000}
+deselectAll
+deleteSelectedFromFPlan
+fit
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer LB -stacked_via_bottom_layer M1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addRing -nets {VDD VSS} -type core_rings -follow core -layer {top M1 bottom M1 left M2 right M2} -width {top 0.6 bottom 0.6 left 0.6 right 0.6} -spacing {top 0.6 bottom 0.6 left 0.6 right 0.6} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+deselectAll
+getPinAssignMode -pinEditInBatch -quiet
+setPinAssignMode -pinEditInBatch true
+editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 3 -spreadType center -spacing 0.4 -pin {clk mosi rst sclk ss}
+setPinAssignMode -pinEditInBatch false
+getPinAssignMode -pinEditInBatch -quiet
+setPinAssignMode -pinEditInBatch true
+editPin -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -side Right -layer 3 -spreadType center -spacing 0.45 -pin {{vcoTrim[0]} {vcoTrim[1]} {vcoTrim[2]} {vcoTrim[3]} {vcoTrim[4]} {vcoTrim[5]} {vcoTrim[6]} {vcoTrim[7]} {vcoTrim[8]} {vcoTrim[9]} {vcoTrim[10]} {vcoTrim[11]} {vcoTrim[12]} {vcoTrim[13]} {vcoTrim[14]} {vcoTrim[15]}}
+setPinAssignMode -pinEditInBatch false
+zoomBox 91.61700 40.77400 106.55700 19.85700
+zoomBox 102.88000 34.85000 97.40900 25.47900
+fit
+set dbgLefDefOutVersion 5.8
+global dbgLefDefOutVersion
+set dbgLefDefOutVersion 5.8
+defOut -floorplan ../def/topVcoDigital_presynth.def
+set dbgLefDefOutVersion 5.8
+set dbgLefDefOutVersion 5.8

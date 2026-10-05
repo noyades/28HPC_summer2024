@@ -1,0 +1,6 @@
+#!/bin/sh -f
+#--------------------------------------------------------------------------------------
+# THE RUN FILE created by Cadence Extraction Quantus UI Version 22.1.1-p041
+#--------------------------------------------------------------------------------------
+
+qrc  -log_file /data/projects/28HPC_summer2024/jswalling/lvs/pp_int_x4/svdb/qrc.pp_int_x4.log -cmd /data/projects/28HPC_summer2024/jswalling/lvs/pp_int_x4/svdb/qrc.pp_int_x4.ccl 

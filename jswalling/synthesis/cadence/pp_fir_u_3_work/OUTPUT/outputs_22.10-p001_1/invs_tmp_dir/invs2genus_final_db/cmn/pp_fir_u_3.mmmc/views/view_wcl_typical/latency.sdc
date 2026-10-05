@@ -1,0 +1,6 @@
+set_clock_latency -0.0077  [get_pins {{pp_fir_3_1_1_Delay_Pipeline_reg_re_reg[15][12]/CK}}]
+set_clock_latency -0.008  [get_pins {{pp_fir_3_1_1_Delay_Pipeline_reg_re_reg[15][0]/CK}}]
+set_clock_latency -0.009  [get_pins {{pp_fir_3_1_1_Delay_Pipeline_reg_re_reg[17][15]/CK}}]
+set_clock_latency -0.0077  [get_pins {{pp_fir_3_1_1_Delay_Pipeline_reg_re_reg[14][7]/CK}}]
+set_clock_latency -0.0077  [get_pins {{pp_fir_3_1_1_Delay_Pipeline_reg_re_reg[14][15]/CK}}]
+set_clock_latency -0.0078  [get_pins {{pp_fir_3_1_1_Delay_Pipeline_reg_re_reg[13][4]/CK}}]

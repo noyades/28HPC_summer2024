@@ -1,0 +1,37 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v23.14-s088_1, built Fri Feb 28 12:25:44 PST 2025
+Options:	-stylus 
+Date:		Tue Jan 27 06:27:42 2026
+Host:		lnx-prd-05.ece.vt.edu (x86_64 w/Linux 5.15.0-315.196.5.2.el9uek.x86_64) (16cores*32cpus*AMD EPYC 7313 16-Core Processor 512KB)
+OS:		Oracle Linux Server 9.7
+
+License:
+		[06:27:42.282537] Configured Lic search path (23.02-s006): 27002@license.ece.vt.edu
+
+		invs	Innovus Implementation System	23.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+
+
+Create and set the environment variable TMPDIR to /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/innovus_temp_1938587_4010c995-3587-4710-965a-d2f67f07c327_lnx-prd-05.ece.vt.edu_jswalling_9LiXMO.
+
+Change the soft stacksize limit to 0.2%RAM (255 mbytes). Set global soft_stack_size_limit to change the value.
+[INFO] Loading Pegasus 24.10 fill procedures
+Info: Process UID = 1938587 / 4010c995-3587-4710-965a-d2f67f07c327 / OTHn7KFBig
+
+**INFO:  MMMC transition support version v31-84 
+
+@innovus 1> 
+--------------------------------------------------------------------------------
+Exiting Innovus on Tue Jan 27 06:29:12 2026
+  Total CPU time:     0:00:23
+  Total real time:    0:01:32
+  Peak memory (main): 2176.34MB
+
+
+*** Memory Usage v#2 (Current mem = 1790.477M, initial mem = 855.789M) ***
+*** Message Summary: 0 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:23.0, real=0:01:30, mem=1790.5M) ---

@@ -1,0 +1,31 @@
+#######################################################
+#                                                     
+#  Voltus IC Power Integrity Solution Command Logging File                     
+#  Created on Fri Jan 23 16:48:46 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Voltus IC Power Integrity Solution v25.10-p001_1 (64bit) 04/11/2025 11:58 (Linux 4.18.0-305.el8.x86_64)
+#@(#)CDS: NanoRoute 25.10-p001_1 NR250317-0405/25_10-UB (database version 18.20.663) {superthreading v2.20}
+#@(#)CDS: AAE 25.10-b008 (64bit) 04/11/2025 (Linux 4.18.0-305.el8.x86_64)
+#@(#)CDS: CTE 25.10-b014_1 () Mar 28 2025 03:11:49 ( )
+#@(#)CDS: SYNTECH 25.10-b006_1 () Mar 13 2025 03:32:26 ( )
+#@(#)CDS: CPE v25.10-b011
+
+read_db synthesis/cadence/phase2_int_work/work/scpa_dig_ana_ppfir_inn.enc
+set_pg_library_mode -cell_type stdcells -filler_cells FILL* -decap_cells FILLSGCAP* -extraction_tech_file ../../../PDK/tsmc/28nm/RC_Extraction/Cadence/RC_QRC_crn28hpc+_1p9m_6x1z1u_ut-alrdl_9corners_1.3p2a/qrcTechFile -lef_layer_map ../../../PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p10m_7x2r_utalrdl/tech.map -power_pins {VNW 0.9 VDD {}} -ground_pins {VSS VPW} -current_distribution propagation
+set_pg_library_mode -cell_type stdcells -filler_cells FILL* -decap_cells FILLSGCAP* -extraction_tech_file ../../../PDK/tsmc/28nm/RC_Extraction/Cadence/RC_QRC_crn28hpc+_1p9m_6x1z1u_ut-alrdl_9corners_1.3p2a/qrcTechFile -lef_layer_map ../../../PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p10m_7x2r_utalrdl/tech.map -power_pins {VNW 0.9 VDD 0.9} -ground_pins {VSS VPW} -current_distribution propagation
+set_pg_library_mode -cell_type stdcells -filler_cells FILL* -decap_cells FILLSGCAP* -extraction_tech_file ../../../PDK/tsmc/28nm/RC_Extraction/Cadence/RC_QRC_crn28hpc+_1p9m_6x1z1u_ut-alrdl_9corners_1.3p2a/qrcTechFile -lef_layer_map ../../../PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p10m_7x2r_utalrdl/tech.map -power_pins {VNW 0.9 VDD 0.9} -ground_pins {VSS VPW} -current_distribution propagation
+write_pg_library -out_dir ./ -library_prefix VOLT
+set_pg_library_mode -cell_type stdcells -filler_cells FILL* -decap_cells FILLSGCAP* -extraction_tech_file ../../../PDK/tsmc/28nm/RC_Extraction/Cadence/RC_QRC_crn28hpc+_1p9m_6x1z1u_ut-alrdl_9corners_1.3p2a/qrcTechFile -lef_layer_map ../../../PDK/tsmc/28nm/tsri/tsmcN28/tsmcN28.layermap -power_pins {VNW 0.9 VDD 0.9} -ground_pins {VSS VPW} -current_distribution propagation
+write_pg_library -out_dir ./ -library_prefix VOLT
+set_pg_library_mode -cell_type stdcells -filler_cells FILL* -decap_cells FILLSGCAP* -extraction_tech_file ../../../PDK/tsmc/28nm/RC_Extraction/Cadence/RC_QRC_crn28hpc+_1p9m_6x1z1u_ut-alrdl_9corners_1.3p2a/qrcTechFile -lef_layer_map ../../../PDK/tsmc/28nm/release/tsmcN28/tsmcN28.layermap -power_pins {VNW 0.9 VDD 0.9} -ground_pins {VSS VPW} -current_distribution propagation
+write_pg_library -out_dir ./ -library_prefix VOLT
+set_pg_library_mode -cell_type stdcells -filler_cells FILL* -decap_cells FILLSGCAP* -extraction_tech_file ../../../PDK/tsmc/28nm/RC_Extraction/Cadence/RC_QRC_crn28hpc+_1p9m_6x1z1u_ut-alrdl_9corners_1.3p2a/qrcTechFile -lef_layer_map ../../../PDK/tsmc/28nm/v1.8_2p3a/tsmcN28/tsmcN28.layermap -power_pins {VNW 0.9 VDD 0.9} -ground_pins {VSS VPW} -current_distribution propagation
+write_pg_library -out_dir ./ -library_prefix VOLT
+set_pg_library_mode -cell_type stdcells -filler_cells FILL* -decap_cells FILLSGCAP* -extraction_tech_file ../../../PDK/tsmc/28nm/RC_Extraction/Cadence/RC_QRC_crn28hpc+_1p9m_6x1z1u_ut-alrdl_9corners_1.3p2a/qrcTechFile -lef_layer_map ../../../PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/tech.map -power_pins {VNW 0.9 VDD 0.9} -ground_pins {VSS VPW} -current_distribution propagation
+write_pg_library -out_dir ./ -library_prefix VOLT
+set_pg_library_mode -cell_type stdcells -filler_cells FILL* -decap_cells FILLSGCAP* -extraction_tech_file ../../../PDK/tsmc/28nm/release/RC_Extraction/QRC/typical/qrcTechFile -lef_layer_map ../../../PDK/tsmc/28nm/release/tsmcN28/tsmcN28.layermap -power_pins {VNW 0.9 VDD 0.9} -ground_pins {VSS VPW} -current_distribution propagation
+write_pg_library -out_dir ./ -library_prefix VOLT
+set_pg_library_mode -cell_type stdcells -filler_cells FILL* -decap_cells FILLSGCAP* -extraction_tech_file ../../../PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/milkyway/1p10m_7x2r_utalrdl/sc9mcpp140z_tech.tf -lef_layer_map ../../../PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/milkyway/1p10m_7x2r_utalrdl/stream_out_layer_map -power_pins {VNW 0.9 VDD 0.9} -ground_pins {VSS VPW} -current_distribution propagation
+write_pg_library -out_dir ./ -library_prefix VOLT

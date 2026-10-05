@@ -1,0 +1,4 @@
+pp_fir_u_7 1000
+SSD.DN.1:L267685
+0 0 1 Mar 03 14:19:22 2025
+density {'file_name': '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/synthesis/cadence/pp_fir_u_7_work/drc/SSD.DN.1.RDB.density', 'is_window_density_check': False, 'layer_names': ['CHIPx', 'SSD.DN.1:SSD']}

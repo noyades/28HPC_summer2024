@@ -1,0 +1,200 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Version: 21.11-s126_1, built Mon Dec 20 09:52:46 PST 2021
+Options: -files ../scripts/run.tcl -log mmmc.log 
+Date:    Tue May 07 13:33:48 2024
+Host:    cluster12 (x86_64 w/Linux 3.10.0-1160.102.1.el7.x86_64) (6cores*24cpus*2physical cpus*Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz 15360KB) (40983880KB)
+PID:     19294
+OS:      CentOS Linux release 7.9.2009 (Core)
+
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (17 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source ../scripts/run.tcl
+#@ Begin verbose source ../scripts/run.tcl
+@file(run.tcl) 1: if {[file exists /proc/cpuinfo]} {
+  sh grep "model name" /proc/cpuinfo
+  sh grep "cpu MHz"    /proc/cpuinfo
+}
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+cpu MHz		: 2304.077
+cpu MHz		: 1442.382
+cpu MHz		: 2476.318
+cpu MHz		: 1443.115
+cpu MHz		: 2409.301
+cpu MHz		: 1201.293
+cpu MHz		: 2372.436
+cpu MHz		: 1201.904
+cpu MHz		: 2302.978
+cpu MHz		: 1199.951
+cpu MHz		: 2328.613
+cpu MHz		: 1430.664
+cpu MHz		: 2303.222
+cpu MHz		: 1438.232
+cpu MHz		: 2466.674
+cpu MHz		: 1261.108
+cpu MHz		: 2299.926
+cpu MHz		: 1199.951
+cpu MHz		: 2203.125
+cpu MHz		: 1428.588
+cpu MHz		: 2304.199
+cpu MHz		: 1448.486
+cpu MHz		: 2299.926
+cpu MHz		: 1430.541
+@file(run.tcl) 6: puts "Hostname : [info hostname]"
+Hostname : cluster12.lan.ece
+@file(run.tcl) 8: set DESIGN topPLLDigital
+@file(run.tcl) 9: set SYN_EFF medium
+@file(run.tcl) 10: set MAP_EFF medium
+@file(run.tcl) 11: set OPT_EFF medium
+@file(run.tcl) 13: set RELEASE [lindex [get_db program_version] end]
+@file(run.tcl) 14: set _OUTPUTS_PATH OUTPUT/outputs_${RELEASE}
+@file(run.tcl) 15: set _REPORTS_PATH OUTPUT/reports_${RELEASE}
+@file(run.tcl) 17: if {![file exists ${_OUTPUTS_PATH}]} {
+  file mkdir ${_OUTPUTS_PATH}
+  puts "Creating directory ${_OUTPUTS_PATH}"
+}
+@file(run.tcl) 22: if {![file exists ${_REPORTS_PATH}]} {
+  file mkdir ${_REPORTS_PATH}
+  puts "Creating directory ${_REPORTS_PATH}"
+}
+@file(run.tcl) 27: set rtlDir ../rtl
+@file(run.tcl) 29: set_db init_lib_search_path {. /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/}
+  Setting attribute of root '/': 'init_lib_search_path' = . /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/
+@file(run.tcl) 30: set_db script_search_path { . }
+  Setting attribute of root '/': 'script_search_path' =  . 
+@file(run.tcl) 31: set_db init_hdl_search_path {. ../rtl}
+  Setting attribute of root '/': 'init_hdl_search_path' = . ../rtl
+@file(run.tcl) 33: set_db max_cpus_per_server 8
+  Setting attribute of root '/': 'max_cpus_per_server' = 8
+@file(run.tcl) 35: set_db syn_generic_effort $SYN_EFF
+  Setting attribute of root '/': 'syn_generic_effort' = medium
+@file(run.tcl) 36: set_db syn_map_effort $MAP_EFF
+  Setting attribute of root '/': 'syn_map_effort' = medium
+@file(run.tcl) 37: set_db syn_opt_effort $OPT_EFF
+  Setting attribute of root '/': 'syn_opt_effort' = medium
+@file(run.tcl) 39: set_db information_level 9
+  Setting attribute of root '/': 'information_level' = 9
+@file(run.tcl) 41: set_db tns_opto true
+  Setting attribute of root '/': 'tns_opto' = true
+@file(run.tcl) 42: set_db lp_insert_clock_gating true
+  Setting attribute of root '/': 'lp_insert_clock_gating' = true
+@file(run.tcl) 43: set_db opt_spatial_effort medium
+Error   : The data value for this attribute is invalid. [TUI-24] [set_db]
+        : The value 'medium' cannot be set for attribute 'opt_spatial_effort'.
+        : To see the usage/description for this attribute, type '::legacy::set_attribute -h <attr_name> *' (in legacy UI mode) or 'help * <attr_name> -detail' (in CUI mode).
+#@ End verbose source ../scripts/run.tcl
+1
+Encountered problems processing file: ../scripts/run.tcl
+WARNING: This version of the tool is 868 days old.
+@genus:root: 2> ::legacy::set_attribute -h opt_spatial_effort
+
+Usage: ::legacy::set_attribute [-quiet] [-lock] <string> <string> [<object>+]
+
+    [-quiet]:
+        keeps quiet unless there are problems 
+    [-lock]:
+        attribute becomes read only once locked 
+    <string>:
+        attribute name 
+    <string>:
+        new value. A compound string (containing spaces) should be represented as a list 
+        (using double-quotes or braces). 
+    [<object>+]:
+        object(s) of interest 
+
+'::legacy::set_attribute -h <attribute_name> <object_type>' will give you more information. 
+Both 'attribute_name' and 'object_type' support the wildcard ('*') character for non-hidden 
+attributes. Valid object types are: 
+
+        actual_scan_chain                        jtag_macro 
+        actual_scan_segment                      jtag_port 
+        analysis_view                            layer 
+        attribute                                level_shifter_rule 
+        base_cell                                lib_arc 
+        base_cell_set                            lib_cell 
+        base_pin                                 lib_pin 
+        blackbox                                 library 
+        blockage                                 library_domain 
+        boundary_scan_segment                    message 
+        bump                                     mode 
+        cell_model                               module 
+        clock                                    net 
+        cluster                                  nominal_condition 
+        constant                                 opcg_domain 
+        constraint_mode                          opcg_mode 
+        cost_group                               operating_condition 
+        ctp_source                               pcell 
+        def_pin                                  pg_lib_pin 
+        delay_corner                             pg_net 
+        design                                   pg_pin 
+        dft_configuration_mode                   pin 
+        exception                                pinstance 
+        external_delay                           place_blockage 
+        flow                                     pnet 
+        flow_step                                port 
+        formal_verification_constraint           port_bus 
+        fpobject                                 power_domain 
+        gcell                                    power_intent_command_id 
+        group                                    power_mode 
+        hdl_architecture                         power_scope 
+        hdl_bind                                 rc_corner 
+        hdl_block                                region 
+        hdl_component                            root 
+        hdl_implementation                       route_blockage 
+        hdl_inst                                 route_rule 
+        hdl_label                                route_type 
+        hdl_lib                                  row 
+        hdl_operator                             scan_chain 
+        hdl_parameter                            scan_segment 
+        hdl_pin                                  sdp_column 
+        hdl_procedure                            sdp_group 
+        hdl_subprogram                           sdp_instance 
+        hinst                                    sdp_row 
+        hnet                                     specialnet 
+        hpin                                     state_retention_rule 
+        hpin_bus                                 test_bus_port 
+        hport                                    test_clock 
+        hport_bus                                test_signal 
+        inst                                     timing_condition 
+        isolation_rule                           via 
+        jtag_instruction                         virtual_techelt 
+        jtag_instruction_register                wireload 
+        
+@genus:root: 3> exit
+Normal exit.

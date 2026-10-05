@@ -1,0 +1,1983 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v22.10-p001_1, built Thu Sep 29 11:03:49 PDT 2022
+Options:	-stylus 
+Date:		Sat Jan 11 12:40:31 2025
+Host:		cluster15 (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (6cores*24cpus*Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz 15360KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		[12:40:31.283993] Configured Lic search path (21.01-s002): 27002@license.ece.vt.edu
+
+		invs	Innovus Implementation System	22.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+
+
+Create and set the environment variable TMPDIR to /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/innovus_temp_43024_cluster15_jswalling_oRPfta.
+
+The soft stacksize limit is either up to the hard limit or larger than 0.2% of RAM. No change is needed.
+
+**INFO:  MMMC transition support version v31-84 
+
+@innovus 1> **WARN: (IMPOAX-793):	Problem in processing library definition file /home/jswalling/cds.lib - Unable to open library asap7_TechLib at path /home/jswalling/$PDK_DIR/cdslib/asap7_TechLib: Invalid Lib Path..
+**WARN: (IMPOAX-793):	Problem in processing library definition file /home/jswalling/cds.lib - Unable to open library asap7ssc7p5t at path /home/jswalling/$PDK_DIR/asap7ssc7p5t_05: Invalid Lib Path..
+Suppress "**WARN ..." messages.
+read_db pp_fir_u_0_07_route_stylus.enc
+#% Begin load design ... (date=01/11 12:42:17, mem=1093.0M)
+AAE_INFO: switching -siAware from false to true ...
+AAE_INFO: The setting is changed from false to true in setDelayCalMode -SIAware
+Loading design 'pp_fir_u_0' saved by 'Innovus' '22.10-p001_1' on 'Sat Jan 11 11:27:44 2025'.
+Reading wcl_slow timing library '/software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib' ...
+Read 1003 cells in library 'sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c' 
+timing_cond_wcl_typical timing_cond_wcl_slow timing_cond_wcl_fast
+worst best typical
+
+Loading LEF file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_07_route_stylus.enc/libs/lef/sc9mcpp140z_tech.lef ...
+
+Loading LEF file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_07_route_stylus.enc/libs/lef/sc9mcpp140z_cln28ht_base_lvt_c30.lef ...
+Set DBUPerIGU to M1 pitch 280.
+
+Loading LEF file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_07_route_stylus.enc/libs/lef/sc9mcpp140z_cln28ht_hpk_lvt_c30.lef ...
+
+Loading LEF file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_07_route_stylus.enc/libs/lef/sc9mcpp140z_cln28ht_base_svt_c30.lef ...
+
+Loading LEF file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_07_route_stylus.enc/libs/lef/sc9mcpp140z_cln28ht_hpk_svt_c30.lef ...
+
+Loading LEF file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_07_route_stylus.enc/libs/lef/sc9mcpp140z_cln28ht_base_ulvt_c30.lef ...
+
+Loading LEF file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_07_route_stylus.enc/libs/lef/sc9mcpp140z_cln28ht_hpk_ulvt_c30.lef ...
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_07_route_stylus.enc/viewDefinition.tcl
+% Begin Load netlist data ... (date=01/11 12:42:28, mem=1145.9M)
+*** Begin netlist parsing (mem=1263.4M) ***
+Created 1003 new cells from 1 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilogBinary netlist '/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_07_route_stylus.enc/vbin/pp_fir_u_0.v.bin'
+
+*** Memory Usage v#1 (Current mem = 1283.461M, initial mem = 511.469M) ***
+*** End netlist parsing (cpu=0:00:00.2, real=0:00:00.0, mem=1283.5M) ***
+% End Load netlist data ... (date=01/11 12:42:28, total cpu=0:00:00.2, real=0:00:00.0, peak res=1176.3M, current mem=1176.3M)
+Top level cell is pp_fir_u_0.
+Hooked 1003 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell pp_fir_u_0 ...
+***** UseNewTieNetMode *****.
+*** Netlist is unique.
+** info: there are 3539 modules.
+** info: there are 21652 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 1354.934M, initial mem = 511.469M) ***
+*info: set bottom ioPad orient R0
+The core width changes from 207.370000 to 207.340000 when snapping to grid "PlacementGrid".
+
+Honor LEF defined pitches for advanced node
+Start create_tracks
+Set Shrink Factor to 0.90000
+Loading preference file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_07_route_stylus.enc/gui.pref.tcl ...
+Ignoring {default} groups for Hold optimization.
+Ignoring {default} groups for Hold optimization.
+set_db opt_useful_skew already set.
+set_db opt_useful_skew already set.
+Effort level <high> specified for reg2reg path_group
+Effort level <low> specified for in2reg path_group
+Effort level <low> specified for reg2out path_group
+Effort level <low> specified for in2out path_group
+Effort level <high> specified for tdgp_reg2reg_default path_group
+Change floorplan default-technical-site to 'sc9mcpp140z_cln28ht'.
+Change floorplan default-technical-site to 'sc9mcpp140z_cln28ht'.
+*Info: initialize multi-corner CTS.
+Reading wcl_fast timing library '/software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ffg_cbestt_min_0p99v_m40c.lib' ...
+Message <TECHLIB-302> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+Read 1003 cells in library 'sc9mcpp140z_cln28ht_base_lvt_c30_ffg_cbestt_min_0p99v_m40c' 
+Reading wcl_typical timing library '/software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_tt_ctypical_max_0p90v_25c.lib' ...
+Read 1003 cells in library 'sc9mcpp140z_cln28ht_base_lvt_c30_tt_ctypical_max_0p90v_25c' 
+Total number of combinational cells: 749
+Total number of sequential cells: 236
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 18
+List of usable buffers: FRICG_X0P5B_A9PP140ZTL_C30 FRICG_X0P6B_A9PP140ZTL_C30 FRICG_X0P8B_A9PP140ZTL_C30 FRICG_X0P7B_A9PP140ZTL_C30 FRICG_X11B_A9PP140ZTL_C30 FRICG_X13B_A9PP140ZTL_C30 FRICG_X16B_A9PP140ZTL_C30 FRICG_X1B_A9PP140ZTL_C30 FRICG_X1P2B_A9PP140ZTL_C30 FRICG_X1P4B_A9PP140ZTL_C30 FRICG_X2B_A9PP140ZTL_C30 FRICG_X1P7B_A9PP140ZTL_C30 FRICG_X2P5B_A9PP140ZTL_C30 FRICG_X3B_A9PP140ZTL_C30 FRICG_X4B_A9PP140ZTL_C30 FRICG_X3P5B_A9PP140ZTL_C30 FRICG_X5B_A9PP140ZTL_C30 FRICG_X6B_A9PP140ZTL_C30 FRICG_X7P5B_A9PP140ZTL_C30 FRICG_X9B_A9PP140ZTL_C30 BUFH_X11M_A9PP140ZTL_C30 BUFH_X13M_A9PP140ZTL_C30 BUFH_X16M_A9PP140ZTL_C30 BUFH_X1M_A9PP140ZTL_C30 BUFH_X1P2M_A9PP140ZTL_C30 BUFH_X1P4M_A9PP140ZTL_C30 BUFH_X2M_A9PP140ZTL_C30 BUFH_X1P7M_A9PP140ZTL_C30 BUFH_X2P5M_A9PP140ZTL_C30 BUFH_X3M_A9PP140ZTL_C30 BUFH_X4M_A9PP140ZTL_C30 BUFH_X3P5M_A9PP140ZTL_C30 BUFH_X5M_A9PP140ZTL_C30 BUFH_X6M_A9PP140ZTL_C30 BUFH_X7P5M_A9PP140ZTL_C30 BUFH_X9M_A9PP140ZTL_C30 BUF_X0P5B_A9PP140ZTL_C30 BUF_X0P5M_A9PP140ZTL_C30 BUF_X0P7B_A9PP140ZTL_C30 BUF_X0P7M_A9PP140ZTL_C30 BUF_X0P8M_A9PP140ZTL_C30 BUF_X0P8B_A9PP140ZTL_C30 BUF_X11B_A9PP140ZTL_C30 BUF_X11B_A9PP140ZTL_C30_XGCAP11 BUF_X11M_A9PP140ZTL_C30 BUF_X13B_A9PP140ZTL_C30 BUF_X11M_A9PP140ZTL_C30_XGCAP11 BUF_X13B_A9PP140ZTL_C30_XGCAP13 BUF_X13M_A9PP140ZTL_C30 BUF_X16B_A9PP140ZTL_C30 BUF_X13M_A9PP140ZTL_C30_XGCAP13 BUF_X16B_A9PP140ZTL_C30_XGCAP16 BUF_X16M_A9PP140ZTL_C30 BUF_X16M_A9PP140ZTL_C30_XGCAP16 BUF_X1M_A9PP140ZTL_C30 BUF_X1B_A9PP140ZTL_C30 BUF_X1P2B_A9PP140ZTL_C30 BUF_X1P2M_A9PP140ZTL_C30 BUF_X1P4B_A9PP140ZTL_C30 BUF_X1P4M_A9PP140ZTL_C30 BUF_X1P7B_A9PP140ZTL_C30 BUF_X1P7M_A9PP140ZTL_C30 BUF_X2M_A9PP140ZTL_C30 BUF_X2B_A9PP140ZTL_C30 BUF_X2P5B_A9PP140ZTL_C30 BUF_X2P5M_A9PP140ZTL_C30 BUF_X3M_A9PP140ZTL_C30 BUF_X3B_A9PP140ZTL_C30 BUF_X3P5B_A9PP140ZTL_C30 BUF_X3P5M_A9PP140ZTL_C30 BUF_X4B_A9PP140ZTL_C30 BUF_X4B_A9PP140ZTL_C30_XGCAP4 BUF_X4M_A9PP140ZTL_C30 BUF_X5B_A9PP140ZTL_C30 BUF_X4M_A9PP140ZTL_C30_XGCAP4 BUF_X5B_A9PP140ZTL_C30_XGCAP5 BUF_X5M_A9PP140ZTL_C30 BUF_X6B_A9PP140ZTL_C30 BUF_X5M_A9PP140ZTL_C30_XGCAP5 BUF_X6B_A9PP140ZTL_C30_XGCAP6 BUF_X6M_A9PP140ZTL_C30 BUF_X7P5B_A9PP140ZTL_C30 BUF_X6M_A9PP140ZTL_C30_XGCAP6 BUF_X7P5B_A9PP140ZTL_C30_XGCAP8 BUF_X7P5M_A9PP140ZTL_C30 BUF_X7P5M_A9PP140ZTL_C30_XGCAP8 BUF_X9B_A9PP140ZTL_C30 BUF_X9M_A9PP140ZTL_C30 BUF_X9B_A9PP140ZTL_C30_XGCAP9 BUF_X9M_A9PP140ZTL_C30_XGCAP9 DLY2_X1M_A9PP140ZTL_C30 DLY2_X0P5M_A9PP140ZTL_C30 DLY2_X2M_A9PP140ZTL_C30 DLYCLK8S2_X1B_A9PP140ZTL_C30 DLYCLK8S2_X2B_A9PP140ZTL_C30 DLYCLK8S4_X1B_A9PP140ZTL_C30 DLYCLK8S4_X2B_A9PP140ZTL_C30
+Total number of usable buffers: 97
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X0P5B_A9PP140ZTL_C30 INV_X0P5M_A9PP140ZTL_C30 INV_X0P6B_A9PP140ZTL_C30 INV_X0P6M_A9PP140ZTL_C30 INV_X0P7B_A9PP140ZTL_C30 INV_X0P7M_A9PP140ZTL_C30 INV_X0P8M_A9PP140ZTL_C30 INV_X0P8B_A9PP140ZTL_C30 INV_X11B_A9PP140ZTL_C30 INV_X11B_A9PP140ZTL_C30_XGCAP11 INV_X11M_A9PP140ZTL_C30 INV_X13B_A9PP140ZTL_C30 INV_X11M_A9PP140ZTL_C30_XGCAP11 INV_X13B_A9PP140ZTL_C30_XGCAP13 INV_X13M_A9PP140ZTL_C30 INV_X16B_A9PP140ZTL_C30 INV_X13M_A9PP140ZTL_C30_XGCAP13 INV_X16B_A9PP140ZTL_C30_XGCAP16 INV_X16M_A9PP140ZTL_C30 INV_X16M_A9PP140ZTL_C30_XGCAP16 INV_X1M_A9PP140ZTL_C30 INV_X1B_A9PP140ZTL_C30 INV_X1P2B_A9PP140ZTL_C30 INV_X1P2M_A9PP140ZTL_C30 INV_X1P4B_A9PP140ZTL_C30 INV_X1P4M_A9PP140ZTL_C30 INV_X1P7B_A9PP140ZTL_C30 INV_X1P7M_A9PP140ZTL_C30 INV_X2M_A9PP140ZTL_C30 INV_X2B_A9PP140ZTL_C30 INV_X2P5B_A9PP140ZTL_C30 INV_X2P5M_A9PP140ZTL_C30 INV_X3M_A9PP140ZTL_C30 INV_X3B_A9PP140ZTL_C30 INV_X3P5B_A9PP140ZTL_C30 INV_X4B_A9PP140ZTL_C30 INV_X3P5M_A9PP140ZTL_C30 INV_X4B_A9PP140ZTL_C30_XGCAP4 INV_X4M_A9PP140ZTL_C30 INV_X5B_A9PP140ZTL_C30 INV_X4M_A9PP140ZTL_C30_XGCAP4 INV_X5B_A9PP140ZTL_C30_XGCAP5 INV_X5M_A9PP140ZTL_C30 INV_X6B_A9PP140ZTL_C30 INV_X5M_A9PP140ZTL_C30_XGCAP5 INV_X6B_A9PP140ZTL_C30_XGCAP6 INV_X6M_A9PP140ZTL_C30 INV_X7P5B_A9PP140ZTL_C30 INV_X6M_A9PP140ZTL_C30_XGCAP6 INV_X7P5B_A9PP140ZTL_C30_XGCAP8 INV_X7P5M_A9PP140ZTL_C30 INV_X9B_A9PP140ZTL_C30 INV_X7P5M_A9PP140ZTL_C30_XGCAP8 INV_X9B_A9PP140ZTL_C30_XGCAP9 INV_X9M_A9PP140ZTL_C30 INV_X9M_A9PP140ZTL_C30_XGCAP9
+Total number of usable inverters: 56
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY10_X1M_A9PP140ZTL_C30 DLY10_X0P5M_A9PP140ZTL_C30 DLY10_X2M_A9PP140ZTL_C30 DLY10_X4M_A9PP140ZTL_C30 DLY2_X4M_A9PP140ZTL_C30 DLY4_X1M_A9PP140ZTL_C30 DLY4_X0P5M_A9PP140ZTL_C30 DLY4_X2M_A9PP140ZTL_C30 DLY4_X4M_A9PP140ZTL_C30 DLY6_X1M_A9PP140ZTL_C30 DLY6_X0P5M_A9PP140ZTL_C30 DLY6_X2M_A9PP140ZTL_C30 DLY6_X4M_A9PP140ZTL_C30 DLY8_X0P5M_A9PP140ZTL_C30 DLY8_X1M_A9PP140ZTL_C30 DLY8_X2M_A9PP140ZTL_C30 DLY8_X4M_A9PP140ZTL_C30 DLYCLK8S6_X1B_A9PP140ZTL_C30 DLYCLK8S6_X2B_A9PP140ZTL_C30 DLYCLK8S8_X1B_A9PP140ZTL_C30 DLYCLK8S8_X2B_A9PP140ZTL_C30
+Total number of identified usable delay cells: 21
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+Reading floorplan file - /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_07_route_stylus.enc/pp_fir_u_0.fp.gz (mem = 1689.4M).
+% Begin Load floorplan data ... (date=01/11 12:42:43, mem=1624.9M)
+*info: reset 23533 existing net BottomPreferredLayer and AvoidDetour
+Deleting old partition specification.
+Set FPlanBox to (-3600 -3600 418420 363600)
+
+Honor LEF defined pitches for advanced node
+Start create_tracks
+ ... processed partition successfully.
+Reading binary special route file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_07_route_stylus.enc/pp_fir_u_0.fp.spr.gz (Created by Innovus v22.10-p001_1 on Sat Jan 11 11:27:41 2025, version: 1)
+Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1627.3M, current mem=1627.3M)
+There are 602 nets with weight being set
+There are 606 nets with bottomPreferredRoutingLayer being set
+There are 602 nets with avoidDetour being set
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Delete all existing relative floorplan constraints.
+% End Load floorplan data ... (date=01/11 12:42:43, total cpu=0:00:00.3, real=0:00:00.0, peak res=1628.5M, current mem=1628.5M)
+Reading congestion map file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_07_route_stylus.enc/pp_fir_u_0.route.congmap.gz ...
+% Begin Load SymbolTable ... (date=01/11 12:42:43, mem=1628.5M)
+Un-suppress "**WARN ..." messages.
+% End Load SymbolTable ... (date=01/11 12:42:44, total cpu=0:00:00.2, real=0:00:01.0, peak res=1633.1M, current mem=1633.1M)
+Loading place ...
+% Begin Load placement data ... (date=01/11 12:42:44, mem=1633.1M)
+Reading placement file - /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_07_route_stylus.enc/pp_fir_u_0.place.gz.
+** Reading stdCellPlacement_binary (Created by Innovus v22.10-p001_1 on Sat Jan 11 11:27:41 2025, version# 2) ...
+Read Views for adaptive view pruning ...
+Read 0 views from Binary DB for adaptive view pruning
+*** Completed restorePlace (cpu=0:00:00.2 real=0:00:00.0 mem=1704.2M) ***
+Total net length = 1.332e+05 (6.594e+04 6.731e+04) (ext = 6.845e+03)
+% End Load placement data ... (date=01/11 12:42:44, total cpu=0:00:00.3, real=0:00:00.0, peak res=1645.3M, current mem=1643.4M)
+% Begin Load routing data ... (date=01/11 12:42:44, mem=1643.4M)
+Reading routing file - /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_07_route_stylus.enc/pp_fir_u_0.route.gz.
+Reading Innovus routing data (Created by Innovus v22.10-p001_1 on Sat Jan 11 11:27:41 2025 Format: 20.1) ...
+*** Total 22811 nets are successfully restored.
+*** Completed restoreRoute (cpu=0:00:00.4 real=0:00:01.0 mem=1726.2M) ***
+% End Load routing data ... (date=01/11 12:42:45, total cpu=0:00:00.4, real=0:00:01.0, peak res=1670.7M, current mem=1670.2M)
+Loading Drc markers ...
+... 4 markers are loaded ...
+... 0 geometry drc markers are loaded ...
+... 4 antenna drc markers are loaded ...
+TAT_INFO: restoreCongMap REAL = 1 : CPU = 0 : MEM = 0.
+Reading property file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_07_route_stylus.enc/pp_fir_u_0.prop
+*** Completed restoreProperty (cpu=0:00:00.1 real=0:00:00.0 mem=1731.2M) ***
+Reading dirtyarea snapshot file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_07_route_stylus.enc/pp_fir_u_0.db.da.gz (Create by Innovus v22.10-p001_1 on Sat Jan 11 11:27:42 2025, version: 6).
+Change floorplan default-technical-site to 'sc9mcpp140z_cln28ht'.
+Change floorplan default-technical-site to 'sc9mcpp140z_cln28ht'.
+Ignoring {default} groups for Hold optimization.
+Ignoring {default} groups for Hold optimization.
+set_db opt_useful_skew already set.
+set_db opt_useful_skew already set.
+Loading preRoute extraction data from directory '/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_07_route_stylus.enc/extraction/' ...
+Extraction setup Started 
+Initializing multi-corner RC extraction with 3 active RC Corners ...
+Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For post_route extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+Generating auto layer map file.
+Importing multi-corner technology file(s) for preRoute extraction...
+/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_07_route_stylus.enc/libs/mmmc/worst/qrcTechFile
+Generating auto layer map file.
+/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_07_route_stylus.enc/libs/mmmc/best/qrcTechFile
+Generating auto layer map file.
+/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_07_route_stylus.enc/libs/mmmc/typical/qrcTechFile
+Generating auto layer map file.
+Completed (cpu: 0:00:43.7 real: 0:01:09)
+Set Shrink Factor to 0.90000 (from technology file)
+Summary of Active RC-Corners : 
+ 
+ Analysis View: view_wcl_slow
+    RC-Corner Name        : worst
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 	[Derived from postRoute_xcap (effortLevel high)]
+    RC-Corner Technology file: '/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_07_route_stylus.enc/libs/mmmc/worst/qrcTechFile'
+ 
+ Analysis View: view_wcl_fast
+    RC-Corner Name        : best
+    RC-Corner Index       : 1
+    RC-Corner Temperature : -40 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 	[Derived from postRoute_xcap (effortLevel high)]
+    RC-Corner Technology file: '/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_07_route_stylus.enc/libs/mmmc/best/qrcTechFile'
+ 
+ Analysis View: view_wcl_typical
+    RC-Corner Name        : typical
+    RC-Corner Index       : 2
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 	[Derived from postRoute_xcap (effortLevel high)]
+    RC-Corner Technology file: '/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_07_route_stylus.enc/libs/mmmc/typical/qrcTechFile'
+Initializing multi-corner resistance tables ...
+RC corner worst not found in the saved preRoute extraction data.
+RC corner best not found in the saved preRoute extraction data.
+RC corner typical not found in the saved preRoute extraction data.
+Default value for post_route extraction mode's extract_rc_effort_level (extract_rc_effort_level option of set_db) changed to 'medium'.
+Start generating vias ..
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Via generation completed successfully.
+Generating auto layer map file.
+Initializing preRoute extraction patterns for new vias... Generating auto layer map file.
+Generating auto layer map file.
+Generating auto layer map file.
+Completed (cpu: 0:00:07.2 real: 0:00:10.0)
+% Begin Load power constraints ... (date=01/11 12:44:09, mem=1806.4M)
+source /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_07_route_stylus.enc/pp_fir_u_0_power_constraints.tcl
+'set_default_switching_activity' finished successfully.
+% End Load power constraints ... (date=01/11 12:44:09, total cpu=0:00:00.1, real=0:00:00.0, peak res=1812.9M, current mem=1812.9M)
+delay_corner_wcl_slow delay_corner_wcl_typical delay_corner_wcl_fast
+% Begin load AAE data ... (date=01/11 12:44:10, mem=1851.4M)
+**WARN: (IMPESI-3505):	set_db delaycal_eng_enablePrePlacedFlow false (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
+AAE DB initialization (MEM=1935.54 CPU=0:00:00.0 REAL=0:00:00.0) 
+% End load AAE data ... (date=01/11 12:44:10, total cpu=0:00:00.9, real=0:00:00.0, peak res=1862.6M, current mem=1862.6M)
+Restoring CCOpt config...
+  Extracting original clock gating for clk...
+    clock_tree clk contains 3606 sinks and 0 clock gates.
+  Extracting original clock gating for clk done.
+  The skew group clk/functional_wcl_typical was created. It contains 3606 sinks and 1 sources.
+  The skew group clk/functional_wcl_typical was created. It contains 3606 sinks and 1 sources.
+Restoring CCOpt config done.
+Total number of combinational cells: 749
+Total number of sequential cells: 236
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 18
+List of usable buffers: BUFH_X11M_A9PP140ZTL_C30 BUFH_X13M_A9PP140ZTL_C30 BUFH_X16M_A9PP140ZTL_C30 BUFH_X1M_A9PP140ZTL_C30 BUFH_X1P2M_A9PP140ZTL_C30 BUFH_X1P4M_A9PP140ZTL_C30 BUFH_X2M_A9PP140ZTL_C30 BUFH_X1P7M_A9PP140ZTL_C30 BUFH_X2P5M_A9PP140ZTL_C30 BUFH_X3M_A9PP140ZTL_C30 BUFH_X4M_A9PP140ZTL_C30 BUFH_X3P5M_A9PP140ZTL_C30 BUFH_X5M_A9PP140ZTL_C30 BUFH_X6M_A9PP140ZTL_C30 BUFH_X7P5M_A9PP140ZTL_C30 BUFH_X9M_A9PP140ZTL_C30 BUF_X0P5B_A9PP140ZTL_C30 BUF_X0P5M_A9PP140ZTL_C30 BUF_X0P7B_A9PP140ZTL_C30 BUF_X0P7M_A9PP140ZTL_C30 BUF_X0P8M_A9PP140ZTL_C30 BUF_X0P8B_A9PP140ZTL_C30 BUF_X11B_A9PP140ZTL_C30 BUF_X11B_A9PP140ZTL_C30_XGCAP11 BUF_X11M_A9PP140ZTL_C30 BUF_X13B_A9PP140ZTL_C30 BUF_X11M_A9PP140ZTL_C30_XGCAP11 BUF_X13B_A9PP140ZTL_C30_XGCAP13 BUF_X13M_A9PP140ZTL_C30 BUF_X16B_A9PP140ZTL_C30 BUF_X13M_A9PP140ZTL_C30_XGCAP13 BUF_X16B_A9PP140ZTL_C30_XGCAP16 BUF_X16M_A9PP140ZTL_C30 BUF_X16M_A9PP140ZTL_C30_XGCAP16 BUF_X1M_A9PP140ZTL_C30 BUF_X1B_A9PP140ZTL_C30 BUF_X1P2B_A9PP140ZTL_C30 BUF_X1P2M_A9PP140ZTL_C30 BUF_X1P4B_A9PP140ZTL_C30 BUF_X1P4M_A9PP140ZTL_C30 BUF_X1P7B_A9PP140ZTL_C30 BUF_X1P7M_A9PP140ZTL_C30 BUF_X2M_A9PP140ZTL_C30 BUF_X2B_A9PP140ZTL_C30 BUF_X2P5B_A9PP140ZTL_C30 BUF_X2P5M_A9PP140ZTL_C30 BUF_X3M_A9PP140ZTL_C30 BUF_X3B_A9PP140ZTL_C30 BUF_X3P5B_A9PP140ZTL_C30 BUF_X3P5M_A9PP140ZTL_C30 BUF_X4B_A9PP140ZTL_C30 BUF_X4B_A9PP140ZTL_C30_XGCAP4 BUF_X4M_A9PP140ZTL_C30 BUF_X5B_A9PP140ZTL_C30 BUF_X4M_A9PP140ZTL_C30_XGCAP4 BUF_X5B_A9PP140ZTL_C30_XGCAP5 BUF_X5M_A9PP140ZTL_C30 BUF_X6B_A9PP140ZTL_C30 BUF_X5M_A9PP140ZTL_C30_XGCAP5 BUF_X6B_A9PP140ZTL_C30_XGCAP6 BUF_X6M_A9PP140ZTL_C30 BUF_X7P5B_A9PP140ZTL_C30 BUF_X6M_A9PP140ZTL_C30_XGCAP6 BUF_X7P5B_A9PP140ZTL_C30_XGCAP8 BUF_X7P5M_A9PP140ZTL_C30 BUF_X7P5M_A9PP140ZTL_C30_XGCAP8 BUF_X9B_A9PP140ZTL_C30 BUF_X9M_A9PP140ZTL_C30 BUF_X9B_A9PP140ZTL_C30_XGCAP9 BUF_X9M_A9PP140ZTL_C30_XGCAP9 DLY2_X1M_A9PP140ZTL_C30 DLY2_X0P5M_A9PP140ZTL_C30 DLY2_X2M_A9PP140ZTL_C30 DLYCLK8S2_X1B_A9PP140ZTL_C30 DLYCLK8S2_X2B_A9PP140ZTL_C30 DLYCLK8S4_X1B_A9PP140ZTL_C30 DLYCLK8S4_X2B_A9PP140ZTL_C30
+Total number of usable buffers: 77
+List of unusable buffers: FRICG_X0P5B_A9PP140ZTL_C30 FRICG_X0P6B_A9PP140ZTL_C30 FRICG_X0P8B_A9PP140ZTL_C30 FRICG_X0P7B_A9PP140ZTL_C30 FRICG_X11B_A9PP140ZTL_C30 FRICG_X13B_A9PP140ZTL_C30 FRICG_X16B_A9PP140ZTL_C30 FRICG_X1B_A9PP140ZTL_C30 FRICG_X1P2B_A9PP140ZTL_C30 FRICG_X1P4B_A9PP140ZTL_C30 FRICG_X2B_A9PP140ZTL_C30 FRICG_X1P7B_A9PP140ZTL_C30 FRICG_X2P5B_A9PP140ZTL_C30 FRICG_X3B_A9PP140ZTL_C30 FRICG_X4B_A9PP140ZTL_C30 FRICG_X3P5B_A9PP140ZTL_C30 FRICG_X5B_A9PP140ZTL_C30 FRICG_X6B_A9PP140ZTL_C30 FRICG_X7P5B_A9PP140ZTL_C30 FRICG_X9B_A9PP140ZTL_C30
+Total number of unusable buffers: 20
+List of usable inverters: INV_X0P5B_A9PP140ZTL_C30 INV_X0P5M_A9PP140ZTL_C30 INV_X0P6B_A9PP140ZTL_C30 INV_X0P6M_A9PP140ZTL_C30 INV_X0P7B_A9PP140ZTL_C30 INV_X0P7M_A9PP140ZTL_C30 INV_X0P8M_A9PP140ZTL_C30 INV_X0P8B_A9PP140ZTL_C30 INV_X11B_A9PP140ZTL_C30 INV_X11B_A9PP140ZTL_C30_XGCAP11 INV_X11M_A9PP140ZTL_C30 INV_X13B_A9PP140ZTL_C30 INV_X11M_A9PP140ZTL_C30_XGCAP11 INV_X13B_A9PP140ZTL_C30_XGCAP13 INV_X13M_A9PP140ZTL_C30 INV_X16B_A9PP140ZTL_C30 INV_X13M_A9PP140ZTL_C30_XGCAP13 INV_X16B_A9PP140ZTL_C30_XGCAP16 INV_X16M_A9PP140ZTL_C30 INV_X16M_A9PP140ZTL_C30_XGCAP16 INV_X1M_A9PP140ZTL_C30 INV_X1B_A9PP140ZTL_C30 INV_X1P2B_A9PP140ZTL_C30 INV_X1P2M_A9PP140ZTL_C30 INV_X1P4B_A9PP140ZTL_C30 INV_X1P4M_A9PP140ZTL_C30 INV_X1P7B_A9PP140ZTL_C30 INV_X1P7M_A9PP140ZTL_C30 INV_X2M_A9PP140ZTL_C30 INV_X2B_A9PP140ZTL_C30 INV_X2P5B_A9PP140ZTL_C30 INV_X2P5M_A9PP140ZTL_C30 INV_X3M_A9PP140ZTL_C30 INV_X3B_A9PP140ZTL_C30 INV_X3P5B_A9PP140ZTL_C30 INV_X4B_A9PP140ZTL_C30 INV_X3P5M_A9PP140ZTL_C30 INV_X4B_A9PP140ZTL_C30_XGCAP4 INV_X4M_A9PP140ZTL_C30 INV_X5B_A9PP140ZTL_C30 INV_X4M_A9PP140ZTL_C30_XGCAP4 INV_X5B_A9PP140ZTL_C30_XGCAP5 INV_X5M_A9PP140ZTL_C30 INV_X6B_A9PP140ZTL_C30 INV_X5M_A9PP140ZTL_C30_XGCAP5 INV_X6B_A9PP140ZTL_C30_XGCAP6 INV_X6M_A9PP140ZTL_C30 INV_X7P5B_A9PP140ZTL_C30 INV_X6M_A9PP140ZTL_C30_XGCAP6 INV_X7P5B_A9PP140ZTL_C30_XGCAP8 INV_X7P5M_A9PP140ZTL_C30 INV_X9B_A9PP140ZTL_C30 INV_X7P5M_A9PP140ZTL_C30_XGCAP8 INV_X9B_A9PP140ZTL_C30_XGCAP9 INV_X9M_A9PP140ZTL_C30 INV_X9M_A9PP140ZTL_C30_XGCAP9
+Total number of usable inverters: 56
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY10_X1M_A9PP140ZTL_C30 DLY10_X0P5M_A9PP140ZTL_C30 DLY10_X2M_A9PP140ZTL_C30 DLY10_X4M_A9PP140ZTL_C30 DLY2_X4M_A9PP140ZTL_C30 DLY4_X1M_A9PP140ZTL_C30 DLY4_X0P5M_A9PP140ZTL_C30 DLY4_X2M_A9PP140ZTL_C30 DLY4_X4M_A9PP140ZTL_C30 DLY6_X1M_A9PP140ZTL_C30 DLY6_X0P5M_A9PP140ZTL_C30 DLY6_X2M_A9PP140ZTL_C30 DLY6_X4M_A9PP140ZTL_C30 DLY8_X0P5M_A9PP140ZTL_C30 DLY8_X1M_A9PP140ZTL_C30 DLY8_X2M_A9PP140ZTL_C30 DLY8_X4M_A9PP140ZTL_C30 DLYCLK8S6_X1B_A9PP140ZTL_C30 DLYCLK8S6_X2B_A9PP140ZTL_C30 DLYCLK8S8_X1B_A9PP140ZTL_C30 DLYCLK8S8_X2B_A9PP140ZTL_C30
+Total number of identified usable delay cells: 21
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+**WARN: (IMPCTE-107):	The following globals have been obsoleted since version . They will be removed in the next release. 
+timing_enable_separate_device_slew_effect_sensitivities
+#% End load design ... (date=01/11 12:44:12, total cpu=0:01:19, real=0:01:55, peak res=1974.7M, current mem=1868.5M)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPDBTCL-321         1  The attribute '%s' still works but will ...
+WARNING   IMPESI-3505          1  set_db delaycal_eng_%s (default=%s) will...
+WARNING   IMPCTE-107           1  The following globals have been obsolete...
+WARNING   TECHLIB-302         57  No function defined for cell '%s'. The c...
+*** Message Summary: 60 warning(s), 0 error(s)
+
+@innovus 2> source ../scripts/postroute.tcl 
+**opt_design ... cpu = 0:00:00, real = 0:00:00, mem = 1952.4M, totSessionCpu=0:02:24 **
+*** opt_design #1 [begin] : totSession cpu/real = 0:02:24.4/0:05:21.0 (0.4), mem = 2033.0M
+Total CPU(s) requested: 16
+Total CPU(s) enabled with current License(s): 8
+Current free CPU(s): 8
+Additional license(s) checked out: 1 Innovus_CPU_Opt license(s) for 8 CPU(s)
+[12:45:55.093570] Periodic Lic check successful
+[12:45:55.093610] Feature usage summary:
+[12:45:55.093611] Innovus_Impl_System
+[12:45:55.093611] Innovus_CPU_Opt
+
+Total CPU(s) now enabled: 16
+Multithreaded Timing Analysis is initialized with 16 threads
+
+GigaOpt running with 16 threads.
+*** InitOpt #1 [begin] (opt_design #1) : totSession cpu/real = 0:02:24.7/0:05:21.3 (0.5), mem = 2273.5M
+**INFO: User settings:
+delaycal_enable_high_fanout                                                         true
+delaycal_enable_si                                                                  true
+delaycal_eng_enablepreplacedflow                                                    false
+delaycal_equivalent_waveform_model                                                  propagation
+delaycal_ewm_type                                                                   simulation
+delaycal_ignore_net_load                                                            false
+delaycal_socv_accuracy_mode                                                         low
+delaycal_socv_use_lvf_tables                                                        all
+setDelayCalMode -engine                                                             aae
+design_bottom_routing_layer                                                         M2
+design_power_effort                                                                 none
+extract_rc_coupled                                                                  true
+extract_rc_coupling_cap_threshold                                                   3.0
+extract_rc_effort_level                                                             high
+extract_rc_engine                                                                   post_route
+extract_rc_pre_place_cap_scale_factor                                               2.7051
+extract_rc_pre_place_fanout_penalty                                                 0.0
+extract_rc_pre_place_fanout_threshold                                               10
+extract_rc_pre_place_res_scale_factor                                               0.3976
+extract_rc_pre_place_site_size                                                      1.04
+extract_rc_pre_place_wire_length_slope                                              1.6312
+extract_rc_pre_place_wire_length_y0                                                 0.9673
+extract_rc_relative_cap_threshold                                                   0.03
+extract_rc_shrink_factor                                                            0.9
+extract_rc_total_cap_threshold                                                      5.0
+opt_drv                                                                             true
+opt_drv_margin                                                                      0.0
+opt_hold_allow_setup_tns_degradation                                                false
+opt_hold_ignore_path_groups                                                         default
+opt_leakage_to_dynamic_ratio                                                        1.0
+opt_multi_bit_flop_opt                                                              false
+opt_preserve_all_sequential                                                         false
+opt_resize_flip_flops                                                               true
+opt_setup_target_slack                                                              0.0
+opt_skew                                                                            true
+opt_skew_eco_route                                                                  false
+opt_skew_pre_cts                                                                    true
+opt_spatial_power_driven                                                            false
+opt_view_pruning_hold_target_slack_auto_flow                                        0
+opt_view_pruning_hold_views_active_list                                             { view_wcl_slow view_wcl_fast view_wcl_typical }
+opt_view_pruning_hold_views_persistent_list                                         { view_wcl_fast}
+opt_view_pruning_placement_setup_view_list                                          { view_wcl_slow  }
+opt_view_pruning_setup_views_active_list                                            { view_wcl_slow view_wcl_fast view_wcl_typical }
+opt_view_pruning_setup_views_persistent_list                                        { view_wcl_slow}
+opt_view_pruning_tdgr_setup_views_persistent_list                                   { view_wcl_slow}
+place_global_cong_effort                                                            auto
+place_global_ignore_scan                                                            false
+extract_rc_model_file                                                               /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_07_route_stylus.enc/libs/misc/rc_model.bin
+route_antenna_cell_name                                                             ANTENNA
+route_antenna_diode_insertion                                                       true
+route_detail_post_route_spread_wire                                                 false
+route_detail_use_lef_pin_taper_rule                                                 true
+route_detail_use_multi_cut_via_effort                                               high
+route_exp_design_mode_bottom_routing_layer                                          2
+route_extract_third_party_compatible                                                false
+route_filler_inst_prefix                                                            FILL
+route_global_exp_timing_driven_std_delay                                            5.1
+route_global_exp_timing_driven_use_tif_timing_engine_for_import_design              false
+route_re_insert_filler_cell_list                                                    {FILLSGCAP128_A9PP140ZTL_C30 FILLSGCAP16_A9PP140ZTL_C30 FILLSGCAP2_A9PP140ZTL_C30 FILLSGCAP32_A9PP140ZTL_C30 FILLSGCAP3_A9PP140ZTL_C30 FILLSGCAP4_A9PP140ZTL_C30 FILLSGCAP64_A9PP140ZTL_C30 FILLSGCAP8_A9PP140ZTL_C30 FILL8_A9PP140ZTL_C30 FILL64_A9PP140ZTL_C30 FILL4_A9PP140ZTL_C30 FILL3_A9PP140ZTL_C30 FILL32_A9PP140ZTL_C30 FILL2_A9PP140ZTL_C30 FILL1_A9PP140ZTL_C30 FILL16_A9PP140ZTL_C30 FILL128_A9PP140ZTL_C30}
+route_re_insert_filler_cell_list_from_file                                          false
+setNanoRouteMode -timingEngine                                                      .timing_file_46757.tif.gz
+setActiveLogicViewMode -keepHighFanoutCriticalInsts                                 false
+getDelayCalMode -engine                                                             aae
+getIlmMode -keepHighFanoutCriticalInsts                                             false
+getImportMode -config                                                               true
+get_power_analysis_mode -honor_net_activity_for_tcf                                 false
+get_power_analysis_mode -honor_sublevel_activity                                    true
+getNanoRouteMode -timingEngine                                                      .timing_file_46757.tif.gz
+**INFO: set_db design_flow_effort standard -> setting 'set_db opt_all_end_points true' for the duration of this command.
+Disable merging buffers from different footprints for postRoute code for non-MSV designs
+Need call spDPlaceInit before registerPrioInstLoc.
+Estimated cell power/ground rail width = 0.154 um
+**WARN: (IMPOPT-7077):	Some of the LEF equivalent cells have different ANTENNAGATEAREA/ANTENNADIFFAREA/PINS etc... attributes. They will not be swapped for fixed instances and for lefsafe operations like opt_leakage_power in postroute mode. To find out what cells are LEF equivalent use the report_lef_equivalent_cells command.
+Type 'man IMPOPT-7077' for more detail.
+**WARN: (IMPOPT-7320):	Glitch fixing has been disabled since glitch reporting is disabled. Glitch reporting can be enabled using command set_db si_glitch_enable_report true
+Info: Using Genus executable '/software/RFIC/cadtools/cadence/ddi/DDI_22.10.000_lnx86/GENUS221/tools.lnx86/bin/genus'.
+      Genus workers will not check out additional licenses.
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'SDFFXSRPQ_X4M_A9PP140ZTUL_C30'
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'SDFFXSRPQ_X3M_A9PP140ZTUL_C30'
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'SDFFXSRPQ_X2M_A9PP140ZTUL_C30'
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'SDFFXSRPQ_X1M_A9PP140ZTUL_C30'
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'SDFFXSQ_X4M_A9PP140ZTUL_C30'
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'SDFFXSQ_X3M_A9PP140ZTUL_C30'
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'SDFFXSQ_X2M_A9PP140ZTUL_C30'
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'SDFFXSQ_X1M_A9PP140ZTUL_C30'
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'SDFFXSQN_X3M_A9PP140ZTUL_C30'
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'SDFFXSQN_X2M_A9PP140ZTUL_C30'
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'SDFFXSQN_X1M_A9PP140ZTUL_C30'
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'SDFFXRPQ_X4M_A9PP140ZTUL_C30'
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'SDFFXRPQ_X3M_A9PP140ZTUL_C30'
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'SDFFXRPQ_X2M_A9PP140ZTUL_C30'
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'SDFFXRPQ_X1M_A9PP140ZTUL_C30'
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'SDFFXRPQN_X3M_A9PP140ZTUL_C30'
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'SDFFXRPQN_X2M_A9PP140ZTUL_C30'
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'SDFFXRPQN_X1M_A9PP140ZTUL_C30'
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'SDFFXQ_X4M_A9PP140ZTUL_C30'
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'SDFFXQ_X3M_A9PP140ZTUL_C30'
+Message <TCLCMD-513> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+-lefTechFileMap {}                         # string, default=""
+**opt_design ... cpu = 0:00:19, real = 0:00:39, mem = 2491.3M, totSessionCpu=0:02:44 **
+Existing Dirty Nets : 0
+New Signature Flow (optDesignCheckOptions) ....
+#Taking db snapshot
+#Taking db snapshot ... done
+Begin checking placement ... (start mem=2765.5M, init mem=2792.5M)
+*info: Placed = 44690          (Fixed = 1001)
+*info: Unplaced = 0           
+Placement Density:100.00%(37170/37170)
+Placement Density (including fixed std cells):100.00%(37321/37321)
+Finished check_place (total: cpu=0:00:03.7, real=0:00:01.0; vio checks: cpu=0:00:03.3, real=0:00:00.0; mem=2813.5M)
+ Initial DC engine is -> aae
+ 
+ AAE-Opt:: Current number of nets in RC Memory -> 100 K
+ 
+ 
+ AAE-Opt:: New number of nets in RC Memory -> 100 K
+ 
+Reset EOS DB
+Ignoring AAE DB Resetting ...
+ Set Options for AAE Based Opt flow 
+*** opt_design -post_route ***
+DRC Margin: user margin 0.0; extra margin 0
+Setup Target Slack: user slack 0
+Hold Target Slack: user slack 0
+**INFO: The delay profiles based on paritioning incorrect, turning off vt filtering
+*** InitOpt #1 [finish] (opt_design #1) : cpu/real = 0:00:24.2/0:00:41.0 (0.6), totSession cpu/real = 0:02:48.9/0:06:02.3 (0.5), mem = 2813.5M
+** INFO : this run is activating 'postRoute' automaton
+**INFO: flowCheckPoint #1 InitialSummary
+Extraction called for design 'pp_fir_u_0' of instances=44690 and nets=23535 using extraction engine 'post_route' at effort level 'high' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command set_design_mode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+Integrated QRC (IQuantus) Extraction in Multi-Corner mode called for design 'pp_fir_u_0'. Number of corners is 3.
+No IQuantus parasitic data in Innovus. Going for full-chip extraction.
+ Min pitch recieved = 800 
+Shrink Factor (or layout scale) value 0.9 specified in Quantus qrc technology file as well as tool's setup will be applied on geometries for extraction.
+IQuantus Extraction invoked in multi (16) processes mode on local host.
+
+IQuantus Extraction engine initialization using 3 tech files:
+	/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_07_route_stylus.enc/libs/mmmc/worst/qrcTechFile at temperature 125C , 
+	/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_07_route_stylus.enc/libs/mmmc/best/qrcTechFile at temperature -40C & 
+	/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_07_route_stylus.enc/libs/mmmc/typical/qrcTechFile at temperature 25C . 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+INFO (EXTIQUANTUS-101) : 
+INFO (EXTIQUANTUS-101) : 
+  Integrated Quantus - 64-bit Parasitic Extractor - Version 21.2.0-s201
+-------------------------------------------------------------------------
+               Copyright 2022 Cadence Design Systems, Inc.
+
+
+INFO (EXTIQUANTUS-103) : Starting at 2025-Jan-11 12:46:39 (2025-Jan-11 17:46:39 GMT).
+
+  Integrated Quantus - 64-bit Parasitic Extractor - Version 21.2.0-s201
+-------------------------------------------------------------------------
+               Copyright 2022 Cadence Design Systems, Inc.
+
+
+INFO (EXTIQUANTUS-103) : Starting at 2025-Jan-11 12:46:39 (2025-Jan-11 17:46:39 GMT).
+
+INFO (EXTIQUANTUS-104) : Starting extraction session...
+
+INFO (EXTIQUANTUS-104) : Starting extraction session...
+
+INFO (EXTIQUANTUS-159) : Loading technology data from file:
+ 
+/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/innovus_temp_43024_cluster15_jswalling_oRPfta/iqrc_tmp_43024_LHZEcM/.qrctemp/CceRCGEN0tch43024
+
+INFO (EXTIQUANTUS-159) : Loading technology data from file:
+ 
+/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/innovus_temp_43024_cluster15_jswalling_oRPfta/iqrc_tmp_43024_LHZEcM/.qrctemp/CceRCGEN0tch43024
+
+INFO (EXTIQUANTUS-289) : Loading RCgen extraction models from file:
+ 
+/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/innovus_temp_43024_cluster15_jswalling_oRPfta/iqrc_tmp_43024_LHZEcM/.qrctemp/CceRCGEN0tch43024
+
+INFO (EXTIQUANTUS-289) : Loading RCgen extraction models from file:
+ 
+/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/innovus_temp_43024_cluster15_jswalling_oRPfta/iqrc_tmp_43024_LHZEcM/.qrctemp/CceRCGEN0tch43024
+
+INFO (EXTIQUANTUS-345) : Checking Command/Tech/License Files. 
+
+INFO (EXTIQUANTUS-345) : Checking Command/Tech/License Files. 
+
+INFO (EXTIQUANTUS-383) : Summary of license(s) checkout :
+	8 count of QTS300
+	1 count of QTS310
+	1 count of QTS320
+
+INFO (EXTIQUANTUS-383) : Summary of license(s) checkout :
+	8 count of QTS300
+	1 count of QTS310
+	1 count of QTS320
+
+INFO (EXTIQUANTUS-105) : Starting design extraction....
+
+INFO (EXTIQUANTUS-105) : Starting design extraction....
+No layermap file specified. Automatically mapping tech and lef layers. Log file is 'extLogDir/IQuantus_11-Jan-2025_12:46:36_43024_ahQmnf/extr.pp_fir_u_0.layermap.log'.
+**WARN: (IMPEXT-1220):	Multiple poly layers active and poly are defined in the technology file '/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_07_route_stylus.enc/libs/mmmc/worst/qrcTechFile'. Because extraction expects a single poly-layer definition, the layer poly will be ignored.
+ Prefered direction 2 set on layer no 0 
+ Prefered direction 1 set on layer no 1 
+ Prefered direction 0 set on layer no 2 
+ Prefered direction 1 set on layer no 3 
+ Prefered direction 0 set on layer no 4 
+ Prefered direction 1 set on layer no 5 
+ Prefered direction 0 set on layer no 6 
+ Prefered direction 1 set on layer no 7 
+ Prefered direction 0 set on layer no 8 
+ Prefered direction 1 set on layer no 9 
+ Prefered direction 0 set on layer no 10 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+IQuantus Extraction engine initialized successfully.
+
+Dumping IQuantus extraction options in file 'extLogDir/IQuantus_11-Jan-2025_12:46:36_43024_ahQmnf/extr.pp_fir_u_0.extraction_options.log'.
+Initialization for IQuantus Fullchip Extraction DONE (CPU Time: 0:00:04.7  Real Time: 0:00:06.0  MEM: 2859.141M)
+
+Geometry processing of Gray and Metal fill STARTED.................... DONE (CPU Time: 0:00:02.9  Real Time: 0:00:03.0  MEM: 2859.270M)
+Geometry processing of nets STARTED.................... DONE (NETS: 22800  Geometries: 466646  CPU Time: 0:00:04.0  Real Time: 0:00:04.0  MEM: 2895.402M)
+
+INFO (EXTIQUANTUS-282) : Checking Command/Tech Files. 
+
+Extraction of Geometries STARTED.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+INFO (EXTIQUANTUS-282) : Checking Command/Tech Files. 
+
+INFO (EXTIQUANTUS-277) : 
+INFO (EXTIQUANTUS-277) : Manufacturing Data Information :- 
+  DEF/GDS file 
+    does NOT contain MetalFill data. 
+  Techfile  
+    does     contain WEE data.     
+    does     contain Erosion data t=f( density ,width) 
+    does NOT contain R(w) data.    
+    does     contain R(w, s) data.  
+    does     contain TC(w) data.    
+    does     contain T/B enlargement data. 
+    does     contain Floating Metal Fill models. 
+
+INFO (EXTIQUANTUS-287) : Capacitance Models Information :- 
+ ICECAPS models are not available. 
+ RCgen   models are     available. 
+ This IQuantus session uses RCgen models.
+Manufacturing Data Information :- 
+  DEF/GDS file 
+    does NOT contain MetalFill data. 
+  Techfile  
+    does     contain WEE data.     
+    does     contain Erosion data t=f( density ,width) 
+    does NOT contain R(w) data.    
+    does     contain R(w, s) data.  
+    does     contain TC(w) data.    
+    does     contain T/B enlargement data. 
+    does     contain Floating Metal Fill models. 
+
+INFO (EXTIQUANTUS-286) : RCs effects computed for this session include :- 
+ MetalFill        : OFF 
+ WEE Effects      : rc 
+ Erosion Effects  : rc t=f( density ,width) 
+ T/B Enlargements : ON 
+ R(w) Effects     : n/a 
+ R(w,s) Effects   : ON 
+ TC(w) Effects     : ON 
+Some effects indicate n/a because of non-availability of relevantinput data
+(or) requested to be off (and/or) usage of older Icecaps models.
+
+INFO (EXTIQUANTUS-287) : Capacitance Models Information :- 
+ ICECAPS models are not available. 
+ RCgen   models are     available. 
+ This IQuantus session uses RCgen models.
+
+INFO (EXTIQUANTUS-286) : RCs effects computed for this session include :- 
+ MetalFill        : OFF 
+ WEE Effects      : rc 
+ Erosion Effects  : rc t=f( density ,width) 
+ T/B Enlargements : ON 
+ R(w) Effects     : n/a 
+ R(w,s) Effects   : ON 
+ TC(w) Effects     : ON 
+Some effects indicate n/a because of non-availability of relevantinput data
+(or) requested to be off (and/or) usage of older Icecaps models.
+Creating 16 parallel subjobs for IQuantus extraction...
+EDP: start server on cluster15:51734
+EDP: start server on cluster15:56198
+/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work
+/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work
+/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work
+/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work
+/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work
+/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work
+/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work
+/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work
+/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work
+/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work
+/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work
+/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work
+/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work
+/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work
+/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work
+/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work
+@innovus 3> Connected to cluster15 47274 2 ( PID=45991 ). Wait time was 53 seconds
+Connected to cluster15 43077 1 ( PID=45898 ). Wait time was 54 seconds
+Connected to cluster15 41104 0 ( PID=45809 ). Wait time was 55 seconds
+Connected to cluster15 35374 3 ( PID=46093 ). Wait time was 55 seconds
+Connected to cluster15 52101 6 ( PID=46459 ). Wait time was 56 seconds
+Connected to cluster15 35034 5 ( PID=46343 ). Wait time was 57 seconds
+Connected to cluster15 46066 4 ( PID=46193 ). Wait time was 57 seconds
+Connected to cluster15 41693 7 ( PID=46603 ). Wait time was 57 seconds
+Connected to cluster15 35186 11 ( PID=47231 ). Wait time was 55 seconds
+Connected to cluster15 41834 10 ( PID=47113 ). Wait time was 55 seconds
+Connected to cluster15 58476 8 ( PID=46713 ). Wait time was 56 seconds
+Connected to cluster15 38380 9 ( PID=46918 ). Wait time was 56 seconds
+Connected to cluster15 38888 13 ( PID=47457 ). Wait time was 56 seconds
+EDP: Task 3 finished (source /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/innovus_temp_43024_cluster15_jswalling_oRPfta/iqrc_tmp_43024_LHZEcM/multi_cpu_job_43024_3.tcl)
+Connected to cluster15 41849 12 ( PID=47355 ). Wait time was 61 seconds
+Connected to cluster15 57900 14 ( PID=47557 ). Wait time was 60 seconds
+Connected to cluster15 57536 15 ( PID=47655 ). Wait time was 60 seconds
+EDP: Task 2 finished (source /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/innovus_temp_43024_cluster15_jswalling_oRPfta/iqrc_tmp_43024_LHZEcM/multi_cpu_job_43024_2.tcl)
+EDP: Task 0 finished (source /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/innovus_temp_43024_cluster15_jswalling_oRPfta/iqrc_tmp_43024_LHZEcM/multi_cpu_job_43024_0.tcl)
+EDP: Task 1 finished (source /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/innovus_temp_43024_cluster15_jswalling_oRPfta/iqrc_tmp_43024_LHZEcM/multi_cpu_job_43024_1.tcl)
+EDP: Task 7 finished (source /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/innovus_temp_43024_cluster15_jswalling_oRPfta/iqrc_tmp_43024_LHZEcM/multi_cpu_job_43024_7.tcl)
+EDP: Task 11 finished (source /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/innovus_temp_43024_cluster15_jswalling_oRPfta/iqrc_tmp_43024_LHZEcM/multi_cpu_job_43024_11.tcl)
+EDP: Task 4 finished (source /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/innovus_temp_43024_cluster15_jswalling_oRPfta/iqrc_tmp_43024_LHZEcM/multi_cpu_job_43024_4.tcl)
+EDP: Task 6 finished (source /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/innovus_temp_43024_cluster15_jswalling_oRPfta/iqrc_tmp_43024_LHZEcM/multi_cpu_job_43024_6.tcl)
+EDP: Task 9 finished (source /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/innovus_temp_43024_cluster15_jswalling_oRPfta/iqrc_tmp_43024_LHZEcM/multi_cpu_job_43024_9.tcl)
+EDP: Task 5 finished (source /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/innovus_temp_43024_cluster15_jswalling_oRPfta/iqrc_tmp_43024_LHZEcM/multi_cpu_job_43024_5.tcl)
+EDP: Task 13 finished (source /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/innovus_temp_43024_cluster15_jswalling_oRPfta/iqrc_tmp_43024_LHZEcM/multi_cpu_job_43024_13.tcl)
+EDP: Task 8 finished (source /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/innovus_temp_43024_cluster15_jswalling_oRPfta/iqrc_tmp_43024_LHZEcM/multi_cpu_job_43024_8.tcl)
+EDP: Task 10 finished (source /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/innovus_temp_43024_cluster15_jswalling_oRPfta/iqrc_tmp_43024_LHZEcM/multi_cpu_job_43024_10.tcl)
+EDP: Task 15 finished (source /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/innovus_temp_43024_cluster15_jswalling_oRPfta/iqrc_tmp_43024_LHZEcM/multi_cpu_job_43024_15.tcl)
+EDP: Task 12 finished (source /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/innovus_temp_43024_cluster15_jswalling_oRPfta/iqrc_tmp_43024_LHZEcM/multi_cpu_job_43024_12.tcl)
+EDP: Task 14 finished (source /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/innovus_temp_43024_cluster15_jswalling_oRPfta/iqrc_tmp_43024_LHZEcM/multi_cpu_job_43024_14.tcl)
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Extraction of Geometries DONE (NETS: 22800  Total CPU Time: 0:18:51  Real Time: 0:03:17  MEM: 2893.172M)
+
+Parasitic Network Creation STARTED
+....................
+Number of Extracted Resistors     : 283057
+Number of Extracted Ground Caps   : 308753
+Number of Extracted Coupling Caps : 898
+Parasitic Network Creation DONE (Nets: 22800  CPU Time: 0:00:04.0  Real Time: 0:00:06.0  MEM: 2931.184M)
+Moving file from /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/extLogDir/pp_fir_u_0.rcdb.density.bin to /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/innovus_temp_43024_cluster15_jswalling_oRPfta/pp_fir_u_0_43024_826p05.rcdb.d/pp_fir_u_0.rcdb.density.bin 
+
+IQuantus Extraction engine is being closed... 
+IQuantus Fullchip Extraction DONE (Total CPU Time: 0:19:10  Processes: 16  Real Time: 0:03:45  MEM: 2931.176M)
+Suspended 82 physical insts (cell FILLSGCAP128_A9PP140ZTL_C30 / prefix FILL).
+Suspended 823 physical insts (cell FILLSGCAP16_A9PP140ZTL_C30 / prefix FILL).
+Suspended 5124 physical insts (cell FILLSGCAP2_A9PP140ZTL_C30 / prefix FILL).
+Suspended 347 physical insts (cell FILLSGCAP32_A9PP140ZTL_C30 / prefix FILL).
+Suspended 3471 physical insts (cell FILLSGCAP3_A9PP140ZTL_C30 / prefix FILL).
+Suspended 4282 physical insts (cell FILLSGCAP4_A9PP140ZTL_C30 / prefix FILL).
+Suspended 219 physical insts (cell FILLSGCAP64_A9PP140ZTL_C30 / prefix FILL).
+Suspended 1955 physical insts (cell FILLSGCAP8_A9PP140ZTL_C30 / prefix FILL).
+Suspended 0 physical inst  (cell FILL8_A9PP140ZTL_C30 / prefix FILL).
+Suspended 0 physical inst  (cell FILL64_A9PP140ZTL_C30 / prefix FILL).
+Suspended 0 physical inst  (cell FILL4_A9PP140ZTL_C30 / prefix FILL).
+Suspended 0 physical inst  (cell FILL3_A9PP140ZTL_C30 / prefix FILL).
+Suspended 0 physical inst  (cell FILL32_A9PP140ZTL_C30 / prefix FILL).
+Suspended 128 physical insts (cell FILL2_A9PP140ZTL_C30 / prefix FILL).
+Suspended 5601 physical insts (cell FILL1_A9PP140ZTL_C30 / prefix FILL).
+Suspended 0 physical inst  (cell FILL16_A9PP140ZTL_C30 / prefix FILL).
+Suspended 0 physical inst  (cell FILL128_A9PP140ZTL_C30 / prefix FILL).
+** INFO: Initializing Glitch Interface
+AAE DB initialization (MEM=2918.3 CPU=0:00:00.0 REAL=0:00:00.0) 
+** INFO: Initializing Glitch Cache
+*** BuildHoldData #1 [begin] (opt_design #1) : totSession cpu/real = 0:21:59.9/0:09:48.3 (2.2), mem = 2918.3M
+AAE_INFO: switching -siAware from true to false ...
+AAE_INFO: The setting is changed from true to false in setDelayCalMode -SIAware
+Starting delay calculation for Hold views
+AAE_INFO: opIsDesignInPostRouteState() is 1
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: pp_fir_u_0
+# Design Mode: 90nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off (EWM-WFP)
+#################################################################################
+Start delay calculation (fullDC) (16 T). (MEM=2920.3)
+AAE_INFO: 16 threads acquired from CTE.
+AAE_INFO: 16 threads acquired from CTE.
+AAE_INFO: 16 threads acquired from CTE.
+Total number of fetched objects 22807
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO: 16 threads acquired from CTE.
+Total number of fetched objects 22807
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+End delay calculation. (MEM=4165.91 CPU=0:00:32.9 REAL=0:00:02.0)
+End delay calculation (fullDC). (MEM=3856.66 CPU=0:00:36.5 REAL=0:00:10.0)
+*** Done Building Timing Graph (cpu=0:00:42.1 real=0:00:11.0 totSessionCpu=0:22:48 mem=3800.7M)
+Done building cte hold timing graph (HoldAware) cpu=0:00:47.8 real=0:00:13.0 totSessionCpu=0:22:48 mem=3800.7M ***
+AAE_INFO: switching -siAware from false to true ...
+AAE_INFO: The setting is changed from false to true in setDelayCalMode -SIAware
+Starting delay calculation for Setup views
+AAE_INFO: opIsDesignInPostRouteState() is 1
+AAE_INFO: resetNetProps viewIdx 0 
+AAE_INFO: resetNetProps viewIdx 1 
+AAE_INFO: resetNetProps viewIdx 2 
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: pp_fir_u_0
+# Design Mode: 90nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On (EWM-WFP)
+#################################################################################
+Start delay calculation (fullDC) (16 T). (MEM=3816.62)
+AAE_INFO: 16 threads acquired from CTE.
+AAE_INFO: 16 threads acquired from CTE.
+AAE_INFO: 16 threads acquired from CTE.
+AAE_INFO: 16 threads acquired from CTE.
+Total number of fetched objects 22807
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 23535,  96.9 percent of the nets selected for SI analysis
+AAE_INFO: 16 threads acquired from CTE.
+Total number of fetched objects 22807
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 23535,  96.9 percent of the nets selected for SI analysis
+AAE_INFO: 16 threads acquired from CTE.
+Total number of fetched objects 22807
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 23535,  96.9 percent of the nets selected for SI analysis
+End delay calculation. (MEM=4208.59 CPU=0:01:20 REAL=0:00:06.0)
+End delay calculation (fullDC). (MEM=4208.59 CPU=0:01:23 REAL=0:00:07.0)
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 4162.6M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:01.0, REAL = 0:00:00.0, MEM = 4194.6M)
+
+Executing IPO callback for view pruning ..
+** INFO: Initializing Glitch Interface
+** INFO: Initializing Glitch Interface
+
+Active setup views:
+ view_wcl_slow
+  Dominating endpoints: 1939
+  Dominating TNS: -0.000
+
+ view_wcl_fast
+  Dominating endpoints: 7846
+  Dominating TNS: -0.000
+
+ view_wcl_typical
+  Dominating endpoints: 0
+  Dominating TNS: -0.000
+
+** INFO: Initializing Glitch Interface
+
+Optimization is working on the following views:
+  Setup views: view_wcl_slow view_wcl_fast 
+  Hold  views: view_wcl_slow view_wcl_fast 
+Starting SI iteration 2
+Start delay calculation (fullDC) (16 T). (MEM=3841.63)
+AAE_INFO: 16 threads acquired from CTE.
+Glitch Analysis: View view_wcl_slow -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View view_wcl_slow -- Total Number of Nets Analyzed = 0. 
+Total number of fetched objects 22807
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 23535,  1.6 percent of the nets selected for SI analysis
+AAE_INFO: 16 threads acquired from CTE.
+Glitch Analysis: View view_wcl_fast -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View view_wcl_fast -- Total Number of Nets Analyzed = 0. 
+Total number of fetched objects 22807
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 23535,  1.6 percent of the nets selected for SI analysis
+End delay calculation. (MEM=4689.69 CPU=0:00:04.5 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=4689.69 CPU=0:00:04.6 REAL=0:00:00.0)
+*** Done Building Timing Graph (cpu=0:01:52 real=0:00:15.0 totSessionCpu=0:24:49 mem=4663.7M)
+** INFO: Initializing Glitch Interface
+
+------------------------------------------------------------------
+     Initial SI Timing Summary
+------------------------------------------------------------------
+
+Setup views included:
+ view_wcl_slow view_wcl_fast 
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):|  0.065  |  0.065  |  0.099  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|  9797   |  5647   |  4150   |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 62.339%
+       (63.366% with Fillers)
+------------------------------------------------------------------
+*** BuildHoldData #1 [finish] (opt_design #1) : cpu/real = 0:02:52.7/0:00:31.4 (5.5), totSession cpu/real = 0:24:52.6/0:10:19.7 (2.4), mem = 4687.7M
+**opt_design ... cpu = 0:22:28, real = 0:04:59, mem = 3430.7M, totSessionCpu=0:24:53 **
+OPTC: m3 20.0 25.0
+Setting latch borrow mode to budget during optimization.
+Info: Done creating the CCOpt slew target map.
+**INFO: flowCheckPoint #2 OptimizationPass1
+Glitch fixing enabled
+*** ClockDrv #1 [begin] (opt_design #1) : totSession cpu/real = 0:24:57.8/0:10:20.3 (2.4), mem = 3890.1M
+Running CCOpt-PRO on entire clock network
+Net route status summary:
+  Clock:       602 (unrouted=0, trialRouted=0, noStatus=0, routed=602, fixed=0, [crossesIlmBoundary=0, tooFewTerms=0, (crossesIlmBoundary AND tooFewTerms=0)])
+  Non-clock: 22933 (unrouted=735, trialRouted=0, noStatus=0, routed=22198, fixed=0, [crossesIlmBoundary=0, tooFewTerms=735, (crossesIlmBoundary AND tooFewTerms=0)])
+-effortLevel high                          # enums={low medium high signoff}, default=undefined, user setting
+Clock tree cells fixed by user: 0 out of 601 (0%)
+PRO...
+Relaxing adjacent_rows_legal and cell_density for the duration of PRO. To stop this set pro_respect_cell_density_and_adjacent_row_legal to true.
+Initializing clock structures...
+  Creating own balancer
+  Permitting the movement of (non-FIXED) datapath insts as required for sized/new clock tree insts
+  Initializing legalizer
+  Using cell based legalization.
+  Initializing placement interface...
+    Use check_library -place or consult logv if problems occur.
+    Leaving CCOpt scope - Initializing placement interface...
+    Leaving CCOpt scope - Initializing placement interface done. (took cpu=0:00:00.3 real=0:00:00.3)
+  Initializing placement interface done.
+  Leaving CCOpt scope - Cleaning up placement interface...
+  Leaving CCOpt scope - Cleaning up placement interface done. (took cpu=0:00:00.2 real=0:00:00.1)
+  Leaving CCOpt scope - Initializing placement interface...
+  Leaving CCOpt scope - Initializing placement interface done. (took cpu=0:00:00.3 real=0:00:00.3)
+  Reconstructing clock tree datastructures, skew aware...
+    Validating CTS configuration...
+    Checking module port directions...
+    Checking module port directions done. (took cpu=0:00:00.0 real=0:00:00.0)
+    Non-default attributes:
+      Public non-default attributes:
+        cts_adjacent_rows_legal: true (default: false)
+        cts_buffer_cells is set for at least one object
+        cts_cell_density is set for at least one object
+        cts_cell_halo_rows: 0 (default: 1)
+        cts_cell_halo_sites: 0 (default: 4)
+        cts_inverter_cells is set for at least one object
+        cts_primary_delay_corner: delay_corner_wcl_slow (default: )
+        cts_route_type is set for at least one object
+        cts_skew_group_target_insertion_delay is set for at least one object
+        cts_target_max_transition_time is set for at least one object
+        cts_target_max_transition_time_sdc is set for at least one object
+        cts_target_skew is set for at least one object
+        cts_use_inverters is set for at least one object
+      Private non-default attributes:
+        cts_allow_non_fterm_identical_swaps: false (default: true)
+        cts_clock_nets_detailed_routed: true (default: false)
+        cts_force_design_routing_status: 1 (default: auto)
+        cts_post_route_enable_post_commit_delay_update: true (default: false)
+    Route type trimming info:
+      No route type modifications were made.
+    Library trimming buffers in power domain auto-default and half-corner delay_corner_wcl_slow:both.late removed 0 of 4 cells
+    Original list had 4 cells:
+    BUF_X7P5B_A9PP140ZTL_C30 BUF_X6B_A9PP140ZTL_C30 BUF_X4B_A9PP140ZTL_C30 BUF_X2B_A9PP140ZTL_C30 
+    Library trimming was not able to trim any cells:
+    BUF_X7P5B_A9PP140ZTL_C30 BUF_X6B_A9PP140ZTL_C30 BUF_X4B_A9PP140ZTL_C30 BUF_X2B_A9PP140ZTL_C30 
+    Library trimming inverters in power domain auto-default and half-corner delay_corner_wcl_slow:both.late removed 0 of 4 cells
+    Original list had 4 cells:
+    INV_X7P5B_A9PP140ZTL_C30 INV_X6B_A9PP140ZTL_C30 INV_X4B_A9PP140ZTL_C30 INV_X2B_A9PP140ZTL_C30 
+    Library trimming was not able to trim any cells:
+    INV_X7P5B_A9PP140ZTL_C30 INV_X6B_A9PP140ZTL_C30 INV_X4B_A9PP140ZTL_C30 INV_X2B_A9PP140ZTL_C30 
+    Clock tree balancer configuration for clock_tree clk:
+    Non-default attributes:
+      Public non-default attributes:
+        cts_cell_density: 1 (default: 0.75)
+        cts_route_type (leaf): default_route_type_leaf (default: default)
+        cts_route_type (top): default_route_type_nonleaf (default: default)
+        cts_route_type (trunk): default_route_type_nonleaf (default: default)
+        cts_use_inverters: true (default: auto)
+      No private non-default attributes
+    For power domain auto-default:
+      Buffers:     BUF_X7P5B_A9PP140ZTL_C30 BUF_X6B_A9PP140ZTL_C30 BUF_X4B_A9PP140ZTL_C30 BUF_X2B_A9PP140ZTL_C30 
+      Inverters:   INV_X7P5B_A9PP140ZTL_C30 INV_X6B_A9PP140ZTL_C30 INV_X4B_A9PP140ZTL_C30 INV_X2B_A9PP140ZTL_C30 
+      Clock gates: PREICG_X16B_A9PP140ZTL_C30 PREICG_X13B_A9PP140ZTL_C30 PREICG_X11B_A9PP140ZTL_C30 PREICG_X9B_A9PP140ZTL_C30 PREICG_X7P5B_A9PP140ZTL_C30 PREICG_X6B_A9PP140ZTL_C30 PREICG_X5B_A9PP140ZTL_C30 PREICG_X4B_A9PP140ZTL_C30 PREICG_X3P5B_A9PP140ZTL_C30 PREICG_X3B_A9PP140ZTL_C30 PREICG_X2P5B_A9PP140ZTL_C30 PREICG_X2B_A9PP140ZTL_C30 PREICG_X1P7B_A9PP140ZTL_C30 PREICG_X1P4B_A9PP140ZTL_C30 PREICG_X1P2B_A9PP140ZTL_C30 PREICG_X1B_A9PP140ZTL_C30 PREICG_X0P8B_A9PP140ZTL_C30 PREICG_X0P7B_A9PP140ZTL_C30 PREICG_X0P6B_A9PP140ZTL_C30 PREICG_X0P5B_A9PP140ZTL_C30 
+      Unblocked area available for placement of any clock cells in power_domain auto-default: 37170.000um^2
+    Top Routing info:
+      Route-type name: default_route_type_nonleaf; Top/bottom preferred layer name: M4/M3; 
+      Unshielded; Mask Constraint: 0; Source: cts_route_type.
+    Trunk Routing info:
+      Route-type name: default_route_type_nonleaf; Top/bottom preferred layer name: M4/M3; 
+      Unshielded; Preferred extra space: 1; Mask Constraint: 0; Source: cts_route_type.
+    Leaf Routing info:
+      Route-type name: default_route_type_leaf; Top/bottom preferred layer name: M4/M3; 
+      Unshielded; Preferred extra space: 1; Mask Constraint: 0; Source: cts_route_type.
+    For timing_corner delay_corner_wcl_slow:both, late and power domain auto-default:
+      Slew time target (leaf):    0.025ns
+      Slew time target (trunk):   0.025ns
+      Slew time target (top):     0.025ns (Note: no nets are considered top nets in this clock tree)
+      Buffer unit delay: 0.018ns
+      Buffer max distance: 70.562um
+    Fastest wire driving cells and distances:
+      Buffer    : {lib_cell:BUF_X7P5B_A9PP140ZTL_C30, fastest_considered_half_corner=delay_corner_wcl_slow:both.late, optimalDrivingDistance=91.698um, saturatedSlew=0.022ns, speed=3526.846um per ns, cellArea=16.489um^2 per 1000um}
+      Inverter  : {lib_cell:INV_X7P5B_A9PP140ZTL_C30, fastest_considered_half_corner=delay_corner_wcl_slow:both.late, optimalDrivingDistance=70.562um, saturatedSlew=0.022ns, speed=4627.016um per ns, cellArea=16.071um^2 per 1000um}
+      Clock gate: {lib_cell:PREICG_X16B_A9PP140ZTL_C30, fastest_considered_half_corner=delay_corner_wcl_slow:both.late, optimalDrivingDistance=109.895um, saturatedSlew=0.023ns, speed=3842.483um per ns, cellArea=47.009um^2 per 1000um}
+    
+    
+    Logic Sizing Table:
+    
+    ----------------------------------------------------------
+    Cell    Instance count    Source    Eligible library cells
+    ----------------------------------------------------------
+      (empty table)
+    ----------------------------------------------------------
+    
+    
+**WARN: (IMPCCOPT-1261):	The skew target of 0.010ns for skew_group clk/functional_wcl_typical in primary delay corner delay_corner_wcl_slow is too small. For best results, it is recommended that the skew target be set no lower than 0.017ns. The skew target has been relaxed to 0.017ns. You may force the use of the tighter skew target by setting cts_exit_if_skew_target_over_constrained to false.
+Type 'man IMPCCOPT-1261' for more detail.
+**WARN: (IMPCCOPT-1261):	The skew target of 0.010ns for skew_group clk/functional_wcl_typical in primary delay corner delay_corner_wcl_slow is too small. For best results, it is recommended that the skew target be set no lower than 0.017ns. The skew target has been relaxed to 0.017ns. You may force the use of the tighter skew target by setting cts_exit_if_skew_target_over_constrained to false.
+Type 'man IMPCCOPT-1261' for more detail.
+    Clock tree balancer configuration for skew_group clk/functional_wcl_typical:
+     Created from constraint modes: {[functional_wcl_typical]}
+      Sources:                     pin clk
+      Total number of sinks:       3606
+      Delay constrained sinks:     3606
+      Constrains:                  default
+      Non-leaf sinks:              0
+      Ignore pins:                 0
+     Timing corner delay_corner_wcl_slow:both.late:
+      Skew target:                 0.017ns
+    Primary reporting skew groups are:
+    skew_group clk/functional_wcl_typical with 3606 clock sinks
+    
+    
+    Constraint summary
+    ==================
+    
+    Transition constraints are active in the following delay corners:
+    
+    delay_corner_wcl_slow:both.late
+    
+    Cap constraints are active in the following delay corners:
+    
+    delay_corner_wcl_slow:both.late
+    
+    Transition constraint summary:
+    
+    ------------------------------------------------------------------------------------------------------
+    Delay corner                                 Target (ns)    Num pins    Target source    Clock tree(s)
+    ------------------------------------------------------------------------------------------------------
+    delay_corner_wcl_slow:both.late (primary)         -            -              -                -
+                        -                           0.025         4810      explicit         all
+    ------------------------------------------------------------------------------------------------------
+    
+    Capacitance constraint summary:
+    
+    -----------------------------------------------------------------------------------------------------------------
+    Delay corner                                 Limit (pF)    Num nets    Target source                Clock tree(s)
+    -----------------------------------------------------------------------------------------------------------------
+    delay_corner_wcl_slow:both.late (primary)        -            -                    -                      -
+                        -                          0.092           1       library_or_sdc_constraint    all
+                        -                          0.246           4       library_or_sdc_constraint    all
+                        -                          0.487         105       library_or_sdc_constraint    all
+                        -                          0.720         200       library_or_sdc_constraint    all
+                        -                          0.905         292       library_or_sdc_constraint    all
+    -----------------------------------------------------------------------------------------------------------------
+    
+    
+    Clock DAG stats initial state:
+      cell counts      : b=0, i=601, icg=0, dcg=0, l=0, total=601
+      sink counts      : regular=3606, enable_latch=0, load_capacitance=0, antenna=0, node_sink=0, total=3606
+      misc counts      : r=1, pp=0, mci=0
+      cell areas       : b=0.000um^2, i=575.190um^2, icg=0.000um^2, dcg=0.000um^2, l=0.000um^2, total=575.190um^2
+      hp wire lengths  : top=0.000um, trunk=3229.320um, leaf=5282.820um, total=8512.140um
+    Clock DAG library cell distribution initial state {count}:
+       Invs: INV_X7P5B_A9PP140ZTL_C30: 292 INV_X6B_A9PP140ZTL_C30: 200 INV_X4B_A9PP140ZTL_C30: 105 INV_X2B_A9PP140ZTL_C30: 4 
+UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   InitialState
+    Have 16 CPUs available for CTS. Selected algorithms will run multithreaded.
+    No ideal or dont_touch nets found in the clock tree
+    No dont_touch hnets found in the clock tree
+    No dont_touch hpins found in the clock network.
+    Checking for illegal sizes of clock logic instances...
+    Checking for illegal sizes of clock logic instances done. (took cpu=0:00:00.0 real=0:00:00.0)
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   Checking for illegal sizes of clock logic instances
+    Validating CTS configuration done. (took cpu=0:00:04.6 real=0:00:04.3)
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   Validating CTS configuration
+    CCOpt configuration status: all checks passed.
+**WARN: (IMPCCOPT-1261):	The skew target of 0.010ns for skew_group clk/functional_wcl_typical in primary delay corner delay_corner_wcl_slow is too small. For best results, it is recommended that the skew target be set no lower than 0.017ns. The skew target has been relaxed to 0.017ns. You may force the use of the tighter skew target by setting cts_exit_if_skew_target_over_constrained to false.
+Type 'man IMPCCOPT-1261' for more detail.
+  Reconstructing clock tree datastructures, skew aware done.
+Initializing clock structures done.
+PRO...
+  PRO active optimizations:
+   - DRV fixing with sizing
+  
+  Detected clock skew data from CTS
+  Clock tree timing engine global stage delay update for delay_corner_wcl_slow:both.late...
+  Clock tree timing engine global stage delay update for delay_corner_wcl_slow:both.late done. (took cpu=0:00:00.7 real=0:00:00.1)
+  Clock DAG stats PRO initial state:
+    cell counts      : b=0, i=601, icg=0, dcg=0, l=0, total=601
+    sink counts      : regular=3606, enable_latch=0, load_capacitance=0, antenna=0, node_sink=0, total=3606
+    misc counts      : r=1, pp=0, mci=0
+    cell areas       : b=0.000um^2, i=575.190um^2, icg=0.000um^2, dcg=0.000um^2, l=0.000um^2, total=575.190um^2
+    cell capacitance : b=0.000pF, i=1.918pF, icg=0.000pF, dcg=0.000pF, l=0.000pF, total=1.918pF
+    sink capacitance : total=5.252pF, avg=0.001pF, sd=0.001pF, min=0.000pF, max=0.002pF
+    wire capacitance : top=0.000pF, trunk=0.481pF, leaf=0.955pF, total=1.436pF
+    wire lengths     : top=0.000um, trunk=3675.760um, leaf=7035.395um, total=10711.155um
+    hp wire lengths  : top=0.000um, trunk=3229.320um, leaf=5282.820um, total=8512.140um
+  Clock DAG net violations PRO initial state: none
+  Clock DAG primary half-corner transition distribution PRO initial state:
+    Trunk : target=0.025ns count=225 avg=0.020ns sd=0.002ns min=0.011ns max=0.025ns {9 <= 0.015ns, 106 <= 0.020ns, 84 <= 0.022ns, 17 <= 0.024ns, 9 <= 0.025ns}
+    Leaf  : target=0.025ns count=377 avg=0.022ns sd=0.001ns min=0.013ns max=0.025ns {2 <= 0.015ns, 26 <= 0.020ns, 243 <= 0.022ns, 86 <= 0.024ns, 20 <= 0.025ns}
+  Clock DAG library cell distribution PRO initial state {count}:
+     Invs: INV_X7P5B_A9PP140ZTL_C30: 292 INV_X6B_A9PP140ZTL_C30: 200 INV_X4B_A9PP140ZTL_C30: 105 INV_X2B_A9PP140ZTL_C30: 4 
+  Primary reporting skew groups PRO initial state:
+  Skew group summary PRO initial state:
+    skew_group clk/functional_wcl_typical: insertion delay [min=0.102, max=0.119, avg=0.113, sd=0.003, skn=-0.436, kur=0.008], skew [0.017 vs 0.018], 100% {0.102, 0.119} (wid=0.015 ws=0.008) (gid=0.109 gs=0.015)
+  Recomputing CTS skew targets...
+  Resolving skew group constraints...
+**WARN: (IMPCCOPT-1261):	The skew target of 0.010ns for skew_group clk/functional_wcl_typical in primary delay corner delay_corner_wcl_slow is too small. For best results, it is recommended that the skew target be set no lower than 0.017ns. The skew target has been relaxed to 0.017ns. You may force the use of the tighter skew target by setting cts_exit_if_skew_target_over_constrained to false.
+Type 'man IMPCCOPT-1261' for more detail.
+**WARN: (IMPCCOPT-1261):	The skew target of 0.010ns for skew_group clk/functional_wcl_typical in primary delay corner delay_corner_wcl_slow is too small. For best results, it is recommended that the skew target be set no lower than 0.017ns. The skew target has been relaxed to 0.017ns. You may force the use of the tighter skew target by setting cts_exit_if_skew_target_over_constrained to false.
+Type 'man IMPCCOPT-1261' for more detail.
+**WARN: (IMPCCOPT-1261):	The skew target of 0.010ns for skew_group clk/functional_wcl_typical in primary delay corner delay_corner_wcl_slow is too small. For best results, it is recommended that the skew target be set no lower than 0.017ns. The skew target has been relaxed to 0.017ns. You may force the use of the tighter skew target by setting cts_exit_if_skew_target_over_constrained to false.
+Type 'man IMPCCOPT-1261' for more detail.
+    Solving LP: 1 skew groups; 2 fragments, 2 fraglets and 3 vertices; 12 variables and 27 constraints; tolerance 1
+**WARN: (IMPCCOPT-1261):	The skew target of 0.010ns for skew_group clk/functional_wcl_typical in primary delay corner delay_corner_wcl_slow is too small. For best results, it is recommended that the skew target be set no lower than 0.017ns. The skew target has been relaxed to 0.017ns. You may force the use of the tighter skew target by setting cts_exit_if_skew_target_over_constrained to false.
+Type 'man IMPCCOPT-1261' for more detail.
+  Resolving skew group constraints done.
+**WARN: (IMPCCOPT-1261):	The skew target of 0.010ns for skew_group clk/functional_wcl_typical in primary delay corner delay_corner_wcl_slow is too small. For best results, it is recommended that the skew target be set no lower than 0.017ns. The skew target has been relaxed to 0.017ns. You may force the use of the tighter skew target by setting cts_exit_if_skew_target_over_constrained to false.
+Type 'man IMPCCOPT-1261' for more detail.
+  Recomputing CTS skew targets done. (took cpu=0:00:01.0 real=0:00:01.0)
+  PRO Fixing DRVs...
+    Fixing clock tree DRVs: ...20% ...40% ...60% ...80% ...100% 
+    CCOpt-PRO: considered: 602, tested: 602, violation detected: 0, violation ignored (due to small violation): 0, cannot run: 0, attempted: 0, unsuccessful: 0, sized: 0
+    
+    Statistics: Fix DRVs (cell sizing):
+    ===================================
+    
+    Cell changes by Net Type:
+    
+    -------------------------------------------------------------------------------------------------
+    Net Type    Attempted    Upsized     Downsized    Swapped Same Size    Total Changed    Not Sized
+    -------------------------------------------------------------------------------------------------
+    top                0            0           0            0                    0                0
+    trunk              0            0           0            0                    0                0
+    leaf               0            0           0            0                    0                0
+    -------------------------------------------------------------------------------------------------
+    Total              0            0           0            0                    0                0
+    -------------------------------------------------------------------------------------------------
+    
+    Upsized: 0, Downsized: 0, Sized but same area: 0, Unchanged: 0, Area change: 0.000um^2 (0.000%)
+    Max. move: 0.000um, Min. move: 0.000um, Avg. move: N/A
+    
+    Clock DAG stats after 'PRO Fixing DRVs':
+      cell counts      : b=0, i=601, icg=0, dcg=0, l=0, total=601
+      sink counts      : regular=3606, enable_latch=0, load_capacitance=0, antenna=0, node_sink=0, total=3606
+      misc counts      : r=1, pp=0, mci=0
+      cell areas       : b=0.000um^2, i=575.190um^2, icg=0.000um^2, dcg=0.000um^2, l=0.000um^2, total=575.190um^2
+      cell capacitance : b=0.000pF, i=1.918pF, icg=0.000pF, dcg=0.000pF, l=0.000pF, total=1.918pF
+      sink capacitance : total=5.252pF, avg=0.001pF, sd=0.001pF, min=0.000pF, max=0.002pF
+      wire capacitance : top=0.000pF, trunk=0.481pF, leaf=0.955pF, total=1.436pF
+      wire lengths     : top=0.000um, trunk=3675.760um, leaf=7035.395um, total=10711.155um
+      hp wire lengths  : top=0.000um, trunk=3229.320um, leaf=5282.820um, total=8512.140um
+    Clock DAG net violations after 'PRO Fixing DRVs': none
+    Clock DAG primary half-corner transition distribution after 'PRO Fixing DRVs':
+      Trunk : target=0.025ns count=225 avg=0.020ns sd=0.002ns min=0.011ns max=0.025ns {9 <= 0.015ns, 106 <= 0.020ns, 84 <= 0.022ns, 17 <= 0.024ns, 9 <= 0.025ns}
+      Leaf  : target=0.025ns count=377 avg=0.022ns sd=0.001ns min=0.013ns max=0.025ns {2 <= 0.015ns, 26 <= 0.020ns, 243 <= 0.022ns, 86 <= 0.024ns, 20 <= 0.025ns}
+    Clock DAG library cell distribution after 'PRO Fixing DRVs' {count}:
+       Invs: INV_X7P5B_A9PP140ZTL_C30: 292 INV_X6B_A9PP140ZTL_C30: 200 INV_X4B_A9PP140ZTL_C30: 105 INV_X2B_A9PP140ZTL_C30: 4 
+    Primary reporting skew groups after 'PRO Fixing DRVs':
+    Skew group summary after 'PRO Fixing DRVs':
+      skew_group clk/functional_wcl_typical: insertion delay [min=0.102, max=0.119], skew [0.017 vs 0.017]
+    Legalizer API calls during this step: 0 succeeded with high effort: 0 succeeded with medium effort: 0 succeeded with low effort: 0 succeeded with basic effort: 0 succeeded with basic unbounded effort: 0
+  PRO Fixing DRVs done. (took cpu=0:00:00.2 real=0:00:00.2)
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   PRO Fixing DRVs
+  Reconnecting optimized routes...
+  Reconnecting optimized routes done. (took cpu=0:00:00.1 real=0:00:00.1)
+  Clock tree timing engine global stage delay update for delay_corner_wcl_slow:both.late...
+  Clock tree timing engine global stage delay update for delay_corner_wcl_slow:both.late done. (took cpu=0:00:01.0 real=0:00:00.1)
+  Clock DAG stats PRO final:
+    cell counts      : b=0, i=601, icg=0, dcg=0, l=0, total=601
+    sink counts      : regular=3606, enable_latch=0, load_capacitance=0, antenna=0, node_sink=0, total=3606
+    misc counts      : r=1, pp=0, mci=0
+    cell areas       : b=0.000um^2, i=575.190um^2, icg=0.000um^2, dcg=0.000um^2, l=0.000um^2, total=575.190um^2
+    cell capacitance : b=0.000pF, i=1.918pF, icg=0.000pF, dcg=0.000pF, l=0.000pF, total=1.918pF
+    sink capacitance : total=5.252pF, avg=0.001pF, sd=0.001pF, min=0.000pF, max=0.002pF
+    wire capacitance : top=0.000pF, trunk=0.481pF, leaf=0.955pF, total=1.436pF
+    wire lengths     : top=0.000um, trunk=3675.760um, leaf=7035.395um, total=10711.155um
+    hp wire lengths  : top=0.000um, trunk=3229.320um, leaf=5282.820um, total=8512.140um
+  Clock DAG net violations PRO final: none
+  Clock DAG primary half-corner transition distribution PRO final:
+    Trunk : target=0.025ns count=225 avg=0.020ns sd=0.002ns min=0.011ns max=0.025ns {9 <= 0.015ns, 106 <= 0.020ns, 84 <= 0.022ns, 17 <= 0.024ns, 9 <= 0.025ns}
+    Leaf  : target=0.025ns count=377 avg=0.022ns sd=0.001ns min=0.013ns max=0.025ns {2 <= 0.015ns, 26 <= 0.020ns, 243 <= 0.022ns, 86 <= 0.024ns, 20 <= 0.025ns}
+  Clock DAG library cell distribution PRO final {count}:
+     Invs: INV_X7P5B_A9PP140ZTL_C30: 292 INV_X6B_A9PP140ZTL_C30: 200 INV_X4B_A9PP140ZTL_C30: 105 INV_X2B_A9PP140ZTL_C30: 4 
+  Primary reporting skew groups PRO final:
+  Skew group summary PRO final:
+    skew_group clk/functional_wcl_typical: insertion delay [min=0.102, max=0.119, avg=0.113, sd=0.003, skn=-0.436, kur=0.008], skew [0.017 vs 0.017], 100% {0.102, 0.119} (wid=0.015 ws=0.008) (gid=0.109 gs=0.015)
+PRO done.
+Net route status summary:
+  Clock:       602 (unrouted=0, trialRouted=0, noStatus=0, routed=602, fixed=0, [crossesIlmBoundary=0, tooFewTerms=0, (crossesIlmBoundary AND tooFewTerms=0)])
+  Non-clock: 22933 (unrouted=735, trialRouted=0, noStatus=0, routed=22198, fixed=0, [crossesIlmBoundary=0, tooFewTerms=735, (crossesIlmBoundary AND tooFewTerms=0)])
+Updating delays...
+Updating delays done.
+PRO done. (took cpu=0:00:11.6 real=0:00:07.9)
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   PRO
+Leaving CCOpt scope - Cleaning up placement interface...
+Leaving CCOpt scope - Cleaning up placement interface done. (took cpu=0:00:00.3 real=0:00:00.1)
+*** ClockDrv #1 [finish] (opt_design #1) : cpu/real = 0:00:12.2/0:00:08.3 (1.5), totSession cpu/real = 0:25:10.0/0:10:28.5 (2.4), mem = 4259.4M
+**INFO: Start fixing DRV (Mem = 4039.34M) ...
+Begin: GigaOpt DRV Optimization
+Glitch fixing enabled
+GigaOpt Checkpoint: Internal optDRV -postRoute -max_tran -max_cap -maintainWNS -setupTNSCostFactor 0.3 -maxLocalDensity 0.96 -numThreads 16  -glitch
+*** DrvOpt #1 [begin] (opt_design #1) : totSession cpu/real = 0:25:12.1/0:10:29.1 (2.4), mem = 4039.3M
+Info: 602 clock nets excluded from IPO operation.
+Info: Enabling GigaOpt waveform propagation mode
+DRV pessimism of 2.00% is used for tran, 2.00% for cap, 2.00% for fanout, on top of margin 0.00%
+** INFO: Initializing Glitch Interface
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|        max-tran       |        max-cap        |  max-fanout |  max-length |    glitch   |       setup       |        |        |        |       |          |         |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| nets | terms|  wViol  | nets | terms|  wViol  | nets | terms| nets | terms| nets | terms|   WNS   |   TNS   |  #Buf  |  #Inv  | #Resize|Density|   Real   |   Mem   |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|     0|     0|     0.00|     0|     0|     0.00|     0|     0|     0|     0|     0|     0|     0.07|     0.00|       0|       0|       0| 63.37%|          |         |
+|     0|     0|     0.00|     0|     0|     0.00|     0|     0|     0|     0|     0|     0|     0.07|     0.00|       0|       0|       0| 63.37%| 0:00:00.0|  4918.5M|
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Bottom Preferred Layer:
++-----------+------------+------------+----------+
+|   Layer   |   OPT_LA   |    CLK     |   Rule   |
++-----------+------------+------------+----------+
+| M3 (z=3)  |          0 |        602 | default  |
+| M8 (z=8)  |          4 |          0 | default  |
++-----------+------------+------------+----------+
+Via Pillar Rule:
+    None
+
+*** Finish DRV Fixing (cpu=0:00:04.5 real=0:00:02.0 mem=4918.5M) ***
+
+*** DrvOpt #1 [finish] (opt_design #1) : cpu/real = 0:00:13.8/0:00:10.5 (1.3), totSession cpu/real = 0:25:25.8/0:10:39.6 (2.4), mem = 4177.2M
+drv optimizer changes nothing and skips place_detail
+End: GigaOpt DRV Optimization
+**opt_design ... cpu = 0:23:01, real = 0:05:19, mem = 3634.1M, totSessionCpu=0:25:26 **
+*info:
+**INFO: Completed fixing DRV (CPU Time = 0:00:14, Mem = 4175.21M).
+** INFO: Initializing Glitch Interface
+
+------------------------------------------------------------------
+     SI Timing Summary (cpu=0.23min real=0.18min mem=4175.2M)
+------------------------------------------------------------------
+
+Setup views included:
+ view_wcl_slow view_wcl_fast 
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):|  0.065  |  0.065  |  0.099  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|  9797   |  5647   |  4150   |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 62.339%
+       (63.366% with Fillers)
+------------------------------------------------------------------
+**opt_design ... cpu = 0:23:05, real = 0:05:19, mem = 3636.2M, totSessionCpu=0:25:29 **
+** INFO: Initializing Glitch Interface
+*** Timing Is met
+*** Check timing (0:00:00.0)
+*** Setup timing is met (target slack 0ns)
+**INFO: flowCheckPoint #3 OptimizationHold
+GigaOpt Hold Optimizer is used
+GigaOpt Checkpoint: Internal optHold -postRoute -maxLocalDensity 0.99 -numThreads 16 -nativePathGroupFlow -viewPruneEffortLevel 1
+Starting initialization (fixHold) cpu=0:00:00.0 real=0:00:00.0 totSessionCpu=0:25:36 mem=4674.2M ***
+*** BuildHoldData #2 [begin] (opt_design #1) : totSession cpu/real = 0:25:35.5/0:10:45.5 (2.4), mem = 4674.2M
+Saving timing graph ...
+Done save timing graph
+Latch borrow mode reset to max_borrow
+Apply excluded path group for hold, {default}.
+Set to exclude path group, default
+Starting delay calculation for Hold views
+AAE_INFO: opIsDesignInPostRouteState() is 1
+AAE_INFO: resetNetProps viewIdx 0 
+AAE_INFO: resetNetProps viewIdx 1 
+AAE_INFO: resetNetProps viewIdx 2 
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: pp_fir_u_0
+# Design Mode: 90nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On (EWM-WFP)
+#################################################################################
+Start delay calculation (fullDC) (16 T). (MEM=3760.64)
+Total number of fetched objects 22807
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 23535,  96.9 percent of the nets selected for SI analysis
+Total number of fetched objects 22807
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 23535,  96.9 percent of the nets selected for SI analysis
+Total number of fetched objects 22807
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 23535,  96.9 percent of the nets selected for SI analysis
+End delay calculation. (MEM=4676.04 CPU=0:01:17 REAL=0:00:05.0)
+End delay calculation (fullDC). (MEM=4676.04 CPU=0:01:21 REAL=0:00:06.0)
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 4636.0M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:01.0, REAL = 0:00:00.0, MEM = 4668.0M)
+
+Executing IPO callback for view pruning ..
+
+Optimization is working on the following views:
+  Setup views:  view_wcl_slow view_wcl_fast view_wcl_typical
+  Hold  views: view_wcl_fast 
+
+Active hold views:
+ view_wcl_fast
+  Dominating endpoints: 0
+  Dominating TNS: -0.000
+
+Starting SI iteration 2
+Start delay calculation (fullDC) (16 T). (MEM=4274.07)
+Glitch Analysis: View view_wcl_fast -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View view_wcl_fast -- Total Number of Nets Analyzed = 0. 
+Total number of fetched objects 22807
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 23535,  0.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=5108.21 CPU=0:00:01.2 REAL=0:00:01.0)
+End delay calculation (fullDC). (MEM=5108.21 CPU=0:00:01.3 REAL=0:00:01.0)
+*** Done Building Timing Graph (cpu=0:01:43 real=0:00:13.0 totSessionCpu=0:27:26 mem=5068.2M)
+Done building cte hold timing graph (fixHold) cpu=0:01:51 real=0:00:16.0 totSessionCpu=0:27:27 mem=5068.2M ***
+Done building hold timer [1 node(s), 0 edge(s), 1 view(s)] (fixHold) cpu=0:01:54 real=0:00:18.0 totSessionCpu=0:27:29 mem=5098.7M ***
+Done excluding path group for hold, {default}.
+Reset excluded path group, default
+OPTC: m3 20.0 25.0
+Restoring timing graph ...
+AAE_INFO: Resetting and re-constructing cache for AAE clocks ...
+Done restore timing graph
+Done building cte setup timing graph (fixHold) cpu=0:02:00 real=0:00:22.0 totSessionCpu=0:27:35 mem=5063.7M ***
+OPTC: m3 25.0 25.0
+Setting latch borrow mode to budget during optimization.
+
+*Info: minBufDelay = 7.6 ps, libStdDelay = 5.1 ps, minBufSize = 1512000 (3.0)
+*Info: worst delay setup view: view_wcl_slow view_wcl_fast
+** INFO: Initializing Glitch Interface
+
+------------------------------------------------------------------
+     Hold Opt Initial Summary
+------------------------------------------------------------------
+
+Setup views included:
+ view_wcl_slow view_wcl_fast
+Hold views included:
+ view_wcl_fast
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):|  0.065  |  0.065  |  0.099  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|  9797   |  5647   |  4150   |
++--------------------+---------+---------+---------+
+
++--------------------+---------+---------+---------+
+|     Hold mode      |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):|  0.080  |  0.080  |   N/A   |
+|           TNS (ns):|  0.000  |  0.000  |   N/A   |
+|    Violating Paths:|    0    |    0    |   N/A   |
+|          All Paths:|  5647   |  5647   |   N/A   |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 62.339%
+       (63.366% with Fillers)
+------------------------------------------------------------------
+**opt_design ... cpu = 0:25:26, real = 0:05:59, mem = 3703.3M, totSessionCpu=0:27:50 **
+*** BuildHoldData #2 [finish] (opt_design #1) : cpu/real = 0:02:14.4/0:00:34.8 (3.9), totSession cpu/real = 0:27:50.0/0:11:20.3 (2.5), mem = 4237.7M
+*** HoldOpt #1 [begin] (opt_design #1) : totSession cpu/real = 0:27:50.0/0:11:20.3 (2.5), mem = 4237.7M
+*info: Run opt_design holdfix with 16 threads.
+Info: 602 clock nets excluded from IPO operation.
+*** Hold timing is met. Hold fixing is not needed 
+**INFO: total 0 insts, 0 nets marked don't touch
+**INFO: total 0 insts, 0 nets marked don't touch DB property
+**INFO: total 0 insts, 0 nets unmarked don't touch
+
+*** HoldOpt #1 [finish] (opt_design #1) : cpu/real = 0:00:01.9/0:00:01.8 (1.0), totSession cpu/real = 0:27:51.8/0:11:22.1 (2.5), mem = 4732.1M
+**INFO: flowCheckPoint #4 OptimizationPreEco
+Running postRoute recovery in preEcoRoute mode
+**opt_design ... cpu = 0:25:28, real = 0:06:02, mem = 3695.7M, totSessionCpu=0:27:52 **
+** INFO: Initializing Glitch Interface
+Checking DRV degradation...
+**INFO: Skipping DRV recovery as drv did not degrade beyond margin
+Finish postRoute recovery in preEcoRoute mode (cpu=0:00:05, real=0:00:03, mem=4242.92M, totSessionCpu=0:27:57).
+**opt_design ... cpu = 0:25:33, real = 0:06:05, mem = 3709.8M, totSessionCpu=0:27:57 **
+
+** INFO: Initializing Glitch Interface
+Skipping pre eco harden opt
+**INFO: Skipping refine place as no legal commits were detected
+Default Rule : ""
+Non Default Rules :
+Worst Slack : 0.065 ns
+
+Start Layer Assignment ...
+WNS(0.065ns) Target(0.000ns) MaxAssign(0%) MaxCong(20%) MinLen(100um) MinCap(0.050pf) layerBucket(1)
+
+Select 0 cadidates out of 23535.
+No critical nets selected. Skipped !
+GigaOpt: setting up router preferences
+GigaOpt: 0 nets assigned router directives
+
+Start Assign Priority Nets ...
+TargetSlk(0.200ns) MaxAssign(3%) minLen(50um)
+Existing Priority Nets 0 (0.0%)
+Total Assign Priority Nets 53 (0.2%)
+
+Set Prefer Layer Routing Effort ...
+Total Net(23533) IPOed(0) PreferLayer(0) -> MediumEffort(0)
+
+Default Rule : ""
+Non Default Rules :
+Worst Slack : 0.065 ns
+
+Start Layer Assignment ...
+WNS(0.065ns) Target(0.000ns) MaxAssign(0%) MaxCong(20%) MinLen(100um) MinCap(0.050pf) layerBucket(1)
+
+Select 0 cadidates out of 23535.
+No critical nets selected. Skipped !
+GigaOpt: setting up router preferences
+GigaOpt: 0 nets assigned router directives
+
+Start Assign Priority Nets ...
+TargetSlk(0.200ns) MaxAssign(3%) minLen(50um)
+Existing Priority Nets 0 (0.0%)
+Total Assign Priority Nets 74 (0.3%)
+** INFO: Initializing Glitch Interface
+
+------------------------------------------------------------------
+        Pre-ecoRoute Summary
+------------------------------------------------------------------
+
+Setup views included:
+ view_wcl_slow view_wcl_fast 
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):|  0.065  |  0.065  |  0.099  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|  9797   |  5647   |  4150   |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 62.339%
+       (63.366% with Fillers)
+------------------------------------------------------------------
+**opt_design ... cpu = 0:25:39, real = 0:06:07, mem = 3611.9M, totSessionCpu=0:28:03 **
+**INFO: flowCheckPoint #5 GlobalDetailRoute
+** INFO Cleaning up Glitch Interface
+**Info: (IMPSP-2055): Transparent Filler Flow is ON !
+
+
+Total 22032 restored filler insts, overlapped: 0, violated: 0,  0 is deleted!
+
+TransFiller Info: Number of restored fillers: 22032
+                  Number of being kept:       22032
+                  Keeping Rate:               100.000%
+*INFO: Adding fillers to top-module.
+*INFO:   Added 0 filler inst of any cell-type.
+-route_with_eco false                     # bool, default=false
+-route_selected_net_only false            # bool, default=false
+-route_with_timing_driven false           # bool, default=false
+-route_with_si_driven false               # bool, default=false
+Existing Dirty Nets : 0
+New Signature Flow (saveAndSetNanoRouteOptions) ....
+Reset Dirty Nets : 0
+*** EcoRoute #1 [begin] (opt_design #1) : totSession cpu/real = 0:28:07.2/0:11:30.3 (2.4), mem = 4127.5M
+
+route_global_detail
+
+#Start route_global_detail on Sat Jan 11 12:52:05 2025
+#
+#WARNING (NRDB-317) Threshold min width 0.180000 is >= max width 0.180000 for minimumcut 2 for LAYER M7
+#num needed restored net=0
+#need_extraction net=0 (total=23535)
+#WARNING (NRDB-2005) SPECIAL_NET VDD has special wires but no definitions for instance pins or top level pins. This will cause routability problems later.
+#WARNING (NRDB-2005) SPECIAL_NET VSS has special wires but no definitions for instance pins or top level pins. This will cause routability problems later.
+#NanoRoute Version 22.10-p001_1 NR220915-0329/22_10-UB
+#Skip comparing routing design signature in db-snapshot flow
+#Total number of trivial nets (e.g. < 2 pins) = 735 (skipped).
+#Total number of routable nets = 22800.
+#Total number of nets in the design = 23535.
+#22800 routable nets have routed wires.
+#606 detail routed (routable) nets have been constrained (e.g. have preferred extra spacing, require shielding etc.)
+#No nets have been global routed.
+#Using multithreading with 16 threads.
+#Start routing data preparation on Sat Jan 11 12:52:08 2025
+#
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 0.990.
+#Voltage range [0.000 - 0.990] has 23517 nets.
+#Voltage range [0.000 - 0.000] has 17 nets.
+#Voltage range [0.810 - 0.990] has 1 net.
+#Build and mark too close pins for the same net.
+#Restoring pin access data from file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_07_route_stylus.enc/pp_fir_u_0.apa ...
+#WARNING (NRDB-2002) Failed to read APA of cell XOR2_X0P7M_A9PP140ZTL_C30.
+#Could not restore pin access data
+#WARNING (NRDB-1026) Could not import pin access information for pp_fir_u_0. Pin access information is recalculated.
+#Initial pin access analysis.
+#Detail pin access analysis.
+# M1           V   Track-Pitch = 0.14000    Line-2-Via Pitch = 0.10000
+# M2           H   Track-Pitch = 0.10000    Line-2-Via Pitch = 0.10000
+# M3           V   Track-Pitch = 0.10000    Line-2-Via Pitch = 0.10000
+# M4           H   Track-Pitch = 0.10000    Line-2-Via Pitch = 0.10000
+# M5           V   Track-Pitch = 0.10000    Line-2-Via Pitch = 0.10000
+# M6           H   Track-Pitch = 0.10000    Line-2-Via Pitch = 0.10000
+# M7           V   Track-Pitch = 0.10000    Line-2-Via Pitch = 0.10000
+# M8           H   Track-Pitch = 0.80000    Line-2-Via Pitch = 0.80000
+# M9           V   Track-Pitch = 0.80000    Line-2-Via Pitch = 0.80000
+# AP           H   Track-Pitch = 4.50000    Line-2-Via Pitch = 5.00000
+#WARNING (NRAG-44) Track pitch is too small compared with line-2-via pitch.
+#Processed 0/0 dirty instances, 0/0 dirty terms, 0/0 dirty fterms, 0/0 dirty pgterms, 0/0 misc dirty regions(0 insts marked dirty, reset pre-exisiting dirty flag on 0 insts, 0 nets marked need extraction)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 3823.12 (MB), peak = 4319.61 (MB)
+#Regenerating Ggrids automatically.
+#Auto generating G-grids with size=15 tracks, using layer M3's pitch = 0.10000.
+#Using automatically generated G-grids.
+#(check_and_prepare_match_target_file) no match_target_file in constraint. quit
+#Done routing data preparation.
+#cpu time = 00:04:21, elapsed time = 00:00:21, memory = 3855.32 (MB), peak = 4319.61 (MB)
+#Start instance access analysis using 16 threads...
+#Set layer M1 to be advanced pin access layer.
+#0 instance pins are hard to access
+#Instance access analysis statistics:
+#Cpu time = 00:00:04
+#Elapsed time = 00:00:01
+#Increased memory = 26.00 (MB)
+#Total memory = 3881.39 (MB)
+#Peak memory = 4319.61 (MB)
+#Found 0 nets for post-route si or timing fixing.
+#
+#Finished routing data preparation on Sat Jan 11 12:52:30 2025
+#
+#Cpu time = 00:04:25
+#Elapsed time = 00:00:23
+#Increased memory = 196.07 (MB)
+#Total memory = 3881.46 (MB)
+#Peak memory = 4319.61 (MB)
+#
+#
+#Start global routing on Sat Jan 11 12:52:30 2025
+#
+#
+#Start global routing initialization on Sat Jan 11 12:52:30 2025
+#
+#WARNING (NRGR-22) Design is already detail routed.
+#Routing data preparation, pin analysis, global routing and track assignment statistics:
+#Cpu time = 00:04:25
+#Elapsed time = 00:00:23
+#Increased memory = 196.25 (MB)
+#Total memory = 3881.55 (MB)
+#Peak memory = 4319.61 (MB)
+#Using multithreading with 16 threads.
+#
+#Start Detail Routing..
+#start initial detail routing ...
+#   number of violations = 0
+#cpu time = 00:00:01, elapsed time = 00:00:00, memory = 3883.21 (MB), peak = 4319.61 (MB)
+#Complete Detail Routing.
+#Total number of nets with non-default rule or having extra spacing = 602
+#Total wire length = 154532 um.
+#Total half perimeter of net bounding box = 151988 um.
+#Total wire length on LAYER M1 = 0 um.
+#Total wire length on LAYER M2 = 44194 um.
+#Total wire length on LAYER M3 = 69467 um.
+#Total wire length on LAYER M4 = 32961 um.
+#Total wire length on LAYER M5 = 7007 um.
+#Total wire length on LAYER M6 = 55 um.
+#Total wire length on LAYER M7 = 16 um.
+#Total wire length on LAYER M8 = 446 um.
+#Total wire length on LAYER M9 = 386 um.
+#Total wire length on LAYER AP = 0 um.
+#Total number of vias = 152768
+#Total number of multi-cut vias = 127623 ( 83.5%)
+#Total number of single cut vias = 25145 ( 16.5%)
+#Up-Via Summary (total 152768):
+#                   single-cut          multi-cut      Total
+#-----------------------------------------------------------
+# M1             24126 ( 39.1%)     37501 ( 60.9%)      61627
+# M2               854 (  1.2%)     70466 ( 98.8%)      71320
+# M3               140 (  0.8%)     17431 ( 99.2%)      17571
+# M4                19 (  0.9%)      1997 ( 99.1%)       2016
+# M5                 0 (  0.0%)        77 (100.0%)         77
+# M6                 0 (  0.0%)        53 (100.0%)         53
+# M7                 2 (  3.5%)        55 ( 96.5%)         57
+# M8                 4 (  8.5%)        43 ( 91.5%)         47
+#-----------------------------------------------------------
+#                25145 ( 16.5%)    127623 ( 83.5%)     152768 
+#
+#Total number of DRC violations = 0
+#Cpu time = 00:00:01
+#Elapsed time = 00:00:00
+#Increased memory = 1.69 (MB)
+#Total memory = 3883.25 (MB)
+#Peak memory = 4319.61 (MB)
+#
+#start routing for process antenna violation fix ...
+#WARNING (NRDB-104) Cannot find antenna cell. Please set option 'route_antenna_cell_name', or change your LEF file.
+#cpu time = 00:00:09, elapsed time = 00:00:01, memory = 3921.16 (MB), peak = 4319.61 (MB)
+#
+#Total number of nets with non-default rule or having extra spacing = 602
+#Total wire length = 154532 um.
+#Total half perimeter of net bounding box = 151988 um.
+#Total wire length on LAYER M1 = 0 um.
+#Total wire length on LAYER M2 = 44194 um.
+#Total wire length on LAYER M3 = 69467 um.
+#Total wire length on LAYER M4 = 32961 um.
+#Total wire length on LAYER M5 = 7007 um.
+#Total wire length on LAYER M6 = 55 um.
+#Total wire length on LAYER M7 = 16 um.
+#Total wire length on LAYER M8 = 446 um.
+#Total wire length on LAYER M9 = 386 um.
+#Total wire length on LAYER AP = 0 um.
+#Total number of vias = 152768
+#Total number of multi-cut vias = 127623 ( 83.5%)
+#Total number of single cut vias = 25145 ( 16.5%)
+#Up-Via Summary (total 152768):
+#                   single-cut          multi-cut      Total
+#-----------------------------------------------------------
+# M1             24126 ( 39.1%)     37501 ( 60.9%)      61627
+# M2               854 (  1.2%)     70466 ( 98.8%)      71320
+# M3               140 (  0.8%)     17431 ( 99.2%)      17571
+# M4                19 (  0.9%)      1997 ( 99.1%)       2016
+# M5                 0 (  0.0%)        77 (100.0%)         77
+# M6                 0 (  0.0%)        53 (100.0%)         53
+# M7                 2 (  3.5%)        55 ( 96.5%)         57
+# M8                 4 (  8.5%)        43 ( 91.5%)         47
+#-----------------------------------------------------------
+#                25145 ( 16.5%)    127623 ( 83.5%)     152768 
+#
+#Total number of DRC violations = 0
+#Total number of process antenna violations = 4
+#Total number of net violated process antenna rule = 1
+#
+#WARNING (NRDB-104) Cannot find antenna cell. Please set option 'route_antenna_cell_name', or change your LEF file.
+#
+# start diode insertion for process antenna violation fix ...
+#WARNING (NRDB-104) Cannot find antenna cell. Please set option 'route_antenna_cell_name', or change your LEF file.
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 3922.05 (MB), peak = 4319.61 (MB)
+#
+#Total number of nets with non-default rule or having extra spacing = 602
+#Total wire length = 154532 um.
+#Total half perimeter of net bounding box = 151988 um.
+#Total wire length on LAYER M1 = 0 um.
+#Total wire length on LAYER M2 = 44194 um.
+#Total wire length on LAYER M3 = 69467 um.
+#Total wire length on LAYER M4 = 32961 um.
+#Total wire length on LAYER M5 = 7007 um.
+#Total wire length on LAYER M6 = 55 um.
+#Total wire length on LAYER M7 = 16 um.
+#Total wire length on LAYER M8 = 446 um.
+#Total wire length on LAYER M9 = 386 um.
+#Total wire length on LAYER AP = 0 um.
+#Total number of vias = 152768
+#Total number of multi-cut vias = 127623 ( 83.5%)
+#Total number of single cut vias = 25145 ( 16.5%)
+#Up-Via Summary (total 152768):
+#                   single-cut          multi-cut      Total
+#-----------------------------------------------------------
+# M1             24126 ( 39.1%)     37501 ( 60.9%)      61627
+# M2               854 (  1.2%)     70466 ( 98.8%)      71320
+# M3               140 (  0.8%)     17431 ( 99.2%)      17571
+# M4                19 (  0.9%)      1997 ( 99.1%)       2016
+# M5                 0 (  0.0%)        77 (100.0%)         77
+# M6                 0 (  0.0%)        53 (100.0%)         53
+# M7                 2 (  3.5%)        55 ( 96.5%)         57
+# M8                 4 (  8.5%)        43 ( 91.5%)         47
+#-----------------------------------------------------------
+#                25145 ( 16.5%)    127623 ( 83.5%)     152768 
+#
+#Total number of DRC violations = 0
+#Total number of process antenna violations = 4
+#Total number of net violated process antenna rule = 1
+#
+#WARNING (NRDB-104) Cannot find antenna cell. Please set option 'route_antenna_cell_name', or change your LEF file.
+#
+#Total number of nets with non-default rule or having extra spacing = 602
+#Total wire length = 154532 um.
+#Total half perimeter of net bounding box = 151988 um.
+#Total wire length on LAYER M1 = 0 um.
+#Total wire length on LAYER M2 = 44194 um.
+#Total wire length on LAYER M3 = 69467 um.
+#Total wire length on LAYER M4 = 32961 um.
+#Total wire length on LAYER M5 = 7007 um.
+#Total wire length on LAYER M6 = 55 um.
+#Total wire length on LAYER M7 = 16 um.
+#Total wire length on LAYER M8 = 446 um.
+#Total wire length on LAYER M9 = 386 um.
+#Total wire length on LAYER AP = 0 um.
+#Total number of vias = 152768
+#Total number of multi-cut vias = 127623 ( 83.5%)
+#Total number of single cut vias = 25145 ( 16.5%)
+#Up-Via Summary (total 152768):
+#                   single-cut          multi-cut      Total
+#-----------------------------------------------------------
+# M1             24126 ( 39.1%)     37501 ( 60.9%)      61627
+# M2               854 (  1.2%)     70466 ( 98.8%)      71320
+# M3               140 (  0.8%)     17431 ( 99.2%)      17571
+# M4                19 (  0.9%)      1997 ( 99.1%)       2016
+# M5                 0 (  0.0%)        77 (100.0%)         77
+# M6                 0 (  0.0%)        53 (100.0%)         53
+# M7                 2 (  3.5%)        55 ( 96.5%)         57
+# M8                 4 (  8.5%)        43 ( 91.5%)         47
+#-----------------------------------------------------------
+#                25145 ( 16.5%)    127623 ( 83.5%)     152768 
+#
+#Total number of DRC violations = 0
+#Total number of process antenna violations = 4
+#Total number of net violated process antenna rule = 1
+#
+#route_detail Statistics:
+#Cpu time = 00:00:20
+#Elapsed time = 00:00:02
+#Increased memory = 38.05 (MB)
+#Total memory = 3919.60 (MB)
+#Peak memory = 4319.61 (MB)
+#Skip updating routing design signature in db-snapshot flow
+#
+#route_global_detail statistics:
+#Cpu time = 00:04:51
+#Elapsed time = 00:00:28
+#Increased memory = 271.87 (MB)
+#Total memory = 3886.52 (MB)
+#Peak memory = 4319.61 (MB)
+#Number of warnings = 11
+#Total number of warnings = 12
+#Number of fails = 0
+#Total number of fails = 0
+#Complete route_global_detail on Sat Jan 11 12:52:33 2025
+#
+*** EcoRoute #1 [finish] (opt_design #1) : cpu/real = 0:04:51.5/0:00:28.8 (10.1), totSession cpu/real = 0:32:58.8/0:11:59.1 (2.8), mem = 4397.8M
+**opt_design ... cpu = 0:30:34, real = 0:06:38, mem = 3876.6M, totSessionCpu=0:32:59 **
+New Signature Flow (restoreNanoRouteOptions) ....
+**INFO: flowCheckPoint #6 PostEcoSummary
+Extraction called for design 'pp_fir_u_0' of instances=44690 and nets=23535 using extraction engine 'post_route' at effort level 'high' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command set_design_mode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+Integrated QRC (IQuantus) Extraction in Multi-Corner mode called for design 'pp_fir_u_0'. Number of corners is 3.
+No changed net or region found. No need to perform incremental extraction. Changed status to 'Extracted'.
+**opt_design ... cpu = 0:30:36, real = 0:06:40, mem = 3865.9M, totSessionCpu=0:33:00 **
+** INFO: Initializing Glitch Interface
+AAE_INFO: 16 threads acquired from CTE.
+Total number of fetched objects 22807
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 23535,  96.9 percent of the nets selected for SI analysis
+Total number of fetched objects 22807
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 23535,  96.9 percent of the nets selected for SI analysis
+Total number of fetched objects 22807
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 23535,  96.9 percent of the nets selected for SI analysis
+End delay calculation. (MEM=5809.36 CPU=0:01:20 REAL=0:00:06.0)
+Loading CTE timing window is completed (CPU = 0:00:00.9, REAL = 0:00:01.0, MEM = 5803.4M)
+Starting SI iteration 2
+Start delay calculation (fullDC) (16 T). (MEM=5416.87)
+Glitch Analysis: View view_wcl_slow -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View view_wcl_slow -- Total Number of Nets Analyzed = 0. 
+Total number of fetched objects 22807
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 23535,  1.6 percent of the nets selected for SI analysis
+Glitch Analysis: View view_wcl_fast -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View view_wcl_fast -- Total Number of Nets Analyzed = 0. 
+Total number of fetched objects 22807
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 23535,  1.6 percent of the nets selected for SI analysis
+Glitch Analysis: View view_wcl_typical -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View view_wcl_typical -- Total Number of Nets Analyzed = 22807. 
+Total number of fetched objects 22807
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 23535,  1.6 percent of the nets selected for SI analysis
+End delay calculation. (MEM=6325.61 CPU=0:00:07.0 REAL=0:00:01.0)
+End delay calculation (fullDC). (MEM=6325.61 CPU=0:00:07.1 REAL=0:00:01.0)
+*info: 602 clock nets excluded
+*info: 710 no-driver nets excluded.
+
+------------------------------------------------------------------
+       Post-ecoRoute Summary
+------------------------------------------------------------------
+
+Setup views included:
+ view_wcl_slow view_wcl_fast view_wcl_typical 
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):|  0.065  |  0.065  |  0.099  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|  9797   |  5647   |  4150   |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 62.339%
+       (100.000% with Fillers)
+------------------------------------------------------------------
+**opt_design ... cpu = 0:32:41, real = 0:06:55, mem = 4120.9M, totSessionCpu=0:35:06 **
+Executing marking Critical Nets1
+** INFO: Initializing Glitch Interface
+** INFO: Initializing Glitch Cache
+**INFO: flowCheckPoint #7 OptimizationRecovery
+*** Timing Is met
+*** Check timing (0:00:00.1)
+Running postRoute recovery in postEcoRoute mode
+**opt_design ... cpu = 0:32:41, real = 0:06:55, mem = 4120.9M, totSessionCpu=0:35:06 **
+** INFO: Initializing Glitch Interface
+Checking setup slack degradation ...
+Checking DRV degradation...
+**INFO: Skipping DRV recovery as drv did not degrade beyond margin
+** INFO Cleaning up Glitch Interface
+Finish postRoute recovery in postEcoRoute mode (cpu=0:00:07, real=0:00:05, mem=4792.34M, totSessionCpu=0:35:12).
+**opt_design ... cpu = 0:32:48, real = 0:07:00, mem = 4149.7M, totSessionCpu=0:35:12 **
+
+Latch borrow mode reset to max_borrow
+**INFO: flowCheckPoint #8 FinalSummary
+Reported timing to dir RPT
+**opt_design ... cpu = 0:32:51, real = 0:07:00, mem = 4137.0M, totSessionCpu=0:35:16 **
+Saving timing graph ...
+Done save timing graph
+Starting delay calculation for Hold views
+AAE_INFO: opIsDesignInPostRouteState() is 1
+AAE_INFO: resetNetProps viewIdx 1 
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: pp_fir_u_0
+# Design Mode: 90nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On (EWM-WFP)
+#################################################################################
+Start delay calculation (fullDC) (16 T). (MEM=5084.51)
+Total number of fetched objects 22807
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 23535,  96.9 percent of the nets selected for SI analysis
+End delay calculation. (MEM=5372.7 CPU=0:00:25.4 REAL=0:00:02.0)
+End delay calculation (fullDC). (MEM=5372.7 CPU=0:00:27.1 REAL=0:00:03.0)
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 5338.7M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:00.6, REAL = 0:00:00.0, MEM = 5370.7M)
+Starting SI iteration 2
+Start delay calculation (fullDC) (16 T). (MEM=4773.21)
+Glitch Analysis: View view_wcl_fast -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View view_wcl_fast -- Total Number of Nets Analyzed = 22807. 
+Total number of fetched objects 22807
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 23535,  0.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=5609.95 CPU=0:00:01.2 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=5609.95 CPU=0:00:01.3 REAL=0:00:01.0)
+*** Done Building Timing Graph (cpu=0:00:40.3 real=0:00:06.0 totSessionCpu=0:36:08 mem=5565.9M)
+Restoring timing graph ...
+AAE_INFO: Resetting and re-constructing cache for AAE clocks ...
+Done restore timing graph
+** INFO: Initializing Glitch Interface
+** INFO: Initializing Glitch Interface
+
+------------------------------------------------------------------
+     opt_design Final SI Timing Summary
+------------------------------------------------------------------
+
+Setup views included:
+ view_wcl_slow view_wcl_fast view_wcl_typical 
+Hold views included:
+ view_wcl_fast
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):|  0.065  |  0.065  |  0.099  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|  9797   |  5647   |  4150   |
++--------------------+---------+---------+---------+
+
++--------------------+---------+---------+---------+
+|     Hold mode      |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):|  0.080  |  0.080  |  0.000  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|  5647   |  5647   |    0    |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 62.339%
+       (100.000% with Fillers)
+------------------------------------------------------------------
+**opt_design ... cpu = 0:34:00, real = 0:07:19, mem = 4196.1M, totSessionCpu=0:36:25 **
+ ReSet Options after AAE Based Opt flow 
+*** Finished opt_design ***
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                       0.000 ns          0.065 ns  final
+UM: Running design category ...
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:        2044.14            443          0.000 ns          0.065 ns  opt_design_postroute
+Info: final physical memory for 17 CRR processes is 943.54MB.
+Info: Summary of CRR changes:
+      - Timing transform commits:       0
+Info: Destroy the CCOpt slew target map.
+*** opt_design #1 [finish] : cpu/real = 0:34:14.5/0:07:51.5 (4.4), totSession cpu/real = 0:36:39.0/0:13:12.6 (2.8), mem = 4771.4M
+UM: Running design category ...
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:        2202.62            799          0.000 ns          0.065 ns  postroute
+The in-memory database contained RC information but was not saved. To save 
+the RC information, use write_db's -rc_extract option. Note: Saving RC information can be quite large, 
+so it should only be saved when it is really desired.
+#% Begin save design ... (date=01/11 12:53:51, mem=4197.6M)
+% Begin Save ccopt configuration ... (date=01/11 12:53:51, mem=4197.6M)
+% End Save ccopt configuration ... (date=01/11 12:53:51, total cpu=0:00:00.3, real=0:00:00.0, peak res=4198.6M, current mem=4198.6M)
+% Begin Save netlist data ... (date=01/11 12:53:51, mem=4198.6M)
+Writing Binary DB to DBS/postroute.dat/vbin/pp_fir_u_0.v.bin in multi-threaded mode...
+% End Save netlist data ... (date=01/11 12:53:51, total cpu=0:00:00.3, real=0:00:01.0, peak res=4208.0M, current mem=4208.0M)
+Saving symbol-table file in separate thread ...
+Saving congestion map file in separate thread ...
+Saving congestion map file DBS/postroute.dat/pp_fir_u_0.route.congmap.gz ...
+% Begin Save AAE data ... (date=01/11 12:53:52, mem=4208.6M)
+Saving AAE Data ...
+% End Save AAE data ... (date=01/11 12:53:52, total cpu=0:00:00.1, real=0:00:00.0, peak res=4208.7M, current mem=4208.7M)
+Saving preference file DBS/postroute.dat/gui.pref.tcl ...
+Saving mode setting ...
+Saving root attributes to be loaded post write_db ...
+Saving global file ...
+Saving root attributes to be loaded previous write_db ...
+Saving Drc markers ...
+... 4 markers are saved ...
+... 0 geometry drc markers are saved ...
+... 4 antenna drc markers are saved ...
+Saving special route data file in separate thread ...
+Saving PG Conn data in separate thread ...
+Saving placement file in separate thread ...
+Saving route file in separate thread ...
+Saving property file in separate thread ...
+Convert 0 swires and 0 svias from compressed groups
+** Saving stdCellPlacement_binary (version# 2) ...
+Saving property file DBS/postroute.dat/pp_fir_u_0.prop
+TAT_INFO: ::saveSpecialRoute REAL = 0 : CPU = 0 : MEM = 0.
+TAT_INFO: savePGConnFile REAL = 0 : CPU = 0 : MEM = 0.
+Save Adaptive View Pruning View Names to Binary file
+TAT_INFO: ::savePlace REAL = 0 : CPU = 0 : MEM = 0.
+*** Completed saveProperty (cpu=0:00:00.2 real=0:00:00.0 mem=4806.0M) ***
+*** Completed saveRoute (cpu=0:00:00.4 real=0:00:00.0 mem=4806.0M) ***
+TAT_INFO: ::saveRoute REAL = 0 : CPU = 0 : MEM = 0.
+TAT_INFO: ::db::saveAnnotationAndProp REAL = 0 : CPU = 0 : MEM = 0.
+#Saving pin access data to file DBS/postroute.dat/pp_fir_u_0.apa ...
+#
+Saving preRoute extracted patterns in file 'DBS/postroute.dat/pp_fir_u_0.techData.gz' ...
+Saving preRoute extraction data in directory 'DBS/postroute.dat/extraction/' ...
+TAT_INFO: ::db::saveSymbolTable REAL = 0 : CPU = 0 : MEM = 0.
+TAT_INFO: ::saveCongMap REAL = 0 : CPU = 0 : MEM = 0.
+% Begin Save power constraints data ... (date=01/11 12:53:57, mem=4241.8M)
+% End Save power constraints data ... (date=01/11 12:53:57, total cpu=0:00:00.1, real=0:00:00.0, peak res=4241.9M, current mem=4241.9M)
+worst best typical
+worst best typical
+worst best typical
+worst best typical
+worst best typical
+worst best typical
+worst best typical
+Generated self-contained design postroute.dat
+wcl_fast wcl_slow wcl_typical
+worst best typical
+functional_wcl_typical functional_wcl_fast functional_wcl_slow
+#% End save design ... (date=01/11 12:53:58, total cpu=0:00:05.7, real=0:00:08.0, peak res=4244.9M, current mem=4244.9M)
+/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_07_route_stylus.enc/mmmc/modes/functional_wcl_typical/functional_wcl_typical.sdc.gz
+/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_07_route_stylus.enc/libs/mmmc/functional_wcl_fast.sdc.gz
+/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_07_route_stylus.enc/libs/mmmc/functional_wcl_slow.sdc.gz
+*** Message Summary: 0 warning(s), 0 error(s)
+
+Writing Netlist "DBS/LEC/postroute.v.gz" ...
+**WARN: (IMPOPT-7279):	The command reportVtInstCount will be made obsolete in a future release. Please use report_power -leakage to get the vt based instance count.
+
+Power view               = view_wcl_slow
+Number of VT partitions  = 2
+Standard cells in design = 1003
+Instances in design      = 21652
+Design area              : 148680e6 
+
+Instance distribution across the VT partitions:
+
+ LVT : inst = 10130 (46.8%), area = 29102e6 (32.2%), cells = 509 (50.75%)
+   Lib sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c : inst = 10130 (46.8%), area = 29102e6 (32.2%)
+
+ HVT : inst = 11522 (53.2%), area = 61282e6 (67.8%), cells = 473 (47.16%)
+   Lib sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c : inst = 11522 (53.2%), area = 61282e6 (67.8%)
+
+Reporting took 1 sec
+
+@innovus 3> 
+@innovus 3> gui_select -point {151.93750 122.03300}
+@innovus 4> set_layer_preference violation -is_visible 1
+@innovus 5> gui_select -point {152.24650 121.71850}
+@innovus 6> 
+@innovus 6> exit
+
+*** Memory Usage v#1 (Current mem = 4850.410M, initial mem = 511.469M) ***
+*** Message Summary: 2610 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=1:12:31, real=4:47:28, mem=4850.4M) ---

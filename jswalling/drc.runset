@@ -1,0 +1,24 @@
+//  Runset file generated on Mon Jan 27 07:10:28 2025
+//  by Calibre Interactive v2022.2_38.20    Thu Jun 2 16:14:38 PDT 2022
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+drc.rulesFile.value = "/software/RFIC/PDK/tsmc/28nm/tsri/Calibre/drc/calibre.drc"
+drc.runDir.value = "/home/micsTapeouts/projects/28HPC_summer2024/jswalling/drc"
+drc.layout.layoutFile.value = "pp_fir_u_1.calibre.db"
+cmn.layout.defFiles.value = [ "pp_fir_u_1.def" ]
+drc.layout.topCellLibrary.value = "jswalling_tapeout"
+cmn.layout.topCellLibraryFDI.value = "jswalling_tapeout"
+drc.layout.topCell.value = "pp_fir_u_1"
+drc.layout.topCellView.value = "layout"
+cmn.layout.topCellViewFDI.value = "layout"
+drc.drcdb.resultsFile.value = "pp_fir_u_1.drc.results"
+drc.reports.drcSummaryReport.value = "pp_fir_u_1.drc.summary"
+drc.rhdb.fileName.value = "pp_fir_u_1.rhdb"
+drc.dfmDefaults.resultsFile.value = "pp_fir_u_1.dfmDefaults.db"
+
+cmn.remoteEnv.remoteMGCHOME_aoi.value = "/software/RFIC/cadtools/mentor/release"
+cmn.remoteEnv.remoteMGCHOME_aoj.value = "/software/RFIC/cadtools/mentor/release"
+cmn.remoteEnv.remoteMGCHOME_aok.value = "/software/RFIC/cadtools/mentor/release"

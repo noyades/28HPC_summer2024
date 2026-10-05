@@ -1,0 +1,84 @@
+
+
+Working Directory = /data/projects/28HPC_Apr2025_Muse/jswalling/synthesis/cadence/phase2_int_work/work
+QoS Summary for scpa_dig_ana_ppfir
+================================================================================
+Metric                          generic         map             final          
+================================================================================
+
+View : slow-slow-maxrc
+Slack (ps):                       -72             -38             -28
+  R2R (ps):                       -72             -38             -28
+  I2R (ps):                        66              54              54
+  R2O (ps):                       119               6               6
+  I2O (ps):                  no_value        no_value        no_value
+  CG  (ps):                  no_value        no_value        no_value
+TNS (ps):                     -98,132         -53,406         -38,113
+  R2R (ps):                   -98,132         -53,406         -38,113
+  I2R (ps):                         0               0               0
+  R2O (ps):                         0               0               0
+  I2O (ps):                  no_value        no_value        no_value
+  CG  (ps):                  no_value        no_value        no_value
+Failing Paths:                  1,872           1,853           1,789
+
+View : fast-fast-minrc
+Slack (ps):                        41              52              58
+  R2R (ps):                        41              52              58
+  I2R (ps):                        98              68              68
+  R2O (ps):                       125              67              67
+  I2O (ps):                  no_value        no_value        no_value
+  CG  (ps):                  no_value        no_value        no_value
+TNS (ps):                           0               0               0
+  R2R (ps):                         0               0               0
+  I2R (ps):                         0               0               0
+  R2O (ps):                         0               0               0
+  I2O (ps):                  no_value        no_value        no_value
+  CG  (ps):                  no_value        no_value        no_value
+Failing Paths:                      0               0               0
+
+View : func-typ-typ
+Slack (ps):                        -6              11              18
+  R2R (ps):                        -6              11              18
+  I2R (ps):                        76              62              62
+  R2O (ps):                       130              41              41
+  I2O (ps):                  no_value        no_value        no_value
+  CG  (ps):                  no_value        no_value        no_value
+TNS (ps):                      -2,918               0               0
+  R2R (ps):                    -2,918               0               0
+  I2R (ps):                         0               0               0
+  R2O (ps):                         0               0               0
+  I2O (ps):                  no_value        no_value        no_value
+  CG  (ps):                  no_value        no_value        no_value
+Failing Paths:                    832               0               0
+
+Cell Area:                    284,237         141,864         141,418
+Total Cell Area:              284,237         141,864         141,418
+Leaf Instances:               161,270          84,339          85,142
+Total Instances:              161,270          84,339          85,142
+Utilization (%):                 0.00            0.00            0.00
+Tot. Net Length (um):        no_value        no_value        no_value
+Avg. Net Length (um):        no_value        no_value        no_value
+Route Overflow H (%):        no_value        no_value        no_value
+Route Overflow V (%):        no_value        no_value        no_value
+MBCI(%) (bits/gate) :            0.00            0.00            0.00
+Norm Cong Hotspot Area:
+  Max Cong:                  no_value        no_value        no_value
+  Tot Cong:                  no_value        no_value        no_value
+================================================================================
+CPU  Runtime (h:m:s):        00:57:02        00:50:59        00:15:00
+Real Runtime (h:m:s):        00:16:07        00:13:47        00:12:19
+CPU  Elapsed (h:m:s):        00:57:36        01:48:34        02:03:23
+Real Elapsed (h:m:s):        00:16:21        00:30:06        00:42:21
+Memory (MB):                  4860.04         4835.17         4875.27
+================================================================================
+================================================================================
+Flow Settings:
+================================================================================
+Total Runtime (h:m:s): 00:42:21
+Total Memory (MB):     4875.27
+Executable Version:    23.14-s090_1
+================================================================================
+Total Cell Area =  Cell Area + Physical Cell Area
+Total Instances =  Leaf Instances + Physical Instances
+
+

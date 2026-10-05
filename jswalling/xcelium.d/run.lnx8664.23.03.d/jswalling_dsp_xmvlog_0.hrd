@@ -1,0 +1,10 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-INCDIR
+"/data/projects/28HPC_summer2024/jswalling/"
+-VIEW
+functional
+-SPECIFICUNIT
+pp_fir_bottom_half

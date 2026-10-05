@@ -1,0 +1,5 @@
+cUiSetViewStatus {test_spiral} {layout} {1}
+cUiSetViewStatus {test_spiral} {logical} {0}
+cUiSetViewStatus {test_spiral} {abstract.pin} {0}
+cUiSetViewStatus {test_spiral} {abstract.ext} {0}
+cUiSetViewStatus {test_spiral} {abstract} {0}

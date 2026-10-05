@@ -1,0 +1,2 @@
+[signoff_verify_design]
+-layer_map_file /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/tech.map

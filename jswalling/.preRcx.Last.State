@@ -1,0 +1,14 @@
+
+
+vuipreRcxFormTable = '(
+	runName  "pp_int_x4"
+	runDir  "/data/projects/28HPC_summer2024/jswalling/lvs/pp_int_x4/svdb"
+	assuraTech  "/data/projects/28HPC_summer2024/jswalling/pvtech.lib"
+	tech  "tsmcN28"
+	mapFile  ""
+	netProp  5
+	instProp  6
+	devProp  7
+)
+
+

@@ -1,0 +1,85 @@
+[01/23 15:52:06      0s] 
+[01/23 15:52:06      0s] Cadence Voltus(TM) IC Power Integrity Solution.
+[01/23 15:52:06      0s] Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+[01/23 15:52:06      0s] 
+[01/23 15:52:06      0s] Version:	v22.10-p001_1, built Tue Aug 9 17:51:02 PDT 2022
+[01/23 15:52:06      0s] Options:	-stylus 
+[01/23 15:52:06      0s] Date:		Fri Jan 23 15:52:06 2026
+[01/23 15:52:06      0s] Host:		lnx-prd-05.ece.vt.edu (x86_64 w/Linux 5.15.0-315.196.5.2.el9uek.x86_64) (16cores*32cpus*AMD EPYC 7313 16-Core Processor 512KB)
+[01/23 15:52:06      0s] OS:		Red Hat Enterprise Linux release 9.7 (Plow)
+[01/23 15:52:06      0s] 
+[01/23 15:52:06      0s] License:
+[01/23 15:52:06      0s] 		[15:52:06.284057] Configured Lic search path (21.01-s002): 27002@license.ece.vt.edu
+[01/23 15:52:06      0s] 
+[01/23 15:52:06      0s] 		vtsxl	Voltus Power Integrity Solution XL	22.1	checkout succeeded
+[01/23 15:52:06      0s] 		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[01/23 15:52:16      9s] 
+[01/23 15:52:16      9s] 
+[01/23 15:52:16      9s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Voltus IC Power Integrity Solution v22.10-p001_1 (64bit) 08/09/2022 17:51 (Linux 3.10.0-693.el7.x86_64)
+[01/23 15:52:20     13s] @(#)CDS: NanoRoute 22.10-p001_1 NR220728-0225/22_10-UB (database version 18.20.589) {superthreading v2.19}
+[01/23 15:52:20     13s] @(#)CDS: AAE 22.10-p001 (64bit) 08/09/2022 (Linux 3.10.0-693.el7.x86_64)
+[01/23 15:52:20     13s] @(#)CDS: CTE 22.10-p001_1 () Aug  8 2022 14:54:03 ( )
+[01/23 15:52:20     13s] @(#)CDS: SYNTECH 22.10-p001_1 () Aug  8 2022 11:26:34 ( )
+[01/23 15:52:20     13s] @(#)CDS: CPE v22.10-p001
+[01/23 15:52:20     13s] @(#)CDS: OA 22.60-p076 Wed May 18 13:45:29 2022
+[01/23 15:52:20     13s] @(#)CDS: SGN 21.20-d001 (11-Feb-2022) (64 bit executable, TkQt5.9.1)
+[01/23 15:52:20     13s] @(#)CDS: RCDB 11.15.0
+[01/23 15:52:20     13s] @(#)CDS: STYLUS 22.10-a006_1 (05/21/2022 01:23 PDT)
+[01/23 15:52:20     13s] Change the soft stacksize limit to 0.2%RAM (255 mbytes). Set global soft_stack_size_limit to change the value.
+[01/23 15:52:20     13s] **INFO: (TMPDIR-1001): The environment variable TMPDIR is not set.
+Create and set the environment variable TMPDIR to '/tmp/ssv_tmpdir_184520_6EatpW'.
+[01/23 15:52:20     13s] environment variable TMPDIR is '/tmp/ssv_tmpdir_184520_6EatpW'.
+[01/23 15:52:21     14s] #@ Processing -execute option
+[01/23 15:52:21     14s] @voltus 1> 
+[01/23 15:52:21     14s] Turn off visibility of signal net in Voltus by default.
+[01/23 15:52:23     16s] @voltus 1> read_design -physical_data synthesis/cadence/phase2_int_work/work/scpa_dig_ana_ppfir_inn.enc
+invalid command name "read_design"
+invalid command name "read_design"
+[01/23 15:55:23     24s] @voltus 2> read_db synthesis/cadence/phase2_int_work/work/scpa_dig_ana_ppfir_inn.enc
+**ERROR: (IMPSYT-6790):	Failed to load file /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/scpa_dig_ana_ppfir_inn.enc/user.attrdef
+[01/23 15:55:41     26s] **WARN: (IMPIMEX-4008):	Variable '::CTE::cte_active_view_mode' is no longer supported in user data manager and will be ignored.
+[01/23 15:55:41     26s] **WARN: (IMPIMEX-4008):	Variable '::CTE::timing_constraint_binary_compatibility_23_1_saved' is no longer supported in user data manager and will be ignored.
+[01/23 15:55:41     26s] **WARN: (IMPIMEX-4008):	Variable '::DelayCal::InMemoryDataFlow' is no longer supported in user data manager and will be ignored.
+[01/23 15:55:41     26s] **WARN: (IMPIMEX-4008):	Variable '::MSV::initSNetPrimarySNetDone' is no longer supported in user data manager and will be ignored.
+[01/23 15:55:42     26s] **WARN: (IMPIMEX-4008):	Variable '_timing_report_coverage_use_cached_real_gba_arrival' is no longer supported in user data manager and will be ignored.
+[01/23 15:55:42     26s] **WARN: (IMPIMEX-4008):	Variable '_timing_report_disable_calculate_arrival_assert' is no longer supported in user data manager and will be ignored.
+[01/23 15:55:42     26s] **WARN: (IMPIMEX-4008):	Variable 'dbgIsInnovusPlusFlow' is no longer supported in user data manager and will be ignored.
+[01/23 15:55:42     26s] **WARN: (IMPIMEX-4008):	Variable 'dbgLastReadCmdbSessionDir' is no longer supported in user data manager and will be ignored.
+[01/23 15:55:42     26s] **WARN: (IMPIMEX-4008):	Variable 'enc_before_startup_file' is no longer supported in user data manager and will be ignored.
+[01/23 15:55:42     26s] **WARN: (IMPSYC-141):	You have set -timerMode to 1 so the setting in the config file will be ignored.
+[01/23 15:55:42     26s] **WARN: (IMPIMEX-4008):	Variable 'spgCheckAdjacentFourCutsInFiller' is no longer supported in user data manager and will be ignored.
+[01/23 15:55:42     26s] **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[01/23 15:55:42     26s] **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[01/23 15:55:42     26s] **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[01/23 15:55:42     26s] **WARN: (IMPIMEX-4008):	Variable 'timing_disable_backward_compatible_hierarchical_skip_pin_mode' is no longer supported in user data manager and will be ignored.
+[01/23 15:55:42     26s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[01/23 15:55:42     26s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[01/23 15:55:42     26s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[01/23 15:55:42     26s] **WARN: (IMPIMEX-4008):	Variable 'timing_library_derate_thermal_lower_bound' is no longer supported in user data manager and will be ignored.
+[01/23 15:55:42     26s] **WARN: (IMPIMEX-4008):	Variable 'timing_library_derate_thermal_upper_bound' is no longer supported in user data manager and will be ignored.
+[01/23 15:55:42     26s] **ERROR: (IMPDBTCL-247):	'keepAggDistributed' is not a recognized object or root attribute. Run 'help root:' to get a list of all root attributes, or 'man get_db' for more information about accessing objects and attributes.
+[01/23 15:55:42     26s] **ERROR: (IMPSYT-6790):	Failed to load file /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/scpa_dig_ana_ppfir_inn.enc/scpa_dig_ana_ppfir.globals
+[01/23 15:55:42     26s] AAE_INFO: switching -siAware from false to true ...
+[01/23 15:55:42     26s] AAE_INFO: The setting is changed from false to true in setDelayCalMode -SIAware
+[01/23 15:55:42     27s] **WARN: (IMPSYC-6134):	Setting analysis mode to setup does not have any impact on timing analysis as simultaneous setup/hold mode analysis is on. Use '-late' option to report setup timing reports.
+[01/23 15:55:42     27s] **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[01/23 15:55:42     27s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[01/23 15:55:42     27s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_separate_device_slew_effect_sensitivities' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[01/23 15:55:42     27s] **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[01/23 15:55:42     27s] **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[01/23 15:55:42     27s] **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[01/23 15:55:42     27s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[01/23 15:55:42     27s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[01/23 15:55:42     27s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[01/23 15:55:42     27s] Loading design 'scpa_dig_ana_ppfir' saved by 'Innovus' '23.14-s088_1' on 'Fri Jan 23 08:35:58 2026'.
+[01/23 15:55:42     27s] **ERROR: (IMPIMEX-7017):	Unable to load the design in the current version '22.10' as design is saved with newer version '23.14' of the software. Refer to previous messages issued regarding design restoration failure.
+[01/23 15:55:43     27s] ''.
+[01/23 15:55:43     27s] 1
+[01/23 15:55:43     27s] @voltus 3> exit
+
+[01/23 15:55:59     27s] --------------------------------------------------------------------------------
+[01/23 15:55:59     27s] Exiting Voltus IC Power Integrity Solution on Fri Jan 23 15:55:59 2026
+[01/23 15:55:59     27s]   Total CPU time:     0:00:28
+[01/23 15:55:59     27s]   Total real time:    0:03:55
+[01/23 15:55:59     27s]   Peak memory (main): 1185.81MB
+[01/23 15:55:59     27s] 

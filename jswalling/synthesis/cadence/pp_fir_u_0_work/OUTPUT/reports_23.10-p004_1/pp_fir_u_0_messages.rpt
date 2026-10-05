@@ -1,0 +1,33 @@
+  =================
+   Message Summary
+  =================
+-----------------------------------------------------------------------------
+|   Id   |  Sev  |Count|                    Message Text                    |
+-----------------------------------------------------------------------------
+|INVS-13 |Info   |    1|The design has been changed by Innovus.             |
+|        |       |     |The design was changed during QoS prediction. This  |
+|        |       |     | may include netlist structural changes.            |
+|INVS-18 |Info   |    1|The following executable version was used for the   |
+|        |       |     | Innovus session.                                   |
+|        |       |     |The specified Innovus version was used for the      |
+|        |       |     | Innovus batch job.                                 |
+|MESG-6  |Warning|    6|Message truncated because it exceeds the maximum    |
+|        |       |     | length of 4096 characters.                         |
+|        |       |     |By default messages are limited to 4096 characters. |
+|        |       |     | All characters after the 4096 character limit are  |
+|        |       |     | truncated. To remove this limit, set the message   |
+|        |       |     | attribute 'truncate' to 'false'. However, this may |
+|        |       |     | dramatically increase the size of the log file.    |
+|MESG-11 |Warning|   19|Maximum message print count reached.                |
+|PHYS-52 |Info   |    1|Physical information has been annotated.            |
+|        |       |     |The physical information for the design has been    |
+|        |       |     | prepared and annotated.                            |
+|PHYS-256|Warning|    3|Annotated physical data will be ignored for timing  |
+|        |       |     | analysis.                                          |
+|PHYS-262|Warning|    3|Small lumped capacitance will be ignored.           |
+|PHYS-429|Warning|    1|The GUI must be visible before 'def_move'           |
+|        |       |     | highlighting.                                      |
+|        |       |     |Use the 'gui_show' command to make the GUI visible. |
+|RPT-16  |Info   |    1|Joules engine is used.                              |
+|TIM-45  |Info   |    1|AAE enabled for delay calculation.                  |
+-----------------------------------------------------------------------------

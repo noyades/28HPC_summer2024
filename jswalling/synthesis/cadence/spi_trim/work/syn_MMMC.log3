@@ -1,0 +1,925 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Version: 21.11-s126_1, built Mon Dec 20 09:52:46 PST 2021
+Options: -log syn_MMMC.log 
+Date:    Tue May 07 11:37:02 2024
+Host:    cluster12 (x86_64 w/Linux 3.10.0-1160.102.1.el7.x86_64) (6cores*24cpus*2physical cpus*Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz 15360KB) (40983880KB)
+PID:     48752
+OS:      CentOS Linux release 7.9.2009 (Core)
+
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (17 seconds elapsed).
+
+WARNING: This version of the tool is 868 days old.
+@genus:root: 1> source ../scripts/run.tcl
+Sourcing '../scripts/run.tcl' (Tue May 07 11:38:19 EDT 2024)...
+#@ Begin verbose source ../scripts/run.tcl
+@file(run.tcl) 1: if {[file exists /proc/cpuinfo]} {
+  sh grep "model name" /proc/cpuinfo
+  sh grep "cpu MHz"    /proc/cpuinfo
+}
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+cpu MHz		: 1278.686
+cpu MHz		: 2414.672
+cpu MHz		: 1399.536
+cpu MHz		: 2353.515
+cpu MHz		: 1596.191
+cpu MHz		: 2364.746
+cpu MHz		: 1401.733
+cpu MHz		: 2306.518
+cpu MHz		: 1594.604
+cpu MHz		: 2278.686
+cpu MHz		: 1402.221
+cpu MHz		: 2407.958
+cpu MHz		: 1570.922
+cpu MHz		: 2352.050
+cpu MHz		: 1397.094
+cpu MHz		: 1801.025
+cpu MHz		: 1396.484
+cpu MHz		: 1800.903
+cpu MHz		: 1395.629
+cpu MHz		: 1217.529
+cpu MHz		: 1205.688
+cpu MHz		: 1803.344
+cpu MHz		: 1595.458
+cpu MHz		: 2303.222
+@file(run.tcl) 6: puts "Hostname : [info hostname]"
+Hostname : cluster12.lan.ece
+@file(run.tcl) 8: set DESIGN topPLLDigital
+@file(run.tcl) 9: set SYN_EFF medium
+@file(run.tcl) 10: set MAP_EFF medium
+@file(run.tcl) 11: set OPT_EFF medium
+@file(run.tcl) 13: set RELEASE [lindex [get_db program_version] end]
+@file(run.tcl) 14: set _OUTPUTS_PATH OUTPUT/outputs_${RELEASE}
+@file(run.tcl) 15: set _REPORTS_PATH OUTPUT/reports_${RELEASE}
+@file(run.tcl) 17: if {![file exists ${_OUTPUTS_PATH}]} {
+  file mkdir ${_OUTPUTS_PATH}
+  puts "Creating directory ${_OUTPUTS_PATH}"
+}
+@file(run.tcl) 22: if {![file exists ${_REPORTS_PATH}]} {
+  file mkdir ${_REPORTS_PATH}
+  puts "Creating directory ${_REPORTS_PATH}"
+}
+@file(run.tcl) 27: set rtlDir ../rtl
+@file(run.tcl) 29: set_db init_lib_search_path {. /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/}
+  Setting attribute of root '/': 'init_lib_search_path' = . /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/
+@file(run.tcl) 30: set_db script_search_path { . }
+  Setting attribute of root '/': 'script_search_path' =  . 
+@file(run.tcl) 31: set_db init_hdl_search_path {. ../rtl}
+  Setting attribute of root '/': 'init_hdl_search_path' = . ../rtl
+@file(run.tcl) 33: set_db max_cpus_per_server 8
+  Setting attribute of root '/': 'max_cpus_per_server' = 8
+@file(run.tcl) 35: set_db syn_generic_effort $SYN_EFF
+  Setting attribute of root '/': 'syn_generic_effort' = medium
+@file(run.tcl) 36: set_db syn_map_effort $MAP_EFF
+  Setting attribute of root '/': 'syn_map_effort' = medium
+@file(run.tcl) 37: set_db syn_opt_effort $OPT_EFF
+  Setting attribute of root '/': 'syn_opt_effort' = medium
+@file(run.tcl) 39: set_db information_level 9
+  Setting attribute of root '/': 'information_level' = 9
+@file(run.tcl) 41: set_db tns_opto true
+  Setting attribute of root '/': 'tns_opto' = true
+@file(run.tcl) 42: set_db lp_insert_clock_gating true
+  Setting attribute of root '/': 'lp_insert_clock_gating' = true
+@file(run.tcl) 44: puts "Now load RTL LIST"
+Now load RTL LIST
+@file(run.tcl) 45: set rtlList "\
+${rtlDir}/topPLLDigital.v \
+${rtlDir}/spi_slave_pll.v \
+${rtlDir}/fifo_pll.v \
+${rtlDir}/fifo_miso.v \
+${rtlDir}/register_bank_pll.v \
+${rtlDir}/clkDiv.v \
+${rtlDir}/two_bit_counter.v \
+${rtlDir}/mash111.v \
+${rtlDir}/Memory43b.v \
+"
+@file(run.tcl) 57: suspend
+
+Execution has been suspended temporarily.
+Enter 'resume' to continue.
+Enter 'stop_suspend' to stop script execution
+[SUSPEND]genus:root: 1> resume
+
+Resuming...@file(run.tcl) 60: read_mmmc ../scripts/mmmc.tcl
+  Setting attribute of root '/': 'is_read_mmmc_flow' = true
+Sourcing '../scripts/mmmc.tcl' (Tue May 07 11:38:23 EDT 2024)...
+#@ Begin verbose source ../scripts/mmmc.tcl
+@file(mmmc.tcl) 1: create_library_set -name wcl_slow -timing {
+  /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib
+}
+@file(mmmc.tcl) 5: create_library_set -name wcl_fast -timing {
+  /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_FFG_0P88V_0P00V_0P00V_0P00V_M40C.lib
+}
+@file(mmmc.tcl) 9: create_library_set -name wcl_typical -timing {
+  /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_TT_0P80V_0P00V_0P00V_0P00V_25C.lib
+}
+@file(mmmc.tcl) 13: create_opcond -name op_cond_wcl_slow    -process 1 -voltage 0.72 -temperature 125
+@file(mmmc.tcl) 14: create_opcond -name op_cond_wcl_fast    -process 1 -voltage 0.88 -temperature -40
+@file(mmmc.tcl) 15: create_opcond -name op_cond_wcl_typical -process 1 -voltage 0.80 -temperature 25
+@file(mmmc.tcl) 17: create_timing_condition -name timing_cond_wcl_slow -opcond op_cond_wcl_slow -library_sets { wcl_slow }
+@file(mmmc.tcl) 18: create_timing_condition -name timing_cond_wcl_fast -opcond op_cond_wcl_fast -library_sets { wcl_fast }
+@file(mmmc.tcl) 19: create_timing_condition -name timing_cond_wcl_typical -opcond op_cond_wcl_typical -library_sets { wcl_typical }
+@file(mmmc.tcl) 21: create_rc_corner -name worst -temperature 125 -qrc_tech /software/RFIC/PDK/globalFoundries/22FDX-EXT/release/PEX/QRC/9M_2Mx_5Cx_1Jx_1Ox_LBthick/FuncRCmax/qrcTechFile
+@file(mmmc.tcl) 23: create_rc_corner -name best -temperature -40 -qrc_tech /software/RFIC/PDK/globalFoundries/22FDX-EXT/release/PEX/QRC/9M_2Mx_5Cx_1Jx_1Ox_LBthick/FuncRCmin/qrcTechFile
+@file(mmmc.tcl) 25: create_rc_corner -name typical -temperature 25 -qrc_tech /software/RFIC/PDK/globalFoundries/22FDX-EXT/release/PEX/QRC/9M_2Mx_5Cx_1Jx_1Ox_LBthick/nominal/qrcTechFile
+@file(mmmc.tcl) 29: create_delay_corner -name delay_corner_wcl_slow -early_timing_condition timing_cond_wcl_slow \
+                    -late_timing_condition timing_cond_wcl_slow -early_rc_corner worst \
+                    -late_rc_corner worst
+@file(mmmc.tcl) 33: create_delay_corner -name delay_corner_wcl_fast -early_timing_condition timing_cond_wcl_fast \
+                    -late_timing_condition timing_cond_wcl_fast -early_rc_corner best \
+                    -late_rc_corner best
+@file(mmmc.tcl) 37: create_delay_corner -name delay_corner_wcl_typical -early_timing_condition timing_cond_wcl_typical \
+                    -late_timing_condition timing_cond_wcl_typical -early_rc_corner typical \
+                    -late_rc_corner typical
+@file(mmmc.tcl) 41: create_constraint_mode -name functional_wcl_slow -sdc_files { \
+  ../constraints/topPLLDigital_struct_slow.sdc
+}
+            Reading file '/home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/work/../constraints/topPLLDigital_struct_slow.sdc'
+@file(mmmc.tcl) 45: create_constraint_mode -name functional_wcl_fast -sdc_files { \
+  ../constraints/topPLLDigital_struct_fast.sdc
+}
+            Reading file '/home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/work/../constraints/topPLLDigital_struct_fast.sdc'
+@file(mmmc.tcl) 49: create_constraint_mode -name functional_wcl_typical -sdc_files { \
+  ../constraints/topPLLDigital_struct.sdc
+}
+            Reading file '/home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/work/../constraints/topPLLDigital_struct.sdc'
+@file(mmmc.tcl) 53: create_analysis_view -name view_wcl_slow -constraint_mode functional_wcl_slow -delay_corner delay_corner_wcl_slow
+@file(mmmc.tcl) 54: create_analysis_view -name view_wcl_fast -constraint_mode functional_wcl_fast -delay_corner delay_corner_wcl_fast
+@file(mmmc.tcl) 55: create_analysis_view -name view_wcl_typical -constraint_mode functional_wcl_typical -delay_corner delay_corner_wcl_typical
+@file(mmmc.tcl) 57: set_analysis_view -setup {view_wcl_slow view_wcl_fast view_wcl_typical}
+
+Threads Configured:3
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'library_features' encountered. Ignoring (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib, Line 17)
+        : Check to see if this construct is really needed for synthesis. Many liberty constructs are not actually required.
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'is_soi' encountered. Ignoring (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib, Line 13)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'user_function_class' encountered. Ignoring (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib, Line 1441428)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'user_function_class' encountered. Ignoring (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib, Line 1443406)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'user_function_class' encountered. Ignoring (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib, Line 1445384)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'user_function_class' encountered. Ignoring (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib, Line 1447362)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'user_function_class' encountered. Ignoring (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib, Line 1449340)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'user_function_class' encountered. Ignoring (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib, Line 1451318)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'user_function_class' encountered. Ignoring (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib, Line 1453296)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'user_function_class' encountered. Ignoring (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib, Line 1455274)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'user_function_class' encountered. Ignoring (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib, Line 1457252)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'user_function_class' encountered. Ignoring (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib, Line 1459230)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'user_function_class' encountered. Ignoring (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib, Line 1461208)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'user_function_class' encountered. Ignoring (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib, Line 1463186)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'user_function_class' encountered. Ignoring (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib, Line 1465164)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'user_function_class' encountered. Ignoring (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib, Line 1467142)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'user_function_class' encountered. Ignoring (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib, Line 1469120)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'user_function_class' encountered. Ignoring (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib, Line 1471098)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'user_function_class' encountered. Ignoring (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib, Line 1473076)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'user_function_class' encountered. Ignoring (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib, Line 1475054)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q0' for the cell 'UDBSLT28_FSDPC1BQM2SS_DY2_1'. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib, Line 5742305)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q1' for the cell 'UDBSLT28_FSDPC1BQM2SS_DY2_1'. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib, Line 5745328)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q0' for the cell 'UDBSLT28_FSDPC1BQM2SS_DY2_2'. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib, Line 5763622)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q1' for the cell 'UDBSLT28_FSDPC1BQM2SS_DY2_2'. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib, Line 5766645)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q0' for the cell 'UDBSLT28_FSDPC1BQM2SS_DY2_4'. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib, Line 5784939)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q1' for the cell 'UDBSLT28_FSDPC1BQM2SS_DY2_4'. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib, Line 5787962)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q0' for the cell 'UDBSLT28_FSDPC1BQM4SS_DY2_1'. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib, Line 5828298)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q1' for the cell 'UDBSLT28_FSDPC1BQM4SS_DY2_1'. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib, Line 5831321)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q2' for the cell 'UDBSLT28_FSDPC1BQM4SS_DY2_1'. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib, Line 5834344)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q3' for the cell 'UDBSLT28_FSDPC1BQM4SS_DY2_1'. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib, Line 5837367)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q0' for the cell 'UDBSLT28_FSDPC1BQM4SS_DY2_2'. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib, Line 5877707)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q1' for the cell 'UDBSLT28_FSDPC1BQM4SS_DY2_2'. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib, Line 5880730)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q2' for the cell 'UDBSLT28_FSDPC1BQM4SS_DY2_2'. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib, Line 5883753)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q3' for the cell 'UDBSLT28_FSDPC1BQM4SS_DY2_2'. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib, Line 5886776)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q0' for the cell 'UDBSLT28_FSDPC1BQM4SS_DY2_4'. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib, Line 5927116)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q1' for the cell 'UDBSLT28_FSDPC1BQM4SS_DY2_4'. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib, Line 5930139)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q2' for the cell 'UDBSLT28_FSDPC1BQM4SS_DY2_4'. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib, Line 5933162)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q3' for the cell 'UDBSLT28_FSDPC1BQM4SS_DY2_4'. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib, Line 5936185)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q0' for the cell 'UDBSLT28_FSDPC1BQM8SS_DY4_1'. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib, Line 6048121)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q1' for the cell 'UDBSLT28_FSDPC1BQM8SS_DY4_1'. (File /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib, Line 6051144)
+
+  Message Summary for Library gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib:
+  ***************************************************************************************
+  Missing a function attribute in the output pin definition. [LBR-518]: 164
+  An unsupported construct was detected in this library. [LBR-40]: 176
+  ***************************************************************************************
+ 
+            Reading file '/software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/liberty/logic_synth_lvf/gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib'
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.720000, 125.000000) in library 'gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'UDBSLT28_CKGTNLT_V5_1'
+        : To make the cell usable, change the value of 'dont_use' attribute to false.
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'UDBSLT28_CKGTNLT_V5_2'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'UDBSLT28_CKGTNLT_V5_3'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'UDBSLT28_CKGTNLT_V5_4'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'UDBSLT28_CKGTNLT_V5_6'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'UDBSLT28_CKGTNLT_V5_8'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'UDBSLT28_CKGTPLT_V5_1'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'UDBSLT28_CKGTPLT_V5_1P5'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'UDBSLT28_CKGTPLT_V5_1P75'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'UDBSLT28_CKGTPLT_V5_2'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'UDBSLT28_CKGTPLT_V5_2P5'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'UDBSLT28_CKGTPLT_V5_3'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'UDBSLT28_CKGTPLT_V5_3P5'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'UDBSLT28_CKGTPLT_V5_4'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'UDBSLT28_CKGTPLT_V5_5'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'UDBSLT28_CKGTPLT_V5_6'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'UDBSLT28_CKGTPLT_V5_7'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'UDBSLT28_CKGTPLT_V5_8'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'UDBSLT28_CKGTPLT_V5_9'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'UDBSLT28_CKGTPLT_V7_1'
+        Cell 'UDBSLT28_DCAP_ECOCT_12' has no outputs.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'UDBSLT28_DCAP_ECOCT_12' must have an output pin.
+        : Add the missing output pin(s), then reload the library. Else the library cell will be marked as timing model i.e. unusable. Timing_model means that the cell does not have any defined function. If there is no output pin, Genus will mark library cell as unusable i.e. the attribute 'usable' will be marked to 'false' on the libcell. Therefore, the cell is not used for mapping and it will not be picked up from the library for synthesis. If you query the attribute 'unusable_reason' on the libcell; result will be: 'Library cell has no output pins.'Note: The message LBR-9 is only for the logical pins and not for the power_ground pins. Genus will depend upon the output function defined in the pin group (output pin) of the cell, to use it for mapping. The pg_pin will not have any function defined.
+        Cell 'UDBSLT28_DCAP_ECOCT_12' has no outputs.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'UDBSLT28_DCAP_ECOCT_12' must have an output pin.
+        Cell 'UDBSLT28_DCAP_ECOCT_16' has no outputs.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'UDBSLT28_DCAP_ECOCT_16' must have an output pin.
+        Cell 'UDBSLT28_DCAP_ECOCT_16' has no outputs.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'UDBSLT28_DCAP_ECOCT_16' must have an output pin.
+        Cell 'UDBSLT28_DCAP_ECOCT_20' has no outputs.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'UDBSLT28_DCAP_ECOCT_20' must have an output pin.
+        Cell 'UDBSLT28_DCAP_ECOCT_20' has no outputs.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'UDBSLT28_DCAP_ECOCT_20' must have an output pin.
+        Cell 'UDBSLT28_DCAP_ECOCT_4' has no outputs.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'UDBSLT28_DCAP_ECOCT_4' must have an output pin.
+        Cell 'UDBSLT28_DCAP_ECOCT_4' has no outputs.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'UDBSLT28_DCAP_ECOCT_4' must have an output pin.
+        Cell 'UDBSLT28_DCAP_ECOCT_8' has no outputs.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'UDBSLT28_DCAP_ECOCT_8' must have an output pin.
+        Cell 'UDBSLT28_DCAP_ECOCT_8' has no outputs.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'UDBSLT28_DCAP_ECOCT_8' must have an output pin.
+        Cell 'UDBSLT28_TIEDIN_ECOCT_1' has no outputs.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'UDBSLT28_TIEDIN_ECOCT_1' must have an output pin.
+        Cell 'UDBSLT28_TIEDIN_ECOCT_1' has no outputs.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'UDBSLT28_TIEDIN_ECOCT_1' must have an output pin.
+        Cell 'UDBSLT28_DCAP_V4_13' has no outputs.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'UDBSLT28_DCAP_V4_13' must have an output pin.
+        Cell 'UDBSLT28_DCAP_V4_13' has no outputs.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'UDBSLT28_DCAP_V4_13' must have an output pin.
+        Cell 'UDBSLT28_DCAP_V4_17' has no outputs.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'UDBSLT28_DCAP_V4_17' must have an output pin.
+        Cell 'UDBSLT28_DCAP_V4_17' has no outputs.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'UDBSLT28_DCAP_V4_17' must have an output pin.
+        Cell 'UDBSLT28_DCAP_V4_33' has no outputs.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'UDBSLT28_DCAP_V4_33' must have an output pin.
+        Cell 'UDBSLT28_DCAP_V4_33' has no outputs.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'UDBSLT28_DCAP_V4_33' must have an output pin.
+        Cell 'UDBSLT28_DCAP_V4_5' has no outputs.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'UDBSLT28_DCAP_V4_5' must have an output pin.
+        Cell 'UDBSLT28_DCAP_V4_5' has no outputs.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'UDBSLT28_DCAP_V4_5' must have an output pin.
+        Cell 'UDBSLT28_DCAP_V4_65' has no outputs.
+        Cell 'UDBSLT28_DCAP_V4_65' has no outputs.
+        Cell 'UDBSLT28_DCAP_V4_7' has no outputs.
+        Cell 'UDBSLT28_DCAP_V4_7' has no outputs.
+        Cell 'UDBSLT28_DCAP_V7_11' has no outputs.
+        Cell 'UDBSLT28_DCAP_V7_11' has no outputs.
+        Cell 'UDBSLT28_DCAP_V7_15' has no outputs.
+        Cell 'UDBSLT28_DCAP_V7_15' has no outputs.
+        Cell 'UDBSLT28_DCAP_V7_3' has no outputs.
+        Cell 'UDBSLT28_DCAP_V7_3' has no outputs.
+        Cell 'UDBSLT28_DCAP_V7_5' has no outputs.
+        Cell 'UDBSLT28_DCAP_V7_5' has no outputs.
+        Cell 'UDBSLT28_DCAP_V7_7' has no outputs.
+        Cell 'UDBSLT28_DCAP_V7_7' has no outputs.
+        Cell 'UDBSLT28_CAPBLINC9_1' has no outputs.
+        Cell 'UDBSLT28_CAPBLINC9_1' has no outputs.
+        Cell 'UDBSLT28_CAPBLINC9_2' has no outputs.
+        Cell 'UDBSLT28_CAPBLINC9_2' has no outputs.
+        Cell 'UDBSLT28_CAPBLINC9_4' has no outputs.
+        Cell 'UDBSLT28_CAPBLINC9_4' has no outputs.
+        Cell 'UDBSLT28_CAPBLINC9_6' has no outputs.
+        Cell 'UDBSLT28_CAPBLINC9_6' has no outputs.
+        Cell 'UDBSLT28_CAPBLINC9_8' has no outputs.
+        Cell 'UDBSLT28_CAPBLINC9_8' has no outputs.
+        Cell 'UDBSLT28_CAPBOUCL9_1' has no outputs.
+        Cell 'UDBSLT28_CAPBOUCL9_1' has no outputs.
+        Cell 'UDBSLT28_CAPBOUCL9_2' has no outputs.
+        Cell 'UDBSLT28_CAPBOUCL9_2' has no outputs.
+        Cell 'UDBSLT28_CAPBOUCL9_4' has no outputs.
+        Cell 'UDBSLT28_CAPBOUCL9_4' has no outputs.
+        Cell 'UDBSLT28_CAPBOUCL9_6' has no outputs.
+        Cell 'UDBSLT28_CAPBOUCL9_6' has no outputs.
+        Cell 'UDBSLT28_CAPBOUCL9_8' has no outputs.
+        Cell 'UDBSLT28_CAPBOUCL9_8' has no outputs.
+        Cell 'UDBSLT28_CAPBOUCR9_1' has no outputs.
+        Cell 'UDBSLT28_CAPBOUCR9_1' has no outputs.
+        Cell 'UDBSLT28_CAPBOUCR9_2' has no outputs.
+        Cell 'UDBSLT28_CAPBOUCR9_2' has no outputs.
+        Cell 'UDBSLT28_CAPBOUCR9_4' has no outputs.
+        Cell 'UDBSLT28_CAPBOUCR9_4' has no outputs.
+        Cell 'UDBSLT28_CAPBOUCR9_6' has no outputs.
+        Cell 'UDBSLT28_CAPBOUCR9_6' has no outputs.
+        Cell 'UDBSLT28_CAPBOUCR9_8' has no outputs.
+        Cell 'UDBSLT28_CAPBOUCR9_8' has no outputs.
+        Cell 'UDBSLT28_CAPBRINC9_1' has no outputs.
+        Cell 'UDBSLT28_CAPBRINC9_1' has no outputs.
+        Cell 'UDBSLT28_CAPBRINC9_2' has no outputs.
+        Cell 'UDBSLT28_CAPBRINC9_2' has no outputs.
+        Cell 'UDBSLT28_CAPBRINC9_4' has no outputs.
+        Cell 'UDBSLT28_CAPBRINC9_4' has no outputs.
+        Cell 'UDBSLT28_CAPBRINC9_6' has no outputs.
+        Cell 'UDBSLT28_CAPBRINC9_6' has no outputs.
+        Cell 'UDBSLT28_CAPBRINC9_8' has no outputs.
+        Cell 'UDBSLT28_CAPBRINC9_8' has no outputs.
+        Cell 'UDBSLT28_CAPB_1' has no outputs.
+        Cell 'UDBSLT28_CAPB_1' has no outputs.
+        Cell 'UDBSLT28_CAPL9_1' has no outputs.
+        Cell 'UDBSLT28_CAPL9_1' has no outputs.
+        Cell 'UDBSLT28_CAPL9_2' has no outputs.
+        Cell 'UDBSLT28_CAPL9_2' has no outputs.
+        Cell 'UDBSLT28_CAPL9_4' has no outputs.
+        Cell 'UDBSLT28_CAPL9_4' has no outputs.
+        Cell 'UDBSLT28_CAPL9_6' has no outputs.
+        Cell 'UDBSLT28_CAPL9_6' has no outputs.
+        Cell 'UDBSLT28_CAPL9_8' has no outputs.
+        Cell 'UDBSLT28_CAPL9_8' has no outputs.
+        Cell 'UDBSLT28_CAPR9_1' has no outputs.
+        Cell 'UDBSLT28_CAPR9_1' has no outputs.
+        Cell 'UDBSLT28_CAPR9_2' has no outputs.
+        Cell 'UDBSLT28_CAPR9_2' has no outputs.
+        Cell 'UDBSLT28_CAPR9_4' has no outputs.
+        Cell 'UDBSLT28_CAPR9_4' has no outputs.
+        Cell 'UDBSLT28_CAPR9_6' has no outputs.
+        Cell 'UDBSLT28_CAPR9_6' has no outputs.
+        Cell 'UDBSLT28_CAPR9_8' has no outputs.
+        Cell 'UDBSLT28_CAPR9_8' has no outputs.
+        Cell 'UDBSLT28_CAPTLINC9_1' has no outputs.
+        Cell 'UDBSLT28_CAPTLINC9_1' has no outputs.
+        Cell 'UDBSLT28_CAPTLINC9_2' has no outputs.
+        Cell 'UDBSLT28_CAPTLINC9_2' has no outputs.
+        Cell 'UDBSLT28_CAPTLINC9_4' has no outputs.
+        Cell 'UDBSLT28_CAPTLINC9_4' has no outputs.
+        Cell 'UDBSLT28_CAPTLINC9_6' has no outputs.
+        Cell 'UDBSLT28_CAPTLINC9_6' has no outputs.
+        Cell 'UDBSLT28_CAPTLINC9_8' has no outputs.
+        Cell 'UDBSLT28_CAPTLINC9_8' has no outputs.
+        Cell 'UDBSLT28_CAPTOUCL9_1' has no outputs.
+        Cell 'UDBSLT28_CAPTOUCL9_1' has no outputs.
+        Cell 'UDBSLT28_CAPTOUCL9_2' has no outputs.
+        Cell 'UDBSLT28_CAPTOUCL9_2' has no outputs.
+        Cell 'UDBSLT28_CAPTOUCL9_4' has no outputs.
+        Cell 'UDBSLT28_CAPTOUCL9_4' has no outputs.
+        Cell 'UDBSLT28_CAPTOUCL9_6' has no outputs.
+        Cell 'UDBSLT28_CAPTOUCL9_6' has no outputs.
+        Cell 'UDBSLT28_CAPTOUCL9_8' has no outputs.
+        Cell 'UDBSLT28_CAPTOUCL9_8' has no outputs.
+        Cell 'UDBSLT28_CAPTOUCR9_1' has no outputs.
+        Cell 'UDBSLT28_CAPTOUCR9_1' has no outputs.
+        Cell 'UDBSLT28_CAPTOUCR9_2' has no outputs.
+        Cell 'UDBSLT28_CAPTOUCR9_2' has no outputs.
+        Cell 'UDBSLT28_CAPTOUCR9_4' has no outputs.
+        Cell 'UDBSLT28_CAPTOUCR9_4' has no outputs.
+        Cell 'UDBSLT28_CAPTOUCR9_6' has no outputs.
+        Cell 'UDBSLT28_CAPTOUCR9_6' has no outputs.
+        Cell 'UDBSLT28_CAPTOUCR9_8' has no outputs.
+        Cell 'UDBSLT28_CAPTOUCR9_8' has no outputs.
+        Cell 'UDBSLT28_CAPTRINC9_1' has no outputs.
+        Cell 'UDBSLT28_CAPTRINC9_1' has no outputs.
+        Cell 'UDBSLT28_CAPTRINC9_2' has no outputs.
+        Cell 'UDBSLT28_CAPTRINC9_2' has no outputs.
+        Cell 'UDBSLT28_CAPTRINC9_4' has no outputs.
+        Cell 'UDBSLT28_CAPTRINC9_4' has no outputs.
+        Cell 'UDBSLT28_CAPTRINC9_6' has no outputs.
+        Cell 'UDBSLT28_CAPTRINC9_6' has no outputs.
+        Cell 'UDBSLT28_CAPTRINC9_8' has no outputs.
+        Cell 'UDBSLT28_CAPTRINC9_8' has no outputs.
+        Cell 'UDBSLT28_CAPT_1' has no outputs.
+        Cell 'UDBSLT28_CAPT_1' has no outputs.
+        Cell 'UDBSLT28_CLAMP_Y6_1' has no outputs.
+        Cell 'UDBSLT28_CLAMP_Y6_1' has no outputs.
+        Cell 'UDBSLT28_FILL1' has no outputs.
+        Cell 'UDBSLT28_FILL1' has no outputs.
+        Cell 'UDBSLT28_FILL12' has no outputs.
+        Cell 'UDBSLT28_FILL12' has no outputs.
+        Cell 'UDBSLT28_FILL128' has no outputs.
+        Cell 'UDBSLT28_FILL128' has no outputs.
+        Cell 'UDBSLT28_FILL16' has no outputs.
+        Cell 'UDBSLT28_FILL16' has no outputs.
+        Cell 'UDBSLT28_FILL2' has no outputs.
+        Cell 'UDBSLT28_FILL2' has no outputs.
+        Cell 'UDBSLT28_FILL3' has no outputs.
+        Cell 'UDBSLT28_FILL3' has no outputs.
+        Cell 'UDBSLT28_FILL32' has no outputs.
+        Cell 'UDBSLT28_FILL32' has no outputs.
+        Cell 'UDBSLT28_FILL4' has no outputs.
+        Cell 'UDBSLT28_FILL4' has no outputs.
+        Cell 'UDBSLT28_FILL5' has no outputs.
+        Cell 'UDBSLT28_FILL5' has no outputs.
+        Cell 'UDBSLT28_FILL6' has no outputs.
+        Cell 'UDBSLT28_FILL6' has no outputs.
+        Cell 'UDBSLT28_FILL64' has no outputs.
+        Cell 'UDBSLT28_FILL64' has no outputs.
+        Cell 'UDBSLT28_FILL8' has no outputs.
+        Cell 'UDBSLT28_FILL8' has no outputs.
+        Cell 'UDBSLT28_FILL_ECOCT1' has no outputs.
+        Cell 'UDBSLT28_FILL_ECOCT1' has no outputs.
+        Cell 'UDBSLT28_FILL_ECOCT10' has no outputs.
+        Cell 'UDBSLT28_FILL_ECOCT10' has no outputs.
+        Cell 'UDBSLT28_FILL_ECOCT11' has no outputs.
+        Cell 'UDBSLT28_FILL_ECOCT11' has no outputs.
+        Cell 'UDBSLT28_FILL_ECOCT12' has no outputs.
+        Cell 'UDBSLT28_FILL_ECOCT12' has no outputs.
+        Cell 'UDBSLT28_FILL_ECOCT13' has no outputs.
+        Cell 'UDBSLT28_FILL_ECOCT13' has no outputs.
+        Cell 'UDBSLT28_FILL_ECOCT14' has no outputs.
+        Cell 'UDBSLT28_FILL_ECOCT14' has no outputs.
+        Cell 'UDBSLT28_FILL_ECOCT15' has no outputs.
+        Cell 'UDBSLT28_FILL_ECOCT15' has no outputs.
+        Cell 'UDBSLT28_FILL_ECOCT16' has no outputs.
+        Cell 'UDBSLT28_FILL_ECOCT16' has no outputs.
+        Cell 'UDBSLT28_FILL_ECOCT17' has no outputs.
+        Cell 'UDBSLT28_FILL_ECOCT17' has no outputs.
+        Cell 'UDBSLT28_FILL_ECOCT18' has no outputs.
+        Cell 'UDBSLT28_FILL_ECOCT18' has no outputs.
+        Cell 'UDBSLT28_FILL_ECOCT19' has no outputs.
+        Cell 'UDBSLT28_FILL_ECOCT19' has no outputs.
+        Cell 'UDBSLT28_FILL_ECOCT2' has no outputs.
+        Cell 'UDBSLT28_FILL_ECOCT2' has no outputs.
+        Cell 'UDBSLT28_FILL_ECOCT20' has no outputs.
+        Cell 'UDBSLT28_FILL_ECOCT20' has no outputs.
+        Cell 'UDBSLT28_FILL_ECOCT3' has no outputs.
+        Cell 'UDBSLT28_FILL_ECOCT3' has no outputs.
+        Cell 'UDBSLT28_FILL_ECOCT4' has no outputs.
+        Cell 'UDBSLT28_FILL_ECOCT4' has no outputs.
+        Cell 'UDBSLT28_FILL_ECOCT5' has no outputs.
+        Cell 'UDBSLT28_FILL_ECOCT5' has no outputs.
+        Cell 'UDBSLT28_FILL_ECOCT6' has no outputs.
+        Cell 'UDBSLT28_FILL_ECOCT6' has no outputs.
+        Cell 'UDBSLT28_FILL_ECOCT7' has no outputs.
+        Cell 'UDBSLT28_FILL_ECOCT7' has no outputs.
+        Cell 'UDBSLT28_FILL_ECOCT8' has no outputs.
+        Cell 'UDBSLT28_FILL_ECOCT8' has no outputs.
+        Cell 'UDBSLT28_FILL_ECOCT9' has no outputs.
+        Cell 'UDBSLT28_FILL_ECOCT9' has no outputs.
+        Cell 'UDBSLT28_FILL_SPACER_2' has no outputs.
+        Cell 'UDBSLT28_FILL_SPACER_2' has no outputs.
+        Cell 'UDBSLT28_FILL_SPACER_3' has no outputs.
+        Cell 'UDBSLT28_FILL_SPACER_3' has no outputs.
+        Cell 'UDBSLT28_FILL_SPACER_4' has no outputs.
+        Cell 'UDBSLT28_FILL_SPACER_4' has no outputs.
+        Cell 'UDBSLT28_FILL_SPACER_8' has no outputs.
+        Cell 'UDBSLT28_FILL_SPACER_8' has no outputs.
+        Cell 'UDBSLT28_TAPDS' has no outputs.
+        Cell 'UDBSLT28_TAPDS' has no outputs.
+        Cell 'UDBSLT28_TAPPN' has no outputs.
+        Cell 'UDBSLT28_TAPPN' has no outputs.
+        Cell 'UDBSLT28_TAPPN_DN' has no outputs.
+        Cell 'UDBSLT28_TAPPN_DN' has no outputs.
+        Cell 'UDBSLT28_TAPSS' has no outputs.
+        Cell 'UDBSLT28_TAPSS' has no outputs.
+        Cell 'UDBSLT28_CAPBM1_1' has no outputs.
+        Cell 'UDBSLT28_CAPBM1_1' has no outputs.
+        Cell 'UDBSLT28_CAPBOUCL9M1_1' has no outputs.
+        Cell 'UDBSLT28_CAPBOUCL9M1_1' has no outputs.
+        Cell 'UDBSLT28_CAPBOUCL9M1_2' has no outputs.
+        Cell 'UDBSLT28_CAPBOUCL9M1_2' has no outputs.
+        Cell 'UDBSLT28_CAPBOUCL9M1_4' has no outputs.
+        Cell 'UDBSLT28_CAPBOUCL9M1_4' has no outputs.
+        Cell 'UDBSLT28_CAPBOUCL9M1_6' has no outputs.
+        Cell 'UDBSLT28_CAPBOUCL9M1_6' has no outputs.
+        Cell 'UDBSLT28_CAPBOUCL9M1_8' has no outputs.
+        Cell 'UDBSLT28_CAPBOUCL9M1_8' has no outputs.
+        Cell 'UDBSLT28_CAPBOUCR9M1_1' has no outputs.
+        Cell 'UDBSLT28_CAPBOUCR9M1_1' has no outputs.
+        Cell 'UDBSLT28_CAPBOUCR9M1_2' has no outputs.
+        Cell 'UDBSLT28_CAPBOUCR9M1_2' has no outputs.
+        Cell 'UDBSLT28_CAPBOUCR9M1_4' has no outputs.
+        Cell 'UDBSLT28_CAPBOUCR9M1_4' has no outputs.
+        Cell 'UDBSLT28_CAPBOUCR9M1_6' has no outputs.
+        Cell 'UDBSLT28_CAPBOUCR9M1_6' has no outputs.
+        Cell 'UDBSLT28_CAPBOUCR9M1_8' has no outputs.
+        Cell 'UDBSLT28_CAPBOUCR9M1_8' has no outputs.
+        Cell 'UDBSLT28_CAPTM1_1' has no outputs.
+        Cell 'UDBSLT28_CAPTM1_1' has no outputs.
+        Cell 'UDBSLT28_CAPTOUCL9M1_1' has no outputs.
+        Cell 'UDBSLT28_CAPTOUCL9M1_1' has no outputs.
+        Cell 'UDBSLT28_CAPTOUCL9M1_2' has no outputs.
+        Cell 'UDBSLT28_CAPTOUCL9M1_2' has no outputs.
+        Cell 'UDBSLT28_CAPTOUCL9M1_4' has no outputs.
+        Cell 'UDBSLT28_CAPTOUCL9M1_4' has no outputs.
+        Cell 'UDBSLT28_CAPTOUCL9M1_6' has no outputs.
+        Cell 'UDBSLT28_CAPTOUCL9M1_6' has no outputs.
+        Cell 'UDBSLT28_CAPTOUCL9M1_8' has no outputs.
+        Cell 'UDBSLT28_CAPTOUCL9M1_8' has no outputs.
+        Cell 'UDBSLT28_CAPTOUCR9M1_1' has no outputs.
+        Cell 'UDBSLT28_CAPTOUCR9M1_1' has no outputs.
+        Cell 'UDBSLT28_CAPTOUCR9M1_2' has no outputs.
+        Cell 'UDBSLT28_CAPTOUCR9M1_2' has no outputs.
+        Cell 'UDBSLT28_CAPTOUCR9M1_4' has no outputs.
+        Cell 'UDBSLT28_CAPTOUCR9M1_4' has no outputs.
+        Cell 'UDBSLT28_CAPTOUCR9M1_6' has no outputs.
+        Cell 'UDBSLT28_CAPTOUCR9M1_6' has no outputs.
+        Cell 'UDBSLT28_CAPTOUCR9M1_8' has no outputs.
+        Cell 'UDBSLT28_CAPTOUCR9M1_8' has no outputs.
+        Cell 'UDBSLT28_TIEDIN_1' has no outputs.
+        Cell 'UDBSLT28_TIEDIN_1' has no outputs.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'negative_unate' for library pin 'UDBSLT28_FSDAO22PQ_1/Q' is ignored.
+        : Timing sense should never be set with 'rising_edge' or 'falling_edge' timing type.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'negative_unate' for library pin 'UDBSLT28_FSDAO22PQ_1/Q' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'negative_unate' for library pin 'UDBSLT28_FSDAO22PQ_1/Q' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'positive_unate' for library pin 'UDBSLT28_FSDAO22PQ_1/Q' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'negative_unate' for library pin 'UDBSLT28_FSDAO22PQ_1/Q' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'negative_unate' for library pin 'UDBSLT28_FSDAO22PQ_1/Q' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'negative_unate' for library pin 'UDBSLT28_FSDAO22PQ_1/Q' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'positive_unate' for library pin 'UDBSLT28_FSDAO22PQ_1/Q' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'negative_unate' for library pin 'UDBSLT28_FSDAO22PQ_1/Q' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'negative_unate' for library pin 'UDBSLT28_FSDAO22PQ_1/Q' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'negative_unate' for library pin 'UDBSLT28_FSDAO22PQ_1/Q' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'positive_unate' for library pin 'UDBSLT28_FSDAO22PQ_1/Q' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'positive_unate' for library pin 'UDBSLT28_FSDAO22PQ_1/Q' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'positive_unate' for library pin 'UDBSLT28_FSDAO22PQ_1/Q' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'negative_unate' for library pin 'UDBSLT28_FSDAO22PQ_1/Q' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'positive_unate' for library pin 'UDBSLT28_FSDAO22PQ_1/Q' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'negative_unate' for library pin 'UDBSLT28_FSDAO22PQ_1/Q' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'negative_unate' for library pin 'UDBSLT28_FSDAO22PQ_1/Q' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'negative_unate' for library pin 'UDBSLT28_FSDAO22PQ_1/Q' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'positive_unate' for library pin 'UDBSLT28_FSDAO22PQ_1/Q' is ignored.
+Info    : Set default library domain. [LBR-109]
+        : The default library domain is 'library_domain:timing_cond_wcl_slow'.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'sigma_late' between libpins 'A' and 'X' on libcell 'UDBSLT28_DEL_L10D250_1' is ignored. Hold timing analysis and optimization are not supported.
+        : Refer to 'Supported Liberty timing_type Values' in the 'Timing Analysis Guide' for more information.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'sigma_early' between libpins 'A' and 'X' on libcell 'UDBSLT28_DEL_L10D250_1' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'sigma_late' between libpins 'A' and 'X' on libcell 'UDBSLT28_DEL_L10D250_2' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'sigma_early' between libpins 'A' and 'X' on libcell 'UDBSLT28_DEL_L10D250_2' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'sigma_late' between libpins 'A' and 'X' on libcell 'UDBSLT28_DEL_L10D250_4' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'sigma_early' between libpins 'A' and 'X' on libcell 'UDBSLT28_DEL_L10D250_4' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'sigma_late' between libpins 'A' and 'X' on libcell 'UDBSLT28_DEL_L10D250_8' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'sigma_early' between libpins 'A' and 'X' on libcell 'UDBSLT28_DEL_L10D250_8' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'sigma_late' between libpins 'A' and 'X' on libcell 'UDBSLT28_DEL_L10D300_1' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'sigma_early' between libpins 'A' and 'X' on libcell 'UDBSLT28_DEL_L10D300_1' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'sigma_late' between libpins 'A' and 'X' on libcell 'UDBSLT28_DEL_L10D300_2' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'sigma_early' between libpins 'A' and 'X' on libcell 'UDBSLT28_DEL_L10D300_2' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'sigma_late' between libpins 'A' and 'X' on libcell 'UDBSLT28_DEL_L10D300_4' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'sigma_early' between libpins 'A' and 'X' on libcell 'UDBSLT28_DEL_L10D300_4' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'sigma_late' between libpins 'A' and 'X' on libcell 'UDBSLT28_DEL_L10D300_8' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'sigma_early' between libpins 'A' and 'X' on libcell 'UDBSLT28_DEL_L10D300_8' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'sigma_late' between libpins 'A' and 'X' on libcell 'UDBSLT28_DEL_L14D500_1' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'sigma_early' between libpins 'A' and 'X' on libcell 'UDBSLT28_DEL_L14D500_1' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'sigma_late' between libpins 'A' and 'X' on libcell 'UDBSLT28_DEL_L14D500_2' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'sigma_early' between libpins 'A' and 'X' on libcell 'UDBSLT28_DEL_L14D500_2' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'UDBSLT28_ADDF_V1_1'.
+        : Setting the 'timing_sense' to non_unate.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'UDBSLT28_ADDF_V1_1'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'UDBSLT28_ADDF_V1_1'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'UDBSLT28_ADDF_V1_2'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'UDBSLT28_ADDF_V1_2'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'UDBSLT28_ADDF_V1_2'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'UDBSLT28_ADDF_V1_4'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'UDBSLT28_ADDF_V1_4'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'UDBSLT28_ADDF_V1_4'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A2' and 'X' in libcell 'UDBSLT28_EN2_F_1'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A1' and 'X' in libcell 'UDBSLT28_EN2_F_1'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A2' and 'X' in libcell 'UDBSLT28_EN2_F_2'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A1' and 'X' in libcell 'UDBSLT28_EN2_F_2'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A2' and 'X' in libcell 'UDBSLT28_EN2_F_4'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A1' and 'X' in libcell 'UDBSLT28_EN2_F_4'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A2' and 'X' in libcell 'UDBSLT28_EN2_MM_1'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A1' and 'X' in libcell 'UDBSLT28_EN2_MM_1'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A2' and 'X' in libcell 'UDBSLT28_EN2_MM_2'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A1' and 'X' in libcell 'UDBSLT28_EN2_MM_2'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A2' and 'X' in libcell 'UDBSLT28_EN2_MM_3'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S2' and 'X' in libcell 'UDBSLT28_MUX5BBB_1' is 'neg_unate', but unateness determined from function is 'non_unate'.
+        : The 'timing_sense' attribute will be respected.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S2' and 'X' in libcell 'UDBSLT28_MUX5BBB_1' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S2' and 'X' in libcell 'UDBSLT28_MUX5BBB_2' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S2' and 'X' in libcell 'UDBSLT28_MUX5BBB_2' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S2' and 'X' in libcell 'UDBSLT28_MUX5BB_1' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S2' and 'X' in libcell 'UDBSLT28_MUX5BB_1' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S2' and 'X' in libcell 'UDBSLT28_MUX5BB_2' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S2' and 'X' in libcell 'UDBSLT28_MUX5BB_2' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S2' and 'X' in libcell 'UDBSLT28_MUX5B_1' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S2' and 'X' in libcell 'UDBSLT28_MUX5B_1' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Setting the maximum print count of this message to 10 if information_level is less than 9. [LBR-161]
+        : To print all the warning messages, set the information_level to 9.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S2' and 'X' in libcell 'UDBSLT28_MUX5B_2' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S2' and 'X' in libcell 'UDBSLT28_MUX5B_2' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S2' and 'X' in libcell 'UDBSLT28_MUX5_1' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S2' and 'X' in libcell 'UDBSLT28_MUX5_1' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S2' and 'X' in libcell 'UDBSLT28_MUX5_2' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S2' and 'X' in libcell 'UDBSLT28_MUX5_2' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S2' and 'X' in libcell 'UDBSLT28_MUX6BBB_1' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S2' and 'X' in libcell 'UDBSLT28_MUX6BBB_1' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S0' and 'X' in libcell 'UDBSLT28_MUX6BBB_1' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'S0' and 'X' in libcell 'UDBSLT28_MUX6BBB_1' is 'pos_unate', but unateness determined from function is 'non_unate'.
+  Library has 768 usable logic and 302 usable sequential lib-cells.
+Warning : Message truncated because it exceeds the maximum length of 4096 characters. [MESG-6]
+        : Info portion of message 'LBR-415' truncated to length 4096 from 7120
+        : By default messages are limited to 4096 characters. All characters after the 4096 character limit are truncated. To remove this limit, set the message attribute 'truncate' to 'false'. However, this may dramatically increase the size of the log file.
+Info    : Unusable library cells found at the time of loading a library.  [LBR-415]
+        : Library: 'gf22nsdvlogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib', Total cells: 1436, Unusable cells: 327.
+	List of unusable cells: 'UDBSLT28_DEL_L10D250_1 UDBSLT28_DEL_L10D250_2 UDBSLT28_DEL_L10D250_4 UDBSLT28_DEL_L10D250_8 UDBSLT28_DEL_L10D300_1 UDBSLT28_DEL_L10D300_2 UDBSLT28_DEL_L10D300_4 UDBSLT28_DEL_L10D300_8 UDBSLT28_DEL_L14D500_1 UDBSLT28_DEL_L14D500_2 UDBSLT28_DEL_L14D500_4 UDBSLT28_DEL_L14D500_8 UDBSLT28_DEL_L22D1000_1 UDBSLT28_DEL_L22D1000_2 UDBSLT28_DEL_L22D1000_4 UDBSLT28_DEL_L22D1000_8 UDBSLT28_DEL_L4D50_1 UDBSLT28_DEL_L4D50_2 UDBSLT28_DEL_L4D50_4 UDBSLT28_DEL_L4D50_8 UDBSLT28_DEL_L4D75_1 UDBSLT28_DEL_L4D75_2 UDBSLT28_DEL_L4D75_4 UDBSLT28_DEL_L4D75_8 UDBSLT28_DEL_L6D100_1 UDBSLT28_DEL_L6D100_2 UDBSLT28_DEL_L6D100_4 UDBSLT28_DEL_L6D100_8 UDBSLT28_DEL_L6D125_1 UDBSLT28_DEL_L6D125_2 UDBSLT28_DEL_L6D125_4 UDBSLT28_DEL_L6D125_8 UDBSLT28_DEL_L6D150_1 UDBSLT28_DEL_L6D150_2 UDBSLT28_DEL_L6D150_4 UDBSLT28_DEL_L6D150_8 UDBSLT28_DEL_L8D175_1 UDBSLT28_DEL_L8D175_2 UDBSLT28_DEL_L8D175_4 UDBSLT28_DEL_L8D175_8 UDBSLT28_DEL_L8D200_1 UDBSLT28_DEL_L8D200_2 UDBSLT28_DEL_L8D200_4 UDBSLT28_DEL_L8D200_8 UDBSLT28_CKGTNLT_V5_1 UDBSLT28_CKGTNLT_V5_2 UDBSLT28_CKGTNLT_V5_3 UDBSLT28_CKGTNLT_V5_4 UDBSLT28_CKGTNLT_V5_6 UDBSLT28_CKGTNLT_V5_8 UDBSLT28_CKGTPLT_V5_1 UDBSLT28_CKGTPLT_V5_1P5 UDBSLT28_CKGTPLT_V5_1P75 UDBSLT28_CKGTPLT_V5_2 UDBSLT28_CKGTPLT_V5_2P5 UDBSLT28_CKGTPLT_V5_3 UDBSLT28_CKGTPLT_V5_3P5 UDBSLT28_CKGTPLT_V5_4 UDBSLT28_CKGTPLT_V5_5 UDBSLT28_CKGTPLT_V5_6 UDBSLT28_CKGTPLT_V5_7 UDBSLT28_CKGTPLT_V5_8 UDBSLT28_CKGTPLT_V5_9 UDBSLT28_CKGTPLT_V7_1 UDBSLT28_CKGTPLT_V7_2 UDBSLT28_CKGTPLT_V7_3 UDBSLT28_CKGTPLT_V7_4 UDBSLT28_CKGTPLT_V7_6 UDBSLT28_CKGTPLT_V7_8 UDBSLT28_EN2_F_1 UDBSLT28_EN2_F_2 UDBSLT28_EN2_F_4 UDBSLT28_ADDABCN2_0P75 UDBSLT28_ADDABCN2_1 UDBSLT28_AN2_ECOCT_1 UDBSLT28_AN2_ECOCT_2 UDBSLT28_AN3_ECOCT_1 UDBSLT28_AO21_ECOCT_1 UDBSLT28_AOI21_ECOCT_1 UDBSLT28_AOI21_ECOCT_4 UDBSLT28_BUF_ECOCT_1 UDBSLT28_BUF_ECOCT_2 UDBSLT28_BUF_ECOCT_4 UDBSLT28_CKGTNLT_V5_0P75 UDBSLT28_CKGTPLS_V3_1 UDBSLT28_CKGTPLT_V5_0P75 UDBSLT28_CKGTPLT_V8_1 UDBSLT28_CKGTPLT_V8_2 UDBSLT28_CKGTPLT_V8_4 UDBSLT28_CKGTPLT_V8_8 UDBSLT28_DCAP_ECOCT_12 UDBSLT28_DCAP_ECOCT_16 UDBSLT28_DCAP_ECOCT_20 UDBSLT28_DCAP_ECOCT_4 UDBSLT28_DCAP_ECOCT_8 UDBSLT28_EN2_ECOCT_1 UDBSLT28_EN3_ECOCT_1 UDBSLT28_EO2_ECOCT_1 UDBSLT28_EO3_ECOCT_1 UDBSLT28_FDPRBQ_V2ECOCT_1 UDBSLT28_FDPRBQ_V2ECOCT_2 UDBSLT28_FDPRBSBQ_ECOCT_1 UDBSLT28_FDPRBSBQ_ECOCT_2 UDBSLT28_FDPSBQ_ECOCT_1 UDBSLT28_FDPSBQ_ECOCT_2 UDBSLT28_FSDPSBQ_V2ECOCT_1 UDBSLT28_FSDPSBQ_V2ECOCT_2 UDBSLT28_INV_ECOCT_1 UDBSLT28_INV_ECOCT_2 UDBSLT28_INV_ECOCT_4 UDBSLT28_LDPQ_ECOCT_1 UDBSLT28_LDPQ_ECOCT_2 UDBSLT28_MUXI2_ECOCT_1 UDBSLT28_MUXI2_ECOCT_2 UDBSLT28_ND2_ECOCT_1 UDBSLT28_ND2_ECOCT_4 UDBSLT28_ND3_ECOCT_1 UDBSLT28_ND3_ECOCT_4 UDBSLT28_NR2_ECOCT_1 UDBSLT28_NR2_ECOCT_4 UDBSLT28_NR3_ECOCT_1 UDBSLT28_NR3_ECOCT_4 UDBSLT28_OA21_ECOCT_1 UDBSLT28_OA21_ECOCT_4 UDBSLT28_OA22_ECOCT_1 UDBSLT28_OA22_ECOCT_4 UDBSLT28_OAI21_ECOCT_1 UDBSLT28_OAI21_ECOCT_4 UDBSLT28_OAI22_ECOCT_1 UDBSLT28_OR2_ECOCT_1 UDBSLT28_TIEDIN_ECOCT_1 UDBSLT28_BRECEN_0P75 UDBSLT28_BRECEN_1 UDBSLT28_BRECEN_2 UDBSLT28_BRECEN_4 UDBSLT28_BRECEN_8 UDBSLT28_BREC_0P75 UDBSLT28_BREC_1 UDBSLT28_BREC_2 UDBSLT28_BREC_4 UDBSLT28_BREC_8 UDBSLT28_BSEL_0P75 UDBSLT28_BSEL_1 UDBSLT28_BSEL_2 UDBSLT28_BSEL_4 UDBSLT28_BSEL_8 UDBSLT28_CKGTNLT_V8_1 UDBSLT28_CKGTNLT_V8_2 UDBSLT28_CKGTNLT_V8_4 UDBSLT28_CKGTNLT_V8_8 UDBSLT28_EN2_F_0P75 UDBSLT28_GLITCH_FILTER_2 UDBSLT28_GLITCH_GOBBLER_2 UDBSLT28_MUX2_CK_1 UDBSLT28_MUX2_CK_2 UDBSLT28_MUX2_CK_4 UDBSLT28_SYNC2MSFQNS_1 UDBSLT28_SYNC2MSFQNS_2 UDBSLT28_SYNC2MSFQ_1 UDBSLT28_SYNC2MSFQ_2 UDBSLT28_SYNC2RBMSFQ_1 UDBSLT28_SYNC2RBSBMSFQ_1 UDBSLT28_SYNC2RBSBMSFQ_2 UDBSLT28_SYNC2SBMSFQ_1 UDBSLT28_SYNC2SBMSFQ_2 UDBSLT28_SYNC3MSFQNS_1 UDBSLT28_SYNC3MSFQNS_2 UDBSLT28_SYNC3MSFQ_1 UDBSLT28_SYNC3MSFQ_2 UDBSLT28_SYNC3RBSBMSFQ_1 UDBSLT28_SYNC3RBSBMSFQ_2 UDBSLT28_ADDABCN2_4 UDBSLT28_AN2_ECOCT_4 UDBSLT28_AO21_ECOCT_4 UDBSLT28_AO22_ECOCT_2 UDBSLT28_AOI211_ECOCT_1 UDBSLT28_AOI22_ECOCT_1 UDBSLT28_AOI31_ECOCT_1 UDBSLT28_CKGTNLT_V5_12 UDBSLT28_CKGTNLT_V5_16 UDBSLT28_CKGTPLT_V5_11 U
+        : For  more  information, refer to 'Cells Identified as Unusable' in the 'User Guide'. To know the reason why a cell is considered as unusable, check 'unusable_reason' libcell attribute.
+#@ End verbose source ../scripts/mmmc.tcl
+#@ End verbose source ../scripts/run.tcl
+1
+@genus:root: 1> 
+@genus:root: 1> source ../scripts/run.tcl
+Sourcing '../scripts/run.tcl' (Tue May 07 11:41:49 EDT 2024)...
+#@ Begin verbose source ../scripts/run.tcl
+@file(run.tcl) 1: if {[file exists /proc/cpuinfo]} {
+  sh grep "model name" /proc/cpuinfo
+  sh grep "cpu MHz"    /proc/cpuinfo
+}
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+cpu MHz		: 1222.534
+cpu MHz		: 1488.159
+cpu MHz		: 1345.214
+cpu MHz		: 1499.755
+cpu MHz		: 1648.071
+cpu MHz		: 1484.741
+cpu MHz		: 1280.395
+cpu MHz		: 1483.154
+cpu MHz		: 1302.734
+cpu MHz		: 1519.653
+cpu MHz		: 1305.053
+cpu MHz		: 1400.268
+cpu MHz		: 1262.207
+cpu MHz		: 1487.915
+cpu MHz		: 1323.242
+cpu MHz		: 1478.027
+cpu MHz		: 1294.677
+cpu MHz		: 1359.375
+cpu MHz		: 1316.040
+cpu MHz		: 1482.177
+cpu MHz		: 1326.293
+cpu MHz		: 1496.093
+cpu MHz		: 1266.357
+cpu MHz		: 1487.304
+@file(run.tcl) 6: puts "Hostname : [info hostname]"
+Hostname : cluster12.lan.ece
+@file(run.tcl) 8: set DESIGN topPLLDigital
+@file(run.tcl) 9: set SYN_EFF medium
+@file(run.tcl) 10: set MAP_EFF medium
+@file(run.tcl) 11: set OPT_EFF medium
+@file(run.tcl) 13: set RELEASE [lindex [get_db program_version] end]
+@file(run.tcl) 14: set _OUTPUTS_PATH OUTPUT/outputs_${RELEASE}
+@file(run.tcl) 15: set _REPORTS_PATH OUTPUT/reports_${RELEASE}
+@file(run.tcl) 17: if {![file exists ${_OUTPUTS_PATH}]} {
+  file mkdir ${_OUTPUTS_PATH}
+  puts "Creating directory ${_OUTPUTS_PATH}"
+}
+@file(run.tcl) 22: if {![file exists ${_REPORTS_PATH}]} {
+  file mkdir ${_REPORTS_PATH}
+  puts "Creating directory ${_REPORTS_PATH}"
+}
+@file(run.tcl) 27: set rtlDir ../rtl
+@file(run.tcl) 29: set_db init_lib_search_path {. /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/}
+  Setting attribute of root '/': 'init_lib_search_path' = . /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/
+@file(run.tcl) 30: set_db script_search_path { . }
+  Setting attribute of root '/': 'script_search_path' =  . 
+@file(run.tcl) 31: set_db init_hdl_search_path {. ../rtl}
+  Setting attribute of root '/': 'init_hdl_search_path' = . ../rtl
+@file(run.tcl) 33: set_db max_cpus_per_server 8
+  Setting attribute of root '/': 'max_cpus_per_server' = 8
+@file(run.tcl) 35: set_db syn_generic_effort $SYN_EFF
+  Setting attribute of root '/': 'syn_generic_effort' = medium
+@file(run.tcl) 36: set_db syn_map_effort $MAP_EFF
+  Setting attribute of root '/': 'syn_map_effort' = medium
+@file(run.tcl) 37: set_db syn_opt_effort $OPT_EFF
+  Setting attribute of root '/': 'syn_opt_effort' = medium
+@file(run.tcl) 39: set_db information_level 9
+  Setting attribute of root '/': 'information_level' = 9
+@file(run.tcl) 41: set_db tns_opto true
+  Setting attribute of root '/': 'tns_opto' = true
+@file(run.tcl) 42: set_db lp_insert_clock_gating true
+  Setting attribute of root '/': 'lp_insert_clock_gating' = true
+@file(run.tcl) 44: puts "Now load RTL LIST"
+Now load RTL LIST
+@file(run.tcl) 45: set rtlList "\
+${rtlDir}/topPLLDigital.v \
+${rtlDir}/spi_slave_pll.v \
+${rtlDir}/fifo_pll.v \
+${rtlDir}/fifo_miso.v \
+${rtlDir}/register_bank_pll.v \
+${rtlDir}/clkDiv.v \
+${rtlDir}/two_bit_counter.v \
+${rtlDir}/mash111.v \
+${rtlDir}/Memory43b.v \
+"
+@file(run.tcl) 57: suspend
+
+Execution has been suspended temporarily.
+Enter 'resume' to continue.
+Enter 'stop_suspend' to stop script execution
+[SUSPEND]genus:root: 1> resume
+
+Resuming...@file(run.tcl) 60: read_mmmc ../scripts/mmmc.tcl
+  Setting attribute of root '/': 'is_read_mmmc_flow' = true
+#@ End verbose source ../scripts/run.tcl
+read_mmmc is already done. Cannot do read_mmmc multiple times.
+@genus:root: 1> exit
+Normal exit.

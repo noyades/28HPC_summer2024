@@ -1,0 +1,4375 @@
+VERSION 5.8 ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+
+DESIGN dev22_scpa_single_slice_fp ;
+
+UNITS DISTANCE MICRONS 1000 ;
+PROPERTYDEFINITIONS
+  DESIGN lastSavedExtractCounter INTEGER 4277 ;
+END PROPERTYDEFINITIONS
+
+DIEAREA ( -1800 -1775 ) ( 209210 181825 ) ;
+
+PINS 549 ;
+- In1_im[3] + NET In1_im[3]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 48 30 )
+    + PLACED ( 160681 25 ) N ;
+- In1_im[0] + NET In1_im[0]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 48 30 )
+    + PLACED ( 196681 25 ) N ;
+- rst_n + NET rst_n
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 48 30 )
+    + PLACED ( 4976 10 ) N ;
+- In1_im[12] + NET In1_im[12]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 48 30 )
+    + PLACED ( 52681 25 ) N ;
+- In1_im[7] + NET In1_im[7]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 48 30 )
+    + PLACED ( 112681 25 ) N ;
+- In1_im[14] + NET In1_im[14]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 48 30 )
+    + PLACED ( 28681 25 ) N ;
+- In1_im[9] + NET In1_im[9]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 48 30 )
+    + PLACED ( 88681 25 ) N ;
+- mag_im[255] + NET mag_im[255]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 201360 180900 ) N ;
+- mag_re[128] + NET mag_re[128]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 107460 180900 ) N ;
+- mag_re[129] + NET mag_re[129]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 107720 180900 ) N ;
+- mag_re[130] + NET mag_re[130]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 107980 180900 ) N ;
+- mag_re[131] + NET mag_re[131]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 108240 180900 ) N ;
+- mag_re[132] + NET mag_re[132]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 109460 180900 ) N ;
+- mag_re[133] + NET mag_re[133]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 109720 180900 ) N ;
+- mag_re[134] + NET mag_re[134]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 109980 180900 ) N ;
+- mag_re[135] + NET mag_re[135]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 110240 180900 ) N ;
+- mag_re[136] + NET mag_re[136]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 111460 180900 ) N ;
+- mag_re[137] + NET mag_re[137]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 111720 180900 ) N ;
+- mag_re[138] + NET mag_re[138]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 111980 180900 ) N ;
+- mag_re[139] + NET mag_re[139]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 112240 180900 ) N ;
+- mag_re[140] + NET mag_re[140]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 113460 180900 ) N ;
+- mag_re[141] + NET mag_re[141]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 113720 180900 ) N ;
+- mag_re[142] + NET mag_re[142]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 113980 180900 ) N ;
+- mag_re[143] + NET mag_re[143]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 114240 180900 ) N ;
+- mag_re[144] + NET mag_re[144]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 115460 180900 ) N ;
+- mag_re[145] + NET mag_re[145]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 115720 180900 ) N ;
+- mag_re[146] + NET mag_re[146]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 115980 180900 ) N ;
+- mag_re[147] + NET mag_re[147]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 116240 180900 ) N ;
+- mag_re[148] + NET mag_re[148]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 117460 180900 ) N ;
+- mag_re[149] + NET mag_re[149]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 117720 180900 ) N ;
+- mag_re[150] + NET mag_re[150]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 117980 180900 ) N ;
+- mag_re[151] + NET mag_re[151]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 118240 180900 ) N ;
+- mag_re[152] + NET mag_re[152]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 119460 180900 ) N ;
+- mag_re[153] + NET mag_re[153]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 119720 180900 ) N ;
+- mag_re[154] + NET mag_re[154]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 119980 180900 ) N ;
+- mag_re[155] + NET mag_re[155]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 120240 180900 ) N ;
+- mag_re[156] + NET mag_re[156]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 121460 180900 ) N ;
+- mag_re[157] + NET mag_re[157]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 121720 180900 ) N ;
+- mag_re[158] + NET mag_re[158]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 121980 180900 ) N ;
+- mag_re[159] + NET mag_re[159]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 122240 180900 ) N ;
+- mag_re[160] + NET mag_re[160]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 135720 180900 ) N ;
+- mag_re[161] + NET mag_re[161]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 135980 180900 ) N ;
+- mag_re[162] + NET mag_re[162]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 136240 180900 ) N ;
+- mag_re[163] + NET mag_re[163]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 136500 180900 ) N ;
+- mag_re[164] + NET mag_re[164]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 137720 180900 ) N ;
+- mag_re[165] + NET mag_re[165]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 137980 180900 ) N ;
+- mag_re[166] + NET mag_re[166]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 138240 180900 ) N ;
+- mag_re[167] + NET mag_re[167]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 138500 180900 ) N ;
+- mag_re[168] + NET mag_re[168]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 139720 180900 ) N ;
+- mag_re[169] + NET mag_re[169]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 139980 180900 ) N ;
+- mag_re[170] + NET mag_re[170]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 140240 180900 ) N ;
+- mag_re[171] + NET mag_re[171]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 140500 180900 ) N ;
+- mag_re[172] + NET mag_re[172]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 141720 180900 ) N ;
+- mag_re[173] + NET mag_re[173]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 141980 180900 ) N ;
+- mag_re[174] + NET mag_re[174]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 142240 180900 ) N ;
+- mag_re[175] + NET mag_re[175]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 142500 180900 ) N ;
+- mag_re[176] + NET mag_re[176]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 143720 180900 ) N ;
+- mag_re[177] + NET mag_re[177]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 143980 180900 ) N ;
+- mag_re[178] + NET mag_re[178]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 144240 180900 ) N ;
+- mag_re[179] + NET mag_re[179]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 144500 180900 ) N ;
+- mag_re[180] + NET mag_re[180]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 145720 180900 ) N ;
+- mag_re[181] + NET mag_re[181]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 145980 180900 ) N ;
+- mag_re[182] + NET mag_re[182]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 146240 180900 ) N ;
+- mag_re[183] + NET mag_re[183]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 146500 180900 ) N ;
+- mag_re[184] + NET mag_re[184]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 147720 180900 ) N ;
+- mag_re[185] + NET mag_re[185]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 147980 180900 ) N ;
+- mag_re[186] + NET mag_re[186]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 148240 180900 ) N ;
+- mag_re[187] + NET mag_re[187]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 148500 180900 ) N ;
+- mag_re[188] + NET mag_re[188]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 149720 180900 ) N ;
+- mag_re[189] + NET mag_re[189]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 149980 180900 ) N ;
+- mag_re[190] + NET mag_re[190]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 150240 180900 ) N ;
+- mag_re[191] + NET mag_re[191]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 150500 180900 ) N ;
+- mag_re[192] + NET mag_re[192]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 158190 180900 ) N ;
+- mag_re[193] + NET mag_re[193]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 158450 180900 ) N ;
+- mag_re[194] + NET mag_re[194]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 158710 180900 ) N ;
+- mag_re[195] + NET mag_re[195]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 158970 180900 ) N ;
+- mag_re[196] + NET mag_re[196]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 160190 180900 ) N ;
+- mag_re[197] + NET mag_re[197]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 160450 180900 ) N ;
+- mag_re[198] + NET mag_re[198]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 160710 180900 ) N ;
+- mag_re[199] + NET mag_re[199]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 160970 180900 ) N ;
+- mag_re[200] + NET mag_re[200]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 162190 180900 ) N ;
+- mag_re[201] + NET mag_re[201]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 162450 180900 ) N ;
+- mag_re[202] + NET mag_re[202]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 162710 180900 ) N ;
+- mag_re[203] + NET mag_re[203]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 162970 180900 ) N ;
+- mag_re[204] + NET mag_re[204]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 164190 180900 ) N ;
+- mag_re[205] + NET mag_re[205]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 164450 180900 ) N ;
+- mag_re[206] + NET mag_re[206]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 164710 180900 ) N ;
+- mag_re[207] + NET mag_re[207]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 164970 180900 ) N ;
+- mag_re[208] + NET mag_re[208]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 166190 180900 ) N ;
+- mag_re[209] + NET mag_re[209]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 166450 180900 ) N ;
+- mag_re[210] + NET mag_re[210]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 166710 180900 ) N ;
+- mag_re[211] + NET mag_re[211]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 166970 180900 ) N ;
+- mag_re[212] + NET mag_re[212]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 168190 180900 ) N ;
+- mag_re[213] + NET mag_re[213]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 168450 180900 ) N ;
+- mag_re[214] + NET mag_re[214]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 168710 180900 ) N ;
+- mag_re[215] + NET mag_re[215]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 168970 180900 ) N ;
+- mag_re[216] + NET mag_re[216]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 170190 180900 ) N ;
+- mag_re[217] + NET mag_re[217]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 170450 180900 ) N ;
+- mag_re[218] + NET mag_re[218]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 170710 180900 ) N ;
+- mag_re[219] + NET mag_re[219]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 170970 180900 ) N ;
+- mag_re[220] + NET mag_re[220]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 172190 180900 ) N ;
+- mag_re[221] + NET mag_re[221]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 172450 180900 ) N ;
+- mag_re[222] + NET mag_re[222]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 172710 180900 ) N ;
+- mag_re[223] + NET mag_re[223]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 172970 180900 ) N ;
+- mag_re[224] + NET mag_re[224]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 186450 180900 ) N ;
+- mag_re[225] + NET mag_re[225]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 186710 180900 ) N ;
+- mag_re[226] + NET mag_re[226]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 186970 180900 ) N ;
+- mag_re[227] + NET mag_re[227]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 187230 180900 ) N ;
+- mag_re[228] + NET mag_re[228]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 188450 180900 ) N ;
+- mag_re[229] + NET mag_re[229]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 188710 180900 ) N ;
+- mag_re[230] + NET mag_re[230]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 188970 180900 ) N ;
+- mag_re[231] + NET mag_re[231]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 189230 180900 ) N ;
+- mag_re[232] + NET mag_re[232]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 190450 180900 ) N ;
+- mag_re[233] + NET mag_re[233]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 190710 180900 ) N ;
+- mag_re[234] + NET mag_re[234]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 190970 180900 ) N ;
+- mag_re[235] + NET mag_re[235]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 191230 180900 ) N ;
+- mag_re[236] + NET mag_re[236]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 192450 180900 ) N ;
+- mag_re[237] + NET mag_re[237]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 192710 180900 ) N ;
+- mag_re[238] + NET mag_re[238]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 192970 180900 ) N ;
+- mag_re[239] + NET mag_re[239]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 193230 180900 ) N ;
+- mag_re[240] + NET mag_re[240]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 194450 180900 ) N ;
+- mag_re[241] + NET mag_re[241]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 194710 180900 ) N ;
+- mag_re[242] + NET mag_re[242]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 194970 180900 ) N ;
+- mag_re[243] + NET mag_re[243]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 195230 180900 ) N ;
+- mag_re[244] + NET mag_re[244]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 196450 180900 ) N ;
+- mag_re[245] + NET mag_re[245]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 196710 180900 ) N ;
+- mag_re[246] + NET mag_re[246]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 196970 180900 ) N ;
+- mag_re[247] + NET mag_re[247]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 197230 180900 ) N ;
+- mag_re[248] + NET mag_re[248]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 198450 180900 ) N ;
+- mag_re[249] + NET mag_re[249]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 198710 180900 ) N ;
+- mag_re[250] + NET mag_re[250]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 198970 180900 ) N ;
+- mag_re[251] + NET mag_re[251]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 199230 180900 ) N ;
+- mag_re[252] + NET mag_re[252]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 200450 180900 ) N ;
+- mag_re[253] + NET mag_re[253]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 200710 180900 ) N ;
+- mag_re[254] + NET mag_re[254]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 200970 180900 ) N ;
+- sign_re + NET sign_re
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 103515 180900 ) N ;
+- mag_im[0] + NET mag_im[0]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 6130 180900 ) N ;
+- mag_im[1] + NET mag_im[1]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 6390 180900 ) N ;
+- mag_im[2] + NET mag_im[2]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 6650 180900 ) N ;
+- mag_im[3] + NET mag_im[3]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 6910 180900 ) N ;
+- mag_im[4] + NET mag_im[4]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 8130 180900 ) N ;
+- mag_im[5] + NET mag_im[5]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 8390 180900 ) N ;
+- mag_im[6] + NET mag_im[6]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 8650 180900 ) N ;
+- mag_im[7] + NET mag_im[7]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 8910 180900 ) N ;
+- mag_im[8] + NET mag_im[8]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 10130 180900 ) N ;
+- mag_im[9] + NET mag_im[9]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 10390 180900 ) N ;
+- mag_im[10] + NET mag_im[10]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 10650 180900 ) N ;
+- mag_im[11] + NET mag_im[11]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 10910 180900 ) N ;
+- mag_im[12] + NET mag_im[12]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 12130 180900 ) N ;
+- mag_im[13] + NET mag_im[13]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 12390 180900 ) N ;
+- mag_im[14] + NET mag_im[14]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 12650 180900 ) N ;
+- mag_im[15] + NET mag_im[15]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 12910 180900 ) N ;
+- mag_im[16] + NET mag_im[16]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 14130 180900 ) N ;
+- mag_im[17] + NET mag_im[17]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 14390 180900 ) N ;
+- mag_im[18] + NET mag_im[18]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 14650 180900 ) N ;
+- mag_im[19] + NET mag_im[19]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 14910 180900 ) N ;
+- mag_im[20] + NET mag_im[20]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 16130 180900 ) N ;
+- mag_im[21] + NET mag_im[21]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 16390 180900 ) N ;
+- mag_im[22] + NET mag_im[22]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 16650 180900 ) N ;
+- mag_im[23] + NET mag_im[23]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 16910 180900 ) N ;
+- mag_im[24] + NET mag_im[24]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 18130 180900 ) N ;
+- mag_im[25] + NET mag_im[25]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 18390 180900 ) N ;
+- mag_im[26] + NET mag_im[26]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 18650 180900 ) N ;
+- mag_im[27] + NET mag_im[27]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 18910 180900 ) N ;
+- mag_im[28] + NET mag_im[28]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 20130 180900 ) N ;
+- mag_im[29] + NET mag_im[29]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 20390 180900 ) N ;
+- mag_im[30] + NET mag_im[30]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 20650 180900 ) N ;
+- mag_im[31] + NET mag_im[31]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 20910 180900 ) N ;
+- mag_im[32] + NET mag_im[32]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 34390 180900 ) N ;
+- mag_im[33] + NET mag_im[33]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 34650 180900 ) N ;
+- mag_im[34] + NET mag_im[34]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 34910 180900 ) N ;
+- mag_im[35] + NET mag_im[35]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 35170 180900 ) N ;
+- mag_im[36] + NET mag_im[36]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 36390 180900 ) N ;
+- mag_im[37] + NET mag_im[37]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 36650 180900 ) N ;
+- mag_im[38] + NET mag_im[38]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 36910 180900 ) N ;
+- mag_im[39] + NET mag_im[39]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 37170 180900 ) N ;
+- mag_im[40] + NET mag_im[40]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 38390 180900 ) N ;
+- mag_im[41] + NET mag_im[41]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 38650 180900 ) N ;
+- mag_im[42] + NET mag_im[42]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 38910 180905 ) N ;
+- mag_im[43] + NET mag_im[43]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 39170 180900 ) N ;
+- mag_im[44] + NET mag_im[44]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 40390 180900 ) N ;
+- mag_im[45] + NET mag_im[45]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 40650 180900 ) N ;
+- mag_im[46] + NET mag_im[46]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 40910 180900 ) N ;
+- mag_im[47] + NET mag_im[47]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 41170 180900 ) N ;
+- mag_im[48] + NET mag_im[48]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 42390 180900 ) N ;
+- mag_im[49] + NET mag_im[49]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 42650 180900 ) N ;
+- mag_im[50] + NET mag_im[50]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 42910 180900 ) N ;
+- mag_im[51] + NET mag_im[51]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 43170 180905 ) N ;
+- mag_im[52] + NET mag_im[52]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 44390 180900 ) N ;
+- mag_im[53] + NET mag_im[53]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 44650 180900 ) N ;
+- mag_im[54] + NET mag_im[54]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 44910 180900 ) N ;
+- mag_im[55] + NET mag_im[55]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 45170 180900 ) N ;
+- mag_im[56] + NET mag_im[56]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 46390 180900 ) N ;
+- mag_im[57] + NET mag_im[57]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 46650 180900 ) N ;
+- mag_im[58] + NET mag_im[58]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 46910 180900 ) N ;
+- mag_im[59] + NET mag_im[59]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 47170 180900 ) N ;
+- mag_im[60] + NET mag_im[60]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 48390 180900 ) N ;
+- mag_im[61] + NET mag_im[61]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 48650 180900 ) N ;
+- mag_im[62] + NET mag_im[62]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 48910 180900 ) N ;
+- mag_im[63] + NET mag_im[63]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 49170 180900 ) N ;
+- mag_im[64] + NET mag_im[64]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 56860 180900 ) N ;
+- mag_im[65] + NET mag_im[65]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 57120 180900 ) N ;
+- mag_im[66] + NET mag_im[66]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 57380 180900 ) N ;
+- mag_im[67] + NET mag_im[67]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 57640 180900 ) N ;
+- mag_im[68] + NET mag_im[68]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 58860 180900 ) N ;
+- mag_im[69] + NET mag_im[69]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 59120 180900 ) N ;
+- mag_im[70] + NET mag_im[70]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 59380 180900 ) N ;
+- mag_im[71] + NET mag_im[71]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 59640 180900 ) N ;
+- mag_im[72] + NET mag_im[72]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 60860 180900 ) N ;
+- mag_im[73] + NET mag_im[73]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 61120 180900 ) N ;
+- mag_im[74] + NET mag_im[74]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 61380 180900 ) N ;
+- mag_im[75] + NET mag_im[75]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 61640 180900 ) N ;
+- mag_im[76] + NET mag_im[76]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 62860 180900 ) N ;
+- mag_im[77] + NET mag_im[77]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 63120 180900 ) N ;
+- mag_im[78] + NET mag_im[78]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 63380 180900 ) N ;
+- mag_im[79] + NET mag_im[79]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 63640 180900 ) N ;
+- mag_im[80] + NET mag_im[80]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 64860 180900 ) N ;
+- mag_im[81] + NET mag_im[81]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 65120 180900 ) N ;
+- mag_im[82] + NET mag_im[82]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 65380 180900 ) N ;
+- mag_im[83] + NET mag_im[83]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 65640 180900 ) N ;
+- mag_im[84] + NET mag_im[84]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 66860 180900 ) N ;
+- mag_im[85] + NET mag_im[85]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 67120 180900 ) N ;
+- mag_im[86] + NET mag_im[86]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 67380 180900 ) N ;
+- mag_im[87] + NET mag_im[87]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 67640 180900 ) N ;
+- mag_im[88] + NET mag_im[88]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 68860 180900 ) N ;
+- mag_im[89] + NET mag_im[89]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 69120 180900 ) N ;
+- mag_im[90] + NET mag_im[90]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 69380 180900 ) N ;
+- mag_im[91] + NET mag_im[91]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 69640 180900 ) N ;
+- mag_im[92] + NET mag_im[92]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 70860 180900 ) N ;
+- mag_im[93] + NET mag_im[93]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 71120 180900 ) N ;
+- mag_im[94] + NET mag_im[94]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 71380 180900 ) N ;
+- mag_im[95] + NET mag_im[95]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 71640 180900 ) N ;
+- mag_im[96] + NET mag_im[96]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 85120 180900 ) N ;
+- mag_im[97] + NET mag_im[97]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 85380 180900 ) N ;
+- mag_im[98] + NET mag_im[98]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 85640 180900 ) N ;
+- mag_im[99] + NET mag_im[99]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 85900 180900 ) N ;
+- mag_im[100] + NET mag_im[100]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 87120 180900 ) N ;
+- mag_im[101] + NET mag_im[101]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 87380 180900 ) N ;
+- mag_im[102] + NET mag_im[102]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 87640 180900 ) N ;
+- mag_im[103] + NET mag_im[103]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 87900 180900 ) N ;
+- mag_im[104] + NET mag_im[104]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 89120 180900 ) N ;
+- mag_im[105] + NET mag_im[105]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 89380 180900 ) N ;
+- mag_im[106] + NET mag_im[106]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 89640 180900 ) N ;
+- mag_im[107] + NET mag_im[107]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 89900 180900 ) N ;
+- mag_im[108] + NET mag_im[108]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 91120 180900 ) N ;
+- mag_im[109] + NET mag_im[109]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 91380 180900 ) N ;
+- mag_im[110] + NET mag_im[110]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 91640 180900 ) N ;
+- mag_im[111] + NET mag_im[111]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 91900 180900 ) N ;
+- mag_im[112] + NET mag_im[112]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 93120 180900 ) N ;
+- mag_im[113] + NET mag_im[113]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 93380 180900 ) N ;
+- mag_im[114] + NET mag_im[114]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 93640 180900 ) N ;
+- mag_im[115] + NET mag_im[115]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 93900 180900 ) N ;
+- mag_im[116] + NET mag_im[116]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 95120 180900 ) N ;
+- mag_im[117] + NET mag_im[117]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 95380 180900 ) N ;
+- mag_im[118] + NET mag_im[118]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 95640 180900 ) N ;
+- mag_im[119] + NET mag_im[119]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 95900 180900 ) N ;
+- mag_im[120] + NET mag_im[120]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 97120 180900 ) N ;
+- mag_im[121] + NET mag_im[121]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 97380 180900 ) N ;
+- mag_im[122] + NET mag_im[122]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 97640 180900 ) N ;
+- mag_im[123] + NET mag_im[123]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 97900 180900 ) N ;
+- mag_im[124] + NET mag_im[124]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 99120 180900 ) N ;
+- mag_im[125] + NET mag_im[125]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 99380 180900 ) N ;
+- mag_im[126] + NET mag_im[126]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 99640 180900 ) N ;
+- mag_im[127] + NET mag_im[127]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 99900 180900 ) N ;
+- mag_im[128] + NET mag_im[128]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 107590 180900 ) N ;
+- mag_im[129] + NET mag_im[129]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 107850 180900 ) N ;
+- mag_im[130] + NET mag_im[130]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 108110 180900 ) N ;
+- mag_im[131] + NET mag_im[131]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 108370 180900 ) N ;
+- mag_im[132] + NET mag_im[132]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 109590 180900 ) N ;
+- mag_im[133] + NET mag_im[133]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 109850 180900 ) N ;
+- mag_im[134] + NET mag_im[134]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 110110 180900 ) N ;
+- mag_im[135] + NET mag_im[135]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 110370 180900 ) N ;
+- mag_im[136] + NET mag_im[136]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 111590 180900 ) N ;
+- mag_im[137] + NET mag_im[137]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 111850 180900 ) N ;
+- mag_im[138] + NET mag_im[138]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 112110 180900 ) N ;
+- mag_im[139] + NET mag_im[139]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 112370 180900 ) N ;
+- mag_im[140] + NET mag_im[140]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 113590 180900 ) N ;
+- mag_im[141] + NET mag_im[141]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 113850 180900 ) N ;
+- mag_im[142] + NET mag_im[142]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 114110 180900 ) N ;
+- mag_im[143] + NET mag_im[143]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 114370 180900 ) N ;
+- mag_im[144] + NET mag_im[144]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 115590 180900 ) N ;
+- mag_im[145] + NET mag_im[145]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 115850 180900 ) N ;
+- mag_im[146] + NET mag_im[146]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 116110 180900 ) N ;
+- mag_im[147] + NET mag_im[147]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 116370 180900 ) N ;
+- mag_im[148] + NET mag_im[148]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 117590 180900 ) N ;
+- mag_im[149] + NET mag_im[149]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 117850 180900 ) N ;
+- mag_im[150] + NET mag_im[150]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 118110 180900 ) N ;
+- mag_im[151] + NET mag_im[151]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 118370 180900 ) N ;
+- mag_im[152] + NET mag_im[152]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 119590 180900 ) N ;
+- mag_im[153] + NET mag_im[153]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 119850 180900 ) N ;
+- mag_im[154] + NET mag_im[154]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 120110 180900 ) N ;
+- mag_im[155] + NET mag_im[155]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 120370 180900 ) N ;
+- mag_im[156] + NET mag_im[156]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 121590 180900 ) N ;
+- mag_im[157] + NET mag_im[157]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 121850 180900 ) N ;
+- mag_im[158] + NET mag_im[158]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 122110 180900 ) N ;
+- mag_im[159] + NET mag_im[159]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 122370 180900 ) N ;
+- mag_im[160] + NET mag_im[160]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 135850 180900 ) N ;
+- mag_im[161] + NET mag_im[161]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 136110 180900 ) N ;
+- mag_im[162] + NET mag_im[162]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 136370 180900 ) N ;
+- mag_im[163] + NET mag_im[163]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 136630 180900 ) N ;
+- mag_im[164] + NET mag_im[164]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 137850 180900 ) N ;
+- mag_im[165] + NET mag_im[165]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 138110 180900 ) N ;
+- mag_im[166] + NET mag_im[166]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 138370 180900 ) N ;
+- mag_im[167] + NET mag_im[167]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 138630 180900 ) N ;
+- mag_im[168] + NET mag_im[168]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 139850 180900 ) N ;
+- mag_im[169] + NET mag_im[169]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 140110 180900 ) N ;
+- mag_im[170] + NET mag_im[170]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 140370 180900 ) N ;
+- mag_im[171] + NET mag_im[171]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 140630 180900 ) N ;
+- mag_im[172] + NET mag_im[172]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 141850 180900 ) N ;
+- mag_im[173] + NET mag_im[173]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 142110 180900 ) N ;
+- mag_im[174] + NET mag_im[174]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 142370 180900 ) N ;
+- mag_im[175] + NET mag_im[175]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 142630 180900 ) N ;
+- mag_im[176] + NET mag_im[176]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 143850 180900 ) N ;
+- mag_im[177] + NET mag_im[177]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 144110 180900 ) N ;
+- mag_im[178] + NET mag_im[178]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 144370 180900 ) N ;
+- mag_im[179] + NET mag_im[179]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 144630 180900 ) N ;
+- mag_im[180] + NET mag_im[180]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 145850 180900 ) N ;
+- mag_im[181] + NET mag_im[181]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 146110 180900 ) N ;
+- mag_im[182] + NET mag_im[182]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 146370 180900 ) N ;
+- mag_im[183] + NET mag_im[183]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 146630 180900 ) N ;
+- mag_im[184] + NET mag_im[184]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 147850 180900 ) N ;
+- mag_im[185] + NET mag_im[185]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 148110 180900 ) N ;
+- mag_im[186] + NET mag_im[186]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 148370 180900 ) N ;
+- mag_im[187] + NET mag_im[187]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 148630 180900 ) N ;
+- mag_im[188] + NET mag_im[188]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 149850 180900 ) N ;
+- mag_im[189] + NET mag_im[189]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 150110 180900 ) N ;
+- mag_im[190] + NET mag_im[190]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 150370 180900 ) N ;
+- mag_im[191] + NET mag_im[191]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 150630 180900 ) N ;
+- mag_im[192] + NET mag_im[192]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 158320 180900 ) N ;
+- mag_im[193] + NET mag_im[193]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 158580 180900 ) N ;
+- mag_im[194] + NET mag_im[194]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 158840 180900 ) N ;
+- mag_im[195] + NET mag_im[195]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 159100 180900 ) N ;
+- mag_im[196] + NET mag_im[196]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 160320 180900 ) N ;
+- mag_im[197] + NET mag_im[197]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 160580 180900 ) N ;
+- mag_im[198] + NET mag_im[198]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 160840 180900 ) N ;
+- mag_im[199] + NET mag_im[199]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 161100 180900 ) N ;
+- mag_im[200] + NET mag_im[200]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 162320 180900 ) N ;
+- mag_im[201] + NET mag_im[201]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 162580 180900 ) N ;
+- mag_im[202] + NET mag_im[202]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 162840 180900 ) N ;
+- mag_im[203] + NET mag_im[203]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 163100 180900 ) N ;
+- mag_im[204] + NET mag_im[204]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 164320 180900 ) N ;
+- mag_im[205] + NET mag_im[205]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 164580 180900 ) N ;
+- mag_im[206] + NET mag_im[206]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 164840 180900 ) N ;
+- mag_im[207] + NET mag_im[207]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 165100 180900 ) N ;
+- mag_im[208] + NET mag_im[208]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 166320 180900 ) N ;
+- mag_im[209] + NET mag_im[209]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 166580 180900 ) N ;
+- mag_im[210] + NET mag_im[210]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 166840 180900 ) N ;
+- mag_im[211] + NET mag_im[211]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 167100 180900 ) N ;
+- mag_im[212] + NET mag_im[212]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 168320 180900 ) N ;
+- mag_im[213] + NET mag_im[213]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 168580 180900 ) N ;
+- mag_im[214] + NET mag_im[214]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 168840 180900 ) N ;
+- mag_im[215] + NET mag_im[215]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 169100 180900 ) N ;
+- mag_im[216] + NET mag_im[216]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 170320 180900 ) N ;
+- mag_im[217] + NET mag_im[217]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 170580 180900 ) N ;
+- mag_im[218] + NET mag_im[218]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 170840 180900 ) N ;
+- mag_im[219] + NET mag_im[219]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 171100 180900 ) N ;
+- mag_im[220] + NET mag_im[220]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 172320 180900 ) N ;
+- mag_im[221] + NET mag_im[221]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 172580 180900 ) N ;
+- mag_im[222] + NET mag_im[222]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 172840 180900 ) N ;
+- mag_im[223] + NET mag_im[223]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 173100 180900 ) N ;
+- mag_im[224] + NET mag_im[224]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 186580 180900 ) N ;
+- mag_im[225] + NET mag_im[225]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 186840 180900 ) N ;
+- mag_im[226] + NET mag_im[226]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 187100 180900 ) N ;
+- mag_im[227] + NET mag_im[227]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 187360 180900 ) N ;
+- mag_im[228] + NET mag_im[228]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 188580 180900 ) N ;
+- mag_im[229] + NET mag_im[229]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 188840 180900 ) N ;
+- mag_im[230] + NET mag_im[230]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 189100 180900 ) N ;
+- mag_im[231] + NET mag_im[231]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 189360 180900 ) N ;
+- mag_im[232] + NET mag_im[232]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 190580 180900 ) N ;
+- mag_im[233] + NET mag_im[233]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 190840 180900 ) N ;
+- mag_im[234] + NET mag_im[234]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 191100 180900 ) N ;
+- mag_im[235] + NET mag_im[235]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 191360 180900 ) N ;
+- mag_im[236] + NET mag_im[236]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 192580 180900 ) N ;
+- mag_im[237] + NET mag_im[237]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 192840 180900 ) N ;
+- mag_im[238] + NET mag_im[238]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 193100 180900 ) N ;
+- mag_im[239] + NET mag_im[239]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 193360 180900 ) N ;
+- mag_im[240] + NET mag_im[240]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 194580 180900 ) N ;
+- mag_im[241] + NET mag_im[241]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 194840 180900 ) N ;
+- mag_im[242] + NET mag_im[242]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 195100 180900 ) N ;
+- mag_im[243] + NET mag_im[243]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 195360 180900 ) N ;
+- mag_im[244] + NET mag_im[244]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 196580 180900 ) N ;
+- mag_im[245] + NET mag_im[245]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 196840 180900 ) N ;
+- mag_im[246] + NET mag_im[246]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 197100 180900 ) N ;
+- mag_im[247] + NET mag_im[247]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 197360 180900 ) N ;
+- mag_im[248] + NET mag_im[248]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 198580 180900 ) N ;
+- mag_im[249] + NET mag_im[249]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 198840 180900 ) N ;
+- mag_im[250] + NET mag_im[250]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 199100 180900 ) N ;
+- mag_im[251] + NET mag_im[251]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 199360 180900 ) N ;
+- mag_im[252] + NET mag_im[252]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 200580 180900 ) N ;
+- mag_im[253] + NET mag_im[253]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 200840 180900 ) N ;
+- mag_im[254] + NET mag_im[254]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 201100 180900 ) N ;
+- mag_re[255] + NET mag_re[255]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 201230 180900 ) N ;
+- mag_re[0] + NET mag_re[0]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 6000 180900 ) N ;
+- mag_re[1] + NET mag_re[1]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 6260 180900 ) N ;
+- mag_re[2] + NET mag_re[2]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 6520 180900 ) N ;
+- mag_re[3] + NET mag_re[3]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 6780 180900 ) N ;
+- mag_re[4] + NET mag_re[4]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 8000 180900 ) N ;
+- mag_re[5] + NET mag_re[5]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 8260 180900 ) N ;
+- mag_re[6] + NET mag_re[6]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 8520 180900 ) N ;
+- mag_re[7] + NET mag_re[7]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 8780 180900 ) N ;
+- mag_re[8] + NET mag_re[8]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 10000 180900 ) N ;
+- mag_re[9] + NET mag_re[9]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 10260 180900 ) N ;
+- mag_re[10] + NET mag_re[10]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 10520 180900 ) N ;
+- mag_re[11] + NET mag_re[11]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 10780 180900 ) N ;
+- mag_re[12] + NET mag_re[12]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 12000 180900 ) N ;
+- mag_re[13] + NET mag_re[13]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 12260 180900 ) N ;
+- mag_re[14] + NET mag_re[14]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 12520 180900 ) N ;
+- mag_re[15] + NET mag_re[15]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 12780 180900 ) N ;
+- mag_re[16] + NET mag_re[16]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 14000 180900 ) N ;
+- mag_re[17] + NET mag_re[17]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 14260 180900 ) N ;
+- mag_re[18] + NET mag_re[18]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 14520 180900 ) N ;
+- mag_re[19] + NET mag_re[19]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 14780 180900 ) N ;
+- mag_re[20] + NET mag_re[20]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 16000 180900 ) N ;
+- mag_re[21] + NET mag_re[21]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 16260 180900 ) N ;
+- mag_re[22] + NET mag_re[22]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 16520 180900 ) N ;
+- mag_re[23] + NET mag_re[23]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 16780 180900 ) N ;
+- mag_re[24] + NET mag_re[24]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 18000 180900 ) N ;
+- mag_re[25] + NET mag_re[25]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 18260 180900 ) N ;
+- mag_re[26] + NET mag_re[26]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 18520 180900 ) N ;
+- mag_re[27] + NET mag_re[27]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 18780 180900 ) N ;
+- mag_re[28] + NET mag_re[28]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 20000 180900 ) N ;
+- mag_re[29] + NET mag_re[29]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 20260 180900 ) N ;
+- mag_re[30] + NET mag_re[30]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 20520 180900 ) N ;
+- mag_re[31] + NET mag_re[31]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 20780 180900 ) N ;
+- mag_re[32] + NET mag_re[32]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 34260 180900 ) N ;
+- mag_re[33] + NET mag_re[33]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 34520 180900 ) N ;
+- mag_re[34] + NET mag_re[34]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 34780 180900 ) N ;
+- mag_re[35] + NET mag_re[35]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 35040 180900 ) N ;
+- mag_re[36] + NET mag_re[36]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 36260 180900 ) N ;
+- mag_re[37] + NET mag_re[37]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 36520 180900 ) N ;
+- mag_re[38] + NET mag_re[38]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 36780 180900 ) N ;
+- mag_re[39] + NET mag_re[39]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 37040 180900 ) N ;
+- mag_re[40] + NET mag_re[40]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 38260 180900 ) N ;
+- mag_re[41] + NET mag_re[41]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 38520 180900 ) N ;
+- mag_re[42] + NET mag_re[42]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 38780 180900 ) N ;
+- mag_re[43] + NET mag_re[43]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 39040 180900 ) N ;
+- mag_re[44] + NET mag_re[44]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 40260 180900 ) N ;
+- mag_re[45] + NET mag_re[45]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 40520 180900 ) N ;
+- mag_re[46] + NET mag_re[46]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 40780 180900 ) N ;
+- mag_re[47] + NET mag_re[47]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 41040 180900 ) N ;
+- mag_re[48] + NET mag_re[48]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 42260 180900 ) N ;
+- mag_re[49] + NET mag_re[49]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 42520 180900 ) N ;
+- mag_re[50] + NET mag_re[50]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 42780 180900 ) N ;
+- mag_re[51] + NET mag_re[51]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 43040 180900 ) N ;
+- mag_re[52] + NET mag_re[52]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 44260 180900 ) N ;
+- mag_re[53] + NET mag_re[53]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 44520 180900 ) N ;
+- mag_re[54] + NET mag_re[54]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 44780 180900 ) N ;
+- mag_re[55] + NET mag_re[55]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 45040 180900 ) N ;
+- mag_re[56] + NET mag_re[56]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 46260 180900 ) N ;
+- mag_re[57] + NET mag_re[57]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 46520 180900 ) N ;
+- mag_re[58] + NET mag_re[58]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 46780 180900 ) N ;
+- mag_re[59] + NET mag_re[59]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 47040 180900 ) N ;
+- mag_re[60] + NET mag_re[60]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 48260 180900 ) N ;
+- mag_re[61] + NET mag_re[61]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 48520 180900 ) N ;
+- mag_re[62] + NET mag_re[62]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 48780 180900 ) N ;
+- mag_re[63] + NET mag_re[63]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 49040 180900 ) N ;
+- mag_re[64] + NET mag_re[64]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 56730 180900 ) N ;
+- mag_re[65] + NET mag_re[65]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 56990 180900 ) N ;
+- mag_re[66] + NET mag_re[66]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 57250 180900 ) N ;
+- mag_re[67] + NET mag_re[67]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 57510 180900 ) N ;
+- mag_re[68] + NET mag_re[68]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 58730 180900 ) N ;
+- mag_re[69] + NET mag_re[69]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 58990 180900 ) N ;
+- mag_re[70] + NET mag_re[70]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 59250 180900 ) N ;
+- mag_re[71] + NET mag_re[71]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 59510 180900 ) N ;
+- mag_re[72] + NET mag_re[72]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 60730 180900 ) N ;
+- mag_re[73] + NET mag_re[73]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 60990 180900 ) N ;
+- mag_re[74] + NET mag_re[74]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 61250 180900 ) N ;
+- mag_re[75] + NET mag_re[75]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 61510 180900 ) N ;
+- mag_re[76] + NET mag_re[76]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 62730 180900 ) N ;
+- mag_re[77] + NET mag_re[77]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 62990 180900 ) N ;
+- mag_re[78] + NET mag_re[78]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 63250 180900 ) N ;
+- mag_re[79] + NET mag_re[79]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 63510 180900 ) N ;
+- mag_re[80] + NET mag_re[80]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 64730 180900 ) N ;
+- mag_re[81] + NET mag_re[81]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 64990 180900 ) N ;
+- mag_re[82] + NET mag_re[82]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 65250 180900 ) N ;
+- mag_re[83] + NET mag_re[83]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 65510 180900 ) N ;
+- mag_re[84] + NET mag_re[84]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 66730 180900 ) N ;
+- mag_re[85] + NET mag_re[85]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 66990 180900 ) N ;
+- mag_re[86] + NET mag_re[86]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 67250 180900 ) N ;
+- mag_re[87] + NET mag_re[87]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 67510 180900 ) N ;
+- mag_re[88] + NET mag_re[88]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 68730 180900 ) N ;
+- mag_re[89] + NET mag_re[89]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 68990 180900 ) N ;
+- mag_re[90] + NET mag_re[90]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 69250 180900 ) N ;
+- mag_re[91] + NET mag_re[91]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 69510 180900 ) N ;
+- mag_re[92] + NET mag_re[92]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 70730 180900 ) N ;
+- mag_re[93] + NET mag_re[93]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 70990 180900 ) N ;
+- mag_re[94] + NET mag_re[94]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 71250 180900 ) N ;
+- mag_re[95] + NET mag_re[95]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 71510 180900 ) N ;
+- mag_re[96] + NET mag_re[96]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 84990 180900 ) N ;
+- mag_re[97] + NET mag_re[97]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 85250 180900 ) N ;
+- mag_re[98] + NET mag_re[98]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 85510 180900 ) N ;
+- mag_re[99] + NET mag_re[99]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 85770 180900 ) N ;
+- mag_re[100] + NET mag_re[100]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 86990 180905 ) N ;
+- mag_re[101] + NET mag_re[101]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 87250 180900 ) N ;
+- mag_re[102] + NET mag_re[102]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 87515 180900 ) N ;
+- mag_re[103] + NET mag_re[103]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 87770 180900 ) N ;
+- mag_re[104] + NET mag_re[104]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 88990 180900 ) N ;
+- mag_re[105] + NET mag_re[105]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 89250 180900 ) N ;
+- mag_re[106] + NET mag_re[106]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 89510 180900 ) N ;
+- mag_re[107] + NET mag_re[107]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 89770 180900 ) N ;
+- mag_re[108] + NET mag_re[108]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 90990 180900 ) N ;
+- mag_re[109] + NET mag_re[109]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 91250 180900 ) N ;
+- mag_re[110] + NET mag_re[110]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 91510 180900 ) N ;
+- mag_re[111] + NET mag_re[111]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 91770 180900 ) N ;
+- mag_re[112] + NET mag_re[112]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 92990 180900 ) N ;
+- mag_re[113] + NET mag_re[113]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 93250 180900 ) N ;
+- mag_re[114] + NET mag_re[114]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 93510 180900 ) N ;
+- mag_re[115] + NET mag_re[115]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 93770 180900 ) N ;
+- mag_re[116] + NET mag_re[116]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 94990 180900 ) N ;
+- mag_re[117] + NET mag_re[117]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 95250 180900 ) N ;
+- mag_re[118] + NET mag_re[118]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 95510 180900 ) N ;
+- mag_re[119] + NET mag_re[119]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 95770 180900 ) N ;
+- mag_re[120] + NET mag_re[120]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 96990 180900 ) N ;
+- mag_re[121] + NET mag_re[121]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 97250 180900 ) N ;
+- mag_re[122] + NET mag_re[122]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 97510 180900 ) N ;
+- mag_re[123] + NET mag_re[123]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 97770 180900 ) N ;
+- mag_re[124] + NET mag_re[124]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 98990 180900 ) N ;
+- mag_re[125] + NET mag_re[125]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 99250 180900 ) N ;
+- mag_re[126] + NET mag_re[126]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 99510 180900 ) N ;
+- mag_re[127] + NET mag_re[127]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 99770 180900 ) N ;
+- sign_im + NET sign_im
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 103265 180900 ) N ;
+- clk + NET clk
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 50 50 )
+    + PLACED ( 102020 180900 ) N ;
+- In1_re[10] + NET In1_re[10]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 48 30 )
+    + PLACED ( 70681 10 ) N ;
+- In1_re[11] + NET In1_re[11]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 48 30 )
+    + PLACED ( 58681 10 ) N ;
+- In1_re[12] + NET In1_re[12]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 48 30 )
+    + PLACED ( 46681 10 ) N ;
+- In1_re[9] + NET In1_re[9]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 48 30 )
+    + PLACED ( 82681 10 ) N ;
+- In1_re[2] + NET In1_re[2]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 48 30 )
+    + PLACED ( 166681 10 ) N ;
+- In1_re[4] + NET In1_re[4]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 48 30 )
+    + PLACED ( 142681 10 ) N ;
+- In1_re[6] + NET In1_re[6]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 48 30 )
+    + PLACED ( 118681 10 ) N ;
+- In1_re[1] + NET In1_re[1]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 48 30 )
+    + PLACED ( 178681 10 ) N ;
+- In1_im[15] + NET In1_im[15]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 48 30 )
+    + PLACED ( 16681 25 ) N ;
+- In1_im[13] + NET In1_im[13]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 48 30 )
+    + PLACED ( 40681 25 ) N ;
+- In1_im[8] + NET In1_im[8]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 48 30 )
+    + PLACED ( 100681 25 ) N ;
+- In1_im[6] + NET In1_im[6]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 48 30 )
+    + PLACED ( 124681 25 ) N ;
+- In1_im[5] + NET In1_im[5]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 48 30 )
+    + PLACED ( 136681 25 ) N ;
+- In1_im[10] + NET In1_im[10]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 48 30 )
+    + PLACED ( 76681 25 ) N ;
+- In1_im[4] + NET In1_im[4]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 48 30 )
+    + PLACED ( 148681 25 ) N ;
+- In1_im[11] + NET In1_im[11]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 48 30 )
+    + PLACED ( 64681 25 ) N ;
+- In1_re[13] + NET In1_re[13]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 48 30 )
+    + PLACED ( 34681 10 ) N ;
+- In1_re[14] + NET In1_re[14]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 48 30 )
+    + PLACED ( 22681 10 ) N ;
+- In1_re[15] + NET In1_re[15]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 48 30 )
+    + PLACED ( 10681 10 ) N ;
+- In1_re[8] + NET In1_re[8]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 48 30 )
+    + PLACED ( 94681 10 ) N ;
+- In1_re[3] + NET In1_re[3]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 48 30 )
+    + PLACED ( 154681 10 ) N ;
+- In1_re[5] + NET In1_re[5]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 48 30 )
+    + PLACED ( 130681 10 ) N ;
+- In1_re[7] + NET In1_re[7]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 48 30 )
+    + PLACED ( 106681 10 ) N ;
+- In1_re[0] + NET In1_re[0]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 48 30 )
+    + PLACED ( 190681 10 ) N ;
+- enb_1_8_0 + NET enb_1_8_0
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 48 30 )
+    + PLACED ( 3976 10 ) N ;
+- In1_im[1] + NET In1_im[1]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 48 30 )
+    + PLACED ( 184681 25 ) N ;
+- In1_im[2] + NET In1_im[2]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M5 ( 0 0 ) ( 48 30 )
+    + PLACED ( 172681 25 ) N ;
+END PINS
+
+NETS 549 ;
+- In1_im[3]
+  ( PIN In1_im[3] ) ;
+- In1_im[0]
+  ( PIN In1_im[0] ) ;
+- rst_n
+  ( PIN rst_n ) ;
+- In1_im[12]
+  ( PIN In1_im[12] ) ;
+- In1_im[7]
+  ( PIN In1_im[7] ) ;
+- In1_im[14]
+  ( PIN In1_im[14] ) ;
+- In1_im[9]
+  ( PIN In1_im[9] ) ;
+- mag_im[161]
+  ( PIN mag_im[161] )
+  + ROUTED M5 ( 136135 184275 0 ) ( * 180925 0 ) ;
+- mag_im[162]
+  ( PIN mag_im[162] )
+  + ROUTED M5 ( 136395 184275 0 ) ( * 180925 0 ) ;
+- mag_im[163]
+  ( PIN mag_im[163] )
+  + ROUTED M5 ( 136655 184275 0 ) ( * 180925 0 ) ;
+- mag_im[164]
+  ( PIN mag_im[164] )
+  + ROUTED M5 ( 137875 184275 0 ) ( * 180925 0 ) ;
+- mag_im[165]
+  ( PIN mag_im[165] )
+  + ROUTED M5 ( 138135 184275 0 ) ( * 180925 0 ) ;
+- mag_im[166]
+  ( PIN mag_im[166] )
+  + ROUTED M5 ( 138395 184275 0 ) ( * 180925 0 ) ;
+- mag_im[167]
+  ( PIN mag_im[167] )
+  + ROUTED M5 ( 138655 184275 0 ) ( * 180925 0 ) ;
+- mag_im[168]
+  ( PIN mag_im[168] )
+  + ROUTED M5 ( 139875 184275 0 ) ( * 180925 0 ) ;
+- mag_im[169]
+  ( PIN mag_im[169] )
+  + ROUTED M5 ( 140135 184275 0 ) ( * 180925 0 ) ;
+- mag_im[170]
+  ( PIN mag_im[170] )
+  + ROUTED M5 ( 140395 184275 0 ) ( * 180925 0 ) ;
+- mag_im[171]
+  ( PIN mag_im[171] )
+  + ROUTED M5 ( 140655 184275 0 ) ( * 180925 0 ) ;
+- mag_im[172]
+  ( PIN mag_im[172] )
+  + ROUTED M5 ( 141875 184275 0 ) ( * 180925 0 ) ;
+- mag_im[173]
+  ( PIN mag_im[173] )
+  + ROUTED M5 ( 142135 184275 0 ) ( * 180925 0 ) ;
+- mag_im[174]
+  ( PIN mag_im[174] )
+  + ROUTED M5 ( 142395 184275 0 ) ( * 180925 0 ) ;
+- mag_im[175]
+  ( PIN mag_im[175] )
+  + ROUTED M5 ( 142655 184275 0 ) ( * 180925 0 ) ;
+- mag_im[176]
+  ( PIN mag_im[176] )
+  + ROUTED M5 ( 143875 184275 0 ) ( * 180925 0 ) ;
+- mag_im[177]
+  ( PIN mag_im[177] )
+  + ROUTED M5 ( 144135 184275 0 ) ( * 180925 0 ) ;
+- mag_im[178]
+  ( PIN mag_im[178] )
+  + ROUTED M5 ( 144395 184275 0 ) ( * 180925 0 ) ;
+- mag_im[179]
+  ( PIN mag_im[179] )
+  + ROUTED M5 ( 144655 184275 0 ) ( * 180925 0 ) ;
+- mag_im[180]
+  ( PIN mag_im[180] )
+  + ROUTED M5 ( 145875 184275 0 ) ( * 180925 0 ) ;
+- mag_im[181]
+  ( PIN mag_im[181] )
+  + ROUTED M5 ( 146135 184275 0 ) ( * 180925 0 ) ;
+- mag_im[182]
+  ( PIN mag_im[182] )
+  + ROUTED M5 ( 146395 184275 0 ) ( * 180925 0 ) ;
+- mag_im[183]
+  ( PIN mag_im[183] )
+  + ROUTED M5 ( 146655 184275 0 ) ( * 180925 0 ) ;
+- mag_im[184]
+  ( PIN mag_im[184] )
+  + ROUTED M5 ( 147875 184275 0 ) ( * 180925 0 ) ;
+- mag_im[185]
+  ( PIN mag_im[185] )
+  + ROUTED M5 ( 148135 184275 0 ) ( * 180925 0 ) ;
+- mag_im[186]
+  ( PIN mag_im[186] )
+  + ROUTED M5 ( 148395 184275 0 ) ( * 180925 0 ) ;
+- mag_im[187]
+  ( PIN mag_im[187] )
+  + ROUTED M5 ( 148655 184275 0 ) ( * 180925 0 ) ;
+- mag_im[188]
+  ( PIN mag_im[188] )
+  + ROUTED M5 ( 149875 184275 0 ) ( * 180925 0 ) ;
+- mag_im[189]
+  ( PIN mag_im[189] )
+  + ROUTED M5 ( 150135 184275 0 ) ( * 180925 0 ) ;
+- mag_im[190]
+  ( PIN mag_im[190] )
+  + ROUTED M5 ( 150395 184275 0 ) ( * 180925 0 ) ;
+- mag_im[191]
+  ( PIN mag_im[191] )
+  + ROUTED M5 ( 150655 184275 0 ) ( * 180925 0 ) ;
+- mag_im[192]
+  ( PIN mag_im[192] )
+  + ROUTED M5 ( 158345 184275 0 ) ( * 180925 0 ) ;
+- mag_im[193]
+  ( PIN mag_im[193] )
+  + ROUTED M5 ( 158605 184275 0 ) ( * 180925 0 ) ;
+- mag_im[194]
+  ( PIN mag_im[194] )
+  + ROUTED M5 ( 158865 184275 0 ) ( * 180925 0 ) ;
+- mag_im[195]
+  ( PIN mag_im[195] )
+  + ROUTED M5 ( 159125 184275 0 ) ( * 180925 0 ) ;
+- mag_im[196]
+  ( PIN mag_im[196] )
+  + ROUTED M5 ( 160345 184275 0 ) ( * 180925 0 ) ;
+- mag_im[197]
+  ( PIN mag_im[197] )
+  + ROUTED M5 ( 160605 184275 0 ) ( * 180925 0 ) ;
+- mag_im[198]
+  ( PIN mag_im[198] )
+  + ROUTED M5 ( 160865 184275 0 ) ( * 180925 0 ) ;
+- mag_im[199]
+  ( PIN mag_im[199] )
+  + ROUTED M5 ( 161125 184275 0 ) ( * 180925 0 ) ;
+- mag_im[200]
+  ( PIN mag_im[200] )
+  + ROUTED M5 ( 162345 184275 0 ) ( * 180925 0 ) ;
+- mag_im[201]
+  ( PIN mag_im[201] )
+  + ROUTED M5 ( 162605 184275 0 ) ( * 180925 0 ) ;
+- mag_im[202]
+  ( PIN mag_im[202] )
+  + ROUTED M5 ( 162865 184275 0 ) ( * 180925 0 ) ;
+- mag_im[203]
+  ( PIN mag_im[203] )
+  + ROUTED M5 ( 163125 184275 0 ) ( * 180925 0 ) ;
+- mag_im[204]
+  ( PIN mag_im[204] )
+  + ROUTED M5 ( 164345 184275 0 ) ( * 180925 0 ) ;
+- mag_im[205]
+  ( PIN mag_im[205] )
+  + ROUTED M5 ( 164605 184275 0 ) ( * 180925 0 ) ;
+- mag_im[206]
+  ( PIN mag_im[206] )
+  + ROUTED M5 ( 164865 184275 0 ) ( * 180925 0 ) ;
+- mag_im[207]
+  ( PIN mag_im[207] )
+  + ROUTED M5 ( 165125 184275 0 ) ( * 180925 0 ) ;
+- mag_im[208]
+  ( PIN mag_im[208] )
+  + ROUTED M5 ( 166345 184275 0 ) ( * 180925 0 ) ;
+- mag_im[209]
+  ( PIN mag_im[209] )
+  + ROUTED M5 ( 166605 184275 0 ) ( * 180925 0 ) ;
+- mag_im[210]
+  ( PIN mag_im[210] )
+  + ROUTED M5 ( 166865 184275 0 ) ( * 180925 0 ) ;
+- mag_im[211]
+  ( PIN mag_im[211] )
+  + ROUTED M5 ( 167125 184275 0 ) ( * 180925 0 ) ;
+- mag_im[212]
+  ( PIN mag_im[212] )
+  + ROUTED M5 ( 168345 184275 0 ) ( * 180925 0 ) ;
+- mag_im[213]
+  ( PIN mag_im[213] )
+  + ROUTED M5 ( 168605 184275 0 ) ( * 180925 0 ) ;
+- mag_im[214]
+  ( PIN mag_im[214] )
+  + ROUTED M5 ( 168865 184275 0 ) ( * 180925 0 ) ;
+- mag_im[215]
+  ( PIN mag_im[215] )
+  + ROUTED M5 ( 169125 184275 0 ) ( * 180925 0 ) ;
+- mag_im[216]
+  ( PIN mag_im[216] )
+  + ROUTED M5 ( 170345 184275 0 ) ( * 180925 0 ) ;
+- mag_im[217]
+  ( PIN mag_im[217] )
+  + ROUTED M5 ( 170605 184275 0 ) ( * 180925 0 ) ;
+- mag_im[218]
+  ( PIN mag_im[218] )
+  + ROUTED M5 ( 170865 184275 0 ) ( * 180925 0 ) ;
+- mag_im[219]
+  ( PIN mag_im[219] )
+  + ROUTED M5 ( 171125 184275 0 ) ( * 180925 0 ) ;
+- mag_im[220]
+  ( PIN mag_im[220] )
+  + ROUTED M5 ( 172345 184275 0 ) ( * 180925 0 ) ;
+- mag_im[221]
+  ( PIN mag_im[221] )
+  + ROUTED M5 ( 172605 184275 0 ) ( * 180925 0 ) ;
+- mag_im[222]
+  ( PIN mag_im[222] )
+  + ROUTED M5 ( 172865 184275 0 ) ( * 180925 0 ) ;
+- mag_im[223]
+  ( PIN mag_im[223] )
+  + ROUTED M5 ( 173125 184275 0 ) ( * 180925 0 ) ;
+- mag_im[224]
+  ( PIN mag_im[224] )
+  + ROUTED M5 ( 186605 184275 0 ) ( * 180925 0 ) ;
+- mag_im[225]
+  ( PIN mag_im[225] )
+  + ROUTED M5 ( 186865 184275 0 ) ( * 180925 0 ) ;
+- mag_im[226]
+  ( PIN mag_im[226] )
+  + ROUTED M5 ( 187125 184275 0 ) ( * 180925 0 ) ;
+- mag_im[227]
+  ( PIN mag_im[227] )
+  + ROUTED M5 ( 187385 184275 0 ) ( * 180925 0 ) ;
+- mag_im[228]
+  ( PIN mag_im[228] )
+  + ROUTED M5 ( 188605 184275 0 ) ( * 180925 0 ) ;
+- mag_im[229]
+  ( PIN mag_im[229] )
+  + ROUTED M5 ( 188865 184275 0 ) ( * 180925 0 ) ;
+- mag_im[230]
+  ( PIN mag_im[230] )
+  + ROUTED M5 ( 189125 184275 0 ) ( * 180925 0 ) ;
+- mag_im[231]
+  ( PIN mag_im[231] )
+  + ROUTED M5 ( 189385 184275 0 ) ( * 180925 0 ) ;
+- mag_im[232]
+  ( PIN mag_im[232] )
+  + ROUTED M5 ( 190605 184275 0 ) ( * 180925 0 ) ;
+- mag_im[233]
+  ( PIN mag_im[233] )
+  + ROUTED M5 ( 190865 184275 0 ) ( * 180925 0 ) ;
+- mag_im[234]
+  ( PIN mag_im[234] )
+  + ROUTED M5 ( 191125 184275 0 ) ( * 180925 0 ) ;
+- mag_im[235]
+  ( PIN mag_im[235] )
+  + ROUTED M5 ( 191385 184275 0 ) ( * 180925 0 ) ;
+- mag_im[236]
+  ( PIN mag_im[236] )
+  + ROUTED M5 ( 192605 184275 0 ) ( * 180925 0 ) ;
+- mag_im[237]
+  ( PIN mag_im[237] )
+  + ROUTED M5 ( 192865 184275 0 ) ( * 180925 0 ) ;
+- mag_im[238]
+  ( PIN mag_im[238] )
+  + ROUTED M5 ( 193125 184275 0 ) ( * 180925 0 ) ;
+- mag_im[239]
+  ( PIN mag_im[239] )
+  + ROUTED M5 ( 193385 184275 0 ) ( * 180925 0 ) ;
+- mag_im[240]
+  ( PIN mag_im[240] )
+  + ROUTED M5 ( 194605 184275 0 ) ( * 180925 0 ) ;
+- mag_im[241]
+  ( PIN mag_im[241] )
+  + ROUTED M5 ( 194865 184275 0 ) ( * 180925 0 ) ;
+- mag_im[242]
+  ( PIN mag_im[242] )
+  + ROUTED M5 ( 195125 184275 0 ) ( * 180925 0 ) ;
+- mag_im[243]
+  ( PIN mag_im[243] )
+  + ROUTED M5 ( 195385 184275 0 ) ( * 180925 0 ) ;
+- mag_im[244]
+  ( PIN mag_im[244] )
+  + ROUTED M5 ( 196605 184275 0 ) ( * 180925 0 ) ;
+- mag_im[245]
+  ( PIN mag_im[245] )
+  + ROUTED M5 ( 196865 184275 0 ) ( * 180925 0 ) ;
+- mag_im[246]
+  ( PIN mag_im[246] )
+  + ROUTED M5 ( 197125 184275 0 ) ( * 180925 0 ) ;
+- mag_im[247]
+  ( PIN mag_im[247] )
+  + ROUTED M5 ( 197385 184275 0 ) ( * 180925 0 ) ;
+- mag_im[248]
+  ( PIN mag_im[248] )
+  + ROUTED M5 ( 198605 184275 0 ) ( * 180925 0 ) ;
+- mag_im[249]
+  ( PIN mag_im[249] )
+  + ROUTED M5 ( 198865 184275 0 ) ( * 180925 0 ) ;
+- mag_im[250]
+  ( PIN mag_im[250] )
+  + ROUTED M5 ( 199125 184275 0 ) ( * 180925 0 ) ;
+- mag_im[251]
+  ( PIN mag_im[251] )
+  + ROUTED M5 ( 199385 184275 0 ) ( * 180925 0 ) ;
+- mag_im[252]
+  ( PIN mag_im[252] )
+  + ROUTED M5 ( 200605 184275 0 ) ( * 180925 0 ) ;
+- mag_im[253]
+  ( PIN mag_im[253] )
+  + ROUTED M5 ( 200865 184275 0 ) ( * 180925 0 ) ;
+- mag_im[254]
+  ( PIN mag_im[254] )
+  + ROUTED M5 ( 201125 184275 0 ) ( * 180925 0 ) ;
+- mag_im[255]
+  ( PIN mag_im[255] )
+  + ROUTED M5 ( 201385 184275 0 ) ( * 180925 0 ) ;
+- mag_im[128]
+  ( PIN mag_im[128] )
+  + ROUTED M5 ( 107615 184275 0 ) ( * 180925 0 ) ;
+- mag_im[129]
+  ( PIN mag_im[129] )
+  + ROUTED M5 ( 107875 184275 0 ) ( * 180925 0 ) ;
+- mag_im[130]
+  ( PIN mag_im[130] )
+  + ROUTED M5 ( 108135 184275 0 ) ( * 180925 0 ) ;
+- mag_im[131]
+  ( PIN mag_im[131] )
+  + ROUTED M5 ( 108395 184275 0 ) ( * 180925 0 ) ;
+- mag_im[132]
+  ( PIN mag_im[132] )
+  + ROUTED M5 ( 109615 184275 0 ) ( * 180925 0 ) ;
+- mag_im[133]
+  ( PIN mag_im[133] )
+  + ROUTED M5 ( 109875 184275 0 ) ( * 180925 0 ) ;
+- mag_im[134]
+  ( PIN mag_im[134] )
+  + ROUTED M5 ( 110135 184275 0 ) ( * 180925 0 ) ;
+- mag_im[135]
+  ( PIN mag_im[135] )
+  + ROUTED M5 ( 110395 184275 0 ) ( * 180925 0 ) ;
+- mag_im[136]
+  ( PIN mag_im[136] )
+  + ROUTED M5 ( 111615 184275 0 ) ( * 180925 0 ) ;
+- mag_im[137]
+  ( PIN mag_im[137] )
+  + ROUTED M5 ( 111875 184275 0 ) ( * 180925 0 ) ;
+- mag_im[138]
+  ( PIN mag_im[138] )
+  + ROUTED M5 ( 112135 184275 0 ) ( * 180925 0 ) ;
+- mag_im[139]
+  ( PIN mag_im[139] )
+  + ROUTED M5 ( 112395 184275 0 ) ( * 180925 0 ) ;
+- mag_im[140]
+  ( PIN mag_im[140] )
+  + ROUTED M5 ( 113615 184275 0 ) ( * 180925 0 ) ;
+- mag_im[141]
+  ( PIN mag_im[141] )
+  + ROUTED M5 ( 113875 184275 0 ) ( * 180925 0 ) ;
+- mag_im[142]
+  ( PIN mag_im[142] )
+  + ROUTED M5 ( 114135 184275 0 ) ( * 180925 0 ) ;
+- mag_im[143]
+  ( PIN mag_im[143] )
+  + ROUTED M5 ( 114395 184275 0 ) ( * 180925 0 ) ;
+- mag_im[144]
+  ( PIN mag_im[144] )
+  + ROUTED M5 ( 115615 184275 0 ) ( * 180925 0 ) ;
+- mag_im[145]
+  ( PIN mag_im[145] )
+  + ROUTED M5 ( 115875 184275 0 ) ( * 180925 0 ) ;
+- mag_im[146]
+  ( PIN mag_im[146] )
+  + ROUTED M5 ( 116135 184275 0 ) ( * 180925 0 ) ;
+- mag_im[147]
+  ( PIN mag_im[147] )
+  + ROUTED M5 ( 116395 184275 0 ) ( * 180925 0 ) ;
+- mag_im[148]
+  ( PIN mag_im[148] )
+  + ROUTED M5 ( 117615 184275 0 ) ( * 180925 0 ) ;
+- mag_im[149]
+  ( PIN mag_im[149] )
+  + ROUTED M5 ( 117875 184275 0 ) ( * 180925 0 ) ;
+- mag_im[150]
+  ( PIN mag_im[150] )
+  + ROUTED M5 ( 118135 184275 0 ) ( * 180925 0 ) ;
+- mag_im[151]
+  ( PIN mag_im[151] )
+  + ROUTED M5 ( 118395 184275 0 ) ( * 180925 0 ) ;
+- mag_im[152]
+  ( PIN mag_im[152] )
+  + ROUTED M5 ( 119615 184275 0 ) ( * 180925 0 ) ;
+- mag_im[153]
+  ( PIN mag_im[153] )
+  + ROUTED M5 ( 119875 184275 0 ) ( * 180925 0 ) ;
+- mag_im[154]
+  ( PIN mag_im[154] )
+  + ROUTED M5 ( 120135 184275 0 ) ( * 180925 0 ) ;
+- mag_im[155]
+  ( PIN mag_im[155] )
+  + ROUTED M5 ( 120395 184275 0 ) ( * 180925 0 ) ;
+- mag_im[156]
+  ( PIN mag_im[156] )
+  + ROUTED M5 ( 121615 184275 0 ) ( * 180925 0 ) ;
+- mag_im[157]
+  ( PIN mag_im[157] )
+  + ROUTED M5 ( 121875 184275 0 ) ( * 180925 0 ) ;
+- mag_im[158]
+  ( PIN mag_im[158] )
+  + ROUTED M5 ( 122135 184275 0 ) ( * 180925 0 ) ;
+- mag_im[159]
+  ( PIN mag_im[159] )
+  + ROUTED M5 ( 122395 184275 0 ) ( * 180925 0 ) ;
+- mag_im[160]
+  ( PIN mag_im[160] )
+  + ROUTED M5 ( 135875 184275 0 ) ( * 180925 0 ) ;
+- In1_im[2]
+  ( PIN In1_im[2] ) ;
+- In1_im[1]
+  ( PIN In1_im[1] ) ;
+- enb_1_8_0
+  ( PIN enb_1_8_0 ) ;
+- In1_re[0]
+  ( PIN In1_re[0] ) ;
+- In1_re[7]
+  ( PIN In1_re[7] ) ;
+- In1_re[5]
+  ( PIN In1_re[5] ) ;
+- In1_re[3]
+  ( PIN In1_re[3] ) ;
+- In1_re[8]
+  ( PIN In1_re[8] ) ;
+- In1_re[15]
+  ( PIN In1_re[15] ) ;
+- In1_re[14]
+  ( PIN In1_re[14] ) ;
+- In1_re[13]
+  ( PIN In1_re[13] ) ;
+- In1_im[11]
+  ( PIN In1_im[11] ) ;
+- In1_im[4]
+  ( PIN In1_im[4] ) ;
+- In1_im[10]
+  ( PIN In1_im[10] ) ;
+- In1_im[5]
+  ( PIN In1_im[5] ) ;
+- In1_im[6]
+  ( PIN In1_im[6] ) ;
+- In1_im[8]
+  ( PIN In1_im[8] ) ;
+- In1_im[13]
+  ( PIN In1_im[13] ) ;
+- In1_im[15]
+  ( PIN In1_im[15] ) ;
+- In1_re[1]
+  ( PIN In1_re[1] ) ;
+- In1_re[6]
+  ( PIN In1_re[6] ) ;
+- In1_re[4]
+  ( PIN In1_re[4] ) ;
+- In1_re[2]
+  ( PIN In1_re[2] ) ;
+- In1_re[9]
+  ( PIN In1_re[9] ) ;
+- In1_re[12]
+  ( PIN In1_re[12] ) ;
+- In1_re[11]
+  ( PIN In1_re[11] ) ;
+- In1_re[10]
+  ( PIN In1_re[10] ) ;
+- clk
+  ( PIN clk ) ;
+- sign_im
+  ( PIN sign_im ) ;
+- sign_re
+  ( PIN sign_re ) ;
+- mag_im[111]
+  ( PIN mag_im[111] )
+  + ROUTED M5 ( 91925 184275 0 ) ( * 180925 0 ) ;
+- mag_im[112]
+  ( PIN mag_im[112] )
+  + ROUTED M5 ( 93145 184275 0 ) ( * 180925 0 ) ;
+- mag_im[113]
+  ( PIN mag_im[113] )
+  + ROUTED M5 ( 93405 184275 0 ) ( * 180925 0 ) ;
+- mag_im[114]
+  ( PIN mag_im[114] )
+  + ROUTED M5 ( 93665 184275 0 ) ( * 180925 0 ) ;
+- mag_im[115]
+  ( PIN mag_im[115] )
+  + ROUTED M5 ( 93925 184275 0 ) ( * 180925 0 ) ;
+- mag_im[116]
+  ( PIN mag_im[116] )
+  + ROUTED M5 ( 95145 184275 0 ) ( * 180925 0 ) ;
+- mag_im[117]
+  ( PIN mag_im[117] )
+  + ROUTED M5 ( 95405 184275 0 ) ( * 180925 0 ) ;
+- mag_im[118]
+  ( PIN mag_im[118] )
+  + ROUTED M5 ( 95665 184275 0 ) ( * 180925 0 ) ;
+- mag_im[119]
+  ( PIN mag_im[119] )
+  + ROUTED M5 ( 95925 184275 0 ) ( * 180925 0 ) ;
+- mag_im[120]
+  ( PIN mag_im[120] )
+  + ROUTED M5 ( 97145 184275 0 ) ( * 180925 0 ) ;
+- mag_im[121]
+  ( PIN mag_im[121] )
+  + ROUTED M5 ( 97405 184275 0 ) ( * 180925 0 ) ;
+- mag_im[122]
+  ( PIN mag_im[122] )
+  + ROUTED M5 ( 97665 184275 0 ) ( * 180925 0 ) ;
+- mag_im[123]
+  ( PIN mag_im[123] )
+  + ROUTED M5 ( 97925 184275 0 ) ( * 180925 0 ) ;
+- mag_im[124]
+  ( PIN mag_im[124] )
+  + ROUTED M5 ( 99145 184275 0 ) ( * 180925 0 ) ;
+- mag_im[125]
+  ( PIN mag_im[125] )
+  + ROUTED M5 ( 99405 184275 0 ) ( * 180925 0 ) ;
+- mag_im[126]
+  ( PIN mag_im[126] )
+  + ROUTED M5 ( 99665 184275 0 ) ( * 180925 0 ) ;
+- mag_im[127]
+  ( PIN mag_im[127] )
+  + ROUTED M5 ( 99925 184275 0 ) ( * 180925 0 ) ;
+- mag_im[9]
+  ( PIN mag_im[9] )
+  + ROUTED M5 ( 10415 184275 0 ) ( * 180925 0 ) ;
+- mag_im[10]
+  ( PIN mag_im[10] )
+  + ROUTED M5 ( 10675 184275 0 ) ( * 180925 0 ) ;
+- mag_im[11]
+  ( PIN mag_im[11] )
+  + ROUTED M5 ( 10935 184275 0 ) ( * 180925 0 ) ;
+- mag_im[12]
+  ( PIN mag_im[12] )
+  + ROUTED M5 ( 12155 184275 0 ) ( * 180925 0 ) ;
+- mag_im[13]
+  ( PIN mag_im[13] )
+  + ROUTED M5 ( 12415 184275 0 ) ( * 180925 0 ) ;
+- mag_im[14]
+  ( PIN mag_im[14] )
+  + ROUTED M5 ( 12675 184275 0 ) ( * 180925 0 ) ;
+- mag_im[15]
+  ( PIN mag_im[15] )
+  + ROUTED M5 ( 12935 184275 0 ) ( * 180925 0 ) ;
+- mag_im[16]
+  ( PIN mag_im[16] )
+  + ROUTED M5 ( 14155 184275 0 ) ( * 180925 0 ) ;
+- mag_im[17]
+  ( PIN mag_im[17] )
+  + ROUTED M5 ( 14415 184275 0 ) ( * 180925 0 ) ;
+- mag_im[18]
+  ( PIN mag_im[18] )
+  + ROUTED M5 ( 14675 184275 0 ) ( * 180925 0 ) ;
+- mag_im[19]
+  ( PIN mag_im[19] )
+  + ROUTED M5 ( 14935 184275 0 ) ( * 180925 0 ) ;
+- mag_im[20]
+  ( PIN mag_im[20] )
+  + ROUTED M5 ( 16155 184275 0 ) ( * 180925 0 ) ;
+- mag_im[21]
+  ( PIN mag_im[21] )
+  + ROUTED M5 ( 16415 184275 0 ) ( * 180925 0 ) ;
+- mag_im[22]
+  ( PIN mag_im[22] )
+  + ROUTED M5 ( 16675 184275 0 ) ( * 180925 0 ) ;
+- mag_im[23]
+  ( PIN mag_im[23] )
+  + ROUTED M5 ( 16935 184275 0 ) ( * 180925 0 ) ;
+- mag_im[24]
+  ( PIN mag_im[24] )
+  + ROUTED M5 ( 18155 184275 0 ) ( * 180925 0 ) ;
+- mag_im[25]
+  ( PIN mag_im[25] )
+  + ROUTED M5 ( 18415 184275 0 ) ( * 180925 0 ) ;
+- mag_im[26]
+  ( PIN mag_im[26] )
+  + ROUTED M5 ( 18675 184275 0 ) ( * 180925 0 ) ;
+- mag_im[27]
+  ( PIN mag_im[27] )
+  + ROUTED M5 ( 18935 184275 0 ) ( * 180925 0 ) ;
+- mag_im[28]
+  ( PIN mag_im[28] )
+  + ROUTED M5 ( 20155 184275 0 ) ( * 180925 0 ) ;
+- mag_im[29]
+  ( PIN mag_im[29] )
+  + ROUTED M5 ( 20415 184275 0 ) ( * 180925 0 ) ;
+- mag_im[30]
+  ( PIN mag_im[30] )
+  + ROUTED M5 ( 20675 184275 0 ) ( * 180925 0 ) ;
+- mag_im[31]
+  ( PIN mag_im[31] )
+  + ROUTED M5 ( 20935 184275 0 ) ( * 180925 0 ) ;
+- mag_im[32]
+  ( PIN mag_im[32] )
+  + ROUTED M5 ( 34415 184275 0 ) ( * 180925 0 ) ;
+- mag_im[33]
+  ( PIN mag_im[33] )
+  + ROUTED M5 ( 34675 184275 0 ) ( * 180925 0 ) ;
+- mag_im[34]
+  ( PIN mag_im[34] )
+  + ROUTED M5 ( 34935 184275 0 ) ( * 180925 0 ) ;
+- mag_im[35]
+  ( PIN mag_im[35] )
+  + ROUTED M5 ( 35195 184275 0 ) ( * 180925 0 ) ;
+- mag_im[36]
+  ( PIN mag_im[36] )
+  + ROUTED M5 ( 36415 184275 0 ) ( * 180925 0 ) ;
+- mag_im[37]
+  ( PIN mag_im[37] )
+  + ROUTED M5 ( 36675 184275 0 ) ( * 180925 0 ) ;
+- mag_im[38]
+  ( PIN mag_im[38] )
+  + ROUTED M5 ( 36935 184275 0 ) ( * 180925 0 ) ;
+- mag_im[39]
+  ( PIN mag_im[39] )
+  + ROUTED M5 ( 37195 184275 0 ) ( * 180925 0 ) ;
+- mag_im[40]
+  ( PIN mag_im[40] )
+  + ROUTED M5 ( 38415 184275 0 ) ( * 180925 0 ) ;
+- mag_im[41]
+  ( PIN mag_im[41] )
+  + ROUTED M5 ( 38675 184275 0 ) ( * 180925 0 ) ;
+- mag_im[42]
+  ( PIN mag_im[42] )
+  + ROUTED M5 ( 38935 184275 0 ) ( * 180925 0 ) ;
+- mag_im[43]
+  ( PIN mag_im[43] )
+  + ROUTED M5 ( 39195 184275 0 ) ( * 180925 0 ) ;
+- mag_im[44]
+  ( PIN mag_im[44] )
+  + ROUTED M5 ( 40415 184275 0 ) ( * 180925 0 ) ;
+- mag_im[45]
+  ( PIN mag_im[45] )
+  + ROUTED M5 ( 40675 184275 0 ) ( * 180925 0 ) ;
+- mag_im[46]
+  ( PIN mag_im[46] )
+  + ROUTED M5 ( 40935 184275 0 ) ( * 180925 0 ) ;
+- mag_im[47]
+  ( PIN mag_im[47] )
+  + ROUTED M5 ( 41195 184275 0 ) ( * 180925 0 ) ;
+- mag_im[48]
+  ( PIN mag_im[48] )
+  + ROUTED M5 ( 42415 184275 0 ) ( * 180925 0 ) ;
+- mag_im[49]
+  ( PIN mag_im[49] )
+  + ROUTED M5 ( 42675 184275 0 ) ( * 180925 0 ) ;
+- mag_im[50]
+  ( PIN mag_im[50] )
+  + ROUTED M5 ( 42935 184275 0 ) ( * 180925 0 ) ;
+- mag_im[51]
+  ( PIN mag_im[51] )
+  + ROUTED M5 ( 43195 184275 0 ) ( * 180925 0 ) ;
+- mag_im[52]
+  ( PIN mag_im[52] )
+  + ROUTED M5 ( 44415 184275 0 ) ( * 180925 0 ) ;
+- mag_im[53]
+  ( PIN mag_im[53] )
+  + ROUTED M5 ( 44675 184275 0 ) ( * 180925 0 ) ;
+- mag_im[54]
+  ( PIN mag_im[54] )
+  + ROUTED M5 ( 44935 184275 0 ) ( * 180925 0 ) ;
+- mag_im[55]
+  ( PIN mag_im[55] )
+  + ROUTED M5 ( 45195 184275 0 ) ( * 180925 0 ) ;
+- mag_im[56]
+  ( PIN mag_im[56] )
+  + ROUTED M5 ( 46415 184275 0 ) ( * 180925 0 ) ;
+- mag_im[57]
+  ( PIN mag_im[57] )
+  + ROUTED M5 ( 46675 184275 0 ) ( * 180925 0 ) ;
+- mag_im[58]
+  ( PIN mag_im[58] )
+  + ROUTED M5 ( 46935 184275 0 ) ( * 180925 0 ) ;
+- mag_im[59]
+  ( PIN mag_im[59] )
+  + ROUTED M5 ( 47195 184275 0 ) ( * 180925 0 ) ;
+- mag_im[60]
+  ( PIN mag_im[60] )
+  + ROUTED M5 ( 48415 184275 0 ) ( * 180925 0 ) ;
+- mag_im[61]
+  ( PIN mag_im[61] )
+  + ROUTED M5 ( 48675 184275 0 ) ( * 180925 0 ) ;
+- mag_im[62]
+  ( PIN mag_im[62] )
+  + ROUTED M5 ( 48935 184275 0 ) ( * 180925 0 ) ;
+- mag_im[63]
+  ( PIN mag_im[63] )
+  + ROUTED M5 ( 49195 184275 0 ) ( * 180925 0 ) ;
+- mag_im[64]
+  ( PIN mag_im[64] )
+  + ROUTED M5 ( 56885 184275 0 ) ( * 180925 0 ) ;
+- mag_im[65]
+  ( PIN mag_im[65] )
+  + ROUTED M5 ( 57145 184275 0 ) ( * 180925 0 ) ;
+- mag_im[66]
+  ( PIN mag_im[66] )
+  + ROUTED M5 ( 57405 184275 0 ) ( * 180925 0 ) ;
+- mag_im[67]
+  ( PIN mag_im[67] )
+  + ROUTED M5 ( 57665 184275 0 ) ( * 180925 0 ) ;
+- mag_im[68]
+  ( PIN mag_im[68] )
+  + ROUTED M5 ( 58885 184275 0 ) ( * 180925 0 ) ;
+- mag_im[69]
+  ( PIN mag_im[69] )
+  + ROUTED M5 ( 59145 184275 0 ) ( * 180925 0 ) ;
+- mag_im[70]
+  ( PIN mag_im[70] )
+  + ROUTED M5 ( 59405 184275 0 ) ( * 180925 0 ) ;
+- mag_im[71]
+  ( PIN mag_im[71] )
+  + ROUTED M5 ( 59665 184275 0 ) ( * 180925 0 ) ;
+- mag_im[72]
+  ( PIN mag_im[72] )
+  + ROUTED M5 ( 60885 184275 0 ) ( * 180925 0 ) ;
+- mag_im[73]
+  ( PIN mag_im[73] )
+  + ROUTED M5 ( 61145 184275 0 ) ( * 180925 0 ) ;
+- mag_im[74]
+  ( PIN mag_im[74] )
+  + ROUTED M5 ( 61405 184275 0 ) ( * 180925 0 ) ;
+- mag_im[75]
+  ( PIN mag_im[75] )
+  + ROUTED M5 ( 61665 184275 0 ) ( * 180925 0 ) ;
+- mag_im[76]
+  ( PIN mag_im[76] )
+  + ROUTED M5 ( 62885 184275 0 ) ( * 180925 0 ) ;
+- mag_im[77]
+  ( PIN mag_im[77] )
+  + ROUTED M5 ( 63145 184275 0 ) ( * 180925 0 ) ;
+- mag_im[78]
+  ( PIN mag_im[78] )
+  + ROUTED M5 ( 63405 184275 0 ) ( * 180925 0 ) ;
+- mag_im[79]
+  ( PIN mag_im[79] )
+  + ROUTED M5 ( 63665 184275 0 ) ( * 180925 0 ) ;
+- mag_im[80]
+  ( PIN mag_im[80] )
+  + ROUTED M5 ( 64885 184275 0 ) ( * 180925 0 ) ;
+- mag_im[81]
+  ( PIN mag_im[81] )
+  + ROUTED M5 ( 65145 184275 0 ) ( * 180925 0 ) ;
+- mag_im[82]
+  ( PIN mag_im[82] )
+  + ROUTED M5 ( 65405 184275 0 ) ( * 180925 0 ) ;
+- mag_im[83]
+  ( PIN mag_im[83] )
+  + ROUTED M5 ( 65665 184275 0 ) ( * 180925 0 ) ;
+- mag_im[84]
+  ( PIN mag_im[84] )
+  + ROUTED M5 ( 66885 184275 0 ) ( * 180925 0 ) ;
+- mag_im[85]
+  ( PIN mag_im[85] )
+  + ROUTED M5 ( 67145 184275 0 ) ( * 180925 0 ) ;
+- mag_im[86]
+  ( PIN mag_im[86] )
+  + ROUTED M5 ( 67405 184275 0 ) ( * 180925 0 ) ;
+- mag_im[87]
+  ( PIN mag_im[87] )
+  + ROUTED M5 ( 67665 184275 0 ) ( * 180925 0 ) ;
+- mag_im[88]
+  ( PIN mag_im[88] )
+  + ROUTED M5 ( 68885 184275 0 ) ( * 180925 0 ) ;
+- mag_im[89]
+  ( PIN mag_im[89] )
+  + ROUTED M5 ( 69145 184275 0 ) ( * 180925 0 ) ;
+- mag_im[90]
+  ( PIN mag_im[90] )
+  + ROUTED M5 ( 69405 184275 0 ) ( * 180925 0 ) ;
+- mag_im[91]
+  ( PIN mag_im[91] )
+  + ROUTED M5 ( 69665 184275 0 ) ( * 180925 0 ) ;
+- mag_im[92]
+  ( PIN mag_im[92] )
+  + ROUTED M5 ( 70885 184275 0 ) ( * 180925 0 ) ;
+- mag_im[93]
+  ( PIN mag_im[93] )
+  + ROUTED M5 ( 71145 184275 0 ) ( * 180925 0 ) ;
+- mag_im[94]
+  ( PIN mag_im[94] )
+  + ROUTED M5 ( 71405 184275 0 ) ( * 180925 0 ) ;
+- mag_im[95]
+  ( PIN mag_im[95] )
+  + ROUTED M5 ( 71665 184275 0 ) ( * 180925 0 ) ;
+- mag_im[96]
+  ( PIN mag_im[96] )
+  + ROUTED M5 ( 85145 184275 0 ) ( * 180925 0 ) ;
+- mag_im[97]
+  ( PIN mag_im[97] )
+  + ROUTED M5 ( 85405 184275 0 ) ( * 180925 0 ) ;
+- mag_im[98]
+  ( PIN mag_im[98] )
+  + ROUTED M5 ( 85665 184275 0 ) ( * 180925 0 ) ;
+- mag_im[99]
+  ( PIN mag_im[99] )
+  + ROUTED M5 ( 85925 184275 0 ) ( * 180925 0 ) ;
+- mag_im[100]
+  ( PIN mag_im[100] )
+  + ROUTED M5 ( 87145 184275 0 ) ( * 180925 0 ) ;
+- mag_im[101]
+  ( PIN mag_im[101] )
+  + ROUTED M5 ( 87405 184275 0 ) ( * 180925 0 ) ;
+- mag_im[102]
+  ( PIN mag_im[102] )
+  + ROUTED M5 ( 87665 184275 0 ) ( * 180925 0 ) ;
+- mag_im[103]
+  ( PIN mag_im[103] )
+  + ROUTED M5 ( 87925 184275 0 ) ( * 180925 0 ) ;
+- mag_im[104]
+  ( PIN mag_im[104] )
+  + ROUTED M5 ( 89145 184275 0 ) ( * 180925 0 ) ;
+- mag_im[105]
+  ( PIN mag_im[105] )
+  + ROUTED M5 ( 89405 184275 0 ) ( * 180925 0 ) ;
+- mag_im[106]
+  ( PIN mag_im[106] )
+  + ROUTED M5 ( 89665 184275 0 ) ( * 180925 0 ) ;
+- mag_im[107]
+  ( PIN mag_im[107] )
+  + ROUTED M5 ( 89925 184275 0 ) ( * 180925 0 ) ;
+- mag_im[108]
+  ( PIN mag_im[108] )
+  + ROUTED M5 ( 91145 184275 0 ) ( * 180925 0 ) ;
+- mag_im[109]
+  ( PIN mag_im[109] )
+  + ROUTED M5 ( 91405 184275 0 ) ( * 180925 0 ) ;
+- mag_im[110]
+  ( PIN mag_im[110] )
+  + ROUTED M5 ( 91665 184275 0 ) ( * 180925 0 ) ;
+- mag_im[0]
+  ( PIN mag_im[0] )
+  + ROUTED M5 ( 6155 184275 0 ) ( * 180925 0 ) ;
+- mag_im[1]
+  ( PIN mag_im[1] )
+  + ROUTED M5 ( 6415 184275 0 ) ( * 180925 0 ) ;
+- mag_im[2]
+  ( PIN mag_im[2] )
+  + ROUTED M5 ( 6675 184275 0 ) ( * 180925 0 ) ;
+- mag_im[3]
+  ( PIN mag_im[3] )
+  + ROUTED M5 ( 6935 184275 0 ) ( * 180925 0 ) ;
+- mag_im[4]
+  ( PIN mag_im[4] )
+  + ROUTED M5 ( 8155 184275 0 ) ( * 180925 0 ) ;
+- mag_im[5]
+  ( PIN mag_im[5] )
+  + ROUTED M5 ( 8415 184275 0 ) ( * 180925 0 ) ;
+- mag_im[6]
+  ( PIN mag_im[6] )
+  + ROUTED M5 ( 8675 184275 0 ) ( * 180925 0 ) ;
+- mag_im[7]
+  ( PIN mag_im[7] )
+  + ROUTED M5 ( 8935 184275 0 ) ( * 180925 0 ) ;
+- mag_im[8]
+  ( PIN mag_im[8] )
+  + ROUTED M5 ( 10155 184275 0 ) ( * 180925 0 ) ;
+- mag_re[127]
+  ( PIN mag_re[127] )
+  + ROUTED M5 ( 99795 184275 0 ) ( * 180925 0 ) ;
+- mag_re[126]
+  ( PIN mag_re[126] )
+  + ROUTED M5 ( 99535 184275 0 ) ( * 180925 0 ) ;
+- mag_re[125]
+  ( PIN mag_re[125] )
+  + ROUTED M5 ( 99275 184275 0 ) ( * 180925 0 ) ;
+- mag_re[124]
+  ( PIN mag_re[124] )
+  + ROUTED M5 ( 99015 184275 0 ) ( * 180925 0 ) ;
+- mag_re[123]
+  ( PIN mag_re[123] )
+  + ROUTED M5 ( 97795 184275 0 ) ( * 180925 0 ) ;
+- mag_re[122]
+  ( PIN mag_re[122] )
+  + ROUTED M5 ( 97535 184275 0 ) ( * 180925 0 ) ;
+- mag_re[121]
+  ( PIN mag_re[121] )
+  + ROUTED M5 ( 97275 184275 0 ) ( * 180925 0 ) ;
+- mag_re[120]
+  ( PIN mag_re[120] )
+  + ROUTED M5 ( 97015 184275 0 ) ( * 180925 0 ) ;
+- mag_re[119]
+  ( PIN mag_re[119] )
+  + ROUTED M5 ( 95795 184275 0 ) ( * 180925 0 ) ;
+- mag_re[118]
+  ( PIN mag_re[118] )
+  + ROUTED M5 ( 95535 184275 0 ) ( * 180925 0 ) ;
+- mag_re[117]
+  ( PIN mag_re[117] )
+  + ROUTED M5 ( 95275 184275 0 ) ( * 180925 0 ) ;
+- mag_re[116]
+  ( PIN mag_re[116] )
+  + ROUTED M5 ( 95015 184275 0 ) ( * 180925 0 ) ;
+- mag_re[115]
+  ( PIN mag_re[115] )
+  + ROUTED M5 ( 93795 184275 0 ) ( * 180925 0 ) ;
+- mag_re[114]
+  ( PIN mag_re[114] )
+  + ROUTED M5 ( 93535 184275 0 ) ( * 180925 0 ) ;
+- mag_re[113]
+  ( PIN mag_re[113] )
+  + ROUTED M5 ( 93275 184275 0 ) ( * 180925 0 ) ;
+- mag_re[112]
+  ( PIN mag_re[112] )
+  + ROUTED M5 ( 93015 184275 0 ) ( * 180925 0 ) ;
+- mag_re[111]
+  ( PIN mag_re[111] )
+  + ROUTED M5 ( 91795 184275 0 ) ( * 180925 0 ) ;
+- mag_re[110]
+  ( PIN mag_re[110] )
+  + ROUTED M5 ( 91535 184275 0 ) ( * 180925 0 ) ;
+- mag_re[109]
+  ( PIN mag_re[109] )
+  + ROUTED M5 ( 91275 184275 0 ) ( * 180925 0 ) ;
+- mag_re[108]
+  ( PIN mag_re[108] )
+  + ROUTED M5 ( 91015 184275 0 ) ( * 180925 0 ) ;
+- mag_re[107]
+  ( PIN mag_re[107] )
+  + ROUTED M5 ( 89795 184275 0 ) ( * 180925 0 ) ;
+- mag_re[106]
+  ( PIN mag_re[106] )
+  + ROUTED M5 ( 89535 184275 0 ) ( * 180925 0 ) ;
+- mag_re[105]
+  ( PIN mag_re[105] )
+  + ROUTED M5 ( 89275 184275 0 ) ( * 180925 0 ) ;
+- mag_re[104]
+  ( PIN mag_re[104] )
+  + ROUTED M5 ( 89015 184275 0 ) ( * 180925 0 ) ;
+- mag_re[103]
+  ( PIN mag_re[103] )
+  + ROUTED M5 ( 87795 184275 0 ) ( * 180925 0 ) ;
+- mag_re[102]
+  ( PIN mag_re[102] )
+  + ROUTED M5 ( 87535 184275 0 ) ( * 180925 0 ) ;
+- mag_re[101]
+  ( PIN mag_re[101] )
+  + ROUTED M5 ( 87275 184275 0 ) ( * 180925 0 ) ;
+- mag_re[100]
+  ( PIN mag_re[100] )
+  + ROUTED M5 ( 87015 184275 0 ) ( * 180925 0 ) ;
+- mag_re[99]
+  ( PIN mag_re[99] )
+  + ROUTED M5 ( 85795 184275 0 ) ( * 180925 0 ) ;
+- mag_re[98]
+  ( PIN mag_re[98] )
+  + ROUTED M5 ( 85535 184275 0 ) ( * 180925 0 ) ;
+- mag_re[97]
+  ( PIN mag_re[97] )
+  + ROUTED M5 ( 85275 184275 0 ) ( * 180925 0 ) ;
+- mag_re[96]
+  ( PIN mag_re[96] )
+  + ROUTED M5 ( 85015 184275 0 ) ( * 180925 0 ) ;
+- mag_re[95]
+  ( PIN mag_re[95] )
+  + ROUTED M5 ( 71535 184275 0 ) ( * 180925 0 ) ;
+- mag_re[94]
+  ( PIN mag_re[94] )
+  + ROUTED M5 ( 71275 184275 0 ) ( * 180925 0 ) ;
+- mag_re[93]
+  ( PIN mag_re[93] )
+  + ROUTED M5 ( 71015 184275 0 ) ( * 180925 0 ) ;
+- mag_re[92]
+  ( PIN mag_re[92] )
+  + ROUTED M5 ( 70755 184275 0 ) ( * 180925 0 ) ;
+- mag_re[91]
+  ( PIN mag_re[91] )
+  + ROUTED M5 ( 69535 184275 0 ) ( * 180925 0 ) ;
+- mag_re[90]
+  ( PIN mag_re[90] )
+  + ROUTED M5 ( 69275 184275 0 ) ( * 180925 0 ) ;
+- mag_re[89]
+  ( PIN mag_re[89] )
+  + ROUTED M5 ( 69015 184275 0 ) ( * 180925 0 ) ;
+- mag_re[88]
+  ( PIN mag_re[88] )
+  + ROUTED M5 ( 68755 184275 0 ) ( * 180925 0 ) ;
+- mag_re[87]
+  ( PIN mag_re[87] )
+  + ROUTED M5 ( 67535 184275 0 ) ( * 180925 0 ) ;
+- mag_re[86]
+  ( PIN mag_re[86] )
+  + ROUTED M5 ( 67275 184275 0 ) ( * 180925 0 ) ;
+- mag_re[85]
+  ( PIN mag_re[85] )
+  + ROUTED M5 ( 67015 184275 0 ) ( * 180925 0 ) ;
+- mag_re[84]
+  ( PIN mag_re[84] )
+  + ROUTED M5 ( 66755 184275 0 ) ( * 180925 0 ) ;
+- mag_re[83]
+  ( PIN mag_re[83] )
+  + ROUTED M5 ( 65535 184275 0 ) ( * 180925 0 ) ;
+- mag_re[82]
+  ( PIN mag_re[82] )
+  + ROUTED M5 ( 65275 184275 0 ) ( * 180925 0 ) ;
+- mag_re[81]
+  ( PIN mag_re[81] )
+  + ROUTED M5 ( 65015 184275 0 ) ( * 180925 0 ) ;
+- mag_re[80]
+  ( PIN mag_re[80] )
+  + ROUTED M5 ( 64755 184275 0 ) ( * 180925 0 ) ;
+- mag_re[79]
+  ( PIN mag_re[79] )
+  + ROUTED M5 ( 63535 184275 0 ) ( * 180925 0 ) ;
+- mag_re[78]
+  ( PIN mag_re[78] )
+  + ROUTED M5 ( 63275 184275 0 ) ( * 180925 0 ) ;
+- mag_re[77]
+  ( PIN mag_re[77] )
+  + ROUTED M5 ( 63015 184275 0 ) ( * 180925 0 ) ;
+- mag_re[76]
+  ( PIN mag_re[76] )
+  + ROUTED M5 ( 62755 184275 0 ) ( * 180925 0 ) ;
+- mag_re[75]
+  ( PIN mag_re[75] )
+  + ROUTED M5 ( 61535 184275 0 ) ( * 180925 0 ) ;
+- mag_re[74]
+  ( PIN mag_re[74] )
+  + ROUTED M5 ( 61275 184275 0 ) ( * 180925 0 ) ;
+- mag_re[73]
+  ( PIN mag_re[73] )
+  + ROUTED M5 ( 61015 184275 0 ) ( * 180925 0 ) ;
+- mag_re[72]
+  ( PIN mag_re[72] )
+  + ROUTED M5 ( 60755 184275 0 ) ( * 180925 0 ) ;
+- mag_re[71]
+  ( PIN mag_re[71] )
+  + ROUTED M5 ( 59535 184275 0 ) ( * 180925 0 ) ;
+- mag_re[70]
+  ( PIN mag_re[70] )
+  + ROUTED M5 ( 59275 184275 0 ) ( * 180925 0 ) ;
+- mag_re[69]
+  ( PIN mag_re[69] )
+  + ROUTED M5 ( 59015 184275 0 ) ( * 180925 0 ) ;
+- mag_re[68]
+  ( PIN mag_re[68] )
+  + ROUTED M5 ( 58755 184275 0 ) ( * 180925 0 ) ;
+- mag_re[67]
+  ( PIN mag_re[67] )
+  + ROUTED M5 ( 57535 184275 0 ) ( * 180925 0 ) ;
+- mag_re[66]
+  ( PIN mag_re[66] )
+  + ROUTED M5 ( 57275 184275 0 ) ( * 180925 0 ) ;
+- mag_re[65]
+  ( PIN mag_re[65] )
+  + ROUTED M5 ( 57015 184275 0 ) ( * 180925 0 ) ;
+- mag_re[64]
+  ( PIN mag_re[64] )
+  + ROUTED M5 ( 56755 184275 0 ) ( * 180925 0 ) ;
+- mag_re[63]
+  ( PIN mag_re[63] )
+  + ROUTED M5 ( 49065 184275 0 ) ( * 180925 0 ) ;
+- mag_re[62]
+  ( PIN mag_re[62] )
+  + ROUTED M5 ( 48805 184275 0 ) ( * 180925 0 ) ;
+- mag_re[61]
+  ( PIN mag_re[61] )
+  + ROUTED M5 ( 48545 184275 0 ) ( * 180925 0 ) ;
+- mag_re[60]
+  ( PIN mag_re[60] )
+  + ROUTED M5 ( 48285 184275 0 ) ( * 180925 0 ) ;
+- mag_re[59]
+  ( PIN mag_re[59] )
+  + ROUTED M5 ( 47065 184275 0 ) ( * 180925 0 ) ;
+- mag_re[58]
+  ( PIN mag_re[58] )
+  + ROUTED M5 ( 46805 184275 0 ) ( * 180925 0 ) ;
+- mag_re[57]
+  ( PIN mag_re[57] )
+  + ROUTED M5 ( 46545 184275 0 ) ( * 180925 0 ) ;
+- mag_re[56]
+  ( PIN mag_re[56] )
+  + ROUTED M5 ( 46285 184275 0 ) ( * 180925 0 ) ;
+- mag_re[55]
+  ( PIN mag_re[55] )
+  + ROUTED M5 ( 45065 184275 0 ) ( * 180925 0 ) ;
+- mag_re[54]
+  ( PIN mag_re[54] )
+  + ROUTED M5 ( 44805 184275 0 ) ( * 180925 0 ) ;
+- mag_re[53]
+  ( PIN mag_re[53] )
+  + ROUTED M5 ( 44545 184275 0 ) ( * 180925 0 ) ;
+- mag_re[52]
+  ( PIN mag_re[52] )
+  + ROUTED M5 ( 44285 184275 0 ) ( * 180925 0 ) ;
+- mag_re[51]
+  ( PIN mag_re[51] )
+  + ROUTED M5 ( 43065 184275 0 ) ( * 180925 0 ) ;
+- mag_re[50]
+  ( PIN mag_re[50] )
+  + ROUTED M5 ( 42805 184275 0 ) ( * 180925 0 ) ;
+- mag_re[49]
+  ( PIN mag_re[49] )
+  + ROUTED M5 ( 42545 184275 0 ) ( * 180925 0 ) ;
+- mag_re[48]
+  ( PIN mag_re[48] )
+  + ROUTED M5 ( 42285 184275 0 ) ( * 180925 0 ) ;
+- mag_re[47]
+  ( PIN mag_re[47] )
+  + ROUTED M5 ( 41065 184275 0 ) ( * 180925 0 ) ;
+- mag_re[46]
+  ( PIN mag_re[46] )
+  + ROUTED M5 ( 40805 184275 0 ) ( * 180925 0 ) ;
+- mag_re[45]
+  ( PIN mag_re[45] )
+  + ROUTED M5 ( 40545 184275 0 ) ( * 180925 0 ) ;
+- mag_re[44]
+  ( PIN mag_re[44] )
+  + ROUTED M5 ( 40285 184275 0 ) ( * 180925 0 ) ;
+- mag_re[43]
+  ( PIN mag_re[43] )
+  + ROUTED M5 ( 39065 184275 0 ) ( * 180925 0 ) ;
+- mag_re[42]
+  ( PIN mag_re[42] )
+  + ROUTED M5 ( 38805 184275 0 ) ( * 180925 0 ) ;
+- mag_re[41]
+  ( PIN mag_re[41] )
+  + ROUTED M5 ( 38545 184275 0 ) ( * 180925 0 ) ;
+- mag_re[40]
+  ( PIN mag_re[40] )
+  + ROUTED M5 ( 38285 184275 0 ) ( * 180925 0 ) ;
+- mag_re[39]
+  ( PIN mag_re[39] )
+  + ROUTED M5 ( 37065 184275 0 ) ( * 180925 0 ) ;
+- mag_re[38]
+  ( PIN mag_re[38] )
+  + ROUTED M5 ( 36805 184275 0 ) ( * 180925 0 ) ;
+- mag_re[37]
+  ( PIN mag_re[37] )
+  + ROUTED M5 ( 36545 184275 0 ) ( * 180925 0 ) ;
+- mag_re[36]
+  ( PIN mag_re[36] )
+  + ROUTED M5 ( 36285 184275 0 ) ( * 180925 0 ) ;
+- mag_re[35]
+  ( PIN mag_re[35] )
+  + ROUTED M5 ( 35065 184275 0 ) ( * 180925 0 ) ;
+- mag_re[34]
+  ( PIN mag_re[34] )
+  + ROUTED M5 ( 34805 184275 0 ) ( * 180925 0 ) ;
+- mag_re[33]
+  ( PIN mag_re[33] )
+  + ROUTED M5 ( 34545 184275 0 ) ( * 180925 0 ) ;
+- mag_re[32]
+  ( PIN mag_re[32] )
+  + ROUTED M5 ( 34285 184275 0 ) ( * 180925 0 ) ;
+- mag_re[31]
+  ( PIN mag_re[31] )
+  + ROUTED M5 ( 20805 184275 0 ) ( * 180925 0 ) ;
+- mag_re[30]
+  ( PIN mag_re[30] )
+  + ROUTED M5 ( 20545 184275 0 ) ( * 180925 0 ) ;
+- mag_re[29]
+  ( PIN mag_re[29] )
+  + ROUTED M5 ( 20285 184275 0 ) ( * 180925 0 ) ;
+- mag_re[28]
+  ( PIN mag_re[28] )
+  + ROUTED M5 ( 20025 184275 0 ) ( * 180925 0 ) ;
+- mag_re[27]
+  ( PIN mag_re[27] )
+  + ROUTED M5 ( 18805 184275 0 ) ( * 180925 0 ) ;
+- mag_re[26]
+  ( PIN mag_re[26] )
+  + ROUTED M5 ( 18545 184275 0 ) ( * 180925 0 ) ;
+- mag_re[25]
+  ( PIN mag_re[25] )
+  + ROUTED M5 ( 18285 184275 0 ) ( * 180925 0 ) ;
+- mag_re[24]
+  ( PIN mag_re[24] )
+  + ROUTED M5 ( 18025 184275 0 ) ( * 180925 0 ) ;
+- mag_re[23]
+  ( PIN mag_re[23] )
+  + ROUTED M5 ( 16805 184275 0 ) ( * 180925 0 ) ;
+- mag_re[22]
+  ( PIN mag_re[22] )
+  + ROUTED M5 ( 16545 184275 0 ) ( * 180925 0 ) ;
+- mag_re[21]
+  ( PIN mag_re[21] )
+  + ROUTED M5 ( 16285 184275 0 ) ( * 180925 0 ) ;
+- mag_re[20]
+  ( PIN mag_re[20] )
+  + ROUTED M5 ( 16025 184275 0 ) ( * 180925 0 ) ;
+- mag_re[19]
+  ( PIN mag_re[19] )
+  + ROUTED M5 ( 14805 184275 0 ) ( * 180925 0 ) ;
+- mag_re[18]
+  ( PIN mag_re[18] )
+  + ROUTED M5 ( 14545 184275 0 ) ( * 180925 0 ) ;
+- mag_re[17]
+  ( PIN mag_re[17] )
+  + ROUTED M5 ( 14285 184275 0 ) ( * 180925 0 ) ;
+- mag_re[16]
+  ( PIN mag_re[16] )
+  + ROUTED M5 ( 14025 184275 0 ) ( * 180925 0 ) ;
+- mag_re[15]
+  ( PIN mag_re[15] )
+  + ROUTED M5 ( 12805 184275 0 ) ( * 180925 0 ) ;
+- mag_re[14]
+  ( PIN mag_re[14] )
+  + ROUTED M5 ( 12545 184275 0 ) ( * 180925 0 ) ;
+- mag_re[13]
+  ( PIN mag_re[13] )
+  + ROUTED M5 ( 12285 184275 0 ) ( * 180925 0 ) ;
+- mag_re[12]
+  ( PIN mag_re[12] )
+  + ROUTED M5 ( 12025 184275 0 ) ( * 180925 0 ) ;
+- mag_re[11]
+  ( PIN mag_re[11] )
+  + ROUTED M5 ( 10805 184275 0 ) ( * 180925 0 ) ;
+- mag_re[10]
+  ( PIN mag_re[10] )
+  + ROUTED M5 ( 10545 184275 0 ) ( * 180925 0 ) ;
+- mag_re[9]
+  ( PIN mag_re[9] )
+  + ROUTED M5 ( 10285 184275 0 ) ( * 180925 0 ) ;
+- mag_re[8]
+  ( PIN mag_re[8] )
+  + ROUTED M5 ( 10025 184275 0 ) ( * 180925 0 ) ;
+- mag_re[7]
+  ( PIN mag_re[7] )
+  + ROUTED M5 ( 8805 184275 0 ) ( * 180925 0 ) ;
+- mag_re[6]
+  ( PIN mag_re[6] )
+  + ROUTED M5 ( 8545 184275 0 ) ( * 180925 0 ) ;
+- mag_re[5]
+  ( PIN mag_re[5] )
+  + ROUTED M5 ( 8285 184275 0 ) ( * 180925 0 ) ;
+- mag_re[4]
+  ( PIN mag_re[4] )
+  + ROUTED M5 ( 8025 184275 0 ) ( * 180925 0 ) ;
+- mag_re[3]
+  ( PIN mag_re[3] )
+  + ROUTED M5 ( 6805 184275 0 ) ( * 180925 0 ) ;
+- mag_re[2]
+  ( PIN mag_re[2] )
+  + ROUTED M5 ( 6545 184275 0 ) ( * 180925 0 ) ;
+- mag_re[1]
+  ( PIN mag_re[1] )
+  + ROUTED M5 ( 6285 184275 0 ) ( * 180925 0 ) ;
+- mag_re[0]
+  ( PIN mag_re[0] )
+  + ROUTED M5 ( 6025 184275 0 ) ( * 180925 0 ) ;
+- mag_re[255]
+  ( PIN mag_re[255] )
+  + ROUTED M5 ( 201255 184275 0 ) ( * 180925 0 ) ;
+- mag_re[254]
+  ( PIN mag_re[254] )
+  + ROUTED M5 ( 200995 184275 0 ) ( * 180925 0 ) ;
+- mag_re[253]
+  ( PIN mag_re[253] )
+  + ROUTED M5 ( 200735 184275 0 ) ( * 180925 0 ) ;
+- mag_re[252]
+  ( PIN mag_re[252] )
+  + ROUTED M5 ( 200475 184275 0 ) ( * 180925 0 ) ;
+- mag_re[251]
+  ( PIN mag_re[251] )
+  + ROUTED M5 ( 199255 184275 0 ) ( * 180925 0 ) ;
+- mag_re[250]
+  ( PIN mag_re[250] )
+  + ROUTED M5 ( 198995 184275 0 ) ( * 180925 0 ) ;
+- mag_re[249]
+  ( PIN mag_re[249] )
+  + ROUTED M5 ( 198735 184275 0 ) ( * 180925 0 ) ;
+- mag_re[248]
+  ( PIN mag_re[248] )
+  + ROUTED M5 ( 198475 184275 0 ) ( * 180925 0 ) ;
+- mag_re[247]
+  ( PIN mag_re[247] )
+  + ROUTED M5 ( 197255 184275 0 ) ( * 180925 0 ) ;
+- mag_re[246]
+  ( PIN mag_re[246] )
+  + ROUTED M5 ( 196995 184275 0 ) ( * 180925 0 ) ;
+- mag_re[245]
+  ( PIN mag_re[245] )
+  + ROUTED M5 ( 196735 184275 0 ) ( * 180925 0 ) ;
+- mag_re[244]
+  ( PIN mag_re[244] )
+  + ROUTED M5 ( 196475 184275 0 ) ( * 180925 0 ) ;
+- mag_re[243]
+  ( PIN mag_re[243] )
+  + ROUTED M5 ( 195255 184275 0 ) ( * 180925 0 ) ;
+- mag_re[242]
+  ( PIN mag_re[242] )
+  + ROUTED M5 ( 194995 184275 0 ) ( * 180925 0 ) ;
+- mag_re[241]
+  ( PIN mag_re[241] )
+  + ROUTED M5 ( 194735 184275 0 ) ( * 180925 0 ) ;
+- mag_re[240]
+  ( PIN mag_re[240] )
+  + ROUTED M5 ( 194475 184275 0 ) ( * 180925 0 ) ;
+- mag_re[239]
+  ( PIN mag_re[239] )
+  + ROUTED M5 ( 193255 184275 0 ) ( * 180925 0 ) ;
+- mag_re[238]
+  ( PIN mag_re[238] )
+  + ROUTED M5 ( 192995 184275 0 ) ( * 180925 0 ) ;
+- mag_re[237]
+  ( PIN mag_re[237] )
+  + ROUTED M5 ( 192735 184275 0 ) ( * 180925 0 ) ;
+- mag_re[236]
+  ( PIN mag_re[236] )
+  + ROUTED M5 ( 192475 184275 0 ) ( * 180925 0 ) ;
+- mag_re[235]
+  ( PIN mag_re[235] )
+  + ROUTED M5 ( 191255 184275 0 ) ( * 180925 0 ) ;
+- mag_re[234]
+  ( PIN mag_re[234] )
+  + ROUTED M5 ( 190995 184275 0 ) ( * 180925 0 ) ;
+- mag_re[233]
+  ( PIN mag_re[233] )
+  + ROUTED M5 ( 190735 184275 0 ) ( * 180925 0 ) ;
+- mag_re[232]
+  ( PIN mag_re[232] )
+  + ROUTED M5 ( 190475 184275 0 ) ( * 180925 0 ) ;
+- mag_re[231]
+  ( PIN mag_re[231] )
+  + ROUTED M5 ( 189255 184275 0 ) ( * 180925 0 ) ;
+- mag_re[230]
+  ( PIN mag_re[230] )
+  + ROUTED M5 ( 188995 184275 0 ) ( * 180925 0 ) ;
+- mag_re[229]
+  ( PIN mag_re[229] )
+  + ROUTED M5 ( 188735 184275 0 ) ( * 180925 0 ) ;
+- mag_re[228]
+  ( PIN mag_re[228] )
+  + ROUTED M5 ( 188475 184275 0 ) ( * 180925 0 ) ;
+- mag_re[227]
+  ( PIN mag_re[227] )
+  + ROUTED M5 ( 187255 184275 0 ) ( * 180925 0 ) ;
+- mag_re[226]
+  ( PIN mag_re[226] )
+  + ROUTED M5 ( 186995 184275 0 ) ( * 180925 0 ) ;
+- mag_re[225]
+  ( PIN mag_re[225] )
+  + ROUTED M5 ( 186735 184275 0 ) ( * 180925 0 ) ;
+- mag_re[224]
+  ( PIN mag_re[224] )
+  + ROUTED M5 ( 186475 184275 0 ) ( * 180925 0 ) ;
+- mag_re[223]
+  ( PIN mag_re[223] )
+  + ROUTED M5 ( 172995 184275 0 ) ( * 180925 0 ) ;
+- mag_re[222]
+  ( PIN mag_re[222] )
+  + ROUTED M5 ( 172735 184275 0 ) ( * 180925 0 ) ;
+- mag_re[221]
+  ( PIN mag_re[221] )
+  + ROUTED M5 ( 172475 184275 0 ) ( * 180925 0 ) ;
+- mag_re[220]
+  ( PIN mag_re[220] )
+  + ROUTED M5 ( 172215 184275 0 ) ( * 180925 0 ) ;
+- mag_re[219]
+  ( PIN mag_re[219] )
+  + ROUTED M5 ( 170995 184275 0 ) ( * 180925 0 ) ;
+- mag_re[218]
+  ( PIN mag_re[218] )
+  + ROUTED M5 ( 170735 184275 0 ) ( * 180925 0 ) ;
+- mag_re[217]
+  ( PIN mag_re[217] )
+  + ROUTED M5 ( 170475 184275 0 ) ( * 180925 0 ) ;
+- mag_re[216]
+  ( PIN mag_re[216] )
+  + ROUTED M5 ( 170215 184275 0 ) ( * 180925 0 ) ;
+- mag_re[215]
+  ( PIN mag_re[215] )
+  + ROUTED M5 ( 168995 184275 0 ) ( * 180925 0 ) ;
+- mag_re[214]
+  ( PIN mag_re[214] )
+  + ROUTED M5 ( 168735 184275 0 ) ( * 180925 0 ) ;
+- mag_re[213]
+  ( PIN mag_re[213] )
+  + ROUTED M5 ( 168475 184275 0 ) ( * 180925 0 ) ;
+- mag_re[212]
+  ( PIN mag_re[212] )
+  + ROUTED M5 ( 168215 184275 0 ) ( * 180925 0 ) ;
+- mag_re[211]
+  ( PIN mag_re[211] )
+  + ROUTED M5 ( 166995 184275 0 ) ( * 180925 0 ) ;
+- mag_re[210]
+  ( PIN mag_re[210] )
+  + ROUTED M5 ( 166735 184275 0 ) ( * 180925 0 ) ;
+- mag_re[209]
+  ( PIN mag_re[209] )
+  + ROUTED M5 ( 166475 184275 0 ) ( * 180925 0 ) ;
+- mag_re[208]
+  ( PIN mag_re[208] )
+  + ROUTED M5 ( 166215 184275 0 ) ( * 180925 0 ) ;
+- mag_re[207]
+  ( PIN mag_re[207] )
+  + ROUTED M5 ( 164995 184275 0 ) ( * 180925 0 ) ;
+- mag_re[206]
+  ( PIN mag_re[206] )
+  + ROUTED M5 ( 164735 184275 0 ) ( * 180925 0 ) ;
+- mag_re[205]
+  ( PIN mag_re[205] )
+  + ROUTED M5 ( 164475 184275 0 ) ( * 180925 0 ) ;
+- mag_re[204]
+  ( PIN mag_re[204] )
+  + ROUTED M5 ( 164215 184275 0 ) ( * 180925 0 ) ;
+- mag_re[203]
+  ( PIN mag_re[203] )
+  + ROUTED M5 ( 162995 184275 0 ) ( * 180925 0 ) ;
+- mag_re[202]
+  ( PIN mag_re[202] )
+  + ROUTED M5 ( 162735 184275 0 ) ( * 180925 0 ) ;
+- mag_re[201]
+  ( PIN mag_re[201] )
+  + ROUTED M5 ( 162475 184275 0 ) ( * 180925 0 ) ;
+- mag_re[200]
+  ( PIN mag_re[200] )
+  + ROUTED M5 ( 162215 184275 0 ) ( * 180925 0 ) ;
+- mag_re[199]
+  ( PIN mag_re[199] )
+  + ROUTED M5 ( 160995 184275 0 ) ( * 180925 0 ) ;
+- mag_re[198]
+  ( PIN mag_re[198] )
+  + ROUTED M5 ( 160735 184275 0 ) ( * 180925 0 ) ;
+- mag_re[197]
+  ( PIN mag_re[197] )
+  + ROUTED M5 ( 160475 184275 0 ) ( * 180925 0 ) ;
+- mag_re[196]
+  ( PIN mag_re[196] )
+  + ROUTED M5 ( 160215 184275 0 ) ( * 180925 0 ) ;
+- mag_re[195]
+  ( PIN mag_re[195] )
+  + ROUTED M5 ( 158995 184275 0 ) ( * 180925 0 ) ;
+- mag_re[194]
+  ( PIN mag_re[194] )
+  + ROUTED M5 ( 158735 184275 0 ) ( * 180925 0 ) ;
+- mag_re[193]
+  ( PIN mag_re[193] )
+  + ROUTED M5 ( 158475 184275 0 ) ( * 180925 0 ) ;
+- mag_re[192]
+  ( PIN mag_re[192] )
+  + ROUTED M5 ( 158215 184275 0 ) ( * 180925 0 ) ;
+- mag_re[191]
+  ( PIN mag_re[191] )
+  + ROUTED M5 ( 150525 184275 0 ) ( * 180925 0 ) ;
+- mag_re[190]
+  ( PIN mag_re[190] )
+  + ROUTED M5 ( 150265 184275 0 ) ( * 180925 0 ) ;
+- mag_re[189]
+  ( PIN mag_re[189] )
+  + ROUTED M5 ( 150005 184275 0 ) ( * 180925 0 ) ;
+- mag_re[188]
+  ( PIN mag_re[188] )
+  + ROUTED M5 ( 149745 184275 0 ) ( * 180925 0 ) ;
+- mag_re[187]
+  ( PIN mag_re[187] )
+  + ROUTED M5 ( 148525 184275 0 ) ( * 180925 0 ) ;
+- mag_re[186]
+  ( PIN mag_re[186] )
+  + ROUTED M5 ( 148265 184275 0 ) ( * 180925 0 ) ;
+- mag_re[185]
+  ( PIN mag_re[185] )
+  + ROUTED M5 ( 148005 184275 0 ) ( * 180925 0 ) ;
+- mag_re[184]
+  ( PIN mag_re[184] )
+  + ROUTED M5 ( 147745 184275 0 ) ( * 180925 0 ) ;
+- mag_re[183]
+  ( PIN mag_re[183] )
+  + ROUTED M5 ( 146525 184275 0 ) ( * 180925 0 ) ;
+- mag_re[182]
+  ( PIN mag_re[182] )
+  + ROUTED M5 ( 146265 184275 0 ) ( * 180925 0 ) ;
+- mag_re[181]
+  ( PIN mag_re[181] )
+  + ROUTED M5 ( 146005 184275 0 ) ( * 180925 0 ) ;
+- mag_re[180]
+  ( PIN mag_re[180] )
+  + ROUTED M5 ( 145745 184275 0 ) ( * 180925 0 ) ;
+- mag_re[179]
+  ( PIN mag_re[179] )
+  + ROUTED M5 ( 144525 184275 0 ) ( * 180925 0 ) ;
+- mag_re[178]
+  ( PIN mag_re[178] )
+  + ROUTED M5 ( 144265 184275 0 ) ( * 180925 0 ) ;
+- mag_re[177]
+  ( PIN mag_re[177] )
+  + ROUTED M5 ( 144005 184275 0 ) ( * 180925 0 ) ;
+- mag_re[176]
+  ( PIN mag_re[176] )
+  + ROUTED M5 ( 143745 184275 0 ) ( * 180925 0 ) ;
+- mag_re[175]
+  ( PIN mag_re[175] )
+  + ROUTED M5 ( 142525 184275 0 ) ( * 180925 0 ) ;
+- mag_re[174]
+  ( PIN mag_re[174] )
+  + ROUTED M5 ( 142265 184275 0 ) ( * 180925 0 ) ;
+- mag_re[173]
+  ( PIN mag_re[173] )
+  + ROUTED M5 ( 142005 184275 0 ) ( * 180925 0 ) ;
+- mag_re[172]
+  ( PIN mag_re[172] )
+  + ROUTED M5 ( 141745 184275 0 ) ( * 180925 0 ) ;
+- mag_re[171]
+  ( PIN mag_re[171] )
+  + ROUTED M5 ( 140525 184275 0 ) ( * 180925 0 ) ;
+- mag_re[170]
+  ( PIN mag_re[170] )
+  + ROUTED M5 ( 140265 184275 0 ) ( * 180925 0 ) ;
+- mag_re[169]
+  ( PIN mag_re[169] )
+  + ROUTED M5 ( 140005 184275 0 ) ( * 180925 0 ) ;
+- mag_re[168]
+  ( PIN mag_re[168] )
+  + ROUTED M5 ( 139745 184275 0 ) ( * 180925 0 ) ;
+- mag_re[167]
+  ( PIN mag_re[167] )
+  + ROUTED M5 ( 138525 184275 0 ) ( * 180925 0 ) ;
+- mag_re[166]
+  ( PIN mag_re[166] )
+  + ROUTED M5 ( 138265 184275 0 ) ( * 180925 0 ) ;
+- mag_re[165]
+  ( PIN mag_re[165] )
+  + ROUTED M5 ( 138005 184275 0 ) ( * 180925 0 ) ;
+- mag_re[164]
+  ( PIN mag_re[164] )
+  + ROUTED M5 ( 137745 184275 0 ) ( * 180925 0 ) ;
+- mag_re[163]
+  ( PIN mag_re[163] )
+  + ROUTED M5 ( 136525 184275 0 ) ( * 180925 0 ) ;
+- mag_re[162]
+  ( PIN mag_re[162] )
+  + ROUTED M5 ( 136265 184275 0 ) ( * 180925 0 ) ;
+- mag_re[161]
+  ( PIN mag_re[161] )
+  + ROUTED M5 ( 136005 184275 0 ) ( * 180925 0 ) ;
+- mag_re[160]
+  ( PIN mag_re[160] )
+  + ROUTED M5 ( 135745 184275 0 ) ( * 180925 0 ) ;
+- mag_re[159]
+  ( PIN mag_re[159] )
+  + ROUTED M5 ( 122265 184275 0 ) ( * 180925 0 ) ;
+- mag_re[158]
+  ( PIN mag_re[158] )
+  + ROUTED M5 ( 122005 184275 0 ) ( * 180925 0 ) ;
+- mag_re[157]
+  ( PIN mag_re[157] )
+  + ROUTED M5 ( 121745 184275 0 ) ( * 180925 0 ) ;
+- mag_re[156]
+  ( PIN mag_re[156] )
+  + ROUTED M5 ( 121485 184275 0 ) ( * 180925 0 ) ;
+- mag_re[155]
+  ( PIN mag_re[155] )
+  + ROUTED M5 ( 120265 184275 0 ) ( * 180925 0 ) ;
+- mag_re[154]
+  ( PIN mag_re[154] )
+  + ROUTED M5 ( 120005 184275 0 ) ( * 180925 0 ) ;
+- mag_re[153]
+  ( PIN mag_re[153] )
+  + ROUTED M5 ( 119745 184275 0 ) ( * 180925 0 ) ;
+- mag_re[152]
+  ( PIN mag_re[152] )
+  + ROUTED M5 ( 119485 184275 0 ) ( * 180925 0 ) ;
+- mag_re[151]
+  ( PIN mag_re[151] )
+  + ROUTED M5 ( 118265 184275 0 ) ( * 180925 0 ) ;
+- mag_re[150]
+  ( PIN mag_re[150] )
+  + ROUTED M5 ( 118005 184275 0 ) ( * 180925 0 ) ;
+- mag_re[149]
+  ( PIN mag_re[149] )
+  + ROUTED M5 ( 117745 184275 0 ) ( * 180925 0 ) ;
+- mag_re[148]
+  ( PIN mag_re[148] )
+  + ROUTED M5 ( 117485 184275 0 ) ( * 180925 0 ) ;
+- mag_re[147]
+  ( PIN mag_re[147] )
+  + ROUTED M5 ( 116265 184275 0 ) ( * 180925 0 ) ;
+- mag_re[146]
+  ( PIN mag_re[146] )
+  + ROUTED M5 ( 116005 184275 0 ) ( * 180925 0 ) ;
+- mag_re[145]
+  ( PIN mag_re[145] )
+  + ROUTED M5 ( 115745 184275 0 ) ( * 180925 0 ) ;
+- mag_re[144]
+  ( PIN mag_re[144] )
+  + ROUTED M5 ( 115485 184275 0 ) ( * 180925 0 ) ;
+- mag_re[143]
+  ( PIN mag_re[143] )
+  + ROUTED M5 ( 114265 184275 0 ) ( * 180925 0 ) ;
+- mag_re[142]
+  ( PIN mag_re[142] )
+  + ROUTED M5 ( 114005 184275 0 ) ( * 180925 0 ) ;
+- mag_re[141]
+  ( PIN mag_re[141] )
+  + ROUTED M5 ( 113745 184275 0 ) ( * 180925 0 ) ;
+- mag_re[140]
+  ( PIN mag_re[140] )
+  + ROUTED M5 ( 113485 184275 0 ) ( * 180925 0 ) ;
+- mag_re[139]
+  ( PIN mag_re[139] )
+  + ROUTED M5 ( 112265 184275 0 ) ( * 180925 0 ) ;
+- mag_re[138]
+  ( PIN mag_re[138] )
+  + ROUTED M5 ( 112005 184275 0 ) ( * 180925 0 ) ;
+- mag_re[137]
+  ( PIN mag_re[137] )
+  + ROUTED M5 ( 111745 184275 0 ) ( * 180925 0 ) ;
+- mag_re[136]
+  ( PIN mag_re[136] )
+  + ROUTED M5 ( 111485 184275 0 ) ( * 180925 0 ) ;
+- mag_re[135]
+  ( PIN mag_re[135] )
+  + ROUTED M5 ( 110265 184275 0 ) ( * 180925 0 ) ;
+- mag_re[134]
+  ( PIN mag_re[134] )
+  + ROUTED M5 ( 110005 184275 0 ) ( * 180925 0 ) ;
+- mag_re[133]
+  ( PIN mag_re[133] )
+  + ROUTED M5 ( 109745 184275 0 ) ( * 180925 0 ) ;
+- mag_re[132]
+  ( PIN mag_re[132] )
+  + ROUTED M5 ( 109485 184275 0 ) ( * 180925 0 ) ;
+- mag_re[131]
+  ( PIN mag_re[131] )
+  + ROUTED M5 ( 108265 184275 0 ) ( * 180925 0 ) ;
+- mag_re[130]
+  ( PIN mag_re[130] )
+  + ROUTED M5 ( 108005 184275 0 ) ( * 180925 0 ) ;
+- mag_re[129]
+  ( PIN mag_re[129] )
+  + ROUTED M5 ( 107745 184275 0 ) ( * 180925 0 ) ;
+- mag_re[128]
+  ( PIN mag_re[128] )
+  + ROUTED M5 ( 107485 184275 0 ) ( * 180925 0 ) ;
+END NETS
+
+END DESIGN

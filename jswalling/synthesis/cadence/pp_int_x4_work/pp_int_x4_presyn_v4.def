@@ -1,0 +1,660 @@
+VERSION 5.8 ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+
+DESIGN dev22_scpa_pp_int_PR ;
+
+UNITS DISTANCE MICRONS 1000 ;
+DIEAREA ( 0 0 ) ( 403490 318740 ) ;
+
+PINS 92 ;
+- In1_im[4] + NET In1_im[4]
+  + DIRECTION INPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 50 50 )
+    + PLACED ( 411275 107895 ) N ;
+- In1_im[3] + NET In1_im[3]
+  + DIRECTION INPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 50 50 )
+    + PLACED ( 411275 105600 ) N ;
+- In1_im[2] + NET In1_im[2]
+  + DIRECTION INPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 50 50 )
+    + PLACED ( 411275 101420 ) N ;
+- In1_re[3] + NET In1_re[3]
+  + DIRECTION INPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 50 50 )
+    + PLACED ( 411275 191990 ) N ;
+- Out1_re[15] + NET Out1_re[15]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 105830 ) N ;
+- Out1_im[15] + NET Out1_im[15]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 105970 ) N ;
+- Out1_re[14] + NET Out1_re[14]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 106110 ) N ;
+- Out1_im[14] + NET Out1_im[14]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 106250 ) N ;
+- Out1_re[13] + NET Out1_re[13]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 107860 ) N ;
+- Out1_im[13] + NET Out1_im[13]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 108000 ) N ;
+- Out1_re[12] + NET Out1_re[12]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 108140 ) N ;
+- Out1_im[12] + NET Out1_im[12]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 108280 ) N ;
+- Out1_re[11] + NET Out1_re[11]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 114195 ) N ;
+- Out1_im[11] + NET Out1_im[11]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 114335 ) N ;
+- Out1_re[10] + NET Out1_re[10]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 114475 ) N ;
+- Out1_im[10] + NET Out1_im[10]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 114615 ) N ;
+- Out1_re[9] + NET Out1_re[9]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 116225 ) N ;
+- Out1_im[9] + NET Out1_im[9]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 116365 ) N ;
+- Out1_re[8] + NET Out1_re[8]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 116505 ) N ;
+- Out1_im[8] + NET Out1_im[8]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 116645 ) N ;
+- Out1_re[7] + NET Out1_re[7]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 122555 ) N ;
+- Out1_im[7] + NET Out1_im[7]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 122695 ) N ;
+- Out1_re[6] + NET Out1_re[6]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 122835 ) N ;
+- Out1_im[6] + NET Out1_im[6]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 122975 ) N ;
+- Out1_re[5] + NET Out1_re[5]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 124585 ) N ;
+- Out1_im[5] + NET Out1_im[5]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 124725 ) N ;
+- Out1_re[4] + NET Out1_re[4]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 124865 ) N ;
+- Out1_im[4] + NET Out1_im[4]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 125005 ) N ;
+- Out1_re[3] + NET Out1_re[3]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 130920 ) N ;
+- Out1_im[3] + NET Out1_im[3]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 131060 ) N ;
+- Out1_re[2] + NET Out1_re[2]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 131200 ) N ;
+- Out1_im[2] + NET Out1_im[2]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 131340 ) N ;
+- Out1_re[1] + NET Out1_re[1]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 132950 ) N ;
+- Out1_im[1] + NET Out1_im[1]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 133090 ) N ;
+- Out1_re[0] + NET Out1_re[0]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 133230 ) N ;
+- Out1_im[0] + NET Out1_im[0]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 133370 ) N ;
+- Out5_im[1] + NET Out5_im[1]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 185575 ) N ;
+- Out5_im[2] + NET Out5_im[2]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 187325 ) N ;
+- Out5_re[2] + NET Out5_re[2]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 187465 ) N ;
+- Out5_im[3] + NET Out5_im[3]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 187605 ) N ;
+- Out5_re[3] + NET Out5_re[3]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 187745 ) N ;
+- Out5_im[4] + NET Out5_im[4]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 193660 ) N ;
+- Out5_re[4] + NET Out5_re[4]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 193800 ) N ;
+- Out5_im[5] + NET Out5_im[5]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 193940 ) N ;
+- Out5_re[5] + NET Out5_re[5]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 194080 ) N ;
+- Out5_im[6] + NET Out5_im[6]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 195690 ) N ;
+- Out5_re[6] + NET Out5_re[6]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 195830 ) N ;
+- Out5_im[7] + NET Out5_im[7]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 195970 ) N ;
+- Out5_re[7] + NET Out5_re[7]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 196110 ) N ;
+- Out5_im[8] + NET Out5_im[8]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 202020 ) N ;
+- Out5_re[8] + NET Out5_re[8]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 202160 ) N ;
+- Out5_im[9] + NET Out5_im[9]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 202300 ) N ;
+- Out5_re[9] + NET Out5_re[9]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 202440 ) N ;
+- Out5_im[10] + NET Out5_im[10]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 204050 ) N ;
+- Out5_re[10] + NET Out5_re[10]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 204190 ) N ;
+- Out5_im[11] + NET Out5_im[11]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 204330 ) N ;
+- Out5_re[11] + NET Out5_re[11]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 204470 ) N ;
+- Out5_im[12] + NET Out5_im[12]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 210385 ) N ;
+- Out5_re[12] + NET Out5_re[12]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 210525 ) N ;
+- Out5_im[13] + NET Out5_im[13]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 210665 ) N ;
+- Out5_re[13] + NET Out5_re[13]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 210805 ) N ;
+- Out5_im[14] + NET Out5_im[14]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 212415 ) N ;
+- Out5_re[14] + NET Out5_re[14]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 212555 ) N ;
+- Out5_im[15] + NET Out5_im[15]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 212695 ) N ;
+- Out5_re[15] + NET Out5_re[15]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 212835 ) N ;
+- In1_re[0] + NET In1_re[0]
+  + DIRECTION INPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 50 50 )
+    + PLACED ( 411275 172990 ) N ;
+- rst_n + NET rst_n
+  + DIRECTION INPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 50 50 )
+    + PLACED ( 411275 41360 ) N ;
+- In1_im[10] + NET In1_im[10]
+  + DIRECTION INPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 50 50 )
+    + PLACED ( 411275 120450 ) N ;
+- Out5_im[0] + NET Out5_im[0]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 185295 ) N ;
+- Out5_re[0] + NET Out5_re[0]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 185435 ) N ;
+- Out5_re[1] + NET Out5_re[1]
+  + DIRECTION OUTPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 70 70 )
+    + PLACED ( 75 185715 ) N ;
+- In1_im[5] + NET In1_im[5]
+  + DIRECTION INPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 50 50 )
+    + PLACED ( 411275 109885 ) N ;
+- In1_im[6] + NET In1_im[6]
+  + DIRECTION INPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 50 50 )
+    + PLACED ( 411275 112065 ) N ;
+- In1_im[7] + NET In1_im[7]
+  + DIRECTION INPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 50 50 )
+    + PLACED ( 411275 114010 ) N ;
+- In1_im[8] + NET In1_im[8]
+  + DIRECTION INPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 50 50 )
+    + PLACED ( 411275 116275 ) N ;
+- In1_im[9] + NET In1_im[9]
+  + DIRECTION INPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 50 50 )
+    + PLACED ( 411275 118170 ) N ;
+- In1_re[1] + NET In1_re[1]
+  + DIRECTION INPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 50 50 )
+    + PLACED ( 411275 196170 ) N ;
+- In1_im[11] + NET In1_im[11]
+  + DIRECTION INPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 50 50 )
+    + PLACED ( 411275 122405 ) N ;
+- In1_im[12] + NET In1_im[12]
+  + DIRECTION INPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 50 50 )
+    + PLACED ( 411275 99605 ) N ;
+- In1_im[1] + NET In1_im[1]
+  + DIRECTION INPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 50 50 )
+    + PLACED ( 411275 103620 ) N ;
+- In1_im[0] + NET In1_im[0]
+  + DIRECTION INPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 50 50 )
+    + PLACED ( 411275 124600 ) N ;
+- In1_re[12] + NET In1_re[12]
+  + DIRECTION INPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 50 50 )
+    + PLACED ( 411275 197985 ) N ;
+- clk + NET clk
+  + DIRECTION INPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 50 50 )
+    + PLACED ( 411275 286000 ) N ;
+- In1_re[11] + NET In1_re[11]
+  + DIRECTION INPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 50 50 )
+    + PLACED ( 411275 175185 ) N ;
+- In1_re[10] + NET In1_re[10]
+  + DIRECTION INPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 50 50 )
+    + PLACED ( 411275 177140 ) N ;
+- In1_re[9] + NET In1_re[9]
+  + DIRECTION INPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 50 50 )
+    + PLACED ( 411275 179420 ) N ;
+- In1_re[8] + NET In1_re[8]
+  + DIRECTION INPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 50 50 )
+    + PLACED ( 411275 181315 ) N ;
+- In1_re[7] + NET In1_re[7]
+  + DIRECTION INPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 50 50 )
+    + PLACED ( 411275 183580 ) N ;
+- In1_re[6] + NET In1_re[6]
+  + DIRECTION INPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 50 50 )
+    + PLACED ( 411275 185525 ) N ;
+- In1_re[5] + NET In1_re[5]
+  + DIRECTION INPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 50 50 )
+    + PLACED ( 411275 187705 ) N ;
+- In1_re[4] + NET In1_re[4]
+  + DIRECTION INPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 50 50 )
+    + PLACED ( 411275 189695 ) N ;
+- In1_re[2] + NET In1_re[2]
+  + DIRECTION INPUT
+  + PORT
+    + LAYER M6 ( 0 0 ) ( 50 50 )
+    + PLACED ( 411275 193970 ) N ;
+END PINS
+
+NETS 92 ;
+- In1_re[5]
+  ( PIN In1_re[5] ) ;
+- In1_re[6]
+  ( PIN In1_re[6] ) ;
+- In1_re[7]
+  ( PIN In1_re[7] ) ;
+- In1_im[12]
+  ( PIN In1_im[12] ) ;
+- Out1_re[15]
+  ( PIN Out1_re[15] ) ;
+- Out1_im[15]
+  ( PIN Out1_im[15] ) ;
+- Out1_re[14]
+  ( PIN Out1_re[14] ) ;
+- Out1_im[14]
+  ( PIN Out1_im[14] ) ;
+- Out1_re[13]
+  ( PIN Out1_re[13] ) ;
+- Out1_im[13]
+  ( PIN Out1_im[13] ) ;
+- Out1_re[12]
+  ( PIN Out1_re[12] ) ;
+- Out1_im[12]
+  ( PIN Out1_im[12] ) ;
+- Out1_re[11]
+  ( PIN Out1_re[11] ) ;
+- Out1_im[11]
+  ( PIN Out1_im[11] ) ;
+- Out1_re[10]
+  ( PIN Out1_re[10] ) ;
+- Out1_im[10]
+  ( PIN Out1_im[10] ) ;
+- Out1_re[9]
+  ( PIN Out1_re[9] ) ;
+- Out1_im[9]
+  ( PIN Out1_im[9] ) ;
+- Out1_re[8]
+  ( PIN Out1_re[8] ) ;
+- Out1_im[8]
+  ( PIN Out1_im[8] ) ;
+- Out1_re[7]
+  ( PIN Out1_re[7] ) ;
+- Out1_im[7]
+  ( PIN Out1_im[7] ) ;
+- Out1_re[6]
+  ( PIN Out1_re[6] ) ;
+- Out1_im[6]
+  ( PIN Out1_im[6] ) ;
+- Out1_re[5]
+  ( PIN Out1_re[5] ) ;
+- Out1_im[5]
+  ( PIN Out1_im[5] ) ;
+- Out1_re[4]
+  ( PIN Out1_re[4] ) ;
+- Out1_im[4]
+  ( PIN Out1_im[4] ) ;
+- Out1_re[3]
+  ( PIN Out1_re[3] ) ;
+- Out1_im[3]
+  ( PIN Out1_im[3] ) ;
+- Out1_re[2]
+  ( PIN Out1_re[2] ) ;
+- Out1_im[2]
+  ( PIN Out1_im[2] ) ;
+- Out1_re[1]
+  ( PIN Out1_re[1] ) ;
+- Out1_im[1]
+  ( PIN Out1_im[1] ) ;
+- Out1_re[0]
+  ( PIN Out1_re[0] ) ;
+- Out1_im[0]
+  ( PIN Out1_im[0] ) ;
+- Out5_im[1]
+  ( PIN Out5_im[1] ) ;
+- Out5_im[2]
+  ( PIN Out5_im[2] ) ;
+- Out5_re[2]
+  ( PIN Out5_re[2] ) ;
+- Out5_im[3]
+  ( PIN Out5_im[3] ) ;
+- Out5_re[3]
+  ( PIN Out5_re[3] ) ;
+- Out5_im[4]
+  ( PIN Out5_im[4] ) ;
+- Out5_re[4]
+  ( PIN Out5_re[4] ) ;
+- Out5_im[5]
+  ( PIN Out5_im[5] ) ;
+- Out5_re[5]
+  ( PIN Out5_re[5] ) ;
+- Out5_im[6]
+  ( PIN Out5_im[6] ) ;
+- Out5_re[6]
+  ( PIN Out5_re[6] ) ;
+- Out5_im[7]
+  ( PIN Out5_im[7] ) ;
+- Out5_re[7]
+  ( PIN Out5_re[7] ) ;
+- Out5_im[8]
+  ( PIN Out5_im[8] ) ;
+- Out5_re[8]
+  ( PIN Out5_re[8] ) ;
+- Out5_im[9]
+  ( PIN Out5_im[9] ) ;
+- Out5_re[9]
+  ( PIN Out5_re[9] ) ;
+- Out5_im[10]
+  ( PIN Out5_im[10] ) ;
+- Out5_re[10]
+  ( PIN Out5_re[10] ) ;
+- Out5_im[11]
+  ( PIN Out5_im[11] ) ;
+- Out5_re[11]
+  ( PIN Out5_re[11] ) ;
+- Out5_im[12]
+  ( PIN Out5_im[12] ) ;
+- Out5_re[12]
+  ( PIN Out5_re[12] ) ;
+- Out5_im[13]
+  ( PIN Out5_im[13] ) ;
+- Out5_re[13]
+  ( PIN Out5_re[13] ) ;
+- Out5_im[14]
+  ( PIN Out5_im[14] ) ;
+- Out5_re[14]
+  ( PIN Out5_re[14] ) ;
+- Out5_im[15]
+  ( PIN Out5_im[15] ) ;
+- Out5_re[15]
+  ( PIN Out5_re[15] ) ;
+- In1_im[11]
+  ( PIN In1_im[11] ) ;
+- rst_n
+  ( PIN rst_n ) ;
+- In1_im[10]
+  ( PIN In1_im[10] ) ;
+- Out5_im[0]
+  ( PIN Out5_im[0] ) ;
+- Out5_re[0]
+  ( PIN Out5_re[0] ) ;
+- Out5_re[1]
+  ( PIN Out5_re[1] ) ;
+- In1_re[8]
+  ( PIN In1_re[8] ) ;
+- In1_re[9]
+  ( PIN In1_re[9] ) ;
+- In1_re[10]
+  ( PIN In1_re[10] ) ;
+- In1_re[11]
+  ( PIN In1_re[11] ) ;
+- clk
+  ( PIN clk ) ;
+- In1_re[12]
+  ( PIN In1_re[12] ) ;
+- In1_re[3]
+  ( PIN In1_re[3] ) ;
+- In1_re[0]
+  ( PIN In1_re[0] ) ;
+- In1_re[1]
+  ( PIN In1_re[1] ) ;
+- In1_im[0]
+  ( PIN In1_im[0] ) ;
+- In1_im[1]
+  ( PIN In1_im[1] ) ;
+- In1_im[2]
+  ( PIN In1_im[2] ) ;
+- In1_im[3]
+  ( PIN In1_im[3] ) ;
+- In1_im[4]
+  ( PIN In1_im[4] ) ;
+- In1_im[5]
+  ( PIN In1_im[5] ) ;
+- In1_im[6]
+  ( PIN In1_im[6] ) ;
+- In1_im[7]
+  ( PIN In1_im[7] ) ;
+- In1_im[8]
+  ( PIN In1_im[8] ) ;
+- In1_im[9]
+  ( PIN In1_im[9] ) ;
+- In1_re[4]
+  ( PIN In1_re[4] ) ;
+- In1_re[2]
+  ( PIN In1_re[2] ) ;
+END NETS
+
+END DESIGN

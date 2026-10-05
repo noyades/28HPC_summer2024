@@ -1,0 +1,1353 @@
+[01/11 09:42:17      0s] 
+[01/11 09:42:17      0s] Cadence Innovus(TM) Implementation System.
+[01/11 09:42:17      0s] Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+[01/11 09:42:17      0s] 
+[01/11 09:42:17      0s] Version:	v22.10-p001_1, built Thu Sep 29 11:03:49 PDT 2022
+[01/11 09:42:17      0s] Options:	
+[01/11 09:42:17      0s] Date:		Sat Jan 11 09:42:17 2025
+[01/11 09:42:17      0s] Host:		cluster15 (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (6cores*24cpus*Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz 15360KB)
+[01/11 09:42:17      0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[01/11 09:42:17      0s] 
+[01/11 09:42:17      0s] License:
+[01/11 09:42:17      0s] 		[09:42:17.284089] Configured Lic search path (21.01-s002): 27002@license.ece.vt.edu
+
+[01/11 09:42:17      0s] 		invs	Innovus Implementation System	22.1	checkout succeeded
+[01/11 09:42:17      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[01/11 09:42:47     27s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v22.10-p001_1 (64bit) 09/29/2022 11:03 (Linux 3.10.0-693.el7.x86_64)
+[01/11 09:42:53     32s] @(#)CDS: NanoRoute 22.10-p001_1 NR220915-0329/22_10-UB (database version 18.20.590) {superthreading v2.19}
+[01/11 09:42:53     32s] @(#)CDS: AAE 22.10-p002 (64bit) 09/29/2022 (Linux 3.10.0-693.el7.x86_64)
+[01/11 09:42:53     32s] @(#)CDS: CTE 22.10-p004_1 () Sep  7 2022 21:57:29 ( )
+[01/11 09:42:53     32s] @(#)CDS: SYNTECH 22.10-p001_1 () Aug  8 2022 11:26:34 ( )
+[01/11 09:42:53     32s] @(#)CDS: CPE v22.10-p005
+[01/11 09:42:53     32s] @(#)CDS: IQuantus/TQuantus 21.2.0-s201 (64bit) Wed Jul 6 19:14:09 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+[01/11 09:42:53     32s] @(#)CDS: OA 22.60-p076 Wed May 18 13:45:29 2022
+[01/11 09:42:53     32s] @(#)CDS: SGN 21.20-d001 (11-Feb-2022) (64 bit executable, TkQt5.9.1)
+[01/11 09:42:53     32s] @(#)CDS: RCDB 11.15.0
+[01/11 09:42:53     32s] @(#)CDS: STYLUS 22.10-p001_1 (08/24/2022 07:47 PDT)
+[01/11 09:42:53     32s] @(#)CDS: Orbit-22.10Rel-9221 (22.10) (2022-09-28 18:03:21+0800)
+[01/11 09:42:53     32s] Create and set the environment variable TMPDIR to /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/innovus_temp_41091_cluster15_jswalling_2MwxPo.
+
+[01/11 09:42:53     32s] The soft stacksize limit is either up to the hard limit or larger than 0.2% of RAM. No change is needed.
+[01/11 09:42:56     36s] 
+[01/11 09:42:56     36s] **INFO:  MMMC transition support version v31-84 
+[01/11 09:42:56     36s] 
+[01/11 09:42:56     36s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[01/11 09:42:56     36s] <CMD> suppressMessage ENCEXT-2799
+[01/11 09:42:56     36s] <CMD> win
+[01/11 09:42:56     36s] <CMD> set enc_check_rename_command_name 1
+[01/11 09:44:09     44s] <CMD> read_db INVS/
+[01/11 09:44:10     44s] (stylus_db): WARNING: Attempting to load Common DB 'INVS' saved by Genus(TM) Synthesis Solution 22.10-p001_1 with MMMC file version 2 in Innovus Legacy UI.
+[01/11 09:44:10     44s] (stylus_db): ::init_mmmc_version set to version 2 from SQL db.
+[01/11 09:44:10     44s] #% Begin Load Common DB (date=01/11 09:44:10, mem=1073.7M)
+[01/11 09:44:10     44s] (stylus_db): Begin loading Common DB 'INVS' (Created by Genus(TM) Synthesis Solution 22.10-p001_1) ...
+[01/11 09:44:10     44s] (stylus_db): Initialized SQLite db version 0.2 ..
+[01/11 09:44:10     44s] (stylus_db): Sourcing .globals file  ...
+[01/11 09:44:10     45s] **WARN: (IMPIMEX-4008):	Variable 'init_state' is no longer supported in user data manager and will be ignored.
+[01/11 09:44:10     45s] **WARN: (IMPUDM-33):	Global variable "soceUseIdealDelayForClkInAllMode" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+[01/11 09:44:10     45s] (stylus_db): Load Flow-Kit settings ...
+[01/11 09:44:11     45s] % Begin Load Flow-Kit settings (date=01/11 09:44:10, mem=1076.8M)
+[01/11 09:44:11     45s] % End Load Flow-Kit settings (date=01/11 09:44:11, total cpu=0:00:00.0, real=0:00:00.0, peak res=1076.8M, current mem=1076.8M)
+[01/11 09:44:11     45s] % Begin Load MMMC data (date=01/11 09:44:11, mem=1076.8M)
+[01/11 09:44:11     45s] (stylus_db): Process MMMC view-def file later during init_design
+[01/11 09:44:11     45s] % End Load MMMC data (date=01/11 09:44:11, total cpu=0:00:00.0, real=0:00:00.0, peak res=1076.8M, current mem=1076.8M)
+[01/11 09:44:11     45s] (stylus_db): Load LEF files later during init_design ...
+[01/11 09:44:11     45s] (stylus_db): Load Verilog Netlist later during init_design ...
+[01/11 09:44:11     45s] (stylus_db): Init Design
+[01/11 09:44:11     45s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[01/11 09:44:11     45s] % Begin Load MMMC data ... (date=01/11 09:44:11, mem=1077.0M)
+[01/11 09:44:11     45s] % End Load MMMC data ... (date=01/11 09:44:11, total cpu=0:00:00.1, real=0:00:00.0, peak res=1077.0M, current mem=1076.9M)
+[01/11 09:44:11     45s] 
+[01/11 09:44:11     45s] Loading LEF file /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/sc9mcpp140z_tech.lef ...
+[01/11 09:44:11     45s] 
+[01/11 09:44:11     45s] Loading LEF file /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lef/sc9mcpp140z_cln28ht_base_lvt_c30.lef ...
+[01/11 09:44:11     45s] Set DBUPerIGU to M1 pitch 280.
+[01/11 09:44:11     46s] 
+[01/11 09:44:11     46s] Loading LEF file /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_lvt_c30/r0p0/lef/sc9mcpp140z_cln28ht_hpk_lvt_c30.lef ...
+[01/11 09:44:12     46s] 
+[01/11 09:44:12     46s] Loading LEF file /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_svt_c30/r0p0/lef/sc9mcpp140z_cln28ht_base_svt_c30.lef ...
+[01/11 09:44:12     47s] 
+[01/11 09:44:12     47s] Loading LEF file /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_svt_c30/r0p0/lef/sc9mcpp140z_cln28ht_hpk_svt_c30.lef ...
+[01/11 09:44:12     47s] 
+[01/11 09:44:12     47s] Loading LEF file /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_ulvt_c30/r0p0/lef/sc9mcpp140z_cln28ht_base_ulvt_c30.lef ...
+[01/11 09:44:13     48s] 
+[01/11 09:44:13     48s] Loading LEF file /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_hpk_ulvt_c30/r0p0/lef/sc9mcpp140z_cln28ht_hpk_ulvt_c30.lef ...
+[01/11 09:44:13     48s] 
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+[01/11 09:44:13     48s] Loading view definition file from /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/INVS/cmn/pp_fir_u_0.mmmc.tcl
+[01/11 09:44:13     48s] Reading wcl_slow timing library '/software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib' ...
+[01/11 09:44:17     52s] **WARN: (TECHLIB-302):	No function defined for cell 'FILLTIE5_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+[01/11 09:44:17     52s] **WARN: (TECHLIB-302):	No function defined for cell 'ENDCAPTIE3_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+[01/11 09:44:17     52s] **WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP8_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+[01/11 09:44:17     52s] **WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP64_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+[01/11 09:44:17     52s] **WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP4_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+[01/11 09:44:17     52s] **WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP3_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+[01/11 09:44:17     52s] **WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP32_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+[01/11 09:44:17     52s] **WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP2_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+[01/11 09:44:17     52s] **WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP16_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+[01/11 09:44:17     52s] **WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP128_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+[01/11 09:44:17     52s] **WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP8_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+[01/11 09:44:17     52s] **WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP64_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+[01/11 09:44:17     52s] **WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP4_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+[01/11 09:44:17     52s] **WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP3_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+[01/11 09:44:17     52s] **WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP32_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+[01/11 09:44:17     52s] **WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP2_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+[01/11 09:44:17     52s] **WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP16_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+[01/11 09:44:17     52s] **WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP128_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+[01/11 09:44:17     52s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA2_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+[01/11 09:44:19     54s] Read 1003 cells in library 'sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c' 
+[01/11 09:44:20     54s] Ending "PreSetAnalysisView" (total cpu=0:00:06.0, real=0:00:07.0, peak res=1276.2M, current mem=1130.4M)
+[01/11 09:44:20     54s] *** End library_loading (cpu=0.10min, real=0.12min, mem=39.5M, fe_cpu=0.90min, fe_real=2.05min, fe_mem=1267.7M) ***
+[01/11 09:44:20     54s] % Begin Load netlist data ... (date=01/11 09:44:20, mem=1130.4M)
+[01/11 09:44:20     54s] *** Begin netlist parsing (mem=1267.7M) ***
+[01/11 09:44:20     54s] Created 1003 new cells from 1 timing libraries.
+[01/11 09:44:20     54s] Reading netlist ...
+[01/11 09:44:20     54s] Backslashed names will retain backslash and a trailing blank character.
+[01/11 09:44:20     54s] Reading verilog netlist '/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/INVS/cmn/pp_fir_u_0.v.gz'
+[01/11 09:44:21     54s] 
+[01/11 09:44:21     54s] *** Memory Usage v#1 (Current mem = 1267.652M, initial mem = 509.465M) ***
+[01/11 09:44:21     54s] *** End netlist parsing (cpu=0:00:00.5, real=0:00:01.0, mem=1267.7M) ***
+[01/11 09:44:21     54s] % End Load netlist data ... (date=01/11 09:44:21, total cpu=0:00:00.5, real=0:00:01.0, peak res=1155.6M, current mem=1155.6M)
+[01/11 09:44:21     54s] Top level cell is pp_fir_u_0.
+[01/11 09:44:21     55s] Hooked 1003 DB cells to tlib cells.
+[01/11 09:44:21     55s] Ending "BindLib:" (total cpu=0:00:00.2, real=0:00:00.0, peak res=1193.9M, current mem=1193.9M)
+[01/11 09:44:21     55s] Starting recursive module instantiation check.
+[01/11 09:44:21     55s] No recursion found.
+[01/11 09:44:21     55s] Building hierarchical netlist for Cell pp_fir_u_0 ...
+[01/11 09:44:21     55s] ***** UseNewTieNetMode *****.
+[01/11 09:44:21     55s] *** Netlist is unique.
+[01/11 09:44:21     55s] Setting Std. cell height to 1800 DBU (smallest netlist inst).
+[01/11 09:44:21     55s] ** info: there are 3539 modules.
+[01/11 09:44:21     55s] ** info: there are 20970 stdCell insts.
+[01/11 09:44:21     55s] 
+[01/11 09:44:21     55s] *** Memory Usage v#1 (Current mem = 1335.125M, initial mem = 509.465M) ***
+[01/11 09:44:21     55s] *info: set bottom ioPad orient R0
+[01/11 09:44:21     55s] The core width changes from 207.370000 to 207.340000 when snapping to grid "PlacementGrid".
+[01/11 09:44:21     55s] 
+[01/11 09:44:21     55s] Honor LEF defined pitches for advanced node
+[01/11 09:44:21     55s] Start create_tracks
+[01/11 09:44:21     55s] Set Shrink Factor to 0.90000
+[01/11 09:44:22     56s] Extraction setup Delayed 
+[01/11 09:44:22     56s] *Info: initialize multi-corner CTS.
+[01/11 09:44:22     56s] Reading wcl_fast timing library '/software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ffg_cbestt_min_0p99v_m40c.lib' ...
+[01/11 09:44:26     60s] **WARN: (TECHLIB-302):	No function defined for cell 'FILLTIE5_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ffg_cbestt_min_0p99v_m40c.lib)
+[01/11 09:44:26     60s] Message <TECHLIB-302> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+[01/11 09:44:27     60s] Read 1003 cells in library 'sc9mcpp140z_cln28ht_base_lvt_c30_ffg_cbestt_min_0p99v_m40c' 
+[01/11 09:44:27     60s] Reading wcl_typical timing library '/software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_tt_ctypical_max_0p90v_25c.lib' ...
+[01/11 09:44:31     65s] Read 1003 cells in library 'sc9mcpp140z_cln28ht_base_lvt_c30_tt_ctypical_max_0p90v_25c' 
+[01/11 09:44:33     65s] Ending "SetAnalysisView" (total cpu=0:00:09.9, real=0:00:11.0, peak res=1481.6M, current mem=1247.9M)
+[01/11 09:44:33     66s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[01/11 09:44:33     66s] 
+[01/11 09:44:33     66s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[01/11 09:44:33     66s] Summary for sequential cells identification: 
+[01/11 09:44:33     66s]   Identified SBFF number: 92
+[01/11 09:44:33     66s]   Identified MBFF number: 0
+[01/11 09:44:33     66s]   Identified SB Latch number: 0
+[01/11 09:44:33     66s]   Identified MB Latch number: 0
+[01/11 09:44:33     66s]   Not identified SBFF number: 12
+[01/11 09:44:33     66s]   Not identified MBFF number: 0
+[01/11 09:44:33     66s]   Not identified SB Latch number: 0
+[01/11 09:44:33     66s]   Not identified MB Latch number: 0
+[01/11 09:44:33     66s]   Number of sequential cells which are not FFs: 132
+[01/11 09:44:33     66s] Total number of combinational cells: 749
+[01/11 09:44:33     66s] Total number of sequential cells: 236
+[01/11 09:44:33     66s] Total number of tristate cells: 0
+[01/11 09:44:33     66s] Total number of level shifter cells: 0
+[01/11 09:44:33     66s] Total number of power gating cells: 0
+[01/11 09:44:33     66s] Total number of isolation cells: 0
+[01/11 09:44:33     66s] Total number of power switch cells: 0
+[01/11 09:44:33     66s] Total number of pulse generator cells: 0
+[01/11 09:44:33     66s] Total number of always on buffers: 0
+[01/11 09:44:33     66s] Total number of retention cells: 0
+[01/11 09:44:33     66s] Total number of physical cells: 18
+[01/11 09:44:33     66s] List of usable buffers: FRICG_X0P5B_A9PP140ZTL_C30 FRICG_X0P6B_A9PP140ZTL_C30 FRICG_X0P8B_A9PP140ZTL_C30 FRICG_X0P7B_A9PP140ZTL_C30 FRICG_X11B_A9PP140ZTL_C30 FRICG_X13B_A9PP140ZTL_C30 FRICG_X16B_A9PP140ZTL_C30 FRICG_X1B_A9PP140ZTL_C30 FRICG_X1P2B_A9PP140ZTL_C30 FRICG_X1P4B_A9PP140ZTL_C30 FRICG_X2B_A9PP140ZTL_C30 FRICG_X1P7B_A9PP140ZTL_C30 FRICG_X2P5B_A9PP140ZTL_C30 FRICG_X3B_A9PP140ZTL_C30 FRICG_X4B_A9PP140ZTL_C30 FRICG_X3P5B_A9PP140ZTL_C30 FRICG_X5B_A9PP140ZTL_C30 FRICG_X6B_A9PP140ZTL_C30 FRICG_X7P5B_A9PP140ZTL_C30 FRICG_X9B_A9PP140ZTL_C30 BUFH_X11M_A9PP140ZTL_C30 BUFH_X13M_A9PP140ZTL_C30 BUFH_X16M_A9PP140ZTL_C30 BUFH_X1M_A9PP140ZTL_C30 BUFH_X1P2M_A9PP140ZTL_C30 BUFH_X1P4M_A9PP140ZTL_C30 BUFH_X2M_A9PP140ZTL_C30 BUFH_X1P7M_A9PP140ZTL_C30 BUFH_X2P5M_A9PP140ZTL_C30 BUFH_X3M_A9PP140ZTL_C30 BUFH_X4M_A9PP140ZTL_C30 BUFH_X3P5M_A9PP140ZTL_C30 BUFH_X5M_A9PP140ZTL_C30 BUFH_X6M_A9PP140ZTL_C30 BUFH_X7P5M_A9PP140ZTL_C30 BUFH_X9M_A9PP140ZTL_C30 BUF_X0P5B_A9PP140ZTL_C30 BUF_X0P5M_A9PP140ZTL_C30 BUF_X0P7B_A9PP140ZTL_C30 BUF_X0P7M_A9PP140ZTL_C30 BUF_X0P8M_A9PP140ZTL_C30 BUF_X0P8B_A9PP140ZTL_C30 BUF_X11B_A9PP140ZTL_C30 BUF_X11B_A9PP140ZTL_C30_XGCAP11 BUF_X11M_A9PP140ZTL_C30 BUF_X13B_A9PP140ZTL_C30 BUF_X11M_A9PP140ZTL_C30_XGCAP11 BUF_X13B_A9PP140ZTL_C30_XGCAP13 BUF_X13M_A9PP140ZTL_C30 BUF_X16B_A9PP140ZTL_C30 BUF_X13M_A9PP140ZTL_C30_XGCAP13 BUF_X16B_A9PP140ZTL_C30_XGCAP16 BUF_X16M_A9PP140ZTL_C30 BUF_X16M_A9PP140ZTL_C30_XGCAP16 BUF_X1M_A9PP140ZTL_C30 BUF_X1B_A9PP140ZTL_C30 BUF_X1P2B_A9PP140ZTL_C30 BUF_X1P2M_A9PP140ZTL_C30 BUF_X1P4B_A9PP140ZTL_C30 BUF_X1P4M_A9PP140ZTL_C30 BUF_X1P7B_A9PP140ZTL_C30 BUF_X1P7M_A9PP140ZTL_C30 BUF_X2M_A9PP140ZTL_C30 BUF_X2B_A9PP140ZTL_C30 BUF_X2P5B_A9PP140ZTL_C30 BUF_X2P5M_A9PP140ZTL_C30 BUF_X3M_A9PP140ZTL_C30 BUF_X3B_A9PP140ZTL_C30 BUF_X3P5B_A9PP140ZTL_C30 BUF_X3P5M_A9PP140ZTL_C30 BUF_X4B_A9PP140ZTL_C30 BUF_X4B_A9PP140ZTL_C30_XGCAP4 BUF_X4M_A9PP140ZTL_C30 BUF_X5B_A9PP140ZTL_C30 BUF_X4M_A9PP140ZTL_C30_XGCAP4 BUF_X5B_A9PP140ZTL_C30_XGCAP5 BUF_X5M_A9PP140ZTL_C30 BUF_X6B_A9PP140ZTL_C30 BUF_X5M_A9PP140ZTL_C30_XGCAP5 BUF_X6B_A9PP140ZTL_C30_XGCAP6 BUF_X6M_A9PP140ZTL_C30 BUF_X7P5B_A9PP140ZTL_C30 BUF_X6M_A9PP140ZTL_C30_XGCAP6 BUF_X7P5B_A9PP140ZTL_C30_XGCAP8 BUF_X7P5M_A9PP140ZTL_C30 BUF_X7P5M_A9PP140ZTL_C30_XGCAP8 BUF_X9B_A9PP140ZTL_C30 BUF_X9M_A9PP140ZTL_C30 BUF_X9B_A9PP140ZTL_C30_XGCAP9 BUF_X9M_A9PP140ZTL_C30_XGCAP9 DLY2_X1M_A9PP140ZTL_C30 DLY2_X0P5M_A9PP140ZTL_C30 DLY2_X2M_A9PP140ZTL_C30 DLYCLK8S2_X1B_A9PP140ZTL_C30 DLYCLK8S2_X2B_A9PP140ZTL_C30 DLYCLK8S4_X1B_A9PP140ZTL_C30 DLYCLK8S4_X2B_A9PP140ZTL_C30
+[01/11 09:44:33     66s] Total number of usable buffers: 97
+[01/11 09:44:33     66s] List of unusable buffers:
+[01/11 09:44:33     66s] Total number of unusable buffers: 0
+[01/11 09:44:33     66s] List of usable inverters: INV_X0P5B_A9PP140ZTL_C30 INV_X0P5M_A9PP140ZTL_C30 INV_X0P6B_A9PP140ZTL_C30 INV_X0P6M_A9PP140ZTL_C30 INV_X0P7B_A9PP140ZTL_C30 INV_X0P7M_A9PP140ZTL_C30 INV_X0P8M_A9PP140ZTL_C30 INV_X0P8B_A9PP140ZTL_C30 INV_X11B_A9PP140ZTL_C30 INV_X11B_A9PP140ZTL_C30_XGCAP11 INV_X11M_A9PP140ZTL_C30 INV_X13B_A9PP140ZTL_C30 INV_X11M_A9PP140ZTL_C30_XGCAP11 INV_X13B_A9PP140ZTL_C30_XGCAP13 INV_X13M_A9PP140ZTL_C30 INV_X16B_A9PP140ZTL_C30 INV_X13M_A9PP140ZTL_C30_XGCAP13 INV_X16B_A9PP140ZTL_C30_XGCAP16 INV_X16M_A9PP140ZTL_C30 INV_X16M_A9PP140ZTL_C30_XGCAP16 INV_X1M_A9PP140ZTL_C30 INV_X1B_A9PP140ZTL_C30 INV_X1P2B_A9PP140ZTL_C30 INV_X1P2M_A9PP140ZTL_C30 INV_X1P4B_A9PP140ZTL_C30 INV_X1P4M_A9PP140ZTL_C30 INV_X1P7B_A9PP140ZTL_C30 INV_X1P7M_A9PP140ZTL_C30 INV_X2M_A9PP140ZTL_C30 INV_X2B_A9PP140ZTL_C30 INV_X2P5B_A9PP140ZTL_C30 INV_X2P5M_A9PP140ZTL_C30 INV_X3M_A9PP140ZTL_C30 INV_X3B_A9PP140ZTL_C30 INV_X3P5B_A9PP140ZTL_C30 INV_X4B_A9PP140ZTL_C30 INV_X3P5M_A9PP140ZTL_C30 INV_X4B_A9PP140ZTL_C30_XGCAP4 INV_X4M_A9PP140ZTL_C30 INV_X5B_A9PP140ZTL_C30 INV_X4M_A9PP140ZTL_C30_XGCAP4 INV_X5B_A9PP140ZTL_C30_XGCAP5 INV_X5M_A9PP140ZTL_C30 INV_X6B_A9PP140ZTL_C30 INV_X5M_A9PP140ZTL_C30_XGCAP5 INV_X6B_A9PP140ZTL_C30_XGCAP6 INV_X6M_A9PP140ZTL_C30 INV_X7P5B_A9PP140ZTL_C30 INV_X6M_A9PP140ZTL_C30_XGCAP6 INV_X7P5B_A9PP140ZTL_C30_XGCAP8 INV_X7P5M_A9PP140ZTL_C30 INV_X9B_A9PP140ZTL_C30 INV_X7P5M_A9PP140ZTL_C30_XGCAP8 INV_X9B_A9PP140ZTL_C30_XGCAP9 INV_X9M_A9PP140ZTL_C30 INV_X9M_A9PP140ZTL_C30_XGCAP9
+[01/11 09:44:33     66s] Total number of usable inverters: 56
+[01/11 09:44:33     66s] List of unusable inverters:
+[01/11 09:44:33     66s] Total number of unusable inverters: 0
+[01/11 09:44:33     66s] List of identified usable delay cells: DLY10_X1M_A9PP140ZTL_C30 DLY10_X0P5M_A9PP140ZTL_C30 DLY10_X2M_A9PP140ZTL_C30 DLY10_X4M_A9PP140ZTL_C30 DLY2_X4M_A9PP140ZTL_C30 DLY4_X1M_A9PP140ZTL_C30 DLY4_X0P5M_A9PP140ZTL_C30 DLY4_X2M_A9PP140ZTL_C30 DLY4_X4M_A9PP140ZTL_C30 DLY6_X1M_A9PP140ZTL_C30 DLY6_X0P5M_A9PP140ZTL_C30 DLY6_X2M_A9PP140ZTL_C30 DLY6_X4M_A9PP140ZTL_C30 DLY8_X0P5M_A9PP140ZTL_C30 DLY8_X1M_A9PP140ZTL_C30 DLY8_X2M_A9PP140ZTL_C30 DLY8_X4M_A9PP140ZTL_C30 DLYCLK8S6_X1B_A9PP140ZTL_C30 DLYCLK8S6_X2B_A9PP140ZTL_C30 DLYCLK8S8_X1B_A9PP140ZTL_C30 DLYCLK8S8_X2B_A9PP140ZTL_C30
+[01/11 09:44:33     66s] Total number of identified usable delay cells: 21
+[01/11 09:44:33     66s] List of identified unusable delay cells:
+[01/11 09:44:33     66s] Total number of identified unusable delay cells: 0
+[01/11 09:44:33     66s] 
+[01/11 09:44:33     66s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+[01/11 09:44:33     66s] 
+[01/11 09:44:33     66s] TimeStamp Deleting Cell Server Begin ...
+[01/11 09:44:33     66s] 
+[01/11 09:44:33     66s] TimeStamp Deleting Cell Server End ...
+[01/11 09:44:33     66s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1297.2M, current mem=1297.2M)
+[01/11 09:44:33     66s] 
+[01/11 09:44:33     66s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[01/11 09:44:33     66s] Summary for sequential cells identification: 
+[01/11 09:44:33     66s]   Identified SBFF number: 92
+[01/11 09:44:33     66s]   Identified MBFF number: 0
+[01/11 09:44:33     66s]   Identified SB Latch number: 0
+[01/11 09:44:33     66s]   Identified MB Latch number: 0
+[01/11 09:44:33     66s]   Not identified SBFF number: 12
+[01/11 09:44:33     66s]   Not identified MBFF number: 0
+[01/11 09:44:33     66s]   Not identified SB Latch number: 0
+[01/11 09:44:33     66s]   Not identified MB Latch number: 0
+[01/11 09:44:33     66s]   Number of sequential cells which are not FFs: 132
+[01/11 09:44:33     66s] eee: Trim Metal Layers: { }
+[01/11 09:44:33     66s]  Visiting view : view_wcl_slow
+[01/11 09:44:33     66s]    : PowerDomain = none : Weighted F : unweighted  = 5.40 (1.000) with rcCorner = 0
+[01/11 09:44:33     66s]    : PowerDomain = none : Weighted F : unweighted  = 4.80 (1.000) with rcCorner = -1
+[01/11 09:44:33     66s]  Visiting view : view_wcl_fast
+[01/11 09:44:33     66s]    : PowerDomain = none : Weighted F : unweighted  = 3.40 (1.000) with rcCorner = 1
+[01/11 09:44:33     66s]    : PowerDomain = none : Weighted F : unweighted  = 3.00 (1.000) with rcCorner = -1
+[01/11 09:44:33     66s]  Visiting view : view_wcl_typical
+[01/11 09:44:33     66s]    : PowerDomain = none : Weighted F : unweighted  = 4.20 (1.000) with rcCorner = 2
+[01/11 09:44:33     66s]    : PowerDomain = none : Weighted F : unweighted  = 3.70 (1.000) with rcCorner = -1
+[01/11 09:44:33     66s]  Visiting view : view_wcl_slow
+[01/11 09:44:33     66s]    : PowerDomain = none : Weighted F : unweighted  = 5.40 (1.000) with rcCorner = 0
+[01/11 09:44:33     66s]    : PowerDomain = none : Weighted F : unweighted  = 4.80 (1.000) with rcCorner = -1
+[01/11 09:44:33     66s]  Visiting view : view_wcl_fast
+[01/11 09:44:33     66s]    : PowerDomain = none : Weighted F : unweighted  = 3.40 (1.000) with rcCorner = 1
+[01/11 09:44:33     66s]    : PowerDomain = none : Weighted F : unweighted  = 3.00 (1.000) with rcCorner = -1
+[01/11 09:44:33     66s]  Visiting view : view_wcl_typical
+[01/11 09:44:33     66s]    : PowerDomain = none : Weighted F : unweighted  = 4.20 (1.000) with rcCorner = 2
+[01/11 09:44:33     66s]    : PowerDomain = none : Weighted F : unweighted  = 3.70 (1.000) with rcCorner = -1
+[01/11 09:44:33     66s] 
+[01/11 09:44:33     66s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[01/11 09:44:33     66s] 
+[01/11 09:44:33     66s] TimeStamp Deleting Cell Server Begin ...
+[01/11 09:44:33     66s] 
+[01/11 09:44:33     66s] TimeStamp Deleting Cell Server End ...
+[01/11 09:44:33     66s] % Begin Load MMMC data post ... (date=01/11 09:44:33, mem=1308.7M)
+[01/11 09:44:33     66s] % End Load MMMC data post ... (date=01/11 09:44:33, total cpu=0:00:00.0, real=0:00:00.0, peak res=1308.7M, current mem=1308.7M)
+[01/11 09:44:33     66s] Extraction setup Started 
+[01/11 09:44:33     66s] eee: Trim Metal Layers: { }
+[01/11 09:44:33     66s] Initializing multi-corner RC extraction with 3 active RC Corners ...
+[01/11 09:44:33     66s] Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For postRoute extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+[01/11 09:44:33     66s] eee: __QRC_SADV_USE_LE__ is set 0
+[01/11 09:44:35     67s] eee: Metal Layer Id 1 is M1 
+[01/11 09:44:35     67s] eee: Metal Layer Id 2 is M2 
+[01/11 09:44:35     67s] eee: Metal Layer Id 3 is M3 
+[01/11 09:44:35     67s] eee: Metal Layer Id 4 is M4 
+[01/11 09:44:35     67s] eee: Metal Layer Id 5 is M5 
+[01/11 09:44:35     67s] eee: Metal Layer Id 6 is M6 
+[01/11 09:44:35     67s] eee: Metal Layer Id 7 is M7 
+[01/11 09:44:35     67s] eee: Metal Layer Id 8 is M8 
+[01/11 09:44:35     67s] eee: Metal Layer Id 9 is M9 
+[01/11 09:44:35     67s] eee: Metal Layer Id 10 is AP 
+[01/11 09:44:35     67s] eee: Via Layer Id 34 is VIA1 
+[01/11 09:44:35     67s] eee: Via Layer Id 35 is VIA2 
+[01/11 09:44:35     67s] eee: Via Layer Id 36 is VIA3 
+[01/11 09:44:35     67s] eee: Via Layer Id 37 is VIA4 
+[01/11 09:44:35     67s] eee: Via Layer Id 38 is VIA5 
+[01/11 09:44:35     67s] eee: Via Layer Id 39 is VIA6 
+[01/11 09:44:35     67s] eee: Via Layer Id 40 is VIA7 
+[01/11 09:44:35     67s] eee: Via Layer Id 41 is VIA8 
+[01/11 09:44:35     67s] eee: Via Layer Id 42 is RV 
+[01/11 09:44:35     67s] eee: Trim Metal Layers: { }
+[01/11 09:44:35     67s] Generating auto layer map file.
+[01/11 09:44:35     67s] eee:  lef metal Layer Id 1 mapped to tech Id 5 of Layer m1 
+[01/11 09:44:35     67s] eee:  lef via Layer Id 1 mapped to tech Id 6 of Layer via1 
+[01/11 09:44:35     67s] eee:  lef metal Layer Id 2 mapped to tech Id 7 of Layer m2 
+[01/11 09:44:35     67s] eee:  lef via Layer Id 2 mapped to tech Id 8 of Layer via2 
+[01/11 09:44:35     67s] eee:  lef metal Layer Id 3 mapped to tech Id 9 of Layer m3 
+[01/11 09:44:35     67s] eee:  lef via Layer Id 3 mapped to tech Id 10 of Layer via3 
+[01/11 09:44:35     67s] eee:  lef metal Layer Id 4 mapped to tech Id 11 of Layer m4 
+[01/11 09:44:35     67s] eee:  lef via Layer Id 4 mapped to tech Id 12 of Layer via4 
+[01/11 09:44:35     67s] eee:  lef metal Layer Id 5 mapped to tech Id 13 of Layer m5 
+[01/11 09:44:35     67s] eee:  lef via Layer Id 5 mapped to tech Id 14 of Layer via5 
+[01/11 09:44:35     67s] eee:  lef metal Layer Id 6 mapped to tech Id 15 of Layer m6 
+[01/11 09:44:35     67s] eee:  lef via Layer Id 6 mapped to tech Id 16 of Layer via6 
+[01/11 09:44:35     67s] eee:  lef metal Layer Id 7 mapped to tech Id 17 of Layer m7 
+[01/11 09:44:35     67s] eee:  lef via Layer Id 7 mapped to tech Id 18 of Layer via7 
+[01/11 09:44:35     67s] eee:  lef metal Layer Id 8 mapped to tech Id 19 of Layer m8 
+[01/11 09:44:35     67s] eee:  lef via Layer Id 8 mapped to tech Id 20 of Layer via8 
+[01/11 09:44:35     67s] eee:  lef metal Layer Id 9 mapped to tech Id 21 of Layer m9 
+[01/11 09:44:35     67s] eee:  lef via Layer Id 9 mapped to tech Id 22 of Layer rv 
+[01/11 09:44:35     67s] eee:  lef metal Layer Id 10 mapped to tech Id 23 of Layer ap 
+[01/11 09:44:35     67s] eee: Metal Layer Id 1 mapped to 5 
+[01/11 09:44:35     67s] eee: Via Layer Id 1 mapped to 6 
+[01/11 09:44:35     67s] eee: Metal Layer Id 2 mapped to 7 
+[01/11 09:44:35     67s] eee: Via Layer Id 2 mapped to 8 
+[01/11 09:44:35     67s] eee: Metal Layer Id 3 mapped to 9 
+[01/11 09:44:35     67s] eee: Via Layer Id 3 mapped to 10 
+[01/11 09:44:35     67s] eee: Metal Layer Id 4 mapped to 11 
+[01/11 09:44:35     67s] eee: Via Layer Id 4 mapped to 12 
+[01/11 09:44:35     67s] eee: Metal Layer Id 5 mapped to 13 
+[01/11 09:44:35     67s] eee: Via Layer Id 5 mapped to 14 
+[01/11 09:44:35     67s] eee: Metal Layer Id 6 mapped to 15 
+[01/11 09:44:35     67s] eee: Via Layer Id 6 mapped to 16 
+[01/11 09:44:35     67s] eee: Metal Layer Id 7 mapped to 17 
+[01/11 09:44:35     67s] eee: Via Layer Id 7 mapped to 18 
+[01/11 09:44:35     67s] eee: Metal Layer Id 8 mapped to 19 
+[01/11 09:44:35     67s] eee: Via Layer Id 8 mapped to 20 
+[01/11 09:44:35     67s] eee: Metal Layer Id 9 mapped to 21 
+[01/11 09:44:35     67s] eee: Via Layer Id 9 mapped to 22 
+[01/11 09:44:35     67s] eee: Metal Layer Id 10 mapped to 23 
+[01/11 09:44:36     68s] eee: pegPreRouteEnableSaveRestoreRCPatterns=1, retVal=1, doesAnyTechFileNeedExtraction=1
+[01/11 09:44:36     68s] eee: Reading patterns meta data.
+[01/11 09:44:36     68s] eee: PatternAvail=0, PreRoutePatternReadFailed=3
+[01/11 09:44:36     68s] eee: Restore PreRoute Pattern Extraction data failed.
+[01/11 09:44:36     68s] Importing multi-corner technology file(s) for preRoute extraction...
+[01/11 09:44:36      0s] /software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcworst/qrcTechFile
+[01/11 09:44:37      1s] eee: Metal Layer Id 1 is M1 
+[01/11 09:44:37      1s] eee: Metal Layer Id 2 is M2 
+[01/11 09:44:37      1s] eee: Metal Layer Id 3 is M3 
+[01/11 09:44:37      1s] eee: Metal Layer Id 4 is M4 
+[01/11 09:44:37      1s] eee: Metal Layer Id 5 is M5 
+[01/11 09:44:37      1s] eee: Metal Layer Id 6 is M6 
+[01/11 09:44:37      1s] eee: Metal Layer Id 7 is M7 
+[01/11 09:44:37      1s] eee: Metal Layer Id 8 is M8 
+[01/11 09:44:37      1s] eee: Metal Layer Id 9 is M9 
+[01/11 09:44:37      1s] eee: Metal Layer Id 10 is AP 
+[01/11 09:44:37      1s] eee: Via Layer Id 34 is VIA1 
+[01/11 09:44:37      1s] eee: Via Layer Id 35 is VIA2 
+[01/11 09:44:37      1s] eee: Via Layer Id 36 is VIA3 
+[01/11 09:44:37      1s] eee: Via Layer Id 37 is VIA4 
+[01/11 09:44:37      1s] eee: Via Layer Id 38 is VIA5 
+[01/11 09:44:37      1s] eee: Via Layer Id 39 is VIA6 
+[01/11 09:44:37      1s] eee: Via Layer Id 40 is VIA7 
+[01/11 09:44:37      1s] eee: Via Layer Id 41 is VIA8 
+[01/11 09:44:37      1s] eee: Via Layer Id 42 is RV 
+[01/11 09:44:37      1s] eee: Trim Metal Layers: { }
+[01/11 09:44:37      1s] Generating auto layer map file.
+[01/11 09:44:37      1s] eee:  lef metal Layer Id 1 mapped to tech Id 5 of Layer m1 
+[01/11 09:44:37      1s] eee:  lef via Layer Id 1 mapped to tech Id 6 of Layer via1 
+[01/11 09:44:37      1s] eee:  lef metal Layer Id 2 mapped to tech Id 7 of Layer m2 
+[01/11 09:44:37      1s] eee:  lef via Layer Id 2 mapped to tech Id 8 of Layer via2 
+[01/11 09:44:37      1s] eee:  lef metal Layer Id 3 mapped to tech Id 9 of Layer m3 
+[01/11 09:44:37      1s] eee:  lef via Layer Id 3 mapped to tech Id 10 of Layer via3 
+[01/11 09:44:37      1s] eee:  lef metal Layer Id 4 mapped to tech Id 11 of Layer m4 
+[01/11 09:44:37      1s] eee:  lef via Layer Id 4 mapped to tech Id 12 of Layer via4 
+[01/11 09:44:37      1s] eee:  lef metal Layer Id 5 mapped to tech Id 13 of Layer m5 
+[01/11 09:44:37      1s] eee:  lef via Layer Id 5 mapped to tech Id 14 of Layer via5 
+[01/11 09:44:37      1s] eee:  lef metal Layer Id 6 mapped to tech Id 15 of Layer m6 
+[01/11 09:44:37      1s] eee:  lef via Layer Id 6 mapped to tech Id 16 of Layer via6 
+[01/11 09:44:37      1s] eee:  lef metal Layer Id 7 mapped to tech Id 17 of Layer m7 
+[01/11 09:44:37      1s] eee:  lef via Layer Id 7 mapped to tech Id 18 of Layer via7 
+[01/11 09:44:37      1s] eee:  lef metal Layer Id 8 mapped to tech Id 19 of Layer m8 
+[01/11 09:44:37      1s] eee:  lef via Layer Id 8 mapped to tech Id 20 of Layer via8 
+[01/11 09:44:37      1s] eee:  lef metal Layer Id 9 mapped to tech Id 21 of Layer m9 
+[01/11 09:44:37      1s] eee:  lef via Layer Id 9 mapped to tech Id 22 of Layer rv 
+[01/11 09:44:37      1s] eee:  lef metal Layer Id 10 mapped to tech Id 23 of Layer ap 
+[01/11 09:44:37      1s] eee: Metal Layer Id 1 mapped to 5 
+[01/11 09:44:37      1s] eee: Via Layer Id 1 mapped to 6 
+[01/11 09:44:37      1s] eee: Metal Layer Id 2 mapped to 7 
+[01/11 09:44:37      1s] eee: Via Layer Id 2 mapped to 8 
+[01/11 09:44:37      1s] eee: Metal Layer Id 3 mapped to 9 
+[01/11 09:44:37      1s] eee: Via Layer Id 3 mapped to 10 
+[01/11 09:44:37      1s] eee: Metal Layer Id 4 mapped to 11 
+[01/11 09:44:37      1s] eee: Via Layer Id 4 mapped to 12 
+[01/11 09:44:37      1s] eee: Metal Layer Id 5 mapped to 13 
+[01/11 09:44:37      1s] eee: Via Layer Id 5 mapped to 14 
+[01/11 09:44:37      1s] eee: Metal Layer Id 6 mapped to 15 
+[01/11 09:44:37      1s] eee: Via Layer Id 6 mapped to 16 
+[01/11 09:44:37      1s] eee: Metal Layer Id 7 mapped to 17 
+[01/11 09:44:37      1s] eee: Via Layer Id 7 mapped to 18 
+[01/11 09:44:37      1s] eee: Metal Layer Id 8 mapped to 19 
+[01/11 09:44:37      1s] eee: Via Layer Id 8 mapped to 20 
+[01/11 09:44:37      1s] eee: Metal Layer Id 9 mapped to 21 
+[01/11 09:44:37      1s] eee: Via Layer Id 9 mapped to 22 
+[01/11 09:44:37      1s] eee: Metal Layer Id 10 mapped to 23 
+
+[01/11 09:44:58      0s] /software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcbest/qrcTechFile
+[01/11 09:44:59      1s] eee: Metal Layer Id 1 is M1 
+[01/11 09:44:59      1s] eee: Metal Layer Id 2 is M2 
+[01/11 09:44:59      1s] eee: Metal Layer Id 3 is M3 
+[01/11 09:44:59      1s] eee: Metal Layer Id 4 is M4 
+[01/11 09:44:59      1s] eee: Metal Layer Id 5 is M5 
+[01/11 09:44:59      1s] eee: Metal Layer Id 6 is M6 
+[01/11 09:44:59      1s] eee: Metal Layer Id 7 is M7 
+[01/11 09:44:59      1s] eee: Metal Layer Id 8 is M8 
+[01/11 09:44:59      1s] eee: Metal Layer Id 9 is M9 
+[01/11 09:44:59      1s] eee: Metal Layer Id 10 is AP 
+[01/11 09:44:59      1s] eee: Via Layer Id 34 is VIA1 
+[01/11 09:44:59      1s] eee: Via Layer Id 35 is VIA2 
+[01/11 09:44:59      1s] eee: Via Layer Id 36 is VIA3 
+[01/11 09:44:59      1s] eee: Via Layer Id 37 is VIA4 
+[01/11 09:44:59      1s] eee: Via Layer Id 38 is VIA5 
+[01/11 09:44:59      1s] eee: Via Layer Id 39 is VIA6 
+[01/11 09:44:59      1s] eee: Via Layer Id 40 is VIA7 
+[01/11 09:44:59      1s] eee: Via Layer Id 41 is VIA8 
+[01/11 09:44:59      1s] eee: Via Layer Id 42 is RV 
+[01/11 09:44:59      1s] eee: Trim Metal Layers: { }
+[01/11 09:44:59      1s] Generating auto layer map file.
+[01/11 09:44:59      1s] eee:  lef metal Layer Id 1 mapped to tech Id 5 of Layer m1 
+[01/11 09:44:59      1s] eee:  lef via Layer Id 1 mapped to tech Id 6 of Layer via1 
+[01/11 09:44:59      1s] eee:  lef metal Layer Id 2 mapped to tech Id 7 of Layer m2 
+[01/11 09:44:59      1s] eee:  lef via Layer Id 2 mapped to tech Id 8 of Layer via2 
+[01/11 09:44:59      1s] eee:  lef metal Layer Id 3 mapped to tech Id 9 of Layer m3 
+[01/11 09:44:59      1s] eee:  lef via Layer Id 3 mapped to tech Id 10 of Layer via3 
+[01/11 09:44:59      1s] eee:  lef metal Layer Id 4 mapped to tech Id 11 of Layer m4 
+[01/11 09:44:59      1s] eee:  lef via Layer Id 4 mapped to tech Id 12 of Layer via4 
+[01/11 09:44:59      1s] eee:  lef metal Layer Id 5 mapped to tech Id 13 of Layer m5 
+[01/11 09:44:59      1s] eee:  lef via Layer Id 5 mapped to tech Id 14 of Layer via5 
+[01/11 09:44:59      1s] eee:  lef metal Layer Id 6 mapped to tech Id 15 of Layer m6 
+[01/11 09:44:59      1s] eee:  lef via Layer Id 6 mapped to tech Id 16 of Layer via6 
+[01/11 09:44:59      1s] eee:  lef metal Layer Id 7 mapped to tech Id 17 of Layer m7 
+[01/11 09:44:59      1s] eee:  lef via Layer Id 7 mapped to tech Id 18 of Layer via7 
+[01/11 09:44:59      1s] eee:  lef metal Layer Id 8 mapped to tech Id 19 of Layer m8 
+[01/11 09:44:59      1s] eee:  lef via Layer Id 8 mapped to tech Id 20 of Layer via8 
+[01/11 09:44:59      1s] eee:  lef metal Layer Id 9 mapped to tech Id 21 of Layer m9 
+[01/11 09:44:59      1s] eee:  lef via Layer Id 9 mapped to tech Id 22 of Layer rv 
+[01/11 09:44:59      1s] eee:  lef metal Layer Id 10 mapped to tech Id 23 of Layer ap 
+[01/11 09:44:59      1s] eee: Metal Layer Id 1 mapped to 5 
+[01/11 09:44:59      1s] eee: Via Layer Id 1 mapped to 6 
+[01/11 09:44:59      1s] eee: Metal Layer Id 2 mapped to 7 
+[01/11 09:44:59      1s] eee: Via Layer Id 2 mapped to 8 
+[01/11 09:44:59      1s] eee: Metal Layer Id 3 mapped to 9 
+[01/11 09:44:59      1s] eee: Via Layer Id 3 mapped to 10 
+[01/11 09:44:59      1s] eee: Metal Layer Id 4 mapped to 11 
+[01/11 09:44:59      1s] eee: Via Layer Id 4 mapped to 12 
+[01/11 09:44:59      1s] eee: Metal Layer Id 5 mapped to 13 
+[01/11 09:44:59      1s] eee: Via Layer Id 5 mapped to 14 
+[01/11 09:44:59      1s] eee: Metal Layer Id 6 mapped to 15 
+[01/11 09:44:59      1s] eee: Via Layer Id 6 mapped to 16 
+[01/11 09:44:59      1s] eee: Metal Layer Id 7 mapped to 17 
+[01/11 09:44:59      1s] eee: Via Layer Id 7 mapped to 18 
+[01/11 09:44:59      1s] eee: Metal Layer Id 8 mapped to 19 
+[01/11 09:44:59      1s] eee: Via Layer Id 8 mapped to 20 
+[01/11 09:44:59      1s] eee: Metal Layer Id 9 mapped to 21 
+[01/11 09:44:59      1s] eee: Via Layer Id 9 mapped to 22 
+[01/11 09:44:59      1s] eee: Metal Layer Id 10 mapped to 23 
+
+[01/11 09:45:20      0s] /software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/nominal/qrcTechFile
+[01/11 09:45:22      1s] eee: Metal Layer Id 1 is M1 
+[01/11 09:45:22      1s] eee: Metal Layer Id 2 is M2 
+[01/11 09:45:22      1s] eee: Metal Layer Id 3 is M3 
+[01/11 09:45:22      1s] eee: Metal Layer Id 4 is M4 
+[01/11 09:45:22      1s] eee: Metal Layer Id 5 is M5 
+[01/11 09:45:22      1s] eee: Metal Layer Id 6 is M6 
+[01/11 09:45:22      1s] eee: Metal Layer Id 7 is M7 
+[01/11 09:45:22      1s] eee: Metal Layer Id 8 is M8 
+[01/11 09:45:22      1s] eee: Metal Layer Id 9 is M9 
+[01/11 09:45:22      1s] eee: Metal Layer Id 10 is AP 
+[01/11 09:45:22      1s] eee: Via Layer Id 34 is VIA1 
+[01/11 09:45:22      1s] eee: Via Layer Id 35 is VIA2 
+[01/11 09:45:22      1s] eee: Via Layer Id 36 is VIA3 
+[01/11 09:45:22      1s] eee: Via Layer Id 37 is VIA4 
+[01/11 09:45:22      1s] eee: Via Layer Id 38 is VIA5 
+[01/11 09:45:22      1s] eee: Via Layer Id 39 is VIA6 
+[01/11 09:45:22      1s] eee: Via Layer Id 40 is VIA7 
+[01/11 09:45:22      1s] eee: Via Layer Id 41 is VIA8 
+[01/11 09:45:22      1s] eee: Via Layer Id 42 is RV 
+[01/11 09:45:22      1s] eee: Trim Metal Layers: { }
+[01/11 09:45:22      1s] Generating auto layer map file.
+[01/11 09:45:22      1s] eee:  lef metal Layer Id 1 mapped to tech Id 5 of Layer m1 
+[01/11 09:45:22      1s] eee:  lef via Layer Id 1 mapped to tech Id 6 of Layer via1 
+[01/11 09:45:22      1s] eee:  lef metal Layer Id 2 mapped to tech Id 7 of Layer m2 
+[01/11 09:45:22      1s] eee:  lef via Layer Id 2 mapped to tech Id 8 of Layer via2 
+[01/11 09:45:22      1s] eee:  lef metal Layer Id 3 mapped to tech Id 9 of Layer m3 
+[01/11 09:45:22      1s] eee:  lef via Layer Id 3 mapped to tech Id 10 of Layer via3 
+[01/11 09:45:22      1s] eee:  lef metal Layer Id 4 mapped to tech Id 11 of Layer m4 
+[01/11 09:45:22      1s] eee:  lef via Layer Id 4 mapped to tech Id 12 of Layer via4 
+[01/11 09:45:22      1s] eee:  lef metal Layer Id 5 mapped to tech Id 13 of Layer m5 
+[01/11 09:45:22      1s] eee:  lef via Layer Id 5 mapped to tech Id 14 of Layer via5 
+[01/11 09:45:22      1s] eee:  lef metal Layer Id 6 mapped to tech Id 15 of Layer m6 
+[01/11 09:45:22      1s] eee:  lef via Layer Id 6 mapped to tech Id 16 of Layer via6 
+[01/11 09:45:22      1s] eee:  lef metal Layer Id 7 mapped to tech Id 17 of Layer m7 
+[01/11 09:45:22      1s] eee:  lef via Layer Id 7 mapped to tech Id 18 of Layer via7 
+[01/11 09:45:22      1s] eee:  lef metal Layer Id 8 mapped to tech Id 19 of Layer m8 
+[01/11 09:45:22      1s] eee:  lef via Layer Id 8 mapped to tech Id 20 of Layer via8 
+[01/11 09:45:22      1s] eee:  lef metal Layer Id 9 mapped to tech Id 21 of Layer m9 
+[01/11 09:45:22      1s] eee:  lef via Layer Id 9 mapped to tech Id 22 of Layer rv 
+[01/11 09:45:22      1s] eee:  lef metal Layer Id 10 mapped to tech Id 23 of Layer ap 
+[01/11 09:45:22      1s] eee: Metal Layer Id 1 mapped to 5 
+[01/11 09:45:22      1s] eee: Via Layer Id 1 mapped to 6 
+[01/11 09:45:22      1s] eee: Metal Layer Id 2 mapped to 7 
+[01/11 09:45:22      1s] eee: Via Layer Id 2 mapped to 8 
+[01/11 09:45:22      1s] eee: Metal Layer Id 3 mapped to 9 
+[01/11 09:45:22      1s] eee: Via Layer Id 3 mapped to 10 
+[01/11 09:45:22      1s] eee: Metal Layer Id 4 mapped to 11 
+[01/11 09:45:22      1s] eee: Via Layer Id 4 mapped to 12 
+[01/11 09:45:22      1s] eee: Metal Layer Id 5 mapped to 13 
+[01/11 09:45:22      1s] eee: Via Layer Id 5 mapped to 14 
+[01/11 09:45:22      1s] eee: Metal Layer Id 6 mapped to 15 
+[01/11 09:45:22      1s] eee: Via Layer Id 6 mapped to 16 
+[01/11 09:45:22      1s] eee: Metal Layer Id 7 mapped to 17 
+[01/11 09:45:22      1s] eee: Via Layer Id 7 mapped to 18 
+[01/11 09:45:22      1s] eee: Metal Layer Id 8 mapped to 19 
+[01/11 09:45:22      1s] eee: Via Layer Id 8 mapped to 20 
+[01/11 09:45:22      1s] eee: Metal Layer Id 9 mapped to 21 
+[01/11 09:45:22      1s] eee: Via Layer Id 9 mapped to 22 
+[01/11 09:45:22      1s] eee: Metal Layer Id 10 mapped to 23 
+
+[01/11 09:45:43    110s] Completed (cpu: 0:00:43.7 real: 0:01:09)
+[01/11 09:45:43    110s] Set Shrink Factor to 0.90000 (from technology file)
+[01/11 09:45:43    110s] Summary of Active RC-Corners : 
+[01/11 09:45:43    110s]  
+[01/11 09:45:43    110s]  Analysis View: view_wcl_slow
+[01/11 09:45:43    110s]     RC-Corner Name        : worst
+[01/11 09:45:43    110s]     RC-Corner Index       : 0
+[01/11 09:45:43    110s]     RC-Corner Temperature : 125 Celsius
+[01/11 09:45:43    110s]     RC-Corner Cap Table   : ''
+[01/11 09:45:43    110s]     RC-Corner PreRoute Res Factor         : 1
+[01/11 09:45:43    110s]     RC-Corner PreRoute Cap Factor         : 1
+[01/11 09:45:43    110s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[01/11 09:45:43    110s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[01/11 09:45:43    110s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[01/11 09:45:43    110s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[01/11 09:45:43    110s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[01/11 09:45:43    110s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+[01/11 09:45:43    110s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+[01/11 09:45:43    110s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[01/11 09:45:43    110s]     RC-Corner Technology file: '/software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcworst/qrcTechFile'
+[01/11 09:45:43    110s]  
+[01/11 09:45:43    110s]  Analysis View: view_wcl_fast
+[01/11 09:45:43    110s]     RC-Corner Name        : best
+[01/11 09:45:43    110s]     RC-Corner Index       : 1
+[01/11 09:45:43    110s]     RC-Corner Temperature : -40 Celsius
+[01/11 09:45:43    110s]     RC-Corner Cap Table   : ''
+[01/11 09:45:43    110s]     RC-Corner PreRoute Res Factor         : 1
+[01/11 09:45:43    110s]     RC-Corner PreRoute Cap Factor         : 1
+[01/11 09:45:43    110s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[01/11 09:45:43    110s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[01/11 09:45:43    110s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[01/11 09:45:43    110s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[01/11 09:45:43    110s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[01/11 09:45:43    110s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+[01/11 09:45:43    110s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+[01/11 09:45:43    110s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[01/11 09:45:43    110s]     RC-Corner Technology file: '/software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcbest/qrcTechFile'
+[01/11 09:45:43    110s]  
+[01/11 09:45:43    110s]  Analysis View: view_wcl_typical
+[01/11 09:45:43    110s]     RC-Corner Name        : typical
+[01/11 09:45:43    110s]     RC-Corner Index       : 2
+[01/11 09:45:43    110s]     RC-Corner Temperature : 25 Celsius
+[01/11 09:45:43    110s]     RC-Corner Cap Table   : ''
+[01/11 09:45:43    110s]     RC-Corner PreRoute Res Factor         : 1
+[01/11 09:45:43    110s]     RC-Corner PreRoute Cap Factor         : 1
+[01/11 09:45:43    110s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[01/11 09:45:43    110s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[01/11 09:45:43    110s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[01/11 09:45:43    110s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[01/11 09:45:43    110s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[01/11 09:45:43    110s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+[01/11 09:45:43    110s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+[01/11 09:45:43    110s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[01/11 09:45:43    110s]     RC-Corner Technology file: '/software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/nominal/qrcTechFile'
+[01/11 09:45:43    110s] Technology file '/software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcworst/qrcTechFile' associated with first view 'view_wcl_slow' will be used as the primary corner for the multi-corner extraction.
+[01/11 09:45:43    110s] eee: Trim Metal Layers: { }
+[01/11 09:45:43    110s] eee: RC Grid Memory allocated=72600
+[01/11 09:45:43    110s] eee: LayerId=1 widthSet size=1
+[01/11 09:45:43    110s] eee: LayerId=2 widthSet size=1
+[01/11 09:45:43    110s] eee: LayerId=3 widthSet size=1
+[01/11 09:45:43    110s] eee: LayerId=4 widthSet size=1
+[01/11 09:45:43    110s] eee: LayerId=5 widthSet size=1
+[01/11 09:45:43    110s] eee: LayerId=6 widthSet size=1
+[01/11 09:45:43    110s] eee: LayerId=7 widthSet size=1
+[01/11 09:45:43    110s] eee: LayerId=8 widthSet size=1
+[01/11 09:45:43    110s] eee: LayerId=9 widthSet size=1
+[01/11 09:45:43    110s] eee: LayerId=10 widthSet size=1
+[01/11 09:45:43    110s] eee: Total RC Grid memory=72600
+[01/11 09:45:43    110s] Updating RC grid for preRoute extraction ...
+[01/11 09:45:43    110s] eee: Metal Layers Info:
+[01/11 09:45:43    110s] eee: L: M1 M2 M3 M4 M5 M6 M7 M8 M9 AP
+[01/11 09:45:43    110s] eee: W: 0.050000 0.050000 0.050000 0.050000 0.050000 0.050000 0.050000 0.400000 0.400000 2.000000
+[01/11 09:45:43    110s] eee: S: 0.050000 0.050000 0.050000 0.050000 0.050000 0.050000 0.050000 0.400000 0.400000 2.000000
+[01/11 09:45:43    110s] eee: pegSigSF=1.070000
+[01/11 09:45:43    110s] Initializing multi-corner resistance tables ...
+[01/11 09:45:43    110s] eee: l=1 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[01/11 09:45:43    110s] eee: l=2 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[01/11 09:45:43    110s] eee: l=3 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[01/11 09:45:43    110s] eee: l=4 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[01/11 09:45:43    110s] eee: l=5 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[01/11 09:45:43    110s] eee: l=6 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[01/11 09:45:43    110s] eee: l=7 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[01/11 09:45:43    110s] eee: l=8 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[01/11 09:45:43    110s] eee: l=9 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[01/11 09:45:43    110s] eee: l=10 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[01/11 09:45:43    110s] {RT worst 0 10 10 {8 0} 1}
+[01/11 09:45:43    110s] eee: LAM: n=32 LLS=2-3 HLS=3-5 rDens=0.000000 uaWl=0.000000 uaWlH=0.000000 aWlH=0.000000 lMod=0 pMax=0.814000 pMod=83 wcR=0.681100 newSi=0.001600 wHLS=1.702750 siPrev=0 viaL=0.000000
+[01/11 09:45:43    110s] Default value for postRoute extraction mode's effortLevel (-effortLevel option of setExtractRCMode) changed to 'medium'.
+[01/11 09:45:43    110s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[01/11 09:45:43    110s] (stylus_db): Initialized design 'pp_fir_u_0'
+[01/11 09:45:43    110s] (stylus_db): Load Metric file ...
+[01/11 09:45:43    110s] % Begin Load Metric file (date=01/11 09:45:43, mem=1638.2M)
+[01/11 09:45:43    110s] % End Load Metric file (date=01/11 09:45:43, total cpu=0:00:00.1, real=0:00:00.0, peak res=1641.2M, current mem=1639.2M)
+[01/11 09:45:43    110s] (stylus_db): Setting Root attributes ...
+[01/11 09:45:44    111s] Change floorplan default-technical-site to 'sc9mcpp140z_cln28ht'.
+[01/11 09:45:44    111s] (stylus_db): Set 3005 attributes of Root 
+[01/11 09:45:44    111s] % Begin Set DB preserves (date=01/11 09:45:44, mem=1640.0M)
+[01/11 09:45:44    111s] (stylus_db): Setting preserves on design objects ...
+[01/11 09:45:44    111s] (stylus_db): Set 119 preserves of design objects
+[01/11 09:45:44    111s] % End Set DB preserves (date=01/11 09:45:44, total cpu=0:00:00.0, real=0:00:00.0, peak res=1640.1M, current mem=1640.1M)
+[01/11 09:45:44    111s] % Begin Load Timing views and constraints (date=01/11 09:45:44, mem=1640.1M)
+[01/11 09:45:44    111s] (stylus_db): Read MMMC timing views ...
+[01/11 09:45:44    111s] Ending "Binding Checks" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1640.2M, current mem=1640.2M)
+[01/11 09:45:44    111s] Reading timing constraints file 'INVS/cmn/pp_fir_u_0.mmmc/modes/functional_wcl_typical/functional_wcl_typical.sdc.gz' ...
+[01/11 09:45:44    111s] Current (total cpu=0:01:52, real=0:03:27, peak res=1744.8M, current mem=1744.8M)
+[01/11 09:45:45    111s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File INVS/cmn/pp_fir_u_0.mmmc/modes/functional_wcl_typical/functional_wcl_typical.sdc.gz, Line 9).
+[01/11 09:45:45    111s] 
+[01/11 09:45:45    111s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File INVS/cmn/pp_fir_u_0.mmmc/modes/functional_wcl_typical/functional_wcl_typical.sdc.gz, Line 10).
+[01/11 09:45:45    111s] 
+[01/11 09:45:45    112s] INFO (CTE): Reading of timing constraints file INVS/cmn/pp_fir_u_0.mmmc/modes/functional_wcl_typical/functional_wcl_typical.sdc.gz completed, with 2 WARNING
+[01/11 09:45:45    112s] Ending "Constraint file reading stats" (total cpu=0:00:00.3, real=0:00:01.0, peak res=1780.5M, current mem=1780.5M)
+[01/11 09:45:45    112s] Current (total cpu=0:01:52, real=0:03:28, peak res=1780.5M, current mem=1780.5M)
+[01/11 09:45:45    112s] % End Load Timing views and constraints (date=01/11 09:45:45, total cpu=0:00:01.0, real=0:00:01.0, peak res=1780.6M, current mem=1780.6M)
+[01/11 09:45:45    112s] (stylus_db): Load Mode file ...
+[01/11 09:45:45    112s] setAnalysisMode -usefulSkew already set.
+[01/11 09:45:45    112s] **WARN: (IMPOPT-3602):	The specified path group name in2out is not defined.
+[01/11 09:45:45    112s] Type 'man IMPOPT-3602' for more detail.
+[01/11 09:45:45    112s] Effort level <low> specified for in2out path_group
+[01/11 09:45:45    112s] **WARN: (IMPOPT-3602):	The specified path group name in2reg is not defined.
+[01/11 09:45:45    112s] Type 'man IMPOPT-3602' for more detail.
+[01/11 09:45:45    112s] Effort level <low> specified for in2reg path_group
+[01/11 09:45:45    112s] **WARN: (IMPOPT-3602):	The specified path group name reg2out is not defined.
+[01/11 09:45:45    112s] Type 'man IMPOPT-3602' for more detail.
+[01/11 09:45:45    112s] Effort level <low> specified for reg2out path_group
+[01/11 09:45:45    112s] **WARN: (IMPOPT-3602):	The specified path group name reg2reg is not defined.
+[01/11 09:45:45    112s] Type 'man IMPOPT-3602' for more detail.
+[01/11 09:45:45    112s] Effort level <high> specified for reg2reg path_group
+[01/11 09:45:45    112s] **WARN: (IMPOPT-3602):	The specified path group name tdgp_reg2reg_default is not defined.
+[01/11 09:45:45    112s] Type 'man IMPOPT-3602' for more detail.
+[01/11 09:45:45    112s] Effort level <high> specified for tdgp_reg2reg_default path_group
+[01/11 09:45:45    112s] Change floorplan default-technical-site to 'sc9mcpp140z_cln28ht'.
+[01/11 09:45:45    112s] (stylus_db): Couldn't load power-intent, (pp_fir_u_0.cpf or pp_fir_u_0.upf doesn't exists)
+[01/11 09:45:45    112s] (stylus_db): Couldn't commit power-intent, (pp_fir_u_0.cpf or pp_fir_u_0.upf doesn't exists)
+[01/11 09:45:45    112s] (stylus_db): Load DEF file ...
+[01/11 09:45:45    112s] % Begin Load DEF (date=01/11 09:45:45, mem=1783.1M)
+[01/11 09:45:45    112s] Reading DEF file 'INVS//cmn/pp_fir_u_0.def.gz', current time is Sat Jan 11 09:45:45 2025 ...
+[01/11 09:45:46    112s] --- DIVIDERCHAR '/'
+[01/11 09:45:46    112s] --- UnitsPerDBU = 1.0000
+[01/11 09:45:46    112s] 
+[01/11 09:45:46    112s] Honor LEF defined pitches for advanced node
+[01/11 09:45:46    112s] Start create_tracks
+[01/11 09:45:46    112s] --- DIEAREA (-3600 -3600) (418420 363600)
+[01/11 09:45:46    112s] defIn read 10000 lines...
+[01/11 09:45:46    112s] defIn read 20000 lines...
+[01/11 09:45:46    112s] defIn read 30000 lines...
+[01/11 09:45:46    112s] defIn read 40000 lines...
+[01/11 09:45:46    112s] defIn read 50000 lines...
+[01/11 09:45:46    112s] defIn read 60000 lines...
+[01/11 09:45:46    112s] DEF file 'INVS//cmn/pp_fir_u_0.def.gz' is parsed, current time is Sat Jan 11 09:45:46 2025.
+[01/11 09:45:46    112s] Extracting standard cell pins and blockage ...... 
+[01/11 09:45:46    112s] Pin and blockage extraction finished
+[01/11 09:45:46    112s] Updating the floorplan ...
+[01/11 09:45:46    113s] % End Load DEF (date=01/11 09:45:46, total cpu=0:00:00.5, real=0:00:01.0, peak res=1792.2M, current mem=1792.2M)
+[01/11 09:45:46    113s] % Begin Set route_types (date=01/11 09:45:46, mem=1792.2M)
+[01/11 09:45:46    113s] (stylus_db): Setting route_types  ...
+[01/11 09:45:46    113s] % End Set route_types (date=01/11 09:45:46, total cpu=0:00:00.1, real=0:00:00.0, peak res=1792.3M, current mem=1792.3M)
+[01/11 09:45:46    113s] % Begin Set power_domain attributes (date=01/11 09:45:46, mem=1792.3M)
+[01/11 09:45:46    113s] (stylus_db): Setting power_domain attributes ...
+[01/11 09:45:46    113s] % End Set power_domain attributes (date=01/11 09:45:46, total cpu=0:00:00.1, real=0:00:00.0, peak res=1792.3M, current mem=1792.3M)
+[01/11 09:45:46    113s] (stylus_db): Load additional timing constraints ...
+[01/11 09:45:46    113s] % Begin Load Additional Timing constraints (date=01/11 09:45:46, mem=1792.3M)
+[01/11 09:45:46    113s] Loading path adjust file INVS//cmn/pp_fir_u_0.mmmc/pathadjust.sdc.gz ...
+[01/11 09:45:46    113s] Current (total cpu=0:01:53, real=0:03:29, peak res=1792.3M, current mem=1792.3M)
+[01/11 09:45:47    113s] INFO (CTE): Constraints read successfully.
+[01/11 09:45:47    113s] Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:01.0, peak res=1794.5M, current mem=1794.5M)
+[01/11 09:45:47    113s] Current (total cpu=0:01:54, real=0:03:30, peak res=1794.5M, current mem=1794.5M)
+[01/11 09:45:47    113s] % End Load Additional Timing constraints (date=01/11 09:45:47, total cpu=0:00:00.4, real=0:00:01.0, peak res=1794.6M, current mem=1794.6M)
+[01/11 09:45:47    113s] % Begin Set message attributes (date=01/11 09:45:47, mem=1794.6M)
+[01/11 09:45:47    113s] (stylus_db): Setting attributes on Genus message objects ...
+[01/11 09:45:47    113s] % End Set message attributes (date=01/11 09:45:47, total cpu=0:00:00.1, real=0:00:00.0, peak res=1794.6M, current mem=1794.6M)
+[01/11 09:45:47    113s] (stylus_db): Couldn't load SDP file, (file doesn't exists)
+[01/11 09:45:47    113s] % Begin Generate Vias (date=01/11 09:45:47, mem=1794.6M)
+[01/11 09:45:47    113s] (stylus_db): Generate advanced rule Vias ...
+[01/11 09:45:47    113s] Start generating vias ..
+[01/11 09:45:47    114s] #WARNING (NRDB-317) Threshold min width 0.180000 is >= max width 0.180000 for minimumcut 2 for LAYER M7
+[01/11 09:45:47    114s] ### import design signature (1): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 inst_orient=1 via=1545454581
+[01/11 09:45:47    114s] Extracting standard cell pins and blockage ...... 
+[01/11 09:45:48    114s] Pin and blockage extraction finished
+[01/11 09:45:48    114s] Via generation completed successfully.
+[01/11 09:45:48    114s] eee: __QRC_SADV_USE_LE__ is set 0
+[01/11 09:45:49    115s] eee: Metal Layer Id 1 is M1 
+[01/11 09:45:49    115s] eee: Metal Layer Id 2 is M2 
+[01/11 09:45:49    115s] eee: Metal Layer Id 3 is M3 
+[01/11 09:45:49    115s] eee: Metal Layer Id 4 is M4 
+[01/11 09:45:49    115s] eee: Metal Layer Id 5 is M5 
+[01/11 09:45:49    115s] eee: Metal Layer Id 6 is M6 
+[01/11 09:45:49    115s] eee: Metal Layer Id 7 is M7 
+[01/11 09:45:49    115s] eee: Metal Layer Id 8 is M8 
+[01/11 09:45:49    115s] eee: Metal Layer Id 9 is M9 
+[01/11 09:45:49    115s] eee: Metal Layer Id 10 is AP 
+[01/11 09:45:49    115s] eee: Via Layer Id 34 is VIA1 
+[01/11 09:45:49    115s] eee: Via Layer Id 35 is VIA2 
+[01/11 09:45:49    115s] eee: Via Layer Id 36 is VIA3 
+[01/11 09:45:49    115s] eee: Via Layer Id 37 is VIA4 
+[01/11 09:45:49    115s] eee: Via Layer Id 38 is VIA5 
+[01/11 09:45:49    115s] eee: Via Layer Id 39 is VIA6 
+[01/11 09:45:49    115s] eee: Via Layer Id 40 is VIA7 
+[01/11 09:45:49    115s] eee: Via Layer Id 41 is VIA8 
+[01/11 09:45:49    115s] eee: Via Layer Id 42 is RV 
+[01/11 09:45:49    115s] eee: Trim Metal Layers: { }
+[01/11 09:45:49    115s] Generating auto layer map file.
+[01/11 09:45:49    115s] eee:  lef metal Layer Id 1 mapped to tech Id 5 of Layer m1 
+[01/11 09:45:49    115s] eee:  lef via Layer Id 1 mapped to tech Id 6 of Layer via1 
+[01/11 09:45:49    115s] eee:  lef metal Layer Id 2 mapped to tech Id 7 of Layer m2 
+[01/11 09:45:49    115s] eee:  lef via Layer Id 2 mapped to tech Id 8 of Layer via2 
+[01/11 09:45:49    115s] eee:  lef metal Layer Id 3 mapped to tech Id 9 of Layer m3 
+[01/11 09:45:49    115s] eee:  lef via Layer Id 3 mapped to tech Id 10 of Layer via3 
+[01/11 09:45:49    115s] eee:  lef metal Layer Id 4 mapped to tech Id 11 of Layer m4 
+[01/11 09:45:49    115s] eee:  lef via Layer Id 4 mapped to tech Id 12 of Layer via4 
+[01/11 09:45:49    115s] eee:  lef metal Layer Id 5 mapped to tech Id 13 of Layer m5 
+[01/11 09:45:49    115s] eee:  lef via Layer Id 5 mapped to tech Id 14 of Layer via5 
+[01/11 09:45:49    115s] eee:  lef metal Layer Id 6 mapped to tech Id 15 of Layer m6 
+[01/11 09:45:49    115s] eee:  lef via Layer Id 6 mapped to tech Id 16 of Layer via6 
+[01/11 09:45:49    115s] eee:  lef metal Layer Id 7 mapped to tech Id 17 of Layer m7 
+[01/11 09:45:49    115s] eee:  lef via Layer Id 7 mapped to tech Id 18 of Layer via7 
+[01/11 09:45:49    115s] eee:  lef metal Layer Id 8 mapped to tech Id 19 of Layer m8 
+[01/11 09:45:49    115s] eee:  lef via Layer Id 8 mapped to tech Id 20 of Layer via8 
+[01/11 09:45:49    115s] eee:  lef metal Layer Id 9 mapped to tech Id 21 of Layer m9 
+[01/11 09:45:49    115s] eee:  lef via Layer Id 9 mapped to tech Id 22 of Layer rv 
+[01/11 09:45:49    115s] eee:  lef metal Layer Id 10 mapped to tech Id 23 of Layer ap 
+[01/11 09:45:49    115s] eee: Metal Layer Id 1 mapped to 5 
+[01/11 09:45:49    115s] eee: Via Layer Id 1 mapped to 6 
+[01/11 09:45:49    115s] eee: Metal Layer Id 2 mapped to 7 
+[01/11 09:45:49    115s] eee: Via Layer Id 2 mapped to 8 
+[01/11 09:45:49    115s] eee: Metal Layer Id 3 mapped to 9 
+[01/11 09:45:49    115s] eee: Via Layer Id 3 mapped to 10 
+[01/11 09:45:49    115s] eee: Metal Layer Id 4 mapped to 11 
+[01/11 09:45:49    115s] eee: Via Layer Id 4 mapped to 12 
+[01/11 09:45:49    115s] eee: Metal Layer Id 5 mapped to 13 
+[01/11 09:45:49    115s] eee: Via Layer Id 5 mapped to 14 
+[01/11 09:45:49    115s] eee: Metal Layer Id 6 mapped to 15 
+[01/11 09:45:49    115s] eee: Via Layer Id 6 mapped to 16 
+[01/11 09:45:49    115s] eee: Metal Layer Id 7 mapped to 17 
+[01/11 09:45:49    115s] eee: Via Layer Id 7 mapped to 18 
+[01/11 09:45:49    115s] eee: Metal Layer Id 8 mapped to 19 
+[01/11 09:45:49    115s] eee: Via Layer Id 8 mapped to 20 
+[01/11 09:45:49    115s] eee: Metal Layer Id 9 mapped to 21 
+[01/11 09:45:49    115s] eee: Via Layer Id 9 mapped to 22 
+[01/11 09:45:49    115s] eee: Metal Layer Id 10 mapped to 23 
+[01/11 09:45:49    115s] eee: pegPreRouteEnableSaveRestoreRCPatterns=1, retVal=1, doesAnyTechFileNeedExtraction=1
+[01/11 09:45:49    115s] eee: Reading patterns meta data.
+[01/11 09:45:49    115s] eee: PatternAvail=0, PreRoutePatternReadFailed=3
+[01/11 09:45:49    115s] eee: Restore PreRoute Pattern Extraction data failed.
+[01/11 09:45:49    115s] Initializing preRoute extraction patterns for new vias... eee: Metal Layer Id 1 is M1 
+[01/11 09:45:50    116s] eee: Metal Layer Id 2 is M2 
+[01/11 09:45:50    116s] eee: Metal Layer Id 3 is M3 
+[01/11 09:45:50    116s] eee: Metal Layer Id 4 is M4 
+[01/11 09:45:50    116s] eee: Metal Layer Id 5 is M5 
+[01/11 09:45:50    116s] eee: Metal Layer Id 6 is M6 
+[01/11 09:45:50    116s] eee: Metal Layer Id 7 is M7 
+[01/11 09:45:50    116s] eee: Metal Layer Id 8 is M8 
+[01/11 09:45:50    116s] eee: Metal Layer Id 9 is M9 
+[01/11 09:45:50    116s] eee: Metal Layer Id 10 is AP 
+[01/11 09:45:50    116s] eee: Via Layer Id 34 is VIA1 
+[01/11 09:45:50    116s] eee: Via Layer Id 35 is VIA2 
+[01/11 09:45:50    116s] eee: Via Layer Id 36 is VIA3 
+[01/11 09:45:50    116s] eee: Via Layer Id 37 is VIA4 
+[01/11 09:45:50    116s] eee: Via Layer Id 38 is VIA5 
+[01/11 09:45:50    116s] eee: Via Layer Id 39 is VIA6 
+[01/11 09:45:50    116s] eee: Via Layer Id 40 is VIA7 
+[01/11 09:45:50    116s] eee: Via Layer Id 41 is VIA8 
+[01/11 09:45:50    116s] eee: Via Layer Id 42 is RV 
+[01/11 09:45:50    116s] eee: Trim Metal Layers: { }
+[01/11 09:45:50    116s] Generating auto layer map file.
+[01/11 09:45:50    116s] eee:  lef metal Layer Id 1 mapped to tech Id 5 of Layer m1 
+[01/11 09:45:50    116s] eee:  lef via Layer Id 1 mapped to tech Id 6 of Layer via1 
+[01/11 09:45:50    116s] eee:  lef metal Layer Id 2 mapped to tech Id 7 of Layer m2 
+[01/11 09:45:50    116s] eee:  lef via Layer Id 2 mapped to tech Id 8 of Layer via2 
+[01/11 09:45:50    116s] eee:  lef metal Layer Id 3 mapped to tech Id 9 of Layer m3 
+[01/11 09:45:50    116s] eee:  lef via Layer Id 3 mapped to tech Id 10 of Layer via3 
+[01/11 09:45:50    116s] eee:  lef metal Layer Id 4 mapped to tech Id 11 of Layer m4 
+[01/11 09:45:50    116s] eee:  lef via Layer Id 4 mapped to tech Id 12 of Layer via4 
+[01/11 09:45:50    116s] eee:  lef metal Layer Id 5 mapped to tech Id 13 of Layer m5 
+[01/11 09:45:50    116s] eee:  lef via Layer Id 5 mapped to tech Id 14 of Layer via5 
+[01/11 09:45:50    116s] eee:  lef metal Layer Id 6 mapped to tech Id 15 of Layer m6 
+[01/11 09:45:50    116s] eee:  lef via Layer Id 6 mapped to tech Id 16 of Layer via6 
+[01/11 09:45:50    116s] eee:  lef metal Layer Id 7 mapped to tech Id 17 of Layer m7 
+[01/11 09:45:50    116s] eee:  lef via Layer Id 7 mapped to tech Id 18 of Layer via7 
+[01/11 09:45:50    116s] eee:  lef metal Layer Id 8 mapped to tech Id 19 of Layer m8 
+[01/11 09:45:50    116s] eee:  lef via Layer Id 8 mapped to tech Id 20 of Layer via8 
+[01/11 09:45:50    116s] eee:  lef metal Layer Id 9 mapped to tech Id 21 of Layer m9 
+[01/11 09:45:50    116s] eee:  lef via Layer Id 9 mapped to tech Id 22 of Layer rv 
+[01/11 09:45:50    116s] eee:  lef metal Layer Id 10 mapped to tech Id 23 of Layer ap 
+[01/11 09:45:50    116s] eee: Metal Layer Id 1 mapped to 5 
+[01/11 09:45:50    116s] eee: Via Layer Id 1 mapped to 6 
+[01/11 09:45:50    116s] eee: Metal Layer Id 2 mapped to 7 
+[01/11 09:45:50    116s] eee: Via Layer Id 2 mapped to 8 
+[01/11 09:45:50    116s] eee: Metal Layer Id 3 mapped to 9 
+[01/11 09:45:50    116s] eee: Via Layer Id 3 mapped to 10 
+[01/11 09:45:50    116s] eee: Metal Layer Id 4 mapped to 11 
+[01/11 09:45:50    116s] eee: Via Layer Id 4 mapped to 12 
+[01/11 09:45:50    116s] eee: Metal Layer Id 5 mapped to 13 
+[01/11 09:45:50    116s] eee: Via Layer Id 5 mapped to 14 
+[01/11 09:45:50    116s] eee: Metal Layer Id 6 mapped to 15 
+[01/11 09:45:50    116s] eee: Via Layer Id 6 mapped to 16 
+[01/11 09:45:50    116s] eee: Metal Layer Id 7 mapped to 17 
+[01/11 09:45:50    116s] eee: Via Layer Id 7 mapped to 18 
+[01/11 09:45:50    116s] eee: Metal Layer Id 8 mapped to 19 
+[01/11 09:45:50    116s] eee: Via Layer Id 8 mapped to 20 
+[01/11 09:45:50    116s] eee: Metal Layer Id 9 mapped to 21 
+[01/11 09:45:50    116s] eee: Via Layer Id 9 mapped to 22 
+[01/11 09:45:50    116s] eee: Metal Layer Id 10 mapped to 23 
+[01/11 09:45:54    118s] eee: Metal Layer Id 1 is M1 
+[01/11 09:45:54    118s] eee: Metal Layer Id 2 is M2 
+[01/11 09:45:54    118s] eee: Metal Layer Id 3 is M3 
+[01/11 09:45:54    118s] eee: Metal Layer Id 4 is M4 
+[01/11 09:45:54    118s] eee: Metal Layer Id 5 is M5 
+[01/11 09:45:54    118s] eee: Metal Layer Id 6 is M6 
+[01/11 09:45:54    118s] eee: Metal Layer Id 7 is M7 
+[01/11 09:45:54    118s] eee: Metal Layer Id 8 is M8 
+[01/11 09:45:54    118s] eee: Metal Layer Id 9 is M9 
+[01/11 09:45:54    118s] eee: Metal Layer Id 10 is AP 
+[01/11 09:45:54    118s] eee: Via Layer Id 34 is VIA1 
+[01/11 09:45:54    118s] eee: Via Layer Id 35 is VIA2 
+[01/11 09:45:54    118s] eee: Via Layer Id 36 is VIA3 
+[01/11 09:45:54    118s] eee: Via Layer Id 37 is VIA4 
+[01/11 09:45:54    118s] eee: Via Layer Id 38 is VIA5 
+[01/11 09:45:54    118s] eee: Via Layer Id 39 is VIA6 
+[01/11 09:45:54    118s] eee: Via Layer Id 40 is VIA7 
+[01/11 09:45:54    118s] eee: Via Layer Id 41 is VIA8 
+[01/11 09:45:54    118s] eee: Via Layer Id 42 is RV 
+[01/11 09:45:54    118s] eee: Trim Metal Layers: { }
+[01/11 09:45:54    118s] Generating auto layer map file.
+[01/11 09:45:54    118s] eee:  lef metal Layer Id 1 mapped to tech Id 5 of Layer m1 
+[01/11 09:45:54    118s] eee:  lef via Layer Id 1 mapped to tech Id 6 of Layer via1 
+[01/11 09:45:54    118s] eee:  lef metal Layer Id 2 mapped to tech Id 7 of Layer m2 
+[01/11 09:45:54    118s] eee:  lef via Layer Id 2 mapped to tech Id 8 of Layer via2 
+[01/11 09:45:54    118s] eee:  lef metal Layer Id 3 mapped to tech Id 9 of Layer m3 
+[01/11 09:45:54    118s] eee:  lef via Layer Id 3 mapped to tech Id 10 of Layer via3 
+[01/11 09:45:54    118s] eee:  lef metal Layer Id 4 mapped to tech Id 11 of Layer m4 
+[01/11 09:45:54    118s] eee:  lef via Layer Id 4 mapped to tech Id 12 of Layer via4 
+[01/11 09:45:54    118s] eee:  lef metal Layer Id 5 mapped to tech Id 13 of Layer m5 
+[01/11 09:45:54    118s] eee:  lef via Layer Id 5 mapped to tech Id 14 of Layer via5 
+[01/11 09:45:54    118s] eee:  lef metal Layer Id 6 mapped to tech Id 15 of Layer m6 
+[01/11 09:45:54    118s] eee:  lef via Layer Id 6 mapped to tech Id 16 of Layer via6 
+[01/11 09:45:54    118s] eee:  lef metal Layer Id 7 mapped to tech Id 17 of Layer m7 
+[01/11 09:45:54    118s] eee:  lef via Layer Id 7 mapped to tech Id 18 of Layer via7 
+[01/11 09:45:54    118s] eee:  lef metal Layer Id 8 mapped to tech Id 19 of Layer m8 
+[01/11 09:45:54    118s] eee:  lef via Layer Id 8 mapped to tech Id 20 of Layer via8 
+[01/11 09:45:54    118s] eee:  lef metal Layer Id 9 mapped to tech Id 21 of Layer m9 
+[01/11 09:45:54    118s] eee:  lef via Layer Id 9 mapped to tech Id 22 of Layer rv 
+[01/11 09:45:54    118s] eee:  lef metal Layer Id 10 mapped to tech Id 23 of Layer ap 
+[01/11 09:45:54    118s] eee: Metal Layer Id 1 mapped to 5 
+[01/11 09:45:54    118s] eee: Via Layer Id 1 mapped to 6 
+[01/11 09:45:54    118s] eee: Metal Layer Id 2 mapped to 7 
+[01/11 09:45:54    118s] eee: Via Layer Id 2 mapped to 8 
+[01/11 09:45:54    118s] eee: Metal Layer Id 3 mapped to 9 
+[01/11 09:45:54    118s] eee: Via Layer Id 3 mapped to 10 
+[01/11 09:45:54    118s] eee: Metal Layer Id 4 mapped to 11 
+[01/11 09:45:54    118s] eee: Via Layer Id 4 mapped to 12 
+[01/11 09:45:54    118s] eee: Metal Layer Id 5 mapped to 13 
+[01/11 09:45:54    118s] eee: Via Layer Id 5 mapped to 14 
+[01/11 09:45:54    118s] eee: Metal Layer Id 6 mapped to 15 
+[01/11 09:45:54    118s] eee: Via Layer Id 6 mapped to 16 
+[01/11 09:45:54    118s] eee: Metal Layer Id 7 mapped to 17 
+[01/11 09:45:54    118s] eee: Via Layer Id 7 mapped to 18 
+[01/11 09:45:54    118s] eee: Metal Layer Id 8 mapped to 19 
+[01/11 09:45:54    118s] eee: Via Layer Id 8 mapped to 20 
+[01/11 09:45:54    118s] eee: Metal Layer Id 9 mapped to 21 
+[01/11 09:45:54    118s] eee: Via Layer Id 9 mapped to 22 
+[01/11 09:45:54    118s] eee: Metal Layer Id 10 mapped to 23 
+[01/11 09:45:57    120s] eee: Metal Layer Id 1 is M1 
+[01/11 09:45:57    120s] eee: Metal Layer Id 2 is M2 
+[01/11 09:45:57    120s] eee: Metal Layer Id 3 is M3 
+[01/11 09:45:57    120s] eee: Metal Layer Id 4 is M4 
+[01/11 09:45:57    120s] eee: Metal Layer Id 5 is M5 
+[01/11 09:45:57    120s] eee: Metal Layer Id 6 is M6 
+[01/11 09:45:57    120s] eee: Metal Layer Id 7 is M7 
+[01/11 09:45:57    120s] eee: Metal Layer Id 8 is M8 
+[01/11 09:45:57    120s] eee: Metal Layer Id 9 is M9 
+[01/11 09:45:57    120s] eee: Metal Layer Id 10 is AP 
+[01/11 09:45:57    120s] eee: Via Layer Id 34 is VIA1 
+[01/11 09:45:57    120s] eee: Via Layer Id 35 is VIA2 
+[01/11 09:45:57    120s] eee: Via Layer Id 36 is VIA3 
+[01/11 09:45:57    120s] eee: Via Layer Id 37 is VIA4 
+[01/11 09:45:57    120s] eee: Via Layer Id 38 is VIA5 
+[01/11 09:45:57    120s] eee: Via Layer Id 39 is VIA6 
+[01/11 09:45:57    120s] eee: Via Layer Id 40 is VIA7 
+[01/11 09:45:57    120s] eee: Via Layer Id 41 is VIA8 
+[01/11 09:45:57    120s] eee: Via Layer Id 42 is RV 
+[01/11 09:45:57    120s] eee: Trim Metal Layers: { }
+[01/11 09:45:57    120s] Generating auto layer map file.
+[01/11 09:45:57    120s] eee:  lef metal Layer Id 1 mapped to tech Id 5 of Layer m1 
+[01/11 09:45:57    120s] eee:  lef via Layer Id 1 mapped to tech Id 6 of Layer via1 
+[01/11 09:45:57    120s] eee:  lef metal Layer Id 2 mapped to tech Id 7 of Layer m2 
+[01/11 09:45:57    120s] eee:  lef via Layer Id 2 mapped to tech Id 8 of Layer via2 
+[01/11 09:45:57    120s] eee:  lef metal Layer Id 3 mapped to tech Id 9 of Layer m3 
+[01/11 09:45:57    120s] eee:  lef via Layer Id 3 mapped to tech Id 10 of Layer via3 
+[01/11 09:45:57    120s] eee:  lef metal Layer Id 4 mapped to tech Id 11 of Layer m4 
+[01/11 09:45:57    120s] eee:  lef via Layer Id 4 mapped to tech Id 12 of Layer via4 
+[01/11 09:45:57    120s] eee:  lef metal Layer Id 5 mapped to tech Id 13 of Layer m5 
+[01/11 09:45:57    120s] eee:  lef via Layer Id 5 mapped to tech Id 14 of Layer via5 
+[01/11 09:45:57    120s] eee:  lef metal Layer Id 6 mapped to tech Id 15 of Layer m6 
+[01/11 09:45:57    120s] eee:  lef via Layer Id 6 mapped to tech Id 16 of Layer via6 
+[01/11 09:45:57    120s] eee:  lef metal Layer Id 7 mapped to tech Id 17 of Layer m7 
+[01/11 09:45:57    120s] eee:  lef via Layer Id 7 mapped to tech Id 18 of Layer via7 
+[01/11 09:45:57    120s] eee:  lef metal Layer Id 8 mapped to tech Id 19 of Layer m8 
+[01/11 09:45:57    120s] eee:  lef via Layer Id 8 mapped to tech Id 20 of Layer via8 
+[01/11 09:45:57    120s] eee:  lef metal Layer Id 9 mapped to tech Id 21 of Layer m9 
+[01/11 09:45:57    120s] eee:  lef via Layer Id 9 mapped to tech Id 22 of Layer rv 
+[01/11 09:45:57    120s] eee:  lef metal Layer Id 10 mapped to tech Id 23 of Layer ap 
+[01/11 09:45:57    120s] eee: Metal Layer Id 1 mapped to 5 
+[01/11 09:45:57    120s] eee: Via Layer Id 1 mapped to 6 
+[01/11 09:45:57    120s] eee: Metal Layer Id 2 mapped to 7 
+[01/11 09:45:57    120s] eee: Via Layer Id 2 mapped to 8 
+[01/11 09:45:57    120s] eee: Metal Layer Id 3 mapped to 9 
+[01/11 09:45:57    120s] eee: Via Layer Id 3 mapped to 10 
+[01/11 09:45:57    120s] eee: Metal Layer Id 4 mapped to 11 
+[01/11 09:45:57    120s] eee: Via Layer Id 4 mapped to 12 
+[01/11 09:45:57    120s] eee: Metal Layer Id 5 mapped to 13 
+[01/11 09:45:57    120s] eee: Via Layer Id 5 mapped to 14 
+[01/11 09:45:57    120s] eee: Metal Layer Id 6 mapped to 15 
+[01/11 09:45:57    120s] eee: Via Layer Id 6 mapped to 16 
+[01/11 09:45:57    120s] eee: Metal Layer Id 7 mapped to 17 
+[01/11 09:45:57    120s] eee: Via Layer Id 7 mapped to 18 
+[01/11 09:45:57    120s] eee: Metal Layer Id 8 mapped to 19 
+[01/11 09:45:57    120s] eee: Via Layer Id 8 mapped to 20 
+[01/11 09:45:57    120s] eee: Metal Layer Id 9 mapped to 21 
+[01/11 09:45:57    120s] eee: Via Layer Id 9 mapped to 22 
+[01/11 09:45:57    120s] eee: Metal Layer Id 10 mapped to 23 
+[01/11 09:45:59    121s] Completed (cpu: 0:00:07.2 real: 0:00:11.0)
+[01/11 09:45:59    121s] % End Generate Vias (date=01/11 09:45:59, total cpu=0:00:07.9, real=0:00:12.0, peak res=1868.6M, current mem=1832.2M)
+[01/11 09:45:59    121s] % Begin Set attributes (date=01/11 09:45:59, mem=1832.2M)
+[01/11 09:45:59    121s] (stylus_db): Setting attributes on design objects ...
+[01/11 09:45:59    122s] (stylus_db): Set 15150 attributes of design objects
+[01/11 09:45:59    122s] (stylus_db): Could not set 1 attributes of design objects
+[01/11 09:45:59    122s] % End Set attributes (date=01/11 09:45:59, total cpu=0:00:00.4, real=0:00:00.0, peak res=1834.2M, current mem=1834.2M)
+[01/11 09:45:59    122s] (stylus_db): Load RC preroute patterns ...
+[01/11 09:45:59    122s] % Begin Load RC preroute patterns (date=01/11 09:45:59, mem=1834.2M)
+[01/11 09:45:59    122s] Loading preRoute extraction data from directory 'INVS//cmn/pp_fir_u_0.extraction/extraction/' ...
+[01/11 09:45:59    122s] eee: Restore PreRoute RC Grid meta data successful.
+[01/11 09:45:59    122s] Extraction setup Started 
+[01/11 09:45:59    122s] eee: Trim Metal Layers: { }
+[01/11 09:45:59    122s] Initializing multi-corner RC extraction with 3 active RC Corners ...
+[01/11 09:45:59    122s] Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For postRoute extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+[01/11 09:45:59    122s] eee: __QRC_SADV_USE_LE__ is set 0
+[01/11 09:46:01    123s] eee: Metal Layer Id 1 is M1 
+[01/11 09:46:01    123s] eee: Metal Layer Id 2 is M2 
+[01/11 09:46:01    123s] eee: Metal Layer Id 3 is M3 
+[01/11 09:46:01    123s] eee: Metal Layer Id 4 is M4 
+[01/11 09:46:01    123s] eee: Metal Layer Id 5 is M5 
+[01/11 09:46:01    123s] eee: Metal Layer Id 6 is M6 
+[01/11 09:46:01    123s] eee: Metal Layer Id 7 is M7 
+[01/11 09:46:01    123s] eee: Metal Layer Id 8 is M8 
+[01/11 09:46:01    123s] eee: Metal Layer Id 9 is M9 
+[01/11 09:46:01    123s] eee: Metal Layer Id 10 is AP 
+[01/11 09:46:01    123s] eee: Via Layer Id 34 is VIA1 
+[01/11 09:46:01    123s] eee: Via Layer Id 35 is VIA2 
+[01/11 09:46:01    123s] eee: Via Layer Id 36 is VIA3 
+[01/11 09:46:01    123s] eee: Via Layer Id 37 is VIA4 
+[01/11 09:46:01    123s] eee: Via Layer Id 38 is VIA5 
+[01/11 09:46:01    123s] eee: Via Layer Id 39 is VIA6 
+[01/11 09:46:01    123s] eee: Via Layer Id 40 is VIA7 
+[01/11 09:46:01    123s] eee: Via Layer Id 41 is VIA8 
+[01/11 09:46:01    123s] eee: Via Layer Id 42 is RV 
+[01/11 09:46:01    123s] eee: Trim Metal Layers: { }
+[01/11 09:46:01    123s] Generating auto layer map file.
+[01/11 09:46:01    123s] eee:  lef metal Layer Id 1 mapped to tech Id 5 of Layer m1 
+[01/11 09:46:01    123s] eee:  lef via Layer Id 1 mapped to tech Id 6 of Layer via1 
+[01/11 09:46:01    123s] eee:  lef metal Layer Id 2 mapped to tech Id 7 of Layer m2 
+[01/11 09:46:01    123s] eee:  lef via Layer Id 2 mapped to tech Id 8 of Layer via2 
+[01/11 09:46:01    123s] eee:  lef metal Layer Id 3 mapped to tech Id 9 of Layer m3 
+[01/11 09:46:01    123s] eee:  lef via Layer Id 3 mapped to tech Id 10 of Layer via3 
+[01/11 09:46:01    123s] eee:  lef metal Layer Id 4 mapped to tech Id 11 of Layer m4 
+[01/11 09:46:01    123s] eee:  lef via Layer Id 4 mapped to tech Id 12 of Layer via4 
+[01/11 09:46:01    123s] eee:  lef metal Layer Id 5 mapped to tech Id 13 of Layer m5 
+[01/11 09:46:01    123s] eee:  lef via Layer Id 5 mapped to tech Id 14 of Layer via5 
+[01/11 09:46:01    123s] eee:  lef metal Layer Id 6 mapped to tech Id 15 of Layer m6 
+[01/11 09:46:01    123s] eee:  lef via Layer Id 6 mapped to tech Id 16 of Layer via6 
+[01/11 09:46:01    123s] eee:  lef metal Layer Id 7 mapped to tech Id 17 of Layer m7 
+[01/11 09:46:01    123s] eee:  lef via Layer Id 7 mapped to tech Id 18 of Layer via7 
+[01/11 09:46:01    123s] eee:  lef metal Layer Id 8 mapped to tech Id 19 of Layer m8 
+[01/11 09:46:01    123s] eee:  lef via Layer Id 8 mapped to tech Id 20 of Layer via8 
+[01/11 09:46:01    123s] eee:  lef metal Layer Id 9 mapped to tech Id 21 of Layer m9 
+[01/11 09:46:01    123s] eee:  lef via Layer Id 9 mapped to tech Id 22 of Layer rv 
+[01/11 09:46:01    123s] eee:  lef metal Layer Id 10 mapped to tech Id 23 of Layer ap 
+[01/11 09:46:01    123s] eee: Metal Layer Id 1 mapped to 5 
+[01/11 09:46:01    123s] eee: Via Layer Id 1 mapped to 6 
+[01/11 09:46:01    123s] eee: Metal Layer Id 2 mapped to 7 
+[01/11 09:46:01    123s] eee: Via Layer Id 2 mapped to 8 
+[01/11 09:46:01    123s] eee: Metal Layer Id 3 mapped to 9 
+[01/11 09:46:01    123s] eee: Via Layer Id 3 mapped to 10 
+[01/11 09:46:01    123s] eee: Metal Layer Id 4 mapped to 11 
+[01/11 09:46:01    123s] eee: Via Layer Id 4 mapped to 12 
+[01/11 09:46:01    123s] eee: Metal Layer Id 5 mapped to 13 
+[01/11 09:46:01    123s] eee: Via Layer Id 5 mapped to 14 
+[01/11 09:46:01    123s] eee: Metal Layer Id 6 mapped to 15 
+[01/11 09:46:01    123s] eee: Via Layer Id 6 mapped to 16 
+[01/11 09:46:01    123s] eee: Metal Layer Id 7 mapped to 17 
+[01/11 09:46:01    123s] eee: Via Layer Id 7 mapped to 18 
+[01/11 09:46:01    123s] eee: Metal Layer Id 8 mapped to 19 
+[01/11 09:46:01    123s] eee: Via Layer Id 8 mapped to 20 
+[01/11 09:46:01    123s] eee: Metal Layer Id 9 mapped to 21 
+[01/11 09:46:01    123s] eee: Via Layer Id 9 mapped to 22 
+[01/11 09:46:01    123s] eee: Metal Layer Id 10 mapped to 23 
+[01/11 09:46:02    124s] eee: pegPreRouteEnableSaveRestoreRCPatterns=1, retVal=1, doesAnyTechFileNeedExtraction=1
+[01/11 09:46:02    124s] eee: Reading patterns meta data.
+[01/11 09:46:02    124s] eee: Restore PreRoute Pattern Extraction data failed in NDR or Via validation.
+[01/11 09:46:02    124s] eee: PatternAvail=0, PreRoutePatternReadFailed=3
+[01/11 09:46:02    124s] eee: Restore PreRoute Pattern Extraction data failed.
+[01/11 09:46:02    124s] Importing multi-corner technology file(s) for preRoute extraction...
+[01/11 09:46:02    124s] /software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcworst/qrcTechFile
+[01/11 09:46:03    125s] eee: Metal Layer Id 1 is M1 
+[01/11 09:46:03    125s] eee: Metal Layer Id 2 is M2 
+[01/11 09:46:03    125s] eee: Metal Layer Id 3 is M3 
+[01/11 09:46:03    125s] eee: Metal Layer Id 4 is M4 
+[01/11 09:46:03    125s] eee: Metal Layer Id 5 is M5 
+[01/11 09:46:03    125s] eee: Metal Layer Id 6 is M6 
+[01/11 09:46:03    125s] eee: Metal Layer Id 7 is M7 
+[01/11 09:46:03    125s] eee: Metal Layer Id 8 is M8 
+[01/11 09:46:03    125s] eee: Metal Layer Id 9 is M9 
+[01/11 09:46:03    125s] eee: Metal Layer Id 10 is AP 
+[01/11 09:46:03    125s] eee: Via Layer Id 34 is VIA1 
+[01/11 09:46:03    125s] eee: Via Layer Id 35 is VIA2 
+[01/11 09:46:03    125s] eee: Via Layer Id 36 is VIA3 
+[01/11 09:46:03    125s] eee: Via Layer Id 37 is VIA4 
+[01/11 09:46:03    125s] eee: Via Layer Id 38 is VIA5 
+[01/11 09:46:03    125s] eee: Via Layer Id 39 is VIA6 
+[01/11 09:46:03    125s] eee: Via Layer Id 40 is VIA7 
+[01/11 09:46:03    125s] eee: Via Layer Id 41 is VIA8 
+[01/11 09:46:03    125s] eee: Via Layer Id 42 is RV 
+[01/11 09:46:03    125s] eee: Trim Metal Layers: { }
+[01/11 09:46:03    125s] Generating auto layer map file.
+[01/11 09:46:03    125s] eee:  lef metal Layer Id 1 mapped to tech Id 5 of Layer m1 
+[01/11 09:46:03    125s] eee:  lef via Layer Id 1 mapped to tech Id 6 of Layer via1 
+[01/11 09:46:03    125s] eee:  lef metal Layer Id 2 mapped to tech Id 7 of Layer m2 
+[01/11 09:46:03    125s] eee:  lef via Layer Id 2 mapped to tech Id 8 of Layer via2 
+[01/11 09:46:03    125s] eee:  lef metal Layer Id 3 mapped to tech Id 9 of Layer m3 
+[01/11 09:46:03    125s] eee:  lef via Layer Id 3 mapped to tech Id 10 of Layer via3 
+[01/11 09:46:03    125s] eee:  lef metal Layer Id 4 mapped to tech Id 11 of Layer m4 
+[01/11 09:46:03    125s] eee:  lef via Layer Id 4 mapped to tech Id 12 of Layer via4 
+[01/11 09:46:03    125s] eee:  lef metal Layer Id 5 mapped to tech Id 13 of Layer m5 
+[01/11 09:46:03    125s] eee:  lef via Layer Id 5 mapped to tech Id 14 of Layer via5 
+[01/11 09:46:03    125s] eee:  lef metal Layer Id 6 mapped to tech Id 15 of Layer m6 
+[01/11 09:46:03    125s] eee:  lef via Layer Id 6 mapped to tech Id 16 of Layer via6 
+[01/11 09:46:03    125s] eee:  lef metal Layer Id 7 mapped to tech Id 17 of Layer m7 
+[01/11 09:46:03    125s] eee:  lef via Layer Id 7 mapped to tech Id 18 of Layer via7 
+[01/11 09:46:03    125s] eee:  lef metal Layer Id 8 mapped to tech Id 19 of Layer m8 
+[01/11 09:46:03    125s] eee:  lef via Layer Id 8 mapped to tech Id 20 of Layer via8 
+[01/11 09:46:03    125s] eee:  lef metal Layer Id 9 mapped to tech Id 21 of Layer m9 
+[01/11 09:46:03    125s] eee:  lef via Layer Id 9 mapped to tech Id 22 of Layer rv 
+[01/11 09:46:03    125s] eee:  lef metal Layer Id 10 mapped to tech Id 23 of Layer ap 
+[01/11 09:46:03    125s] eee: Metal Layer Id 1 mapped to 5 
+[01/11 09:46:03    125s] eee: Via Layer Id 1 mapped to 6 
+[01/11 09:46:03    125s] eee: Metal Layer Id 2 mapped to 7 
+[01/11 09:46:03    125s] eee: Via Layer Id 2 mapped to 8 
+[01/11 09:46:03    125s] eee: Metal Layer Id 3 mapped to 9 
+[01/11 09:46:03    125s] eee: Via Layer Id 3 mapped to 10 
+[01/11 09:46:03    125s] eee: Metal Layer Id 4 mapped to 11 
+[01/11 09:46:03    125s] eee: Via Layer Id 4 mapped to 12 
+[01/11 09:46:03    125s] eee: Metal Layer Id 5 mapped to 13 
+[01/11 09:46:03    125s] eee: Via Layer Id 5 mapped to 14 
+[01/11 09:46:03    125s] eee: Metal Layer Id 6 mapped to 15 
+[01/11 09:46:03    125s] eee: Via Layer Id 6 mapped to 16 
+[01/11 09:46:03    125s] eee: Metal Layer Id 7 mapped to 17 
+[01/11 09:46:03    125s] eee: Via Layer Id 7 mapped to 18 
+[01/11 09:46:03    125s] eee: Metal Layer Id 8 mapped to 19 
+[01/11 09:46:03    125s] eee: Via Layer Id 8 mapped to 20 
+[01/11 09:46:03    125s] eee: Metal Layer Id 9 mapped to 21 
+[01/11 09:46:03    125s] eee: Via Layer Id 9 mapped to 22 
+[01/11 09:46:03    125s] eee: Metal Layer Id 10 mapped to 23 
+[01/11 09:46:24    141s] /software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcbest/qrcTechFile
+[01/11 09:46:25    142s] eee: Metal Layer Id 1 is M1 
+[01/11 09:46:25    142s] eee: Metal Layer Id 2 is M2 
+[01/11 09:46:25    142s] eee: Metal Layer Id 3 is M3 
+[01/11 09:46:25    142s] eee: Metal Layer Id 4 is M4 
+[01/11 09:46:25    142s] eee: Metal Layer Id 5 is M5 
+[01/11 09:46:25    142s] eee: Metal Layer Id 6 is M6 
+[01/11 09:46:25    142s] eee: Metal Layer Id 7 is M7 
+[01/11 09:46:25    142s] eee: Metal Layer Id 8 is M8 
+[01/11 09:46:25    142s] eee: Metal Layer Id 9 is M9 
+[01/11 09:46:25    142s] eee: Metal Layer Id 10 is AP 
+[01/11 09:46:25    142s] eee: Via Layer Id 34 is VIA1 
+[01/11 09:46:25    142s] eee: Via Layer Id 35 is VIA2 
+[01/11 09:46:25    142s] eee: Via Layer Id 36 is VIA3 
+[01/11 09:46:25    142s] eee: Via Layer Id 37 is VIA4 
+[01/11 09:46:25    142s] eee: Via Layer Id 38 is VIA5 
+[01/11 09:46:25    142s] eee: Via Layer Id 39 is VIA6 
+[01/11 09:46:25    142s] eee: Via Layer Id 40 is VIA7 
+[01/11 09:46:25    142s] eee: Via Layer Id 41 is VIA8 
+[01/11 09:46:25    142s] eee: Via Layer Id 42 is RV 
+[01/11 09:46:25    142s] eee: Trim Metal Layers: { }
+[01/11 09:46:25    142s] Generating auto layer map file.
+[01/11 09:46:25    142s] eee:  lef metal Layer Id 1 mapped to tech Id 5 of Layer m1 
+[01/11 09:46:25    142s] eee:  lef via Layer Id 1 mapped to tech Id 6 of Layer via1 
+[01/11 09:46:25    142s] eee:  lef metal Layer Id 2 mapped to tech Id 7 of Layer m2 
+[01/11 09:46:25    142s] eee:  lef via Layer Id 2 mapped to tech Id 8 of Layer via2 
+[01/11 09:46:25    142s] eee:  lef metal Layer Id 3 mapped to tech Id 9 of Layer m3 
+[01/11 09:46:25    142s] eee:  lef via Layer Id 3 mapped to tech Id 10 of Layer via3 
+[01/11 09:46:25    142s] eee:  lef metal Layer Id 4 mapped to tech Id 11 of Layer m4 
+[01/11 09:46:25    142s] eee:  lef via Layer Id 4 mapped to tech Id 12 of Layer via4 
+[01/11 09:46:25    142s] eee:  lef metal Layer Id 5 mapped to tech Id 13 of Layer m5 
+[01/11 09:46:25    142s] eee:  lef via Layer Id 5 mapped to tech Id 14 of Layer via5 
+[01/11 09:46:25    142s] eee:  lef metal Layer Id 6 mapped to tech Id 15 of Layer m6 
+[01/11 09:46:25    142s] eee:  lef via Layer Id 6 mapped to tech Id 16 of Layer via6 
+[01/11 09:46:25    142s] eee:  lef metal Layer Id 7 mapped to tech Id 17 of Layer m7 
+[01/11 09:46:25    142s] eee:  lef via Layer Id 7 mapped to tech Id 18 of Layer via7 
+[01/11 09:46:25    142s] eee:  lef metal Layer Id 8 mapped to tech Id 19 of Layer m8 
+[01/11 09:46:25    142s] eee:  lef via Layer Id 8 mapped to tech Id 20 of Layer via8 
+[01/11 09:46:25    142s] eee:  lef metal Layer Id 9 mapped to tech Id 21 of Layer m9 
+[01/11 09:46:25    142s] eee:  lef via Layer Id 9 mapped to tech Id 22 of Layer rv 
+[01/11 09:46:25    142s] eee:  lef metal Layer Id 10 mapped to tech Id 23 of Layer ap 
+[01/11 09:46:25    142s] eee: Metal Layer Id 1 mapped to 5 
+[01/11 09:46:25    142s] eee: Via Layer Id 1 mapped to 6 
+[01/11 09:46:25    142s] eee: Metal Layer Id 2 mapped to 7 
+[01/11 09:46:25    142s] eee: Via Layer Id 2 mapped to 8 
+[01/11 09:46:25    142s] eee: Metal Layer Id 3 mapped to 9 
+[01/11 09:46:25    142s] eee: Via Layer Id 3 mapped to 10 
+[01/11 09:46:25    142s] eee: Metal Layer Id 4 mapped to 11 
+[01/11 09:46:25    142s] eee: Via Layer Id 4 mapped to 12 
+[01/11 09:46:25    142s] eee: Metal Layer Id 5 mapped to 13 
+[01/11 09:46:25    142s] eee: Via Layer Id 5 mapped to 14 
+[01/11 09:46:25    142s] eee: Metal Layer Id 6 mapped to 15 
+[01/11 09:46:25    142s] eee: Via Layer Id 6 mapped to 16 
+[01/11 09:46:25    142s] eee: Metal Layer Id 7 mapped to 17 
+[01/11 09:46:25    142s] eee: Via Layer Id 7 mapped to 18 
+[01/11 09:46:25    142s] eee: Metal Layer Id 8 mapped to 19 
+[01/11 09:46:25    142s] eee: Via Layer Id 8 mapped to 20 
+[01/11 09:46:25    142s] eee: Metal Layer Id 9 mapped to 21 
+[01/11 09:46:25    142s] eee: Via Layer Id 9 mapped to 22 
+[01/11 09:46:25    142s] eee: Metal Layer Id 10 mapped to 23 
+[01/11 09:46:46    158s] /software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/nominal/qrcTechFile
+[01/11 09:46:47    159s] eee: Metal Layer Id 1 is M1 
+[01/11 09:46:47    159s] eee: Metal Layer Id 2 is M2 
+[01/11 09:46:47    159s] eee: Metal Layer Id 3 is M3 
+[01/11 09:46:47    159s] eee: Metal Layer Id 4 is M4 
+[01/11 09:46:47    159s] eee: Metal Layer Id 5 is M5 
+[01/11 09:46:47    159s] eee: Metal Layer Id 6 is M6 
+[01/11 09:46:47    159s] eee: Metal Layer Id 7 is M7 
+[01/11 09:46:47    159s] eee: Metal Layer Id 8 is M8 
+[01/11 09:46:47    159s] eee: Metal Layer Id 9 is M9 
+[01/11 09:46:47    159s] eee: Metal Layer Id 10 is AP 
+[01/11 09:46:47    159s] eee: Via Layer Id 34 is VIA1 
+[01/11 09:46:47    159s] eee: Via Layer Id 35 is VIA2 
+[01/11 09:46:47    159s] eee: Via Layer Id 36 is VIA3 
+[01/11 09:46:47    159s] eee: Via Layer Id 37 is VIA4 
+[01/11 09:46:47    159s] eee: Via Layer Id 38 is VIA5 
+[01/11 09:46:47    159s] eee: Via Layer Id 39 is VIA6 
+[01/11 09:46:47    159s] eee: Via Layer Id 40 is VIA7 
+[01/11 09:46:47    159s] eee: Via Layer Id 41 is VIA8 
+[01/11 09:46:47    159s] eee: Via Layer Id 42 is RV 
+[01/11 09:46:47    159s] eee: Trim Metal Layers: { }
+[01/11 09:46:47    159s] Generating auto layer map file.
+[01/11 09:46:47    159s] eee:  lef metal Layer Id 1 mapped to tech Id 5 of Layer m1 
+[01/11 09:46:47    159s] eee:  lef via Layer Id 1 mapped to tech Id 6 of Layer via1 
+[01/11 09:46:47    159s] eee:  lef metal Layer Id 2 mapped to tech Id 7 of Layer m2 
+[01/11 09:46:47    159s] eee:  lef via Layer Id 2 mapped to tech Id 8 of Layer via2 
+[01/11 09:46:47    159s] eee:  lef metal Layer Id 3 mapped to tech Id 9 of Layer m3 
+[01/11 09:46:47    159s] eee:  lef via Layer Id 3 mapped to tech Id 10 of Layer via3 
+[01/11 09:46:47    159s] eee:  lef metal Layer Id 4 mapped to tech Id 11 of Layer m4 
+[01/11 09:46:47    159s] eee:  lef via Layer Id 4 mapped to tech Id 12 of Layer via4 
+[01/11 09:46:47    159s] eee:  lef metal Layer Id 5 mapped to tech Id 13 of Layer m5 
+[01/11 09:46:47    159s] eee:  lef via Layer Id 5 mapped to tech Id 14 of Layer via5 
+[01/11 09:46:47    159s] eee:  lef metal Layer Id 6 mapped to tech Id 15 of Layer m6 
+[01/11 09:46:47    159s] eee:  lef via Layer Id 6 mapped to tech Id 16 of Layer via6 
+[01/11 09:46:47    159s] eee:  lef metal Layer Id 7 mapped to tech Id 17 of Layer m7 
+[01/11 09:46:47    159s] eee:  lef via Layer Id 7 mapped to tech Id 18 of Layer via7 
+[01/11 09:46:47    159s] eee:  lef metal Layer Id 8 mapped to tech Id 19 of Layer m8 
+[01/11 09:46:47    159s] eee:  lef via Layer Id 8 mapped to tech Id 20 of Layer via8 
+[01/11 09:46:47    159s] eee:  lef metal Layer Id 9 mapped to tech Id 21 of Layer m9 
+[01/11 09:46:47    159s] eee:  lef via Layer Id 9 mapped to tech Id 22 of Layer rv 
+[01/11 09:46:47    159s] eee:  lef metal Layer Id 10 mapped to tech Id 23 of Layer ap 
+[01/11 09:46:47    159s] eee: Metal Layer Id 1 mapped to 5 
+[01/11 09:46:47    159s] eee: Via Layer Id 1 mapped to 6 
+[01/11 09:46:47    159s] eee: Metal Layer Id 2 mapped to 7 
+[01/11 09:46:47    159s] eee: Via Layer Id 2 mapped to 8 
+[01/11 09:46:47    159s] eee: Metal Layer Id 3 mapped to 9 
+[01/11 09:46:47    159s] eee: Via Layer Id 3 mapped to 10 
+[01/11 09:46:47    159s] eee: Metal Layer Id 4 mapped to 11 
+[01/11 09:46:47    159s] eee: Via Layer Id 4 mapped to 12 
+[01/11 09:46:47    159s] eee: Metal Layer Id 5 mapped to 13 
+[01/11 09:46:47    159s] eee: Via Layer Id 5 mapped to 14 
+[01/11 09:46:47    159s] eee: Metal Layer Id 6 mapped to 15 
+[01/11 09:46:47    159s] eee: Via Layer Id 6 mapped to 16 
+[01/11 09:46:47    159s] eee: Metal Layer Id 7 mapped to 17 
+[01/11 09:46:47    159s] eee: Via Layer Id 7 mapped to 18 
+[01/11 09:46:47    159s] eee: Metal Layer Id 8 mapped to 19 
+[01/11 09:46:47    159s] eee: Via Layer Id 8 mapped to 20 
+[01/11 09:46:47    159s] eee: Metal Layer Id 9 mapped to 21 
+[01/11 09:46:47    159s] eee: Via Layer Id 9 mapped to 22 
+[01/11 09:46:47    159s] eee: Metal Layer Id 10 mapped to 23 
+[01/11 09:47:08    175s] Completed (cpu: 0:00:53.5 real: 0:01:09)
+[01/11 09:47:08    175s] Set Shrink Factor to 0.90000 (from technology file)
+[01/11 09:47:08    175s] Summary of Active RC-Corners : 
+[01/11 09:47:08    175s]  
+[01/11 09:47:08    175s]  Analysis View: view_wcl_slow
+[01/11 09:47:08    175s]     RC-Corner Name        : worst
+[01/11 09:47:08    175s]     RC-Corner Index       : 0
+[01/11 09:47:08    175s]     RC-Corner Temperature : 125 Celsius
+[01/11 09:47:08    175s]     RC-Corner Cap Table   : ''
+[01/11 09:47:08    175s]     RC-Corner PreRoute Res Factor         : 1
+[01/11 09:47:08    175s]     RC-Corner PreRoute Cap Factor         : 1
+[01/11 09:47:08    175s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[01/11 09:47:08    175s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[01/11 09:47:08    175s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[01/11 09:47:08    175s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[01/11 09:47:08    175s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[01/11 09:47:08    175s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+[01/11 09:47:08    175s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+[01/11 09:47:08    175s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[01/11 09:47:08    175s]     RC-Corner Technology file: '/software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcworst/qrcTechFile'
+[01/11 09:47:08    175s]  
+[01/11 09:47:08    175s]  Analysis View: view_wcl_fast
+[01/11 09:47:08    175s]     RC-Corner Name        : best
+[01/11 09:47:08    175s]     RC-Corner Index       : 1
+[01/11 09:47:08    175s]     RC-Corner Temperature : -40 Celsius
+[01/11 09:47:08    175s]     RC-Corner Cap Table   : ''
+[01/11 09:47:08    175s]     RC-Corner PreRoute Res Factor         : 1
+[01/11 09:47:08    175s]     RC-Corner PreRoute Cap Factor         : 1
+[01/11 09:47:08    175s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[01/11 09:47:08    175s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[01/11 09:47:08    175s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[01/11 09:47:08    175s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[01/11 09:47:08    175s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[01/11 09:47:08    175s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+[01/11 09:47:08    175s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+[01/11 09:47:08    175s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[01/11 09:47:08    175s]     RC-Corner Technology file: '/software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcbest/qrcTechFile'
+[01/11 09:47:08    175s]  
+[01/11 09:47:08    175s]  Analysis View: view_wcl_typical
+[01/11 09:47:08    175s]     RC-Corner Name        : typical
+[01/11 09:47:08    175s]     RC-Corner Index       : 2
+[01/11 09:47:08    175s]     RC-Corner Temperature : 25 Celsius
+[01/11 09:47:08    175s]     RC-Corner Cap Table   : ''
+[01/11 09:47:08    175s]     RC-Corner PreRoute Res Factor         : 1
+[01/11 09:47:08    175s]     RC-Corner PreRoute Cap Factor         : 1
+[01/11 09:47:08    175s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[01/11 09:47:08    175s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[01/11 09:47:08    175s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[01/11 09:47:08    175s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[01/11 09:47:08    175s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[01/11 09:47:08    175s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+[01/11 09:47:08    175s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+[01/11 09:47:08    175s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[01/11 09:47:08    175s]     RC-Corner Technology file: '/software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/nominal/qrcTechFile'
+[01/11 09:47:08    175s] Technology file '/software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcworst/qrcTechFile' associated with first view 'view_wcl_slow' will be used as the primary corner for the multi-corner extraction.
+[01/11 09:47:08    175s] eee: RC Grid Memory freed=72600
+[01/11 09:47:08    175s] eee: Trim Metal Layers: { }
+[01/11 09:47:08    175s] eee: RC Grid Memory allocated=72600
+[01/11 09:47:08    175s] eee: LayerId=1 widthSet size=1
+[01/11 09:47:08    175s] eee: LayerId=2 widthSet size=1
+[01/11 09:47:08    175s] eee: LayerId=3 widthSet size=1
+[01/11 09:47:08    175s] eee: LayerId=4 widthSet size=1
+[01/11 09:47:08    175s] eee: LayerId=5 widthSet size=1
+[01/11 09:47:08    175s] eee: LayerId=6 widthSet size=1
+[01/11 09:47:08    175s] eee: LayerId=7 widthSet size=1
+[01/11 09:47:08    175s] eee: LayerId=8 widthSet size=1
+[01/11 09:47:08    175s] eee: LayerId=9 widthSet size=1
+[01/11 09:47:08    175s] eee: LayerId=10 widthSet size=1
+[01/11 09:47:08    175s] eee: Total RC Grid memory=72600
+[01/11 09:47:08    175s] eee: Checksum of RC Grid density data read:(120 120) passed=1
+[01/11 09:47:08    175s] eee: Restore PreRoute RC Grid data successful.
+[01/11 09:47:08    175s] Restored RC grid for preRoute extraction.
+[01/11 09:47:08    175s] eee: Metal Layers Info:
+[01/11 09:47:08    175s] eee: L: M1 M2 M3 M4 M5 M6 M7 M8 M9 AP
+[01/11 09:47:08    175s] eee: W: 0.050000 0.050000 0.050000 0.050000 0.050000 0.050000 0.050000 0.400000 0.400000 2.000000
+[01/11 09:47:08    175s] eee: S: 0.050000 0.050000 0.050000 0.050000 0.050000 0.050000 0.050000 0.400000 0.400000 2.000000
+[01/11 09:47:08    175s] eee: pegSigSF=1.070000
+[01/11 09:47:08    175s] Initializing multi-corner resistance tables ...
+[01/11 09:47:08    175s] eee: ReadRoutingBlockageFactor status=1
+[01/11 09:47:08    175s] eee: Restore PreRoute Blockage data successful.
+[01/11 09:47:08    175s] eee: Reading Grid unit RC.
+[01/11 09:47:08    176s] eee: pesRestorePreRouteExtractionData::readRCGridUnitRC called for corner::worst
+[01/11 09:47:08    176s] eee: RCCorner in design data Name: worst Tech: /software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcworst/qrcTechFile 125.000000 1.000000 1.000000 
+[01/11 09:47:08    176s] eee: RCCorner in saved data Name: worst Tech: /software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcworst/qrcTechFile 125.000000 1.000000 1.000000 
+[01/11 09:47:08    176s] eee: Unit RC read checksum=22000, count=22000, status=1
+[01/11 09:47:09    176s] eee: pesRestorePreRouteExtractionData::readRCGridUnitRC called for corner::best
+[01/11 09:47:09    176s] eee: RCCorner in design data Name: best Tech: /software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcbest/qrcTechFile -40.000000 1.000000 1.000000 
+[01/11 09:47:09    176s] eee: RCCorner in saved data Name: worst Tech: /software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcworst/qrcTechFile 125.000000 1.000000 1.000000 
+[01/11 09:47:09    176s] eee: RCCorner in design data Name: best Tech: /software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcbest/qrcTechFile -40.000000 1.000000 1.000000 
+[01/11 09:47:09    176s] eee: RCCorner in saved data Name: best Tech: /software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcbest/qrcTechFile -40.000000 1.000000 1.000000 
+[01/11 09:47:09    176s] eee: Unit RC read checksum=22000, count=22000, status=1
+[01/11 09:47:09    176s] eee: pesRestorePreRouteExtractionData::readRCGridUnitRC called for corner::typical
+[01/11 09:47:09    176s] eee: RCCorner in design data Name: typical Tech: /software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/nominal/qrcTechFile 25.000000 1.000000 1.000000 
+[01/11 09:47:09    176s] eee: RCCorner in saved data Name: worst Tech: /software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcworst/qrcTechFile 125.000000 1.000000 1.000000 
+[01/11 09:47:09    176s] eee: RCCorner in design data Name: typical Tech: /software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/nominal/qrcTechFile 25.000000 1.000000 1.000000 
+[01/11 09:47:09    176s] eee: RCCorner in saved data Name: best Tech: /software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/rcbest/qrcTechFile -40.000000 1.000000 1.000000 
+[01/11 09:47:09    176s] eee: RCCorner in design data Name: typical Tech: /software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/nominal/qrcTechFile 25.000000 1.000000 1.000000 
+[01/11 09:47:09    176s] eee: RCCorner in saved data Name: typical Tech: /software/RFIC/PDK/tsmc/28nm/v1.8_2p3a_10M/RC_Extraction/Cadence/nominal/qrcTechFile 25.000000 1.000000 1.000000 
+[01/11 09:47:09    176s] eee: Unit RC read checksum=22000, count=22000, status=1
+[01/11 09:47:09    176s] eee: Number of RC corner to be extracted=0
+[01/11 09:47:09    176s] eee: l=1 avDens=0.034467 usedTrk=418.770108 availTrk=12150.000000 sigTrk=418.770108
+[01/11 09:47:09    176s] eee: l=2 avDens=0.261515 usedTrk=11862.304998 availTrk=45360.000000 sigTrk=11862.304998
+[01/11 09:47:09    176s] eee: l=3 avDens=0.194261 usedTrk=8601.871334 availTrk=44280.000000 sigTrk=8601.871334
+[01/11 09:47:09    176s] eee: l=4 avDens=0.050925 usedTrk=2172.451226 availTrk=42660.000000 sigTrk=2172.451226
+[01/11 09:47:09    176s] eee: l=5 avDens=0.019205 usedTrk=207.411109 availTrk=10800.000000 sigTrk=207.411109
+[01/11 09:47:09    176s] eee: l=6 avDens=0.004089 usedTrk=6.624444 availTrk=1620.000000 sigTrk=6.624444
+[01/11 09:47:09    176s] eee: l=7 avDens=0.016520 usedTrk=59.472222 availTrk=3600.000000 sigTrk=59.472222
+[01/11 09:47:09    176s] eee: l=8 avDens=0.002469 usedTrk=0.027778 availTrk=11.250000 sigTrk=0.027778
+[01/11 09:47:09    176s] eee: l=9 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[01/11 09:47:09    176s] eee: l=10 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[01/11 09:47:09    176s] {RT worst 0 10 10 {8 0} 1}
+[01/11 09:47:09    176s] eee: LAM: n=32 LLS=2-3 HLS=3-5 rDens=0.218628 uaWl=0.000000 uaWlH=0.000000 aWlH=0.000000 lMod=0 pMax=0.814000 pMod=83 wcR=0.681100 newSi=0.001600 wHLS=1.702750 siPrev=0 viaL=0.000000
+[01/11 09:47:09    176s] eee: Restored RC Grid backup saved.
+[01/11 09:47:09    176s] Restore PreRoute all RC Grid data successful.% End Load RC preroute patterns (date=01/11 09:47:09, total cpu=0:00:54.0, real=0:01:10, peak res=2131.7M, current mem=1941.8M)
+[01/11 09:47:09    176s] (stylus_db): Couldn't load Min Layer File : INVS//cmn/pp_fir_u_0.min_layer not found)
+[01/11 09:47:09    176s] (stylus_db): Load Route congestion map file ...
+[01/11 09:47:09    176s] % Begin Load Route congestion map (date=01/11 09:47:09, mem=1941.8M)
+[01/11 09:47:09    176s] Reading congestion map file INVS//cmn/pp_fir_u_0.route.congestion.gz ...
+[01/11 09:47:09    176s] Suppress "**WARN ..." messages.
+[01/11 09:47:09    176s] routingBox: (-3600 -9000) (418420 369000)
+[01/11 09:47:09    176s] coreBox:    (40 0) (414780 360000)
+[01/11 09:47:09    176s] Un-suppress "**WARN ..." messages.
+[01/11 09:47:09    176s] % End Load Route congestion map (date=01/11 09:47:09, total cpu=0:00:00.1, real=0:00:00.0, peak res=1943.7M, current mem=1943.7M)
+[01/11 09:47:09    176s] (stylus_db): Couldn't load SCANDEF, (file doesn't exists)
+[01/11 09:47:09    176s] (stylus_db): Couldn't load TCF file, (file doesn't exists)
+[01/11 09:47:09    176s] +----------------------------------------------------------------+
+[01/11 09:47:09    176s]     Summary of 'read_db INVS'                     
+[01/11 09:47:09    176s] +----------------------------------------------------------------+
+[01/11 09:47:09    176s]     Generated by         :     Innovus 22.10-p001_1
+[01/11 09:47:09    176s]     Generated on         :     Sat Jan 11 09:47:09 EST 2025
+[01/11 09:47:09    176s]     Design               :     pp_fir_u_0
+[01/11 09:47:09    176s]     process_node         :     90   
+[01/11 09:47:09    176s]     db units             :     2000 
+[01/11 09:47:09    176s]     tech_mfg_grid        :     0.005
+[01/11 09:47:09    176s]     bbox                 :     {-1.8 -1.8 209.21 181.8}
+[01/11 09:47:09    176s]     core_bbox            :     {0.02 0.0 207.39 180.0}
+[01/11 09:47:09    176s] +----------------------------------------------------------------+
+[01/11 09:47:09    176s]     Object Type          :     Count
+[01/11 09:47:09    176s] +-----------------------------------+
+[01/11 09:47:09    176s]     timing_libraries     :     3    
+[01/11 09:47:09    176s]     library_sets         :     3    
+[01/11 09:47:09    176s]     lib_cells            :     3009 
+[01/11 09:47:09    176s]     setup_analysis_views :     3    
+[01/11 09:47:09    176s]     hold_analysis_views  :     3    
+[01/11 09:47:09    176s]     rc_corners           :     3    
+[01/11 09:47:09    176s]     delay_corners        :     3    
+[01/11 09:47:09    176s]     constraint_modes     :     3    
+[01/11 09:47:09    176s]     clocks               :     3    
+[01/11 09:47:09    176s] +-----------------------------------+
+[01/11 09:47:09    176s]     base_cells           :     3537 
+[01/11 09:47:09    176s]     modules              :     1    
+[01/11 09:47:09    176s]     insts                :     21976
+[01/11 09:47:09    176s]     physical_insts       :     1006 
+[01/11 09:47:09    176s]     ports                :     549  
+[01/11 09:47:09    176s]     nets                 :     22900
+[01/11 09:47:09    176s]     pg_nets              :     2    
+[01/11 09:47:09    176s] +-----------------------------------+
+[01/11 09:47:09    176s]     layers               :     33   
+[01/11 09:47:09    176s]     via_defs             :     922  
+[01/11 09:47:09    176s]     via_def_rule         :     9    
+[01/11 09:47:09    176s]     sites                :     1    
+[01/11 09:47:09    176s]     core_rows            :     200  
+[01/11 09:47:09    176s]     track_patterns       :     20   
+[01/11 09:47:09    176s] +-----------------------------------+
+[01/11 09:47:10    176s] #% End Load Common DB (date=01/11 09:47:09, total cpu=0:02:12, real=0:03:00, peak res=2131.7M, current mem=1942.2M)
+[01/11 09:47:10    176s] 
+[01/11 09:47:10    176s] *** Summary of all messages that are not suppressed in this session:
+[01/11 09:47:10    176s] Severity  ID               Count  Summary                                  
+[01/11 09:47:10    176s] WARNING   IMPOPT-3602          5  The specified path group name %s is not ...
+[01/11 09:47:10    176s] WARNING   IMPUDM-33            1  Global variable "%s" is obsolete and wil...
+[01/11 09:47:10    176s] WARNING   IMPIMEX-4008         1  Variable '%s' is no longer supported in ...
+[01/11 09:47:10    176s] WARNING   TCLCMD-1461          2  Skipped unsupported command: %s          
+[01/11 09:47:10    176s] WARNING   TECHLIB-302         57  No function defined for cell '%s'. The c...
+[01/11 09:47:10    176s] *** Message Summary: 66 warning(s), 0 error(s)
+[01/11 09:47:10    176s] 
+[01/11 09:52:01    213s] <CMD> loadFPlan ../../pp_fir_u_0_power.fp
+[01/11 09:52:01    213s] Reading floorplan file - ../../pp_fir_u_0_power.fp (mem = 2240.3M).
+[01/11 09:52:01    213s] #% Begin Load floorplan data ... (date=01/11 09:52:01, mem=2013.2M)
+[01/11 09:52:01    213s] *info: reset 22900 existing net BottomPreferredLayer and AvoidDetour
+[01/11 09:52:01    213s] Deleting old partition specification.
+[01/11 09:52:01    213s]  ... processed partition successfully.
+[01/11 09:52:01    213s] Reading binary special route file ../../pp_fir_u_0_power.fp.spr (Created by Innovus v22.10-p001_1 on Tue Jan  7 08:44:42 2025, version: 1)
+[01/11 09:52:01    213s] Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2013.7M, current mem=2013.7M)
+[01/11 09:52:02    213s] #% End Load floorplan data ... (date=01/11 09:52:02, total cpu=0:00:00.2, real=0:00:01.0, peak res=2014.0M, current mem=2014.0M)
+[01/11 09:52:02    213s] <CMD> setDrawView fplan
+[01/11 09:52:02    213s] <CMD> fit
+[01/11 09:52:10    214s] 
+[01/11 09:52:10    214s] *** Memory Usage v#1 (Current mem = 2240.277M, initial mem = 509.465M) ***
+[01/11 09:52:10    214s] 
+[01/11 09:52:10    214s] *** Summary of all messages that are not suppressed in this session:
+[01/11 09:52:10    214s] Severity  ID               Count  Summary                                  
+[01/11 09:52:10    214s] WARNING   IMPOPT-3602          5  The specified path group name %s is not ...
+[01/11 09:52:10    214s] WARNING   IMPUDM-33            1  Global variable "%s" is obsolete and wil...
+[01/11 09:52:10    214s] WARNING   IMPIMEX-4008         1  Variable '%s' is no longer supported in ...
+[01/11 09:52:10    214s] WARNING   TCLCMD-1461          2  Skipped unsupported command: %s          
+[01/11 09:52:10    214s] WARNING   TECHLIB-302         57  No function defined for cell '%s'. The c...
+[01/11 09:52:10    214s] *** Message Summary: 66 warning(s), 0 error(s)
+[01/11 09:52:10    214s] 
+[01/11 09:52:10    214s] --- Ending "Innovus" (totcpu=0:03:35, real=0:09:53, mem=2240.3M) ---

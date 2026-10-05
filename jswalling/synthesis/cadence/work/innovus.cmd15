@@ -1,0 +1,72 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Sat Jan 11 21:50:08 2025                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v22.10-p001_1 (64bit) 09/29/2022 11:03 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 22.10-p001_1 NR220915-0329/22_10-UB (database version 18.20.590) {superthreading v2.19}
+#@(#)CDS: AAE 22.10-p002 (64bit) 09/29/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 22.10-p004_1 () Sep  7 2022 21:57:29 ( )
+#@(#)CDS: SYNTECH 22.10-p001_1 () Aug  8 2022 11:26:34 ( )
+#@(#)CDS: CPE v22.10-p005
+#@(#)CDS: IQuantus/TQuantus 21.2.0-s201 (64bit) Wed Jul 6 19:14:09 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+
+read_db INVS/
+read_floorplan ../../pp_fir_u_0_power.fp
+gui_select -point {7.48100 177.75650}
+gui_select -append -point {8.18550 178.40200}
+gui_select -append -point {19.57350 178.51950}
+gui_select -append -point {20.27800 178.57800}
+gui_select -append -point {31.54850 178.40200}
+gui_select -append -point {32.31150 178.40200}
+delete_selected_from_floorplan
+gui_select -point {43.46500 178.57800}
+gui_select -append -point {44.22800 178.46050}
+gui_select -append -point {55.48150 178.46050}
+gui_select -append -point {56.18600 178.57800}
+gui_select -append -point {67.63250 178.51950}
+gui_select -append -point {68.04350 178.51950}
+gui_select -append -point {79.49050 178.57800}
+gui_select -append -point {80.48850 178.57800}
+gui_select -point {77.49450 186.73750}
+gui_select -point {43.27750 178.46050}
+gui_select -append -point {44.09900 178.46050}
+gui_select -append -point {55.25250 178.46050}
+gui_select -append -point {56.36750 178.40200}
+gui_select -append -point {67.57950 178.51950}
+gui_select -append -point {68.28400 178.57800}
+gui_select -append -point {79.54350 178.51950}
+gui_select -append -point {80.13050 178.51950}
+gui_select -append -point {91.63600 178.69550}
+gui_select -append -point {92.10550 178.51950}
+delete_selected_from_floorplan
+gui_select -append -point {103.59400 178.69550}
+gui_select -append -point {104.00450 178.57800}
+gui_select -append -point {115.45150 178.51950}
+gui_select -append -point {116.15600 178.51950}
+gui_select -append -point {127.66150 178.57800}
+gui_select -append -point {128.13100 178.46050}
+gui_select -append -point {139.63650 178.40200}
+gui_select -append -point {140.22350 178.46050}
+delete_selected_from_floorplan
+gui_select -append -point {151.65300 178.34350}
+gui_select -append -point {151.94650 178.40200}
+gui_select -append -point {163.45200 178.28450}
+gui_select -append -point {164.27400 178.63700}
+gui_select -append -point {175.36850 178.57800}
+gui_select -append -point {176.13150 178.57800}
+delete_selected_from_floorplan
+gui_select -append -point {187.74300 178.40200}
+gui_select -point {187.50800 178.46050}
+gui_select -append -point {188.09500 178.57800}
+gui_select -append -point {199.42450 178.69550}
+gui_select -append -point {200.01150 178.57800}
+delete_selected_from_floorplan
+time_design -pre_cts 
+opt_design -pre_cts 
+write_db pp_fir_u_0_04_prects_stylus.enc
+source ../scripts/cts.tcl 
+source ../scripts/cts.tcl 
+exit

@@ -1,0 +1,101 @@
+(DELAYFILE
+  (SDFVERSION  "OVI 3.0")
+  (DESIGN      "b2u_3b_static")
+  (DATE        "Sun Jan 25 21:08:09 EST 2026")
+  (VENDOR      "Cadence, Inc.")
+  (PROGRAM     "Genus(TM) Synthesis Solution")
+  (VERSION     "23.14-s090_1")
+  (DIVIDER     .)
+  (VOLTAGE     ::0.81)
+  (PROCESS     "::1.0")
+  (TEMPERATURE ::125.0)
+  (TIMESCALE   1ps)
+  (CELL
+     (CELLTYPE "AND2_X0P7M_A9PP140ZTS_C30")
+     (INSTANCE g141__2398)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.1))
+          (PORT B (::0.0))
+          (IOPATH A Y (::459) (::506))
+          (IOPATH B Y (::483) (::362))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND2XB_X2M_A9PP140ZTS_C30")
+     (INSTANCE g142__5107)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.1))
+          (PORT BN (::0.0))
+          (IOPATH BN Y (::258) (::244))
+          (IOPATH A Y (::266) (::246))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2XB_X2M_A9PP140ZTS_C30")
+     (INSTANCE g143__6260)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.1))
+          (PORT BN (::0.0))
+          (IOPATH BN Y (::308) (::225))
+          (IOPATH A Y (::311) (::230))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "AO21_X1M_A9PP140ZTS_C30")
+     (INSTANCE g144__4319)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.1))
+          (PORT A1 (::0.1))
+          (PORT B0 (::0.0))
+          (COND A0==1'b0&&A1==1'b0 (IOPATH B0 Y (::366) (::287)))
+          (IOPATH A0 Y (::374) (::293))
+          (COND A0==1'b0&&A1==1'b1 (IOPATH B0 Y (::365) (::290)))
+          (COND A0==1'b1&&A1==1'b0 (IOPATH B0 Y (::367) (::294)))
+          (IOPATH A1 Y (::374) (::296))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OR2_X0P7B_A9PP140ZTS_C30")
+     (INSTANCE g145__8428)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.1))
+          (PORT B (::0.0))
+          (IOPATH A Y (::450) (::434))
+          (IOPATH B Y (::451) (::435))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2_X0P7B_A9PP140ZTS_C30")
+     (INSTANCE g146__5526)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::32) (::24))
+          (IOPATH B Y (::33) (::25))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "AND2_X0P7M_A9PP140ZTS_C30")
+     (INSTANCE g147__6783)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::486) (::364))
+          (IOPATH B Y (::487) (::365))
+        )
+     )
+  )
+)

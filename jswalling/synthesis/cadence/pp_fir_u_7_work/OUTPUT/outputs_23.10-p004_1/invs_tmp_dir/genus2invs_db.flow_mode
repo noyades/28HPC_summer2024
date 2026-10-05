@@ -1,0 +1,30 @@
+################################################################################
+#
+# Innovus mode file
+# Created by Genus(TM) Synthesis Solution on 02/17/2025 20:55:26
+#
+################################################################################
+[expr {[is_common_ui_mode] ? "eval_legacy" : "eval"}] {
+
+
+# General Mode Settings
+################################################################################
+
+set_global timing_clock_phase_propagation both
+setDesignMode -powerEffort none
+setOptMode -leakageToDynamicRatio 1.0
+if {[is_attribute -obj_type root extract_rc_pre_place_wire_length_slope]} {
+catch {setExtractRCMode -prePlaceWireLengthSlope 1.5579}
+catch {setExtractRCMode -prePlaceWireLengthY0 1.0118}
+catch {setExtractRCMode -prePlaceFanoutPenalty 0.0000}
+catch {setExtractRCMode -prePlaceFanoutThreshold 10}
+catch {setExtractRCMode -prePlaceSiteSize 1.0400}
+catch {setExtractRCMode -prePlaceCapScaleFactor 0.8721}
+catch {setExtractRCMode -prePlaceResScaleFactor 0.3973}
+}
+pqos_eval { rcp::push_and_set_state  -format 3 -set_name "genus2invs_modes" {
+{set_global timing_apply_default_primary_input_assertion false}
+{setAnalysisMode -asyncChecks async}
+{setPlaceMode -reorderScan false}
+} }
+}

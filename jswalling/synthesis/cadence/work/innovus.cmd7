@@ -1,0 +1,130 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Fri Jan 10 20:35:27 2025                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v22.10-p001_1 (64bit) 09/29/2022 11:03 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 22.10-p001_1 NR220915-0329/22_10-UB (database version 18.20.590) {superthreading v2.19}
+#@(#)CDS: AAE 22.10-p002 (64bit) 09/29/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 22.10-p004_1 () Sep  7 2022 21:57:29 ( )
+#@(#)CDS: SYNTECH 22.10-p001_1 () Aug  8 2022 11:26:34 ( )
+#@(#)CDS: CPE v22.10-p005
+#@(#)CDS: IQuantus/TQuantus 21.2.0-s201 (64bit) Wed Jul 6 19:14:09 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+
+read_db INVS/
+read_floorplan ../../pp_fir_u_0_power.fp
+gui_select -point {7.60900 179.39500}
+delete_selected_from_floorplan
+gui_select -point {8.16550 179.59900}
+gui_select -toggle -point {19.50600 179.49600}
+gui_select -toggle -point {20.14050 179.43550}
+gui_select -toggle -point {31.58050 179.31500}
+gui_select -toggle -point {32.36600 179.43550}
+gui_select -toggle -point {43.47400 179.28450}
+gui_select -toggle -point {44.07800 179.43550}
+gui_select -toggle -point {55.61150 179.49600}
+gui_select -toggle -point {56.24600 179.49600}
+gui_select -toggle -point {67.53500 179.34500}
+gui_select -toggle -point {68.16950 179.43550}
+gui_select -toggle -point {79.31600 179.37550}
+gui_select -toggle -point {80.13200 179.64700}
+delete_selected_from_floorplan
+gui_select -point {91.53600 179.31500}
+gui_select -toggle -point {92.11000 179.40550}
+gui_select -toggle -point {103.46800 179.61700}
+gui_select -toggle -point {104.34400 179.43550}
+delete_selected_from_floorplan
+gui_select -point {115.50950 179.58700}
+gui_select -toggle -point {115.99300 179.43550}
+gui_select -toggle -point {127.37250 179.37550}
+gui_select -toggle -point {127.97700 179.37550}
+gui_select -toggle -point {139.42550 179.55650}
+gui_select -toggle -point {140.15050 179.52650}
+gui_select -toggle -point {151.37650 179.58700}
+gui_select -toggle -point {152.13150 179.46600}
+gui_select -toggle -point {163.60200 179.49600}
+gui_select -toggle -point {164.26650 179.52650}
+gui_select -toggle -point {175.40450 179.34500}
+gui_select -toggle -point {176.15950 179.43550}
+gui_select -toggle -point {187.30650 179.52650}
+gui_select -toggle -point {188.45400 179.55650}
+delete_selected_from_floorplan
+gui_select -point {188.36350 179.55650}
+gui_select -toggle -point {199.52900 179.55650}
+gui_select -toggle -point {200.04250 179.58700}
+delete_selected_from_floorplan
+time_design -preCTS
+time_design -pre_CTS
+opt_design -pre_CTS
+write_db pp_fir_u_0_04_prects_stylus.enc/pp_fir_u_0_04_prects_stylus.enc
+source ../scripts/cts.tcl 
+write_db pp_fir_u_0_04_prects_stylus.enc/pp_fir_u_0_05_cts_stylus.enc
+time_design -post_cts 
+report_power
+opt_design -post_cts 
+report_power
+set_db add_fillers_cells {{}{FILLSGCAP128_A9PP140ZTL_C30 FILLSGCAP16_A9PP140ZTL_C30 FILLSGCAP2_A9PP140ZTL_C30 FILLSGCAP32_A9PP140ZTL_C30 FILLSGCAP3_A9PP140ZTL_C30 FILLSGCAP4_A9PP140ZTL_C30 FILLSGCAP64_A9PP140ZTL_C30 FILLSGCAP8_A9PP140ZTL_C30}{FILL8_A9PP140ZTL_C30 FILL64_A9PP140ZTL_C30 FILL4_A9PP140ZTL_C30 FILL3_A9PP140ZTL_C30 FILL32_A9PP140ZTL_C30 FILL2_A9PP140ZTL_C30 FILL1_A9PP140ZTL_C30 FILL16_A9PP140ZTL_C30 FILL128_A9PP140ZTL_C30}}
+set_db add_fillers_cells {{}{FILLSGCAP128_A9PP140ZTL_C30 FILLSGCAP16_A9PP140ZTL_C30 FILLSGCAP2_A9PP140ZTL_C30 FILLSGCAP32_A9PP140ZTL_C30 FILLSGCAP3_A9PP140ZTL_C30 FILLSGCAP4_A9PP140ZTL_C30 FILLSGCAP64_A9PP140ZTL_C30 FILLSGCAP8_A9PP140ZTL_C30}{FILL8_A9PP140ZTL_C30 FILL64_A9PP140ZTL_C30 FILL4_A9PP140ZTL_C30 FILL3_A9PP140ZTL_C30 FILL32_A9PP140ZTL_C30 FILL2_A9PP140ZTL_C30 FILL1_A9PP140ZTL_C30 FILL16_A9PP140ZTL_C30 FILL128_A9PP140ZTL_C30}} -doDRC true
+set_db add_fillers_cells {{}{FILLSGCAP128_A9PP140ZTL_C30 FILLSGCAP16_A9PP140ZTL_C30 FILLSGCAP2_A9PP140ZTL_C30 FILLSGCAP32_A9PP140ZTL_C30 FILLSGCAP3_A9PP140ZTL_C30 FILLSGCAP4_A9PP140ZTL_C30 FILLSGCAP64_A9PP140ZTL_C30 FILLSGCAP8_A9PP140ZTL_C30}{FILL8_A9PP140ZTL_C30 FILL64_A9PP140ZTL_C30 FILL4_A9PP140ZTL_C30 FILL3_A9PP140ZTL_C30 FILL32_A9PP140ZTL_C30 FILL2_A9PP140ZTL_C30 FILL1_A9PP140ZTL_C30 FILL16_A9PP140ZTL_C30 FILL128_A9PP140ZTL_C30}}
+set_db route_detail_fix_antenna 1
+set_db route_antenna_diode_insertion 0
+set_db route_with_timing_driven 0
+set_db route_with_eco 0
+set_db route_with_litho_driven 1
+set_db route_detail_post_route_litho_repair 0
+set_db route_with_si_driven 0
+set_db route_detail_auto_stop 0
+set_db route_selected_net_only 0
+set_db route_top_routing_layer 6
+set_db route_bottom_routing_layer 1
+set_db route_detail_end_iteration 1
+set_db route_with_timing_driven false
+set_db route_with_si_driven false
+route_design -global_detail
+opt_design -post_route 
+report_power
+add_fillers
+eco_route -target
+ecoRoute -target
+eco_route -target
+delete_filler
+setFillerMode -enableLeglizer
+eval_legacy { addFiller -cell {FILLSGCAP128_A9PP140ZTL_C30 FILLSGCAP16_A9PP140ZTL_C30 FILLSGCAP2_A9PP140ZTL_C30 FILLSGCAP32_A9PP140ZTL_C30 FILLSGCAP3_A9PP140ZTL_C30 FILLSGCAP4_A9PP140ZTL_C30 FILLSGCAP64_A9PP140ZTL_C30 FILLSGCAP8_A9PP140ZTL_C30} {FILL8_A9PP140ZTL_C30 FILL64_A9PP140ZTL_C30 FILL4_A9PP140ZTL_C30 FILL3_A9PP140ZTL_C30 FILL32_A9PP140ZTL_C30 FILL2_A9PP140ZTL_C30 FILL1_A9PP140ZTL_C30 FILL16_A9PP140ZTL_C30 FILL128_A9PP140ZTL_C30} -prefix FILLER -doDRC }
+opt_design -post_route 
+report_power
+set_layer_preference violation -is_visible 1
+gui_select -point {117.68950 40.36350}
+write_netlist pp_fir_u_0_struct_inn.v
+write_stream pp_fir_u_0_struct_inn.gds -map_file /software/RFIC/PDK/tsmc/28nm/tsri/APR_Tech/Cadence/tn28clpr002e1_1_9_1a/PRTF_EDI_28nm_Cad_V19_1a/PR_tech/Cadence/GdsOutMap/gdsout_6X2Z.map -lib_name DesignLib -unit 2000 -mode all
+check_connectivity -type all -geometry_connect -error 1000 -warning 50
+gui_select -point {2.91650 176.16700}
+set_db check_drc_disable_rules {}
+set_db check_drc_ndr_spacing auto
+set_db check_drc_check_only default
+set_db check_drc_inside_via_def true
+set_db check_drc_exclude_pg_net false
+set_db check_drc_ignore_trial_route false
+set_db check_drc_ignore_cell_blockage false
+set_db check_drc_use_min_spacing_on_block_obs auto
+set_db check_drc_report pp_fir_u_0.drc.rpt
+set_db check_drc_limit 1000
+check_drc
+set_db check_drc_area {0 0 0 0}
+gui_select -point {213.52300 147.72950}
+opt_design -post_route 
+set_db check_drc_disable_rules {}
+set_db check_drc_ndr_spacing auto
+set_db check_drc_check_only default
+set_db check_drc_inside_via_def true
+set_db check_drc_exclude_pg_net false
+set_db check_drc_ignore_trial_route false
+set_db check_drc_ignore_cell_blockage false
+set_db check_drc_use_min_spacing_on_block_obs auto
+set_db check_drc_report pp_fir_u_0.drc.rpt
+set_db check_drc_limit 1000
+check_drc
+set_db check_drc_area {0 0 0 0}
+get_db designs .name
+exit

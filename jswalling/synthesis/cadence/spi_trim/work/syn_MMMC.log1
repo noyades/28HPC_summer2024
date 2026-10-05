@@ -1,0 +1,417 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Version: 21.11-s126_1, built Mon Dec 20 09:52:46 PST 2021
+Options: -log syn_MMMC.log 
+Date:    Tue May 07 10:34:08 2024
+Host:    cluster12 (x86_64 w/Linux 3.10.0-1160.102.1.el7.x86_64) (6cores*24cpus*2physical cpus*Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz 15360KB) (40983880KB)
+PID:     38150
+OS:      CentOS Linux release 7.9.2009 (Core)
+
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (16 seconds elapsed).
+
+WARNING: This version of the tool is 868 days old.
+@genus:root: 1> source ../scripts/run.tcl
+Sourcing '../scripts/run.tcl' (Tue May 07 10:34:56 EDT 2024)...
+#@ Begin verbose source ../scripts/run.tcl
+@file(run.tcl) 1: if {[file exists /proc/cpuinfo]} {
+  sh grep "model name" /proc/cpuinfo
+  sh grep "cpu MHz"    /proc/cpuinfo
+}
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+cpu MHz		: 2207.031
+cpu MHz		: 1203.735
+cpu MHz		: 2095.825
+cpu MHz		: 1258.178
+cpu MHz		: 2211.059
+cpu MHz		: 1199.951
+cpu MHz		: 2212.280
+cpu MHz		: 1203.002
+cpu MHz		: 2145.629
+cpu MHz		: 1201.904
+cpu MHz		: 2193.725
+cpu MHz		: 1478.271
+cpu MHz		: 2204.956
+cpu MHz		: 1479.003
+cpu MHz		: 1798.706
+cpu MHz		: 1477.905
+cpu MHz		: 1797.363
+cpu MHz		: 1444.702
+cpu MHz		: 2262.084
+cpu MHz		: 1476.684
+cpu MHz		: 2211.181
+cpu MHz		: 1201.538
+cpu MHz		: 2129.028
+cpu MHz		: 1256.347
+@file(run.tcl) 6: puts "Hostname : [info hostname]"
+Hostname : cluster12.lan.ece
+@file(run.tcl) 8: set DESIGN topPLLDigital
+@file(run.tcl) 9: set SYN_EFF medium
+@file(run.tcl) 10: set MAP_EFF medium
+@file(run.tcl) 11: set OPT_EFF medium
+@file(run.tcl) 13: set RELEASE [lindex [get_db program_version] end]
+@file(run.tcl) 14: set _OUTPUTS_PATH OUTPUT/outputs_${RELEASE}
+@file(run.tcl) 15: set _REPORTS_PATH OUTPUT/reports_${RELEASE}
+@file(run.tcl) 17: if {![file exists ${_OUTPUTS_PATH}]} {
+  file mkdir ${_OUTPUTS_PATH}
+  puts "Creating directory ${_OUTPUTS_PATH}"
+}
+@file(run.tcl) 22: if {![file exists ${_REPORTS_PATH}]} {
+  file mkdir ${_REPORTS_PATH}
+  puts "Creating directory ${_REPORTS_PATH}"
+}
+@file(run.tcl) 27: set rtlDIR ../rtl
+@file(run.tcl) 29: set_db init_lib_search_path {. /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/}
+  Setting attribute of root '/': 'init_lib_search_path' = . /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/
+@file(run.tcl) 30: set_db script_search_path { . }
+  Setting attribute of root '/': 'script_search_path' =  . 
+@file(run.tcl) 31: set_db init_hdl_search_path {. ../rtl}
+  Setting attribute of root '/': 'init_hdl_search_path' = . ../rtl
+@file(run.tcl) 33: set_db max_cpus_per_server 8
+  Setting attribute of root '/': 'max_cpus_per_server' = 8
+@file(run.tcl) 35: set_db syn_generic_effort $SYN_EFF
+  Setting attribute of root '/': 'syn_generic_effort' = medium
+@file(run.tcl) 36: set_db syn_map_effort $MAP_EFF
+  Setting attribute of root '/': 'syn_map_effort' = medium
+@file(run.tcl) 37: set_db syn_opt_effort $OPT_EFF
+  Setting attribute of root '/': 'syn_opt_effort' = medium
+@file(run.tcl) 39: set_db information_level 9
+  Setting attribute of root '/': 'information_level' = 9
+@file(run.tcl) 41: set_db tns_opto true
+  Setting attribute of root '/': 'tns_opto' = true
+@file(run.tcl) 42: set_db lp_insert_clock_gating true
+  Setting attribute of root '/': 'lp_insert_clock_gating' = true
+@file(run.tcl) 44: puts "Now load RTL LIST"
+Now load RTL LIST
+@file(run.tcl) 45: set rtlList "\
+${rtlDir}/topPLLDigital.v \
+${rtlDir}/spi_slave_pll.v \
+${rtlDir}/fifo_pll.v \
+${rtlDir}/fifo_miso.v \
+${rtlDir}/register_bank_pll.v \
+${rtlDir}/clkDiv.v \
+${rtlDir}/two_bit_counter.v \
+${rtlDir}/mash111.v \
+${rtlDir}/Memory43b.v\
+"
+#@ End verbose source ../scripts/run.tcl
+can't read "rtlDir": no such variable
+@genus:root: 2> ls ../rtl
+Memory43b.v
+b2u_3b.v
+b2u_5b.v
+b2u_split_3b3b3b.v
+bin2therm_4b.v
+bin2therm_4to15.v
+bin2therm_5.v
+bin2therm_5b.v
+bin2therm_5to31.v
+binRegs.v
+busSplittingDsm.v
+clkDiv.v
+clkDiv_32.v
+clkDiv_8.v
+dsm1_10b_stage1.v
+dsm1_11b_stage1.v
+dsm1_26b_stage3.v
+dsm1_5b_stage2.v
+dsm3_41b.v
+dsm3_42b.v
+dsm3_43b.v
+dsm_41b_mash111.v
+fifoDataRegister.v
+fifo_32b.v
+fifo_miso.v
+fifo_pll.v
+fifo_to_regbank_assembler.v
+fourBitThermometerDecoder.v
+mash111.v
+mash111_tb.v
+register_bank_pll.v
+s2p_spi.v
+spi_main.v
+spi_s2p_16to32.v
+spi_slave.v
+spi_slave_pll.v
+spi_slave_v2.v
+spi_sub.v
+tb_DSM_41b.v
+tb_topPLLDigital.v
+thermalBinRegs.v
+thermalDecoder.v
+topDecoder.v
+topPLL.v
+topPLLDigital.v
+topThermalDigital.v
+topThermalDigital_tb.v
+topTrimDigital.v
+topVcselDigital.v
+topVcselDigital_tb.v
+topVcsel_tb.v
+trimDecoder.v
+trimRegs.v
+two_bit_counter.v
+vcselDecoder.v
+vcselDriverDecoder.v
+@genus:root: 3> ls ${rtlDir}
+can't read "rtlDir": no such variable
+@genus:root: 4> set rtlDir ../rtl
+../rtl
+@genus:root: 5> source ../scripts/run.tcl
+Sourcing '../scripts/run.tcl' (Tue May 07 10:36:20 EDT 2024)...
+#@ Begin verbose source ../scripts/run.tcl
+@file(run.tcl) 1: if {[file exists /proc/cpuinfo]} {
+  sh grep "model name" /proc/cpuinfo
+  sh grep "cpu MHz"    /proc/cpuinfo
+}
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+cpu MHz		: 1357.910
+cpu MHz		: 1288.696
+cpu MHz		: 1467.407
+cpu MHz		: 1250.244
+cpu MHz		: 1591.186
+cpu MHz		: 1370.483
+cpu MHz		: 1507.690
+cpu MHz		: 1233.276
+cpu MHz		: 1413.330
+cpu MHz		: 1355.346
+cpu MHz		: 1505.615
+cpu MHz		: 1199.951
+cpu MHz		: 1460.327
+cpu MHz		: 1247.558
+cpu MHz		: 1504.394
+cpu MHz		: 1244.140
+cpu MHz		: 1485.229
+cpu MHz		: 1248.901
+cpu MHz		: 1662.719
+cpu MHz		: 1296.264
+cpu MHz		: 1488.525
+cpu MHz		: 1358.642
+cpu MHz		: 1475.219
+cpu MHz		: 1289.672
+@file(run.tcl) 6: puts "Hostname : [info hostname]"
+Hostname : cluster12.lan.ece
+@file(run.tcl) 8: set DESIGN topPLLDigital
+@file(run.tcl) 9: set SYN_EFF medium
+@file(run.tcl) 10: set MAP_EFF medium
+@file(run.tcl) 11: set OPT_EFF medium
+@file(run.tcl) 13: set RELEASE [lindex [get_db program_version] end]
+@file(run.tcl) 14: set _OUTPUTS_PATH OUTPUT/outputs_${RELEASE}
+@file(run.tcl) 15: set _REPORTS_PATH OUTPUT/reports_${RELEASE}
+@file(run.tcl) 17: if {![file exists ${_OUTPUTS_PATH}]} {
+  file mkdir ${_OUTPUTS_PATH}
+  puts "Creating directory ${_OUTPUTS_PATH}"
+}
+@file(run.tcl) 22: if {![file exists ${_REPORTS_PATH}]} {
+  file mkdir ${_REPORTS_PATH}
+  puts "Creating directory ${_REPORTS_PATH}"
+}
+@file(run.tcl) 27: set rtlDIR ../rtl
+@file(run.tcl) 29: set_db init_lib_search_path {. /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/}
+  Setting attribute of root '/': 'init_lib_search_path' = . /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/
+@file(run.tcl) 30: set_db script_search_path { . }
+  Setting attribute of root '/': 'script_search_path' =  . 
+@file(run.tcl) 31: set_db init_hdl_search_path {. ../rtl}
+  Setting attribute of root '/': 'init_hdl_search_path' = . ../rtl
+@file(run.tcl) 33: set_db max_cpus_per_server 8
+  Setting attribute of root '/': 'max_cpus_per_server' = 8
+@file(run.tcl) 35: set_db syn_generic_effort $SYN_EFF
+  Setting attribute of root '/': 'syn_generic_effort' = medium
+@file(run.tcl) 36: set_db syn_map_effort $MAP_EFF
+  Setting attribute of root '/': 'syn_map_effort' = medium
+@file(run.tcl) 37: set_db syn_opt_effort $OPT_EFF
+  Setting attribute of root '/': 'syn_opt_effort' = medium
+@file(run.tcl) 39: set_db information_level 9
+  Setting attribute of root '/': 'information_level' = 9
+@file(run.tcl) 41: set_db tns_opto true
+  Setting attribute of root '/': 'tns_opto' = true
+@file(run.tcl) 42: set_db lp_insert_clock_gating true
+  Setting attribute of root '/': 'lp_insert_clock_gating' = true
+@file(run.tcl) 44: puts "Now load RTL LIST"
+Now load RTL LIST
+@file(run.tcl) 45: set rtlList "\
+${rtlDir}/topPLLDigital.v \
+${rtlDir}/spi_slave_pll.v \
+${rtlDir}/fifo_pll.v \
+${rtlDir}/fifo_miso.v \
+${rtlDir}/register_bank_pll.v \
+${rtlDir}/clkDiv.v \
+${rtlDir}/two_bit_counter.v \
+${rtlDir}/mash111.v \
+${rtlDir}/Memory43b.v\
+"
+@file(run.tcl) 57: suspend
+
+Execution has been suspended temporarily.
+Enter 'resume' to continue.
+Enter 'stop_suspend' to stop script execution
+[SUSPEND]genus:root: 5> source ../scripts/run.tcl
+Sourcing '../scripts/run.tcl' (Tue May 07 10:36:48 EDT 2024)...
+#@ Begin verbose source ../scripts/run.tcl
+@file(run.tcl) 1: if {[file exists /proc/cpuinfo]} {
+  sh grep "model name" /proc/cpuinfo
+  sh grep "cpu MHz"    /proc/cpuinfo
+}
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+cpu MHz		: 1264.404
+cpu MHz		: 1218.994
+cpu MHz		: 1245.605
+cpu MHz		: 1281.372
+cpu MHz		: 1251.342
+cpu MHz		: 1199.951
+cpu MHz		: 1245.483
+cpu MHz		: 1229.980
+cpu MHz		: 1292.724
+cpu MHz		: 1244.018
+cpu MHz		: 1266.113
+cpu MHz		: 1199.951
+cpu MHz		: 1199.829
+cpu MHz		: 1228.149
+cpu MHz		: 1227.783
+cpu MHz		: 1236.450
+cpu MHz		: 1209.716
+cpu MHz		: 1208.740
+cpu MHz		: 1218.505
+cpu MHz		: 1214.111
+cpu MHz		: 1279.663
+cpu MHz		: 1199.829
+cpu MHz		: 1237.304
+cpu MHz		: 1252.807
+@file(run.tcl) 6: puts "Hostname : [info hostname]"
+Hostname : cluster12.lan.ece
+@file(run.tcl) 8: set DESIGN topPLLDigital
+@file(run.tcl) 9: set SYN_EFF medium
+@file(run.tcl) 10: set MAP_EFF medium
+@file(run.tcl) 11: set OPT_EFF medium
+@file(run.tcl) 13: set RELEASE [lindex [get_db program_version] end]
+@file(run.tcl) 14: set _OUTPUTS_PATH OUTPUT/outputs_${RELEASE}
+@file(run.tcl) 15: set _REPORTS_PATH OUTPUT/reports_${RELEASE}
+@file(run.tcl) 17: if {![file exists ${_OUTPUTS_PATH}]} {
+  file mkdir ${_OUTPUTS_PATH}
+  puts "Creating directory ${_OUTPUTS_PATH}"
+}
+@file(run.tcl) 22: if {![file exists ${_REPORTS_PATH}]} {
+  file mkdir ${_REPORTS_PATH}
+  puts "Creating directory ${_REPORTS_PATH}"
+}
+@file(run.tcl) 27: set rtlDIR ../rtl
+@file(run.tcl) 29: set_db init_lib_search_path {. /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/}
+  Setting attribute of root '/': 'init_lib_search_path' = . /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/
+@file(run.tcl) 30: set_db script_search_path { . }
+  Setting attribute of root '/': 'script_search_path' =  . 
+@file(run.tcl) 31: set_db init_hdl_search_path {. ../rtl}
+  Setting attribute of root '/': 'init_hdl_search_path' = . ../rtl
+@file(run.tcl) 33: set_db max_cpus_per_server 8
+  Setting attribute of root '/': 'max_cpus_per_server' = 8
+@file(run.tcl) 35: set_db syn_generic_effort $SYN_EFF
+  Setting attribute of root '/': 'syn_generic_effort' = medium
+@file(run.tcl) 36: set_db syn_map_effort $MAP_EFF
+  Setting attribute of root '/': 'syn_map_effort' = medium
+@file(run.tcl) 37: set_db syn_opt_effort $OPT_EFF
+  Setting attribute of root '/': 'syn_opt_effort' = medium
+@file(run.tcl) 39: set_db information_level 9
+  Setting attribute of root '/': 'information_level' = 9
+@file(run.tcl) 41: set_db tns_opto true
+  Setting attribute of root '/': 'tns_opto' = true
+@file(run.tcl) 42: set_db lp_insert_clock_gating true
+  Setting attribute of root '/': 'lp_insert_clock_gating' = true
+@file(run.tcl) 44: puts "Now load RTL LIST"
+Now load RTL LIST
+@file(run.tcl) 45: set rtlList "\
+${rtlDir}/topPLLDigital.v \
+${rtlDir}/spi_slave_pll.v \
+${rtlDir}/fifo_pll.v \
+${rtlDir}/fifo_miso.v \
+${rtlDir}/register_bank_pll.v \
+${rtlDir}/clkDiv.v \
+${rtlDir}/two_bit_counter.v \
+${rtlDir}/mash111.v \
+${rtlDir}/Memory43b.v\
+"
+@file(run.tcl) 57: suspend
+
+Execution has been suspended temporarily.
+Enter 'resume' to continue.
+Enter 'stop_suspend' to stop script execution
+[SUSPEND]genus:root: 5> exit
+Normal exit.

@@ -1,0 +1,68 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Wed Jan 21 17:58:29 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v23.14-s088_1 (64bit) 02/28/2025 12:25 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 23.14-s088_1 NR250219-0822/23_14-UB (database version 18.20.661) {superthreading v2.20}
+#@(#)CDS: AAE 23.14-s018 (64bit) 02/28/2025 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 23.14-s036_1 () Feb 22 2025 01:17:26 ( )
+#@(#)CDS: SYNTECH 23.14-s010_1 () Feb 19 2025 23:56:49 ( )
+#@(#)CDS: CPE v23.14-s082
+#@(#)CDS: IQuantus/TQuantus 23.1.1-s336 (64bit) Mon Jan 20 22:11:00 PST 2025 (Linux 3.10.0-693.el7.x86_64)
+
+read_db INVS/
+gui_select -point {738.89350 622.01400}
+source ../scripts/init.tcl 
+report_timing
+opt_design -pre_cts 
+report_timing
+opt_design -pre_cts 
+report_timing
+source ../scripts/cts.tcl 
+report_timing
+source ../scripts/postcts.tcl 
+report_timing
+source ../scripts/route.tcl 
+report_timing
+source ../scripts/postroute.tcl 
+ereport_timing
+report_timing
+opt_design -post_route -incremental 
+report_timing
+opt_design -post_route -incremental 
+report_timing
+set_layer_preference violation -is_visible 1
+route_eco -fix_drc -trim_layer_patch 
+route_eco -fix_drc 
+report_timing
+route_eco -fix_drc 
+report_timing
+opt_design -post_route -incremental 
+opt_design -post_route -incremental 
+report_timing -output_format binary -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+read_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -update_category 0 -isDrv 0
+gui_deselect -all
+gui_deselect -all
+gui_deselect -all
+set_layer_preference node_layer -is_visible 0
+setOptMode
+opt_design -post_route -targeted
+gui_deselect -all
+set_layer_preference M1 -is_visible 1
+set_layer_preference VIA1 -is_visible 1
+set_layer_preference M2 -is_visible 1
+set_layer_preference M3 -is_visible 1
+opt_design -post_route -targeted
+report_timing
+report_timing -view 
+report_timing -view func-typ-typ
+report_timing -view fast-fast-minrc
+route_eco -fix_drc 
+write_db ${top_cell}_inn.enc
+write_stream ${top_cell}_struct_inn.gds -map_file /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/tech.map
+write_netlist ${top_cell}_struct_inn.v
+report_timing
+exit

@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      jswalling
+HostName                       tinkercliffs1.cm.cluster
+ProcessIdentifier              3775250
+ProcessCreationTime_UTC        1741027658
+ProcessCreationTime_Readable   Mon Mar  3 13:47:38 2025 EST
+AppIdentifier                  /projects/eddie_pritchard/RFIC/cadtools/cadence/virtuoso/ICADVM_20.10.340_lnx86/tools/dfII/bin/64bit/virtuoso
+OSType                         lnx86
+ReasonForPlacingEditLock       Set lock by hiiLockFile
+FilePathUsedToEditLock         /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/CDS.log
+TimeEditLocked                 Mon Mar  3 13:47:38 2025 EST

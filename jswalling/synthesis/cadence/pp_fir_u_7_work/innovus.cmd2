@@ -1,0 +1,44 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Mon Mar  3 09:04:05 2025                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v23.10-p003_1 (64bit) 02/01/2024 13:54 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 23.10-p003_1 NR240109-1512/23_10-UB (database version 18.20.618) {superthreading v2.20}
+#@(#)CDS: AAE 23.10-p002 (64bit) 02/01/2024 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 23.10-p003_1 () Dec  5 2023 19:42:23 ( )
+#@(#)CDS: SYNTECH 23.10-p002_1 () Nov 29 2023 02:17:21 ( )
+#@(#)CDS: CPE v23.10-p004
+#@(#)CDS: IQuantus/TQuantus 22.1.1-s215 (64bit) Mon Nov 20 10:05:08 PST 2023 (Linux 3.10.0-693.el7.x86_64)
+
+delete_selected_from_floorplan
+delete_selected_from_floorplan
+delete_selected_from_floorplan
+delete_selected_from_floorplan
+delete_selected_from_floorplan
+delete_selected_from_floorplan
+delete_selected_from_floorplan
+delete_selected_from_floorplan
+delete_selected_from_floorplan
+delete_selected_from_floorplan
+delete_selected_from_floorplan
+delete_selected_from_floorplan
+read_db pp_fir_u_7_inn.enc
+read_db pp_fir_u_7_inn.enc
+check_antenna
+set_layer_preference violation -is_visible 1
+check_antenna -out_file pp_fir_u_7.antenna.rpt -error 1000
+set_db check_drc_disable_rules {}
+set_db check_drc_ndr_spacing auto
+set_db check_drc_check_only default
+set_db check_drc_inside_via_def true
+set_db check_drc_exclude_pg_net false
+set_db check_drc_ignore_trial_route false
+set_db check_drc_ignore_cell_blockage false
+set_db check_drc_use_min_spacing_on_block_obs auto
+set_db check_drc_report pp_fir_u_7.drc.rpt
+set_db check_drc_limit 1000
+check_drc
+set_db check_drc_area {0 0 0 0}

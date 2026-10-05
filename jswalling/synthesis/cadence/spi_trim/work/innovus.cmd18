@@ -1,0 +1,74 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Sat May 11 10:32:43 2024                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v22.10-p001_1 (64bit) 09/29/2022 11:03 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 22.10-p001_1 NR220915-0329/22_10-UB (database version 18.20.590) {superthreading v2.19}
+#@(#)CDS: AAE 22.10-p002 (64bit) 09/29/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 22.10-p004_1 () Sep  7 2022 21:57:29 ( )
+#@(#)CDS: SYNTECH 22.10-p001_1 () Aug  8 2022 11:26:34 ( )
+#@(#)CDS: CPE v22.10-p005
+#@(#)CDS: IQuantus/TQuantus 21.2.0-s201 (64bit) Wed Jul 6 19:14:09 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+set enc_check_rename_command_name 1
+encMessage warning 0
+encMessage debug 0
+is_common_ui_mode
+restoreDesign /home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/spi_trim/work/topVcoDigital_svt_postroute.enc.dat topVcoDigital
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+setLayerPreference violation -isVisible 1
+violationBrowser -all -no_display_false -displayByLayer
+zoomBox 20.07 24.69 21.11 25.715
+setDrawView place
+ui_view_box
+ui_view_box
+dbquery -area {19.988 24.69 21.192 25.715} -objType inst
+dbquery -area {19.988 24.69 21.192 25.715} -objType regular
+dbquery -area {19.988 24.69 21.192 25.715} -objType special
+selectInst fifo_inst/fifo_empty_reg
+deselectInst fifo_inst/fifo_empty_reg
+deselectInst fifo_inst/fifo_empty_reg
+selectObject Wire {fifo_inst/count[2](20941,24693,21308,24737)}
+selectObject Wire {fifo_inst/count[2](20941,23703,20985,24737)}
+zoomBox 20.09700 24.76300 21.12000 25.63400
+zoomBox 20.18800 24.82300 21.05900 25.56400
+zoomBox 20.26600 24.87300 21.00700 25.50400
+zoomBox 20.38800 24.95400 20.92400 25.41000
+zoomBox 20.43600 24.98500 20.89200 25.37300
+deselectObject Wire {fifo_inst/count[2](20941,23703,20985,24737)}
+deselectAll
+selectObject Wire FE_OFN10_n(20568,25143,20805,25187)
+selectWire 20.5680 25.1430 20.8050 25.1870 3 FE_OFN10_n
+deselectObject Wire FE_OFN10_n(20568,25143,20805,25187)
+deselectAll
+selectInst fifo_inst/fifo_empty_reg
+selectInst fifo_inst/fifo_empty_reg
+zoomBox 20.40600 24.95400 20.94200 25.41000
+zoomBox 20.37000 24.91700 21.00100 25.45400
+zoomBox 20.32900 24.87400 21.07100 25.50600
+violationBrowserClose
+setLayerPreference violation -isVisible 1
+violationBrowser -all -no_display_false -displayByLayer
+zoomBox -2.552 36.904 31.552 54.016
+zoomBox 1.63900 55.96000 11.08100 51.28400
+zoomBox 4.52200 55.02600 8.28400 52.62000
+zoomBox 3.74100 51.29500 9.86800 56.51000
+zoomBox 3.38400 50.87000 10.59300 57.00700
+zoomBox 2.96300 50.37000 11.44600 57.59100
+zoomBox 2.46800 49.78300 12.44900 58.27900
+zoomBox 1.70400 48.22500 15.52000 59.98600
+zoomBox 1.19600 47.23500 17.45000 61.07100
+zoomBox 0.59100 46.08100 19.71400 62.35900
+deselectAll
+selectInst ENDCAP_594
+deselectAll
+selectInst ENDCAP_3
+violationBrowserClose

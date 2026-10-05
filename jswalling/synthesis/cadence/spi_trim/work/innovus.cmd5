@@ -1,0 +1,97 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Wed May  8 06:54:31 2024                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.12-s106_1 (64bit) 12/08/2021 18:19 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.12-s106_1 NR211128-2235/21_12-UB (database version 18.20.567) {superthreading v2.17}
+#@(#)CDS: AAE 21.12-s039 (64bit) 12/08/2021 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.12-s043_1 () Dec  1 2021 10:06:22 ( )
+#@(#)CDS: SYNTECH 21.12-s014_1 () Oct 27 2021 04:39:25 ( )
+#@(#)CDS: CPE v21.12-s094
+#@(#)CDS: IQuantus/TQuantus 20.1.2-s624 (64bit) Thu Sep 2 20:12:03 PDT 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+read_db INVS
+fit
+zoomBox 269.45700 415.38500 341.81700 336.99500
+zoomBox 284.96700 407.16500 302.00400 380.59800
+fit
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer LB -stacked_via_bottom_layer M1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addRing -nets {VDD VSS} -type core_rings -follow core -layer {top M1 bottom M1 left M2 right M2} -width {top 0.6 bottom 0.6 left 0.6 right 0.6} -spacing {top 0.6 bottom 0.6 left 0.6 right 0.6} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+zoomBox -29.02800 362.62300 58.40700 299.30800
+zoomBox -9.00700 349.06300 18.25300 312.98100
+fit
+create_ccopt_clock_tree_spec
+get_ccopt_clock_trees *
+set_ccopt_property target_max_trans 0.5
+set_ccopt_property target_skew 0.2
+ccopt_design
+setSrouteMode -viaConnectToShape { noshape }
+sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { M1(1) LB(10) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { M1(1) LB(10) } -nets { VDD VSS } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { M1(1) LB(10) }
+zoomBox -9.43100 359.60800 63.68300 308.35300
+zoomBox 18.66100 345.14200 30.95700 335.21000
+zoomBox 16.10000 332.76900 33.12000 347.25700
+zoomBox 14.47100 331.38600 34.49500 348.43100
+zoomBox 12.55500 329.75900 36.11300 349.81200
+zoomBox 10.30200 327.84400 38.01700 351.43600
+fit
+addEndCap -preCap UDBSLT28_TAPPN_DN -postCap UDBSLT28_TAPPN_DN -prefix ENDCAP
+zoomBox -12.44600 382.22000 26.74900 321.16600
+zoomBox -1.33900 353.92000 17.49700 336.19800
+zoomBox 4.69900 348.48000 6.88000 346.29800
+zoomBox 4.30500 346.06900 7.32100 348.63600
+zoomBox 3.78700 345.48300 7.96100 349.03600
+zoomBox 3.45700 345.11000 8.36800 349.29000
+zoomBox 3.06900 344.67100 8.84700 349.58900
+zoomBox 2.61300 344.15500 9.41000 349.94100
+zoomBox -2.40100 338.46000 15.62600 353.80500
+zoomBox -9.77000 330.08900 24.76500 359.48600
+zoomBox -12.49000 326.99800 28.13900 361.58300
+zoomBox -29.09800 308.13000 48.73800 374.38600
+zoomBox -35.22900 301.16400 56.34300 379.11300
+zoomBox -50.92800 283.32800 75.81600 391.21600
+zoomBox -60.91100 271.98500 88.20000 398.91300
+zoomBox -72.65500 258.64100 102.77000 407.96800
+zoomBox -121.85100 202.74300 163.80100 445.89800
+zoomBox -170.81800 147.10600 224.54800 483.65300
+zoomBox -7.65900 361.92300 97.19200 303.61600
+zoomBox 1.56500 345.51900 12.55200 330.87000
+zoomBox -11.39900 320.59800 27.38600 353.61300
+zoomBox -14.52500 317.33900 31.10500 356.18100
+zoomBox -18.20200 313.50600 35.48000 359.20200
+zoomBox -22.52900 308.99600 40.62700 362.75600
+zoomBox -27.61900 303.68900 46.68300 366.93700
+zoomBox -40.65200 290.10300 62.18800 377.64300
+zoomBox 5.77900 325.62400 26.79900 314.31600
+zoomBox 19.29400 316.16300 12.65900 321.32900
+zoomBox 11.82900 315.14900 19.63500 321.79400
+zoomBox 8.35100 311.92400 21.06300 322.74500
+zoomBox 2.73800 306.49800 23.43900 324.11900
+zoomBox -6.39900 297.66400 27.30900 326.35700
+fit
+zoomBox -30.53600 391.26500 102.87800 275.94100
+zoomBox 68.33200 367.25400 92.51800 348.50000
+fit

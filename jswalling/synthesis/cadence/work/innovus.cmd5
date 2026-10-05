@@ -1,0 +1,282 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Fri Jan 10 10:02:05 2025                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v22.10-p001_1 (64bit) 09/29/2022 11:03 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 22.10-p001_1 NR220915-0329/22_10-UB (database version 18.20.590) {superthreading v2.19}
+#@(#)CDS: AAE 22.10-p002 (64bit) 09/29/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 22.10-p004_1 () Sep  7 2022 21:57:29 ( )
+#@(#)CDS: SYNTECH 22.10-p001_1 () Aug  8 2022 11:26:34 ( )
+#@(#)CDS: CPE v22.10-p005
+#@(#)CDS: IQuantus/TQuantus 21.2.0-s201 (64bit) Wed Jul 6 19:14:09 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+set enc_check_rename_command_name 1
+encMessage warning 0
+encMessage debug 0
+is_common_ui_mode
+restoreDesign /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/work/pp_fir_u_0_06_postctsopt.inn.dat pp_fir_u_0
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+setNanoRouteMode -quiet -drouteFixAntenna 1
+setNanoRouteMode -quiet -routeInsertAntennaDiode 0
+setNanoRouteMode -quiet -routeWithTimingDriven 0
+setNanoRouteMode -quiet -routeWithEco 0
+setNanoRouteMode -quiet -routeWithLithoDriven 1
+setNanoRouteMode -quiet -droutePostRouteLithoRepair 0
+setNanoRouteMode -quiet -routeWithSiDriven 0
+setNanoRouteMode -quiet -drouteAutoStop 0
+setNanoRouteMode -quiet -routeSelectedNetOnly 0
+setNanoRouteMode -quiet -routeTopRoutingLayer 6
+setNanoRouteMode -quiet -routeBottomRoutingLayer 1
+setNanoRouteMode -quiet -drouteEndIteration 1
+setNanoRouteMode -quiet -routeWithTimingDriven false
+setNanoRouteMode -quiet -routeWithSiDriven false
+routeDesign -globalDetail
+timeDesign -postRoute
+getFillerMode -quiet
+man get_db
+setFillerMode -core {{} {FILLSGCAP8_A9PP140ZTL_C30 FILLSGCAP64_A9PP140ZTL_C30 FILLSGCAP4_A9PP140ZTL_C30 FILLSGCAP3_A9PP140ZTL_C30 FILLSGCAP32_A9PP140ZTL_C30 FILLSGCAP2_A9PP140ZTL_C30 FILLSGCAP16_A9PP140ZTL_C30 FILLSGCAP128_A9PP140ZTL_C30} {FILL8_A9PP140ZTL_C30 FILL64_A9PP140ZTL_C30 FILL4_A9PP140ZTL_C30 FILL3_A9PP140ZTL_C30 FILL32_A9PP140ZTL_C30 FILL2_A9PP140ZTL_C30 FILL1_A9PP140ZTL_C30 FILL16_A9PP140ZTL_C30 FILL128_A9PP140ZTL_C30}}
+setDrawView place
+optDesign -postRoute
+zoomBox 217.95900 172.87500 191.53500 142.24700
+zoomBox 187.11350 139.29900 222.98250 175.33200
+zoomBox 180.99500 131.75000 230.64150 181.62300
+fit
+zoomBox 81.44800 157.56650 107.67950 142.19850
+setFillerMode -core {{} {FILLSGCAP8_A9PP140ZTL_C30 FILLSGCAP64_A9PP140ZTL_C30 FILLSGCAP4_A9PP140ZTL_C30 FILLSGCAP3_A9PP140ZTL_C30 FILLSGCAP32_A9PP140ZTL_C30 FILLSGCAP2_A9PP140ZTL_C30 FILLSGCAP16_A9PP140ZTL_C30 FILLSGCAP128_A9PP140ZTL_C30} {FILL8_A9PP140ZTL_C30 FILL64_A9PP140ZTL_C30 FILL4_A9PP140ZTL_C30 FILL3_A9PP140ZTL_C30 FILL32_A9PP140ZTL_C30 FILL2_A9PP140ZTL_C30 FILL1_A9PP140ZTL_C30 FILL16_A9PP140ZTL_C30 FILL128_A9PP140ZTL_C30}}
+optDesign -postRoute
+deleteSelectedFromFPlan
+deleteSelectedFromFPlan
+deleteSelectedFromFPlan
+deleteSelectedFromFPlan
+deleteSelectedFromFPlan
+getFillerMode -quiet
+setFillerMode -doDRC
+setFillerMode -doDRC true
+getFillerMode -quiet
+setFillerMode -core {{} {FILLSGCAP8_A9PP140ZTL_C30 FILLSGCAP64_A9PP140ZTL_C30 FILLSGCAP4_A9PP140ZTL_C30 FILLSGCAP3_A9PP140ZTL_C30 FILLSGCAP32_A9PP140ZTL_C30 FILLSGCAP2_A9PP140ZTL_C30 FILLSGCAP16_A9PP140ZTL_C30 FILLSGCAP128_A9PP140ZTL_C30} {FILL8_A9PP140ZTL_C30 FILL64_A9PP140ZTL_C30 FILL4_A9PP140ZTL_C30 FILL3_A9PP140ZTL_C30 FILL32_A9PP140ZTL_C30 FILL2_A9PP140ZTL_C30 FILL1_A9PP140ZTL_C30 FILL16_A9PP140ZTL_C30 FILL128_A9PP140ZTL_C30}} -doDRC true
+addFiller
+ecoRoute -target
+fit
+zoomBox -614.35500 -518.87900 564.62800 665.48750
+zoomBox -311.06200 -252.97850 412.98150 474.37100
+zoomBox -238.65800 -189.50100 376.77950 428.74650
+zoomBox -42.54150 -17.56400 278.72100 305.16550
+zoomBox -10.41550 10.60100 262.65800 284.92150
+zoomBox 177.24450 187.66250 205.92350 153.06050
+zoomBox 177.46350 154.32250 206.74200 183.73450
+zoomBox 182.34200 156.30700 203.49600 177.55750
+zoomBox 184.24700 157.08200 202.22800 175.14500
+zoomBox 187.24300 158.30050 200.23450 171.35150
+zoomBox 189.40750 159.18100 198.79400 168.61050
+zoomBox 190.25300 159.52500 198.23150 167.54000
+selectMarker 194.6200 162.0000 195.7400 162.9000 -1 12 89
+deselectAll
+selectMarker 194.6200 162.0000 195.7400 162.9000 -1 12 89
+zoomBox 184.33750 156.16700 202.32000 174.23150
+zoomBox 174.60050 150.63950 209.05000 185.24650
+zoomBox 193.79150 182.21850 196.82000 177.81400
+deselectAll
+selectWire 195.2800 -1.5000 195.5400 181.5000 1 VSS
+deleteSelectedFromFPlan
+selectWire 194.7600 -0.8000 195.0200 180.8000 1 VDD
+deleteSelectedFromFPlan
+zoomBox 192.79200 177.47850 197.95000 182.66000
+zoomBox 192.41350 177.08350 198.48200 183.17950
+zoomBox 191.96850 176.61900 199.10800 183.79100
+zoomBox 190.82900 175.42900 200.71100 185.35600
+zoomBox 190.10450 174.67250 201.73050 186.35150
+zoomBox 188.24900 172.73550 204.34000 188.90000
+zoomBox 184.04650 168.34950 210.24900 194.67150
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage 1 0
+zoomBox 163.70550 182.04900 166.66650 179.05750
+selectWire 165.3200 -1.5000 165.5800 181.5000 1 VSS
+deleteSelectedFromFPlan
+selectWire 164.8000 -0.8000 165.0600 180.8000 1 VDD
+deleteSelectedFromFPlan
+zoomBox 161.46050 177.25900 169.35950 185.19400
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+fit
+zoomBox 110.32900 188.03800 156.43350 166.31050
+zoomBox 130.85500 184.22650 137.96000 176.38450
+selectWire 135.3600 -1.5000 135.6200 181.5000 1 VSS
+deleteSelectedFromFPlan
+selectWire 134.8400 -0.8000 135.1000 180.8000 1 VDD
+deleteSelectedFromFPlan
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage 1 0
+selectWire 105.4000 -1.5000 105.6600 181.5000 1 VSS
+deleteSelectedFromFPlan
+selectWire 104.8800 -0.8000 105.1400 180.8000 1 VDD
+deleteSelectedFromFPlan
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+selectWire 75.4400 -1.5000 75.7000 181.5000 1 VSS
+deleteSelectedFromFPlan
+selectWire 74.9200 -0.8000 75.1800 180.8000 1 VDD
+deleteSelectedFromFPlan
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+selectWire 45.4800 -1.5000 45.7400 181.5000 1 VSS
+deleteSelectedFromFPlan
+selectWire 44.9600 -0.8000 45.2200 180.8000 1 VDD
+deleteSelectedFromFPlan
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+selectWire 15.5200 -1.5000 15.7800 181.5000 1 VSS
+deleteSelectedFromFPlan
+selectMarker 14.8600 179.1000 15.9800 180.0000 -1 12 89
+deselectAll
+selectMarker 14.8600 179.1000 15.9800 180.0000 -1 12 89
+deselectAll
+selectWire 15.0000 -0.8000 15.2600 180.8000 1 VDD
+deleteSelectedFromFPlan
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+fit
+zoomBox 8.05200 186.18300 24.48000 167.10550
+optDesign -postRoute
+getMultiCpuUsage -localCpu
+get_verify_drc_mode -disable_rules -quiet
+get_verify_drc_mode -quiet -area
+get_verify_drc_mode -quiet -layer_range
+get_verify_drc_mode -check_ndr_spacing -quiet
+get_verify_drc_mode -check_only -quiet
+get_verify_drc_mode -check_same_via_cell -quiet
+get_verify_drc_mode -exclude_pg_net -quiet
+get_verify_drc_mode -ignore_trial_route -quiet
+get_verify_drc_mode -max_wrong_way_halo -quiet
+get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+get_verify_drc_mode -limit -quiet
+set_verify_drc_mode -disable_rules {} -check_ndr_spacing auto -check_only default -check_same_via_cell true -exclude_pg_net false -ignore_trial_route false -ignore_cell_blockage false -use_min_spacing_on_block_obs auto -report pp_fir_u_0.drc.rpt -limit 1000
+verify_drc
+set_verify_drc_mode -area {0 0 0 0}
+setLayerPreference violation -isVisible 1
+violationBrowser -all -no_display_false -displayByLayer
+setNanoRouteMode -quiet -drouteFixAntenna 1
+setNanoRouteMode -quiet -routeInsertAntennaDiode 0
+setNanoRouteMode -quiet -routeWithTimingDriven 0
+setNanoRouteMode -quiet -routeWithEco 1
+setNanoRouteMode -quiet -routeWithLithoDriven 1
+setNanoRouteMode -quiet -droutePostRouteLithoRepair 0
+setNanoRouteMode -quiet -routeWithSiDriven 0
+setNanoRouteMode -quiet -drouteAutoStop 0
+setNanoRouteMode -quiet -routeSelectedNetOnly 0
+setNanoRouteMode -quiet -routeWithTimingDriven false
+setNanoRouteMode -quiet -routeWithSiDriven false
+routeDesign -globalDetail
+violationBrowser -all -no_display_false -displayByLayer
+zoomBox -22.38 -10.765 67.22 34.165
+zoomBox -22.38 -10.765 67.22 34.165
+zoomBox -22.38 -10.765 67.22 34.165
+zoomBox -8.27400 -15.02600 56.46250 50.00600
+zoomBox 1.96800 -1.70900 48.74050 45.27700
+zoomBox 5.32400 4.06550 45.08050 44.00350
+zoomBox 10.73900 12.95650 39.46350 41.81200
+zoomBox 16.67300 21.39600 34.31350 39.11700
+zoomBox 19.29350 25.12300 32.03900 37.92650
+zoomBox 21.82950 28.77750 29.65700 36.64050
+zoomBox 22.94800 30.39100 28.60350 36.07250
+zoomBox 24.07150 32.01300 27.54450 35.50200
+zoomBox 24.33950 32.40000 27.29200 35.36600
+zoomBox 25.18450 33.61950 26.49550 34.93650
+zoomBox 25.37150 33.88950 26.31900 34.84150
+zoomBox 25.50600 34.08450 26.19150 34.77300
+zoomBox 25.55900 34.16100 26.14150 34.74600
+zoomBox 25.25950 33.55450 26.57400 34.87500
+zoomBox 24.76850 32.56050 27.28700 35.09050
+zoomBox 24.12350 31.25400 28.22500 35.37400
+zoomBox 23.82850 30.65600 28.65400 35.50350
+zoomBox 23.48150 29.95300 29.15850 35.65600
+zoomBox 21.36200 25.66150 32.23850 36.58750
+zoomBox 27.75650 30.61550 28.73700 29.49800
+selectMarker 28.3250 29.8950 28.3350 30.4250 1 1 2
+deselectAll
+selectMarker 28.3250 29.8950 28.3350 30.4250 1 1 2
+deleteFiller -prefix FILLER
+fit
+zoomBox 93.37150 158.62650 103.44000 147.23300
+zoomBox 91.75950 145.78000 105.10250 159.18400
+zoomBox 90.61150 144.07050 106.30950 159.84000
+zoomBox 85.80300 136.93100 111.36600 162.61050
+zoomBox 75.48750 123.51650 124.45950 172.71200
+zoomBox 71.67950 118.56400 129.29350 176.44100
+zoomBox 67.19950 112.73750 134.98050 180.82800
+zoomBox 40.41700 76.03600 170.26450 206.47650
+zoomBox -10.88950 5.59200 237.85800 255.47550

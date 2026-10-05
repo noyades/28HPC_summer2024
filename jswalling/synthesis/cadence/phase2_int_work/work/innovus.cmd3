@@ -1,0 +1,83 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Fri Jan 16 22:04:48 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v23.14-s088_1 (64bit) 02/28/2025 12:25 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 23.14-s088_1 NR250219-0822/23_14-UB (database version 18.20.661) {superthreading v2.20}
+#@(#)CDS: AAE 23.14-s018 (64bit) 02/28/2025 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 23.14-s036_1 () Feb 22 2025 01:17:26 ( )
+#@(#)CDS: SYNTECH 23.14-s010_1 () Feb 19 2025 23:56:49 ( )
+#@(#)CDS: CPE v23.14-s082
+#@(#)CDS: IQuantus/TQuantus 23.1.1-s336 (64bit) Mon Jan 20 22:11:00 PST 2025 (Linux 3.10.0-693.el7.x86_64)
+
+read_db DBS/postcts_hold.dat/
+report_timing
+source ../scripts/route.tcl 
+report_timing
+source ../scripts/postroute.tcl 
+report_timing
+opt_design -post_route 
+report_timing
+opt_design -post_route 
+report_timing
+add_fillers
+gui_select -point {-38.70450 486.61700}
+route_eco -fix_drc 
+set_layer_preference violation -is_visible 1
+check_drc
+route_eco -fix_drc 
+connect_global_net VDD -type pgpin -pin VNW -inst *
+connect_global_net VSS -type pgpin -pin VPW -inst *
+route_eco -fix_drc 
+route_eco -fix_drc 
+delete_routes -regular_wire_with_drc 
+route_design 
+report_timing
+opt_design -post_route 
+report_timing
+gui_select -point {242.52950 -0.07600}
+gui_select -point {242.50800 -0.09850}
+set_layer_preference violation -is_visible 1
+route_eco -fix_drc 
+route_eco -fix_drc 
+gui_select -point {242.78500 -0.01400}
+route_eco -fix_drc 
+check_drc
+route_eco -fix_drc 
+check_drc
+route_eco -fix_drc 
+check_drc
+route_eco -fix_drc 
+route_eco -fix_drc 
+route_eco -fix_drc -incremental
+route_eco -fix_drc 
+set_layer_preference violation -is_visible 1
+gui_select -point {276.65500 311.78200}
+gui_select -point {276.65150 312.01550}
+gui_select -point {275.57050 311.99550}
+gui_select -point {91.36750 300.37600}
+setSelectedRouteBlk 0.0 0.05 722.0 312.04 defLayerBlkName {{1 } {2 } {V2 } {3 } {V3 } {4 } {V4 } {5 } {V5 } {6 } {V6 } {7 } {V7 } {8 } {V8 } {9 } {V9 } {10 } {V10 } {PO }} {Undefined ALLNET} {} {}
+gui_select -point {84.18750 0.01650}
+check_drc
+gui_select -point {198.41550 311.98600}
+gui_select -point {198.31250 311.98800}
+gui_select -point {198.31550 311.98550}
+gui_select -point {198.41500 311.98250}
+gui_select -point {198.31850 312.00350}
+gui_select -point {198.31900 311.98550}
+gui_select -point {198.41400 311.98800}
+gui_select -point {198.41400 311.98800}
+set_db port_shape:0x7f409c2362c0 .rect {198.405 311.975 198.455 312.025}
+gui_select -point {198.42450 311.95200}
+set_db {port:scpa_dig_ana_ppfir/Re_3[100]} .location {198.43 311.975}
+route_eco -fix_drc 
+delete_routes -regular_wire_with_drc 
+route_design -incremental
+route_design 
+report_timing
+opt_design -post_route 
+report_timing
+check_drc

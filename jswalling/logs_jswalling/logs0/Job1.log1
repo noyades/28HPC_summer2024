@@ -1,0 +1,365 @@
+\# Program start time:     UTC 2025.01.12 01:58:28.972
+\# Local time: EST (UTC-05:00) 2025.01.11 20:58:28.972
+\o Program:		@(#)$CDS: virtuoso version ICADVM20.1-64b 10/11/2023 09:26 (cpgbld01) $
+\o Hierarchy:		/projects/eddie_pritchard/RFIC/cadtools/cadence/virtuoso/ICADVM_20.10.340_lnx86/tools.lnx86/dfII/
+\o Sub version:		sub-version  ICADVM20.1-64b.500.34  (64-bit addresses)
+\# Command line:	/projects/eddie_pritchard/RFIC/cadtools/cadence/virtuoso/ICADVM_20.10.340_lnx86/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso1472889 -mpshost tinkercliffs1 -davinciService DaVinciService_1472889_1736647054 -log /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/logs_jswalling/logs0/Job1.log1 -licenseLockFileName /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/.tmp_jswalling/.tinkercliffs1_1472889 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 1
+\# Host name (type):	tc005 (x86_64)
+\# Operating system:	Linux 5.14.0-362.8.1.el9_3.x86_64 #1 SMP PREEMPT_DYNAMIC Wed Nov 8 17:36:32 UTC 2023
+\# Linux /etc/issue:	\S
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	:2618 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			The X.Org Foundation
+\# Depth of Visual (Root):	24 (24)
+\# Number of Planes Used:	24
+\# X version:		11.0 (vendor release 12101008)
+\# X resource pool:	base 0x400000, mask 0x1fffff (2097151), shift 0
+\# 			current id 0x0, current max 0x1ffffa (2097146)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        626 MB
+\# Available memory:	    269,763 MB
+\# System memory:	    274,097 MB
+\# Maximum memory size:	    273,594 MB
+\# Max mem available:	    269,886 MB
+\# Initial memory used:	        123 MB
+\#        process size:	      1,560 MB
+\# Thread usage limits (effective/default):	maxthreads 1030474/1030474 maxload 128.00/128.00
+\# Qt version:		5.9.1
+\# Window Manager:	other
+\# User Name:		jswalling
+\o Working Directory:	tc005:/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling
+\# Process Id:		614172
+\o 
+\o COPYRIGHT (C) 1992-2023  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2023  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading layers.cxt 
+\o Loading ams.cxt 
+\o Loading oasis.cxt 
+\o Loading analog.cxt 
+\o Loading asimenv.cxt 
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\o Loading socket.cxt 
+\o Loading par.cxt 
+\o Loading alvs.cxt 
+\o Loading caa.cxt 
+\o Loading amps.cxt 
+\o Loading adexlCore.cxt 
+\# Memory report: using         254 MB, process size 1,796 MB at UTC 2025.01.12 01:58:31.317
+\o Loading adexl.cxt 
+\o *Info*    Exporting services from client ... 
+\o 
+\o Loading adexlDM.cxt 
+\o Loading cpf.cxt 
+\o Loading cli.cxt 
+\o Loading lp.cxt 
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso1472889, host=tinkercliffs1). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
+\o INFO (ELI-00304) The registration of the child 614172 within 90 seconds is being processed...
+\o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
+\o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
+\# [20:58:28.183753] Configured Lic search path (22.01-s002): 27002@license.ece.vt.edu
+\w *WARNING* The directory: '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/$AMS/AMS_Examples' does not exist
+\w 	but was defined in libFile '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/cds.lib' for Lib 'AMS_Examples'.
+\w *WARNING* The directory: '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/share/connect_lib/connectLib' does not exist
+\w 	but was defined in libFile '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/cds.lib' for Lib 'connectLib'.
+\w *WARNING* The directory: '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/$CPPSIMSHAREDHOME/OpenAccess' does not exist
+\w 	but was defined in libFile '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/cds.lib' for Lib 'HighSpeedLinks_Examples'.
+\w *WARNING* The directory: '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/$CPPSIMSHAREDHOME/OpenAccess/DFE_Example' does not exist
+\w 	but was defined in libFile '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/cds.lib' for Lib 'DFE_Example'.
+\w *WARNING* The directory: '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/$CPPSIMSHAREDHOME/OpenAccess/OCW_6776_Homework' does not exist
+\w 	but was defined in libFile '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/cds.lib' for Lib 'OCW_6776_Homework'.
+\w *WARNING* The directory: '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/$CPPSIMSHAREDHOME/OpenAccess/WBSynth_Example' does not exist
+\w 	but was defined in libFile '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/cds.lib' for Lib 'WBSynth_Example'.
+\w *WARNING* The directory: '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/$CPPSIMSHAREDHOME/OpenAccess/SystemOFDM' does not exist
+\w 	but was defined in libFile '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/cds.lib' for Lib 'SystemOFDM'.
+\w *WARNING* The directory: '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/$CPPSIMSHAREDHOME/OpenAccess/Synthesizer_Examples' does not exist
+\w 	but was defined in libFile '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/cds.lib' for Lib 'Synthesizer_Examples'.
+\w *WARNING* The directory: '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/$CPPSIMSHAREDHOME/OpenAccess/OpticalPLL_Example' does not exist
+\w 	but was defined in libFile '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/cds.lib' for Lib 'OpticalPLL_Example'.
+\w *WARNING* The directory: '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/$CPPSIMSHAREDHOME/OpenAccess/Offset_Comp_Example' does not exist
+\w 	but was defined in libFile '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/cds.lib' for Lib 'Offset_Comp_Example'.
+\w *WARNING* The directory: '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/$CPPSIMSHAREDHOME/OpenAccess/OFDM_Example' does not exist
+\w 	but was defined in libFile '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/cds.lib' for Lib 'OFDM_Example'.
+\w *WARNING* The directory: '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/$CPPSIMSHAREDHOME/OpenAccess/GMSK_Example' does not exist
+\w 	but was defined in libFile '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/cds.lib' for Lib 'GMSK_Example'.
+\w *WARNING* The directory: '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/$CPPSIMSHAREDHOME/OpenAccess/DLL_Examples' does not exist
+\w 	but was defined in libFile '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/cds.lib' for Lib 'DLL_Examples'.
+\w *WARNING* The directory: '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/$CPPSIMSHAREDHOME/OpenAccess/CDR_Examples' does not exist
+\w 	but was defined in libFile '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/cds.lib' for Lib 'CDR_Examples'.
+\w *WARNING* The directory: '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/$CPPSIMSHAREDHOME/OpenAccess/CppSimModules' does not exist
+\w 	but was defined in libFile '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/cds.lib' for Lib 'CppSimModules'.
+\o 		TSMC_PDK_HOME                : /projects/eddie_pritchard/RFIC/PDK/tsmc/28nm/tsri
+\o 		TECHDIR_DRC                  : ${TSMC_PDK_HOME}/Calibre/drc
+\o 		TECHDIR_LVS                  : ${TSMC_PDK_HOME}/Calibre/lvs
+\w 		TECHDIR_FILLGEN              : nil
+\w 		TECHDIR_PERC                 : nil
+\w 		TECHDIR_LDL                  : nil
+\w 		TECHDIR_XACT                 : nil
+\w 		TECHDIR_DRC_PVS              : nil
+\w 		TECHDIR_LVS_PVS              : nil
+\w 		TECHDIR_FILLGEN_PVS          : nil
+\o 		SPECTRE_MODEL_PATH           : ${TSMC_PDK_HOME}/models/spectre/
+\o 		HSPICE_MODEL_PATH            : ${TSMC_PDK_HOME}/models/hspice/
+\w *WARNING* The directory: '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/$AMS/AMS_Examples' does not exist
+\w 	but was defined in libFile '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/cds.lib' for Lib 'AMS_Examples'.
+\w *WARNING* The directory: '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/share/connect_lib/connectLib' does not exist
+\w 	but was defined in libFile '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/cds.lib' for Lib 'connectLib'.
+\w *WARNING* The directory: '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/$CPPSIMSHAREDHOME/OpenAccess' does not exist
+\w 	but was defined in libFile '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/cds.lib' for Lib 'HighSpeedLinks_Examples'.
+\w *WARNING* The directory: '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/$CPPSIMSHAREDHOME/OpenAccess/DFE_Example' does not exist
+\w 	but was defined in libFile '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/cds.lib' for Lib 'DFE_Example'.
+\w *WARNING* The directory: '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/$CPPSIMSHAREDHOME/OpenAccess/OCW_6776_Homework' does not exist
+\w 	but was defined in libFile '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/cds.lib' for Lib 'OCW_6776_Homework'.
+\w *WARNING* The directory: '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/$CPPSIMSHAREDHOME/OpenAccess/WBSynth_Example' does not exist
+\w 	but was defined in libFile '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/cds.lib' for Lib 'WBSynth_Example'.
+\w *WARNING* The directory: '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/$CPPSIMSHAREDHOME/OpenAccess/SystemOFDM' does not exist
+\w 	but was defined in libFile '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/cds.lib' for Lib 'SystemOFDM'.
+\w *WARNING* The directory: '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/$CPPSIMSHAREDHOME/OpenAccess/Synthesizer_Examples' does not exist
+\w 	but was defined in libFile '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/cds.lib' for Lib 'Synthesizer_Examples'.
+\w *WARNING* The directory: '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/$CPPSIMSHAREDHOME/OpenAccess/OpticalPLL_Example' does not exist
+\w 	but was defined in libFile '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/cds.lib' for Lib 'OpticalPLL_Example'.
+\w *WARNING* The directory: '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/$CPPSIMSHAREDHOME/OpenAccess/Offset_Comp_Example' does not exist
+\w 	but was defined in libFile '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/cds.lib' for Lib 'Offset_Comp_Example'.
+\w *WARNING* The directory: '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/$CPPSIMSHAREDHOME/OpenAccess/OFDM_Example' does not exist
+\w 	but was defined in libFile '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/cds.lib' for Lib 'OFDM_Example'.
+\w *WARNING* The directory: '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/$CPPSIMSHAREDHOME/OpenAccess/GMSK_Example' does not exist
+\w 	but was defined in libFile '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/cds.lib' for Lib 'GMSK_Example'.
+\w *WARNING* The directory: '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/$CPPSIMSHAREDHOME/OpenAccess/DLL_Examples' does not exist
+\w 	but was defined in libFile '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/cds.lib' for Lib 'DLL_Examples'.
+\w *WARNING* The directory: '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/$CPPSIMSHAREDHOME/OpenAccess/CDR_Examples' does not exist
+\w 	but was defined in libFile '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/cds.lib' for Lib 'CDR_Examples'.
+\# Available memory:        269,652 MB at UTC 2025.01.12 01:58:39.208
+\# Memory report: Maximum memory size now 269,947 MB at UTC 2025.01.12 01:58:39.208
+\# Thread usage report: 133 active threads, active load 1.40 at UTC 2025.01.12 01:58:39.208
+\w *WARNING* The directory: '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/$CPPSIMSHAREDHOME/OpenAccess/CppSimModules' does not exist
+\w 	but was defined in libFile '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/cds.lib' for Lib 'CppSimModules'.
+\o Auto-configuration based on installed version of EMX...
+\o   EMX_pole_zero_models => t
+\o   EMX_black_box => t
+\o   EMX_connectivity => t
+\o   EMX_frequency_indep => t
+\o   EMX_cadence_dev_info => t
+\o   EMX_dev_term_mapping => t
+\o   EMX_dynamic_frequencies => t
+\o   EMX_log_sweep => t
+\o   EMX_vtu => t
+\o   EMX_cdslic => t
+\o   EMX_8cpu_lic => t
+\o   EMX_memory => t
+\o   EMX_printproc_text => t
+\o   EMX_mpi => t
+\o   EMX_oasis => t
+\o   EMX_openaccess => t
+\o   EMX_extended_warnings => t
+\o   EMX_checkpoint => t
+\o   EMX_accuracy => t
+\o   EMX_multimask => t
+\o   EMX_bb_pin_check => t
+\o   EMX_log_time => t
+\o   EMX_message_file => t
+\o   EMX_surface => t
+\o Auto-configuration based on installed version of GDSview...
+\o   EMX_GDSview_unused_labels => t
+\o   EMX_GDSview_title => t
+\o   EMX_GDSview_conn_type => t
+\o   EMX_GDSview_verbose => t
+\o Auto-configuration based on installed version of ModelGen...
+\o   EMX_mg_global_interp => t
+\o Auto-configuration based on installed versions of EMX and ModelGen...
+\o   EMX_touchstone2 => t
+\o   EMX_gzip => t
+\o Loading /projects/eddie_pritchard/RFIC/cadtools/cadence/../ads/GoldenGate-2020/aa/goldengate.ini...
+\w *WARNING* Cannot find registration file GoldenGate.cdsenv to register environment variables
+\w *WARNING* envGetVal: could not find tool[.partition] 'GoldenGate.user'
+\o Loading /projects/eddie_pritchard/RFIC/cadtools/cadence/../ads/GoldenGate-2020/aa/64bit/goldengate618.cxt...
+\w *WARNING* Cannot find registration file GoldenGate.cdsenv to register environment variables
+\w *WARNING* envGetVal: could not find tool[.partition] 'GoldenGate.user'
+\o t
+\e *******
+\w *WARNING* Cannot find registration file GoldenGate.cdsenv to register environment variables
+\w *WARNING* envGetVal: could not find tool[.partition] 'GoldenGate.user'
+\e *Error* GoldenGate version ("GoldenGate-2020") and GoldenGate.cdsenv version (nil) do not match.
+\e 
+\e *Error* Please ensure that your installations (Cadence and GoldenGate), environment and initialization files (.cdsenv, .cdsinit, setup.loc, etc.) are in order.
+\e 
+\e *******
+\o t
+\o Running: cdswhich -all setup.loc
+\e 2025/01/11 20:58:40 System is not a supported distribution
+\e 2025/01/11 20:58:40 An error occurred. We don't recognize OS 
+\e 2025/01/11 20:58:40 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+\e 2025/01/11 20:58:40 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+\e WARNING: not possible to detect OS, missing 'lsb_release' command. Please make sure you have it installed.
+\o Info (cdswhich): 'setup.loc' found at:
+\o 	/projects/eddie_pritchard/RFIC/cadtools/cadence/virtuoso/ICADVM_20.10.340_lnx86/share/cdssetup/setup.loc
+\o 
+\o The first setup.loc file in the above list will be used.
+\o Environment variable HPEESOF_DIR is not defined.
+\w *WARNING* Cannot find registration file GoldenGate.cdsenv to register environment variables
+\w *WARNING* envGetVal: could not find tool[.partition] 'GoldenGate.user'
+\o .cdsinit/.oceanrc: Environment variable HPEESOF_DIR is not set!
+\e *Error* strcat: argument #1 should be either a string or a symbol (type template = "S") - nil
+\o *Info*    Client has finished starting ... 
+\o 
+\o Loading vdsil.cxt 
+\p > 
+\w *WARNING* could not load font "-*-courier-medium-r-*-*-12-*", using font "fixed"
+\# Loading perfDiag...
+\# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
+\w *WARNING* (PerfDiag): The GDB command 'gdb' is not found or is invalid.
+\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 614172' to open it when Virtuoso freezes.
+\# (PerfDiag): Use backtrace from GLIBC.
+\w *WARNING* (PerfDiag): The GDB-related functionality has been disabled. Use the 'gdbPath' environment variable to set a valid GDB path or set one of the SHELL environment variables CDS_DEBUGGER, DEBUGGER, or GDB, and restart Virtuoso.
+\o Loading vqp.cxt 
+\o Loading hdlPkg.cxt 
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o Loading simui.cxt 
+\o 	Library      = jswalling_tapeout
+\o 	Cell         = tb_inv
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = ExplorerRun.0
+\o 	Results DB   = /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling_tapeout/tb_inv/maestro/results/maestro/ExplorerRun.0.rdb
+\o 	Results Dir  = /home/jswalling/simulation/jswalling_tapeout/tb_inv/maestro/results/maestro/ExplorerRun.0/2/jswalling_tapeout_tb_inv_1
+\o 	Results Loc  = /home/jswalling/simulation/jswalling_tapeout/tb_inv/maestro/results/maestro
+\o 	Project Dir  = /home/jswalling/simulation
+\o 	Setup DB loc = /projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling_tapeout/tb_inv/maestro
+\o 	File Encoding = 0
+\o 
+\o 
+\o Loading viva.cxt 
+\o Initializing from libInit.il for library tsmcN28...
+\o    --  cniUtils_encrypted.il
+\o    --  tsmcPdkParamTable.il
+\o    --  load_apc_tsmc_n28.il
+\o    --  apc_util.cdn
+\# Memory report: using         833 MB, process size 2,421 MB at UTC 2025.01.12 01:58:41.094
+\o    --  tsmcN28.pce
+\o    --  tsmcLDEparamTable.il
+\o    --  tsmcN28_updateCDFs.cxt
+\o    --  tsmcN28_CB_3.cxt
+\o    --  metalRES.cxt
+\o    --  tsmcN28.cxt
+\o    --  tsmcN28_CB_1.cxt
+\o    --  tsmcN28_gateCB.cxt
+\o    --  tsmcN28_CB_2.cxt
+\o    --  tsmcDNA_utility.cxt
+\o    --  tsmcN28Tool.cxt
+\o    --  tsmc_LDE.cxt
+\o    --  tsmcN28_tif.cxt
+\o    --  tsmcN28_CB_4.cxt
+\o Loading spectrei.cxt 
+\o Loading devCheck.cxt 
+\o Loading relXpert.cxt 
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading msgHandler.cxt 
+\o Loading UltraSim.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
+\o Loading Working place Display File '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/display.drf'
+\o INFO (ADE-5024): Simulation will use spectre batch mode because the GCC version used by Spectre and Virtuoso are not compatible.
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o Loading monte.cxt 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (0 3) on testbench [
+\o           jswalling_tapeout_tb_inv_1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var frf = "12.8G"
+\o Setting var tStop = "3.75e-9"
+\o Setting var temperature = "27"
+\o Setting temp(T) = 27
+\o Setting var vdd = "0.99"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/jswalling/simulation/jswalling_tapeout/tb_inv/maestro/results/maestro/ExplorerRun.0/3/jswalling_tapeout_tb_inv_1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/jswalling/simulation/jswalling_tapeout/tb_inv/maestro/results/maestro/ExplorerRun.0/3/jswalling_tapeout_tb_inv_1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (0 3)
+\o 
+\o generate netlist...
+\o Loading hnlInit.cxt 
+\o Loading seCore.cxt 
+\# [20:58:44.350152] periodic Lic check successful
+\# [20:58:44.350155] Feature usage summary:
+\o Begin Incremental Netlisting Jan 11 20:58:44 2025
+\o End netlisting Jan 11 20:58:44 2025
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           jswalling_tapeout_tb_inv_1 ] for Point ID (0 3).
+\o 
+\o Delete psf data in /home/jswalling/simulation/jswalling_tapeout/tb_inv/maestro/results/maestro/ExplorerRun.0/3/jswalling_tapeout_tb_inv_1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: using         935 MB, process size 2,637 MB at UTC 2025.01.12 01:58:45.068
+\o Loading paraplot.cxt 
+\# Thread usage report: 134 active threads, active load 1.40 at UTC 2025.01.12 01:58:48.905
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 3) on testbench [
+\o           jswalling_tapeout_tb_inv_1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/localscratch/2874501/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.

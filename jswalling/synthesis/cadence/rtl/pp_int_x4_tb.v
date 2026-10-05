@@ -1,0 +1,144 @@
+
+`timescale 1ps / 1ps
+
+module pp_int_x4_tb;
+
+  parameter IN_PERIOD = 2000;
+  parameter CLK_PERIOD = 500;
+
+  // Signals
+  reg  clk;
+  reg  rst_n;
+  reg en;
+  reg [12:0] In1_re;  // sfix13_En12
+  reg [12:0] In1_im;  // sfix13_En12
+  wire ce_out;
+  wire [15:0] Out1_re;  // sfix16
+  wire [15:0] Out1_im;  // sfix16
+
+  // File handling variables
+  integer file_re, file_im;
+  integer file_re_expected, file_im_expected, status_re_expected, status_im_expected;
+  integer status_re, status_im;
+  reg [15:0] expected_re, expected_im;
+
+  // Counter for monitor output
+  integer monitor_counter;
+
+  // Instantiate the DUT
+  pp_int_x4 u_pp_int_x4 (
+    .clk(clk),
+    .rst_n(rst_n),
+    .en(en),
+    .In1_re(In1_re),
+    .In1_im(In1_im),
+    .Out1_re(Out1_re),
+    .Out1_im(Out1_im)
+  );
+  
+  // Clock generation
+  initial begin
+    clk = 0;
+    forever #(CLK_PERIOD/2) clk = ~clk;
+  end
+
+  // Reset generation
+  initial begin
+    rst_n = 0;
+    #200000;
+    rst_n = 1;
+  end
+
+  // Enable generation
+  initial begin
+    en = 0;
+    #300000;
+    en = 1;
+  end
+
+  // Read input data and apply to DUT
+  initial begin
+    file_re = $fopen("In1_re.dat", "r");
+    file_im = $fopen("In1_im.dat", "r");
+
+    if (file_re == 0 || file_im == 0) begin
+      $display("Error opening input files");
+      $finish;
+    end
+
+    while (!$feof(file_re) && !$feof(file_im)) begin
+      status_re = $fscanf(file_re, "%h\n", In1_re);
+      status_im = $fscanf(file_im, "%h\n", In1_im);
+      
+      if (status_re != 1 || status_im != 1) begin
+        $display("Error reading input files");
+        $finish;
+      end
+
+      // Apply input data to DUT
+      #IN_PERIOD;
+    end
+
+    $fclose(file_re);
+    $fclose(file_im);
+  end
+
+  // Introduce a delay to allow the DUT to process the input data
+  initial begin
+    #1750;
+
+    //read expected output data
+    file_re_expected = $fopen("Out1_re_expected.dat", "r");
+    file_im_expected = $fopen("Out1_im_expected.dat", "r");
+
+    if (file_re_expected == 0 || file_im_expected == 0) begin
+      $display("Error opening expected output files");
+      $finish;
+    end
+
+    while (!$feof(file_re_expected) && !$feof(file_im_expected)) begin
+      status_re_expected = $fscanf(file_re_expected, "%h\n", expected_re);
+      status_im_expected = $fscanf(file_im_expected, "%h\n", expected_im);
+      
+      if (status_re != 1 || status_im != 1) begin
+        $display("Error reading expected output files");
+        $finish;
+      end
+      #CLK_PERIOD;
+      // Debugging: Print input and output values
+      //$display("Time: %0t | In1_re: %h | In1_im: %h | Out_re: %h | Out_im: %h", $time, In1_re, In1_im, Out1_re, Out1_im);
+
+      // Check output data
+      if (Out1_re !== expected_re) begin
+        $display("Output mismatch at time %0t: Out1_re = %d, expected_re = %d", $time, Out1_re, expected_re);
+      end
+      if (Out1_im !== expected_im) begin
+        $display("Output mismatch at time %0t: Out1_im = %d, expected_im = %d", $time, Out1_im, expected_im);
+      end
+    end
+    $fclose(file_re_expected);
+    $fclose(file_im_expected);
+    $stop; 
+  end
+
+  // Monitor the output data every 100 clock periods
+  //initial begin
+  //  monitor_counter = 0;
+  //  forever begin
+  //    #CLK_PERIOD;
+  //    monitor_counter = monitor_counter + 1;
+  //    if (monitor_counter == 300) begin
+  //      $display("Time: %0t | In1_re: %d | In1_im: %d | Out_0_re: %d | Out_0_im: %d", $time, In1_re, In1_im, Out1_re, Out1_im);
+  //      monitor_counter = 0;
+  //    end
+  //  end
+  //end
+
+  // Dump waves to VCD file
+  initial begin
+    $dumpfile("pp_int_x4_tb.vcd");
+    $dumpvars(0, pp_int_x4_tb);
+  end
+
+endmodule  // pp_int_x4_tb
+

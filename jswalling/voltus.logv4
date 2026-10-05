@@ -1,0 +1,480 @@
+[01/23 15:33:25      0s] 
+[01/23 15:33:25      0s] Cadence Voltus(TM) IC Power Integrity Solution.
+[01/23 15:33:25      0s] Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+[01/23 15:33:25      0s] 
+[01/23 15:33:25      0s] Version:	v22.10-p001_1, built Tue Aug 9 17:51:02 PDT 2022
+[01/23 15:33:25      0s] Options:	
+[01/23 15:33:25      0s] Date:		Fri Jan 23 15:33:25 2026
+[01/23 15:33:25      0s] Host:		lnx-prd-05.ece.vt.edu (x86_64 w/Linux 5.15.0-315.196.5.2.el9uek.x86_64) (16cores*32cpus*AMD EPYC 7313 16-Core Processor 512KB)
+[01/23 15:33:25      0s] OS:		Red Hat Enterprise Linux release 9.7 (Plow)
+[01/23 15:33:25      0s] 
+[01/23 15:33:25      0s] License:
+[01/23 15:33:25      0s] 		[15:33:25.284057] Configured Lic search path (21.01-s002): 27002@license.ece.vt.edu
+
+[01/23 15:33:25      0s] 		vtsxl	Voltus Power Integrity Solution XL	22.1	checkout succeeded
+[01/23 15:33:25      0s] 		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[01/23 15:33:35      9s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Voltus IC Power Integrity Solution v22.10-p001_1 (64bit) 08/09/2022 17:51 (Linux 3.10.0-693.el7.x86_64)
+[01/23 15:33:39     13s] @(#)CDS: NanoRoute 22.10-p001_1 NR220728-0225/22_10-UB (database version 18.20.589) {superthreading v2.19}
+[01/23 15:33:39     13s] @(#)CDS: AAE 22.10-p001 (64bit) 08/09/2022 (Linux 3.10.0-693.el7.x86_64)
+[01/23 15:33:39     13s] @(#)CDS: CTE 22.10-p001_1 () Aug  8 2022 14:54:03 ( )
+[01/23 15:33:39     13s] @(#)CDS: SYNTECH 22.10-p001_1 () Aug  8 2022 11:26:34 ( )
+[01/23 15:33:39     13s] @(#)CDS: CPE v22.10-p001
+[01/23 15:33:39     13s] @(#)CDS: OA 22.60-p076 Wed May 18 13:45:29 2022
+[01/23 15:33:39     13s] @(#)CDS: SGN 21.20-d001 (11-Feb-2022) (64 bit executable, TkQt5.9.1)
+[01/23 15:33:39     13s] @(#)CDS: RCDB 11.15.0
+[01/23 15:33:39     13s] @(#)CDS: STYLUS 22.10-a006_1 (05/21/2022 01:23 PDT)
+[01/23 15:33:39     13s] Change the soft stacksize limit to 0.2%RAM (255 mbytes). Set global soft_stack_size_limit to change the value.
+[01/23 15:33:39     13s] **INFO: (TMPDIR-1001): The environment variable TMPDIR is not set.
+Create and set the environment variable TMPDIR to '/tmp/ssv_tmpdir_124654_l8d7j5'.
+environment variable TMPDIR is '/tmp/ssv_tmpdir_124654_l8d7j5'.
+[01/23 15:33:40     14s] Turn off visibility of signal net in Voltus by default.
+[01/23 15:33:40     14s] <CMD> setLayerPreference net -isVisible 0
+[01/23 15:33:40     14s] <CMD> setLayerPreference clock -isVisible 0
+[01/23 15:33:48     14s] **WARN: (IMPOAX-793):	Problem in processing library definition file /data/projects/28HPC_summer2024/jswalling/cds.lib - *WARNING* LIB test_import from File /data/projects/28HPC_summer2024/jswalling/cds.lib Line 13 redefines
+[01/23 15:33:48     14s] LIB test_import from the same file (defined earlier.)
+[01/23 15:33:48     14s] .
+[01/23 15:33:48     14s] **WARN: (IMPOAX-793):	Problem in processing library definition file /data/projects/28HPC_summer2024/jswalling/cds.lib - Unable to open library dev28_ACED at path /home/micsTapeouts/projects/28HPC_summer2024/behdad/dev28_ACED: Invalid Lib Path..
+[01/23 15:33:48     14s] **WARN: (IMPOAX-793):	Problem in processing library definition file /data/projects/28HPC_summer2024/jswalling/cds.lib - Unable to open library sc9mcpp140z_cln28ht_base_svt_c30_rb at path /home/rubel/std_logic_libs/tsmc_28nm/arm/tsmc/cln28ht/sc9mcpp140z_base_svt_c30/r0p0/oa/sc9mcpp140z_cln28ht_base_svt_c30: Invalid Lib Path..
+[01/23 15:33:53     15s] **WARN: (IMPOAX-793):	Problem in processing library definition file /data/projects/28HPC_summer2024/jswalling/cds.lib - *WARNING* LIB test_import from File /data/projects/28HPC_summer2024/jswalling/cds.lib Line 13 redefines
+[01/23 15:33:53     15s] LIB test_import from the same file (defined earlier.)
+[01/23 15:33:53     15s] .
+[01/23 15:33:53     15s] **WARN: (IMPOAX-793):	Problem in processing library definition file /data/projects/28HPC_summer2024/jswalling/cds.lib - Unable to open library dev28_ACED at path /home/micsTapeouts/projects/28HPC_summer2024/behdad/dev28_ACED: Invalid Lib Path..
+[01/23 15:33:53     15s] **WARN: (IMPOAX-793):	Problem in processing library definition file /data/projects/28HPC_summer2024/jswalling/cds.lib - Unable to open library sc9mcpp140z_cln28ht_base_svt_c30_rb at path /home/rubel/std_logic_libs/tsmc_28nm/arm/tsmc/cln28ht/sc9mcpp140z_base_svt_c30/r0p0/oa/sc9mcpp140z_cln28ht_base_svt_c30: Invalid Lib Path..
+[01/23 15:33:57     15s] **WARN: (IMPOAX-793):	Problem in processing library definition file /data/projects/28HPC_summer2024/jswalling/cds.lib - *WARNING* LIB test_import from File /data/projects/28HPC_summer2024/jswalling/cds.lib Line 13 redefines
+[01/23 15:33:57     15s] LIB test_import from the same file (defined earlier.)
+[01/23 15:33:57     15s] .
+[01/23 15:33:57     15s] **WARN: (IMPOAX-793):	Problem in processing library definition file /data/projects/28HPC_summer2024/jswalling/cds.lib - Unable to open library dev28_ACED at path /home/micsTapeouts/projects/28HPC_summer2024/behdad/dev28_ACED: Invalid Lib Path..
+[01/23 15:33:57     15s] **WARN: (IMPOAX-793):	Problem in processing library definition file /data/projects/28HPC_summer2024/jswalling/cds.lib - Unable to open library sc9mcpp140z_cln28ht_base_svt_c30_rb at path /home/rubel/std_logic_libs/tsmc_28nm/arm/tsmc/cln28ht/sc9mcpp140z_base_svt_c30/r0p0/oa/sc9mcpp140z_cln28ht_base_svt_c30: Invalid Lib Path..
+[01/23 15:33:59     15s] <CMD> read_design -cellview {jswalling_dsp scpa_dig_ana_ppfir layout} -physical_data
+[01/23 15:34:00     15s] # Voltus IC Power Integrity Solution 22.10-p001_1
+[01/23 15:34:00     15s] # read_design
+[01/23 15:34:00     15s] #  -cellview jswalling_dsp scpa_dig_ana_ppfir layout
+[01/23 15:34:00     15s] #  -physical_data 1
+[01/23 15:34:00     15s] **WARN: (IMPOAX-793):	Problem in processing library definition file /data/projects/28HPC_summer2024/jswalling/cds.lib - *WARNING* LIB test_import from File /data/projects/28HPC_summer2024/jswalling/cds.lib Line 13 redefines
+[01/23 15:34:00     15s] LIB test_import from the same file (defined earlier.)
+[01/23 15:34:00     15s] .
+[01/23 15:34:00     15s] **WARN: (IMPOAX-793):	Problem in processing library definition file /data/projects/28HPC_summer2024/jswalling/cds.lib - Unable to open library dev28_ACED at path /home/micsTapeouts/projects/28HPC_summer2024/behdad/dev28_ACED: Invalid Lib Path..
+[01/23 15:34:00     15s] **WARN: (IMPOAX-793):	Problem in processing library definition file /data/projects/28HPC_summer2024/jswalling/cds.lib - Unable to open library sc9mcpp140z_cln28ht_base_svt_c30_rb at path /home/rubel/std_logic_libs/tsmc_28nm/arm/tsmc/cln28ht/sc9mcpp140z_base_svt_c30/r0p0/oa/sc9mcpp140z_cln28ht_base_svt_c30: Invalid Lib Path..
+[01/23 15:34:00     15s] **WARN: (IMPOAX-793):	Problem in processing library definition file /data/projects/28HPC_summer2024/jswalling/cds.lib - *WARNING* LIB test_import from File /data/projects/28HPC_summer2024/jswalling/cds.lib Line 13 redefines
+[01/23 15:34:00     15s] LIB test_import from the same file (defined earlier.)
+[01/23 15:34:00     15s] .
+[01/23 15:34:00     15s] **WARN: (IMPOAX-793):	Problem in processing library definition file /data/projects/28HPC_summer2024/jswalling/cds.lib - Unable to open library dev28_ACED at path /home/micsTapeouts/projects/28HPC_summer2024/behdad/dev28_ACED: Invalid Lib Path..
+[01/23 15:34:00     15s] **WARN: (IMPOAX-793):	Problem in processing library definition file /data/projects/28HPC_summer2024/jswalling/cds.lib - Unable to open library sc9mcpp140z_cln28ht_base_svt_c30_rb at path /home/rubel/std_logic_libs/tsmc_28nm/arm/tsmc/cln28ht/sc9mcpp140z_base_svt_c30/r0p0/oa/sc9mcpp140z_cln28ht_base_svt_c30: Invalid Lib Path..
+[01/23 15:34:00     15s] **WARN: (IMPOAX-793):	Problem in processing library definition file /data/projects/28HPC_summer2024/jswalling/cds.lib - *WARNING* LIB test_import from File /data/projects/28HPC_summer2024/jswalling/cds.lib Line 13 redefines
+[01/23 15:34:00     15s] LIB test_import from the same file (defined earlier.)
+[01/23 15:34:00     15s] .
+[01/23 15:34:00     15s] **WARN: (IMPOAX-793):	Problem in processing library definition file /data/projects/28HPC_summer2024/jswalling/cds.lib - Unable to open library dev28_ACED at path /home/micsTapeouts/projects/28HPC_summer2024/behdad/dev28_ACED: Invalid Lib Path..
+[01/23 15:34:00     15s] **WARN: (IMPOAX-793):	Problem in processing library definition file /data/projects/28HPC_summer2024/jswalling/cds.lib - Unable to open library sc9mcpp140z_cln28ht_base_svt_c30_rb at path /home/rubel/std_logic_libs/tsmc_28nm/arm/tsmc/cln28ht/sc9mcpp140z_base_svt_c30/r0p0/oa/sc9mcpp140z_cln28ht_base_svt_c30: Invalid Lib Path..
+[01/23 15:34:00     15s] **WARN: (IMPOAX-991):	OpenAccess Design (jswalling_dsp/scpa_dig_ana_ppfir/layout) is locked by another process. Tool will read this design and you will be allowed to save this design into different cellview but, if you intend to save it into same cellview, you are recommended to close this design from another application before proceeding.
+[01/23 15:34:00     15s] ETS_Emulate_MMMC_DEBUG: Emulation failed due to no usable libraries were defined.
+[01/23 15:34:00     15s] **WARN: (IMPOAX-793):	Problem in processing library definition file /data/projects/28HPC_summer2024/jswalling/cds.lib - *WARNING* LIB test_import from File /data/projects/28HPC_summer2024/jswalling/cds.lib Line 13 redefines
+[01/23 15:34:00     15s] LIB test_import from the same file (defined earlier.)
+[01/23 15:34:00     15s] .
+[01/23 15:34:00     15s] **WARN: (IMPOAX-793):	Problem in processing library definition file /data/projects/28HPC_summer2024/jswalling/cds.lib - Unable to open library dev28_ACED at path /home/micsTapeouts/projects/28HPC_summer2024/behdad/dev28_ACED: Invalid Lib Path..
+[01/23 15:34:00     15s] **WARN: (IMPOAX-793):	Problem in processing library definition file /data/projects/28HPC_summer2024/jswalling/cds.lib - Unable to open library sc9mcpp140z_cln28ht_base_svt_c30_rb at path /home/rubel/std_logic_libs/tsmc_28nm/arm/tsmc/cln28ht/sc9mcpp140z_base_svt_c30/r0p0/oa/sc9mcpp140z_cln28ht_base_svt_c30: Invalid Lib Path..
+[01/23 15:34:00     15s] **WARN: (IMPOAX-793):	Problem in processing library definition file /data/projects/28HPC_summer2024/jswalling/cds.lib - *WARNING* LIB test_import from File /data/projects/28HPC_summer2024/jswalling/cds.lib Line 13 redefines
+[01/23 15:34:00     15s] LIB test_import from the same file (defined earlier.)
+[01/23 15:34:00     15s] .
+[01/23 15:34:00     15s] **WARN: (IMPOAX-793):	Problem in processing library definition file /data/projects/28HPC_summer2024/jswalling/cds.lib - Unable to open library dev28_ACED at path /home/micsTapeouts/projects/28HPC_summer2024/behdad/dev28_ACED: Invalid Lib Path..
+[01/23 15:34:00     15s] **WARN: (IMPOAX-793):	Problem in processing library definition file /data/projects/28HPC_summer2024/jswalling/cds.lib - Unable to open library sc9mcpp140z_cln28ht_base_svt_c30_rb at path /home/rubel/std_logic_libs/tsmc_28nm/arm/tsmc/cln28ht/sc9mcpp140z_base_svt_c30/r0p0/oa/sc9mcpp140z_cln28ht_base_svt_c30: Invalid Lib Path..
+[01/23 15:34:00     15s] Reading tech data from OA library 'jswalling_dsp' ...
+[01/23 15:34:00     15s] **WARN: (IMPOAX-793):	Problem in processing library definition file /data/projects/28HPC_summer2024/jswalling/cds.lib - *WARNING* LIB test_import from File /data/projects/28HPC_summer2024/jswalling/cds.lib Line 13 redefines
+[01/23 15:34:00     15s] LIB test_import from the same file (defined earlier.)
+[01/23 15:34:00     15s] .
+[01/23 15:34:00     15s] **WARN: (IMPOAX-793):	Problem in processing library definition file /data/projects/28HPC_summer2024/jswalling/cds.lib - Unable to open library dev28_ACED at path /home/micsTapeouts/projects/28HPC_summer2024/behdad/dev28_ACED: Invalid Lib Path..
+[01/23 15:34:00     15s] **WARN: (IMPOAX-793):	Problem in processing library definition file /data/projects/28HPC_summer2024/jswalling/cds.lib - Unable to open library sc9mcpp140z_cln28ht_base_svt_c30_rb at path /home/rubel/std_logic_libs/tsmc_28nm/arm/tsmc/cln28ht/sc9mcpp140z_base_svt_c30/r0p0/oa/sc9mcpp140z_cln28ht_base_svt_c30: Invalid Lib Path..
+[01/23 15:34:00     15s] FE units: 0.001 microns/dbu, OA units: 0.001 microns/dbu, Conversion factor: 1
+[01/23 15:34:00     15s] **WARN: (IMPOAX-1645):	'minWidth' constraint is not supported on layer 'PO'. This constraint will be ignored by tool.
+[01/23 15:34:00     16s] Set DBUPerIGU to M2 pitch 100.
+[01/23 15:34:00     16s] **WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_PO' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+[01/23 15:34:00     16s] **WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_OD' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+[01/23 15:34:00     16s] **WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_NW' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+[01/23 15:34:00     16s] **WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_SUB' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+[01/23 15:34:00     16s] LEFDefaultRouteSpec(LDRS) is read from rule 'LEFDefaultRouteSpec_tsmcN28' and library 'tsmcN28'. Only default vias, routing layers, pitch, routing width, routing direction, layer offset, wire extension constraints are read from it and rest of rules are read from foundry constraint group.
+[01/23 15:34:00     16s] 
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+[01/23 15:34:00     16s] **WARN: (IMPOAX-793):	Problem in processing library definition file /data/projects/28HPC_summer2024/jswalling/cds.lib - *WARNING* LIB test_import from File /data/projects/28HPC_summer2024/jswalling/cds.lib Line 13 redefines
+[01/23 15:34:00     16s] LIB test_import from the same file (defined earlier.)
+[01/23 15:34:00     16s] .
+[01/23 15:34:00     16s] **WARN: (IMPOAX-793):	Problem in processing library definition file /data/projects/28HPC_summer2024/jswalling/cds.lib - Unable to open library dev28_ACED at path /home/micsTapeouts/projects/28HPC_summer2024/behdad/dev28_ACED: Invalid Lib Path..
+[01/23 15:34:00     16s] **WARN: (EMS-62):	Message <IMPOAX-793> has exceeded the default message display limit of 20.
+[01/23 15:34:00     16s] To avoid this warning, increase the display limit per unique message by
+[01/23 15:34:00     16s] using the set_message -limit <number> command.
+[01/23 15:34:00     16s] The message limit can be removed by using the set_message -no_limit command.
+[01/23 15:34:00     16s] Note that setting a very large number using the set_message -limit command
+[01/23 15:34:00     16s] or removing the message limit using the set_message -no_limit command can
+[01/23 15:34:00     16s] significantly increase the log file size.
+[01/23 15:34:00     16s] To suppress a message, use the set_message -suppress command.
+[01/23 15:34:00     16s] Reading OA reference library 'jswalling_dsp' ...
+[01/23 15:34:00     16s] Reading OA reference library 'sc9mcpp140z_cln28ht_hpk_ulvt_c30' ...
+[01/23 15:34:00     16s] **WARN: (IMPOAX-1673):	Block of design with lib: 'sc9mcpp140z_cln28ht_hpk_ulvt_c30', cell: 'AND2_X8TM_A9PP140ZTUL_C30', view: 'layout'  did not have an abstract. Tool will create temporary abstract to enable the Static timing analysis flow, or allow users to perform additional floorplanning in tool. Users should run the Abstract generator tool to create real abstracts, if other parts of the implementation flow in tool are to be exercised.
+[01/23 15:34:00     16s] **WARN: (IMPOAX-1673):	Block of design with lib: 'sc9mcpp140z_cln28ht_hpk_ulvt_c30', cell: 'INV_X20M_A9PP140ZTUL_C30', view: 'layout'  did not have an abstract. Tool will create temporary abstract to enable the Static timing analysis flow, or allow users to perform additional floorplanning in tool. Users should run the Abstract generator tool to create real abstracts, if other parts of the implementation flow in tool are to be exercised.
+[01/23 15:34:00     16s] **WARN: (IMPOAX-1673):	Block of design with lib: 'sc9mcpp140z_cln28ht_hpk_ulvt_c30', cell: 'OAI21_X4A_A9PP140ZTUL_C30', view: 'layout'  did not have an abstract. Tool will create temporary abstract to enable the Static timing analysis flow, or allow users to perform additional floorplanning in tool. Users should run the Abstract generator tool to create real abstracts, if other parts of the implementation flow in tool are to be exercised.
+[01/23 15:34:00     16s] **WARN: (IMPOAX-1673):	Block of design with lib: 'sc9mcpp140z_cln28ht_hpk_ulvt_c30', cell: 'AOI22_X3A_A9PP140ZTUL_C30', view: 'layout'  did not have an abstract. Tool will create temporary abstract to enable the Static timing analysis flow, or allow users to perform additional floorplanning in tool. Users should run the Abstract generator tool to create real abstracts, if other parts of the implementation flow in tool are to be exercised.
+[01/23 15:34:00     16s] **WARN: (IMPOAX-1673):	Block of design with lib: 'sc9mcpp140z_cln28ht_hpk_ulvt_c30', cell: 'OAI21_X1A_A9PP140ZTUL_C30', view: 'layout'  did not have an abstract. Tool will create temporary abstract to enable the Static timing analysis flow, or allow users to perform additional floorplanning in tool. Users should run the Abstract generator tool to create real abstracts, if other parts of the implementation flow in tool are to be exercised.
+[01/23 15:34:00     16s] **WARN: (IMPOAX-1673):	Block of design with lib: 'sc9mcpp140z_cln28ht_hpk_ulvt_c30', cell: 'OAI21_X2A_A9PP140ZTUL_C30', view: 'layout'  did not have an abstract. Tool will create temporary abstract to enable the Static timing analysis flow, or allow users to perform additional floorplanning in tool. Users should run the Abstract generator tool to create real abstracts, if other parts of the implementation flow in tool are to be exercised.
+[01/23 15:34:00     16s] **WARN: (IMPOAX-1673):	Block of design with lib: 'sc9mcpp140z_cln28ht_hpk_ulvt_c30', cell: 'NOR2_X1TA_A9PP140ZTUL_C30', view: 'layout'  did not have an abstract. Tool will create temporary abstract to enable the Static timing analysis flow, or allow users to perform additional floorplanning in tool. Users should run the Abstract generator tool to create real abstracts, if other parts of the implementation flow in tool are to be exercised.
+[01/23 15:34:00     16s] **WARN: (IMPOAX-1673):	Block of design with lib: 'sc9mcpp140z_cln28ht_hpk_ulvt_c30', cell: 'NOR2_X2TA_A9PP140ZTUL_C30', view: 'layout'  did not have an abstract. Tool will create temporary abstract to enable the Static timing analysis flow, or allow users to perform additional floorplanning in tool. Users should run the Abstract generator tool to create real abstracts, if other parts of the implementation flow in tool are to be exercised.
+[01/23 15:34:00     16s] **WARN: (IMPOAX-1673):	Block of design with lib: 'sc9mcpp140z_cln28ht_hpk_ulvt_c30', cell: 'NAND2_X1TA_A9PP140ZTUL_C30', view: 'layout'  did not have an abstract. Tool will create temporary abstract to enable the Static timing analysis flow, or allow users to perform additional floorplanning in tool. Users should run the Abstract generator tool to create real abstracts, if other parts of the implementation flow in tool are to be exercised.
+[01/23 15:34:00     16s] **WARN: (IMPOAX-1673):	Block of design with lib: 'sc9mcpp140z_cln28ht_hpk_ulvt_c30', cell: 'AND2_X6TM_A9PP140ZTUL_C30', view: 'layout'  did not have an abstract. Tool will create temporary abstract to enable the Static timing analysis flow, or allow users to perform additional floorplanning in tool. Users should run the Abstract generator tool to create real abstracts, if other parts of the implementation flow in tool are to be exercised.
+[01/23 15:34:00     16s] **WARN: (IMPOAX-1673):	Block of design with lib: 'sc9mcpp140z_cln28ht_hpk_ulvt_c30', cell: 'NAND2_X11A_A9PP140ZTUL_C30', view: 'layout'  did not have an abstract. Tool will create temporary abstract to enable the Static timing analysis flow, or allow users to perform additional floorplanning in tool. Users should run the Abstract generator tool to create real abstracts, if other parts of the implementation flow in tool are to be exercised.
+[01/23 15:34:00     16s] **WARN: (IMPOAX-1673):	Block of design with lib: 'sc9mcpp140z_cln28ht_hpk_ulvt_c30', cell: 'AOI21_X1A_A9PP140ZTUL_C30', view: 'layout'  did not have an abstract. Tool will create temporary abstract to enable the Static timing analysis flow, or allow users to perform additional floorplanning in tool. Users should run the Abstract generator tool to create real abstracts, if other parts of the implementation flow in tool are to be exercised.
+[01/23 15:34:00     16s] **WARN: (IMPOAX-1673):	Block of design with lib: 'sc9mcpp140z_cln28ht_hpk_ulvt_c30', cell: 'NAND2_X1P4TA_A9PP140ZTUL_C30', view: 'layout'  did not have an abstract. Tool will create temporary abstract to enable the Static timing analysis flow, or allow users to perform additional floorplanning in tool. Users should run the Abstract generator tool to create real abstracts, if other parts of the implementation flow in tool are to be exercised.
+[01/23 15:34:00     16s] **WARN: (IMPOAX-1673):	Block of design with lib: 'sc9mcpp140z_cln28ht_hpk_ulvt_c30', cell: 'AOI21_X3A_A9PP140ZTUL_C30', view: 'layout'  did not have an abstract. Tool will create temporary abstract to enable the Static timing analysis flow, or allow users to perform additional floorplanning in tool. Users should run the Abstract generator tool to create real abstracts, if other parts of the implementation flow in tool are to be exercised.
+[01/23 15:34:00     16s] **WARN: (IMPOAX-1673):	Block of design with lib: 'sc9mcpp140z_cln28ht_hpk_ulvt_c30', cell: 'NOR3_X6A_A9PP140ZTUL_C30', view: 'layout'  did not have an abstract. Tool will create temporary abstract to enable the Static timing analysis flow, or allow users to perform additional floorplanning in tool. Users should run the Abstract generator tool to create real abstracts, if other parts of the implementation flow in tool are to be exercised.
+[01/23 15:34:00     16s] **WARN: (IMPOAX-1673):	Block of design with lib: 'sc9mcpp140z_cln28ht_hpk_ulvt_c30', cell: 'NOR2_X11TA_A9PP140ZTUL_C30', view: 'layout'  did not have an abstract. Tool will create temporary abstract to enable the Static timing analysis flow, or allow users to perform additional floorplanning in tool. Users should run the Abstract generator tool to create real abstracts, if other parts of the implementation flow in tool are to be exercised.
+[01/23 15:34:00     16s] **WARN: (IMPOAX-1673):	Block of design with lib: 'sc9mcpp140z_cln28ht_hpk_ulvt_c30', cell: 'NOR2_X11A_A9PP140ZTUL_C30', view: 'layout'  did not have an abstract. Tool will create temporary abstract to enable the Static timing analysis flow, or allow users to perform additional floorplanning in tool. Users should run the Abstract generator tool to create real abstracts, if other parts of the implementation flow in tool are to be exercised.
+[01/23 15:34:00     16s] **WARN: (IMPOAX-1673):	Block of design with lib: 'sc9mcpp140z_cln28ht_hpk_ulvt_c30', cell: 'OR2_X6TM_A9PP140ZTUL_C30', view: 'layout'  did not have an abstract. Tool will create temporary abstract to enable the Static timing analysis flow, or allow users to perform additional floorplanning in tool. Users should run the Abstract generator tool to create real abstracts, if other parts of the implementation flow in tool are to be exercised.
+[01/23 15:34:00     16s] **WARN: (IMPOAX-1673):	Block of design with lib: 'sc9mcpp140z_cln28ht_hpk_ulvt_c30', cell: 'OR2_X11TM_A9PP140ZTUL_C30', view: 'layout'  did not have an abstract. Tool will create temporary abstract to enable the Static timing analysis flow, or allow users to perform additional floorplanning in tool. Users should run the Abstract generator tool to create real abstracts, if other parts of the implementation flow in tool are to be exercised.
+[01/23 15:34:00     16s] **WARN: (IMPOAX-1673):	Block of design with lib: 'sc9mcpp140z_cln28ht_hpk_ulvt_c30', cell: 'OAI22_X1A_A9PP140ZTUL_C30', view: 'layout'  did not have an abstract. Tool will create temporary abstract to enable the Static timing analysis flow, or allow users to perform additional floorplanning in tool. Users should run the Abstract generator tool to create real abstracts, if other parts of the implementation flow in tool are to be exercised.
+[01/23 15:34:00     16s] **WARN: (EMS-62):	Message <IMPOAX-1673> has exceeded the default message display limit of 20.
+[01/23 15:34:00     16s] To avoid this warning, increase the display limit per unique message by
+[01/23 15:34:00     16s] using the set_message -limit <number> command.
+[01/23 15:34:00     16s] The message limit can be removed by using the set_message -no_limit command.
+[01/23 15:34:00     16s] Note that setting a very large number using the set_message -limit command
+[01/23 15:34:00     16s] or removing the message limit using the set_message -no_limit command can
+[01/23 15:34:00     16s] significantly increase the log file size.
+[01/23 15:34:00     16s] To suppress a message, use the set_message -suppress command.
+[01/23 15:34:00     16s] Reading OA reference library 'jswalling_dsp' ...
+[01/23 15:34:00     16s] Reading OA reference library 'sc9mcpp140z_cln28ht_base_ulvt_c30' ...
+[01/23 15:34:01     16s] 
+[01/23 15:34:01     16s] There were 491 layout cells that used automatic abstract creation. See scpa_dig_ana_ppfir.oaread.rpt for a list of all the cells.
+[01/23 15:34:01     16s] 
+[01/23 15:34:01     16s] *** End library_loading (cpu=0.00min, real=0.00min, mem=0.0M, fe_cpu=0.28min, fe_real=0.60min, fe_mem=1282.9M) ***
+[01/23 15:34:01     16s] Reading EMH from OA ...
+[01/23 15:34:01     17s] 
+[01/23 15:34:01     17s] *** Memory Usage v#1 (Current mem = 1327.559M, initial mem = 529.930M) ***
+[01/23 15:34:01     17s] Set top cell to scpa_dig_ana_ppfir.
+[01/23 15:34:01     17s] Ending "BindLib:" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1346.3M, current mem=1345.0M)
+[01/23 15:34:01     17s] Building hierarchical netlist for Cell scpa_dig_ana_ppfir ...
+[01/23 15:34:01     17s] ***** UseNewTieNetMode *****.
+[01/23 15:34:01     17s] *** Netlist is unique.
+[01/23 15:34:01     17s] **WARN: (IMPTRN-1100):	Cannot determine standard cell height.  Assume it 10 IGU.
+[01/23 15:34:01     17s] **WARN: (IMPTRN-1101):	Could not determine power-rail locations in cells. Use default value GNDOnBtm.
+[01/23 15:34:01     17s] ** info: there are 492 modules.
+[01/23 15:34:01     17s] ** info: there are 0 stdCell insts.
+[01/23 15:34:01     17s] ** info: there are 304761 macros.
+[01/23 15:34:01     17s] 
+[01/23 15:34:01     17s] *** Memory Usage v#1 (Current mem = 1468.980M, initial mem = 529.930M) ***
+[01/23 15:34:02     17s] **ERROR: (IMPFP-1594):	No site specified. Check the LEF/OA file to make sure a site is specified for core cell.
+**ERROR: (IMPSYC-1595):	No row created.
+
+[01/23 15:34:02     17s] Honor LEF defined pitches for advanced node
+[01/23 15:34:02     17s] Start create_tracks
+[01/23 15:34:02     17s] Set Default Input Pin Transition as 0.1 ps.
+[01/23 15:34:02     17s] ---------- oaIn ----------
+[01/23 15:34:02     17s] Reading physical information from OpenAccess database (jswalling_dsp/scpa_dig_ana_ppfir/layout).
+[01/23 15:34:02     17s] FE units: 0.001 microns/dbu, OA units: 0.001 microns/dbu, Conversion factor: 1
+[01/23 15:34:02     17s] **WARN: (IMPOAX-571):	Property 'lxInternal' on Design jswalling_dsp/scpa_dig_ana_ppfir/layout is a hierarchical property which is not supported in Voltus IC Power Integrity Solution. This property is not translated and it will be lost in round trip unless updateMode is enabled.
+[01/23 15:34:02     17s] **WARN: (IMPOAX-815):	PRBoundary is not present in OpenAccess design. It will be computed from the design's bounding box.
+[01/23 15:34:02     18s] No new Ext DEF rule to be processed.
+[01/23 15:34:02     18s] Set FPlanBox to (-57560 -171960 720260 483760)
+[01/23 15:34:02     18s] **ERROR: (IMPFP-1594):	No site specified. Check the LEF/OA file to make sure a site is specified for core cell.
+**ERROR: (IMPSYC-1595):	No row created.
+
+[01/23 15:34:02     18s] Honor LEF defined pitches for advanced node
+[01/23 15:34:02     18s] Start create_tracks
+[01/23 15:34:02     18s] Extracting standard cell pins and blockage ...... 
+[01/23 15:34:02     18s] Pin and blockage extraction finished
+[01/23 15:34:02     18s] **WARN: (IMPFP-3881):	IO box is not equal to die box, which is not allowed in a block design.
+[01/23 15:34:02     18s] **WARN: (IMPTRN-1101):	Could not determine power-rail locations in cells. Use default value GNDOnBtm.
+[01/23 15:34:04     20s] **WARN: (IMPOAX-516):	There are 100 unreadable OpenAccess (OA) marker objects (violation markers) that will be ignored because they are created by tools other than 'Voltus IC Power Integrity Solution'. Only violations created and written by Voltus IC Power Integrity Solution into an OA database can be read back from OA. 
+[01/23 15:34:04     20s] **WARN: (IMPOAX-327):	Could not restore 7 markers created by 'Voltus IC Power Integrity Solution' in Voltus IC Power Integrity Solution-DB.
+[01/23 15:34:04     20s] Voltus IC Power Integrity Solution terminated by internal (SEGV) error/signal.
+[01/23 15:34:04     20s] Current time: Fri Jan 23 15:34:04 2026
+[01/23 15:34:04     20s] *** Stack trace:
+*** Stack trace:
+/var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/ssv/bin/64bit/voltus[0x17baccc6]
+/var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/ssv/bin/64bit/voltus(syStackTrace+0xbe)[0x17bad209]
+/var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/ssv/bin/64bit/voltus[0x6bd66a7]
+/lib64/libc.so.6(+0x3fc2f)[0x7f0cffadcc2f]
+/var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/ssv/bin/64bit/voltus(free+0x6a)[0x6f4a59a]
+/var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/share/oa/lib/linux_rhel60_64/opt/liboaBase.so(_ZN12OpenAccess_413oaObjectBlock10minimizeVMEv+0x2f)[0x7f0ced452cff]
+/var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools.lnx86/ssv/bin/64bit/../../lib/64bit/libtempusoax22.so(_Z18oaG2InBySectionAllPcS_S_cS_+0x11a7)[0x7f0ceea60d67]
+/var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools.lnx86/ssv/bin/64bit/../../lib/64bit/libtempusoax22.so(oaG2In+0x367)[0x7f0ceea63e77]
+/var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/ssv/bin/64bit/voltus[0x11668d07]
+/var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/ssv/bin/64bit/voltus(_ZN10tcmBaseCmd7executeEP10Tcl_InterpiPPc+0x1a9)[0x1aad00b9]
+/var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/ssv/bin/64bit/voltus(_ZN6tcmMgr9cmdParserEPvP10Tcl_InterpiPPc+0x6c8)[0x1aac2ce8]
+/var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/ssv/bin/64bit/voltus(TclInvokeStringCommand+0x7a)[0x281413aa]
+/var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/ssv/bin/64bit/voltus(TclNRRunCallbacks+0x71)[0x28145ea1]
+/var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/ssv/bin/64bit/voltus[0x28229fab]
+/var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/ssv/bin/64bit/voltus[0x2822a26b]
+/var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/ssv/bin/64bit/voltus(Tcl_ServiceEvent+0x88)[0x2820a878]
+/var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/ssv/bin/64bit/voltus(Tcl_DoOneEvent+0x148)[0x2820ab88]
+/var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools.lnx86/ssv/bin/64bit/../../../lib/64bit/libtq.so(_ZN17TqEventDispatcher13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE+0x69)[0x7f0d023ed239]
+/var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/Qt/v5//64bit/lib/libcdsQt5Core.so.5(_ZN10QEventLoop4execE6QFlagsINS_17ProcessEventsFlagEE+0x11a)[0x7f0d019d9a5a]
+/var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/Qt/v5//64bit/lib/libcdsQt5Core.so.5(_ZN16QCoreApplication4execEv+0x7d)[0x7f0d019e121d]
+/var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools.lnx86/ssv/bin/64bit/../../../lib/64bit/libtq.so(_ZN13TqApplication4execEv+0x176)[0x7f0d023ec896]
+/var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/ssv/bin/64bit/voltus(_Z12edi_app_initP10Tcl_Interp+0x2cb)[0x6bdadcb]
+/var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/ssv/bin/64bit/voltus(Tcl_MainEx+0x17b)[0x282052cb]
+/var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/ssv/bin/64bit/voltus(main+0x840)[0x60311b0]
+/lib64/libc.so.6(+0x2a60f)[0x7f0cffac760f]
+/lib64/libc.so.6(__libc_start_main+0x7f)[0x7f0cffac76bf]
+/var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/ssv/bin/64bit/voltus[0x6bd2e56]
+========================================
+               pstack
+========================================
+No symbol table is loaded.  Use the "file" command.
+warning: Expected absolute pathname for libpthread in the inferior, but got .gnu_debugdata for /lib64/libpthread.so.0.
+warning: File "/usr/lib64/libthread_db.so.1" auto-loading has been declined by your `auto-load safe-path' set to "$debugdir:$datadir/auto-load".
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+Thread 10 (Thread 0x7f0ccbd01640 (LWP 125550) "QFileInfoGather"):
+#0  0x00007f0cffb2538a in __futex_abstimed_wait_common () from /lib64/libc.so.6
+#1  0x00007f0cffb278e2 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libc.so.6
+#2  0x00007f0d01806dab in QWaitCondition::wait(QMutex*, unsigned long) () from /var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/Qt/v5//64bit/lib/libcdsQt5Core.so.5
+#3  0x00007f0d014524e5 in ?? () from /var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/Qt/v5//64bit/lib/libcdsQt5Widgets.so.5
+#4  0x00007f0d0180660b in ?? () from /var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/Qt/v5//64bit/lib/libcdsQt5Core.so.5
+#5  0x0000000006f43ad5 in create_head(void*) ()
+#6  0x00007f0cffb282fa in start_thread () from /lib64/libc.so.6
+#7  0x00007f0cffbad440 in clone3 () from /lib64/libc.so.6
+
+Thread 9 (Thread 0x7f0cf1145640 (LWP 124916) "voltus"):
+#0  0x00007f0cffadd91a in sigtimedwait () from /lib64/libc.so.6
+#1  0x00007f0cffadcfbc in sigwait () from /lib64/libc.so.6
+#2  0x0000000006bd3b00 in ctrlCHandle(void*) ()
+#3  0x0000000006f43ad5 in create_head(void*) ()
+#4  0x00007f0cffb282fa in start_thread () from /lib64/libc.so.6
+#5  0x00007f0cffbad440 in clone3 () from /lib64/libc.so.6
+
+Thread 8 (Thread 0x7f0cf20e2640 (LWP 124864) "voltus"):
+#0  0x00007f0cffba295d in select () from /lib64/libc.so.6
+#1  0x0000000028249d68 in NotifierThreadProc ()
+#2  0x0000000006f43ad5 in create_head(void*) ()
+#3  0x00007f0cffb282fa in start_thread () from /lib64/libc.so.6
+#4  0x00007f0cffbad440 in clone3 () from /lib64/libc.so.6
+
+Thread 7 (Thread 0x7f0cf28e3640 (LWP 124862) "QDBusConnection"):
+#0  0x00007f0cffba013f in poll () from /lib64/libc.so.6
+#1  0x00007f0cfeef81fc in g_main_context_iterate.constprop () from /lib64/libglib-2.0.so.0
+#2  0x00007f0cfeea0713 in g_main_context_iteration () from /lib64/libglib-2.0.so.0
+#3  0x00007f0d01a2ba81 in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/Qt/v5//64bit/lib/libcdsQt5Core.so.5
+#4  0x00007f0d019d9a5b in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () from /var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/Qt/v5//64bit/lib/libcdsQt5Core.so.5
+#5  0x00007f0d01802501 in QThread::exec() () from /var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/Qt/v5//64bit/lib/libcdsQt5Core.so.5
+#6  0x00007f0cf3423d46 in ?? () from /var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/Qt/v5//64bit/lib/libcdsQt5DBus.so.5
+#7  0x00007f0d0180660b in ?? () from /var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/Qt/v5//64bit/lib/libcdsQt5Core.so.5
+#8  0x0000000006f43ad5 in create_head(void*) ()
+#9  0x00007f0cffb282fa in start_thread () from /lib64/libc.so.6
+#10 0x00007f0cffbad440 in clone3 () from /lib64/libc.so.6
+
+Thread 6 (Thread 0x7f0cf3147640 (LWP 124861) "QXcbEventReader"):
+#0  0x00007f0cffba013f in poll () from /lib64/libc.so.6
+#1  0x00007f0d001e3f42 in _xcb_conn_wait.part.0 () from /lib64/libxcb.so.1
+#2  0x00007f0d001e590c in xcb_wait_for_event () from /lib64/libxcb.so.1
+#3  0x00007f0cf3517709 in ?? () from /var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/Qt/v5//64bit/lib/libcdsQt5XcbQpa.so.5
+#4  0x00007f0d0180660b in ?? () from /var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/Qt/v5//64bit/lib/libcdsQt5Core.so.5
+#5  0x0000000006f43ad5 in create_head(void*) ()
+#6  0x00007f0cffb282fa in start_thread () from /lib64/libc.so.6
+#7  0x00007f0cffbad440 in clone3 () from /lib64/libc.so.6
+
+Thread 5 (Thread 0x7f0cf3f52640 (LWP 124809) "voltus"):
+#0  0x00007f0cffb72815 in clock_nanosleep@GLIBC_2.2.5 () from /lib64/libc.so.6
+#1  0x00007f0cffb772c7 in nanosleep () from /lib64/libc.so.6
+#2  0x00007f0cffb771fe in sleep () from /lib64/libc.so.6
+#3  0x0000000017bc8010 in syiPeakMem(void*) ()
+#4  0x0000000006f43ad5 in create_head(void*) ()
+#5  0x00007f0cffb282fa in start_thread () from /lib64/libc.so.6
+#6  0x00007f0cffbad440 in clone3 () from /lib64/libc.so.6
+
+Thread 4 (Thread 0x7f0cf5055640 (LWP 124807) "voltus"):
+#0  0x00007f0cffb72815 in clock_nanosleep@GLIBC_2.2.5 () from /lib64/libc.so.6
+#1  0x00007f0cffb772c7 in nanosleep () from /lib64/libc.so.6
+#2  0x0000000008932e5d in rdaiLicRecheck(void*) ()
+#3  0x0000000006f43ad5 in create_head(void*) ()
+#4  0x00007f0cffb282fa in start_thread () from /lib64/libc.so.6
+#5  0x00007f0cffbad440 in clone3 () from /lib64/libc.so.6
+
+Thread 3 (Thread 0x7f0cf5856640 (LWP 124790) "voltus"):
+#0  0x00007f0cffba295d in select () from /lib64/libc.so.6
+#1  0x0000000026d7718b in ProcessInfo::sampleUsage(void*) ()
+#2  0x0000000006f43ad5 in create_head(void*) ()
+#3  0x00007f0cffb282fa in start_thread () from /lib64/libc.so.6
+#4  0x00007f0cffbad440 in clone3 () from /lib64/libc.so.6
+
+Thread 2 (Thread 0x7f0cf6057640 (LWP 124789) "voltus"):
+#0  0x00007f0cffbadc0f in accept () from /lib64/libc.so.6
+#1  0x0000000026d7f527 in ProcessInfo::handleConnection(void*) ()
+#2  0x0000000006f43ad5 in create_head(void*) ()
+#3  0x00007f0cffb282fa in start_thread () from /lib64/libc.so.6
+#4  0x00007f0cffbad440 in clone3 () from /lib64/libc.so.6
+
+Thread 1 (Thread 0x7f0cfde2dc00 (LWP 124654) "voltus"):
+#0  0x00007f0cffb7707f in wait4 () from /lib64/libc.so.6
+#1  0x00007f0cffaec483 in do_system () from /lib64/libc.so.6
+#2  0x0000000017bacdf2 in syStackTraceDump(_IO_FILE*, bool) ()
+#3  0x0000000017bad20a in syStackTrace ()
+#4  0x0000000006bd66a8 in rdaiErrorHandler1(int) ()
+#5  <signal handler called>
+#6  0x0000000006f4a59a in free ()
+#7  0x00007f0ced452d00 in OpenAccess_4::oaObjectBlock::minimizeVM() () from /var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/share/oa/lib/linux_rhel60_64/opt/liboaBase.so
+#8  0x00007f0ceea60d68 in oaG2InBySectionAll(char*, char*, char*, char, char*) () from /var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools.lnx86/ssv/bin/64bit/../../lib/64bit/libtempusoax22.so
+#9  0x00007f0ceea63e78 in oaG2In () from /var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools.lnx86/ssv/bin/64bit/../../lib/64bit/libtempusoax22.so
+#10 0x0000000011668d08 in oaiG2InCmd ()
+#11 0x000000001aad00ba in tcmBaseCmd::execute(Tcl_Interp*, int, char**) ()
+#12 0x000000001aac2ce9 in tcmMgr::cmdParser(void*, Tcl_Interp*, int, char**) ()
+#13 0x00000000281413ab in TclInvokeStringCommand ()
+#14 0x0000000028145ea2 in TclNRRunCallbacks ()
+#15 0x0000000028229fac in AfterProc ()
+#16 0x000000002822a26c in TimerHandlerEventProc ()
+#17 0x000000002820a879 in Tcl_ServiceEvent ()
+#18 0x000000002820ab89 in Tcl_DoOneEvent ()
+#19 0x00007f0d023ed23a in TqEventDispatcher::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools.lnx86/ssv/bin/64bit/../../../lib/64bit/libtq.so
+#20 0x00007f0d019d9a5b in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () from /var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/Qt/v5//64bit/lib/libcdsQt5Core.so.5
+#21 0x00007f0d019e121e in QCoreApplication::exec() () from /var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/Qt/v5//64bit/lib/libcdsQt5Core.so.5
+#22 0x00007f0d023ec897 in TqApplication::exec() () from /var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools.lnx86/ssv/bin/64bit/../../../lib/64bit/libtq.so
+#23 0x0000000006bdadcc in edi_app_init(Tcl_Interp*) ()
+#24 0x00000000282052cc in Tcl_MainEx ()
+#25 0x00000000060311b1 in main ()
+========================================
+                gdb
+========================================
+Using: gdb
+[New LWP 124789]
+[New LWP 124790]
+[New LWP 124807]
+[New LWP 124809]
+[New LWP 124861]
+[New LWP 124862]
+[New LWP 124864]
+[New LWP 124916]
+[New LWP 125550]
+
+warning: Expected absolute pathname for libpthread in the inferior, but got .gnu_debugdata for /lib64/libpthread.so.0.
+
+warning: File "/usr/lib64/libthread_db.so.1" auto-loading has been declined by your `auto-load safe-path' set to "$debugdir:$datadir/auto-load".
+To enable execution of this file add
+	add-auto-load-safe-path /usr/lib64/libthread_db.so.1
+line to your configuration file "/home/jswalling/.gdbinit".
+To completely disable this security protection add
+	set auto-load safe-path /
+line to your configuration file "/home/jswalling/.gdbinit".
+For more information about this security protection see the
+"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:
+	info "(gdb)Auto-loading safe path"
+
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x00007f0cffb7707f in wait4 () from /lib64/libc.so.6
+
+Thread 10 (Thread 0x7f0ccbd01640 (LWP 125550) "QFileInfoGather"):
+#0  0x00007f0cffb2538a in __futex_abstimed_wait_common () from /lib64/libc.so.6
+#1  0x00007f0cffb278e2 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libc.so.6
+#2  0x00007f0d01806dab in QWaitCondition::wait(QMutex*, unsigned long) () from /var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/Qt/v5//64bit/lib/libcdsQt5Core.so.5
+#3  0x00007f0d014524e5 in ?? () from /var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/Qt/v5//64bit/lib/libcdsQt5Widgets.so.5
+#4  0x00007f0d0180660b in ?? () from /var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/Qt/v5//64bit/lib/libcdsQt5Core.so.5
+#5  0x0000000006f43ad5 in create_head(void*) ()
+#6  0x00007f0cffb282fa in start_thread () from /lib64/libc.so.6
+#7  0x00007f0cffbad440 in clone3 () from /lib64/libc.so.6
+
+Thread 9 (Thread 0x7f0cf1145640 (LWP 124916) "voltus"):
+#0  0x00007f0cffadd91a in sigtimedwait () from /lib64/libc.so.6
+#1  0x00007f0cffadcfbc in sigwait () from /lib64/libc.so.6
+#2  0x0000000006bd3b00 in ctrlCHandle(void*) ()
+#3  0x0000000006f43ad5 in create_head(void*) ()
+#4  0x00007f0cffb282fa in start_thread () from /lib64/libc.so.6
+#5  0x00007f0cffbad440 in clone3 () from /lib64/libc.so.6
+
+Thread 8 (Thread 0x7f0cf20e2640 (LWP 124864) "voltus"):
+#0  0x00007f0cffba295d in select () from /lib64/libc.so.6
+#1  0x0000000028249d68 in NotifierThreadProc ()
+#2  0x0000000006f43ad5 in create_head(void*) ()
+#3  0x00007f0cffb282fa in start_thread () from /lib64/libc.so.6
+#4  0x00007f0cffbad440 in clone3 () from /lib64/libc.so.6
+
+Thread 7 (Thread 0x7f0cf28e3640 (LWP 124862) "QDBusConnection"):
+#0  0x00007f0cffba013f in poll () from /lib64/libc.so.6
+#1  0x00007f0cfeef81fc in g_main_context_iterate.constprop () from /lib64/libglib-2.0.so.0
+#2  0x00007f0cfeea0713 in g_main_context_iteration () from /lib64/libglib-2.0.so.0
+#3  0x00007f0d01a2ba81 in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/Qt/v5//64bit/lib/libcdsQt5Core.so.5
+#4  0x00007f0d019d9a5b in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () from /var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/Qt/v5//64bit/lib/libcdsQt5Core.so.5
+#5  0x00007f0d01802501 in QThread::exec() () from /var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/Qt/v5//64bit/lib/libcdsQt5Core.so.5
+#6  0x00007f0cf3423d46 in ?? () from /var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/Qt/v5//64bit/lib/libcdsQt5DBus.so.5
+#7  0x00007f0d0180660b in ?? () from /var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/Qt/v5//64bit/lib/libcdsQt5Core.so.5
+#8  0x0000000006f43ad5 in create_head(void*) ()
+#9  0x00007f0cffb282fa in start_thread () from /lib64/libc.so.6
+#10 0x00007f0cffbad440 in clone3 () from /lib64/libc.so.6
+
+Thread 6 (Thread 0x7f0cf3147640 (LWP 124861) "QXcbEventReader"):
+#0  0x00007f0cffba013f in poll () from /lib64/libc.so.6
+#1  0x00007f0d001e3f42 in _xcb_conn_wait.part.0 () from /lib64/libxcb.so.1
+#2  0x00007f0d001e590c in xcb_wait_for_event () from /lib64/libxcb.so.1
+#3  0x00007f0cf3517709 in ?? () from /var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/Qt/v5//64bit/lib/libcdsQt5XcbQpa.so.5
+#4  0x00007f0d0180660b in ?? () from /var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/Qt/v5//64bit/lib/libcdsQt5Core.so.5
+#5  0x0000000006f43ad5 in create_head(void*) ()
+#6  0x00007f0cffb282fa in start_thread () from /lib64/libc.so.6
+#7  0x00007f0cffbad440 in clone3 () from /lib64/libc.so.6
+
+Thread 5 (Thread 0x7f0cf3f52640 (LWP 124809) "voltus"):
+#0  0x00007f0cffb72815 in clock_nanosleep@GLIBC_2.2.5 () from /lib64/libc.so.6
+#1  0x00007f0cffb772c7 in nanosleep () from /lib64/libc.so.6
+#2  0x00007f0cffb771fe in sleep () from /lib64/libc.so.6
+#3  0x0000000017bc8010 in syiPeakMem(void*) ()
+#4  0x0000000006f43ad5 in create_head(void*) ()
+#5  0x00007f0cffb282fa in start_thread () from /lib64/libc.so.6
+#6  0x00007f0cffbad440 in clone3 () from /lib64/libc.so.6
+
+Thread 4 (Thread 0x7f0cf5055640 (LWP 124807) "voltus"):
+#0  0x00007f0cffb72815 in clock_nanosleep@GLIBC_2.2.5 () from /lib64/libc.so.6
+#1  0x00007f0cffb772c7 in nanosleep () from /lib64/libc.so.6
+#2  0x0000000008932e5d in rdaiLicRecheck(void*) ()
+#3  0x0000000006f43ad5 in create_head(void*) ()
+#4  0x00007f0cffb282fa in start_thread () from /lib64/libc.so.6
+#5  0x00007f0cffbad440 in clone3 () from /lib64/libc.so.6
+
+Thread 3 (Thread 0x7f0cf5856640 (LWP 124790) "voltus"):
+#0  0x00007f0cffba295d in select () from /lib64/libc.so.6
+#1  0x0000000026d7718b in ProcessInfo::sampleUsage(void*) ()
+#2  0x0000000006f43ad5 in create_head(void*) ()
+#3  0x00007f0cffb282fa in start_thread () from /lib64/libc.so.6
+#4  0x00007f0cffbad440 in clone3 () from /lib64/libc.so.6
+
+Thread 2 (Thread 0x7f0cf6057640 (LWP 124789) "voltus"):
+#0  0x00007f0cffbadc0f in accept () from /lib64/libc.so.6
+#1  0x0000000026d7f527 in ProcessInfo::handleConnection(void*) ()
+#2  0x0000000006f43ad5 in create_head(void*) ()
+#3  0x00007f0cffb282fa in start_thread () from /lib64/libc.so.6
+#4  0x00007f0cffbad440 in clone3 () from /lib64/libc.so.6
+
+Thread 1 (Thread 0x7f0cfde2dc00 (LWP 124654) "voltus"):
+#0  0x00007f0cffb7707f in wait4 () from /lib64/libc.so.6
+#1  0x00007f0cffaec483 in do_system () from /lib64/libc.so.6
+#2  0x0000000017bacdf2 in syStackTraceDump(_IO_FILE*, bool) ()
+#3  0x0000000017bad20a in syStackTrace ()
+#4  0x0000000006bd66a8 in rdaiErrorHandler1(int) ()
+#5  <signal handler called>
+#6  0x0000000006f4a59a in free ()
+#7  0x00007f0ced452d00 in OpenAccess_4::oaObjectBlock::minimizeVM() () from /var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/share/oa/lib/linux_rhel60_64/opt/liboaBase.so
+#8  0x00007f0ceea60d68 in oaG2InBySectionAll(char*, char*, char*, char, char*) () from /var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools.lnx86/ssv/bin/64bit/../../lib/64bit/libtempusoax22.so
+#9  0x00007f0ceea63e78 in oaG2In () from /var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools.lnx86/ssv/bin/64bit/../../lib/64bit/libtempusoax22.so
+#10 0x0000000011668d08 in oaiG2InCmd ()
+#11 0x000000001aad00ba in tcmBaseCmd::execute(Tcl_Interp*, int, char**) ()
+#12 0x000000001aac2ce9 in tcmMgr::cmdParser(void*, Tcl_Interp*, int, char**) ()
+#13 0x00000000281413ab in TclInvokeStringCommand ()
+#14 0x0000000028145ea2 in TclNRRunCallbacks ()
+#15 0x0000000028229fac in AfterProc ()
+#16 0x000000002822a26c in TimerHandlerEventProc ()
+#17 0x000000002820a879 in Tcl_ServiceEvent ()
+#18 0x000000002820ab89 in Tcl_DoOneEvent ()
+#19 0x00007f0d023ed23a in TqEventDispatcher::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools.lnx86/ssv/bin/64bit/../../../lib/64bit/libtq.so
+#20 0x00007f0d019d9a5b in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () from /var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/Qt/v5//64bit/lib/libcdsQt5Core.so.5
+#21 0x00007f0d019e121e in QCoreApplication::exec() () from /var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools/Qt/v5//64bit/lib/libcdsQt5Core.so.5
+#22 0x00007f0d023ec897 in TqApplication::exec() () from /var/RFIC/cadtools/cadence/ssv/SSV_22.10.000_lnx86/tools.lnx86/ssv/bin/64bit/../../../lib/64bit/libtq.so
+#23 0x0000000006bdadcc in edi_app_init(Tcl_Interp*) ()
+#24 0x00000000282052cc in Tcl_MainEx ()
+#25 0x00000000060311b1 in main ()
+A debugging session is active.
+
+	Inferior 1 [process 124654] will be detached.
+
+Quit anyway? (y or n) [answered Y; input not from terminal]
+[Inferior 1 (process 124654) detached]
+[01/23 15:34:23     20s] Crashed in AAE on net Unknown net.
+[01/23 15:34:23     20s] 
+--------------------------------------------------------------------------------
+Exiting Voltus IC Power Integrity Solution on Fri Jan 23 15:34:23 2026
+  Total CPU time:     0:00:40
+  Total real time:    0:01:00
+  Peak memory (main): 1894.28MB
+

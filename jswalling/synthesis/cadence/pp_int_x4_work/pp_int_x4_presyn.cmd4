@@ -1,0 +1,73 @@
+# Cadence Genus(TM) Synthesis Solution, Version 23.10-p004_1, built Feb  1 2024 13:43:46
+
+# Date: Tue Feb 25 22:44:58 2025
+# Host: tc024 (x86_64 w/Linux 5.14.0-362.8.1.el9_3.x86_64) (64cores*128cpus*2physical cpus*AMD EPYC 7702 64-Core Processor 512KB)
+# OS:   Rocky Linux release 9.5 (Blue Onyx)
+
+source ../scripts/syn.tcl
+# entering suspend mode
+get_ports *
+get_port *
+get_port pp_int_x4/*
+get_port pp_int_x4
+get_port Out1*
+get_net Out1*
+get_net Out1_im<1>
+get_net Out1_im[1]
+get_net *
+get_ports pp_int_x4/*
+get_pins *
+get_pins
+get_pins pp_int_x4
+nano ../constraints/pp_int_x4_struct.sdc
+get_ports clk
+nano ../constraints/pp_int_x4_struct.sdc
+read_hdl $rtlList
+elaborate $DESIGN
+get_ports *
+get_ports Out*
+set_dont_touch [get_ports Out*] true
+set_dont_touch [get_ports pp_int_x4/Out*] true
+set_dont_touch [get_module pp_int_x4/Out*] true
+set_dont_touch [get_nets Out*] true
+get_nets Out*
+get_ports Out*
+set_dont_touch [get_pins Out*] true
+get_pins Out*
+get_pins *
+set_dont_touch [get_pins pp_int_x4/Out*] true
+get_pins u_pp_int_x4/Out*
+get_pins u_pp_int_x4/*
+get_pins pp_int_x4/*
+get_pins pp_int_x4/clk
+get_pins pp_int_x4/Out1*
+set_dont_touch [get_pins pp_int_x4/Out*] true
+set_dont_touch [get_nets pp_int_x4/Out*] true
+get_nets *
+get_nets Out*
+get_nets Out7*
+get_nets Out*
+get_nets Out0*
+get_nets Out2*
+get_nets Out1*
+get_nets In1*
+get_ports pp_int_x4
+get_ports pp_int_x4/*
+get_ports pp_int_x4/Out*
+get_ports Out*
+get_nets Out*
+get_pins Out*
+get_pins pp_int_x4/Out*
+get_pins pp_int_x4/*
+get_pin pp_int_x4/*
+prevent true [get_ports Out*]
+preserve true [get_ports Out*]
+get_db ports
+set_db [get_db ports] .dont_touch
+set_db [get_db ports Out*] .dont_touch
+set_db [get_db ports Out*] .dont_touch size_ok
+get_db pins
+get_db pins Out*
+get_db *
+get_db nets Out*
+exit

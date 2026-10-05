@@ -1,0 +1,5 @@
+set_clock_latency -max  0.2  [get_clocks {clk}]
+set_clock_latency -min  0.1845  [get_pins {{signed_mag_5_abs_im_stage1_reg[7]/CK}}] -clock [get_clocks {clk}]
+set_clock_latency -max  0.1845  [get_pins {{signed_mag_5_abs_im_stage1_reg[7]/CK}}]
+set_clock_latency -min  0.185  [get_pins {{signed_mag_5_abs_im_stage1_reg[1]/CK}}] -clock [get_clocks {clk}]
+set_clock_latency -max  0.185  [get_pins {{signed_mag_5_abs_im_stage1_reg[1]/CK}}]

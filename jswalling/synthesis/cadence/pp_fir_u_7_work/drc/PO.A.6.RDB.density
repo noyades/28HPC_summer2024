@@ -1,0 +1,4 @@
+pp_fir_u_7 1000
+PO.A.6:X
+0 0 1 Mar 03 14:18:51 2025
+density {'file_name': '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/synthesis/cadence/pp_fir_u_7_work/drc/PO.A.6.RDB.density', 'is_window_density_check': True, 'set_boundary_constraint': 'backup', 'set_window_height': 20000, 'set_window_width': 20000, 'layer_names': ['CHIPx', 'PMET_PO', 'CHIP']}

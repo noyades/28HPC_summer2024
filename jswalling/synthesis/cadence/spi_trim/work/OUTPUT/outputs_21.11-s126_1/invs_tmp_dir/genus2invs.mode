@@ -1,0 +1,19 @@
+################################################################################
+#
+# Innovus mode file
+# Created by Genus(TM) Synthesis Solution on 05/10/2024 16:54:17
+#
+################################################################################
+[expr {[is_common_ui_mode] ? "eval_legacy" : "eval"}] {
+
+
+# General Mode Settings
+################################################################################
+
+set_global timing_clock_phase_propagation both
+setPlaceMode -reorderScan false
+rcp::push_and_set_state  -format 3 -set_name "genus2invs_modes" {
+{set_global timing_apply_default_primary_input_assertion false}
+{setAnalysisMode -asyncChecks noAsync}
+}
+}

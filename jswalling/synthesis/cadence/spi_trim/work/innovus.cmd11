@@ -1,0 +1,154 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Thu May  9 07:38:41 2024                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.12-s106_1 (64bit) 12/08/2021 18:19 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.12-s106_1 NR211128-2235/21_12-UB (database version 18.20.567) {superthreading v2.17}
+#@(#)CDS: AAE 21.12-s039 (64bit) 12/08/2021 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.12-s043_1 () Dec  1 2021 10:06:22 ( )
+#@(#)CDS: SYNTECH 21.12-s014_1 () Oct 27 2021 04:39:25 ( )
+#@(#)CDS: CPE v21.12-s094
+#@(#)CDS: IQuantus/TQuantus 20.1.2-s624 (64bit) Thu Sep 2 20:12:03 PDT 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+set init_gnd_net VSS
+set init_lef_file {/software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/lef/5.8/gf22nsdvlogl28edl116a_9M_2Mx_5Cx_1Jx_1Ox_LB.lef /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/lef/5.8/gf22nsdvlogl28edl116a.lef}
+set init_verilog topVcoDigital_noRoute.v
+set init_pwr_net VDD
+init_design
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -site GF22_DST -s 90 40 5 5 5 5
+uiSetTool select
+getIoFlowFlag
+fit
+defIn ../def/topVcoDigital_fp.def
+fit
+zoomBox 102.90100 37.83200 93.80300 14.23400
+zoomBox 102.88900 32.13000 98.44200 20.79700
+gui_select -rect {101.05200 30.25300 99.45100 22.91500}
+getPinAssignMode -pinEditInBatch -quiet
+setPinAssignMode -pinEditInBatch true
+editPin -pinWidth 0.1 -pinDepth 0.52 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 3 -spreadType center -spacing 0.4 -pin {{vcoTrim[0]} {vcoTrim[1]} {vcoTrim[2]} {vcoTrim[3]} {vcoTrim[4]} {vcoTrim[5]} {vcoTrim[6]} {vcoTrim[7]} {vcoTrim[8]} {vcoTrim[9]} {vcoTrim[10]} {vcoTrim[11]} {vcoTrim[12]} {vcoTrim[13]} {vcoTrim[14]} {vcoTrim[15]}}
+setPinAssignMode -pinEditInBatch false
+deselectAll
+fit
+zoomBox -3.14700 36.12600 6.52000 21.91100
+gui_select -rect {-1.43500 32.15100 1.52500 27.98200}
+getPinAssignMode -pinEditInBatch -quiet
+setPinAssignMode -pinEditInBatch true
+editPin -pinWidth 0.1 -pinDepth 0.52 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 3 -spreadType center -spacing 0.4 -pin {clk mosi rst sclk ss}
+setPinAssignMode -pinEditInBatch false
+deselectAll
+fit
+zoomBox -2.80000 -13.40800 90.60400 66.10000
+zoomBox -1.54900 -10.92500 77.84400 56.65700
+zoomBox 1.10000 -4.91300 49.85800 36.59100
+zoomBox 2.78000 -1.33500 32.72300 24.15300
+zoomBox 3.81200 0.83100 22.20100 16.48400
+zoomBox 2.28700 -1.42700 32.23100 24.06200
+zoomBox 1.59000 -2.45900 36.81800 27.52800
+zoomBox 0.76900 -3.67300 42.21400 31.60600
+zoomBox -0.19600 -5.11100 48.56300 36.39400
+zoomBox -4.23900 -11.13600 75.15700 56.44800
+zoomBox -6.08800 -13.89100 87.31900 65.62000
+zoomBox -8.26300 -17.13200 101.62800 76.41000
+zoomBox -10.82200 -20.94600 118.46200 89.10400
+setEndCapMode -reset
+setEndCapMode -rightEdge UDBSLT28_CAPR9_1 -leftEdge UDBSLT28_CAPL9_1 -topEdge UDBSLT28_CAPT_1 -bottomEdge UDBSLT28_CAPB_1 -rightTopCorner UDBSLT28_CAPTOUCR9_1 -rightBottomCorner UDBSLT28_CAPBOUCR9_1 -leftTopCorner UDBSLT28_CAPTOUCL9_1 -leftBottomCorner UDBSLT28_CAPBOUCL9_1
+addEndCap -prefix ENDCAP
+addWellTap -cell UDBSLT28_TAPPN_DN -cellInterval 23 -inRowOffset 18 -prefix WELLTAP
+zoomBox 1.55400 37.42400 18.27900 27.72300
+zoomBox 4.25900 34.60700 7.67700 30.97200
+fit
+zoomBox 23.72000 29.87100 15.61800 4.85200
+fit
+gui_select -rect {2.68100 63.56200 98.49400 -1.82900}
+deleteSelectedFromFPlan
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -site GF22_DST -s 89.91 50.96 4.988 4.96 4.998 4.96
+uiSetTool select
+getIoFlowFlag
+fit
+gui_select -rect {102.73800 13.66800 96.76900 -5.94500}
+deselectAll
+getPinAssignMode -pinEditInBatch -quiet
+setPinAssignMode -pinEditInBatch true
+editPin -pinWidth 0.1 -pinDepth 0.52 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 3 -spreadType center -spacing -0.45 -pin {{vcoTrim[0]} {vcoTrim[1]} {vcoTrim[2]} {vcoTrim[3]} {vcoTrim[4]} {vcoTrim[5]} {vcoTrim[6]} {vcoTrim[7]} {vcoTrim[8]} {vcoTrim[9]} {vcoTrim[10]} {vcoTrim[11]} {vcoTrim[12]} {vcoTrim[13]} {vcoTrim[14]} {vcoTrim[15]}}
+setPinAssignMode -pinEditInBatch false
+getPinAssignMode -pinEditInBatch -quiet
+setPinAssignMode -pinEditInBatch true
+editPin -pinWidth 0.1 -pinDepth 0.52 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 3 -spreadType center -spacing 0.45 -pin {clk mosi rst sclk ss}
+setPinAssignMode -pinEditInBatch false
+getPinAssignMode -pinEditInBatch -quiet
+setPinAssignMode -pinEditInBatch true
+editPin -pinWidth 0.1 -pinDepth 0.52 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -edge 2 -layer 3 -spreadType center -spacing -0.45 -pin {{vcoTrim[0]} {vcoTrim[1]} {vcoTrim[2]} {vcoTrim[3]} {vcoTrim[4]} {vcoTrim[5]} {vcoTrim[6]} {vcoTrim[7]} {vcoTrim[8]} {vcoTrim[9]} {vcoTrim[10]} {vcoTrim[11]} {vcoTrim[12]} {vcoTrim[13]} {vcoTrim[14]} {vcoTrim[15]}}
+setPinAssignMode -pinEditInBatch false
+getPinAssignMode -pinEditInBatch -quiet
+setPinAssignMode -pinEditInBatch true
+editPin -pinWidth 0.1 -pinDepth 0.52 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -edge 2 -layer 3 -spreadType center -spacing -0.45 -pin {{vcoTrim[0]} {vcoTrim[1]} {vcoTrim[2]} {vcoTrim[3]} {vcoTrim[4]} {vcoTrim[5]} {vcoTrim[6]} {vcoTrim[7]} {vcoTrim[8]} {vcoTrim[9]} {vcoTrim[10]} {vcoTrim[11]} {vcoTrim[12]} {vcoTrim[13]} {vcoTrim[14]} {vcoTrim[15]}}
+setPinAssignMode -pinEditInBatch false
+zoomBox 10.95300 -13.03700 104.33700 66.45400
+zoomBox 24.50700 -10.30100 103.88400 57.26700
+zoomBox 36.02800 -7.97500 103.49900 49.45800
+zoomBox 66.90100 -1.71800 102.12300 28.26400
+zoomBox 71.95800 -0.69300 101.89700 24.79200
+zoomBox 79.71800 1.02700 101.34900 19.44000
+gui_select -rect {99.64200 6.65200 98.10300 12.92000}
+deselectAll
+gui_select -rect {99.58600 6.70800 97.59900 11.12900}
+zoomBox 76.28600 -0.14300 101.73400 21.51900
+zoomBox 72.05100 -1.49700 101.99000 23.98800
+zoomBox 67.06100 -3.07000 102.28400 26.91300
+gui_select -rect {101.14500 8.09400 98.13800 -1.24700}
+deselectAll
+getPinAssignMode -pinEditInBatch -quiet
+setPinAssignMode -pinEditInBatch true
+editPin -pinWidth 0.1 -pinDepth 0.52 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -edge 2 -layer 3 -spreadType center -spacing 0.4 -pin {}
+setPinAssignMode -pinEditInBatch false
+gui_select -rect {101.60100 8.82300 96.86200 -2.97900}
+gui_select -rect {100.23400 5.26900 100.09700 11.96700}
+deselectAll
+gui_select -rect {101.64600 8.86900 96.40600 -3.38900}
+uiSetTool moveWire
+deselectAll
+getPinAssignMode -pinEditInBatch -quiet
+setPinAssignMode -pinEditInBatch true
+editPin -pinWidth 0.1 -pinDepth 0.52 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -edge 2 -layer 3 -spreadType center -spacing 0.4 -pin {{vcoTrim[0]} {vcoTrim[1]} {vcoTrim[2]} {vcoTrim[3]} {vcoTrim[4]} {vcoTrim[5]} {vcoTrim[6]} {vcoTrim[7]} {vcoTrim[8]} {vcoTrim[9]} {vcoTrim[10]} {vcoTrim[11]} {vcoTrim[12]} {vcoTrim[13]} {vcoTrim[14]} {vcoTrim[15]}}
+setPinAssignMode -pinEditInBatch false
+zoomBox 41.77500 -15.96400 109.25300 41.47500
+zoomBox 8.53500 -33.13300 118.41400 60.39900
+zoomBox 104.76800 35.52300 97.09200 24.86200
+zoomBox 100.77600 34.14600 99.18800 32.91400
+zoomBox 98.32800 31.77500 101.91100 34.82500
+zoomBox 96.95000 30.04000 103.81700 35.88500
+fit
+setEndCapMode -reset
+setEndCapMode -rightEdge UDBSLT28_CAPR9_1 -leftEdge UDBSLT28_CAPL9_1 -topEdge UDBSLT28_CAPT_1 -bottomEdge UDBSLT28_CAPB_1 -rightTopCorner UDBSLT28_CAPTOUCR9_1 -rightBottomCorner UDBSLT28_CAPBOUCR9_1 -leftTopCorner UDBSLT28_CAPTOUCL9_1 -leftBottomCorner UDBSLT28_CAPBOUCL9_1
+addEndCap -prefix ENDCAP
+addWellTap -cell UDBSLT28_TAPPN_DN -cellInterval 23 -inRowOffset 18 -prefix WELLTAP
+zoomBox 4.51100 1.89400 83.88800 69.46200
+zoomBox 8.22300 9.10200 75.69400 66.53500
+zoomBox 16.00800 29.54400 51.22900 59.52500
+zoomBox 17.27900 32.89300 47.21700 58.37700
+zoomBox 18.33600 35.75700 43.78400 57.41900
+zoomBox 20.85400 43.78200 34.13800 55.09000
+zoomBox 21.26600 45.09700 32.55800 54.70900
+zoomBox 22.38200 48.65700 28.27800 53.67600
+zoomBox 21.26500 45.09500 32.55900 54.70900
+fit
+zoomBox 2.53900 11.67900 10.78200 0.16600
+zoomBox 4.46500 7.51500 9.10100 3.98000
+selectInst ENDCAP_3976
+zoomBox 4.21200 3.27600 9.66600 7.91900
+zoomBox 3.56400 2.00200 11.11300 8.42800
+zoomBox 3.15200 1.19200 12.03300 8.75200
+zoomBox 2.66700 0.23900 13.11600 9.13300
+zoomBox 1.42600 -2.20200 15.88900 10.10900
+zoomBox -2.43000 -10.30600 25.27700 13.27900

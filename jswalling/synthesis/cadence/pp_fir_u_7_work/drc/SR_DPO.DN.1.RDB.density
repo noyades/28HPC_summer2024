@@ -1,0 +1,13 @@
+pp_fir_u_7 1000
+SR_DPO.DN.1:A
+1 1 1 Mar 03 14:19:19 2025
+density {'file_name': '/projects/eddie_pritchard/RFIC/projects/28HPC_summer2024/jswalling/synthesis/cadence/pp_fir_u_7_work/drc/SR_DPO.DN.1.RDB.density', 'is_window_density_check': False, 'layer_names': ['CHIPx', 'SR_DPO.DN.1:SRDPOx', 'CHIP_ODPO_RING']}
+p 1 4
+DV 0
+DA 38538.9
+DA SR_DPO.DN.1:SRDPOx 0
+DA CHIP_ODPO_RING 925.123
+-1735 -1600
+-1735 181400
+208860 181400
+208860 -1600

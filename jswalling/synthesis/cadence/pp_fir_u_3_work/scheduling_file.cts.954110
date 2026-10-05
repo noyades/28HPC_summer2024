@@ -1,0 +1,9 @@
+MacroModel pin signed_mag_3_abs_im_stage1_reg[5]/CK  20.20ps 20.20ps 20.20ps 20.20ps 0pf view_wcl_slow
+MacroModel pin signed_mag_3_abs_im_stage1_reg[5]/CK  12.00ps 12.00ps 12.00ps 12.00ps 0pf view_wcl_fast
+MacroModel pin signed_mag_3_abs_im_stage1_reg[5]/CK  15.40ps 15.40ps 15.40ps 15.40ps 0pf view_wcl_typical
+MacroModel pin signed_mag_3_abs_im_stage1_reg[2]/CK  19.60ps 19.60ps 19.60ps 19.60ps 0pf view_wcl_slow
+MacroModel pin signed_mag_3_abs_im_stage1_reg[2]/CK  11.70ps 11.70ps 11.70ps 11.70ps 0pf view_wcl_fast
+MacroModel pin signed_mag_3_abs_im_stage1_reg[2]/CK  14.90ps 14.90ps 14.90ps 14.90ps 0pf view_wcl_typical
+MacroModel pin signed_mag_3_abs_im_stage1_reg[4]/CK  19.50ps 19.50ps 19.50ps 19.50ps 0pf view_wcl_slow
+MacroModel pin signed_mag_3_abs_im_stage1_reg[4]/CK  11.70ps 11.70ps 11.70ps 11.70ps 0pf view_wcl_fast
+MacroModel pin signed_mag_3_abs_im_stage1_reg[4]/CK  14.90ps 14.90ps 14.90ps 14.90ps 0pf view_wcl_typical

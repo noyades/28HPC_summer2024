@@ -1,0 +1,44 @@
+[01/27 08:33:51      0s] 
+[01/27 08:33:51      0s] Cadence Voltus(TM) IC Power Integrity Solution.
+[01/27 08:33:51      0s] Copyright 2025 Cadence Design Systems, Inc. All rights reserved worldwide.
+[01/27 08:33:51      0s] 
+[01/27 08:33:51      0s] Version:	v25.10-p001_1, built Fri Apr 11 11:58:59 PDT 2025
+[01/27 08:33:51      0s] Options:	-nowin 
+[01/27 08:33:51      0s] Date:		Tue Jan 27 08:33:51 2026
+[01/27 08:33:51      0s] Host:		lnx-prd-05.ece.vt.edu (x86_64 w/Linux 5.15.0-315.196.5.2.el9uek.x86_64) (16cores*32cpus*AMD EPYC 7313 16-Core Processor 512KB)
+[01/27 08:33:51      0s] OS:		Oracle Linux Server 9.7
+[01/27 08:33:51      0s] 
+[01/27 08:33:51      0s] License:
+[01/27 08:33:51      0s] 		[08:33:51.268193] Configured Lic search path (25.01-s002): 27002@license.ece.vt.edu
+
+[01/27 08:33:51      0s] 		vtsxl	Voltus Power Integrity Solution XL	25.1	checkout succeeded
+[01/27 08:33:51      0s] 		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[01/27 08:34:01     10s] Memory management switch to non-aggressive memory release mode.
+[01/27 08:34:01     10s] 
+[01/27 08:34:01     10s] OS Mmap count monitoring thread starts. Limit of OS Mmap count is 65530
+[01/27 08:34:01     10s] 
+[01/27 08:34:02     10s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Voltus IC Power Integrity Solution v25.10-p001_1 (64bit) 04/11/2025 11:58 (Linux 4.18.0-305.el8.x86_64)
+[01/27 08:34:03     12s] @(#)CDS: NanoRoute 25.10-p001_1 NR250317-0405/25_10-UB (database version 18.20.663) {superthreading v2.20}
+[01/27 08:34:03     12s] @(#)CDS: AAE 25.10-b008 (64bit) 04/11/2025 (Linux 4.18.0-305.el8.x86_64)
+[01/27 08:34:03     12s] @(#)CDS: CTE 25.10-b014_1 () Mar 28 2025 03:11:49 ( )
+[01/27 08:34:03     12s] @(#)CDS: SYNTECH 25.10-b006_1 () Mar 13 2025 03:32:26 ( )
+[01/27 08:34:03     12s] @(#)CDS: CPE v25.10-b011
+[01/27 08:34:03     12s] @(#)CDS: OA 22.62-p005 Fri Dec 13 02:00:13 2024
+[01/27 08:34:03     12s] @(#)CDS: SGN 23.10-d005 (03-Oct-2023) (64 bit executable, TkQt5.15.9)
+[01/27 08:34:03     12s] @(#)CDS: RCDB 11.15.0
+[01/27 08:34:03     12s] @(#)CDS: STYLUS 25.10-b003_1 (03/20/2025 14:55 PDT)
+[01/27 08:34:03     12s] @(#)CDS: TCDB v24.10-d018
+[01/27 08:34:03     12s] Change the soft stacksize limit to 0.2%RAM (255 mbytes). Set global soft_stack_size_limit to change the value.
+[01/27 08:34:03     12s] **INFO: (TMPDIR-1001): The environment variable TMPDIR is not set.
+Create and set the environment variable TMPDIR to '/tmp/ssv_tmpdir_2245842_bccae402-307e-4757-a5d4-d91dc81c5f79_jUYoO2'.
+environment variable TMPDIR is '/tmp/ssv_tmpdir_2245842_bccae402-307e-4757-a5d4-d91dc81c5f79_jUYoO2'.
+[01/27 08:34:34     12s] <CMD> write_flow_template -directory .
+[01/27 08:34:34     12s] Saved Foundation Flow Templates to .
+[01/27 08:34:39     13s] <CMD> exit
+[01/27 08:34:39     13s] 
+--------------------------------------------------------------------------------
+Exiting Voltus IC Power Integrity Solution on Tue Jan 27 08:34:39 2026
+  Total CPU time:     0:00:13
+  Total real time:    0:00:53
+  Peak memory (main): 1665.05MB
+

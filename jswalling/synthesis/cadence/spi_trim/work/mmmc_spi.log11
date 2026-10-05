@@ -1,0 +1,163 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Version: 21.11-s126_1, built Mon Dec 20 09:52:46 PST 2021
+Options: -files ../scripts/run.tcl -log mmmc_spi.log 
+Date:    Fri May 10 15:00:54 2024
+Host:    cluster12 (x86_64 w/Linux 3.10.0-1160.102.1.el7.x86_64) (6cores*24cpus*2physical cpus*Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz 15360KB) (40983880KB)
+PID:     480
+OS:      CentOS Linux release 7.9.2009 (Core)
+
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (20 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source ../scripts/run.tcl
+#@ Begin verbose source ../scripts/run.tcl
+@file(run.tcl) 1: if {[file exists /proc/cpuinfo]} {
+  sh grep "model name" /proc/cpuinfo
+  sh grep "cpu MHz"    /proc/cpuinfo
+}
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+cpu MHz		: 2301.513
+cpu MHz		: 2299.926
+cpu MHz		: 2335.449
+cpu MHz		: 2299.926
+cpu MHz		: 2300.048
+cpu MHz		: 2299.926
+cpu MHz		: 2351.684
+cpu MHz		: 2299.926
+cpu MHz		: 2310.058
+cpu MHz		: 2299.926
+cpu MHz		: 2338.378
+cpu MHz		: 2299.926
+cpu MHz		: 2300.170
+cpu MHz		: 2299.926
+cpu MHz		: 2299.926
+cpu MHz		: 2299.926
+cpu MHz		: 2375.366
+cpu MHz		: 2300.170
+cpu MHz		: 2301.269
+cpu MHz		: 2299.926
+cpu MHz		: 2301.879
+cpu MHz		: 2299.926
+cpu MHz		: 2300.292
+cpu MHz		: 2299.926
+@file(run.tcl) 6: puts "Hostname : [info hostname]"
+Hostname : cluster12.lan.ece
+@file(run.tcl) 8: set DESIGN topVcoDigital
+@file(run.tcl) 9: set SYN_EFF medium
+@file(run.tcl) 10: set MAP_EFF medium
+@file(run.tcl) 11: set OPT_EFF medium
+@file(run.tcl) 13: set RELEASE [lindex [get_db program_version] end]
+@file(run.tcl) 14: set _OUTPUTS_PATH OUTPUT/outputs_${RELEASE}
+@file(run.tcl) 15: set _REPORTS_PATH OUTPUT/reports_${RELEASE}
+@file(run.tcl) 16: set _LOG_PATH OUTPUT/logs_${RELEASE}
+@file(run.tcl) 18: if {![file exists ${_OUTPUTS_PATH}]} {
+  file mkdir ${_OUTPUTS_PATH}
+  puts "Creating directory ${_OUTPUTS_PATH}"
+}
+@file(run.tcl) 23: if {![file exists ${_REPORTS_PATH}]} {
+  file mkdir ${_REPORTS_PATH}
+  puts "Creating directory ${_REPORTS_PATH}"
+}
+@file(run.tcl) 28: if {![file exists ${_LOG_PATH}]} {
+  file mkdir ${_LOG_PATH}
+  puts "Creating directory ${_REPORTS_PATH}"
+}
+@file(run.tcl) 33: set rtlDir ../rtl
+@file(run.tcl) 35: set_db init_lib_search_path {. /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/}
+  Setting attribute of root '/': 'init_lib_search_path' = . /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/
+@file(run.tcl) 36: set_db script_search_path { . }
+  Setting attribute of root '/': 'script_search_path' =  . 
+@file(run.tcl) 37: set_db init_hdl_search_path {. ../rtl}
+  Setting attribute of root '/': 'init_hdl_search_path' = . ../rtl
+@file(run.tcl) 39: set_db max_cpus_per_server 8
+  Setting attribute of root '/': 'max_cpus_per_server' = 8
+@file(run.tcl) 41: set_db syn_generic_effort $SYN_EFF
+  Setting attribute of root '/': 'syn_generic_effort' = medium
+@file(run.tcl) 42: set_db syn_map_effort $MAP_EFF
+  Setting attribute of root '/': 'syn_map_effort' = medium
+@file(run.tcl) 43: set_db syn_opt_effort $OPT_EFF
+  Setting attribute of root '/': 'syn_opt_effort' = medium
+@file(run.tcl) 45: set_db information_level 9
+  Setting attribute of root '/': 'information_level' = 9
+@file(run.tcl) 47: set_db tns_opto true
+  Setting attribute of root '/': 'tns_opto' = true
+@file(run.tcl) 49: set_db opt_spatial_effort standard
+  Setting attribute of root '/': 'opt_spatial_effort' = standard
+@file(run.tcl) 51: set_db invs_temp_dir ${_OUTPUTS_PATH}/invs_tmp_dir
+  Setting attribute of root '/': 'invs_temp_dir' = OUTPUT/outputs_21.11-s126_1/invs_tmp_dir
+@file(run.tcl) 53: puts "Now load RTL LIST"
+Now load RTL LIST
+@file(run.tcl) 54: set rtlList "\
+${rtlDir}/topVcoDigital.v \
+${rtlDir}/vcoDecoder.v \
+${rtlDir}/spi_slave.v \
+${rtlDir}/fifo_32b.v \
+${rtlDir}/fifoDataRegister.v \
+${rtlDir}/clkDiv.v \
+${rtlDir}/trimRegs.v \
+"
+@file(run.tcl) 64: suspend
+
+Execution has been suspended temporarily.
+Enter 'resume' to continue.
+Enter 'stop_suspend' to stop script execution
+[SUSPEND]genus:root: 1> resume
+
+Resuming...@file(run.tcl) 67: read_mmmc ../scripts/mmmc.tcl
+  Setting attribute of root '/': 'is_read_mmmc_flow' = true
+Sourcing '../scripts/mmmc.tcl' (Fri May 10 15:01:23 EDT 2024)...
+#@ Begin verbose source ../scripts/mmmc.tcl
+@file(mmmc.tcl) 1: create_library_set -name wcl_slow -timing {
+  /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdslogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/svt/latest/liberty/logic_synth_lvf/gf22nsdslogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib
+}
+Error   : File error. [FILE-100] [create_library_set]
+        : Cannot open file '/software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdslogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/svt/latest/liberty/logic_synth_lvf/gf22nsdslogl28edl116a_SSG_0P72V_0P00V_0P00V_0P00V_125C.lib'. File not found.
+        : Make sure that the file is a readable regular file and has the specified name.
+Error   : An invalid file was specified for a library_set. [LBR-615] [create_library_set]
+        : An invalid value was specified for the '-timing' option when creating the 'wcl_slow' library_set.
+        : You either specified no file or a non-existing file. Specify an existing file name with the correct format.
+#@ End verbose source ../scripts/mmmc.tcl
+1
+#@ End verbose source ../scripts/run.tcl
+Failed on read_mmmc
+Encountered problems processing file: ../scripts/run.tcl
+WARNING: This version of the tool is 872 days old.
+@genus:root: 1> 
+@genus:root: 1> exit
+Normal exit.

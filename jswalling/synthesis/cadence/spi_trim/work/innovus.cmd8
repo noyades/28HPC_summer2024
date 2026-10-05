@@ -1,0 +1,86 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Wed May  8 15:59:54 2024                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.12-s106_1 (64bit) 12/08/2021 18:19 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.12-s106_1 NR211128-2235/21_12-UB (database version 18.20.567) {superthreading v2.17}
+#@(#)CDS: AAE 21.12-s039 (64bit) 12/08/2021 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.12-s043_1 () Dec  1 2021 10:06:22 ( )
+#@(#)CDS: SYNTECH 21.12-s014_1 () Oct 27 2021 04:39:25 ( )
+#@(#)CDS: CPE v21.12-s094
+#@(#)CDS: IQuantus/TQuantus 20.1.2-s624 (64bit) Thu Sep 2 20:12:03 PDT 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+encMessage warning 0
+encMessage debug 0
+is_common_ui_mode
+restoreDesign /home/micsTapeouts/projects/22FDX_winter2023/jswalling/genus/work/topPLLDigital_genus_22.enc.dat topPLLDigital
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+zoomBox -122.23800 -15.28400 324.04000 343.05300
+zoomBox -95.78200 -10.03900 226.65400 248.86000
+zoomBox -63.01600 -1.56100 135.00100 157.43600
+zoomBox -45.99300 3.56500 75.61500 101.21000
+zoomBox -42.76800 4.74100 60.59900 87.73900
+zoomBox -40.02800 5.74000 47.83500 76.28900
+zoomBox -37.69800 6.63800 36.98600 66.60500
+zoomBox -34.03400 8.05000 19.92500 51.37600
+zoomBox -32.60300 8.60200 13.26200 45.42900
+zoomBox -31.38700 9.07000 7.59900 40.37400
+setDrawView place
+fit
+zoomBox 55.00300 406.30900 178.99500 303.93000
+zoomBox 127.09600 382.35800 136.01900 349.71900
+zoomBox 126.46700 377.04300 129.53600 370.45500
+zoomBox 126.33900 375.60800 127.32100 374.12700
+selectWire 126.7080 375.0630 299.5700 375.1070 3 {dsm_out[2]}
+streamOut topPLLDigital_genus_22.gds -mapFile /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/lef/streamout.map_colored_9M_2Mx_5Cx_1Jx_1Ox_LB -libName DesignLib -units 1000 -mode ALL
+fit
+zoomBox -4.71800 456.36100 14.62000 433.61000
+fit
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer LB -stacked_via_bottom_layer M1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addRing -nets {VDD VSS} -type core_rings -follow core -layer {top M1 bottom M1 left M2 right M2} -width {top 0.6 bottom 0.6 left 0.6 right 0.6} -spacing {top 0.6 bottom 0.6 left 0.6 right 0.6} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+setSrouteMode -viaConnectToShape { noshape }
+sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { M1(1) LB(10) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { M1(1) LB(10) } -nets { VDD VSS } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { M1(1) LB(10) }
+zoomBox -3.58000 455.22300 33.95900 408.58400
+setSrouteMode -viaConnectToShape { noshape }
+sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { M1(1) LB(10) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { M1(1) LB(10) } -nets { VDD VSS } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { M1(1) LB(10) }
+fit
+zoomBox -11.54300 29.78300 47.60900 -12.30600
+zoomBox -6.48700 14.33700 22.86000 -0.04600
+zoomBox 5.30600 7.10700 9.14700 3.80300
+zoomBox 5.86200 5.87200 6.57400 4.79600
+zoomBox 4.59200 4.46400 8.20400 6.52500
+zoomBox 4.34000 4.34100 8.58900 6.76600
+zoomBox 2.78600 3.56100 10.92900 8.20800
+zoomBox 1.52100 2.91000 12.79200 9.34200
+fit
+setSrouteMode -viaConnectToShape { noshape }
+sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { M1(1) LB(10) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { M1(1) LB(10) } -nets { VDD VSS } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { M1(1) LB(10) }
+zoomBox -9.26800 460.91100 46.47200 419.96000
+zoomBox 1.03800 447.29200 10.14900 441.56300
+streamOut topPLLDigital_genus_22.gds -mapFile /software/RFIC/PDK/globalFoundries/22FDX-EXT/std_cells/v-logic_gf22nsdvlogl28edl116a/DesignWare_logic_libs/globalfoundaries22nhsda/28hd/edl/ulvt/latest/lef/streamout.map_colored_9M_2Mx_5Cx_1Jx_1Ox_LB -libName DesignLib -units 1000 -mode ALL

@@ -1,0 +1,191 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[10:57:23.284049] Configured Lic search path (21.01-s002): 27002@license.ece.vt.edu
+
+Version: 22.10-p001_1, built Thu Sep 29 14:11:24 PDT 2022
+Options: -log syn_filter1_pre.log 
+Date:    Thu Dec 05 10:57:23 2024
+Host:    cluster15 (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (6cores*24cpus*2physical cpus*Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz 15360KB) (40983880KB)
+PID:     34018
+OS:      CentOS Linux release 7.9.2009 (Core)
+
+Checking out license: Genus_Synthesis
+[10:57:23.211417] Periodic Lic check successful
+[10:57:23.211435] Feature usage summary:
+[10:57:23.211435] Genus_Synthesis
+
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Finished executable startup (1 second elapsed).
+
+Loading tool scripts...
+Finished loading tool scripts (26 seconds elapsed).
+
+WARNING: This version of the tool is 797 days old.
+@genus:root: 1> source ../scripts/syn.tcl
+Sourcing '../scripts/syn.tcl' (Thu Dec 05 10:58:23 EST 2024)...
+#@ Begin verbose source ../scripts/syn.tcl
+@file(syn.tcl) 1: if {[file exists /proc/cpuinfo]} {
+  sh grep "model name" /proc/cpuinfo
+  sh grep "cpu MHz"    /proc/cpuinfo
+}
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+cpu MHz		: 1695.556
+cpu MHz		: 1586.914
+cpu MHz		: 1572.387
+cpu MHz		: 2300.292
+cpu MHz		: 1699.829
+cpu MHz		: 1898.193
+cpu MHz		: 1695.312
+cpu MHz		: 1547.241
+cpu MHz		: 1691.528
+cpu MHz		: 1710.449
+cpu MHz		: 1793.457
+cpu MHz		: 2273.803
+cpu MHz		: 1506.713
+cpu MHz		: 2184.204
+cpu MHz		: 1689.208
+cpu MHz		: 2295.532
+cpu MHz		: 1760.620
+cpu MHz		: 1601.318
+cpu MHz		: 1695.556
+cpu MHz		: 1897.827
+cpu MHz		: 1750.610
+cpu MHz		: 1892.944
+cpu MHz		: 1696.411
+cpu MHz		: 2301.269
+@file(syn.tcl) 6: puts "Hostname : [info hostname]"
+Hostname : cluster15.lan.ece
+@file(syn.tcl) 7: set_units -time ns -resistance kOhm -capacitance pF -voltage V -current mA
+Warning : Unsupported SDC command option. [SDC-201] [set_units]
+        : The 'set_units' command does not support the  '-resistance', '-voltage', '-current' and the '-power' options.
+        : The current version does not support this SDC command option.  However, future versions may be enhanced to support this option.
+Error   : No designs are available. A design must first be read in and elaborated. [TUI-10] [set_units]
+        : There is no design here.
+        : A design must first be read in with 'read_hdl' command and elaborated with 'elaborate' command.
+#@ End verbose source ../scripts/syn.tcl
+Failed on find_unique_design
+@genus:root: 2> source ../scripts/syn.tcl
+Sourcing '../scripts/syn.tcl' (Thu Dec 05 10:59:43 EST 2024)...
+#@ Begin verbose source ../scripts/syn.tcl
+@file(syn.tcl) 1: if {[file exists /proc/cpuinfo]} {
+  sh grep "model name" /proc/cpuinfo
+  sh grep "cpu MHz"    /proc/cpuinfo
+}
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+model name	: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+cpu MHz		: 1279.296
+cpu MHz		: 1612.182
+cpu MHz		: 1284.912
+cpu MHz		: 1698.120
+cpu MHz		: 1369.873
+cpu MHz		: 1547.607
+cpu MHz		: 1399.536
+cpu MHz		: 1695.800
+cpu MHz		: 1388.183
+cpu MHz		: 1381.469
+cpu MHz		: 1291.381
+cpu MHz		: 1613.281
+cpu MHz		: 1385.864
+cpu MHz		: 1387.573
+cpu MHz		: 1398.803
+cpu MHz		: 1234.130
+cpu MHz		: 1335.449
+cpu MHz		: 1617.309
+cpu MHz		: 1288.452
+cpu MHz		: 1392.822
+cpu MHz		: 1397.705
+cpu MHz		: 1265.380
+cpu MHz		: 1399.658
+cpu MHz		: 1616.088
+@file(syn.tcl) 6: puts "Hostname : [info hostname]"
+Hostname : cluster15.lan.ece
+@file(syn.tcl) 7: set_units -time ns -capacitance pF #-resistance kOhm -capacitance pF -voltage V -current mA
+Error   : A command argument did not match any of the acceptable command options. [TUI-64] [parse_options]
+        : The argument in question is '#-resistance'.
+        : Check the command usage and correct the input to the command.
+
+Usage: set_units [-capacitance <string>] [-resistance <string>] [-time <string>] [-voltage <string>] [-current <string>] [-power <string>]
+
+    [-capacitance <string>]:
+        the format for specifying the capacitance unit is (optional float)(optional scale_value f|p|n|u|m|k|M)F 
+    [-resistance <string>]:
+        the format for specifying the resistance unit is (optional float)(optional scale_value f|p|n|u|m|k|M)Ohm 
+    [-time <string>]:
+        the format for specifying the time unit is (optional float)(optional scale_value f|p|n|u|m|k|M)s 
+    [-voltage <string>]:
+        the format for specifying the voltage unit is (optional float)(optional scale_value f|p|n|u|m|k|M)V 
+    [-current <string>]:
+        the format for specifying the current unit is (optional float)(optional scale_value f|p|n|u|m|k|M)A 
+    [-power <string>]:
+        the format for specifying the power unit is (optional float)(optional scale_value f|p|n|u|m|k|M)W 
+#@ End verbose source ../scripts/syn.tcl
+@genus:root: 3> set_units -time ns -capacitance pF ;#-resistance kOhm -capacitance pF -voltage V -current mA
+Error   : No designs are available. A design must first be read in and elaborated. [TUI-10] [set_units]
+        : There is no design here.
+Failed on find_unique_design
+@genus:root: 4> set_units -time ns -capacitance pF ;#-resistance kOhm -capacitance pF -voltage V -current mA
+Error   : No designs are available. A design must first be read in and elaborated. [TUI-10] [set_units]
+        : There is no design here.
+Failed on find_unique_design
+@genus:root: 5> exit
+
+Lic Summary:
+[11:01:35.396434] Cdslmd servers: license
+[11:01:35.396458] Feature usage summary:
+[11:01:35.396459] Genus_Synthesis
+
+Normal exit.

@@ -1,0 +1,132 @@
+VERSION 5.8 ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+
+DESIGN topPLLDigital_fp ;
+
+UNITS DISTANCE MICRONS 1000 ;
+
+COMPONENTMASKSHIFT M2 M1 ;
+PINS 12 ;
+- dsm_out[3] + NET dsm_out[3]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER C1 ( 0 0 ) ( 520 100 )
+    + PLACED ( 299480 384500 ) N
+  + PORT ;
+- dsm_out[0] + NET dsm_out[0]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER C1 ( 0 0 ) ( 520 100 )
+    + PLACED ( 299480 356120 ) N
+  + PORT ;
+- dsm_out[2] + NET dsm_out[2]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER C1 ( 0 0 ) ( 520 100 )
+    + PLACED ( 299480 375040 ) N
+  + PORT ;
+- dsm_out[1] + NET dsm_out[1]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER C1 ( 0 0 ) ( 520 100 )
+    + PLACED ( 299480 365580 ) N
+  + PORT ;
+- dsm_out[4] + NET dsm_out[4]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER C1 ( 0 0 ) ( 520 100 )
+    + PLACED ( 299480 405145 ) N
+  + PORT ;
+- modclk + NET modclk
+  + DIRECTION INOUT
+  + PORT
+    + LAYER C1 ( 0 0 ) ( 520 100 )
+    + PLACED ( 0 321000 ) N ;
+- miso + NET miso
+  + DIRECTION INOUT
+  + PORT
+    + LAYER C1 ( 0 0 ) ( 520 100 )
+    + PLACED ( 0 320200 ) N ;
+- mosi + NET mosi
+  + DIRECTION INOUT
+  + PORT
+    + LAYER C1 ( 0 0 ) ( 520 100 )
+    + PLACED ( 0 319800 ) N ;
+- sclk + NET sclk
+  + DIRECTION INOUT
+  + PORT
+    + LAYER C1 ( 0 0 ) ( 520 100 )
+    + PLACED ( 0 319400 ) N ;
+- rst + NET rst
+  + DIRECTION INOUT
+  + PORT
+    + LAYER C1 ( 0 0 ) ( 520 100 )
+    + PLACED ( 0 319000 ) N ;
+- clk + NET clk
+  + DIRECTION INOUT
+  + PORT
+    + LAYER C1 ( 0 0 ) ( 520 100 )
+    + PLACED ( 0 318600 ) N ;
+- ss + NET ss
+  + DIRECTION INOUT
+  + PORT
+    + LAYER C1 ( 0 0 ) ( 520 100 )
+    + PLACED ( 0 320600 ) N ;
+END PINS
+
+SPECIALNETS 12 ;
+- dsm_out[3]
+  + RECT C1 ( 299480 384500 ) ( 300000 384600 ) ;
+- dsm_out[0]
+  + RECT C1 ( 299480 356120 ) ( 300000 356220 ) ;
+- dsm_out[2]
+  + RECT C1 ( 299480 375040 ) ( 300000 375140 ) ;
+- dsm_out[1]
+  + RECT C1 ( 299480 365580 ) ( 300000 365680 ) ;
+- dsm_out[4]
+  + RECT C1 ( 299480 405145 ) ( 300000 405245 ) ;
+- modclk
+  + RECT C1 ( 0 321000 ) ( 520 321100 ) ;
+- miso
+  + RECT C1 ( 0 320200 ) ( 520 320300 ) ;
+- mosi
+  + RECT C1 ( 0 319800 ) ( 520 319900 ) ;
+- sclk
+  + RECT C1 ( 0 319400 ) ( 520 319500 ) ;
+- rst
+  + RECT C1 ( 0 319000 ) ( 520 319100 ) ;
+- clk
+  + RECT C1 ( 0 318600 ) ( 520 318700 ) ;
+- ss
+  + RECT C1 ( 0 320600 ) ( 520 320700 ) ;
+END SPECIALNETS
+
+NETS 12 ;
+- dsm_out[3]
+  ( PIN dsm_out[3] ) ;
+- dsm_out[0]
+  ( PIN dsm_out[0] ) ;
+- dsm_out[2]
+  ( PIN dsm_out[2] ) ;
+- dsm_out[1]
+  ( PIN dsm_out[1] ) ;
+- dsm_out[4]
+  ( PIN dsm_out[4] ) ;
+- modclk
+  ( PIN modclk ) ;
+- miso
+  ( PIN miso ) ;
+- mosi
+  ( PIN mosi ) ;
+- sclk
+  ( PIN sclk ) ;
+- rst
+  ( PIN rst ) ;
+- clk
+  ( PIN clk ) ;
+- ss
+  ( PIN ss ) ;
+END NETS
+
+END DESIGN

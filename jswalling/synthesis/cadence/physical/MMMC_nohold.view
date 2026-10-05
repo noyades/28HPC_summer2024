@@ -1,0 +1,24 @@
+# Version:1.0 MMMC View Definition File
+# Do Not Remove Above Line
+create_rc_corner -name worst -cap_table {/software/RFIC/PDK/tsmc/28nm/tsri/RC_Extraction/CapTable/crn28hpc+_1p09m+ut-alrdl_6x1z1u_rcworst.captab} -T {125} -qx_tech_file {/software/RFIC/PDK/tsmc/28nm/tsri/RC_Extraction/Cadence/rcworst/qrcTechFile}
+create_rc_corner -name best -cap_table {/software/RFIC/PDK/tsmc/28nm/tsri/RC_Extraction/CapTable/crn28hpc+_1p09m+ut-alrdl_6x1z1u_rcbest.captab} -T {-40} -qx_tech_file {/software/RFIC/PDK/tsmc/28nm/tsri/RC_Extraction/Cadence/rcbest/qrcTechFile}
+create_rc_corner -name typical -cap_table {/software/RFIC/PDK/tsmc/28nm/tsri/RC_Extraction/CapTable/crn28hpc+_1p09m+ut-alrdl_6x1z1u_typical.captab} -T {25} -qx_tech_file {/software/RFIC/PDK/tsmc/28nm/tsri/RC_Extraction/Cadence/nominal/qrcTechFile}
+create_op_cond -name wcl_slow -library_file {/software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib} -P {1} -V {0.81} -T {125}
+create_op_cond -name wcl_fast -library_file {/software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ffg_cbestt_min_0p99v_m40c.lib} -P {1} -V {0.99} -T {-40}
+create_op_cond -name wcl_typical -library_file {/software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_tt_ctypical_max_0p90v_25c.lib} -P {1} -V {0.9} -T {25}
+create_library_set -name wcl_slow -timing {/software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib}
+create_library_set -name wcl_fast -timing {
+  /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ffg_cbestt_min_0p99v_m40c.lib
+}
+create_library_set -name wcl_typical -timing {
+  /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_tt_ctypical_max_0p90v_25c.lib
+}
+create_constraint_mode -name functional_wcl_slow -sdc_files {../constraints/topPLLDigital_struct.sdc}
+create_constraint_mode -name functional_wcl_fast -sdc_files {../constraints/topPPFilter_struct.sdc}
+create_constraint_mode -name functional_wcl_typical -sdc_files {../constraints/topPPFilter_struct.sdc}
+create_delay_corner -name delay_corner_wcl_slow -library_set {wcl_slow} -rc_corner {worst}
+create_delay_corner -name delay_corner_wcl_fast -library_set {wcl_fast} -rc_corner {best}
+create_delay_corner -name delay_corner_wcl_typical -library_set {wcl_typical} -rc_corner {typical}
+create_analysis_view -name view_wcl_slow -constraint_mode {functional_wcl_slow} -delay_corner {delay_corner_wcl_slow}
+create_analysis_view -name view_wcl_fast -constraint_mode {functional_wcl_fast} -delay_corner {delay_corner_wcl_fast}
+create_analysis_view -name view_wcl_typical -constraint_mode {functional_wcl_typical} -delay_corner {delay_corner_wcl_typical}

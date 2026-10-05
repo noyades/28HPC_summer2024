@@ -1,0 +1,20 @@
+s1(07Feb2025:22:53:21):  xrun -sdf pp_int_x4_presyn.sdf -64bit -access +rwc -gui int_work.pp_int_x4_tb 
+s2(07Feb2025:22:57:28):  xrun -sdf pp_int_x4_presyn.sdf -64bit -access +rwc -gui -top int_work.pp_int_x4_tb 
+s3(08Feb2025:08:20:39):  xrun -sdf my_design.sdf -64bit -access +rwc -top my_sim_lib.pp_int_x4_tb 
+s4(08Feb2025:08:21:02):  xrun -sdf my_design.sdf -64bit -access +rwc -top int_work.pp_int_x4_tb 
+s5(08Feb2025:08:25:14):  xrun -sdf my_design.sdf -64bit -access +rwc -top int_work.pp_int_x4_tb -gui 
+s6(08Feb2025:08:36:15):  xrun -sdf my_design.sdf -64bit -access +rwc -top int_work.pp_int_x4_tb -gui 
+s7(08Feb2025:08:52:16):  xrun -sdf my_design.sdf -64bit -access +rwc -top int_work.pp_int_x4_tb -gui 
+s8(08Feb2025:09:03:34):  xrun -sdf my_design.sdf -64bit -access +rwc -top int_work.pp_int_x4_tb -gui 
+s9(08Feb2025:21:20:58):  xrun -sdf pp_int_x4_presyn.sdf -64bit -access +rwc -top int_work.pp_int_x4_tb -gui 
+s10(08Feb2025:21:33:44):  xrun -sdf pp_int_x4_presyn.sdf -64bit -access +rwc -top int_work.pp_int_x4_tb -gui 
+s11(08Feb2025:21:44:49):  xrun -sdf pp_int_x4_presyn.sdf -64bit -access +rwc -top int_work.pp_int_x4_tb -gui -notimingchecks 
+s12(08Feb2025:21:50:56):  xrun -sdf pp_int_x4_presyn.sdf -64bit -access +rwc -top int_work.pp_int_x4_tb -gui -notimingchecks 
+s13(08Feb2025:22:09:56):  xrun -sdf pp_int_x4_presyn.sdf -64bit -access +rwc -top int_work.pp_int_x4_tb -gui -notimingchecks 
+s14(10Feb2025:04:58:45):  xrun -sdf pp_int_x4_presyn.sdf -64bit -access +rwc -top int_work.pp_int_x4_tb -gui 
+s15(10Feb2025:05:16:27):  xrun -sdf pp_int_x4_presyn.sdf -64bit -access +rwc -top int_work.pp_int_x4_tb -gui -ENTCHWIDTHCOND 
+s16(10Feb2025:05:31:24):  xrun -sdf pp_int_x4_presyn.sdf -64bit -access +rwc -top int_work.pp_int_x4_tb -gui -ENTCHWIDTHCOND -NOTIMINGCHECKS 
+s17(10Feb2025:07:38:07):  xrun -64bit -access +rwc -top int_work.pp_int_x4_tb -gui -ENTCHWIDTHCOND -NOTIMINGCHECKS 
+s18(10Feb2025:08:48:34):  xrun -64bit -access +rwc -top int_work.pp_int_x4_tb -gui -ENTCHWIDTHCOND -NOTIMINGCHECKS 
+s19(10Feb2025:08:56:32):  xrun -64bit -access +rwc -top int_work.pp_int_x4_tb -gui -ENTCHWIDTHCOND -NOTIMINGCHECKS 
+s20(10Feb2025:09:55:00):  xrun -64bit -access +rwc -top int_work.pp_int_x4_tb -gui -notimingchecks 

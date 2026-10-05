@@ -1,0 +1,52 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Sat Jan 11 23:25:39 2025                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v22.10-p001_1 (64bit) 09/29/2022 11:03 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 22.10-p001_1 NR220915-0329/22_10-UB (database version 18.20.590) {superthreading v2.19}
+#@(#)CDS: AAE 22.10-p002 (64bit) 09/29/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 22.10-p004_1 () Sep  7 2022 21:57:29 ( )
+#@(#)CDS: SYNTECH 22.10-p001_1 () Aug  8 2022 11:26:34 ( )
+#@(#)CDS: CPE v22.10-p005
+#@(#)CDS: IQuantus/TQuantus 21.2.0-s201 (64bit) Wed Jul 6 19:14:09 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+
+read_db pp_fir_u_0_04_prects_stylus.enc
+source ../scripts/cts.tcl 
+write_db pp_fir_u_0_05_cts_stylus.enc
+source ../scripts/route.tcl 
+set_layer_preference node_layer -is_visible 0
+set_layer_preference M6 -is_visible 1
+set_layer_preference M7 -is_visible 1
+set_layer_preference M8 -is_visible 1
+source ../scripts/postroute.tcl 
+2
+set_layer_preference node_layer -is_visible 1
+set_layer_preference node_layer -is_visible 0
+set_layer_preference node_layer -is_visible 1
+set_db check_drc_disable_rules {}
+set_db check_drc_ndr_spacing auto
+set_db check_drc_check_only default
+set_db check_drc_inside_via_def true
+set_db check_drc_exclude_pg_net false
+set_db check_drc_ignore_trial_route false
+set_db check_drc_ignore_cell_blockage false
+set_db check_drc_use_min_spacing_on_block_obs auto
+set_db check_drc_report pp_fir_u_0.drc.rpt
+set_db check_drc_limit 1000
+check_drc
+set_db check_drc_area {0 0 0 0}
+set_layer_preference violation -is_visible 1
+eval_legacy { violationBrowserDelete -tool Verify -type Geometry -subtype Metal_Short -layertype M2(2) }
+gui_select -point {87.03200 181.80200}
+set_layer_preference violation -is_visible 1
+check_connectivity -type all -geometry_connect -error 1000 -warning 50
+gui_select -point {201.12400 181.98250}
+gui_select -point {201.27050 181.78800}
+set_layer_preference violation -is_visible 1
+delete_selected_from_floorplan
+write_netlist pp_fir_u_0_struct_inn.v
+write_stream pp_fir_u_0_struct_inn.gds -map_file /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/tech.map -lib_name DesignLib -unit 2000 -mode all
+exit

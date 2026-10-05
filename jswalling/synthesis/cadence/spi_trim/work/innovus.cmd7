@@ -1,0 +1,62 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Wed May  8 11:56:52 2024                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.12-s106_1 (64bit) 12/08/2021 18:19 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.12-s106_1 NR211128-2235/21_12-UB (database version 18.20.567) {superthreading v2.17}
+#@(#)CDS: AAE 21.12-s039 (64bit) 12/08/2021 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.12-s043_1 () Dec  1 2021 10:06:22 ( )
+#@(#)CDS: SYNTECH 21.12-s014_1 () Oct 27 2021 04:39:25 ( )
+#@(#)CDS: CPE v21.12-s094
+#@(#)CDS: IQuantus/TQuantus 20.1.2-s624 (64bit) Thu Sep 2 20:12:03 PDT 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+read_db INVS
+fit
+zoomBox -0.38600 370.16000 146.59600 287.24800
+zoomBox 85.94000 350.76000 98.87000 344.67600
+fit
+gui_select -rect {-20.73700 350.56300 48.60800 291.77000}
+zoomBox -10.93800 355.08500 66.69800 274.43400
+deselectAll
+create_ccopt_clock_tree_spec
+get_ccopt_clock_trees *
+set_ccopt_property target_max_trans 0.5
+set_ccopt_property target_skew 0.2
+ccopt_design
+fit
+timeDesign -postCTS
+optDesign -postCTS
+setDelayCalMode -siAware false
+getFillerMode -quiet
+addFiller -cell UDBSLT28_DCAP_V4_7 UDBSLT28_DCAP_V4_65 UDBSLT28_DCAP_V4_5 UDBSLT28_DCAP_V4_33 UDBSLT28_DCAP_V4_17 UDBSLT28_DCAP_V4_13 UDBSLT28_FILL8 UDBSLT28_FILL64 UDBSLT28_FILL6 UDBSLT28_FILL5 UDBSLT28_FILL4 UDBSLT28_FILL32 UDBSLT28_FILL3 UDBSLT28_FILL2 UDBSLT28_FILL16 UDBSLT28_FILL128 UDBSLT28_FILL12 UDBSLT28_FILL1 -prefix FILLER
+zoomBox -5.66200 352.07000 37.30200 312.12100
+zoomBox 17.36800 333.06700 21.86000 328.33100
+fit
+setNanoRouteMode -quiet -routeWithLithoDriven 1
+setNanoRouteMode -quiet -droutePostRouteLithoRepair 1
+setNanoRouteMode -quiet -routeTopRoutingLayer 6
+setNanoRouteMode -quiet -routeBottomRoutingLayer 1
+setNanoRouteMode -quiet -drouteEndIteration 1
+setNanoRouteMode -quiet -routeWithTimingDriven false
+setNanoRouteMode -quiet -routeWithSiDriven false
+routeDesign -globalDetail
+saveDesign topPLLDigital_genus_22.enc
+streamOut topPLLDigital_genus_22.gds -mapFile /software/RFIC/PDK/globalFoundries/22FDX-EXT/release/DesignEnv/VirtuosoOA/libs/cmos22fdsoi_tech_9M_2Mx_5Cx_1Jx_1Ox_LB/cmos22fdsoi_tech.layermap -libName jswalling_tapeout -units 1000 -mode ALL
+fit
+zoomBox 39.07700 358.53200 151.69400 303.93000
+zoomBox 95.89500 352.50100 106.67600 339.68100
+fit
+zoomBox 197.19600 405.17200 262.03600 366.49500
+zoomBox 225.40200 391.95400 231.52300 385.83400
+fit
+zoomBox 92.54200 369.90800 174.44500 288.00500
+zoomBox 145.23400 355.44300 135.65400 338.72500
+zoomBox 133.44600 349.84500 140.27100 346.50900
+fit
+saveNetlist topPLLDigital_genus_22.v

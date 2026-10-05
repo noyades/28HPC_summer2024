@@ -1,0 +1,34 @@
+::db::check_and_set_root_attr extract_rc_engine pre_route
+::db::check_and_set_root_attr delaycal_enable_high_fanout true
+::db::check_and_set_root_attr delaycal_enable_ideal_seq_async_pins false
+::db::check_and_set_root_attr delaycal_eng_enablepreplacedflow false
+::db::check_and_set_root_attr delaycal_ignore_net_load false
+::db::check_and_set_root_attr design_bottom_routing_layer M2
+::db::check_and_set_root_attr extract_rc_assume_metal_fill 0.0
+::db::check_and_set_root_attr extract_rc_pre_place_cap_scale_factor 0.88033
+::db::check_and_set_root_attr extract_rc_pre_place_res_scale_factor 0.398555
+::db::check_and_set_root_attr extract_rc_pre_place_site_size 1.04
+::db::check_and_set_root_attr extract_rc_pre_place_wire_length_slope 1.4835
+::db::check_and_set_root_attr extract_rc_pre_place_wire_length_y0 0.7079
+::db::check_and_set_root_attr floorplan_first_row_site_index 0
+::db::check_and_set_root_attr floorplan_last_row_site_index -1
+::db::check_and_set_root_attr floorplan_max_io_height false
+::db::check_and_set_root_attr opt_drv true
+::db::check_and_set_root_attr opt_drv_margin 0.0
+::db::check_and_set_root_attr opt_multi_bit_flop_name_prefix CDN_MBIT_
+::db::check_and_set_root_attr opt_multi_bit_flop_name_separator _MB_
+::db::check_and_set_root_attr opt_multi_bit_flop_opt false
+::db::check_and_set_root_attr opt_setup_target_slack 0.0
+::db::check_and_set_root_attr opt_skew true
+::db::check_and_set_root_attr opt_skew_pre_cts true
+::db::check_and_set_root_attr opt_spatial_power_driven false
+::db::check_and_set_root_attr opt_view_pruning_hold_views_active_list { slow-slow-maxrc fast-fast-minrc func-typ-typ }
+::db::check_and_set_root_attr opt_view_pruning_placement_setup_view_list { slow-slow-maxrc  }
+::db::check_and_set_root_attr opt_view_pruning_setup_views_active_list { slow-slow-maxrc fast-fast-minrc func-typ-typ }
+::db::check_and_set_root_attr opt_view_pruning_setup_views_persistent_list { slow-slow-maxrc}
+::db::check_and_set_root_attr opt_view_pruning_tdgr_setup_views_persistent_list { slow-slow-maxrc}
+::db::check_and_set_root_attr place_global_cong_effort auto
+::db::check_and_set_root_attr route_exp_design_mode_bottom_routing_layer 2
+::db::check_and_set_root_attr route_extract_third_party_compatible false
+::db::check_and_set_root_attr route_global_exp_timing_driven_std_delay 4.8
+::db::check_and_set_root_attr write_def_stream_check_uncolored false

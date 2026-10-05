@@ -1,0 +1,84 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Mon Jan 19 13:18:24 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v23.14-s088_1 (64bit) 02/28/2025 12:25 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 23.14-s088_1 NR250219-0822/23_14-UB (database version 18.20.661) {superthreading v2.20}
+#@(#)CDS: AAE 23.14-s018 (64bit) 02/28/2025 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 23.14-s036_1 () Feb 22 2025 01:17:26 ( )
+#@(#)CDS: SYNTECH 23.14-s010_1 () Feb 19 2025 23:56:49 ( )
+#@(#)CDS: CPE v23.14-s082
+#@(#)CDS: IQuantus/TQuantus 23.1.1-s336 (64bit) Mon Jan 20 22:11:00 PST 2025 (Linux 3.10.0-693.el7.x86_64)
+
+read_db INVS/
+source ../scripts/init.tcl 
+report_timing
+set_layer_preference node_layer -is_visible 0
+set_layer_preference M7 -is_visible 1
+set_layer_preference M8 -is_visible 1
+source ../scripts/cts.tcl 
+report_timing
+source ../scripts/postcts.tcl 
+report_timing
+gui_select -point {620.15800 603.14950}
+set_layer_preference node_layer -is_visible 1
+source ../scripts/route.tcl 
+report_timing
+set_layer_preference node_layer -is_visible 0
+set_layer_preference M7 -is_visible 1
+set_layer_preference VIA7 -is_visible 1
+set_layer_preference M8 -is_visible 1
+set_layer_preference M6 -is_visible 1
+set_layer_preference node_layer -is_visible 1
+source ../scripts/postroute.tcl 
+route_eco -fix_drc 
+gui_select -point {296.39200 315.88900}
+set_layer_preference violation -is_visible 1
+route_eco -fix_drc 
+route_eco -fix_drc 
+report_timing
+route_eco -fix_drc 
+set_layer_preference node_layer -is_visible 1
+delete_routes -regular_wire_with_drc 
+route_design
+route_eco -fix_drc 
+route_eco -fix_drc 
+route_eco -fix_drc 
+check_drc
+set_layer_preference node_layer -is_visible 0
+set_layer_preference M1 -is_visible 1
+gui_select -point {399.52750 315.84500}
+route_eco -fix_drc -trim_layer_patch 
+route_eco -fix_drc -trim_layer_patch 
+set_layer_preference VIA1 -is_visible 1
+set_layer_preference M2 -is_visible 1
+route_eco -fix_drc 
+gui_select -point {399.42350 316.42200}
+gui_select -point {399.42050 316.43100}
+edit_cut_route -only_visible_wires -line { 399.422 316.434 399.6175 316.434 }
+edit_cut_route -only_visible_wires -line { 399.401 316.4325 399.355 316.4325 }
+edit_cut_route -only_visible_wires -line { 399.4555 316.434 399.313 316.434 }
+edit_cut_route -only_visible_wires -line { 399.6435 316.431 399.516 316.431 }
+edit_cut_route -only_visible_wires -line { 399.3945 316.431 399.457 316.431 }
+gui_select -point {399.41900 316.44150}
+delete_selected_from_floorplan
+gui_select -point {399.39450 316.16700}
+delete_selected_from_floorplan
+gui_select -point {399.58000 316.22000}
+delete_selected_from_floorplan
+gui_select -point {399.56300 316.42950}
+delete_selected_from_floorplan
+route_design
+route_eco -fix_drc -trim_layer_patch 
+check_drc
+eval_legacy { violationBrowserDelete -tool NanoRoute }
+eval_legacy { violationBrowserDelete -tool Verify }
+check_drc
+report_timing
+write_db ${top_cell}_inn.enc
+write_stream ${top_cell}_struct_inn.gds -map_file /data/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/arm_tech/r1p0/lef/1p9m_6x2z_utalrdl/tech.map
+write_netlist ${top_cell}_struct_inn.v
+exit

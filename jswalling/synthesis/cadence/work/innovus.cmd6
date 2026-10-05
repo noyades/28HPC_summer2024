@@ -1,0 +1,118 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Fri Jan 10 13:31:49 2025                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v22.10-p001_1 (64bit) 09/29/2022 11:03 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 22.10-p001_1 NR220915-0329/22_10-UB (database version 18.20.590) {superthreading v2.19}
+#@(#)CDS: AAE 22.10-p002 (64bit) 09/29/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 22.10-p004_1 () Sep  7 2022 21:57:29 ( )
+#@(#)CDS: SYNTECH 22.10-p001_1 () Aug  8 2022 11:26:34 ( )
+#@(#)CDS: CPE v22.10-p005
+#@(#)CDS: IQuantus/TQuantus 21.2.0-s201 (64bit) Wed Jul 6 19:14:09 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+
+read_db INVS/
+setDelayCalMode -siAware false
+read_floorplan ../../pp_fir_u_0_power.fp
+gui_select -point {7.68650 177.40800}
+delete_selected_from_floorplan
+gui_select -point {8.16650 177.62950}
+delete_selected_from_floorplan
+gui_select -point {19.60650 176.70650}
+delete_selected_from_floorplan
+gui_select -point {20.16000 176.74350}
+delete_selected_from_floorplan
+gui_select -point {31.66500 177.42550}
+delete_selected_from_floorplan
+gui_select -point {32.43100 178.54900}
+gui_select -point {31.92000 178.60000}
+delete_selected_from_floorplan
+gui_select -point {43.51500 177.73200}
+delete_selected_from_floorplan
+gui_select -point {44.33200 177.42550}
+delete_selected_from_floorplan
+gui_select -point {55.50800 177.47650}
+delete_selected_from_floorplan
+gui_select -point {56.37650 177.62950}
+delete_selected_from_floorplan
+gui_select -point {67.56250 177.62950}
+delete_selected_from_floorplan
+gui_select -point {68.07350 177.62950}
+delete_selected_from_floorplan
+gui_select -point {79.49950 177.73200}
+delete_selected_from_floorplan
+gui_select -point {80.21450 177.57850}
+delete_selected_from_floorplan
+gui_select -point {91.45150 177.78300}
+delete_selected_from_floorplan
+gui_select -point {92.32000 177.68100}
+delete_selected_from_floorplan
+gui_select -point {103.45500 177.57850}
+delete_selected_from_floorplan
+gui_select -point {104.27250 177.62950}
+delete_selected_from_floorplan
+gui_select -point {116.37900 176.61700}
+delete_selected_from_floorplan
+gui_select -point {115.48150 176.67650}
+delete_selected_from_floorplan
+gui_select -point {127.32600 176.67650}
+delete_selected_from_floorplan
+gui_select -point {128.16350 176.49700}
+delete_selected_from_floorplan
+gui_select -point {139.47000 176.55700}
+delete_selected_from_floorplan
+gui_select -point {140.24750 176.67650}
+delete_selected_from_floorplan
+gui_select -point {151.61350 176.67650}
+delete_selected_from_floorplan
+gui_select -point {152.09200 176.73650}
+delete_selected_from_floorplan
+gui_select -point {164.28000 177.68950}
+delete_selected_from_floorplan
+gui_select -point {163.42950 177.57600}
+delete_selected_from_floorplan
+gui_select -point {175.28250 177.57600}
+delete_selected_from_floorplan
+gui_select -point {176.01950 177.51900}
+delete_selected_from_floorplan
+gui_select -point {187.47600 177.51900}
+delete_selected_from_floorplan
+gui_select -point {188.32650 177.46250}
+delete_selected_from_floorplan
+gui_select -point {199.65500 179.62950}
+delete_selected_from_floorplan
+gui_select -point {200.23700 179.49200}
+delete_selected_from_floorplan
+time_design -pre_cts 
+report_timing
+opt_design -pre_cts 
+write_db pp_fir_u_0_04_prects_stylus.enc
+create_ccopt_clock_tree_spec
+create_clock_tree_spec
+get_clock_trees *
+get_ccopt_clock_trees *
+get_clocks
+source ../scripts/cts.tcl 
+set_multi_cpu_usage -local cpu 8
+set_multi_cpu_usage -local_cpu 8
+get_db route_design_with_litho_driven
+ccopt_design -report_dir RPT -report_prefix cts
+set_db ccopt_max_transition_time 0.025
+set_db ccopt_target_max_transition_time 0.025
+set_db cts_target_max_transition_time 0.025
+set_db cts_target_max_skew 0.01
+set_db cts_target_skew 0.01
+ccopt_design -report_dir RPT -report_prefix cts
+get_db clock_trees *
+set_db cts_target_max_transition_time 0.025
+set_db cts_target_skew 0.01
+source ../scripts/cts.tcl 
+source ../scripts/cts.tcl 
+source ../scripts/cts.tcl 
+source ../scripts/cts.tcl 
+ccopt_design -report_dir RPT -report_prefix cts
+source ../scripts/cts.tcl 
+source ../scripts/cts.tcl 
+exit

@@ -1,0 +1,28 @@
+# Cadence Genus(TM) Synthesis Solution, Version 21.11-s126_1, built Dec 20 2021 12:52:46
+
+# Date: Thu May 09 05:15:21 2024
+# Host: cluster12 (x86_64 w/Linux 3.10.0-1160.102.1.el7.x86_64) (6cores*24cpus*2physical cpus*Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz 15360KB)
+# OS:   CentOS Linux release 7.9.2009 (Core)
+
+source ../scripts/run.tcl
+# entering suspend mode
+syn_generic
+write_snapshot -directory $_OUTPUTS_PATH -tag syn_generic
+resume
+# resuming normal operation
+# entering suspend mode
+syn_generic
+write_snapshot -directory $_OUTPUTS_PATH -tag syn_generic
+report_summary -directory $_REPORTS_PATH
+time_info GENERIC
+gui_show
+syn_map
+write_snapshot -directory $_OUTPUTS_PATH -tag syn_map
+report_summary -directory $_REPORTS_PATH
+time_info MAPPED
+syn_opt
+write_snapshot -directory $_OUTPUTS_PATH -tag syn_opt
+report_summary -directory $_REPORTS_PATH
+time_info OPT
+write_db -to_file ${DESIGN}.db
+exit

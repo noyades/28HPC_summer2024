@@ -1,0 +1,242 @@
+# This Pegasus GUI File Index Registry was created automatically
+# Do not attempt to modify this file as any change may lead
+# to Pegasus GUI Tools malfunction.
+# 
+"Run Directory" internal none /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir
+"Current Directory" internal none /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work
+"Cadence Directory" internal none /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/.cadence/
+"Job Signature" internal none IPVS_1769186455_2864862
+"Pegasus Job Mode" internal none drc
+"GUI Flow" internal none innovus
+"GUI Preset" internal none /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/.preset.autosave
+"Technology Name" internal none "tsmcN28"
+"Technology RuleSet" internal none "default"
+"Technology Mapping File" internal none /data/projects/28HPC_summer2024/jswalling/pvtech.lib
+"Technology Rule File" internal none /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/.technology.rul
+"Pegasus Version" internal none 24.10-p017
+"Binary Name" internal none pegasusgui
+"Pegasus Build Date" internal none "Tue Sep 17 16:53:17 PDT 2024"
+"Pegasus Job Time" internal none 1769186572
+"DFII version" internal none 6.1.2
+"Run Directory" internal none /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir
+"Pegasus Job Mode" internal none drc
+"Rule File" input text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/.technology.rul
+"Cell Tree" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/cell_tree.txt
+"Layout Top Cell" internal none scpa_dig_ana_ppfir
+"Layout GDSII" input none /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/scpa_dig_ana_ppfir_struct_inn.gds
+"Job Signature" internal none IPVS_1769186455_2864862
+"Do not check rules files before run" internal none ENABLED
+DP internal none 8
+"Control File" input text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/pegasusdrcctl
+"Pegasus Job Log" log text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/pegasusuidrc.log
+"It is Pegasus flow" internal none ENABLED
+"Pegasus Log Dir" internal none LOGS
+"Pegasus Version" internal none 24.10-p017
+"Binary Name" internal none pegasusvirt
+"Pegasus Build Date" internal none "Tue Sep 17 16:53:17 PDT 2024"
+"Pegasus Job Time" internal none 1769186572
+"ASCII DRC Report Database" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/scpa_dig_ana_ppfir.drc_errors.ascii
+"DRC Summary" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/scpa_dig_ana_ppfir.sum
+"Layout GDSII" input none /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/scpa_dig_ana_ppfir_struct_inn.gds
+"Layout Top Cell" internal none scpa_dig_ana_ppfir
+"Pegasus Job Mode" internal none drc
+"Report MaxResults" internal none 1000
+"Rule File" input text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/.technology.rul
+"Run Directory" internal none /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/
+"DFM RDB MOM.A.1" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/MOM.A.1.rep
+"DFM RDB MFU.R.1" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/MFU.R.1.rep
+"DFM RDB AN.R.79.2m" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/AN.R.79.2m.rep
+"DFM RDB AN.R.80.2m" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/AN.R.80.2m.rep
+"DFM RDB AN.R.77.2mg" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/WERR.rep
+"DFM RDB AN.R.77.2mg" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/L_SRDPO.rep
+"DFM RDB AN.R.77.2mg" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/L_ANAPO.rep
+"DFM RDB ARRAY_VT.R.1" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/ARRAY_VT.R.1.rep
+"Density Print OD.DN.1" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/OD.DN.1.density
+"Density Print OD.DN.2" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/OD.DN.2.density
+"Density Print OD.DN.3" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/OD.DN.3.density
+"Density Print OD.DN.4" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/OD.DN.4.density
+"Density Print OD.DN.5" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/OD.DN.5.density
+"Density Print PO.A.3" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/PO.A.3.density
+"Density Print PO.A.4" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/PO.A.4.density
+"Density Print PO.A.5" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/PO.A.5.density
+"Density Print PO.A.6" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/PO.A.6.density
+"Density Print PO.DN.1" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/PO.DN.1.density
+"Density Print PO.DN.2" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/PO.DN.2.density
+"Density Print PO.DN.3" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/PO.DN.3.density
+"Density Print PO.DN.3.1" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/PO.DN.3.1.density
+"Density Print PO.DN.4" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/PO.DN.4.density
+"Density Print PO.DN.4.1" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/PO.DN.4.1.density
+"Density Print PO.DN.16" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/PO.DN.16.density
+"Density Print PO.R.28" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/PO.R.28:X.density
+"Density Print PO.R.28" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/PO.R.28:Y.density
+"Density Print SR_DOD.DN.1" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/SR_DOD.DN.1.density
+"Density Print SR_DPO.DN.1" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/SR_DPO.DN.1.density
+"Density Print SSD.DN.1" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/SSD.DN.1.density
+"Density Print M1.DN.1" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M1.DN.1.density
+"Density Print M1.DN.2" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M1.DN.2.density
+"Density Print M1.DN.3" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M1.DN.3.density
+"Density Print M1.DN.6" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M1.DN.6_A.density
+"Density Print M1.DN.6" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M1.DN.6_BC.density
+"Density Print M2.DN.1" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M2.DN.1.density
+"Density Print M2.DN.2" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M2.DN.2.density
+"Density Print M2.DN.3" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M2.DN.3.density
+"Density Print M2.DN.6" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M2.DN.6_A.density
+"Density Print M2.DN.6" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M2.DN.6_BC.density
+"Density Print M3.DN.1" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M3.DN.1.density
+"Density Print M3.DN.2" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M3.DN.2.density
+"Density Print M3.DN.3" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M3.DN.3.density
+"Density Print M3.DN.6" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M3.DN.6_A.density
+"Density Print M3.DN.6" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M3.DN.6_BC.density
+"Density Print M4.DN.1" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M4.DN.1.density
+"Density Print M4.DN.2" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M4.DN.2.density
+"Density Print M4.DN.3" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M4.DN.3.density
+"Density Print M4.DN.6" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M4.DN.6_A.density
+"Density Print M4.DN.6" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M4.DN.6_BC.density
+"Density Print M5.DN.1" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M5.DN.1.density
+"Density Print M5.DN.2" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M5.DN.2.density
+"Density Print M5.DN.3" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M5.DN.3.density
+"Density Print M5.DN.6" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M5.DN.6_A.density
+"Density Print M5.DN.6" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M5.DN.6_BC.density
+"Density Print M6.DN.1" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M6.DN.1.density
+"Density Print M6.DN.2" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M6.DN.2.density
+"Density Print M6.DN.3" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M6.DN.3.density
+"Density Print M6.DN.6" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M6.DN.6_A.density
+"Density Print M6.DN.6" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M6.DN.6_BC.density
+"Density Print M7.DN.1" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M7.DN.1.density
+"Density Print M7.DN.2" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M7.DN.2.density
+"Density Print M7.DN.3" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M7.DN.3.density
+"Density Print M7.DN.6" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M7.DN.6_A.density
+"Density Print M7.DN.6" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M7.DN.6_BC.density
+"Density Print M8.DN.1" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M8.DN.1.density
+"Density Print M8.DN.2" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M8.DN.2.density
+"Density Print M8.DN.3" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M8.DN.3.density
+"Density Print M9.DN.1" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M9.DN.1.density
+"Density Print M9.DN.2" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M9.DN.2.density
+"Density Print IND.DN.3" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/IND.DN.3.M9.density
+"Density Print M9.DN.3" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M9.DN.3.density
+"Density Print M9.DN.4" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M9.DN.4.density
+"Density Print IND.DN.1" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/IND.DN.1.density
+"Density Print IND.DN.2" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/IND.DN.2.M1.density
+"Density Print IND.DN.2" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/IND.DN.2.M2.density
+"Density Print IND.DN.2" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/IND.DN.2.M3.density
+"Density Print IND.DN.2" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/IND.DN.2.M4.density
+"Density Print IND.DN.2" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/IND.DN.2.M5.density
+"Density Print IND.DN.2" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/IND.DN.2.M6.density
+"Density Print IND.DN.2" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/IND.DN.2.M7.density
+"Density Print IND.DN.3" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/IND.DN.3.M1.density
+"Density Print IND.DN.3" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/IND.DN.3.M2.density
+"Density Print IND.DN.3" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/IND.DN.3.M3.density
+"Density Print IND.DN.3" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/IND.DN.3.M4.density
+"Density Print IND.DN.3" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/IND.DN.3.M5.density
+"Density Print IND.DN.3" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/IND.DN.3.M6.density
+"Density Print IND.DN.3" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/IND.DN.3.M7.density
+"Density Print IND.DN.3" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/IND.DN.3.M8.density
+"Density Print IND.DN.7" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/IND.DN.7.density
+"Density Print AP.W.5" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/AP.W.5.rep
+"Density Print AP.DN.1" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/AP.DN.1.density
+"Density Print AP.DN.2" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/AP.DN.2.density
+"Density Print AP.S.6" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/AP.S.6_DN.density
+"Density Print AP.S.7" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/AP.S.7_DN.density
+"Density Print DVIA1.R.3" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/DVIA1DM1.R.3.density
+"Density Print DVIA1.R.3" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/DVIA1DM2.R.3.density
+"Density Print DVIA2.R.3" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/DVIA2DM2.R.3.density
+"Density Print DVIA2.R.3" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/DVIA2DM3.R.3.density
+"Density Print DVIA3.R.3" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/DVIA3DM3.R.3.density
+"Density Print DVIA3.R.3" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/DVIA3DM4.R.3.density
+"Density Print DVIA4.R.3" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/DVIA4DM4.R.3.density
+"Density Print DVIA4.R.3" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/DVIA4DM5.R.3.density
+"Density Print DVIA5.R.3" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/DVIA5DM5.R.3.density
+"Density Print DVIA5.R.3" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/DVIA5DM6.R.3.density
+"Density Print DVIA6.R.3" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/DVIA6DM6.R.3.density
+"Density Print DVIA6.R.3" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/DVIA6DM7.R.3.density
+"Density Print PO.DN.7" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/PO.DN.7.density
+"Density Print PO.DN.8" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/PO.DN.8.density
+"Density Print DTCD.DN.1" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/DTCD.DN.1.NO_TCDDMY
+"Density Print DTCD.DN.1" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/DTCD.DN.1.density
+"Density Print BDTCD.DN.1" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/BDTCD.DN.1.NO_TCDDMY
+"Density Print BDTCD.DN.1" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/BDTCD.DN.1.density
+"Density Print BDTCD.DN.2" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/BDTCD.DN.2.NO_TCDDMY2
+"Density Print BDTCD.DN.2" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/BDTCD.DN.2.M2.density
+"Density Print BDTCD.DN.2" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/BDTCD.DN.2.NO_TCDDMY3
+"Density Print BDTCD.DN.2" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/BDTCD.DN.2.M3.density
+"Density Print BDTCD.DN.2" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/BDTCD.DN.2.NO_TCDDMY4
+"Density Print BDTCD.DN.2" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/BDTCD.DN.2.M4.density
+"Density Print BDTCD.DN.2" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/BDTCD.DN.2.NO_TCDDMY5
+"Density Print BDTCD.DN.2" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/BDTCD.DN.2.M5.density
+"Density Print BDTCD.DN.2" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/BDTCD.DN.2.NO_TCDDMY6
+"Density Print BDTCD.DN.2" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/BDTCD.DN.2.M6.density
+"Density Print BDTCD.DN.2" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/BDTCD.DN.2.NO_TCDDMY7
+"Density Print BDTCD.DN.2" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/BDTCD.DN.2.M7.density
+"Density Print ICOVL.R.17" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/ICOVL.R.17.density
+"Density Print ICOVL.R.18" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/ICOVL.R.18.density
+"Density Print ICOVL.R.19" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/ICOVL.R.19.density
+"Density Print ICOVL.R.20" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/ICOVL.R.20.density
+"Density Print ARRAY_VT.A.1" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/ARRAY_VT.A.1.density
+"Density Print ARRAY_VT.A.2" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/ARRAY_VT.A.2.density
+"Density Print ARRAY_VT.A.3" output text /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/ARRAY_VT.A.3.density
+"Density RDB OD.DN.3" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/OD.DN.3.RDB.density
+"Density RDB OD.DN.4" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/OD.DN.4.RDB.density
+"Density RDB OD.DN.5" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/OD.DN.5.RDB.density
+"Density RDB PO.A.3" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/PO.A.3.RDB.density
+"Density RDB PO.A.4" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/PO.A.4.RDB.density
+"Density RDB PO.A.5" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/PO.A.5.RDB.density
+"Density RDB PO.A.6" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/PO.A.6.RDB.density
+"Density RDB PO.DN.3" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/PO.DN.3.RDB.density
+"Density RDB PO.DN.3.1" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/PO.DN.3.1.RDB.density
+"Density RDB PO.DN.4" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/PO.DN.4.RDB.density
+"Density RDB PO.DN.4.1" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/PO.DN.4.1.RDB.density
+"Density RDB PO.DN.16" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/PO.DN.16.RDB.density
+"Density RDB PO.R.28" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/PO.R.28:X.RDB.density
+"Density RDB PO.R.28" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/PO.R.28:Y.RDB.density
+"Density RDB SR_DOD.DN.1" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/SR_DOD.DN.1.RDB.density
+"Density RDB SR_DPO.DN.1" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/SR_DPO.DN.1.RDB.density
+"Density RDB SSD.DN.1" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/SSD.DN.1.RDB.density
+"Density RDB M1.DN.1" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M1.DN.1.RDB.density
+"Density RDB M1.DN.2" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M1.DN.2.RDB.density
+"Density RDB M2.DN.1" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M2.DN.1.RDB.density
+"Density RDB M2.DN.2" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M2.DN.2.RDB.density
+"Density RDB M3.DN.1" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M3.DN.1.RDB.density
+"Density RDB M3.DN.2" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M3.DN.2.RDB.density
+"Density RDB Mx.DN.4" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/Mx.DN.4:M1_M2_M3.density
+"Density RDB Mx.DN.7" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/Mx.DN.7:M1_M2_M3.density
+"Density RDB M4.DN.1" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M4.DN.1.RDB.density
+"Density RDB M4.DN.2" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M4.DN.2.RDB.density
+"Density RDB Mx.DN.4" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/Mx.DN.4:M2_M3_M4.density
+"Density RDB Mx.DN.7" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/Mx.DN.7:M2_M3_M4.density
+"Density RDB M5.DN.1" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M5.DN.1.RDB.density
+"Density RDB M5.DN.2" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M5.DN.2.RDB.density
+"Density RDB Mx.DN.4" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/Mx.DN.4:M3_M4_M5.density
+"Density RDB Mx.DN.7" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/Mx.DN.7:M3_M4_M5.density
+"Density RDB M6.DN.1" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M6.DN.1.RDB.density
+"Density RDB M6.DN.2" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M6.DN.2.RDB.density
+"Density RDB Mx.DN.4" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/Mx.DN.4:M4_M5_M6.density
+"Density RDB Mx.DN.7" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/Mx.DN.7:M4_M5_M6.density
+"Density RDB M7.DN.1" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M7.DN.1.RDB.density
+"Density RDB M7.DN.2" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M7.DN.2.RDB.density
+"Density RDB Mx.DN.4" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/Mx.DN.4:M5_M6_M7.density
+"Density RDB Mx.DN.7" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/Mx.DN.7:M5_M6_M7.density
+"Density RDB M8.DN.1" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M8.DN.1.RDB.density
+"Density RDB M8.DN.2" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M8.DN.2.RDB.density
+"Density RDB M9.DN.3" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M9.DN.3.RDB.density
+"Density RDB M9.DN.4" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/M9.DN.4.RDB.density
+"Density RDB AP.S.6" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/AP.S.6_DN.RDB.density
+"Density RDB AP.S.7" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/AP.S.7_DN.RDB.density
+"Density RDB SRAM.WARN.1" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/SRAM.WARN.1.rep
+"Density RDB SRAM.WARN.2" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/SRAM.WARN.2.rep
+"Density RDB PO.DN.7" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/PO.DN.7.RDB.density
+"Density RDB PO.DN.8" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/PO.DN.8.RDB.density
+"Density RDB ARRAY_VT.A.1" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/ARRAY_VT.A.1.RDB.density
+"Density RDB ARRAY_VT.A.2" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/ARRAY_VT.A.2.RDB.density
+"Density RDB ARRAY_VT.A.3" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/ARRAY_VT.A.3.RDB.density
+"Antenna RDB ESD.1g" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/ESD.1g.hv_n.rep
+"Antenna RDB ESD.1g" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/ESD.1g.hv_p.rep
+"Antenna RDB ESD.18g" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/ESD.18g.NMOS.rep
+"Antenna RDB ESD.19g" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/ESD.19g.PMOS.rep
+"Antenna RDB ESD.40g" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/ESD.40g.rep
+"Antenna RDB ESD.40.1g" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/ESD.40.1g.rep
+"Antenna RDB ESD.49g" output rdb /data/projects/28HPC_summer2024/jswalling/synthesis/cadence/phase2_int_work/work/drc/scpa_ppfir/ESD.49g.rep
+"Pegasus Mode Info" internal none GBBDOMCKPNKALCLFAJADMPKNNCAOHPPM
+"Pegasus Version" internal none 24.10-p017
+"Binary Name" internal none pegasus
+"Pegasus Build Date" internal none "Tue Sep 17 21:42:30 EDT 2024"
+"Pegasus Job Time" internal none 1769186575

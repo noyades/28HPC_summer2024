@@ -1,0 +1,741 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v22.10-p001_1, built Thu Sep 29 11:03:49 PDT 2022
+Options:	
+Date:		Wed Jan  8 09:52:21 2025
+Host:		cluster15 (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (6cores*24cpus*Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz 15360KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		[09:52:21.284057] Configured Lic search path (21.01-s002): 27002@license.ece.vt.edu
+
+		invs	Innovus Implementation System	22.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+The soft stacksize limit is either up to the hard limit or larger than 0.2% of RAM. No change is needed.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> set enc_check_rename_command_name 1
+**WARN: (IMPOAX-793):	Problem in processing library definition file /home/jswalling/cds.lib - Unable to open library asap7_TechLib at path /home/jswalling/$PDK_DIR/cdslib/asap7_TechLib: Invalid Lib Path..
+**WARN: (IMPOAX-793):	Problem in processing library definition file /home/jswalling/cds.lib - Unable to open library asap7ssc7p5t at path /home/jswalling/$PDK_DIR/asap7ssc7p5t_05: Invalid Lib Path..
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> is_common_ui_mode
+<CMD> restoreDesign /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/synopsys/aced_filter/physical/pp_fir_u_0_02_power.enc.dat pp_fir_u_0
+#% Begin load design ... (date=01/08 09:54:56, mem=1088.9M)
+Loading design 'pp_fir_u_0' saved by 'Innovus' '22.10-p001_1' on 'Mon Jan 6 13:05:48 2025'.
+% Begin Load MMMC data ... (date=01/08 09:54:58, mem=1091.4M)
+% End Load MMMC data ... (date=01/08 09:54:58, total cpu=0:00:00.1, real=0:00:00.0, peak res=1091.9M, current mem=1091.9M)
+worst best typical
+
+Loading LEF file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/synopsys/aced_filter/physical/pp_fir_u_0_02_power.enc.dat/libs/lef/sc9mcpp140z_tech.lef ...
+
+Loading LEF file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/synopsys/aced_filter/physical/pp_fir_u_0_02_power.enc.dat/libs/lef/sc9mcpp140z_cln28ht_base_lvt_c30.lef ...
+Set DBUPerIGU to M1 pitch 280.
+
+Loading LEF file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/synopsys/aced_filter/physical/pp_fir_u_0_02_power.enc.dat/libs/lef/sc9mcpp140z_cln28ht_hpk_lvt_c30.lef ...
+
+Loading LEF file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/synopsys/aced_filter/physical/pp_fir_u_0_02_power.enc.dat/libs/lef/sc9mcpp140z_cln28ht_base_svt_c30.lef ...
+
+Loading LEF file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/synopsys/aced_filter/physical/pp_fir_u_0_02_power.enc.dat/libs/lef/sc9mcpp140z_cln28ht_hpk_svt_c30.lef ...
+
+Loading LEF file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/synopsys/aced_filter/physical/pp_fir_u_0_02_power.enc.dat/libs/lef/sc9mcpp140z_cln28ht_base_ulvt_c30.lef ...
+
+Loading LEF file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/synopsys/aced_filter/physical/pp_fir_u_0_02_power.enc.dat/libs/lef/sc9mcpp140z_cln28ht_hpk_ulvt_c30.lef ...
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/synopsys/aced_filter/physical/pp_fir_u_0_02_power.enc.dat/viewDefinition.tcl
+Reading wcl_slow timing library '/software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLTIE5_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'ENDCAPTIE3_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP8_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP64_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP4_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP3_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP32_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP2_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP16_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLXGCAP128_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP8_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP64_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP4_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP3_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP32_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP2_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP16_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLSGCAP128_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA2_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c.lib)
+Read 1003 cells in library 'sc9mcpp140z_cln28ht_base_lvt_c30_ssg_cworstt_max_0p81v_125c' 
+*** End library_loading (cpu=0.10min, real=0.12min, mem=29.5M, fe_cpu=1.18min, fe_real=2.77min, fe_mem=1269.7M) ***
+% Begin Load netlist data ... (date=01/08 09:55:07, mem=1146.8M)
+*** Begin netlist parsing (mem=1269.7M) ***
+Created 1003 new cells from 1 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilogBinary netlist '/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/synopsys/aced_filter/physical/pp_fir_u_0_02_power.enc.dat/pp_fir_u_0.v.bin'
+
+*** Memory Usage v#1 (Current mem = 1275.703M, initial mem = 509.465M) ***
+*** End netlist parsing (cpu=0:00:00.2, real=0:00:00.0, mem=1275.7M) ***
+% End Load netlist data ... (date=01/08 09:55:07, total cpu=0:00:00.3, real=0:00:00.0, peak res=1173.3M, current mem=1173.3M)
+Top level cell is pp_fir_u_0.
+Hooked 1003 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell pp_fir_u_0 ...
+***** UseNewTieNetMode *****.
+*** Netlist is unique.
+** info: there are 3538 modules.
+** info: there are 27480 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 1349.676M, initial mem = 509.465M) ***
+*info: set bottom ioPad orient R0
+
+Honor LEF defined pitches for advanced node
+Start create_tracks
+Set Shrink Factor to 0.90000
+Loading preference file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/synopsys/aced_filter/physical/pp_fir_u_0_02_power.enc.dat/gui.pref.tcl ...
+addRing command will ignore shorts while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will consider rows while creating rings.
+The ring targets are set to core/block ring wires.
+Change floorplan default-technical-site to 'sc9mcpp140z_cln28ht'.
+*Info: initialize multi-corner CTS.
+Reading wcl_fast timing library '/software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ffg_cbestt_min_0p99v_m40c.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'FILLTIE5_A9PP140ZTL_C30'. The cell will only be used for analysis. (File /software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_ffg_cbestt_min_0p99v_m40c.lib)
+Message <TECHLIB-302> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+Read 1003 cells in library 'sc9mcpp140z_cln28ht_base_lvt_c30_ffg_cbestt_min_0p99v_m40c' 
+Reading wcl_typical timing library '/software/RFIC/PDK/tsmc/28nm/stdcells/arm/tsmc/cln28ht/sc9mcpp140z_base_lvt_c30/r0p0/lib/sc9mcpp140z_cln28ht_base_lvt_c30_tt_ctypical_max_0p90v_25c.lib' ...
+Read 1003 cells in library 'sc9mcpp140z_cln28ht_base_lvt_c30_tt_ctypical_max_0p90v_25c' 
+Total number of combinational cells: 749
+Total number of sequential cells: 236
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 18
+List of usable buffers: FRICG_X0P5B_A9PP140ZTL_C30 FRICG_X0P6B_A9PP140ZTL_C30 FRICG_X0P8B_A9PP140ZTL_C30 FRICG_X0P7B_A9PP140ZTL_C30 FRICG_X11B_A9PP140ZTL_C30 FRICG_X13B_A9PP140ZTL_C30 FRICG_X16B_A9PP140ZTL_C30 FRICG_X1B_A9PP140ZTL_C30 FRICG_X1P2B_A9PP140ZTL_C30 FRICG_X1P4B_A9PP140ZTL_C30 FRICG_X2B_A9PP140ZTL_C30 FRICG_X1P7B_A9PP140ZTL_C30 FRICG_X2P5B_A9PP140ZTL_C30 FRICG_X3B_A9PP140ZTL_C30 FRICG_X4B_A9PP140ZTL_C30 FRICG_X3P5B_A9PP140ZTL_C30 FRICG_X5B_A9PP140ZTL_C30 FRICG_X6B_A9PP140ZTL_C30 FRICG_X7P5B_A9PP140ZTL_C30 FRICG_X9B_A9PP140ZTL_C30 BUFH_X11M_A9PP140ZTL_C30 BUFH_X13M_A9PP140ZTL_C30 BUFH_X16M_A9PP140ZTL_C30 BUFH_X1M_A9PP140ZTL_C30 BUFH_X1P2M_A9PP140ZTL_C30 BUFH_X1P4M_A9PP140ZTL_C30 BUFH_X2M_A9PP140ZTL_C30 BUFH_X1P7M_A9PP140ZTL_C30 BUFH_X2P5M_A9PP140ZTL_C30 BUFH_X3M_A9PP140ZTL_C30 BUFH_X4M_A9PP140ZTL_C30 BUFH_X3P5M_A9PP140ZTL_C30 BUFH_X5M_A9PP140ZTL_C30 BUFH_X6M_A9PP140ZTL_C30 BUFH_X7P5M_A9PP140ZTL_C30 BUFH_X9M_A9PP140ZTL_C30 BUF_X0P5B_A9PP140ZTL_C30 BUF_X0P5M_A9PP140ZTL_C30 BUF_X0P7B_A9PP140ZTL_C30 BUF_X0P7M_A9PP140ZTL_C30 BUF_X0P8M_A9PP140ZTL_C30 BUF_X0P8B_A9PP140ZTL_C30 BUF_X11B_A9PP140ZTL_C30 BUF_X11B_A9PP140ZTL_C30_XGCAP11 BUF_X11M_A9PP140ZTL_C30 BUF_X13B_A9PP140ZTL_C30 BUF_X11M_A9PP140ZTL_C30_XGCAP11 BUF_X13B_A9PP140ZTL_C30_XGCAP13 BUF_X13M_A9PP140ZTL_C30 BUF_X16B_A9PP140ZTL_C30 BUF_X13M_A9PP140ZTL_C30_XGCAP13 BUF_X16B_A9PP140ZTL_C30_XGCAP16 BUF_X16M_A9PP140ZTL_C30 BUF_X16M_A9PP140ZTL_C30_XGCAP16 BUF_X1M_A9PP140ZTL_C30 BUF_X1B_A9PP140ZTL_C30 BUF_X1P2B_A9PP140ZTL_C30 BUF_X1P2M_A9PP140ZTL_C30 BUF_X1P4B_A9PP140ZTL_C30 BUF_X1P4M_A9PP140ZTL_C30 BUF_X1P7B_A9PP140ZTL_C30 BUF_X1P7M_A9PP140ZTL_C30 BUF_X2M_A9PP140ZTL_C30 BUF_X2B_A9PP140ZTL_C30 BUF_X2P5B_A9PP140ZTL_C30 BUF_X2P5M_A9PP140ZTL_C30 BUF_X3M_A9PP140ZTL_C30 BUF_X3B_A9PP140ZTL_C30 BUF_X3P5B_A9PP140ZTL_C30 BUF_X3P5M_A9PP140ZTL_C30 BUF_X4B_A9PP140ZTL_C30 BUF_X4B_A9PP140ZTL_C30_XGCAP4 BUF_X4M_A9PP140ZTL_C30 BUF_X5B_A9PP140ZTL_C30 BUF_X4M_A9PP140ZTL_C30_XGCAP4 BUF_X5B_A9PP140ZTL_C30_XGCAP5 BUF_X5M_A9PP140ZTL_C30 BUF_X6B_A9PP140ZTL_C30 BUF_X5M_A9PP140ZTL_C30_XGCAP5 BUF_X6B_A9PP140ZTL_C30_XGCAP6 BUF_X6M_A9PP140ZTL_C30 BUF_X7P5B_A9PP140ZTL_C30 BUF_X6M_A9PP140ZTL_C30_XGCAP6 BUF_X7P5B_A9PP140ZTL_C30_XGCAP8 BUF_X7P5M_A9PP140ZTL_C30 BUF_X7P5M_A9PP140ZTL_C30_XGCAP8 BUF_X9B_A9PP140ZTL_C30 BUF_X9M_A9PP140ZTL_C30 BUF_X9B_A9PP140ZTL_C30_XGCAP9 BUF_X9M_A9PP140ZTL_C30_XGCAP9 DLY2_X1M_A9PP140ZTL_C30 DLY2_X0P5M_A9PP140ZTL_C30 DLY2_X2M_A9PP140ZTL_C30 DLYCLK8S2_X1B_A9PP140ZTL_C30 DLYCLK8S2_X2B_A9PP140ZTL_C30 DLYCLK8S4_X1B_A9PP140ZTL_C30 DLYCLK8S4_X2B_A9PP140ZTL_C30
+Total number of usable buffers: 97
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X0P5B_A9PP140ZTL_C30 INV_X0P5M_A9PP140ZTL_C30 INV_X0P6B_A9PP140ZTL_C30 INV_X0P6M_A9PP140ZTL_C30 INV_X0P7B_A9PP140ZTL_C30 INV_X0P7M_A9PP140ZTL_C30 INV_X0P8M_A9PP140ZTL_C30 INV_X0P8B_A9PP140ZTL_C30 INV_X11B_A9PP140ZTL_C30 INV_X11B_A9PP140ZTL_C30_XGCAP11 INV_X11M_A9PP140ZTL_C30 INV_X13B_A9PP140ZTL_C30 INV_X11M_A9PP140ZTL_C30_XGCAP11 INV_X13B_A9PP140ZTL_C30_XGCAP13 INV_X13M_A9PP140ZTL_C30 INV_X16B_A9PP140ZTL_C30 INV_X13M_A9PP140ZTL_C30_XGCAP13 INV_X16B_A9PP140ZTL_C30_XGCAP16 INV_X16M_A9PP140ZTL_C30 INV_X16M_A9PP140ZTL_C30_XGCAP16 INV_X1M_A9PP140ZTL_C30 INV_X1B_A9PP140ZTL_C30 INV_X1P2B_A9PP140ZTL_C30 INV_X1P2M_A9PP140ZTL_C30 INV_X1P4B_A9PP140ZTL_C30 INV_X1P4M_A9PP140ZTL_C30 INV_X1P7B_A9PP140ZTL_C30 INV_X1P7M_A9PP140ZTL_C30 INV_X2M_A9PP140ZTL_C30 INV_X2B_A9PP140ZTL_C30 INV_X2P5B_A9PP140ZTL_C30 INV_X2P5M_A9PP140ZTL_C30 INV_X3M_A9PP140ZTL_C30 INV_X3B_A9PP140ZTL_C30 INV_X3P5B_A9PP140ZTL_C30 INV_X4B_A9PP140ZTL_C30 INV_X3P5M_A9PP140ZTL_C30 INV_X4B_A9PP140ZTL_C30_XGCAP4 INV_X4M_A9PP140ZTL_C30 INV_X5B_A9PP140ZTL_C30 INV_X4M_A9PP140ZTL_C30_XGCAP4 INV_X5B_A9PP140ZTL_C30_XGCAP5 INV_X5M_A9PP140ZTL_C30 INV_X6B_A9PP140ZTL_C30 INV_X5M_A9PP140ZTL_C30_XGCAP5 INV_X6B_A9PP140ZTL_C30_XGCAP6 INV_X6M_A9PP140ZTL_C30 INV_X7P5B_A9PP140ZTL_C30 INV_X6M_A9PP140ZTL_C30_XGCAP6 INV_X7P5B_A9PP140ZTL_C30_XGCAP8 INV_X7P5M_A9PP140ZTL_C30 INV_X9B_A9PP140ZTL_C30 INV_X7P5M_A9PP140ZTL_C30_XGCAP8 INV_X9B_A9PP140ZTL_C30_XGCAP9 INV_X9M_A9PP140ZTL_C30 INV_X9M_A9PP140ZTL_C30_XGCAP9
+Total number of usable inverters: 56
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY10_X1M_A9PP140ZTL_C30 DLY10_X0P5M_A9PP140ZTL_C30 DLY10_X2M_A9PP140ZTL_C30 DLY10_X4M_A9PP140ZTL_C30 DLY2_X4M_A9PP140ZTL_C30 DLY4_X1M_A9PP140ZTL_C30 DLY4_X0P5M_A9PP140ZTL_C30 DLY4_X2M_A9PP140ZTL_C30 DLY4_X4M_A9PP140ZTL_C30 DLY6_X1M_A9PP140ZTL_C30 DLY6_X0P5M_A9PP140ZTL_C30 DLY6_X2M_A9PP140ZTL_C30 DLY6_X4M_A9PP140ZTL_C30 DLY8_X0P5M_A9PP140ZTL_C30 DLY8_X1M_A9PP140ZTL_C30 DLY8_X2M_A9PP140ZTL_C30 DLY8_X4M_A9PP140ZTL_C30 DLYCLK8S6_X1B_A9PP140ZTL_C30 DLYCLK8S6_X2B_A9PP140ZTL_C30 DLYCLK8S8_X1B_A9PP140ZTL_C30 DLYCLK8S8_X2B_A9PP140ZTL_C30
+Total number of identified usable delay cells: 21
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+Reading floorplan file - /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/synopsys/aced_filter/physical/pp_fir_u_0_02_power.enc.dat/pp_fir_u_0.fp.gz (mem = 1664.6M).
+% Begin Load floorplan data ... (date=01/08 09:55:21, mem=1590.1M)
+*info: reset 27845 existing net BottomPreferredLayer and AvoidDetour
+Deleting old partition specification.
+Set FPlanBox to (-3600 -3600 418420 363600)
+
+Honor LEF defined pitches for advanced node
+Start create_tracks
+ ... processed partition successfully.
+Reading binary special route file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/synopsys/aced_filter/physical/pp_fir_u_0_02_power.enc.dat/pp_fir_u_0.fp.spr.gz (Created by Innovus v22.10-p001_1 on Mon Jan  6 13:05:46 2025, version: 1)
+Convert 0 swires and 0 svias from compressed groups
+12 swires and 10 svias were compressed
+12 swires and 10 svias were decompressed from small or sparse groups
+Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1591.0M, current mem=1591.0M)
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+% End Load floorplan data ... (date=01/08 09:55:22, total cpu=0:00:00.4, real=0:00:01.0, peak res=1592.0M, current mem=1592.0M)
+Reading congestion map file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/synopsys/aced_filter/physical/pp_fir_u_0_02_power.enc.dat/pp_fir_u_0.route.congmap.gz ...
+% Begin Load SymbolTable ... (date=01/08 09:55:22, mem=1592.1M)
+% End Load SymbolTable ... (date=01/08 09:55:23, total cpu=0:00:00.2, real=0:00:01.0, peak res=1594.5M, current mem=1594.5M)
+Loading place ...
+% Begin Load placement data ... (date=01/08 09:55:23, mem=1594.5M)
+Reading placement file - /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/synopsys/aced_filter/physical/pp_fir_u_0_02_power.enc.dat/pp_fir_u_0.place.gz.
+** Reading stdCellPlacement_binary (Created by Innovus v22.10-p001_1 on Mon Jan  6 13:05:46 2025, version# 2) ...
+Read Views for adaptive view pruning ...
+Read 0 views from Binary DB for adaptive view pruning
+*** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=1667.6M) ***
+Total net length = 2.224e+02 (2.087e+02 1.365e+01) (ext = 1.951e+02)
+% End Load placement data ... (date=01/08 09:55:23, total cpu=0:00:00.1, real=0:00:00.0, peak res=1594.9M, current mem=1594.7M)
+% Begin Load routing data ... (date=01/08 09:55:23, mem=1594.7M)
+Reading routing file - /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/synopsys/aced_filter/physical/pp_fir_u_0_02_power.enc.dat/pp_fir_u_0.route.gz.
+Reading Innovus routing data (Created by Innovus v22.10-p001_1 on Mon Jan  6 13:05:46 2025 Format: 20.1) ...
+*** Total 27844 nets are successfully restored.
+*** Completed restoreRoute (cpu=0:00:00.1 real=0:00:00.0 mem=1664.6M) ***
+% End Load routing data ... (date=01/08 09:55:23, total cpu=0:00:00.2, real=0:00:01.0, peak res=1596.0M, current mem=1595.0M)
+TAT_INFO: restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
+Reading property file /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/synopsys/aced_filter/physical/pp_fir_u_0_02_power.enc.dat/pp_fir_u_0.prop
+*** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1667.6M) ***
+Extraction setup Started 
+Initializing multi-corner RC extraction with 3 active RC Corners ...
+**WARN: (IMPEXT-6202):	In addition to the technology file, the capacitance table file is specified for all the RC corners. If the technology file  is already specified for all the RC corners, the capacitance table file is not required for preRoute and postRoute extraction. In a new session, the capacitance table files can be removed from the create_rc_corner command to enable the technology file to be used for preRoute and postRoute (effort level medium/high/signoff) extraction engines.
+Type 'man IMPEXT-6202' for more detail.
+Reading Capacitance Table File /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/synopsys/aced_filter/physical/pp_fir_u_0_02_power.enc.dat/libs/mmmc/crn28hpc+_1p09m+ut-alrdl_6x1z1u_rcworst.captab ...
+Cap table was created using Encounter 10.11-e039_1.
+Process name: crn28hpc+_1p09m+ut-alrdl_6x1z1u_rcworst.
+Set Shrink Factor to 0.90000
+Reading Capacitance Table File /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/synopsys/aced_filter/physical/pp_fir_u_0_02_power.enc.dat/libs/mmmc/crn28hpc+_1p09m+ut-alrdl_6x1z1u_rcbest.captab ...
+Cap table was created using Encounter 10.11-e039_1.
+Process name: crn28hpc+_1p09m+ut-alrdl_6x1z1u_rcbest.
+Set Shrink Factor to 0.90000
+Reading Capacitance Table File /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/synopsys/aced_filter/physical/pp_fir_u_0_02_power.enc.dat/libs/mmmc/crn28hpc+_1p09m+ut-alrdl_6x1z1u_typical.captab ...
+Cap table was created using Encounter 10.11-e039_1.
+Process name: crn28hpc+_1p09m+ut-alrdl_6x1z1u_typical.
+Set Shrink Factor to 0.90000
+Importing multi-corner RC tables ... 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: view_wcl_slow
+    RC-Corner Name        : worst
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : '/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/synopsys/aced_filter/physical/pp_fir_u_0_02_power.enc.dat/libs/mmmc/crn28hpc+_1p09m+ut-alrdl_6x1z1u_rcworst.captab'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/synopsys/aced_filter/physical/pp_fir_u_0_02_power.enc.dat/libs/mmmc/worst/qrcTechFile'
+ 
+ Analysis View: view_wcl_fast
+    RC-Corner Name        : best
+    RC-Corner Index       : 1
+    RC-Corner Temperature : -40 Celsius
+    RC-Corner Cap Table   : '/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/synopsys/aced_filter/physical/pp_fir_u_0_02_power.enc.dat/libs/mmmc/crn28hpc+_1p09m+ut-alrdl_6x1z1u_rcbest.captab'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/synopsys/aced_filter/physical/pp_fir_u_0_02_power.enc.dat/libs/mmmc/best/qrcTechFile'
+ 
+ Analysis View: view_wcl_typical
+    RC-Corner Name        : typical
+    RC-Corner Index       : 2
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : '/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/synopsys/aced_filter/physical/pp_fir_u_0_02_power.enc.dat/libs/mmmc/crn28hpc+_1p09m+ut-alrdl_6x1z1u_typical.captab'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/synopsys/aced_filter/physical/pp_fir_u_0_02_power.enc.dat/libs/mmmc/typical/qrcTechFile'
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Creating RPSQ from WeeR and WRes ...
+Creating RPSQ from WeeR and WRes ...
+Creating RPSQ from WeeR and WRes ...
+Start generating vias ..
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Via generation completed successfully.
+% Begin Load power constraints ... (date=01/08 09:55:25, mem=1615.8M)
+% End Load power constraints ... (date=01/08 09:55:26, total cpu=0:00:00.1, real=0:00:01.0, peak res=1615.8M, current mem=1615.8M)
+**WARN: (IMPCTE-290):	Could not locate cell BUF_X4B_A9PP140ZTL_C30 in any library for view view_wcl_slow.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell BUF_X4B_A9PP140ZTL_C30 in any library for view view_wcl_slow.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell BUF_X4B_A9PP140ZTL_C30 in any library for view view_wcl_slow.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell BUF_X4B_A9PP140ZTL_C30 in any library for view view_wcl_slow.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell BUF_X4B_A9PP140ZTL_C30 in any library for view view_wcl_slow.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell BUF_X4B_A9PP140ZTL_C30 in any library for view view_wcl_slow.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell BUF_X4B_A9PP140ZTL_C30 in any library for view view_wcl_slow.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell BUF_X4B_A9PP140ZTL_C30 in any library for view view_wcl_slow.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell BUF_X4B_A9PP140ZTL_C30 in any library for view view_wcl_fast.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell BUF_X4B_A9PP140ZTL_C30 in any library for view view_wcl_fast.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell BUF_X4B_A9PP140ZTL_C30 in any library for view view_wcl_fast.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell BUF_X4B_A9PP140ZTL_C30 in any library for view view_wcl_fast.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell BUF_X4B_A9PP140ZTL_C30 in any library for view view_wcl_fast.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell BUF_X4B_A9PP140ZTL_C30 in any library for view view_wcl_fast.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell BUF_X4B_A9PP140ZTL_C30 in any library for view view_wcl_fast.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell BUF_X4B_A9PP140ZTL_C30 in any library for view view_wcl_fast.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell BUF_X4B_A9PP140ZTL_C30 in any library for view view_wcl_slow.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell BUF_X4B_A9PP140ZTL_C30 in any library for view view_wcl_slow.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell BUF_X4B_A9PP140ZTL_C30 in any library for view view_wcl_slow.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell BUF_X4B_A9PP140ZTL_C30 in any library for view view_wcl_slow.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (EMS-27):	Message (IMPCTE-290) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+delay_corner_wcl_slow delay_corner_wcl_typical delay_corner_wcl_fast
+% Begin load AAE data ... (date=01/08 09:55:26, mem=1640.8M)
+% End load AAE data ... (date=01/08 09:55:26, total cpu=0:00:00.1, real=0:00:00.0, peak res=1640.8M, current mem=1640.8M)
+Total number of combinational cells: 749
+Total number of sequential cells: 236
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 18
+List of usable buffers: BUFH_X11M_A9PP140ZTL_C30 BUFH_X13M_A9PP140ZTL_C30 BUFH_X16M_A9PP140ZTL_C30 BUFH_X1M_A9PP140ZTL_C30 BUFH_X1P2M_A9PP140ZTL_C30 BUFH_X1P4M_A9PP140ZTL_C30 BUFH_X2M_A9PP140ZTL_C30 BUFH_X1P7M_A9PP140ZTL_C30 BUFH_X2P5M_A9PP140ZTL_C30 BUFH_X3M_A9PP140ZTL_C30 BUFH_X4M_A9PP140ZTL_C30 BUFH_X3P5M_A9PP140ZTL_C30 BUFH_X5M_A9PP140ZTL_C30 BUFH_X6M_A9PP140ZTL_C30 BUFH_X7P5M_A9PP140ZTL_C30 BUFH_X9M_A9PP140ZTL_C30 BUF_X0P5B_A9PP140ZTL_C30 BUF_X0P5M_A9PP140ZTL_C30 BUF_X0P7B_A9PP140ZTL_C30 BUF_X0P7M_A9PP140ZTL_C30 BUF_X0P8M_A9PP140ZTL_C30 BUF_X0P8B_A9PP140ZTL_C30 BUF_X11B_A9PP140ZTL_C30 BUF_X11B_A9PP140ZTL_C30_XGCAP11 BUF_X11M_A9PP140ZTL_C30 BUF_X13B_A9PP140ZTL_C30 BUF_X11M_A9PP140ZTL_C30_XGCAP11 BUF_X13B_A9PP140ZTL_C30_XGCAP13 BUF_X13M_A9PP140ZTL_C30 BUF_X16B_A9PP140ZTL_C30 BUF_X13M_A9PP140ZTL_C30_XGCAP13 BUF_X16B_A9PP140ZTL_C30_XGCAP16 BUF_X16M_A9PP140ZTL_C30 BUF_X16M_A9PP140ZTL_C30_XGCAP16 BUF_X1M_A9PP140ZTL_C30 BUF_X1B_A9PP140ZTL_C30 BUF_X1P2B_A9PP140ZTL_C30 BUF_X1P2M_A9PP140ZTL_C30 BUF_X1P4B_A9PP140ZTL_C30 BUF_X1P4M_A9PP140ZTL_C30 BUF_X1P7B_A9PP140ZTL_C30 BUF_X1P7M_A9PP140ZTL_C30 BUF_X2M_A9PP140ZTL_C30 BUF_X2B_A9PP140ZTL_C30 BUF_X2P5B_A9PP140ZTL_C30 BUF_X2P5M_A9PP140ZTL_C30 BUF_X3M_A9PP140ZTL_C30 BUF_X3B_A9PP140ZTL_C30 BUF_X3P5B_A9PP140ZTL_C30 BUF_X3P5M_A9PP140ZTL_C30 BUF_X4B_A9PP140ZTL_C30 BUF_X4B_A9PP140ZTL_C30_XGCAP4 BUF_X4M_A9PP140ZTL_C30 BUF_X5B_A9PP140ZTL_C30 BUF_X4M_A9PP140ZTL_C30_XGCAP4 BUF_X5B_A9PP140ZTL_C30_XGCAP5 BUF_X5M_A9PP140ZTL_C30 BUF_X6B_A9PP140ZTL_C30 BUF_X5M_A9PP140ZTL_C30_XGCAP5 BUF_X6B_A9PP140ZTL_C30_XGCAP6 BUF_X6M_A9PP140ZTL_C30 BUF_X7P5B_A9PP140ZTL_C30 BUF_X6M_A9PP140ZTL_C30_XGCAP6 BUF_X7P5B_A9PP140ZTL_C30_XGCAP8 BUF_X7P5M_A9PP140ZTL_C30 BUF_X7P5M_A9PP140ZTL_C30_XGCAP8 BUF_X9B_A9PP140ZTL_C30 BUF_X9M_A9PP140ZTL_C30 BUF_X9B_A9PP140ZTL_C30_XGCAP9 BUF_X9M_A9PP140ZTL_C30_XGCAP9 DLY2_X1M_A9PP140ZTL_C30 DLY2_X0P5M_A9PP140ZTL_C30 DLY2_X2M_A9PP140ZTL_C30 DLYCLK8S2_X1B_A9PP140ZTL_C30 DLYCLK8S2_X2B_A9PP140ZTL_C30 DLYCLK8S4_X1B_A9PP140ZTL_C30 DLYCLK8S4_X2B_A9PP140ZTL_C30
+Total number of usable buffers: 77
+List of unusable buffers: FRICG_X0P5B_A9PP140ZTL_C30 FRICG_X0P6B_A9PP140ZTL_C30 FRICG_X0P8B_A9PP140ZTL_C30 FRICG_X0P7B_A9PP140ZTL_C30 FRICG_X11B_A9PP140ZTL_C30 FRICG_X13B_A9PP140ZTL_C30 FRICG_X16B_A9PP140ZTL_C30 FRICG_X1B_A9PP140ZTL_C30 FRICG_X1P2B_A9PP140ZTL_C30 FRICG_X1P4B_A9PP140ZTL_C30 FRICG_X2B_A9PP140ZTL_C30 FRICG_X1P7B_A9PP140ZTL_C30 FRICG_X2P5B_A9PP140ZTL_C30 FRICG_X3B_A9PP140ZTL_C30 FRICG_X4B_A9PP140ZTL_C30 FRICG_X3P5B_A9PP140ZTL_C30 FRICG_X5B_A9PP140ZTL_C30 FRICG_X6B_A9PP140ZTL_C30 FRICG_X7P5B_A9PP140ZTL_C30 FRICG_X9B_A9PP140ZTL_C30
+Total number of unusable buffers: 20
+List of usable inverters: INV_X0P5B_A9PP140ZTL_C30 INV_X0P5M_A9PP140ZTL_C30 INV_X0P6B_A9PP140ZTL_C30 INV_X0P6M_A9PP140ZTL_C30 INV_X0P7B_A9PP140ZTL_C30 INV_X0P7M_A9PP140ZTL_C30 INV_X0P8M_A9PP140ZTL_C30 INV_X0P8B_A9PP140ZTL_C30 INV_X11B_A9PP140ZTL_C30 INV_X11B_A9PP140ZTL_C30_XGCAP11 INV_X11M_A9PP140ZTL_C30 INV_X13B_A9PP140ZTL_C30 INV_X11M_A9PP140ZTL_C30_XGCAP11 INV_X13B_A9PP140ZTL_C30_XGCAP13 INV_X13M_A9PP140ZTL_C30 INV_X16B_A9PP140ZTL_C30 INV_X13M_A9PP140ZTL_C30_XGCAP13 INV_X16B_A9PP140ZTL_C30_XGCAP16 INV_X16M_A9PP140ZTL_C30 INV_X16M_A9PP140ZTL_C30_XGCAP16 INV_X1M_A9PP140ZTL_C30 INV_X1B_A9PP140ZTL_C30 INV_X1P2B_A9PP140ZTL_C30 INV_X1P2M_A9PP140ZTL_C30 INV_X1P4B_A9PP140ZTL_C30 INV_X1P4M_A9PP140ZTL_C30 INV_X1P7B_A9PP140ZTL_C30 INV_X1P7M_A9PP140ZTL_C30 INV_X2M_A9PP140ZTL_C30 INV_X2B_A9PP140ZTL_C30 INV_X2P5B_A9PP140ZTL_C30 INV_X2P5M_A9PP140ZTL_C30 INV_X3M_A9PP140ZTL_C30 INV_X3B_A9PP140ZTL_C30 INV_X3P5B_A9PP140ZTL_C30 INV_X4B_A9PP140ZTL_C30 INV_X3P5M_A9PP140ZTL_C30 INV_X4B_A9PP140ZTL_C30_XGCAP4 INV_X4M_A9PP140ZTL_C30 INV_X5B_A9PP140ZTL_C30 INV_X4M_A9PP140ZTL_C30_XGCAP4 INV_X5B_A9PP140ZTL_C30_XGCAP5 INV_X5M_A9PP140ZTL_C30 INV_X6B_A9PP140ZTL_C30 INV_X5M_A9PP140ZTL_C30_XGCAP5 INV_X6B_A9PP140ZTL_C30_XGCAP6 INV_X6M_A9PP140ZTL_C30 INV_X7P5B_A9PP140ZTL_C30 INV_X6M_A9PP140ZTL_C30_XGCAP6 INV_X7P5B_A9PP140ZTL_C30_XGCAP8 INV_X7P5M_A9PP140ZTL_C30 INV_X9B_A9PP140ZTL_C30 INV_X7P5M_A9PP140ZTL_C30_XGCAP8 INV_X9B_A9PP140ZTL_C30_XGCAP9 INV_X9M_A9PP140ZTL_C30 INV_X9M_A9PP140ZTL_C30_XGCAP9
+Total number of usable inverters: 56
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY10_X1M_A9PP140ZTL_C30 DLY10_X0P5M_A9PP140ZTL_C30 DLY10_X2M_A9PP140ZTL_C30 DLY10_X4M_A9PP140ZTL_C30 DLY2_X4M_A9PP140ZTL_C30 DLY4_X1M_A9PP140ZTL_C30 DLY4_X0P5M_A9PP140ZTL_C30 DLY4_X2M_A9PP140ZTL_C30 DLY4_X4M_A9PP140ZTL_C30 DLY6_X1M_A9PP140ZTL_C30 DLY6_X0P5M_A9PP140ZTL_C30 DLY6_X2M_A9PP140ZTL_C30 DLY6_X4M_A9PP140ZTL_C30 DLY8_X0P5M_A9PP140ZTL_C30 DLY8_X1M_A9PP140ZTL_C30 DLY8_X2M_A9PP140ZTL_C30 DLY8_X4M_A9PP140ZTL_C30 DLYCLK8S6_X1B_A9PP140ZTL_C30 DLYCLK8S6_X2B_A9PP140ZTL_C30 DLYCLK8S8_X1B_A9PP140ZTL_C30 DLYCLK8S8_X2B_A9PP140ZTL_C30
+Total number of identified usable delay cells: 21
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+#% End load design ... (date=01/08 09:55:27, total cpu=0:00:25.1, real=0:00:31.0, peak res=1671.3M, current mem=1639.9M)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPEXT-6202          1  In addition to the technology file, the ...
+WARNING   IMPCTE-290         560  Could not locate cell %s in any library ...
+WARNING   TECHLIB-302         57  No function defined for cell '%s'. The c...
+*** Message Summary: 618 warning(s), 0 error(s)
+
+<CMD> setDrawView fplan
+<CMD> encMessage warning 1
+Un-suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> man addWellTap
+<CMD> zoomBox -3.64250 183.08450 5.66600 172.87550
+<CMD> zoomBox -4.24800 182.55350 -3.80550 181.94850
+<CMD> setDrawView place
+<CMD> zoomBox -4.78950 181.44400 -3.26450 182.80900
+<CMD> zoomBox -4.37050 181.94350 -3.69350 182.54950
+<CMD> fit
+<CMD> addWellTap -cell FILLTIE5_A9PP140ZTL_C30 -checkerboard -cellinterval 60
+skipRow option will be disabled when checkerBoard is set
+Estimated cell power/ground rail width = 0.154 um
+**WARN: (IMPSP-5134):	Setting cellInterval to 59.920 (microns) as a multiple of cell FILLTIE5_A9PP140ZTL_C30's techSite 'sc9mcpp140z_cln28ht' width of 0.140 microns
+Type 'man IMPSP-5134' for more detail.
+For 808 new insts, Inserted 808 well-taps <FILLTIE5_A9PP140ZTL_C30> cells (prefix WELLTAP).
+<CMD> zoomBox -2.44150 185.18650 39.89700 157.56150
+<CMD> addWellTap -delete
+
+Usage: addWellTap [-help] [-area <box>] [-avoidAbutment] [-cell <string>] [-cellInterval <float>] [-channel_offset <float>] [-checkerBoard] [-fixedGap] [-inRowOffset <float>]
+                  [-powerDomain <name>] [-prefix <prefix>] [-siteOffset <siteNums>] [-skipRow <integer>] [-startRowNum <integer>] [{ -block_boundary_only flag }] [{{-termination_cell <cell_list> | {-top_termination_cell <cell_list> -bottom_termination_cell <cell_list>}} -column_cell <cell_list>} [-block_boundary_only flag]] [{-wellCutCell <string>} [-fixCutCell flag]] [-pitch <float> [-pitchOffset <float>]] [{-check_channel | -vertical_boundary_spacing <float> | -incremental <string>}] [{-insert_cells <string> | -incremental <string>}]
+
+**ERROR: (IMPTCM-48):	"-delete" is not a legal option for command "addWellTap". Either the current option or an option prior to it is not specified correctly.
+
+<CMD> deleteFiller -cell FILLTIE5_A9PP140ZTL_C30
+Deleted 808 physical insts (cell FILLTIE5_A9PP140ZTL_C30 / prefix -).
+<CMD> man addWellTap
+<CMD> addWellTap -cell FILLTIE5_A9PP140ZTL_C30 -checkerboard -cellinterval 60 -offset 60
+
+Usage: addWellTap [-help] [-area <box>] [-avoidAbutment] [-cell <string>] [-cellInterval <float>] [-channel_offset <float>] [-checkerBoard] [-fixedGap] [-inRowOffset <float>]
+                  [-powerDomain <name>] [-prefix <prefix>] [-siteOffset <siteNums>] [-skipRow <integer>] [-startRowNum <integer>] [{ -block_boundary_only flag }] [{{-termination_cell <cell_list> | {-top_termination_cell <cell_list> -bottom_termination_cell <cell_list>}} -column_cell <cell_list>} [-block_boundary_only flag]] [{-wellCutCell <string>} [-fixCutCell flag]] [-pitch <float> [-pitchOffset <float>]] [{-check_channel | -vertical_boundary_spacing <float> | -incremental <string>}] [{-insert_cells <string> | -incremental <string>}]
+
+**ERROR: (IMPTCM-48):	"-offset" is not a legal option for command "addWellTap". Either the current option or an option prior to it is not specified correctly.
+
+**ERROR: (IMPDBTCL-206):	'row0' is not a recognized object or attribute. Run 'dbGet <object>.?' to get a list of all supported objects and attributes.
+0x0
+**WARN: (IMPDBTCL-204):	'rows' is not a recognized object/attribute for object type 'topCell'. For help use 'dbSchema topCell' to get list of all supported (settable/unsettable) objects and attributes.
+Type 'man IMPDBTCL-204' for more detail.
+topCell: bumps designLib designView dftDontScan fPlan hInst insts isProtoModelCommitted isProtoModelSpecified markers name nets numBidirs numInputs numInsts numNets numPGTerms numPhysInsts numPhysNets numPhysTerms numTerms objType pds pgNets pgTerms physInsts physNets physTerms pinToCornerDist pkgComponents pkgObjects props ptns readOnly restoreDbDesignName restoreDbToolName restoreDbToolVersion seqReasonDeleted statusClockSynthesized statusDetailRouted statusIoPlaced statusPlaced statusPowerAnalyzed statusRCExtracted statusRouted statusScanOpted symmetryR90 symmetryX symmetryY terms texts
+**ERROR: (IMPDBTCL-206):	'rows' is not a recognized object or attribute. Run 'dbGet <object>.?' to get a list of all supported objects and attributes.
+0x0
+**ERROR: (IMPDBTCL-206):	'row' is not a recognized object or attribute. Run 'dbGet <object>.?' to get a list of all supported objects and attributes.
+0x0
+**ERROR: (IMPDBTCL-206):	'?' is not a recognized object or attribute. Run 'dbGet <object>.?' to get a list of all supported objects and attributes.
+0x0
+<CMD> zoomBox -1.67450 181.89000 2.65250 174.27700
+<CMD> fit
+<CMD> zoomBox 48.41600 38.77150 216.11700 188.89950
+<CMD> zoomBox 93.20700 77.36150 214.37150 185.82950
+<CMD> zoomBox 205.75050 181.44050 209.04200 177.05150
+<CMD> zoomBox 206.30000 178.17700 208.47550 180.12450
+<CMD> zoomBox 206.89550 178.69150 207.86200 179.55650
+<CMD> zoomBox 206.96700 178.75300 207.78850 179.48850
+<CMD> zoomBox 207.02700 178.80500 207.72550 179.43050
+<CMD> zoomBox 207.23300 178.98700 207.49750 179.22400
+<CMD> zoomBox 207.30200 179.04850 207.42000 179.15400
+<CMD> zoomBox 207.33300 179.07650 207.38600 179.12400
+<CMD> man addWellTap
+<CMD> addWellTap -cell FILLTIE5_A9PP140ZTL_C30 -checkerboard -cellinterval 60 -inRowOffset 60
+skipRow option will be disabled when checkerBoard is set
+**WARN: (IMPSP-5134):	Setting cellInterval to 59.920 (microns) as a multiple of cell FILLTIE5_A9PP140ZTL_C30's techSite 'sc9mcpp140z_cln28ht' width of 0.140 microns
+Type 'man IMPSP-5134' for more detail.
+**WARN: (IMPSP-5134):	Setting inRowOffset to 59.920 (microns) as a multiple of cell FILLTIE5_A9PP140ZTL_C30's techSite 'sc9mcpp140z_cln28ht' width of 0.140 microns
+Type 'man IMPSP-5134' for more detail.
+For 606 new insts, Inserted 606 well-taps <FILLTIE5_A9PP140ZTL_C30> cells (prefix WELLTAP).
+<CMD> fit
+<CMD> deleteFiller -cell FILLTIE5_A9PP140ZTL_C30
+Deleted 606 physical insts (cell FILLTIE5_A9PP140ZTL_C30 / prefix -).
+<CMD> addWellTap -cell FILLTIE5_A9PP140ZTL_C30 -checkerboard -cellinterval 60 -inRowOffset 30
+skipRow option will be disabled when checkerBoard is set
+**WARN: (IMPSP-5134):	Setting cellInterval to 59.920 (microns) as a multiple of cell FILLTIE5_A9PP140ZTL_C30's techSite 'sc9mcpp140z_cln28ht' width of 0.140 microns
+Type 'man IMPSP-5134' for more detail.
+**WARN: (IMPSP-5134):	Setting inRowOffset to 29.960 (microns) as a multiple of cell FILLTIE5_A9PP140ZTL_C30's techSite 'sc9mcpp140z_cln28ht' width of 0.140 microns
+Type 'man IMPSP-5134' for more detail.
+For 707 new insts, Inserted 707 well-taps <FILLTIE5_A9PP140ZTL_C30> cells (prefix WELLTAP).
+<CMD> zoomBox -1.54050 183.08450 69.32350 170.17300
+<CMD> zoomBox -11.73250 139.39300 71.63700 214.02650
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> zoomBox 171.27450 158.94750 214.79450 197.90700
+<CMD> zoomBox 176.67100 162.14800 213.66300 195.26350
+<CMD> zoomBox 185.15700 167.16750 211.88350 191.09350
+<CMD> zoomBox 195.35400 172.98450 209.30550 185.47400
+<CMD> zoomBox 198.44450 174.74750 208.52400 183.77100
+<CMD> zoomBox 199.65100 175.43600 208.21900 183.10600
+<CMD> zoomBox 202.96750 177.28950 207.44050 181.29400
+<CMD> zoomBox 203.51100 177.59350 207.31300 180.99700
+<CMD> zoomBox 203.97300 177.85150 207.20450 180.74450
+<CMD> selectInst WELLTAP_707
+<CMD> zoomBox 203.55000 177.64200 207.35200 181.04550
+<CMD> zoomBox 201.80700 176.76350 207.99800 182.30600
+<CMD> zoomBox 201.00950 176.36200 208.29350 182.88250
+<CMD> zoomBox 200.07150 175.88950 208.64100 183.56100
+<CMD> zoomBox 198.96800 175.33350 209.05000 184.35900
+<CMD> zoomBox 192.23200 171.94100 211.54650 189.23150
+<CMD> zoomBox 186.81850 169.21500 213.55200 193.14700
+<CMD> zoomBox 179.32700 165.44250 216.32800 198.56650
+<CMD> zoomBox 174.56250 163.04350 218.09350 202.01300
+<CMD> zoomBox 168.89000 148.29500 252.28250 222.94900
+<CMD> zoomBox 166.79550 142.85000 264.90450 230.67850
+<CMD> zoomBox 162.60700 135.01050 278.02950 238.33850
+<CMD> zoomBox 145.06150 102.17250 333.00900 270.42550
+<CMD> deselectAll
+<CMD> fit
+<CMD> zoomBox -1.84100 183.38500 9.56950 173.47600
+<CMD> zoomBox -2.62250 170.36050 13.17100 184.49900
+<CMD> zoomBox -5.30650 167.15100 16.55300 186.72000
+<CMD> zoomBox -9.02150 162.70850 21.23450 189.79400
+<CMD> zoomBox -11.38400 159.88350 24.21150 191.74900
+<CMD> zoomBox -14.16300 156.55950 27.71400 194.04850
+<CMD> zoomBox -31.12850 136.27050 49.09450 208.08700
+<CMD> zoomBox -44.76100 119.96700 66.27450 219.36750
+<CMD> fit
+<CMD> zoomBox 197.24000 185.18650 213.75500 149.75450
+<CMD> gui_select -rect {205.47150 182.72900 207.11000 161.99200}
+<CMD> deleteSelectedFromFPlan
+<CMD> gui_select -rect {205.36900 182.57500 207.05900 149.65200}
+<CMD> deselectAll
+<CMD> deleteSelectedFromFPlan
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> gui_select -rect {204.70350 150.73800 207.16150 118.12200}
+<CMD> deselectAll
+<CMD> deleteSelectedFromFPlan
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> gui_select -rect {204.60100 118.23500 207.11000 87.46250}
+<CMD> deselectAll
+<CMD> deleteSelectedFromFPlan
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> gui_select -rect {204.49900 87.67750 207.00750 55.11300}
+<CMD> deselectAll
+<CMD> deleteSelectedFromFPlan
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> gui_select -rect {205.01100 55.07250 207.05900 18.86200}
+<CMD> deselectAll
+<CMD> deleteSelectedFromFPlan
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> gui_select -rect {205.42050 19.33350 207.11000 -0.27700}
+<CMD> deselectAll
+<CMD> deleteSelectedFromFPlan
+<CMD> fit
+<CMD> zoomBox -1.10150 -7.89500 166.59900 142.23250
+<CMD> zoomBox 7.02550 -3.56050 128.18950 104.90700
+<CMD> zoomBox 17.14000 1.83350 80.38850 58.45450
+<CMD> zoomBox 18.79650 2.71700 72.55800 50.84500
+<CMD> zoomBox 24.34800 6.73850 52.41250 31.86200
+<CMD> zoomBox 25.25750 7.39700 49.11250 28.75250
+<CMD> zoomBox 26.03000 7.95700 46.30750 26.10950
+<CMD> zoomBox 27.72000 9.18100 40.17300 20.32900
+<CMD> zoomBox 26.32250 7.34850 46.60100 25.50200
+<CMD> zoomBox 23.00750 2.99950 61.85500 37.77650
+<CMD> zoomBox 20.34300 -0.49450 74.11200 47.64000
+<CMD> zoomBox 18.64900 -2.71650 81.90650 53.91250
+<CMD> zoomBox 3.73700 -13.82350 106.74150 78.38750
+<CMD> zoomBox -3.08300 -18.90300 118.09950 89.58100
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> zoomBox 15.55550 12.79400 69.32550 60.92950
+<CMD> zoomBox 17.78850 16.59150 63.49300 57.50700
+<CMD> zoomBox 25.28750 29.35300 45.56700 47.50750
+<CMD> zoomBox 28.14600 34.21750 38.73300 43.69500
+<CMD> zoomBox 28.61450 35.01450 37.61350 43.07050
+<CMD> zoomBox 29.88250 37.17250 34.58100 41.37850
+<CMD> zoomBox 30.09000 37.52600 34.08400 41.10150
+<CMD> zoomBox 30.74400 38.64050 32.51750 40.22800
+<CMD> zoomBox 30.94550 38.98350 32.03500 39.95900
+<CMD> zoomBox 31.14650 39.36050 31.63000 39.79350
+<CMD> zoomBox 31.17050 39.40550 31.58150 39.77350
+<CMD> zoomBox 31.22300 39.50350 31.47600 39.73000
+<CMD> zoomBox 31.13850 39.45350 31.55050 39.82250
+<CMD> fit
+<CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer AP -stacked_via_bottom_layer M1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe will allow jog to connect padcore ring and block ring.
+
+Stripes will stop at the boundary of the specified area.
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not extend to closest target.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Stripes will not be created over regions without power planning wires.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+Offset for stripe breaking is set to 0.
+<CMD> addStripe -nets {VDD VSS} -layer M1 -direction vertical -width 0.26 -spacing 0.26 -set_to_set_distance 60 -start_from left -start_offset 30 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit AP -padcore_ring_bottom_layer_limit M1 -block_ring_top_layer_limit AP -block_ring_bottom_layer_limit M1 -use_wire_group 0 -snap_wire_center_to_grid None
+
+viaInitial starts at Wed Jan  8 10:43:31 2025
+viaInitial ends at Wed Jan  8 10:43:31 2025
+
+Initialize fgc environment(mem: 1850.2M) ...  done(cpu: 0:00:00.1, real: 0:00:00.0, peak mem: 1847.2M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1847.2M)
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1847.2M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1847.2M)
+**WARN: (IMPPP-193):	The currently specified  spacing 0.260000 in -spacing option might create min enclosed area violation. The required min enclosed area for layer M1 is 0.200000. If violation happens, increase the spacing to around 0.497214. The recommended spacing is the square root of min enclosure area.
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  -use_exact_spacing  1
+Stripe generation is complete.
+vias are now being generated.
+addStripe created 1010 wires.
+ViaGen created 12 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|   M1   |      1010      |       NA       |
+|  VIA1  |       12       |        0       |
++--------+----------------+----------------+
+setAddStripeMode -use_exact_spacing is reset to default value: false.
+<CMD> undo
+<CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer AP -stacked_via_bottom_layer M1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe will allow jog to connect padcore ring and block ring.
+
+Stripes will stop at the boundary of the specified area.
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not extend to closest target.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Stripes will not be created over regions without power planning wires.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+Offset for stripe breaking is set to 0.
+<CMD> addStripe -nets {VDD VSS} -layer M1 -direction vertical -width 0.26 -spacing 0.26 -set_to_set_distance 120 -start_from left -start_offset 15 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit AP -padcore_ring_bottom_layer_limit M1 -block_ring_top_layer_limit AP -block_ring_bottom_layer_limit M1 -use_wire_group 0 -snap_wire_center_to_grid None
+
+Initialize fgc environment(mem: 1851.3M) ...  done(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1851.3M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1851.3M)
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1851.3M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1851.3M)
+**WARN: (IMPPP-193):	The currently specified  spacing 0.260000 in -spacing option might create min enclosed area violation. The required min enclosed area for layer M1 is 0.200000. If violation happens, increase the spacing to around 0.497214. The recommended spacing is the square root of min enclosure area.
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  -use_exact_spacing  1
+Stripe generation is complete.
+vias are now being generated.
+addStripe created 4 wires.
+ViaGen created 410 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|   M1   |        4       |       NA       |
+|  VIA1  |       410      |        0       |
++--------+----------------+----------------+
+setAddStripeMode -use_exact_spacing is reset to default value: false.
+<CMD> undo
+<CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer AP -stacked_via_bottom_layer M1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe will allow jog to connect padcore ring and block ring.
+
+Stripes will stop at the boundary of the specified area.
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not extend to closest target.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Stripes will not be created over regions without power planning wires.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+Offset for stripe breaking is set to 0.
+<CMD> addStripe -nets {VDD VSS} -layer M1 -direction vertical -width 0.26 -spacing 0.26 -set_to_set_distance 30 -start_from left -start_offset 15 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit AP -padcore_ring_bottom_layer_limit M1 -block_ring_top_layer_limit AP -block_ring_bottom_layer_limit M1 -use_wire_group 0 -snap_wire_center_to_grid None
+
+Initialize fgc environment(mem: 1851.3M) ...  done(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1851.3M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1851.3M)
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1851.3M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1851.3M)
+**WARN: (IMPPP-193):	The currently specified  spacing 0.260000 in -spacing option might create min enclosed area violation. The required min enclosed area for layer M1 is 0.200000. If violation happens, increase the spacing to around 0.497214. The recommended spacing is the square root of min enclosure area.
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  -use_exact_spacing  1
+Stripe generation is complete.
+vias are now being generated.
+addStripe created 14 wires.
+ViaGen created 1435 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|   M1   |       14       |       NA       |
+|  VIA1  |      1435      |        0       |
++--------+----------------+----------------+
+setAddStripeMode -use_exact_spacing is reset to default value: false.
+<CMD> undo
+<CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer AP -stacked_via_bottom_layer M1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe will allow jog to connect padcore ring and block ring.
+
+Stripes will stop at the boundary of the specified area.
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not extend to closest target.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Stripes will not be created over regions without power planning wires.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+Offset for stripe breaking is set to 0.
+<CMD> addStripe -nets {VDD VSS} -layer M1 -direction vertical -width 0.26 -spacing 0.26 -set_to_set_distance 29.96 -start_from left -start_offset 14.98 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit AP -padcore_ring_bottom_layer_limit M1 -block_ring_top_layer_limit AP -block_ring_bottom_layer_limit M1 -use_wire_group 0 -snap_wire_center_to_grid None
+
+Initialize fgc environment(mem: 1851.3M) ...  done(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1851.3M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:01.0, peak mem: 1851.3M)
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1851.3M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1851.3M)
+**WARN: (IMPPP-193):	The currently specified  spacing 0.260000 in -spacing option might create min enclosed area violation. The required min enclosed area for layer M1 is 0.200000. If violation happens, increase the spacing to around 0.497214. The recommended spacing is the square root of min enclosure area.
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  -use_exact_spacing  1
+Stripe generation is complete.
+vias are now being generated.
+addStripe created 14 wires.
+ViaGen created 1435 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|   M1   |       14       |       NA       |
+|  VIA1  |      1435      |        0       |
++--------+----------------+----------------+
+setAddStripeMode -use_exact_spacing is reset to default value: false.
+<CMD> saveDesign pp_fir_u_0_02_power.inn
+#% Begin save design ... (date=01/08 10:49:16, mem=1795.8M)
+% Begin Save ccopt configuration ... (date=01/08 10:49:16, mem=1795.8M)
+% End Save ccopt configuration ... (date=01/08 10:49:16, total cpu=0:00:00.1, real=0:00:00.0, peak res=1796.8M, current mem=1796.8M)
+% Begin Save netlist data ... (date=01/08 10:49:16, mem=1816.6M)
+Writing Binary DB to pp_fir_u_0_02_power.inn.dat/pp_fir_u_0.v.bin in single-threaded mode...
+% End Save netlist data ... (date=01/08 10:49:16, total cpu=0:00:00.1, real=0:00:00.0, peak res=1819.5M, current mem=1816.7M)
+Saving symbol-table file ...
+Saving congestion map file pp_fir_u_0_02_power.inn.dat/pp_fir_u_0.route.congmap.gz ...
+% Begin Save AAE data ... (date=01/08 10:49:17, mem=1817.6M)
+Saving AAE Data ...
+% End Save AAE data ... (date=01/08 10:49:17, total cpu=0:00:00.1, real=0:00:00.0, peak res=1817.6M, current mem=1817.6M)
+Saving preference file pp_fir_u_0_02_power.inn.dat/gui.pref.tcl ...
+Saving mode setting ...
+Saving global file ...
+% Begin Save floorplan data ... (date=01/08 10:49:18, mem=1819.7M)
+Saving floorplan file ...
+Convert 0 swires and 0 svias from compressed groups
+% End Save floorplan data ... (date=01/08 10:49:18, total cpu=0:00:00.1, real=0:00:00.0, peak res=1820.2M, current mem=1820.2M)
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+% Begin Save placement data ... (date=01/08 10:49:18, mem=1820.2M)
+** Saving stdCellPlacement_binary (version# 2) ...
+Save Adaptive View Pruning View Names to Binary file
+% End Save placement data ... (date=01/08 10:49:18, total cpu=0:00:00.1, real=0:00:00.0, peak res=1820.3M, current mem=1820.3M)
+% Begin Save routing data ... (date=01/08 10:49:18, mem=1820.3M)
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.1 real=0:00:00.0 mem=1873.0M) ***
+% End Save routing data ... (date=01/08 10:49:18, total cpu=0:00:00.1, real=0:00:00.0, peak res=1820.5M, current mem=1820.5M)
+Saving property file pp_fir_u_0_02_power.inn.dat/pp_fir_u_0.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:01.0 mem=1876.0M) ***
+% Begin Save power constraints data ... (date=01/08 10:49:19, mem=1820.9M)
+% End Save power constraints data ... (date=01/08 10:49:19, total cpu=0:00:00.1, real=0:00:00.0, peak res=1821.0M, current mem=1821.0M)
+worst best typical
+worst best typical
+worst best typical
+worst best typical
+worst best typical
+worst best typical
+worst best typical
+Generated self-contained design pp_fir_u_0_02_power.inn.dat
+wcl_fast wcl_slow wcl_typical
+worst best typical
+functional_wcl_typical functional_wcl_fast functional_wcl_slow
+/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/synopsys/aced_filter/physical/pp_fir_u_0_02_power.enc.dat/libs/mmmc/pp_fir_u_0_struct.sdc
+/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/synopsys/aced_filter/physical/pp_fir_u_0_02_power.enc.dat/libs/mmmc/pp_fir_u_0_struct_fast.sdc
+/home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/synopsys/aced_filter/physical/pp_fir_u_0_02_power.enc.dat/libs/mmmc/pp_fir_u_0_struct_slow.sdc
+#% End save design ... (date=01/08 10:49:21, total cpu=0:00:02.9, real=0:00:06.0, peak res=1850.5M, current mem=1823.7M)
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> set dbgLefDefOutVersion 5.8
+<CMD> global dbgLefDefOutVersion
+<CMD> set dbgLefDefOutVersion 5.8
+<CMD> defOut -floorplan -routing ../../pp_fir_u_0_power.def
+Writing DEF file '../../pp_fir_u_0_power.def', current time is Wed Jan  8 10:50:34 2025 ...
+unitPerMicron=2000, dbgMicronPerDBU=0.000500, unitPerDBU=1.000000
+DEF file '../../pp_fir_u_0_power.def' is written, current time is Wed Jan  8 10:50:35 2025 ...
+<CMD> set dbgLefDefOutVersion 5.8
+<CMD> set dbgLefDefOutVersion 5.8
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Wed Jan  8 10:50:46 2025
+  Total CPU time:     0:07:27
+  Total real time:    0:58:27
+  Peak memory (main): 1829.45MB
+
+
+*** Memory Usage v#1 (Current mem = 1927.449M, initial mem = 509.465M) ***
+*** Message Summary: 630 warning(s), 6 error(s)
+
+--- Ending "Innovus" (totcpu=0:07:23, real=0:58:25, mem=1927.4M) ---

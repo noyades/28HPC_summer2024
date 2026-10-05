@@ -1,0 +1,84 @@
+
+
+Working Directory = /home/micsTapeouts/projects/28HPC_summer2024/jswalling/synthesis/cadence/pp_int_x4_work
+QoS Summary for pp_int_x4
+================================================================================
+Metric                          generic         map            
+================================================================================
+
+View : view_wcl_slow
+Slack (ps):                       -31               0
+  R2R (ps):                       240             141
+  I2R (ps):                        43              30
+  R2O (ps):                       -31               0
+  I2O (ps):                  no_value        no_value
+  CG  (ps):                  no_value        no_value
+TNS (ps):                        -384               0
+  R2R (ps):                         0               0
+  I2R (ps):                         0               0
+  R2O (ps):                      -384               0
+  I2O (ps):                  no_value        no_value
+  CG  (ps):                  no_value        no_value
+Failing Paths:                     16               0
+
+View : view_wcl_fast
+Slack (ps):                        56              49
+  R2R (ps):                       295             236
+  I2R (ps):                        56              49
+  R2O (ps):                       111             138
+  I2O (ps):                  no_value        no_value
+  CG  (ps):                  no_value        no_value
+TNS (ps):                           0               0
+  R2R (ps):                         0               0
+  I2R (ps):                         0               0
+  R2O (ps):                         0               0
+  I2O (ps):                  no_value        no_value
+  CG  (ps):                  no_value        no_value
+Failing Paths:                      0               0
+
+View : view_wcl_typical
+Slack (ps):                        50              41
+  R2R (ps):                       274             196
+  I2R (ps):                        50              41
+  R2O (ps):                        58              80
+  I2O (ps):                  no_value        no_value
+  CG  (ps):                  no_value        no_value
+TNS (ps):                           0               0
+  R2R (ps):                         0               0
+  I2R (ps):                         0               0
+  R2O (ps):                         0               0
+  I2O (ps):                  no_value        no_value
+  CG  (ps):                  no_value        no_value
+Failing Paths:                      0               0
+
+Cell Area:                     89,747          44,310
+Total Cell Area:               90,770          45,332
+Leaf Instances:                54,125          24,857
+Total Instances:               55,927          26,659
+Utilization (%):                69.74           61.91
+Tot. Net Length (um):        no_value        no_value
+Avg. Net Length (um):        no_value        no_value
+Route Overflow H (%):            0.00            0.00
+Route Overflow V (%):            0.00            0.00
+MBCI(%) (bits/gate) :            0.00            0.00
+Norm Cong Hotspot Area:
+  Max Cong:                      0.00            0.00
+  Tot Cong:                      0.00            0.00
+================================================================================
+CPU  Runtime (h:m:s):        00:37:15        00:23:44
+Real Runtime (h:m:s):        00:25:48        00:07:17
+CPU  Elapsed (h:m:s):        00:37:27        01:01:10
+Real Elapsed (h:m:s):        00:25:53        00:33:10
+Memory (MB):                  2929.02         2917.74
+================================================================================
+================================================================================
+Flow Settings:
+================================================================================
+Total Runtime (h:m:s): 00:33:05
+Total Memory (MB):     2919.75
+Executable Version:    22.10-p001_1
+================================================================================
+Total Cell Area =  Cell Area + Physical Cell Area
+Total Instances =  Leaf Instances + Physical Instances
+
+

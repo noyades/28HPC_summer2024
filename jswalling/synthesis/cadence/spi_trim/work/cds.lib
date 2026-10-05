@@ -1,0 +1,12 @@
+# File Created by Behdad Jamadi,,, at Thu Apr 11 21:27:43 2024
+# assisted by CdsLibEditor
+# Tapeout Specific 
+# Personal Libraries (You can create libraries or add below):
+DEFINE jswalling_scratch /home/micsTapeouts/projects/22FDX_winter2023/jswalling/jswalling_scratch
+DEFINE wallingAHDL /home/jswalling/projects/wallingAHDL
+DEFINE BehdadAHDL /home/micsTapeouts/projects/22FDX_winter2023/jswalling/BehdadAHDL
+DEFINE Meysam_tapeout /home/micsTapeouts/projects/22FDX_winter2023/meysam97
+DEFINE digital /home/micsTapeouts/projects/22FDX_winter2023/hjiwu18/digital
+DEFINE importPads /home/micsTapeouts/projects/22FDX_winter2023/jswalling/importPads
+DEFINE importLib /home/micsTapeouts/projects/22FDX_winter2023/jswalling/importLib
+DEFINE innovusImport innovusImport

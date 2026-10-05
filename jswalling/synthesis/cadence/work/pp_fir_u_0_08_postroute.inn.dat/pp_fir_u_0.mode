@@ -1,0 +1,92 @@
+if {![namespace exists ::IMEX]} { namespace eval ::IMEX {} }
+set ::IMEX::dataVar [file dirname [file normalize [info script]]]
+set ::IMEX::libVar ${::IMEX::dataVar}/libs
+
+catch { setDesignMode -bottomRoutingLayer M2 }
+catch { setDesignMode -powerEffort none }
+catch { setAnalysisMode -analysisType single }
+catch { setAnalysisMode -asyncChecks async }
+catch { setAnalysisMode -checkType setup }
+catch { setAnalysisMode -clkSrcPath true }
+catch { setAnalysisMode -clockPropagation sdcControl }
+catch { setAnalysisMode -skew true }
+catch { setAnalysisMode -timingSelfLoopsNoSkew false }
+catch { setAnalysisMode -usefulSkew true }
+catch { setOptMode -opt_view_pruning_hold_views_active_list { view_wcl_slow view_wcl_fast view_wcl_typical } }
+catch { setOptMode -opt_view_pruning_setup_views_active_list { view_wcl_slow view_wcl_fast view_wcl_typical } }
+catch { setOptMode -opt_view_pruning_setup_views_persistent_list { view_wcl_slow} }
+catch { setOptMode -opt_drv_margin 0 }
+catch { setOptMode -opt_drv true }
+catch { setOptMode -opt_leakage_to_dynamic_ratio 1 }
+catch { setOptMode -opt_multi_bit_flop_opt false }
+catch { setOptMode -opt_resize_flip_flops true }
+catch { setOptMode -opt_view_pruning_placement_setup_view_list { view_wcl_slow  } }
+catch { setOptMode -opt_preserve_all_sequential false }
+catch { setOptMode -opt_setup_target_slack 0 }
+catch { setOptMode -opt_spatial_power_driven false }
+catch { setOptMode -opt_skew true }
+catch { setOptMode -opt_skew_pre_cts true }
+catch { setPathGroupOptions tdgp_reg2reg_default -effortLevel high }
+catch { setPathGroupOptions default -effortLevel low }
+catch { setPathGroupOptions in2out -effortLevel low }
+catch { setPathGroupOptions reg2out -effortLevel low }
+catch { setPathGroupOptions in2reg -effortLevel low }
+catch { setPathGroupOptions reg2reg -effortLevel high -weight 2 }
+catch { setExtractRCMode  -engine postRoute -coupled false }
+catch {setNanoRouteMode -quiet -drouteAutoStop false}
+catch {setNanoRouteMode -quiet -drouteEndIteration 1}
+catch {setNanoRouteMode -quiet -drouteFixAntenna true}
+catch {setNanoRouteMode -quiet -droutePostRouteLithoRepair true}
+catch {setNanoRouteMode -quiet -drouteStartIteration 0}
+catch {setNanoRouteMode -quiet -drouteUseLefPinTaperRule true}
+catch {setNanoRouteMode -quiet -drouteUseMinSpacingForBlockage auto}
+catch {setNanoRouteMode -quiet -extractDesignSignature 25064429}
+catch {setNanoRouteMode -quiet -extractRcModelFile "${::IMEX::libVar}/misc/rc_model.bin"}
+catch {setNanoRouteMode -quiet -extractThirdPartyCompatible false}
+catch {setNanoRouteMode -quiet -grouteExpTdStdDelay 5.100000}
+catch {setNanoRouteMode -quiet -grouteExpTdUseTifTimingEngineForImportDesign false}
+catch {setNanoRouteMode -quiet -routeBottomRoutingLayer 1}
+catch {setNanoRouteMode -quiet -routeExpDesignModeBottomRoutingLayer 2}
+catch {setNanoRouteMode -quiet -routeExpDirtyAreaEco true}
+catch {setNanoRouteMode -quiet -routeExpSignatureEco true}
+catch {setNanoRouteMode -quiet -routeInsertAntennaDiode false}
+catch {setNanoRouteMode -quiet -routeStrictlyHonorNonDefaultRule "false"}
+catch {setNanoRouteMode -quiet -routeTopRoutingLayer 6}
+catch {setNanoRouteMode -quiet -routeWithEco true}
+catch {setNanoRouteMode -quiet -routeWithLithoDriven false}
+catch {setNanoRouteMode -quiet -routeWithSiDriven false}
+catch {setNanoRouteMode -quiet -routeWithTimingDriven false}
+
+catch { setPlaceMode -place_global_cong_effort auto }
+catch { setPlaceMode -place_global_ignore_scan false }
+catch { setIlmMode -keepHighFanoutPorts true -keepLoopBack false -keepInstInSdc false -keepFlatten true }
+catch { setActiveLogicViewMode -keepHighFanoutCriticalInsts false }
+catch { setUsefulSkewMode -opt_skew_eco_route false }
+catch { set_verify_drc_mode -area {0 0 0 0} }
+catch { set_verify_drc_mode -check_ndr_spacing auto }
+catch { set_verify_drc_mode -check_only default }
+catch { set_verify_drc_mode -check_same_via_cell true }
+catch { set_verify_drc_mode -disable_rules "" }
+catch { set_verify_drc_mode -exclude_pg_net false }
+catch { set_verify_drc_mode -ignore_cell_blockage false }
+catch { set_verify_drc_mode -ignore_trial_route false }
+catch { set_verify_drc_mode -limit 1000 }
+catch { set_verify_drc_mode -report pp_fir_u_0.drc.rpt }
+catch { set_verify_drc_mode -use_min_spacing_on_block_obs auto }
+catch { setDelayCalMode -enable_high_fanout true }
+catch { setDelayCalMode -eng_enablePrePlacedFlow false }
+catch { setDelayCalMode -engine aae }
+catch { setDelayCalMode -ignoreNetLoad false }
+catch { setDelayCalMode -SIAware false }
+catch { setDelayCalMode -socv_accuracy_mode low }
+catch { setDelayCalMode -socv_use_lvf_tables all }
+catch { setHierMode -disableArt false }
+catch { setHierMode -reportPostRouteArtTiming false }
+catch { setHierMode -trialRouteHonorReadOnly false }
+catch { setImportMode -discardFloatingVNets false }
+catch { setImportMode -keepEmptyModule true }
+catch { setSIMode -separate_delta_delay_on_data true }
+catch { setFPlanMode -defaultTechSite sc9mcpp140z_cln28ht }
+catch { setFPlanMode -maxIoHeight false }
+catch { setFPlanMode -place_check_ignore_fixed_cell_list {} }
+catch { setFPlanMode -powerRailLayer {} }

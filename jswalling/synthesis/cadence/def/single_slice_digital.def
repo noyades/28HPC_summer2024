@@ -1,0 +1,491 @@
+VERSION 5.8 ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN Digital_FIR_Filter_1 ;
+UNITS DISTANCE MICRONS 1000 ;
+
+DIEAREA ( 0 0 ) ( 206650 157970 ) ;
+
+PINS 67 ;
+- Discrete_FIR_Filter_1_in_re[0] + NET Discrete_FIR_Filter_1_in_re[0]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 0 151400 ) N ;
+- Discrete_FIR_Filter_1_in_re[15] + NET Discrete_FIR_Filter_1_in_re[15]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 0 2000 ) N ;
+- Discrete_FIR_Filter_1_in_re[14] + NET Discrete_FIR_Filter_1_in_re[14]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 0 11960 ) N ;
+- Discrete_FIR_Filter_1_in_re[13] + NET Discrete_FIR_Filter_1_in_re[13]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 0 21920 ) N ;
+- Discrete_FIR_Filter_1_in_re[12] + NET Discrete_FIR_Filter_1_in_re[12]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 0 31880 ) N ;
+- Discrete_FIR_Filter_1_in_re[11] + NET Discrete_FIR_Filter_1_in_re[11]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 0 41840 ) N ;
+- Discrete_FIR_Filter_1_in_re[10] + NET Discrete_FIR_Filter_1_in_re[10]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 0 51800 ) N ;
+- Discrete_FIR_Filter_1_in_re[9] + NET Discrete_FIR_Filter_1_in_re[9]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 0 61760 ) N ;
+- Discrete_FIR_Filter_1_in_re[8] + NET Discrete_FIR_Filter_1_in_re[8]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 0 71720 ) N ;
+- Discrete_FIR_Filter_1_in_re[7] + NET Discrete_FIR_Filter_1_in_re[7]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 0 81680 ) N ;
+- Discrete_FIR_Filter_1_in_re[6] + NET Discrete_FIR_Filter_1_in_re[6]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 0 91640 ) N ;
+- Discrete_FIR_Filter_1_in_re[5] + NET Discrete_FIR_Filter_1_in_re[5]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 0 101600 ) N ;
+- Discrete_FIR_Filter_1_in_re[4] + NET Discrete_FIR_Filter_1_in_re[4]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 0 111560 ) N ;
+- Discrete_FIR_Filter_1_in_re[3] + NET Discrete_FIR_Filter_1_in_re[3]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 0 121520 ) N ;
+- Discrete_FIR_Filter_1_in_re[2] + NET Discrete_FIR_Filter_1_in_re[2]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 0 131480 ) N ;
+- Discrete_FIR_Filter_1_in_re[1] + NET Discrete_FIR_Filter_1_in_re[1]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 0 141440 ) N ;
+- Discrete_FIR_Filter_1_in_im[0] + NET Discrete_FIR_Filter_1_in_im[0]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 0 155880 ) N ;
+- Discrete_FIR_Filter_1_in_im[15] + NET Discrete_FIR_Filter_1_in_im[15]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 0 6480 ) N ;
+- Discrete_FIR_Filter_1_in_im[14] + NET Discrete_FIR_Filter_1_in_im[14]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 0 16440 ) N ;
+- Discrete_FIR_Filter_1_in_im[13] + NET Discrete_FIR_Filter_1_in_im[13]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 0 26400 ) N ;
+- Discrete_FIR_Filter_1_in_im[12] + NET Discrete_FIR_Filter_1_in_im[12]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 0 36360 ) N ;
+- Discrete_FIR_Filter_1_in_im[11] + NET Discrete_FIR_Filter_1_in_im[11]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 0 46320 ) N ;
+- Discrete_FIR_Filter_1_in_im[10] + NET Discrete_FIR_Filter_1_in_im[10]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 0 56280 ) N ;
+- Discrete_FIR_Filter_1_in_im[9] + NET Discrete_FIR_Filter_1_in_im[9]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 0 66240 ) N ;
+- Discrete_FIR_Filter_1_in_im[8] + NET Discrete_FIR_Filter_1_in_im[8]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 0 76200 ) N ;
+- Discrete_FIR_Filter_1_in_im[7] + NET Discrete_FIR_Filter_1_in_im[7]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 0 86160 ) N ;
+- Discrete_FIR_Filter_1_in_im[6] + NET Discrete_FIR_Filter_1_in_im[6]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 0 96120 ) N ;
+- Discrete_FIR_Filter_1_in_im[5] + NET Discrete_FIR_Filter_1_in_im[5]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 0 106080 ) N ;
+- Discrete_FIR_Filter_1_in_im[4] + NET Discrete_FIR_Filter_1_in_im[4]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 0 116040 ) N ;
+- Discrete_FIR_Filter_1_in_im[3] + NET Discrete_FIR_Filter_1_in_im[3]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 0 126000 ) N ;
+- Discrete_FIR_Filter_1_in_im[2] + NET Discrete_FIR_Filter_1_in_im[2]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 0 135960 ) N ;
+- Discrete_FIR_Filter_1_in_im[1] + NET Discrete_FIR_Filter_1_in_im[1]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 0 145920 ) N ;
+- Discrete_FIR_Filter_1_out_re[0] + NET Discrete_FIR_Filter_1_out_re[0]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 206400 151400 ) N ;
+- Discrete_FIR_Filter_1_out_re[15] + NET Discrete_FIR_Filter_1_out_re[15]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 206400 2000 ) N ;
+- Discrete_FIR_Filter_1_out_re[14] + NET Discrete_FIR_Filter_1_out_re[14]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 206400 11960 ) N ;
+- Discrete_FIR_Filter_1_out_re[13] + NET Discrete_FIR_Filter_1_out_re[13]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 206400 21920 ) N ;
+- Discrete_FIR_Filter_1_out_re[12] + NET Discrete_FIR_Filter_1_out_re[12]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 206400 31880 ) N ;
+- Discrete_FIR_Filter_1_out_re[11] + NET Discrete_FIR_Filter_1_out_re[11]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 206400 41840 ) N ;
+- Discrete_FIR_Filter_1_out_re[10] + NET Discrete_FIR_Filter_1_out_re[10]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 206400 51800 ) N ;
+- Discrete_FIR_Filter_1_out_re[9] + NET Discrete_FIR_Filter_1_out_re[9]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 206400 61760 ) N ;
+- Discrete_FIR_Filter_1_out_re[8] + NET Discrete_FIR_Filter_1_out_re[8]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 206400 71720 ) N ;
+- Discrete_FIR_Filter_1_out_re[7] + NET Discrete_FIR_Filter_1_out_re[7]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 206400 81680 ) N ;
+- Discrete_FIR_Filter_1_out_re[6] + NET Discrete_FIR_Filter_1_out_re[6]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 206400 91640 ) N ;
+- Discrete_FIR_Filter_1_out_re[5] + NET Discrete_FIR_Filter_1_out_re[5]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 206400 101600 ) N ;
+- Discrete_FIR_Filter_1_out_re[4] + NET Discrete_FIR_Filter_1_out_re[4]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 206400 111560 ) N ;
+- Discrete_FIR_Filter_1_out_re[3] + NET Discrete_FIR_Filter_1_out_re[3]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 206400 121520 ) N ;
+- Discrete_FIR_Filter_1_out_re[2] + NET Discrete_FIR_Filter_1_out_re[2]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 206400 131480 ) N ;
+- Discrete_FIR_Filter_1_out_re[1] + NET Discrete_FIR_Filter_1_out_re[1]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 206400 141440 ) N ;
+- Discrete_FIR_Filter_1_out_im[0] + NET Discrete_FIR_Filter_1_out_im[0]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 206400 155880 ) N ;
+- Discrete_FIR_Filter_1_out_im[15] + NET Discrete_FIR_Filter_1_out_im[15]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 206400 6480 ) N ;
+- Discrete_FIR_Filter_1_out_im[14] + NET Discrete_FIR_Filter_1_out_im[14]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 206400 16440 ) N ;
+- Discrete_FIR_Filter_1_out_im[13] + NET Discrete_FIR_Filter_1_out_im[13]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 206400 26400 ) N ;
+- Discrete_FIR_Filter_1_out_im[12] + NET Discrete_FIR_Filter_1_out_im[12]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 206400 36360 ) N ;
+- Discrete_FIR_Filter_1_out_im[11] + NET Discrete_FIR_Filter_1_out_im[11]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 206400 46320 ) N ;
+- Discrete_FIR_Filter_1_out_im[10] + NET Discrete_FIR_Filter_1_out_im[10]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 206400 56280 ) N ;
+- Discrete_FIR_Filter_1_out_im[9] + NET Discrete_FIR_Filter_1_out_im[9]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 206400 66240 ) N ;
+- Discrete_FIR_Filter_1_out_im[8] + NET Discrete_FIR_Filter_1_out_im[8]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 206400 76200 ) N ;
+- Discrete_FIR_Filter_1_out_im[7] + NET Discrete_FIR_Filter_1_out_im[7]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 206400 86160 ) N ;
+- Discrete_FIR_Filter_1_out_im[6] + NET Discrete_FIR_Filter_1_out_im[6]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 206400 96120 ) N ;
+- Discrete_FIR_Filter_1_out_im[5] + NET Discrete_FIR_Filter_1_out_im[5]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 206400 106080 ) N ;
+- Discrete_FIR_Filter_1_out_im[4] + NET Discrete_FIR_Filter_1_out_im[4]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 206400 116040 ) N ;
+- Discrete_FIR_Filter_1_out_im[3] + NET Discrete_FIR_Filter_1_out_im[3]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 206400 126000 ) N ;
+- Discrete_FIR_Filter_1_out_im[2] + NET Discrete_FIR_Filter_1_out_im[2]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 206400 135960 ) N ;
+- Discrete_FIR_Filter_1_out_im[1] + NET Discrete_FIR_Filter_1_out_im[1]
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M2 ( 0 0 ) ( 250 90 )
+    + PLACED ( 206400 145920 ) N ;
+- clk + NET clk
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M3 ( 0 0 ) ( 90 250 )
+    + PLACED ( 103080 0 ) N ;
+- reset + NET reset
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M3 ( 0 0 ) ( 90 250 )
+    + PLACED ( 103280 0 ) N ;
+- enb + NET enb
+  + DIRECTION INOUT
+  + PORT
+    + LAYER M3 ( 0 0 ) ( 90 250 )
+    + PLACED ( 103480 0 ) N ;
+END PINS
+
+NETS 67 ;
+- Discrete_FIR_Filter_1_in_re[0]
+  ( PIN Discrete_FIR_Filter_1_in_re[0] ) ;
+- Discrete_FIR_Filter_1_in_re[15]
+  ( PIN Discrete_FIR_Filter_1_in_re[15] ) ;
+- Discrete_FIR_Filter_1_in_re[14]
+  ( PIN Discrete_FIR_Filter_1_in_re[14] ) ;
+- Discrete_FIR_Filter_1_in_re[13]
+  ( PIN Discrete_FIR_Filter_1_in_re[13] ) ;
+- Discrete_FIR_Filter_1_in_re[12]
+  ( PIN Discrete_FIR_Filter_1_in_re[12] ) ;
+- Discrete_FIR_Filter_1_in_re[11]
+  ( PIN Discrete_FIR_Filter_1_in_re[11] ) ;
+- Discrete_FIR_Filter_1_in_re[10]
+  ( PIN Discrete_FIR_Filter_1_in_re[10] ) ;
+- Discrete_FIR_Filter_1_in_re[9]
+  ( PIN Discrete_FIR_Filter_1_in_re[9] ) ;
+- Discrete_FIR_Filter_1_in_re[8]
+  ( PIN Discrete_FIR_Filter_1_in_re[8] ) ;
+- Discrete_FIR_Filter_1_in_re[7]
+  ( PIN Discrete_FIR_Filter_1_in_re[7] ) ;
+- Discrete_FIR_Filter_1_in_re[6]
+  ( PIN Discrete_FIR_Filter_1_in_re[6] ) ;
+- Discrete_FIR_Filter_1_in_re[5]
+  ( PIN Discrete_FIR_Filter_1_in_re[5] ) ;
+- Discrete_FIR_Filter_1_in_re[4]
+  ( PIN Discrete_FIR_Filter_1_in_re[4] ) ;
+- Discrete_FIR_Filter_1_in_re[3]
+  ( PIN Discrete_FIR_Filter_1_in_re[3] ) ;
+- Discrete_FIR_Filter_1_in_re[2]
+  ( PIN Discrete_FIR_Filter_1_in_re[2] ) ;
+- Discrete_FIR_Filter_1_in_re[1]
+  ( PIN Discrete_FIR_Filter_1_in_re[1] ) ;
+- Discrete_FIR_Filter_1_in_im[0]
+  ( PIN Discrete_FIR_Filter_1_in_im[0] ) ;
+- Discrete_FIR_Filter_1_in_im[15]
+  ( PIN Discrete_FIR_Filter_1_in_im[15] ) ;
+- Discrete_FIR_Filter_1_in_im[14]
+  ( PIN Discrete_FIR_Filter_1_in_im[14] ) ;
+- Discrete_FIR_Filter_1_in_im[13]
+  ( PIN Discrete_FIR_Filter_1_in_im[13] ) ;
+- Discrete_FIR_Filter_1_in_im[12]
+  ( PIN Discrete_FIR_Filter_1_in_im[12] ) ;
+- Discrete_FIR_Filter_1_in_im[11]
+  ( PIN Discrete_FIR_Filter_1_in_im[11] ) ;
+- Discrete_FIR_Filter_1_in_im[10]
+  ( PIN Discrete_FIR_Filter_1_in_im[10] ) ;
+- Discrete_FIR_Filter_1_in_im[9]
+  ( PIN Discrete_FIR_Filter_1_in_im[9] ) ;
+- Discrete_FIR_Filter_1_in_im[8]
+  ( PIN Discrete_FIR_Filter_1_in_im[8] ) ;
+- Discrete_FIR_Filter_1_in_im[7]
+  ( PIN Discrete_FIR_Filter_1_in_im[7] ) ;
+- Discrete_FIR_Filter_1_in_im[6]
+  ( PIN Discrete_FIR_Filter_1_in_im[6] ) ;
+- Discrete_FIR_Filter_1_in_im[5]
+  ( PIN Discrete_FIR_Filter_1_in_im[5] ) ;
+- Discrete_FIR_Filter_1_in_im[4]
+  ( PIN Discrete_FIR_Filter_1_in_im[4] ) ;
+- Discrete_FIR_Filter_1_in_im[3]
+  ( PIN Discrete_FIR_Filter_1_in_im[3] ) ;
+- Discrete_FIR_Filter_1_in_im[2]
+  ( PIN Discrete_FIR_Filter_1_in_im[2] ) ;
+- Discrete_FIR_Filter_1_in_im[1]
+  ( PIN Discrete_FIR_Filter_1_in_im[1] ) ;
+- Discrete_FIR_Filter_1_out_re[0]
+  ( PIN Discrete_FIR_Filter_1_out_re[0] ) ;
+- Discrete_FIR_Filter_1_out_re[15]
+  ( PIN Discrete_FIR_Filter_1_out_re[15] ) ;
+- Discrete_FIR_Filter_1_out_re[14]
+  ( PIN Discrete_FIR_Filter_1_out_re[14] ) ;
+- Discrete_FIR_Filter_1_out_re[13]
+  ( PIN Discrete_FIR_Filter_1_out_re[13] ) ;
+- Discrete_FIR_Filter_1_out_re[12]
+  ( PIN Discrete_FIR_Filter_1_out_re[12] ) ;
+- Discrete_FIR_Filter_1_out_re[11]
+  ( PIN Discrete_FIR_Filter_1_out_re[11] ) ;
+- Discrete_FIR_Filter_1_out_re[10]
+  ( PIN Discrete_FIR_Filter_1_out_re[10] ) ;
+- Discrete_FIR_Filter_1_out_re[9]
+  ( PIN Discrete_FIR_Filter_1_out_re[9] ) ;
+- Discrete_FIR_Filter_1_out_re[8]
+  ( PIN Discrete_FIR_Filter_1_out_re[8] ) ;
+- Discrete_FIR_Filter_1_out_re[7]
+  ( PIN Discrete_FIR_Filter_1_out_re[7] ) ;
+- Discrete_FIR_Filter_1_out_re[6]
+  ( PIN Discrete_FIR_Filter_1_out_re[6] ) ;
+- Discrete_FIR_Filter_1_out_re[5]
+  ( PIN Discrete_FIR_Filter_1_out_re[5] ) ;
+- Discrete_FIR_Filter_1_out_re[4]
+  ( PIN Discrete_FIR_Filter_1_out_re[4] ) ;
+- Discrete_FIR_Filter_1_out_re[3]
+  ( PIN Discrete_FIR_Filter_1_out_re[3] ) ;
+- Discrete_FIR_Filter_1_out_re[2]
+  ( PIN Discrete_FIR_Filter_1_out_re[2] ) ;
+- Discrete_FIR_Filter_1_out_re[1]
+  ( PIN Discrete_FIR_Filter_1_out_re[1] ) ;
+- Discrete_FIR_Filter_1_out_im[0]
+  ( PIN Discrete_FIR_Filter_1_out_im[0] ) ;
+- Discrete_FIR_Filter_1_out_im[15]
+  ( PIN Discrete_FIR_Filter_1_out_im[15] ) ;
+- Discrete_FIR_Filter_1_out_im[14]
+  ( PIN Discrete_FIR_Filter_1_out_im[14] ) ;
+- Discrete_FIR_Filter_1_out_im[13]
+  ( PIN Discrete_FIR_Filter_1_out_im[13] ) ;
+- Discrete_FIR_Filter_1_out_im[12]
+  ( PIN Discrete_FIR_Filter_1_out_im[12] ) ;
+- Discrete_FIR_Filter_1_out_im[11]
+  ( PIN Discrete_FIR_Filter_1_out_im[11] ) ;
+- Discrete_FIR_Filter_1_out_im[10]
+  ( PIN Discrete_FIR_Filter_1_out_im[10] ) ;
+- Discrete_FIR_Filter_1_out_im[9]
+  ( PIN Discrete_FIR_Filter_1_out_im[9] ) ;
+- Discrete_FIR_Filter_1_out_im[8]
+  ( PIN Discrete_FIR_Filter_1_out_im[8] ) ;
+- Discrete_FIR_Filter_1_out_im[7]
+  ( PIN Discrete_FIR_Filter_1_out_im[7] ) ;
+- Discrete_FIR_Filter_1_out_im[6]
+  ( PIN Discrete_FIR_Filter_1_out_im[6] ) ;
+- Discrete_FIR_Filter_1_out_im[5]
+  ( PIN Discrete_FIR_Filter_1_out_im[5] ) ;
+- Discrete_FIR_Filter_1_out_im[4]
+  ( PIN Discrete_FIR_Filter_1_out_im[4] ) ;
+- Discrete_FIR_Filter_1_out_im[3]
+  ( PIN Discrete_FIR_Filter_1_out_im[3] ) ;
+- Discrete_FIR_Filter_1_out_im[2]
+  ( PIN Discrete_FIR_Filter_1_out_im[2] ) ;
+- Discrete_FIR_Filter_1_out_im[1]
+  ( PIN Discrete_FIR_Filter_1_out_im[1] ) ;
+- clk
+  ( PIN clk ) ;
+- reset
+  ( PIN reset ) ;
+- enb
+  ( PIN enb ) ;
+END NETS
+
+SPECIALNETS 2 ;
+- VDD
+  + USE POWER ;
+- VSS
+  + USE GROUND ;
+END SPECIALNETS
+
+END DESIGN

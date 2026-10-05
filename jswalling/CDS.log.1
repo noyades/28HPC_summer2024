@@ -1,0 +1,437 @@
+\# Program start time:     UTC 2026.08.14 21:14:19.532
+\# Local time: EDT (UTC-04:00) 2026.08.14 17:14:19.532
+\o Program:		@(#)$CDS: Virtuoso Studio version IC23.1-64b 04/22/2025 22:42 (sjfhw318) $
+\o Hierarchy:		/var/RFIC/cadtools/cadence/cadence/IC_23.10.140_lnx86/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC23.1-64b.ISR14.32  (64-bit addresses)
+\# Command line:	/var/RFIC/cadtools/cadence/cadence/IC_23.10.140_lnx86/tools/dfII/bin/64bit/virtuoso
+\# Host name (type):	lnx-prd-05.ece.vt.edu (x86_64)
+\# Operating system:	Linux 5.15.0-320.202.8.3.el9uek.x86_64 #2 SMP Wed May 13 08:51:48 PDT 2026
+\# Linux /etc/issue:	\S
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	:1 (1600x1200)
+\# Available geometry:			TL(0:32) BR(1599:1199)
+\# X server:			The X.Org Foundation
+\# Depth of Visual (Root):	24 (24)
+\# Number of Planes Used:	24
+\# X version:		11.0 (vendor release 12011000)
+\# X resource pool:	base 0x7a00000, mask 0x1fffff (2097151), shift 0
+\# 			current id 0x0, current max 0x1ffffa (2097146)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	      1,178 MB
+\# Available memory:	    120,667 MB
+\# System memory:	    193,529 MB
+\# Maximum memory size:	    192,529 MB
+\# Max mem available:	    120,845 MB
+\# Initial memory used:	        178 MB
+\#        process size:	      1,553 MB
+\# Thread usage limits (effective/default):	maxthreads 511712/511712 maxload 32.00/32.00
+\# Qt version:		5.15.9
+\# Window Manager:	GNOME Shell
+\# User Name:		jswalling
+\o Working Directory:	lnx-prd-05.ece.vt.edu:/data/projects/28HPC_summer2024/jswalling
+\# Process Id:		1442164
+\o 
+\o COPYRIGHT (C) 1992-2025  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2025  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading im.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading pegasusui.cxt
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading layers.cxt 
+\o Loading drv.cxt 
+\o Loading ams.cxt 
+\o Loading adexlDM.cxt 
+\o Loading cpf.cxt 
+\o Loading cli.cxt 
+\# Memory report: using         286 MB, process size 1,728 MB at UTC 2026.08.14 21:14:21.057
+\o Loading lp.cxt 
+\o Loading sipLayout.cxt 
+\o Loading viva.cxt 
+\o Loading diagCenter.cxt 
+\o INFO (ELI-00333) License program mode is Virtuoso.
+\# [17:14:19.282553] Configured Lic search path (23.02-s006): 27002@license.ece.vt.edu
+\o Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.01s.
+\w *WARNING* LIB test_import from File /data/projects/28HPC_summer2024/jswalling/cds.lib Line 13 redefines
+\w LIB test_import from the same file (defined earlier.)
+\w *WARNING* The directory: '/home/rubel/std_logic_libs/tsmc_28nm/arm/tsmc/cln28ht/sc9mcpp140z_base_svt_c30/r0p0/oa/sc9mcpp140z_cln28ht_base_svt_c30' does not exist
+\w 	but was defined in libFile '/data/projects/28HPC_summer2024/jswalling/cds.lib' for Lib 'sc9mcpp140z_cln28ht_base_svt_c30_rb'.
+\w *WARNING* The directory: '/home/micsTapeouts/projects/28HPC_summer2024/behdad/dev28_ACED' does not exist
+\w 	but was defined in libFile '/data/projects/28HPC_summer2024/jswalling/cds.lib' for Lib 'dev28_ACED'.
+\o 		TSMC_PDK_HOME                : /data/PDK/tsmc/28nm/release
+\o 		TECHDIR_DRC                  : /data/PDK/globalFoundries/12LP/release/DRC/Calibre
+\o 		TECHDIR_LVS                  : /data/PDK/globalFoundries/12LP/release/LVS/Calibre
+\w 		TECHDIR_FILLGEN              : nil
+\w 		TECHDIR_PERC                 : nil
+\w 		TECHDIR_LDL                  : nil
+\o 		TECHDIR_XACT                 : /data/PDK/globalFoundries/12LP/release/PEX/xACT
+\o 		TECHDIR_DRC_PVS              : ${TSMC_PDK_HOME}/DRC/PVS
+\w 		PVSUI_DRC_PRESETS_FILE       : nil
+\o 		TECHDIR_LVS_PVS              : ${TSMC_PDK_HOME}/LVS/PVS
+\w 		PVSUI_LVS_PRESETS_FILE       : nil
+\w 		TECHDIR_FILLGEN_PVS          : nil
+\o 		SPECTRE_MODEL_PATH           : ${TSMC_PDK_HOME}/models/spectre/
+\o 		HSPICE_MODEL_PATH            : ${TSMC_PDK_HOME}/models/hspice/
+\w *WARNING* LIB test_import from File /data/projects/28HPC_summer2024/jswalling/cds.lib Line 13 redefines
+\w LIB test_import from the same file (defined earlier.)
+\w *WARNING* The directory: '/home/rubel/std_logic_libs/tsmc_28nm/arm/tsmc/cln28ht/sc9mcpp140z_base_svt_c30/r0p0/oa/sc9mcpp140z_cln28ht_base_svt_c30' does not exist
+\w 	but was defined in libFile '/data/projects/28HPC_summer2024/jswalling/cds.lib' for Lib 'sc9mcpp140z_cln28ht_base_svt_c30_rb'.
+\w *WARNING* The directory: '/home/micsTapeouts/projects/28HPC_summer2024/behdad/dev28_ACED' does not exist
+\w 	but was defined in libFile '/data/projects/28HPC_summer2024/jswalling/cds.lib' for Lib 'dev28_ACED'.
+\o //
+\o //  Calibre Skill Interface * (v2025.3_34.23) *
+\o //
+\o //                         Copyright Siemens 1996-2020     
+\o //                             All Rights Reserved.
+\o //         THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+\o //            WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+\o //              OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+\o //
+\o //
+\e virserver.tcl error: Invalid operating system environment, VENDOR=unknown OS VERSION=9
+\e 
+\e 
+\o Invalid operating system environment, VENDOR=unknown OS VERSION=9
+\o 
+\o 
+\o Loading oasis.cxt 
+\o Auto-configuration based on installed version of EMX...
+\o   EMX_pole_zero_models => t
+\o   EMX_black_box => t
+\o   EMX_connectivity => t
+\o   EMX_frequency_indep => t
+\o   EMX_cadence_dev_info => t
+\o   EMX_dev_term_mapping => t
+\o   EMX_dynamic_frequencies => t
+\o   EMX_log_sweep => t
+\o   EMX_vtu => t
+\o   EMX_cdslic => t
+\o   EMX_8cpu_lic => t
+\o   EMX_memory => t
+\o   EMX_printproc_text => t
+\o   EMX_mpi => t
+\o   EMX_oasis => t
+\o   EMX_openaccess => t
+\o   EMX_extended_warnings => t
+\o   EMX_checkpoint => t
+\o   EMX_accuracy => t
+\o   EMX_multimask => t
+\o   EMX_bb_pin_check => t
+\o   EMX_log_time => t
+\o   EMX_message_file => t
+\o   EMX_surface => t
+\o Auto-configuration based on installed version of GDSview...
+\o   EMX_GDSview_unused_labels => t
+\o   EMX_GDSview_title => t
+\o   EMX_GDSview_conn_type => t
+\o   EMX_GDSview_verbose => t
+\o Auto-configuration based on installed version of ModelGen...
+\o   EMX_mg_global_interp => t
+\o Loading analog.cxt 
+\o Loading /var/RFIC/cadtools/cadence/../ads/GoldenGate-2024/aa/goldengate.ini...
+\w *WARNING* Cannot find registration file GoldenGate.cdsenv to register environment variables
+\w *WARNING* envGetVal: could not find tool[.partition] 'GoldenGate.user'
+\w *WARNING* Cannot find registration file GoldenGate.cdsenv to register environment variables
+\w *WARNING* envGetVal: could not find tool[.partition] 'GoldenGate.user'
+\o t
+\e *******
+\w *WARNING* Cannot find registration file GoldenGate.cdsenv to register environment variables
+\w *WARNING* envGetVal: could not find tool[.partition] 'GoldenGate.user'
+\e *Error* GoldenGate version ("GoldenGate-2024") and GoldenGate.cdsenv version (nil) do not match.
+\e 
+\e *Error* Please ensure that your installations (Cadence and GoldenGate), environment and initialization files (.cdsenv, .cdsinit, setup.loc, etc.) are in order.
+\e 
+\e *******
+\o t
+\o Running: cdswhich -all setup.loc
+\o Info (cdswhich): 'setup.loc' found at:
+\o 	/var/RFIC/cadtools/cadence/cadence/IC_23.10.140_lnx86/share/cdssetup/setup.loc
+\o 
+\o The first setup.loc file in the above list will be used.
+\o Environment variable HPEESOF_DIR is set to /var/RFIC/cadtools/cadence/../ads/ADS2025_Update1.
+\w *WARNING* Cannot find registration file GoldenGate.cdsenv to register environment variables
+\w *WARNING* envGetVal: could not find tool[.partition] 'GoldenGate.user'
+\w *WARNING* Cannot find registration file ADSsim.cdsenv to register environment variables
+\w *WARNING* envGetVal: could not find tool[.partition] 'ADSsim.init'
+\w *WARNING* ads.ini: Unable to locate the ".cdsenv" file for ADSsim. Please make sure $HPEESOF_DIR/idf/ads_site is in your setup.loc.
+\w *WARNING* Cannot find registration file ads.cdsenv to register environment variables
+\w *WARNING* envGetVal: could not find tool[.partition] 'ads.init'
+\w *WARNING* ads.ini: Unable to locate the ".cdsenv" file for ads. Please make sure $HPEESOF_DIR/idf/ads_site is in your setup.loc.
+\w *WARNING* Cannot find registration file adsDL.cdsenv to register environment variables
+\w *WARNING* envGetVal: could not find tool[.partition] 'adsDL.init'
+\w *WARNING* ads.ini: Unable to locate the ".cdsenv" file for adsDL. Please make sure $HPEESOF_DIR/idf/ads_site is in your setup.loc.
+\w *WARNING* Cannot find registration file adsMom.cdsenv to register environment variables
+\w *WARNING* envGetVal: could not find tool[.partition] 'adsMom.init'
+\w *WARNING* ads.ini: Unable to locate the ".cdsenv" file for adsMom. Please make sure $HPEESOF_DIR/idf/ads_site is in your setup.loc.
+\o Loading /var/RFIC/cadtools/ads/ADS2025_Update1/idf/skill/6.1.8/64bit/ads.cxt
+\o *** Unable to register the eesof formats
+\w *WARNING* rfpro/empro will not be available as its data is not registered
+\p > 
+\o Loading le.cxt 
+\w *WARNING* could not load font "-*-courier-medium-r-*-*-12-*", using font "fixed"
+\w *WARNING* could not load font "-*-helvetica-medium-r-*-*-12-*", using font "fixed"
+\w *WARNING* Font name -*-helvetica-medium-r-*-*-12-* is invalid 
+\w *WARNING* Font name -*-helvetica-medium-r-*-*-12-* is invalid 
+\w *WARNING* Font name -*-helvetica-medium-r-*-*-12-* is invalid 
+\o Loading tilp.cxt 
+\o Loading validator.cxt 
+\o Loading vrf.cxt 
+\o Loading multiTechPlugin.cxt 
+\o Loading exportDie.cxt 
+\# Loading perfDiag...
+\# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
+\o The Health Monitor tool is installed. You can access it from CIW - Tools - Diagnostic Center or use the shell command 'cdsPerfDiag -p 1442164' to open it when Virtuoso freezes.
+\# INFO (PerfDiag): The private spectre.envOpts environment variable 'netlistModelFileFirst' is set to value 't' different than default value 'nil'.
+\# INFO (PerfDiag): The private spectre.envOpts environment variable 'modelFiles' is set to value '"$SPECTRE_MODEL_PATH/design_wrapper.lib.scs;tt_pre\n#;$SPECTRE_MODEL_PATH/design_wrapper_rf.lib.scs;tt_pre\n#;$SPECTRE_MODEL_PATH/design_wrapper_mmw.lib.scs;tt_pre"' different than default value '""'.
+\# INFO (PerfDiag): The private hspiceD.envOpts environment variable 'modelFiles' is set to value '"$HSPICE_MODEL_PATH/design_wrapper.lib;tt_pre\n#;$HSPICE_MODEL_PATH/design_wrapper_rf.lib;tt_pre\n#;$HSPICE_MODEL_PATH/design_wrapper_mmw.lib;tt_pre"' different than default value '""'.
+\# (PerfDiag): Use backtrace from GLIBC.
+\w *WARNING* Cannot find registration file ADSsim.cdsenv to register environment variables
+\w *WARNING* envGetVal: could not find tool[.partition] 'ADSsim.init'
+\# Memory report: using         399 MB, process size 1,845 MB at UTC 2026.08.14 21:14:29.609
+\a ddsOpenLibManager()
+\w *WARNING* LIB test_import from File /data/projects/28HPC_summer2024/jswalling/cds.lib Line 13 redefines
+\w LIB test_import from the same file (defined earlier.)
+\w *WARNING* The directory: '/home/rubel/std_logic_libs/tsmc_28nm/arm/tsmc/cln28ht/sc9mcpp140z_base_svt_c30/r0p0/oa/sc9mcpp140z_cln28ht_base_svt_c30' does not exist
+\w 	but was defined in libFile '/data/projects/28HPC_summer2024/jswalling/cds.lib' for Lib 'sc9mcpp140z_cln28ht_base_svt_c30_rb'.
+\w *WARNING* The directory: '/home/micsTapeouts/projects/28HPC_summer2024/behdad/dev28_ACED' does not exist
+\w 	but was defined in libFile '/data/projects/28HPC_summer2024/jswalling/cds.lib' for Lib 'dev28_ACED'.
+\r t
+\# Available memory:        120,525 MB at UTC 2026.08.14 21:14:29.768
+\# Memory report: Maximum memory size now 120,932 MB at UTC 2026.08.14 21:14:29.768
+\# Thread usage report: 16 active threads, active load 1.40 at UTC 2026.08.14 21:14:29.768
+\i ddsServOpen("jswalling_dsp" "scpa_dig_ana_ppfir" "layout" "read" nil nil)
+\# [17:15:03.215904] Periodic Lic check successful
+\# [17:15:03.215920] Feature usage summary:
+\# [17:15:03.215920] 111
+\# [17:15:03.215921] Virtuoso_Adv_Node_Framework
+\o Loading cle.cxt 
+\o Loading lx.cxt 
+\o Loading pe.cxt 
+\o Loading lce.cxt 
+\w *WARNING* Font name -*-helvetica-medium-r-*-*-12-* is invalid 
+\w *WARNING* Font name -*-helvetica-medium-r-*-*-12-* is invalid 
+\w *WARNING* Font name -*-helvetica-medium-r-*-*-12-* is invalid 
+\o Loading drdEdit.cxt 
+\o Loading rte.cxt 
+\# Current Window: window(2)
+\o Initializing from libInit.il for library tsmcN28...
+\o    --  load_apc_tsmc_n28.il
+\o    --  apc_util.cdn
+\# Memory report: using       1,000 MB, process size 2,446 MB at UTC 2026.08.14 21:15:04.053
+\o    --  tsmcN28.pce
+\o    --  tsmcPdkParamTable.il
+\o    --  cniUtils_encrypted.il
+\o    --  tsmcLDEparamTable.il
+\o    --  tsmcN28_CB_2.cxt
+\o    --  tsmcN28_gateCB.cxt
+\o    --  tsmcN28Tool.cxt
+\o    --  tsmcN28.cxt
+\o    --  tsmcN28_updateCDFs.cxt
+\o    --  tsmcDNA_utility.cxt
+\o    --  tsmcN28_CB_4.cxt
+\o    --  tsmc_LDE.cxt
+\o    --  tsmcN28_CB_3.cxt
+\o    --  metalRES.cxt
+\o    --  tsmcN28_CB_1.cxt
+\o    --  tsmcN28_tif.cxt
+\o Loading spectrei.cxt 
+\o Loading adexlCore.cxt 
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\o Loading socket.cxt 
+\o Loading par.cxt 
+\o Loading alvs.cxt 
+\o Loading caa.cxt 
+\o Loading amps.cxt 
+\o Loading adexl.cxt 
+\o Loading vdsil.cxt 
+\o Loading te.cxt 
+\o Loading schHDL.cxt 
+\o Loading devCheck.cxt 
+\o Loading relXpert.cxt 
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading msgHandler.cxt 
+\o Loading UltraSim.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
+\o Loading Working place Display File '/data/projects/28HPC_summer2024/jswalling/display.drf'
+\o Loading wsp.cxt 
+\o Loading soi.cxt 
+\o Loading cph.cxt 
+\# Memory report: using       1,129 MB, process size 2,619 MB at UTC 2026.08.14 21:15:07.590
+\# Current Window: window(3)
+\o Loading schematic.cxt 
+\o Loading vb.cxt 
+\o Loading ncl.cxt 
+\o Loading cfde.cxt 
+\o Loading nt.cxt 
+\o Loading oi.cxt 
+\o Loading see.cxt 
+\o Loading treeAssistant.cxt 
+\o Loading asst.cxt 
+\a _ciAssistantReplay_newAssistantByName(dwindow('ciProspector1) "Rapid Analog Prototype")
+\r t
+\o Loading simui.cxt 
+\o Loading hsm.cxt 
+\o Loading hia.cxt 
+\o Loading dpt.cxt 
+\o Loading mpt.cxt 
+\o Loading schMap.cxt 
+\o Loading layerProc.cxt 
+\# Memory report: using       1,594 MB, process size 3,086 MB at UTC 2026.08.14 21:15:18.011
+\o Loading techComp.cxt 
+\w *WARNING* (LX-2111): Layout 'jswalling_dsp scpa_dig_ana_ppfir layout' is read-only so the property specifying the connectivity reference
+\w cannot be saved on the cellview. The specified connectivity reference is set for the current session
+\w but is not saved for use in future sessions.
+\# Current Window: window(2) Window cellview: jswalling_dsp:scpa_dig_ana_ppfir:layout  Application: Virtuoso XL
+\w *WARNING* (BND-2114): Schematic instance 'fill2<37399:0>' has a high generation factor = 37400, which can delay the launch of Layout XL.
+\w If the generation factor is incorrect, restart Virtuoso, set the correct generation factors in the schematic, and relaunch Layout XL.
+\w *WARNING* (BND-2114): Schematic instance 'fill3<19059:0>' has a high generation factor = 19060, which can delay the launch of Layout XL.
+\w If the generation factor is incorrect, restart Virtuoso, set the correct generation factors in the schematic, and relaunch Layout XL.
+\w *WARNING* (BND-2114): Schematic instance 'sg4<24056:0>' has a high generation factor = 24057, which can delay the launch of Layout XL.
+\w If the generation factor is incorrect, restart Virtuoso, set the correct generation factors in the schematic, and relaunch Layout XL.
+\w *WARNING* (BND-2114): Schematic instance 'sg8<12728:0>' has a high generation factor = 12729, which can delay the launch of Layout XL.
+\w If the generation factor is incorrect, restart Virtuoso, set the correct generation factors in the schematic, and relaunch Layout XL.
+\w *WARNING* (BND-2114): Schematic instance 'sg16<5282:0>' has a high generation factor = 5283, which can delay the launch of Layout XL.
+\w If the generation factor is incorrect, restart Virtuoso, set the correct generation factors in the schematic, and relaunch Layout XL.
+\# Memory report: using       1,767 MB, process size 3,259 MB at UTC 2026.08.14 21:15:20.420
+\# Memory report: using       1,993 MB, process size 3,485 MB at UTC 2026.08.14 21:15:23.193
+\o INFO (BND-1003): Binder initialized for layout cellview 'jswalling_dsp/scpa_dig_ana_ppfir/layout' and source cellview 'jswalling_dsp/scpa_dig_ana_ppfir/schematic':
+\o 
+\o                  bound       unbound     ungenerated
+\o   terminals          0             0            2087
+\o   nets               0             0           26636
+\o   instances          0        301122          239634
+\o 
+\w *WARNING* (BND-2005): Layout instances and terminals do not match the source.
+\w Use 'XL Status' in the Navigator or run 'Connectivity - Check - Against Source' for more details.
+\w If the bindings are correct, run the 'Update from Source' commands,
+\w otherwise run 'Connectivity - Update - Binding'.
+\o Invalid operating system environment, VENDOR=unknown OS VERSION=9
+\o 
+\o 
+\w *WARNING* (DEBASE-102231): Invalid items in the user menu trigger 'mgcLoadCalibreMenu' return value ignored. (nil)
+\o Loading vfoCmd.cxt 
+\o Load shared object file /var/RFIC/cadtools/cadence/assura/ASSURA41/tools.lnx86/assura/lib/64bit/libavview.so
+\w *WARNING* dlopen: /var/RFIC/cadtools/cadence/assura/ASSURA41/tools.lnx86/assura/lib/64bit/libavview.so: /var/RFIC/cadtools/cadence/assura/ASSURA41/tools.lnx86/assura/lib/64bit/libavview.so: undefined symbol: obRegisterDocPath
+\w *WARNING* Failed to open shared object file /var/RFIC/cadtools/cadence/assura/ASSURA41/tools.lnx86/assura/lib/64bit/libavview.so
+\w *WARNING* (LE-104272): Assura has not been installed in this hierarchy.
+\w Assura has not been installed in this hierarchy.
+\o The Quantus UI context file was successfully loaded.
+\o Loading sna.cxt
+\o Loading ia.cxt 
+\o Loading ev20.cxt 
+\o Loading vfp.cxt 
+\o Loading smd.cxt 
+\o Loading atd.cxt 
+\a _treeWidgetTreeWidgetItemClicked(_iaConfForm->_iaCfgTree "Generate Trunks" "0" "Unchecked")
+\r t
+\a _treeWidgetTreeWidgetItemClicked(_iaConfForm->_iaCfgTree "Generate Trunks" "0" "Unchecked")
+\r t
+\o Loading apInfra.cxt 
+\o Loading vca.cxt 
+\a swindow(1)->hiToolbars->leAlignToolbar_1->leAlignLayerTB->value = "P&R Boundary"
+\r "P&R Boundary"
+\a swindow(1)->hiToolbars->leAlignToolbar_1->leAlignLayerTB->value = "ref drawing"
+\r "ref drawing"
+\o Loading vrfECO.cxt 
+\a when(dwindow('oiAssistant1) hiMapWindow(dwindow('oiAssistant1)))
+\r t
+\a when(dwindow('treeAssistant1) hiMapWindow(dwindow('treeAssistant1)))
+\r t
+\a when(dwindow('ptePaletteAssistant1) hiMapWindow(dwindow('ptePaletteAssistant1)))
+\r t
+\a hiZoomIn()
+\i 3.8:340.7
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 328.8:280.2
+\r t
+\r t
+\a hiZoomIn()
+\i 192.2:322.8
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 156.8:301.7
+\r t
+\r t
+\a hiZoomIn()
+\i 177.8:309.8
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 170.1:305.4
+\r t
+\r t
+\a hiZoomIn()
+\i 174.4:309.2
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 171.8:307.4
+\r t
+\r t
+\a hiZoomAbsoluteScale(hiGetCurrentWindow() 0.9)
+\r t
+\a leSelBoxOrStretch()
+\i 708.7:286.6
+\i 708.7:286.6
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 3.8:316.1
+\r t
+\r t
+\a leHiEditProp()
+\r t
+\a geiPlInvokePlistAction("editorNum0" "showTree")
+\r t
+\a geiPlInvokePlistAction("editorNum0" "cancel")
+\r t
+\a hiCloseWindow(swindow(1))
+\# Current Window: window(3) Window cellview: jswalling_dsp:scpa_dig_ana_ppfir:schematic  Application: Schematics XL
+\r t
+\a _hiSetCurrentWinNum(3)
+\r t
+\a hiCloseWindow(swindow(2))
+\r t
+\# Memory report: Maximum memory size now 118,559 MB at UTC 2026.08.17 05:56:30.768
+\# Memory report: Maximum memory size now 116,154 MB at UTC 2026.08.17 20:36:30.768
+\# Memory report: Maximum memory size now 120,111 MB at UTC 2026.08.18 02:18:01.768
+\# Memory report: Maximum memory size now 123,409 MB at UTC 2026.08.18 02:18:51.768
+\# Memory report: Maximum memory size now 120,678 MB at UTC 2026.08.18 02:19:31.769
+\# Memory report: Maximum memory size now 118,251 MB at UTC 2026.08.18 02:22:31.768
+\# Memory report: Maximum memory size now 115,741 MB at UTC 2026.08.18 04:01:51.773
+\# Memory report: Maximum memory size now 113,320 MB at UTC 2026.08.19 03:41:31.768
+\# Available memory:        109,565 MB at UTC 2026.08.19 10:00:51.767
+\a hiQuit()
+\# Displaying modal dbox "hiQuitDBox", title "Quit"
+\p > 
+\a hiDBoxOK(hiQuitDBox)
+\r t
+\o 
+\# Lic Summary:
+\# [10:56:20.010608] Cdslmd servers: license
+\# [10:56:20.534929] Feature usage summary:
+\# [10:56:20.534930] 111
+\# [10:56:20.534930] Virtuoso_Schematic_Editor_XL
+\# [10:56:20.534931] Virtuoso_Layout_Suite_GXL
+\# [10:56:20.534931] Virtuoso_Adv_Node_Framework
+\# Memory report: on exit          1,995 MB, process size 3,485 MB at UTC 2026.08.19 14:56:20.535
+\# Memory report: peak usage       2,003 MB, process size 3,499 MB
