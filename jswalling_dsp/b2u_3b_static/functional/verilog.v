@@ -1,0 +1,36 @@
+// Created by ihdl
+module b2u_3b_static (VDD, VSS,  
+	IN, 
+	BGREN);
+   inout VDD, VSS;
+ input [2:0] IN;
+   output [6:0] BGREN;
+
+   // Internal wires
+   wire n_1;
+
+   assign BGREN[3] = IN[2] ;
+
+AND2_X1M_A9PP140ZTS_C30 g141__2398 (.VDD(VDD),.VSS(VSS),.VNW(VDD),.VPW(VSS), .A(BGREN[5]),
+	.B(IN[0]),
+	.Y(BGREN[6]));
+NAND2XB_X2M_A9PP140ZTS_C30 g142__5107 (.VDD(VDD),.VSS(VSS),.VNW(VDD),.VPW(VSS), .A(n_1),
+	.BN(IN[2]),
+	.Y(BGREN[0]));
+NOR2XB_X2M_A9PP140ZTS_C30 g143__6260 (.VDD(VDD),.VSS(VSS),.VNW(VDD),.VPW(VSS), .A(n_1),
+	.BN(IN[2]),
+	.Y(BGREN[4]));
+AO21_X1M_A9PP140ZTS_C30 g144__4319 (.VDD(VDD),.VSS(VSS),.VNW(VDD),.VPW(VSS), .A0(IN[1]),
+	.A1(IN[0]),
+	.B0(IN[2]),
+	.Y(BGREN[2]));
+OR2_X0P7B_A9PP140ZTS_C30 g145__8428 (.VDD(VDD),.VSS(VSS),.VNW(VDD),.VPW(VSS), .A(IN[2]),
+	.B(IN[1]),
+	.Y(BGREN[1]));
+NOR2_X0P7B_A9PP140ZTS_C30 g146__5526 (.VDD(VDD),.VSS(VSS),.VNW(VDD),.VPW(VSS), .A(IN[1]),
+	.B(IN[0]),
+	.Y(n_1));
+AND2_X1M_A9PP140ZTS_C30 g147__6783 (.VDD(VDD),.VSS(VSS),.VNW(VDD),.VPW(VSS), .A(IN[2]),
+	.B(IN[1]),
+	.Y(BGREN[5]));
+endmodule
