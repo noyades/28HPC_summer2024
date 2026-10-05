@@ -1,0 +1,407 @@
+<?xml version="1.0"?>
+<setupdb version="7">maestro
+	<active>Active Setup
+		<jobcontrolmode>ICRP</jobcontrolmode>
+		<corners>
+			<corner enabled="0">_default</corner>
+			<corner enabled="0">LSB
+				<vars>
+					<var>code_I
+						<value>8:8:32</value>
+					</var>
+					<var>code_Q
+						<value>128</value>
+					</var>
+				</vars>
+				<models>
+					<model enabled="1">toplevel.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/software/RFIC/PDK/tsmc/28nm/v1.8_2p3a/tsmcN28/../models/spectre/toplevel.scs</modelfile>
+						<modelsection>"top_tt"</modelsection>
+					</model>
+				</models>
+			</corner>
+			<corner enabled="0">ISB
+				<vars>
+					<var>code_I
+						<value>36:4:64</value>
+					</var>
+					<var>code_Q
+						<value>255 - code_I</value>
+					</var>
+				</vars>
+				<models>
+					<model enabled="1">toplevel.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/software/RFIC/PDK/tsmc/28nm/v1.8_2p3a/tsmcN28/../models/spectre/toplevel.scs</modelfile>
+						<modelsection>"top_tt"</modelsection>
+					</model>
+				</models>
+			</corner>
+			<corner enabled="0">IMSB
+				<vars>
+					<var>code_I
+						<value>68:16:128</value>
+					</var>
+					<var>code_Q
+						<value>255 - code_I</value>
+					</var>
+				</vars>
+				<models>
+					<model enabled="1">toplevel.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/software/RFIC/PDK/tsmc/28nm/v1.8_2p3a/tsmcN28/../models/spectre/toplevel.scs</modelfile>
+						<modelsection>"top_tt"</modelsection>
+					</model>
+				</models>
+			</corner>
+			<corner enabled="0">MSB
+				<vars>
+					<var>code_I
+						<value>136:32:255</value>
+					</var>
+					<var>code_Q
+						<value>255 - code_I</value>
+					</var>
+				</vars>
+				<models>
+					<model enabled="1">toplevel.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/software/RFIC/PDK/tsmc/28nm/v1.8_2p3a/tsmcN28/../models/spectre/toplevel.scs</modelfile>
+						<modelsection>"top_tt"</modelsection>
+					</model>
+				</models>
+			</corner>
+			<corner enabled="0">SS_90
+				<vars>
+					<var>temperature
+						<value>90</value>
+					</var>
+				</vars>
+				<models>
+					<model enabled="1">toplevel.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/software/RFIC/PDK/tsmc/28nm/v1.8_2p3a/tsmcN28/../models/spectre/toplevel.scs</modelfile>
+						<modelsection>"top_ss"</modelsection>
+					</model>
+				</models>
+			</corner>
+			<corner enabled="0">TT_90
+				<vars>
+					<var>temperature
+						<value>90</value>
+					</var>
+				</vars>
+				<models>
+					<model enabled="1">toplevel.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/software/RFIC/PDK/tsmc/28nm/v1.8_2p3a/tsmcN28/../models/spectre/toplevel.scs</modelfile>
+						<modelsection>"top_tt"</modelsection>
+					</model>
+				</models>
+			</corner>
+			<corner enabled="0">TT_30
+				<vars>
+					<var>temperature
+						<value>30</value>
+					</var>
+				</vars>
+				<models>
+					<model enabled="1">toplevel.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/software/RFIC/PDK/tsmc/28nm/v1.8_2p3a/tsmcN28/../models/spectre/toplevel.scs</modelfile>
+						<modelsection>"top_tt"</modelsection>
+					</model>
+				</models>
+			</corner>
+			<corner enabled="0">SS_30
+				<models>
+					<model enabled="1">toplevel.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/software/RFIC/PDK/tsmc/28nm/v1.8_2p3a/tsmcN28/../models/spectre/toplevel.scs</modelfile>
+						<modelsection>"top_ss"</modelsection>
+					</model>
+				</models>
+			</corner>
+			<corner enabled="1">C0
+				<vars>
+					<var>temperature
+						<value>30</value>
+					</var>
+					<var>code_I
+						<value>0,32,64,128</value>
+					</var>
+					<var>code_Q
+						<value>0,32,64,128</value>
+					</var>
+				</vars>
+				<models>
+					<model enabled="1">toplevel.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/software/RFIC/PDK/tsmc/28nm/v1.8_2p3a/tsmcN28/../models/spectre/toplevel.scs</modelfile>
+						<modelsection>"top_tt"</modelsection>
+					</model>
+				</models>
+			</corner>
+			<corner enabled="1">C1
+				<vars>
+					<var>temperature
+						<value>30</value>
+					</var>
+					<var>code_I
+						<value>1,31,63,127</value>
+					</var>
+					<var>code_Q
+						<value>1,31,63,127</value>
+					</var>
+				</vars>
+				<models>
+					<model enabled="1">toplevel.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/software/RFIC/PDK/tsmc/28nm/v1.8_2p3a/tsmcN28/../models/spectre/toplevel.scs</modelfile>
+						<modelsection>"top_tt"</modelsection>
+					</model>
+				</models>
+			</corner>
+		</corners>
+		<extensions>
+			<extension>Parasitics
+				<callback>_parSetupDBExtensionCB</callback>
+				<iconvalue></iconvalue>
+				<icontype></icontype>
+			</extension>
+		</extensions>
+		<currentmode>Single Run, Sweeps and Corners</currentmode>
+		<overwritehistory>0</overwritehistory>
+		<tests>
+			<test enabled="1">dev28_behdad_tb_dev22_scpa_digital_PA_1
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>tb_dev22_scpa_digital_PA</value>
+					</option>
+					<option>lib
+						<value>dev28_behdad</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic_signle_slice</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR</value>
+					</option>
+					<option>state
+						<value>active</value>
+					</option>
+				</tooloptions>
+				<vars>
+					<var>t_stop
+						<value>80*T</value>
+					</var>
+					<var>res
+						<value>2**N - 1</value>
+					</var>
+					<var>T
+						<value>1/frq</value>
+					</var>
+					<var>vdd
+						<value>0.9</value>
+					</var>
+					<var>N
+						<value>8</value>
+					</var>
+					<var>frq
+						<value>12.8G</value>
+					</var>
+					<var>L
+						<value>444.4p</value>
+					</var>
+					<var>R1
+						<value>8*19.12</value>
+					</var>
+					<var>t_start
+						<value>0</value>
+					</var>
+					<var>code_I
+						<value>0</value>
+					</var>
+					<var>code_Q
+						<value>128</value>
+					</var>
+				</vars>
+				<origoptions>
+					<option>cell
+						<value>tb_dev22_scpa_digital_PA</value>
+					</option>
+					<option>lib
+						<value>dev28_behdad</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+				</origoptions>
+				<outputs>
+					<output>tstart
+						<evalType>point</evalType>
+					</output>
+					<output>tend
+						<evalType>point</evalType>
+					</output>
+					<output>dft((vtime('tran "/VOP") - vtime('tran "/VON")) (122 * VAR("T")) (142 * VAR("T")) 511 "Blackman" 1 1 1.0)
+						<evalType>point</evalType>
+					</output>
+					<output>dft_amplitude
+						<evalType>point</evalType>
+					</output>
+					<output>dft_angle_unwrapped
+						<evalType>point</evalType>
+					</output>
+					<output>dft_angle
+						<evalType>point</evalType>
+					</output>
+					<output>c
+						<evalType>point</evalType>
+					</output>
+					<output>dB20(abs(dft((vtime('tran "/VOP") - vtime('tran "/VON")) (122 * VAR("T")) (142 * VAR("T")) 63 "BlackmanHarris" 1 "default" 1)))
+						<evalType>point</evalType>
+					</output>
+					<output>dft((vtime('tran "/VOP") - vtime('tran "/VON")) tstart tend 63 "BlackmanHarris" 1 "default" 1)
+						<evalType>point</evalType>
+					</output>
+					<output>dft((vtime('tran "/VOP") - vtime('tran "/VON")) (122 * VAR("T")) (142 * VAR("T")) 63 "BlackmanHarris" 1 "default" 1)
+						<evalType>point</evalType>
+					</output>
+					<output>dft((vtime('tran "/VOP") - vtime('tran "/VON")) (283 * VAR("T")) (291 * VAR("T")) 127 "BlackmanHarris" 1 "default" 1)
+						<evalType>point</evalType>
+					</output>
+					<output>dft((vtime('tran "/VOP") - vtime('tran "/VON")) (283 * VAR("T")) (291 * VAR("T")) 31 "BlackmanHarris" 1 "default" 1)
+						<evalType>point</evalType>
+					</output>
+					<output>dft((vtime('tran "/VOP") - vtime('tran "/VON")) (283 * VAR("T")) (291 * VAR("T")) 32 "BlackmanHarris" 1 "default" 1)
+						<evalType>point</evalType>
+					</output>
+					<output>Ropt
+						<evalType>point</evalType>
+					</output>
+					<output>Pout_lin
+						<evalType>point</evalType>
+					</output>
+					<output>pout_dbm2
+						<evalType>point</evalType>
+					</output>
+					<output>LSB
+						<evalType>point</evalType>
+					</output>
+					<output>I
+						<evalType>point</evalType>
+					</output>
+					<output>Q
+						<evalType>point</evalType>
+					</output>
+					<output>Amp
+						<evalType>point</evalType>
+					</output>
+					<output>diff
+						<evalType>point</evalType>
+					</output>
+					<output>20_cycle_clip
+						<evalType>point</evalType>
+					</output>
+					<output>Vswing
+						<evalType>point</evalType>
+					</output>
+					<output>dft(Vout_diff 9.087926e-10 6.25e-09 2048 "BlackmanHarris" 0 0 1)
+						<evalType>point</evalType>
+					</output>
+					<output>(Vswing / (2 * LSB))
+						<evalType>point</evalType>
+					</output>
+					<output>(Vswing / (4 * LSB))
+						<evalType>point</evalType>
+					</output>
+					<output>magnitude
+						<evalType>point</evalType>
+					</output>
+				</outputs>
+			</test>
+		</tests>
+		<disabledtests></disabledtests>
+		<checksasserts netlist="0">
+			<test netlist="0" netlistscope="all">dev28_behdad_tb_dev22_scpa_digital_PA_1</test>
+		</checksasserts>
+		<plottingoptions>
+			<plottingoption>waveformtemplate
+				<value></value>
+			</plottingoption>
+			<plottingoption>plottingmode
+				<value>Append</value>
+			</plottingoption>
+			<plottingoption>plottype
+				<value>None</value>
+			</plottingoption>
+			<plottingoption>usewaveformtemplate
+				<value>no</value>
+			</plottingoption>
+			<plottingoption>useMaestroPlottingTemplate
+				<value>no</value>
+			</plottingoption>
+			<plottingoption>allplottingtemplates
+				<value></value>
+			</plottingoption>
+			<plottingoption>defaultplottingtemplate
+				<value></value>
+			</plottingoption>
+			<plottingoption>autoplotmode
+				<value>Replace</value>
+			</plottingoption>
+		</plottingoptions>
+		<exploreroptions>
+			<exploreroption>waveformtemplate
+				<value>(None)</value>
+			</exploreroption>
+			<exploreroption>autoplotmode
+				<value>Replace</value>
+			</exploreroption>
+		</exploreroptions>
+		<incrementalsimulationoptions>
+			<incrementalSimulation>0</incrementalSimulation>
+			<checkassembler>1</checkassembler>
+			<checkdesign>0</checkdesign>
+			<checksimulationfiles>0</checksimulationfiles>
+		</incrementalsimulationoptions>
+		<overwritehistoryname>Interactive.156</overwritehistoryname>
+		<incrementalsimsetup>
+			<useincremental>0</useincremental>
+			<reusenetlist>0</reusenetlist>
+			<copyreferenceresults>1</copyreferenceresults>
+		</incrementalsimsetup>
+		<jobpolicyname>Maestro Default</jobpolicyname>
+		<netlistjobpolicyname>Netlisting Default</netlistjobpolicyname>
+		<distributeoptions>
+			<genusjoblimits>
+				<genusjoblimit>ICRP
+					<value>0</value>
+				</genusjoblimit>
+			</genusjoblimits>
+			<parallelrun>1</parallelrun>
+			<specifyjoblimit>0</specifyjoblimit>
+		</distributeoptions>
+	</active>
+	<history>History
+	</history>
+</setupdb>

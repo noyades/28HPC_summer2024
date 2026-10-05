@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<setupdb version="7">maestro
+	<active>Active Setup
+		<jobcontrolmode>ICRP</jobcontrolmode>
+		<corners>
+			<corner enabled="0">_default</corner>
+			<corner enabled="1">C0
+				<vars>
+					<var>vdd
+						<value>0.81 0.9 0.99</value>
+					</var>
+				</vars>
+			</corner>
+		</corners>
+		<overwritehistory>0</overwritehistory>
+		<tests>
+			<test enabled="1">jswalling_tapeout_tb_inv_1
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>tb_inv</value>
+					</option>
+					<option>lib
+						<value>jswalling_tapeout</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>state
+						<value>active</value>
+					</option>
+				</tooloptions>
+				<vars>
+					<var>frf
+						<value>12.8G</value>
+					</var>
+					<var>vdd
+						<value>0.8</value>
+					</var>
+					<var>tStop
+						<value>48/frf</value>
+					</var>
+				</vars>
+			</test>
+		</tests>
+		<extensions>
+			<extension>Parasitics
+				<callback>_parSetupDBExtensionCB</callback>
+				<iconvalue></iconvalue>
+				<icontype></icontype>
+			</extension>
+		</extensions>
+		<currentmode>Single Run, Sweeps and Corners</currentmode>
+		<checksasserts netlist="0">
+			<test netlist="0" netlistscope="all">jswalling_tapeout_tb_inv_1</test>
+		</checksasserts>
+		<plottingoptions>
+			<plottingoption>waveformtemplate
+				<value>(None)</value>
+			</plottingoption>
+			<plottingoption>plottingmode
+				<value>Replace</value>
+			</plottingoption>
+			<plottingoption>plottype
+				<value>None</value>
+			</plottingoption>
+			<plottingoption>usewaveformtemplate
+				<value>no</value>
+			</plottingoption>
+			<plottingoption>useMaestroPlottingTemplate
+				<value>yes</value>
+			</plottingoption>
+			<plottingoption>allplottingtemplates
+				<value></value>
+			</plottingoption>
+			<plottingoption>defaultplottingtemplate
+				<value></value>
+			</plottingoption>
+			<plottingoption>distributedplot_enabled
+				<value>no</value>
+			</plottingoption>
+		</plottingoptions>
+		<exploreroptions>
+			<exploreroption>waveformtemplate
+				<value>(None)</value>
+			</exploreroption>
+		</exploreroptions>
+		<jobpolicyname>Maestro Default</jobpolicyname>
+		<incrementalsimsetup>
+			<useincremental>0</useincremental>
+			<reusenetlist>0</reusenetlist>
+			<reusesaverunhist>0</reusesaverunhist>
+			<copyreferenceresults>1</copyreferenceresults>
+		</incrementalsimsetup>
+		<overwritehistoryname>ExplorerRun.0</overwritehistoryname>
+		<netlistjobpolicyname>Netlisting Default</netlistjobpolicyname>
+	</active>
+	<history>History
+	</history>
+</setupdb>
